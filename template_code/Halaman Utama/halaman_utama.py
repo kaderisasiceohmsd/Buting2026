@@ -42,7 +42,7 @@ st.markdown(
     """
     <div style='text-align: center;'>
         <h1 style='font-size: 5.5em;'>WEBSITE KATING</h1>
-        <p style='font-size: 2em;'>CEO HMSD Adyatama ITERA 2024</p>
+        <p style='font-size: 2em;'>CEO HMSD Adyatama ITERA 2026</p>
     </div>
     """,
     unsafe_allow_html=True,
@@ -102,12 +102,7 @@ if menu == "Home":
             "<h1 class='centered-title'>Deskripsi Kelompok</h1>", unsafe_allow_html=True
         )
         st.markdown(
-            """<div style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                    laborum.</div>""",
+            """<div style="text-align: justify;">GA BANYAK GAYA TAPI BIKIN HERAN, BAYESIAN.</div>""",
             unsafe_allow_html=True,
         )
         st.write(""" """)
@@ -143,11 +138,11 @@ elif menu == "About Us":
         ]
         data_list = [
             {
-                "nama": "x",
+                "nama": "Thomas Yustio",
                 "sebagai": "Pak Lurah",
-                "nim": "122450016",
-                "fun_fact": "suka makan pedes, tapi ga suka efeknya",
-                "motto_hidup": "new semester new me",
+                "nim": "125450085",
+                "fun_fact": "gigi saya sudah patah 4x dan saya karbit",
+                "motto_hidup": "bantai di semester depan",
             },
             {
                 "nama": "x",
