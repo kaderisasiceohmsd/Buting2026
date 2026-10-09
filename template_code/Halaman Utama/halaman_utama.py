@@ -109,12 +109,7 @@ if menu == "Home":
         foto_kelompok = "https://drive.google.com/uc?export=view&id=1dmdJJc0SY2JRooW5UQUrw01p0cPkCkdi"
         layout(foto_kelompok)
         st.markdown(
-            """<div style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                    laborum.</div>""",
+            """<div style="text-align: justify;">Kami Bayes.</div>""",
             unsafe_allow_html=True,
         )
         st.write(""" """)
