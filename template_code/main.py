@@ -5,7 +5,7 @@ import streamlit as st
 st.session_state.pindah = True
 
 Homepage = st.Page("Halaman Utama/halaman_utama.py",
-    title="Nama_Kelompok",
+    title="Anova",
     default=True)
 
 Mahasiswa1 = st.Page(
@@ -13,6 +13,14 @@ Mahasiswa1 = st.Page(
     title="117 - Nobel Nizam Fathirizki",
     icon=":material/person:",
 )
+
+Mahasiswa2 = st.Page(
+    "Buku Kating/065_Muhammad Irfan Nugraha.py",
+    title="065 - Muhammad Irfan Nugraha",
+    icon=":material/person:",
+)
+
+
 
 #Perlu diperhatikan perubahannya
 KREASI = st.Page("tools/KREASI.py", title="KREASI", icon=":material/search:")
@@ -23,7 +31,7 @@ if st.session_state.pindah:
     pg = st.navigation(
         {
             "Halaman Utama": [Homepage],
-            "Buku Kating": [Mahasiswa1],
+            "Buku Kating": [Mahasiswa1, Mahasiswa2],
             "Try Me !!": [KREASI, KREASII],
         }
     )
