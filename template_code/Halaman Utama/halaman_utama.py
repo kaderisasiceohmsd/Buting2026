@@ -41,8 +41,8 @@ def display_images_with_data(gambar_urls, data_list):
 st.markdown(
     """
     <div style='text-align: center;'>
-        <h1 style='font-size: 5.5em;'>WEBSITE KATING</h1>
-        <p style='font-size: 2em;'>CEO HMSD Adyatama ITERA 2024</p>
+        <h1 style='font-size: 5.5em;'>JACOBI</h1>
+        <p style='font-size: 2em;'>Kelompok 2 Jacobi</p>
     </div>
     """,
     unsafe_allow_html=True,
@@ -99,27 +99,17 @@ if menu == "Home":
             unsafe_allow_html=True,
         )
         st.markdown(
-            "<h1 class='centered-title'>Deskripsi Kelompok</h1>", unsafe_allow_html=True
+            "<h1 class='centered-title'>Deskripsi Kelompok 2 Jacobi</h1>", unsafe_allow_html=True
         )
         st.markdown(
-            """<div style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                    laborum.</div>""",
+            """<div style="text-align: justify;">Selamat datang di Buku Kating Kelompok 2 Jacobi. Website ini memuat profil, foto, kesan, dan pesan untuk kakak tingkat sebagai dokumentasi serta media silaturahmi antarmahasiswa.</div>""",
             unsafe_allow_html=True,
         )
         st.write(""" """)
         foto_kelompok = "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"
         layout(foto_kelompok)
         st.markdown(
-            """<div style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                    laborum.</div>""",
+            """<div style="text-align: justify;">Melalui Buku Kating ini, Kelompok 2 Jacobi menyimpan cerita, pengalaman, dan apresiasi kepada kakak tingkat yang telah membantu perjalanan perkuliahan.</div>""",
             unsafe_allow_html=True,
         )
         st.write(""" """)
