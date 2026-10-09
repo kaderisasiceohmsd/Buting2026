@@ -106,15 +106,10 @@ if menu == "Home":
             unsafe_allow_html=True,
         )
         st.write(""" """)
-        foto_kelompok = "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"
+        foto_kelompok = "https://drive.google.com/uc?export=view&id=1dmdJJc0SY2JRooW5UQUrw01p0cPkCkdi"
         layout(foto_kelompok)
         st.markdown(
-            """<div style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                    laborum.</div>""",
+            """<div style="text-align: justify;">Kami Bayes.</div>""",
             unsafe_allow_html=True,
         )
         st.write(""" """)
@@ -130,7 +125,7 @@ elif menu == "About Us":
         )
         st.markdown("<h1 class='centered-title'>About Us</h1>", unsafe_allow_html=True)
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=download&id=19KrR82_PA5lsmyDn-8iBcBBVxWqctEp9",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
@@ -138,11 +133,11 @@ elif menu == "About Us":
         ]
         data_list = [
             {
-                "nama": "Thomas Yustio",
+                "nama": "x",
                 "sebagai": "Pak Lurah",
-                "nim": "125450085",
-                "fun_fact": "gigi saya sudah patah 4x dan saya karbit",
-                "motto_hidup": "bantai di semester depan",
+                "nim": "122450016",
+                "fun_fact": "suka makan pedes, tapi ga suka efeknya",
+                "motto_hidup": "new semester new me",
             },
             {
                 "nama": "x",
