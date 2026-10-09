@@ -41,8 +41,8 @@ def display_images_with_data(gambar_urls, data_list):
 st.markdown(
     """
     <div style='text-align: center;'>
-        <h1 style='font-size: 5.5em;'>WEBSITE KATING</h1>
-        <p style='font-size: 2em;'>CEO HMSD Adyatama ITERA 2024</p>
+        <h1 style='font-size: 5.5em;'>WEBSITE Markov</h1>
+        <p style='font-size: 2em;'>CEO HMSD Adyatama ITERA 2026</p>
     </div>
     """,
     unsafe_allow_html=True,
