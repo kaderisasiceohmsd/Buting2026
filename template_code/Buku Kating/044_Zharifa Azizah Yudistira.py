@@ -346,7 +346,7 @@ if menu == "Badan Legislatif":
         display_images_with_data(gambar_urls, data_list)
     Baleg()
 
-if menu == "Badan Kesenatoran":
+elif menu == "Badan Kesenatoran":
     def bason():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1kfsDzh0GuhsMEzhDdFSLlMpaDbTFM9j7",
@@ -383,7 +383,7 @@ if menu == "Badan Kesenatoran":
                 "kesan": "Abang ini lucu bangett pas wawancaraa #dutamelet, baik banget jujur, asik banget juga",  
                 "pesan": "Semangat abang baik kuliahnyaa, kamu keren bangg"# 1
             },
-	 {
+			{
                 "nama": "Fernando Dimetrius Barus",
                 "nim": "124450063",
                 "umur": "21",
@@ -394,7 +394,7 @@ if menu == "Badan Kesenatoran":
                 "kesan": "Bang nando baik orangnya, seru jugaa, keren juga, masyallah sekali",  
                 "pesan": "Semangatt abang kuliahnyaaa"# 1
             },
-	 {
+			{
                 "nama": "Suci Aulia",
                 "nim": "124450034",
                 "umur": "19",
@@ -405,7 +405,7 @@ if menu == "Badan Kesenatoran":
                 "kesan": "Kakaknya cantik bangett, pertama kali ketemu kakaknya aku kaget karena cantik nya cantik banget",  
                 "pesan": "Semangat kak sucii kuliah dan mendampingi cosvalnyaa, jangan lupa senyum kakak cantik"# 1
             },
-	 {
+			{
                 "nama": "Wielman Itolo Halawa",
                 "nim": "124450072",
                 "umur": "20",
@@ -416,7 +416,7 @@ if menu == "Badan Kesenatoran":
                 "kesan": "Abangnya asik bangettt seruuuuuu, baik banget banget jugaa, seru ngobrol sama abangnya",  
                 "pesan": "Semangat bang wielman kuliahnyaa, semangat juga agenda mancingnyaa"# 1
             },
-	 {
+			{
                 "nama": "Lia Hana Ichisasmita",
                 "nim": "123450089",
                 "umur": "21",
@@ -427,7 +427,7 @@ if menu == "Badan Kesenatoran":
                 "kesan": "Kak lia itu keren bangett pas nyampaikan materi, keren banget, aku kagumm",  
                 "pesan": "Semangat kak lia kuliahnyaa, semangat juga ngerjain TA nyaa semoga cepat selesai"# 1
             },
-	 {
+			{
                 "nama": "Aqila Zayyan Salsabil",
                 "nim": "124450014",
                 "umur": "19",
@@ -438,7 +438,7 @@ if menu == "Badan Kesenatoran":
                 "kesan": "Kak qila itu cantik banget gemasss, lucu juga kakaknyaa",  
                 "pesan": "Semangat kuliahnyaa kakakn cantik secantik bunga matahari"# 1
             },
-	 {
+			{
                 "nama": "Hazel Mahesa Handhaka",
                 "nim": "124450114",
                 "umur": "20",
@@ -473,9 +473,9 @@ if menu == "Badan Kesenatoran":
             },
         ]
         display_images_with_data(gambar_urls, data_list)
-    bason()
+	bason()
 
-if menu == "Departemen Minbak":
+elif menu == "Departemen Minbak":
     def minbak():
          gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1bw-tWsxCkMWthCOEQ4GZSGhGHF6i-lk",
