@@ -99,13 +99,13 @@ menu = streamlit_menu()
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1YVYo_zYWkUh07Tk9pd1F6rzKw3O9c3xC",
+            "https://drive.google.com/uc?export=view&id=1YVYo_zYWkUh07Tk9pd1F6rzKw3O9c3xC",
+            "https://drive.google.com/uc?export=view&id=1YVYo_zYWkUh07Tk9pd1F6rzKw3O9c3xC",
         ]
         data_list = [
             {
-                "nama": "Kakak A",
+                "nama": "Kakak Andra",
                 "nim": "122450000",
                 "umur": "18",
                 "asal":"Bekasi",
