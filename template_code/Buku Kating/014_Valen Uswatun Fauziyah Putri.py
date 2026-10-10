@@ -110,7 +110,7 @@ if menu == "Kesekjenan":
         ]
         data_list = [
             {
-                "nama": "Ginda Fajar Riadi Marpaung",
+                  "nama": "Ginda Fajar Riadi Marpaung",
                 "nim": "123450103",
                 "umur": "22",
                 "asal": "Batam",
