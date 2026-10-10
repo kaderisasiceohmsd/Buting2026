@@ -199,5 +199,3 @@ elif menu == "About Us":
             },
         ]
         display_images_with_data(gambar_urls, data_list)
-
-    about_page()
