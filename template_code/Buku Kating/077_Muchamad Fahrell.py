@@ -144,13 +144,13 @@ menu = streamlit_menu()
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
-    "https://drive.google.com/uc?export=view&id=1lMm2cZotf4Zg5npQZTNsGulE71uamr0G",
-    "https://drive.google.com/uc?export=view&id=1L1mV6NSK_dwiOB1dMLtHXVss8YvviGF7",
-    "https://drive.google.com/uc?export=view&id=1arEBvurK397f3EPs4YmXihuHpY_0Ngnk",
-    "https://drive.google.com/file/d/1Iv7PgxUJ9qVu-8EuqH73CJZ0ZATL3irL",
-    "https://drive.google.com/uc?export=view&id=1Iwen8hJLSVc5_-C7sEAhlDoByhm82chK"
-    "https://drive.google.com/file/d/1Iwen8hJLSVc5_-C7sEAhlDoByhm82chK"
-]
+            "https://drive.google.com/uc?export=view&id=1lMm2cZotf4Zg5npQZTNsGulE71uamr0G",
+            "https://drive.google.com/uc?export=view&id=1L1mV6NSK_dwiOB1dMLtHXVss8YvviGF7",
+            "https://drive.google.com/uc?export=view&id=1arEBvurK397f3EPs4YmXihuHpY_0Ngnk",
+            "https://drive.google.com/uc?export=view&id=1Iv7PgxUJ9qVu-8EuqH73CJZ0ZATL3irL",
+            "https://drive.google.com/uc?export=view&id=1Iwen8hJLSVc5_-C7sEAhlDoByhm82chK"
+        ]
+
 
         data_list = [
             {
@@ -225,19 +225,7 @@ if menu == "Kesekjenan":
 
     kesekjenan()
 
-if menu == "Baleg":
-    def Baleg():
-        gambar_urls = [
-            "https://drive.google.com/file/d/1lMm2cZotf4Zg5npQZTNsGulE71uamr0G",
-            "https://drive.google.com/file/d/1L1mV6NSK_dwiOB1dMLtHXVss8YvviGF7",
-            "https://drive.google.com/file/d/1arEBvurK397f3EPs4YmXihuHpY_0Ngnk",
-            "https://drive.google.com/file/d/16feqaSynGDSLmG6TwVb8uUt8V9ylEypi",
-            "https://drive.google.com/file/d/1Iwen8hJLSVc5_-C7sEAhlDoByhm82chK",
-            "https://drive.google.com/file/d/112PQJYl9BJ8q5ORQYnSRGyH8n9l32F8E",
-            "https://drive.google.com/file/d/1NkMl76Maz1x0FhMtcM1IBmT2SrfIroUj",
-            "https://drive.google.com/file/d/1w1Pfz_aCH3SSyhmhkDnHJw02PurUwtoH",
-        ]
-
+]
         data_list = [
             {
                 "nama": "Ridho Benedictus Togi Manik",
@@ -331,7 +319,7 @@ if menu == "Baleg":
                 "nama": "Jeremia Halim",
                 "nim": "124450101",
                 "umur": "20",
-                "asal": "Cibaduyut",
+                "asal": "Tanggerang",
                 "alamat": "Teluk",
                 "hobbi": "Nyanyi, olahraga",
                 "sosmed": "@jeremia_hm",
@@ -386,8 +374,8 @@ if menu == "Baleg":
         display_images_with_data(gambar_urls, data_list)
     Baleg()
 
-if menu == "Departemen Minbak":
-    def Departemen_Minbak():
+if menu == "Departemen SSD":
+    def Departemen_SSD():
         gambar_urls = [
             "https://drive.google.com/file/d/1GEVx0r0hwY_jXQP3pD4X-uwE0DMZebcI",
             "https://drive.google.com/file/d/1fUMJq1YXVoroSqWkLIL1wXO73H1eEvDJ",
@@ -401,110 +389,135 @@ if menu == "Departemen Minbak":
 
         ]
 
-        data_list = [
-            {
-                "nama": "Ridho Benedictus Togi Manik",
-                "nim": "23-060",
-                "umur": "20",
-                "asal": "Kota Manchester",
-                "alamat": "Di GH",
-                "hobbi": "Wawancara",
-                "sosmed": "@ridhomanik",
-                "kesan": "-",
-                "pesan": "Ketua Baleg"
-            },
-            {
-                "nama": "Wanaswa Alhani Yuska",
-                "nim": "23-77",
-                "umur": "20",
-                "asal": "Pasay",
-                "alamat": "Belwis",
-                "hobbi": "Nyapa angin",
-                "sosmed": "@nshaysk",
-                "kesan": "-",
-                "pesan": "-"
-            },
-            {
-                "nama": "Juwesi Aprilia Saragih",
-                "nim": "23-085",
-                "umur": "19",
-                "asal": "Singkawang",
-                "alamat": "Pelangi",
-                "hobbi": "Dengerin lagu Semusim dari Marsel",
-                "sosmed": "@j__eesie",
-                "kesan": "-",
-                "pesan": "-"
-            },
-            {
-                "nama": "Ghifaro Ananta",
-                "nim": "23-78",
-                "umur": "19",
-                "asal": "Lambar",
-                "alamat": "Sukabumi",
-                "hobbi": "Minum kopi",
-                "sosmed": "-",
-                "kesan": "-",
-                "pesan": "-"
-            },
-            {
-                "nama": "Afghanis Nur Solehatunnisa",
-                "nim": "24-042",
-                "umur": "19",
-                "asal": "Kepulauan Mentawai",
-                "alamat": "Owen Kost",
-                "hobbi": "Ngoding",
-                "sosmed": "-",
-                "kesan": "-",
-                "pesan": "-"
-            },
-            {
-                "nama": "Hani Qurrota Aini",
-                "nim": "24-20",
-                "umur": "20",
-                "asal": "CTR?",
-                "alamat": "Sukarame",
-                "hobbi": "Baca AU",
-                "sosmed": "-",
-                "kesan": "-",
-                "pesan": "-"
-            },
-            {
-                "nama": "Sekardini Lidya Putri",
-                "nim": "24-82",
-                "umur": "20",
-                "asal": "Metro",
-                "alamat": "Pemda",
-                "hobbi": "Jajan sama Nisa, Putri, Suci",
-                "sosmed": "@sekardnwp",
-                "kesan": "-",
-                "pesan": "-"
-            },
-            {
-                "nama": "Jonna Timothy Ogatse Panjaitan",
-                "nim": "24-111",
-                "umur": "20",
-                "asal": "Depok",
-                "alamat": "Pemda Raya",
-                "hobbi": "Gym, koleksi figure, nafas manual",
-                "sosmed": "@nagatse",
-                "kesan": "-",
-                "pesan": "-"
-            },
-            {
-                "nama": "Siti Sarifah",
-                "nim": "...-15",
-                "umur": "19",
-                "asal": "Bekasi",
-                "alamat": "Kedaton",
-                "hobbi": "Mancing",
-                "sosmed": "-",
-                "kesan": "-",
-                "pesan": "-"
-            }
-        ]
+data_list = [
+    # --- Pimpinan & Sekretaris ---
+    {
+        "nama": "Ihsan Maulana Yusuf",
+        "nim": "123450110",
+        "umur": "21",
+        "asal": "Sumbar",
+        "alamat": "Belwis",
+        "hobbi": "Baca jurnal, cari jurnal yang berhubungan ta",
+        "sosmed": "@ihsan.myusuf",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    {
+        "nama": "Hanifah Inaya Sani",
+        "nim": "123450000",
+        "umur": "21",
+        "asal": "Balam",
+        "alamat": "Korpri",
+        "hobbi": "Memasak",
+        "sosmed": "@_inayasani",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    # --- Divisi Kemitraan ---
+    {
+        "nama": "Afifah Fauziah",
+        "nim": "123450002",
+        "umur": "18",
+        "asal": "Padang",
+        "alamat": "Hasan 4",
+        "hobbi": "Baca jurnal, nonton Marvel",
+        "sosmed": "-",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    {
+        "nama": "Hasan Nur Ramadhan",
+        "nim": "124450013",
+        "umur": "25",
+        "asal": "Lamteng",
+        "alamat": "Pemda",
+        "hobbi": "Nonton yutub",
+        "sosmed": "-",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    {
+        "nama": "Layina Ropiqo",
+        "nim": "124450016",
+        "umur": "20",
+        "asal": "Semarang",
+        "alamat": "Balam",
+        "hobbi": "Nonton dracin",
+        "sosmed": "@layinr_",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    {
+        "nama": "Talitha Justine",
+        "nim": "124450076",
+        "umur": "19",
+        "asal": "Sumbar",
+        "alamat": "Pemda",
+        "hobbi": "Nonton",
+        "sosmed": "@talljtine_",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    # --- Divisi Kewirausahaan ---
+    {
+        "nama": "Anadia Carana",
+        "nim": "123450019",
+        "umur": "20",
+        "asal": "Palembang",
+        "alamat": "Wayhui",
+        "hobbi": "Nyari duit",
+        "sosmed": "@anadiacrn",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    {
+        "nama": "Abdillah Fikri Al pome",
+        "nim": "124450062",
+        "umur": "21",
+        "asal": "Sumsel",
+        "alamat": "Airan",
+        "hobbi": "Basket",
+        "sosmed": "@pomest",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    {
+        "nama": "Afdhal Rahmad Setiawan",
+        "nim": "124450008",
+        "umur": "20",
+        "asal": "Sumbar",
+        "alamat": "Belwis",
+        "hobbi": "Fishing and game",
+        "sosmed": "@Afdhal",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    {
+        "nama": "Anggun Nita",
+        "nim": "124450009",
+        "umur": "20",
+        "asal": "Lamutara",
+        "alamat": "-",
+        "hobbi": "Nonton kartun",
+        "sosmed": "@anggunitaaa_",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    {
+        "nama": "Della Anisa Fitri",
+        "nim": "124450095",
+        "umur": "18",
+        "asal": "Lamtim",
+        "alamat": "Kotabaru",
+        "hobbi": "Olahraga",
+        "sosmed": "@delaanisafitri",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+]
 
-        display_images_with_data(gambar_urls, data_list)
+    Departemen_SSD()
 
-    Departemen_Minbak()
+
 
 # Tambahkan menu lainnya sesuai kebutuhan
