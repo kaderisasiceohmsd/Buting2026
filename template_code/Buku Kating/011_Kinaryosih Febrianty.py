@@ -296,17 +296,6 @@ if menu == "Departemen SSD":
                 "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
-                "nama": "Mochammad Iqbal Az-zahir",
-                "nim": "124450052",
-                "umur": "20",
-                "asal":"Bekasi",
-                "alamat": "Natar",
-                "hobbi": "Nonton drakor ",
-                "sosmed": "@iqbalazzahir_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
-            {
                 "nama": "Afdhal Rahmad Setiawan",
                 "nim": "124450008",
                 "umur": "20",
