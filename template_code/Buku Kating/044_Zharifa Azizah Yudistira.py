@@ -13,8 +13,8 @@ def streamlit_menu():
         menu_title=None,
         options=[
             "Kesekjenan",
-            "Baleg",
-            "Senator",
+            "Badan Legislatif",
+            "Badan Kesenatoran",
             "Departemen PSDA",
             "Departemen MIKFES",
             "Departemen Eksternal",
@@ -97,48 +97,3463 @@ menu = streamlit_menu()
 
 # BAGIAN SINI YANG HANYA BOLEH DIUABAH
 if menu == "Kesekjenan":
-    def kesekjenan():
+    def Kesekjenan():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=12c4HoUv_7ybIIRiVUarGlOrPdvmP-UJp",
+            "https://drive.google.com/uc?export=view&id=1uBQjMofh6xoZ3a2qa6oLWTici0hKOzGw",
+            "https://drive.google.com/uc?export=view&id=1md8uzDaCwQD7S83jP1PpYbRiv-DFfXmj",
+            "https://drive.google.com/uc?export=view&id=1msXyEAAoRiWRbkl6fTG4d2BraUUAu3KC",
+            "https://drive.google.com/uc?export=view&id=117IVKdyqqu7V-qYanyZMnb1YoQj36iaq",
+            "https://drive.google.com/uc?export=view&id=11BWvexjOAk9uBYCZJkqujxpIRqqD7khu",
         ]
         data_list = [
             {
-                "nama": "Kakak A",
-                "nim": "122450000",
-                "umur": "18",
-                "asal":"Bekasi",
-                "alamat": "Gg.sakum",
-                "hobbi": "Mainn Bola, Belajar",
-                "sosmed": "@i",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal":"...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
             },
             {
-                "nama": "Kakak B",
-                "nim": "122450000",
-                "umur": "18",
-                "asal":"Bekasi",
-                "alamat": "Gg.sakum",
-                "hobbi": "Mainn Bola, Belajar",
-                "sosmed": "@i",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal":"...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
             },
             {
-                "nama": "Kakak CCc",
-                "nim": "122450000",
-                "umur": "18",
-                "asal":"Bekasi",
-                "alamat": "Gg.sakum",
-                "hobbi": "Mainn Bola, Belajar",
-                "sosmed": "@i",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal":"...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal":"...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal":"...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal":"...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    kesekjenan()
+          
+# Tambahkan menu lainnya sesuai kebutuhan
+if menu == "Badan Legislatif":
+    def Baleg():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1ez1lxtX-GcBXPDHnc1uNbgNqHs_aKle3",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+        ]
+
+        data_list = [
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+        ]
+
+        display_images_with_data(gambar_urls, data_list)
+
+    Baleg()
+
+
+if menu == "Badan Kesenatoran":
+    def Senator():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+        ]
+
+        data_list = [
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."  # 1
+            },
+        ]
+
+        display_images_with_data(gambar_urls, data_list)
+
+    Senator()
+
+
+if menu == "Departemen PSDA":
+    def Departemen_PSDA():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+        ]
+
+        data_list = [
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+        ]
+
+        display_images_with_data(gambar_urls, data_list)
+
+    Departemen_PSDA()
+
+
+if menu == "Departemen MIKFES":
+    def Departemen_MIKFES():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+        ]
+
+        data_list = [
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+        ]
+
+        display_images_with_data(gambar_urls, data_list)
+
+    Departemen_MIKFES()
+
+if menu == "Departemen Eksternal":
+    def Departemen_Eksternal():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+        ]
+        data_list = [
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+           {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+           {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    Departemen_Eksternal()
+
+if menu == "Departemen Internal":
+    def Departemen_Internal():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+        ]
+        data_list = [
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 2
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 3
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 4
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 5
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 6
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 7
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 8
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 9
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 10
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 11
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 12
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 13
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 14
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 15
+            },
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    Departemen_Internal()
+
+if menu == "Departemen SSD":
+    def Departemen_SSD():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+        ]
+        data_list = [
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 2
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 3
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 4
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 5
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 6
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 7
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 8
+            },
+             {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 9
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 10
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 11
+            },
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    Departemen_SSD()
+
+if menu == "Departemen Medkraf":
+    def Departemen_Medkraf():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+        ]
+        data_list = [
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 2
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 3
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 4
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 5
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 6
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 7
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 8
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 9
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 10
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 11
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 12
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 13
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 14
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 15
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 16
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 17
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 18
+            },
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    Departemen_Medkraf()",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+        ]
+        data_list = [
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal":"...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal":"...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal":"...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal":"...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal":"...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal":"...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
             },
         ]
         display_images_with_data(gambar_urls, data_list)
     kesekjenan()
 
 # Tambahkan menu lainnya sesuai kebutuhan
+
+if menu == "Baleg":
+    def Baleg():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+        ]
+        data_list = [
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal":"...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal":"...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal":"...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal":"...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal":"...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    Baleg()
+
+if menu == "Senator":
+    def Senator():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+        ]
+        data_list = [
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    Senator()
+
+if menu == "Departemen PSDA":
+    def Departemen_PSDA():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+        ]
+        data_list = [
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    Departemen_PSDA()
+
+if menu == "Departemen MIKFES":
+    def Departemen_MIKFES():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+        ]
+        data_list = [
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    Departemen_MIKFES()
+
+if menu == "Departemen Eksternal":
+    def Departemen_Eksternal():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+        ]
+        data_list = [
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+           {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+           {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."
+            },
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    Departemen_Eksternal()
+
+if menu == "Departemen Internal":
+    def Departemen_Internal():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+        ]
+        data_list = [
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 2
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 3
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 4
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 5
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 6
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 7
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 8
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 9
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 10
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 11
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 12
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 13
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 14
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",  
+                "pesan": "..." # 15
+            },
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    Departemen_Internal()
+
+if menu == "Departemen SSD":
+    def Departemen_SSD():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+        ]
+        data_list = [
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 2
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 3
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 4
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 5
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 6
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 7
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 8
+            },
+             {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 9
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 10
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 11
+            },
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    Departemen_SSD()
+
+if menu == "Departemen Medkraf":
+    def Departemen_Medkraf():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+            "https://drive.google.com/uc?export=view&id=...",
+        ]
+        data_list = [
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 1
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 2
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 3
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 4
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 5
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 6
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 7
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 8
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 9
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 10
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 11
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 12
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 13
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 14
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 15
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 16
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 17
+            },
+            {
+                "nama": "...",
+                "nim": "...",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "...",
+                "kesan": "...",
+                "pesan": "..."   # 18
+            },
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    Departemen_Medkraf()
