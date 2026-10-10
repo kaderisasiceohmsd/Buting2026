@@ -33,6 +33,7 @@ def streamlit_menu():
             "people-fill",
             "people-fill",
             "people-fill",
+			"people-fill",
         ],
         default_index=0,
         orientation="horizontal",
@@ -473,7 +474,7 @@ if menu == "Senator":
     Senator()
 	
 if menu == "Departemen Minbak":
-    def minbak():
+    def Minbak():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=.",
             "https://drive.google.com/uc?export=view&id=.",
@@ -655,5 +656,5 @@ if menu == "Departemen Minbak":
 		    }
 		]
         display_images_with_data(gambar_urls, data_list)
-    minbak()
+    Minbak()
 # Tambahkan menu lainnya sesuai kebutuhan
