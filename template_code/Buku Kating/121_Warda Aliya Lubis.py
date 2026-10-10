@@ -193,8 +193,8 @@ if menu == "Baleg":
             "https://drive.google.com/file/d/1FwFBDx2bDqd0XE2rRk7O3rfjSUIwCpog",
             "https://drive.google.com/file/d/1O-V6Q0pZnkNoxl90-MmhXykoXd1wE2sq",
             "https://drive.google.com/file/d/1ere5dEVEYAcg2KvX8Rx6I2MUMLskkz1O",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/file/d/1O-V6Q0pZnkNoxl90-MmhXykoXd1wE2sq",
+            "https://drive.google.com/file/d/1ere5dEVEYAcg2KvX8Rx6I2MUMLskkz1O",
 ]
         data_list = [
             {
@@ -343,8 +343,5 @@ if menu == "Baleg":
         ]
         display_images_with_data(gambar_urls, data_list)
     Baleg()
-        display_images_with_data(gambar_urls, data_list)
-    Kesekjenan()
-
 
 # Tambahkan menu lainnya sesuai kebutuhan
