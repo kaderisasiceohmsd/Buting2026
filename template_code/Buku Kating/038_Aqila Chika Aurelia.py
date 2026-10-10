@@ -112,13 +112,13 @@ if menu == "Kesekjenan":
             {
                 "nama": "Ginda Fajar Riadi Marpaung",
                 "nim": "123450103",
-                "umur": "22",
-                "asal":"Batam",
-                "alamat": "Kesektariatan HMSD",
-                "hobbi": "Push IMO",
-                "sosmed": "@jars_mrp",
-                "kesan": "Saya melihat bang Fajar sebagai sosok pemimpin yang berwibawa dan tegas.  ",  
-                "pesan":"Semoga bang Fajar selalu diberi kelancaran dalam menjalankan amanah dan tetap semangat dalam mengerjakan Tugas Akhirnya!! "# 1
+                "umur": "18",
+                "asal":"Bekasi",
+                "alamat": "Gg.sakum",
+                "hobbi": "Mainn Bola, Belajar",
+                "sosmed": "@i",
+                "kesan": "Bang Ginda keren banget, time manageementnya bagus keren",  
+                "pesan":"semangat terus kuliahnya bang"# 1
             },
             {
                 "nama": "Muhammad Aqil Ramadhan",
@@ -128,8 +128,8 @@ if menu == "Kesekjenan":
                 "alamat": "Sekretariat HMSD",
                 "hobbi": "Dzikir",
                 "sosmed": "@muhammadaqil1111",
-                "kesan": "Bang Aqil orangnya baik, asik dan memberikan kesan yang positif selama saya berinteraksi dengan bang Aqil.",  
-                "pesan":"Semoga bang Aqil selalu diberikan kelancaran dalam menjalani perkuliahan dan tetap semangat dalam mengerjakan Tugas Akhirnya!"# 1
+                "kesan": "Bang Aqil orangnya baik banget, humble, dan ramah",  
+                "pesan":"semoga lancar kuliahnya bang!"# 2
             },
             {
                 "nama": "Efi Defiyati",
@@ -138,20 +138,31 @@ if menu == "Kesekjenan":
                 "asal":"Lampung Timur",
                 "alamat": "Airan",
                 "hobbi": "Membaca",
-                "sosmed": "@eefffiidefi",
-                "kesan": "Kak Efi orangnya ramah dan murah senyum.",  
-                "pesan":"Semoga kak Efi selalu diberikan kelancaran dan semangat dalam mengerjakan Tugas Akhirnya!!"# 1
+                "sosmed": "eeffiidefi",
+                "kesan": "Kakaknya baik banget",  
+                "pesan":"Semangat terus kak semoga lancar kuliahnya"# 3
             },
-           {
-                "nama": "Qois Olifio",
+            {
+                "nama": "Qois olifio",
                 "nim": "123450067",
                 "umur": "22",
                 "asal":"Batam",
-                "alamat": "Kota Baru",
-                "hobbi": "Mainin surat",
+                "alamat": "Kotabaru",
+                "hobbi": "mainin surat",
                 "sosmed": "@qoisolifio_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Bang qois keren banget bisa jadi bagian dari sekjen dan ramah juga orangnya",  
+                "pesan":"semoga kuliahnya lancar dan sukses selalu"# 4
+            },
+            {
+                "nama": "Luthfia Laila Rahmadhani",
+                "nim": "123450004",
+                "umur": "20",
+                "asal":"Bengkulu",
+                "alamat": "Airan",
+                "hobbi": "keliling balam",
+                "sosmed": "@luthhifiarmdhni",
+                "kesan": "Kak luthfia ramah dan baik banget",  
+                "pesan":"semoga sehat selalu dan semangat terus"# 5
             },
             {
                 "nama": "Hafsa Fazila Arradhi",
@@ -159,21 +170,10 @@ if menu == "Kesekjenan":
                 "umur": "21",
                 "asal":"Bandar Lampung",
                 "alamat": "Bandar Lampung",
-                "hobbi": "Bertemu Luluk",
+                "hobbi": "bertemu luluk",
                 "sosmed": "@hafsafazilahh",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
-            {
-                "nama": "Luthfia Laila Ramadhani",
-                "nim": "123450004",
-                "umur": "20",
-                "asal":"Bengkulu",
-                "alamat": "Airan",
-                "hobbi": "Keliling Balam",
-                "sosmed": "@luthhifiarmdhni",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "kakaknya cantik banget dan baik juga",  
+                "pesan":"semoga urusan perkuliahannya lancar ya kak!"# 6
             },
         ]
         display_images_with_data(gambar_urls, data_list)
@@ -182,12 +182,12 @@ if menu == "Kesekjenan":
 if menu == "Baleg":
     def baleg():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1m1cQkaJpDncqJCJvfOf5dVOuzJMqdan0",
-            "https://drive.google.com/uc?export=view&id=16-8EutSEIHVLuoxbcqpoh4dmPpIc_N5L",
-            "https://drive.google.com/uc?export=view&id=12mmvbhn_a3CNZBp2-C1CNtnOM5Za_pja",
-            "https://drive.google.com/uc?export=view&id=1hHcAzb2_cugwDJkKU4mVTVX7RfpvGPxU",
-            "https://drive.google.com/uc?export=view&id=1mPC9ZSdw6bZhOXTJXaEfnf0Yw-u8ngK6",
-            "https://drive.google.com/uc?export=view&id=1Y_tCuB9n0PNpex6mCtz-ch-LZTThztwv",
+           "https://drive.google.com/uc?export=view&id=1u-RH8Z2VgH0lz9DV42JSGxccA6rPLK7i",
+            "https://drive.google.com/uc?export=view&id=1hv50uvcjIaz-icXOrL1NFRJXmzNYvb9k",
+            "https://drive.google.com/uc?export=view&id=10EkDtDlWgtyDqGRTliitMHehOxdtAgP8",
+            "https://drive.google.com/uc?export=view&id=1r5v5UOSP7Au0lafHHG000oQgL8NzrPmL",
+            "https://drive.google.com/uc?export=view&id=176-ojVw5_L75IuyN1JnuunTsYRQESerh",
+            "https://drive.google.com/uc?export=view&id=1xScs4doDOIethYbxNoWkU73CSdSFkWBB",
         ]
         data_list = [
             {
