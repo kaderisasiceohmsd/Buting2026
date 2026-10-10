@@ -293,7 +293,7 @@ if menu == "Baleg":
         "hobbi": "Nyanyi, olahraga",
         "sosmed": "jeremia_hm",
         "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
+        "pesan": "semangat terus kuliahnya bang !!!"
     },
     {
         "nama": "Monica Patricia Tanjung",
