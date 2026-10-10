@@ -102,43 +102,80 @@ if menu == "Kesekjenan":
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1XVrHSuj9MdWm4xDvo1qHlRBo_iuzF6q6",
             "https://drive.google.com/uc?export=view&id=1_BgX-fzh2eRSelqbbPqCMqtY8agyYu-v",
-            "https://drive.google.com/uc?export=view&id=",
+            "https://drive.google.com/uc?export=view&id=18hajA2n1YVYJ6kTfN-kYOfLo-5DIxJ7m",
+            "https://drive.google.com/uc?export=view&id=1IdQ2MQ2XWhdvnXQbaY1txbJnIvCTuMVy",
+            "https://drive.google.com/uc?export=view&id=1yOTPHtGBYnlTDqwngS39rAWLjBO4ZJTR",
+            "https://drive.google.com/uc?export=view&id=1vjM1xKeYCPd5JWLnNXdQqlyy0UcomTtU",
         ]
         data_list = [
             {
                 "nama": "Ginda Fajar Riadi Marpaung",
-                "nim": "122450000",
-                "umur": "18",
-                "asal":"Bekasi",
-                "alamat": "Gg.sakum",
-                "hobbi": "Mainn Bola, Belajar",
-                "sosmed": "@i",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "nim": "123450103",
+                "umur": "22",
+                "asal": "Batam",
+                "alamat": "Sekretariat HMSD",
+                "hobbi": "Push Rank sampe IMO",
+                "sosmed": "@jars_mrp",
+                "kesan": "Abangnya baek banget sumpah",  
+                "pesan": "Semangat bang semoga bisa lulus dengan memuaskan"
             },
             {
-                "nama": "Kakak B",
-                "nim": "122450000",
-                "umur": "18",
-                "asal":"Bekasi",
-                "alamat": "Gg.sakum",
-                "hobbi": "Mainn Bola, Belajar",
-                "sosmed": "@i",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "nama": "Muhammad Aqil Ramadhan",
+                "nim": "123450046",
+                "umur": "22",
+                "asal": "Bangkinang",
+                "alamat": "Sekretariat HMSD",
+                "hobbi": "Dzikir",
+                "sosmed": "@muhammadaqil1111",
+                "kesan": "Abangnya asik, suka ngelawak juga wkwk",  
+                "pesan": "Semangat terus bang"
             },
             {
-                "nama": "Kakak CCc",
-                "nim": "122450000",
-                "umur": "18",
-                "asal":"Bekasi",
-                "alamat": "Gg.sakum",
-                "hobbi": "Mainn Bola, Belajar",
-                "sosmed": "@i",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "nama": "Efi Defiyati",
+                "nim": "123450005",
+                "umur": "21",
+                "asal": "Lampung Timur",
+                "alamat": "Airan",
+                "hobbi": "Membaca",
+                "sosmed": "@eeffiidefi",
+                "kesan": "Kakak nya seruuu heheh",  
+                "pesan": "Semangat terus ya kaaa"
             },
+            {
+                "nama": "Qois Olifio",
+                "nim": "123450067",
+                "umur": "22",
+                "asal": "Batam",
+                "alamat": "Kota Baru",
+                "hobbi": "Mainin Surat",
+                "sosmed": "@qoisolifio_",
+                "kesan": "Abangnya keliatan pendiem wkwk, tapi seru koo",  
+                "pesan": "Semangat bang, ajarin jadi sekre sih bang wkkw"
+            },
+            {
+                "nama": "Hafsa Fazila Arradhi",
+                "nim": "123450079",
+                "umur": "21",
+                "asal": "Bandar Lampung",
+                "alamat": "Bandar Lampung",
+                "hobbi": "Berenang",
+                "sosmed": "@hafsafazilaa",
+                "kesan": "Kakaknya asik bener hehe",  
+                "pesan": "Semangat ya kaaaaa"
+            },
+            {
+                "nama": "Luthfia Laila Ramadhani",
+                "nim": "123450004",
+                "umur": "20",
+                "asal": "Bengkulu",
+                "alamat": "Airan",
+                "hobbi": "Bertemu Pak Tirta",
+                "sosmed": "@luthfiaarmdhni",
+                "kesan": "Kakanya keliatan pendiem heheh",  
+                "pesan": "Semangat terus kaaaa"
+            }
         ]
+        
         display_images_with_data(gambar_urls, data_list)
     Kesekjenan()
 
