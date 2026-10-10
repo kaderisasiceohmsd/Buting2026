@@ -39,9 +39,9 @@ def streamlit_menu():
         orientation="horizontal",
         styles={
             "container": {"padding": "0!important", "background-color": "#fafafa"},
-            "icon": {"color": "black", "font-size": "19px"},
+            "icon": {"color": "black", "font-size": "15px"},
             "nav-link": {
-                "font-size": "15px",
+                "font-size": "13px",
                 "text-align": "left",
                 "margin": "0px",
                 "--hover-color": "#eee",
