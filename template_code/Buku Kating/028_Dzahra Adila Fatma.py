@@ -269,18 +269,18 @@ elif menu == "Departemen Internal":
 
 elif menu == "Departemen SSD":
     gambar_urls = [
+        "https://drive.google.com/uc?export=view&id=1ERRnfaaLA4hmMMkfzRasqDTcJSM6CUrI",
+                "https://drive.google.com/uc?export=view&id=1IEiVXggdT_PQUJ0Z1-eR6ADv8oLbJ9mw",
+        "https://drive.google.com/uc?export=view&id=1gmAlqbm_PZ3ajz10X_D2RdfxEDbbl7Gc",
+        "https://drive.google.com/uc?export=view&id=1GIQ8OOfiuSVKG2FbPOJPX5lB3oJQ0WiP",
+        "https://drive.google.com/uc?export=view&id=1B9xSMc3EbXXvcQEi4UhpB6xhGP1vNuSa",
+        "https://drive.google.com/uc?export=view&id=1T7mrGt-q1LwUlFxP1oHMmMVV8lkmKOyo",
+        "https://drive.google.com/uc?export=view&id=1yENXWeEJd1gYl0ztk0ZaKAliNk-C0cMs",
+        "https://drive.google.com/uc?export=view&id=1J7Kq1c0WUQFg-vrhvL_LOY4-s7HdQDTY",
+        "https://drive.google.com/uc?export=view&id=1VewqNE3HsmcL2oJczg7gKc28ru3K-Rbk",
         "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-                "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
         "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-        "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-        "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-        "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-        "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-        "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-        "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-        "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-        "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-        "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"
+        "https://drive.google.com/uc?export=view&id=1W3SHZAYr2Ze8i30J03TwrpezCUhwnODB"
 
                   ]
     data_list = [
