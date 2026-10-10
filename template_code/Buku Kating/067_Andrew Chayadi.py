@@ -342,8 +342,8 @@ if menu == "Baleg":
         display_images_with_data(gambar_urls, data_list)
     Baleg()
 
-if menu == "Badan Kesenatoran":
-    def Badan Kesenatoran():
+if menu == "Senator":
+    def Senator():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1aZHCXplW5SpgmlWsgEJ9CMz-Cc63zP72",
             "https://drive.google.com/uc?export=view&id=1s4Y_J-WUNOKKX-T3d-K_4JN9xKSiD9PP",
