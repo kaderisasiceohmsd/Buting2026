@@ -21,7 +21,7 @@ def streamlit_menu():
             "Departemen Internal",
             "Departemen SSD",
             "Departemen Medkraf",
-			"Departemen Minat dan Bakat",
+			"Departemen Minbak",
         ],
         icons=[
             "people-fill",
