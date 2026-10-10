@@ -165,7 +165,7 @@ if menu == "Senator":
             "https://drive.google.com/uc?export=view&id=12Eqm2SqaP0OTWDw9hsrT9Vsae_vczVr7",
             "https://drive.google.com/uc?export=view&id=1C39RbgMRYKF7YyVwAU7dnuS3_sV1I4aY",
         ]
-        data_list = ambil_data_sps("Senator")
+        data_list = ambil_data_sps("Bason")
 
         display_images_with_data(gambar_urls, data_list)
     senator()
@@ -187,7 +187,7 @@ if menu == "Departemen SSD":
             "https://drive.google.com/uc?export=view&id=1eVo1OsDWrQzAJtAYsGilcCghNeCm1fnn",
            
         ]
-        data_list = ambil_data_sps("Departemen SSD")
+        data_list = ambil_data_sps("SSD")
 
         display_images_with_data(gambar_urls, data_list)
     departemen_ssd()
@@ -213,7 +213,7 @@ if menu == "Departemen Internal":
             "https://drive.google.com/uc?export=view&id=1orIhH1ExbV85W60Yjnvfv88uY2b7vd3k",
         
         ]
-        data_list = ambil_data_sps("Departemen Internal")
+        data_list = ambil_data_sps("Internal")
 
         display_images_with_data(gambar_urls, data_list)
     departemen_internal()
@@ -244,9 +244,34 @@ if menu == "Departemen Eksternal":
             "https://drive.google.com/uc?export=view&id=1oB8HBDZj57PyD6gRBjHYgszej1g3oR-E", 
             "https://drive.google.com/uc?export=view&id=1gkSBvxEVWhMe90eIYxqR0ShhzjyyqJq0",       
         ]
-        data_list = ambil_data_sps("Departemen Eksternal")
+        data_list = ambil_data_sps("Eksternal")
 
         display_images_with_data(gambar_urls, data_list)
     departemen_eksternal()
 
-    
+if menu == "Departemen PSDA":
+    def departemen_psdA():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", #1
+            "https://drive.google.com/uc?export=view&id=13PRv912pYOsCity9_NqlU04C91jd6IHc", 
+            "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", #1
+            "https://drive.google.com/uc?export=view&id=1v8enW6GF5XHH3HZ_wV-H_IBdsL9WV_dF",
+            "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", #1
+            "https://drive.google.com/uc?export=view&id=1ASETnJMdA3SNtN9pCyMkK1EIilfoCOqi",
+            "https://drive.google.com/uc?export=view&id=1RcCHWQnwu1t5dODN00WjphOUWiMyb7PA", 
+            "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", #1
+            "https://drive.google.com/uc?export=view&id=1FGdkU6AzO01OUuUE9fp1zN4e3snh6eL7",
+            "https://drive.google.com/uc?export=view&id=1SzTeSQZGn0TLcssF8C73ztxDCNWXNRbg",
+            "https://drive.google.com/uc?export=view&id=1sVEOIJ7v39hCx_3FamoOzdfEXduyYOoV",
+            "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", #1
+            "https://drive.google.com/uc?export=view&id=1gx9vw3z9NYj-x98dk9wBsN6oNCetSYij",
+            "https://drive.google.com/uc?export=view&id=1HurOx8K8Z9Fnm5_YEeFf3ibsO1StVA9X",
+            "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", #1
+            "https://drive.google.com/uc?export=view&id=13Oj7dp-5ieDw6lYI9dBFURRV9mT74rrd",
+            "https://drive.google.com/uc?export=view&id=1rweRGiglErN29P3-wybQEJnzEr_l9k_f",
+        
+        ]
+        data_list = ambil_data_sps("PSDA")
+
+        display_images_with_data(gambar_urls, data_list)
+    departemen_psdA()
