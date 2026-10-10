@@ -138,7 +138,7 @@ menu = streamlit_menu()
 
 if menu == "Kesekjenan":
     gambar_urls = [
-        "https://drive.google.com/uc?export=view&id=1RxaKvza2Df7IJIT4jjnfBndu0VftSy_h",
+        "https://drive.google.com/uc?export=view&id=1xqeKQ3AAq5nB5b1o_qA8iETjSM0pW6Yy",
         "https://drive.google.com/uc?export=view&id=1xulHbLUSVeQUQ0v2VPziDbAZG-IX6e8s",
          "https://drive.google.com/uc?export=view&id=1v1EwOXYZHrKfEZsUg0sfwA2U3oHbJZZG",
                 "https://drive.google.com/uc?export=view&id=1lhpHZXDOh1bGlPQltgov8wRWwMjQp8at",
