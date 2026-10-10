@@ -483,7 +483,7 @@ elif menu == "Departemen Minbak":
                 "hobbi": "Yoga",
                 "sosmed": "@bryantel_",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "pesan":"semangat terus kuliahnya kakak !!"# 1
             },
             {
                 "nama": "Indah Julia Mawar Pratiwi",
