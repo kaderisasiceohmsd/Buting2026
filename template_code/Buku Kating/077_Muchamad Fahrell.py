@@ -226,6 +226,23 @@ if menu == "Kesekjenan":
     kesekjenan()
 
 ]
+if menu == "Baleg":
+    def Baleg():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1GEVx0r0hwY_jXQP3pD4X-uwE0DMZebcI",
+            "https://drive.google.com/uc?export=view&id=1fUMJq1YXVoroSqWkLIL1wXO73H1eEvDJ",
+            "https://drive.google.com/uc?export=view&id=1Qabc-2O6m8ku8oPNsJSFQToiJh6rekMP",
+            "https://drive.google.com/uc?export=view&id=1eJxqhSlWd-vGqvsvbc9KPLPVMHCOK6Fp",
+            "https://drive.google.com/uc?export=view&id=173RgfXc3ezh7t14WsWPd49Eddybzjzx0",
+            "https://drive.google.com/uc?export=view&id=1lpeaME0D5oCgx78rV3HNcAOdsu1p1dXs",
+            "https://drive.google.com/uc?export=view&id=1p4Rk4TqyvpxkE5RrXRIzg6fWGzOsQ0qj",
+            "https://drive.google.com/uc?export=view&id=1hPqAx0Th8801yxRCCmmuQ_40z1lBZbBw",
+            "https://drive.google.com/uc?export=view&id=17hJfFqdJ0J9e2fvMAH-I54-nD0WZJ9fF",
+            "https://drive.google.com/uc?export=view&id=112PQJYl9BJ8q5ORQYnSRGyH8n9l32F8E",
+            "https://drive.google.com/uc?export=view&id=1NkMl76Maz1x0FhMtcM1IBmT2SrfIroUj",
+            "https://drive.google.com/uc?export=view&id=1w1Pfz_aCH3SSyhmhkDnHJw02PurUwtoH"
+            
+        ]
         data_list = [
             {
                 "nama": "Ridho Benedictus Togi Manik",
@@ -323,17 +340,6 @@ if menu == "Kesekjenan":
                 "alamat": "Teluk",
                 "hobbi": "Nyanyi, olahraga",
                 "sosmed": "@jeremia_hm",
-                "kesan": "...",  
-                "pesan":"..."# 1
-            },
-            {
-                "nama": "Monica Patricia Tanjung",
-                "nim": "123450073",
-                "umur": "21",
-                "asal": "Jakarta Barat",
-                "alamat": "Kotabaru",
-                "hobbi": "Lari",
-                "sosmed": "@monica_tjg",
                 "kesan": "...",  
                 "pesan":"..."# 1
             },
