@@ -199,7 +199,6 @@ def load_image(url):
         return None
 
 
-@st.cache_data
 def display_images_with_data(gambar_urls, data_list, show_finished_message=True):
     images = []
     for i, url in enumerate(gambar_urls):
@@ -343,25 +342,34 @@ def get_divisions_for_dept(menu_label):
 PEMILIK = "Rafli"  # <-- GANTI SESUAI NAMA PEMILIK BUKU KATING INI
 
 @st.cache_data
-def load_dinamis_data():
-    dinamis_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "Data/data_dinamis/rafli.json")
+def load_dinamis_data(pemilik_nama):
+    dinamis_filename = pemilik_nama.lower().strip().replace(" ", "_") + ".json"
+    dinamis_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "Data", "data_dinamis", dinamis_filename)
+    if not os.path.exists(dinamis_path):
+        # Fallback case-sensitivity
+        dinamis_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "Data", "Data_dinamis", dinamis_filename)
+        if not os.path.exists(dinamis_path):
+            return {}
     with open(dinamis_path, "r", encoding="utf-8") as f:
         all_data = json.load(f)
-    # Cari data milik pemilik ini, buat lookup dict: id_kating -> {foto, kesan, pesan}
+    # Cari data milik pemilik ini, buat lookup dict: nama_kating / id / nim -> item
     for entry in all_data:
-        if entry.get("pemilik", "").lower() == PEMILIK.lower():
-            return {item["id_kating"]: item for item in entry.get("data", [])}
+        if entry.get("pemilik", "").strip().lower() == pemilik_nama.strip().lower():
+            return {str(item.get("nama_kating", "")).strip().lower(): item for item in entry.get("data", [])}
+    # Jika pemilik tidak persis cocok tetapi hanya ada 1 entry di file
+    if len(all_data) == 1 and "data" in all_data[0]:
+        return {str(item.get("nama_kating", "")).strip().lower(): item for item in all_data[0].get("data", [])}
     return {}
 
-dinamis_map = load_dinamis_data()
+dinamis_map = load_dinamis_data(PEMILIK)
 
 
 def build_data_for_dept(members):
     """
     Konversi data JSON ke format gambar_urls & data_list
     yang sesuai dengan display_images_with_data().
-    Foto, kesan, dan pesan diambil dari data_dinamis_buting.json
-    berdasarkan id_kating. Jika foto belum ada, pakai foto default.
+    Foto, kesan, dan pesan diambil dari json dinamis
+    berdasarkan nama kating. Jika foto belum ada, pakai foto default.
     """
     default_foto = "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"
 
@@ -369,8 +377,20 @@ def build_data_for_dept(members):
     data_list = []
 
     for m in members:
-        kating_id = m.get("id")
-        dinamis = dinamis_map.get(kating_id, {})
+        nama_asli = m.get("nama", "")
+        # Lookup dinamis berdasarkan nama kating (case insensitive)
+        nama_lower = nama_asli.lower().strip()
+        mid = str(m.get('id', ''))
+        dinamis = dinamis_map.get(nama_lower)
+        if not dinamis and mid in dinamis_map:
+            dinamis = dinamis_map[mid]
+        if not dinamis:
+            for k_name, k_data in dinamis_map.items():
+                if len(k_name) >= 5 and (k_name in nama_lower or nama_lower.startswith(k_name)):
+                    dinamis = k_data
+                    break
+        if not dinamis:
+            dinamis = {}
 
         # Gunakan foto massal jika tersedia, fallback ke foto default
         gdrive_id = dinamis.get("foto_massal_gdrive_id", "")
@@ -384,7 +404,7 @@ def build_data_for_dept(members):
         hobi_str = ", ".join(hobi_list) if hobi_list else "-"
 
         data_list.append({
-            "nama": m.get("nama", "") or f"Anggota #{kating_id}",
+            "nama": nama_asli or "-",
             "jabatan": m.get("jabatan", "") or "-",
             "divisi": m.get("divisi", "") or "-",
             "nim": m.get("nim", "") or "-",
