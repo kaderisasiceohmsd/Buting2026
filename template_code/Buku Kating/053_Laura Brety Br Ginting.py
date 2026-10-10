@@ -100,7 +100,7 @@ if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1Gz29g4ZheL2ptfHtiOuOHzkT2OcN7xdX",
-            "https://drive.google.com/uc?export=view&id=1_7jRzz4UgK6A6PRrUnk7ksbANAyqdyvg",
+            "https://drive.google.com/uc?export=view&id=1oOokKC-9HrvMtwhMDfZ845Er7utXkDv6",
             "https://drive.google.com/uc?export=view&id=1q-UAXLn8KyzeeOw5X6LLcvK54uL0MqdW",
             "https://drive.google.com/uc?export=view&id=1CZRErWQKlSJw6-c3apdM1bok_bMvRJC8",
             "https://drive.google.com/uc?export=view&id=11U24HDdKaxvWlOVtrJ2so7OcOXs8ifyF",
