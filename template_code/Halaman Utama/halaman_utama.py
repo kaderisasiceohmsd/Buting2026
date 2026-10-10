@@ -106,7 +106,7 @@ if menu == "Home":
             unsafe_allow_html=True,
         )
         st.write(""" """)
-        foto_kelompok = "https://drive.google.com/uc?export=view&id=1zwDzbQycF6FUnJdc5hM6TK-BnZc9SnC8"
+        foto_kelompok = "https://drive.google.com/uc?export=view&id=10p8YxzbT4_o5C3sIM5f_SQ3eq4Gx_Dku"
         layout(foto_kelompok)
         st.markdown(
             """<div style="text-align: justify;">Ganti ya deskripsinya!!!</div>""",
