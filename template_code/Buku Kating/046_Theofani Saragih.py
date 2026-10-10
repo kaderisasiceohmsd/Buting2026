@@ -21,6 +21,7 @@ def streamlit_menu():
             "Departemen Internal",
             "Departemen SSD",
             "Departemen Medkraf",
+			"Departemen Minat dan Bakat",
         ],
         icons=[
             "people-fill",
@@ -32,6 +33,7 @@ def streamlit_menu():
             "people-fill",
             "people-fill",
             "people-fill",
+			"people-fill",
         ],
         default_index=0,
         orientation="horizontal",
@@ -632,7 +634,7 @@ if menu == "Departemen SSD":
 
 
 # Minat dan Bakat
-if menu == "Departemen Minbak":
+if menu == "Departemen Minat dan Bakat":
     def minbak():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1NyJ_4DBVum_5PPU2FMtrgDXzxO4rQd5p",
