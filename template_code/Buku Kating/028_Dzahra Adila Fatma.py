@@ -138,12 +138,12 @@ menu = streamlit_menu()
 
 if menu == "Kesekjenan":
     gambar_urls = [
-        "https://drive.google.com/uc?export=view&id=1RxaKvza2Df7IJIT4jjnfBndu0VftSy_h",
-        "https://drive.google.com/uc?export=view&id=1xulHbLUSVeQUQ0v2VPziDbAZG-IX6e8s",
-         "https://drive.google.com/uc?export=view&id=1v1EwOXYZHrKfEZsUg0sfwA2U3oHbJZZG",
-                "https://drive.google.com/uc?export=view&id=1lhpHZXDOh1bGlPQltgov8wRWwMjQp8at",
-                "https://drive.google.com/uc?export=view&id=1E2XjjKenQj15IDy5M2agb_KT3bPdTbHb",
-                "https://drive.google.com/uc?export=view&id=1MRiAd3b4-SHNBRkS2LJIo0vwVfGG7u7U"
+        "https://drive.google.com/uc?export=view&id=1bHJycPWekuNo4NTeBkwAd01NHnXCNiv7",
+        "https://drive.google.com/uc?export=view&id=10xTGX5x5WLsi8NB5gMtuFLVGESC95VQ9",
+         "https://drive.google.com/uc?export=view&id=1OhUSv5lsAF5HieksWaBsblEzK3StcDI7",
+                "https://drive.google.com/uc?export=view&id=1OLnmPM3f1ztfBq21DtQdMsXRc6PfiHa3",
+                "https://drive.google.com/uc?export=view&id=1Y5Gx9FpRu6gAu-MdWQqI1w8htvMialqe",
+                "https://drive.google.com/uc?export=view&id=1I1UyEmXuqU08haxg66acTm_a82WvlxCc"
     ]
     data_list = [
         {"nama": "Ginda Fajar Riadi Marpaung", "nim": "123450103", "umur": "22", "asal": "Batam", "alamat": "Kesekretariat HMSD", "hobbi": "Push IMO", "sosmed": "@jars_mrp", "kesan": "Abangnya seruu, dlu pernah jadi kadiv op pas natal SD25 bisa diajak serius dan bercanda.", "pesan": "Semangat dan sukses selalu bangg!!"},
@@ -165,9 +165,9 @@ elif menu == "Baleg":
 
 elif menu == "Senator":
     gambar_urls = [
-        "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-                "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-        "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+        "https://drive.google.com/uc?export=view&id=1iwQT9-8ZVR2UA7YuUBSteXFBrqSQFNSq",
+                "https://drive.google.com/uc?export=view&id=1Ro12i6tMYvQPqpEPA3ywc6uMhrhO4vCx",
+        "https://drive.google.com/uc?export=view&id=1hl-9hUW838NaebEADDOADkaiOEUJHt_N",
         "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
         "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
         "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
