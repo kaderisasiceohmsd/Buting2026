@@ -101,12 +101,12 @@ menu = streamlit_menu()
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
-            "https://drive.google.com/drive/folders/1by3pHPLKnA9DSMcUAHBVwT4g7Kc28tCb",
-            "https://drive.google.com/drive/folders/1by3pHPLKnA9DSMcUAHBVwT4g7Kc28tCb",
-            "https://drive.google.com/drive/folders/1by3pHPLKnA9DSMcUAHBVwT4g7Kc28tCb",
-            "https://drive.google.com/drive/folders/1by3pHPLKnA9DSMcUAHBVwT4g7Kc28tCb",
-            "https://drive.google.com/drive/folders/1by3pHPLKnA9DSMcUAHBVwT4g7Kc28tCb",
-            "https://drive.google.com/drive/folders/1by3pHPLKnA9DSMcUAHBVwT4g7Kc28tCb",
+            "https://drive.google.com/uc?export=view&id=ID_FOTO_GINDA",
+            "https://drive.google.com/uc?export=view&id=ID_FOTO_AQIL",
+            "https://drive.google.com/uc?export=view&id=ID_FOTO_EFI",
+            "https://drive.google.com/uc?export=view&id=ID_FOTO_QOIS",
+            "https://drive.google.com/uc?export=view&id=ID_FOTO_HAFSA",
+            "https://drive.google.com/uc?export=view&id=ID_FOTO_LUTHFIA",
         ]
         data_list = [
             {
@@ -318,169 +318,6 @@ elif menu == "Senator":
         display_images_with_data(gambar_urls, data_list)
     senator()
 
-elif menu == "Departemen SSD":
-    def ssd():
-        gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-        ]
-        data_list = [
-            {
-                "Nama": "Ihsan Maulana Yusuf",
-                "Jabatan": "Kepala Departemen",
-                "Nim": "123450110",
-                "Umur": "21",
-                "Asal": "Sumatera Barat",
-                "Alamat": "Belwis",
-                "Hobbi": "Mencari dan membaca jurnal, 2 minggu mewawancarai anak kader angkatan 25 Datavora tercinta, mencari pak Luki",
-                "Sosmed": "@ihsan.myusuf",
-                "Kesan": "Abangnya lucu dan asik",
-                "Pesan": "Semangat skripsinya lancar bang"
-            },
-            {
-                "Nama": "Hanifah Inaya Sani",
-                "Jabatan": "Sekretaris Departemen",
-                "Nim": "123450123",
-                "Umur": "20",
-                "Asal": "Bandar Lampung",
-                "Alamat": "Bandar Lampung",
-                "Hobbi": "Memasak",
-                "Sosmed": "@_inayasani",
-                "Kesan": "Kakaknya baik dan ramah",
-                "Pesan": "Sehat selalu, semangat terus kak"
-            },
-            {
-                "Nama": "Afifah Fauziah",
-                "Jabatan": "Kepala Divisi Kemitraan",
-                "Nim": "123450002",
-                "Umur": "19",
-                "Asal": "Depok",
-                "Alamat": "Belakang PB",
-                "Hobbi": "Ngumpulin data sama nonton Marvel",
-                "Sosmed": "@fifah.zy",
-                "Kesan": "Kakaknya baik dan asik",
-                "Pesan": "Semangat terus ya kak"
-            },
-            {
-                "Nama": "Hasan Nur Ramadhan",
-                "Jabatan": "Staff Divisi Kemitraan",
-                "Nim": "124550012",
-                "Umur": "20",
-                "Asal": "Lampung Tengah",
-                "Alamat": "Sebelah kost Ayake",
-                "Hobbi": "Scroll Facebook",
-                "Sosmed": "@hasan.ramadhan08",
-                "Kesan": "Abangnya baik dan santai",
-                "Pesan": "Semoga sukses bang"
-            },
-            {
-                "Nama": "Layina Ropiqo",
-                "Jabatan": "Staff Divisi Kemitraan",
-                "Nim": "124550016",
-                "Umur": "20",
-                "Asal": "Bandar Lampung",
-                "Alamat": "Bandar Lampung",
-                "Hobbi": "Menonton Film",
-                "Sosmed": "@lay.inr_",
-                "Kesan": "Kakaknya ramah dan baik",
-                "Pesan": "Semangat terus ya kak"
-            },
-            {
-                "Nama": "Moch. Iqbal Az-Zahir",
-                "Jabatan": "Staff Divisi Kemitraan",
-                "Nim": "124450052",
-                "Umur": "20",
-                "Asal": "Bekasi",
-                "Alamat": "Natar",
-                "Hobbi": "Nonton Drakor",
-                "Sosmed": "@iqbalazzahir_",
-                "Kesan": "Abangnya kalem dan baik",
-                "Pesan": "Sehat terus bang"
-            },
-            {
-                "Nama": "Talitha Justine",
-                "Jabatan": "Staff Divisi Kemitraan",
-                "Nim": "124450076",
-                "Umur": "19",
-                "Asal": "Padang, Sumatera Barat",
-                "Alamat": "Pemda",
-                "Hobbi": "Nonton",
-                "Sosmed": "@talljtine_",
-                "Kesan": "Kakaknya ramah dan baik",
-                "Pesan": "Semangat terus kak"
-            },
-            {
-                "Nama": "Anadia Carana",
-                "Jabatan": "Kepala Divisi Kewirausahaan",
-                "Nim": "123450019",
-                "Umur": "21",
-                "Asal": "Palembang",
-                "Alamat": "Kost The Icon",
-                "Hobbi": "Belajar",
-                "Sosmed": "@anadiacrn_",
-                "Kesan": "Kakaknya pinter dan ramah",
-                "Pesan": "Sukses terus kak, semoga kuliahnya lancar"
-            },
-            {
-                "Nama": "Abdillah Fikri Al Pome",
-                "Jabatan": "Staff Ahli Divisi Kewirausahaan",
-                "Nim": "123450062",
-                "Umur": "21",
-                "Asal": "Oku, Sumatera Selatan",
-                "Alamat": "Airan",
-                "Hobbi": "Godain cewe bang Homey",
-                "Sosmed": "@pomest_",
-                "Kesan": "Abangnya lucu, asik dan seru",
-                "Pesan": "Semangat terus bang, semoga skripsinya lancar"
-            },
-            {
-                "Nama": "Afdhal Rahmad Setiawan",
-                "Jabatan": "Staff Divisi Kewirausahaan",
-                "Nim": "124550008",
-                "Umur": "20",
-                "Asal": "Sumatera Barat",
-                "Alamat": "Samping Kost Rafli",
-                "Hobbi": "Fishing",
-                "Sosmed": "@dhal_setiawan",
-                "Kesan": "Abangnya baik dan asik",
-                "Pesan": "Semoga sehat terus bang"
-            },
-            {
-                "Nama": "Anggun Nita",
-                "Jabatan": "Staff Divisi Kewirausahaan",
-                "Nim": "124550009",
-                "Umur": "20",
-                "Asal": "Lampung Utara",
-                "Alamat": "Belwis",
-                "Hobbi": "Menonton Kartun",
-                "Sosmed": "@anggunnitaaa_",
-                "Kesan": "Kakaknya ramah dan baik",
-                "Pesan": "Sehat selalu dan semangat terus kak"
-            },
-            {
-                "Nama": "Della Anisa Fitri",
-                "Jabatan": "Staff Divisi Kewirausahaan",
-                "Nim": "124450095",
-                "Umur": "20",
-                "Asal": "Lampung Timur",
-                "Alamat": "Margo Lestari",
-                "Hobbi": "Lagi suka olahraga",
-                "Sosmed": "@dellaansaftr",
-                "Kesan": "Kakaknya baik dan ramah",
-                "Pesan": "Sehat selalu kak"
-            },
-        ]
-        display_images_with_data(gambar_urls, data_list)
-    ssd()
-
-# Tambahkan menu lainnya sesuai kebutuhan
+if menu == "Kesekjenan":
+    kesekjenan()
+    
