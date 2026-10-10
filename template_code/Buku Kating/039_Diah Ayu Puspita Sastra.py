@@ -41,7 +41,7 @@ def streamlit_menu():
             "container": {"padding": "0!important", "background-color": "#fafafa"},
             "icon": {"color": "black", "font-size": "19px"},
             "nav-link": {
-                "font-size": "15px",
+                "font-size": "13px",
                 "text-align": "left",
                 "margin": "0px",
                 "--hover-color": "#eee",
