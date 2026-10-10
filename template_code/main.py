@@ -29,7 +29,7 @@ if st.session_state.pindah:
     pg = st.navigation(
         {
             "Halaman Utama": [Homepage],
-            "Buku Kating": [Mahasiswa1],
+            "Buku Kating": [Mahasiswa1, Mahasiswa2],
             "Try Me !!": [KREASI, KREASII],
         }
     )
