@@ -111,7 +111,7 @@ if menu == "Home":
             unsafe_allow_html=True,
         )
         st.write(""" """)
-        foto_kelompok = "https://drive.google.com/uc?export=view&id=1X8ixiPEye7AhBVRrl-Qm5dJ2amaSB3Y5"
+        foto_kelompok = "https://drive.google.com/uc?export=view&id=1zwDzbQycF6FUnJdc5hM6TK-BnZc9SnC8"
         layout(foto_kelompok)
         st.markdown(
             """<div style="text-align: justify;">Testing Buku Kating Jacobi</div>""",
