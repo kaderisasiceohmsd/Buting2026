@@ -349,16 +349,16 @@ if menu == "Badan Legislatif":
 if menu == "Badan Kesenatoran":
     def Bason():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1aMv9qlfsOuyoPiS2R8NTcgAxozaNZqou",
-            "https://drive.google.com/uc?export=view&id=1UqjrZcNLpl09Tz_nF4TAHmhMpYAhXKtz",
-            "https://drive.google.com/uc?export=view&id=1hn4PgTaL24skiwubJiRXN8FMc_9vrKno",
-            "https://drive.google.com/uc?export=view&id=17d-nP_G08HsSbs60e_Z7fwzLlsQ38dA2",
-            "https://drive.google.com/uc?export=view&id=1k2DniopsMXjCT6-kWZOVtWyeb2l9drGn",    
-            "https://drive.google.com/uc?export=view&id=18r-fmfLgTw20T_3VrkT5S81c57TBtZy3",
-            "https://drive.google.com/uc?export=view&id=1X1f9zdjDGzs8bxpmaAyerdTKjY3fQN7g",
-            "https://drive.google.com/uc?export=view&id=1idD0yxRZ26xBhd2WjUYvs9moCSU0yEAj",
-            "https://drive.google.com/uc?export=view&id=1z6mzgHPVOaHUuHgn2NFf5QtgvIhdqmfk",
-            "https://drive.google.com/uc?export=view&id=1Zl7FrDBs1q_1u5ETnETkn5J25Ra5Lrdq",
+            "https://drive.google.com/uc?export=view&id=1DB2rHAmkffUqkrya8F8oZcQ5ky-E7IpU",
+            "https://drive.google.com/uc?export=view&id=1A9TvLPFQtnaq0BzwKE6JVH1XeyX7bgp-",
+            "https://drive.google.com/uc?export=view&id=1OJ7DriS--Ewwl3ZyG0xt4sMTC5quS4r-",
+            "https://drive.google.com/uc?export=view&id=1Tybx2D5I_98OnxxCWinZnjk0b8-CO7S5",
+            "https://drive.google.com/uc?export=view&id=1eoPRNOiqrHN13VNiao9jjQ0IuEqrIguS",    
+            "https://drive.google.com/uc?export=view&id=1LNwmAbHuLnCXLpEq8wxWNh40Sz-rLBCA",
+            "https://drive.google.com/uc?export=view&id=1CI2P4dAFMDPRsrYErYKJPZP330WA3ORF",
+            "https://drive.google.com/uc?export=view&id=1qOmHUqzqldal4GPoOGrFKMXIgXoU_yEm",
+            "https://drive.google.com/uc?export=view&id=1dlDTw7hOo-XTSc1X94HK97YtOcmFutm5",
+            "https://drive.google.com/uc?export=view&id=1sLE-dVR8G7XK4_y3fAEeF4QfK2BydGKT",
         ]
         data_list = [
             {
