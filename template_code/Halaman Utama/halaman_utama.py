@@ -37,7 +37,6 @@ def display_images_with_data(gambar_urls, data_list):
 
 
 # JANGAN DIUBAH
-
 st.markdown(
     """
     <div style='text-align: center;'>
@@ -53,12 +52,12 @@ url = "https://drive.google.com/uc?export=view&id=12cQ4T8NkVvVPVNX6zBQC4sviFcc4c
 url1 = "https://drive.google.com/uc?export=view&id=12RBvQdMiqqqph-Q1QqLb0zvvIPnBjCYb"
 
 
-def layout(url):
+def layout(img_url):
     col1, col2, col3 = st.columns([1, 2, 1])  # Menggunakan kolom dengan rasio 1:2:1
     with col1:
         st.write("")  # Menyisakan kolom kosong
     with col2:
-        st.image(load_image(url), use_container_width="True", width=350)
+        st.image(load_image(img_url), use_container_width=True, width=350)
     with col3:
         st.write("")  # Menyisakan kolom kosong
 
@@ -99,15 +98,14 @@ if menu == "Home":
             unsafe_allow_html=True,
         )
         st.markdown(
-            "<h1 class='centered-title'>Deskripsi Kelompok</h1>", unsafe_allow_html=True
+            "<h1 class='centered-title'>Hola, welcome to GreedyCuwiKuki!</h1>", unsafe_allow_html=True
         )
         st.markdown(
-            """<div style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                    laborum.</div>""",
+            """<div style="text-align: justify;">Satu tim dengan satu visi: Pantang pulang sebelum selesai, pantang menyerah sebelum optimal! 
+            Kami anggota Greedy menganut sifat greedy yaitu selalu haus akan proses belajar dan eksplorasi. Di setiap langkah, kami selalu cari cara terbaik 
+            untuk berkembang bersama!
+             
+            Greedy, Grab the best, Reach  the TOP!""",
             unsafe_allow_html=True,
         )
         st.write(""" """)
@@ -200,5 +198,3 @@ elif menu == "About Us":
             },
         ]
         display_images_with_data(gambar_urls, data_list)
-
-    about_page()
