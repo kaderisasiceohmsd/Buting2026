@@ -3,6 +3,7 @@ from streamlit_option_menu import option_menu
 import requests
 from PIL import Image, ImageOps
 from io import BytesIO
+import pandas as pd
 
 st.markdown("""<style>.centered-title {text-align: center;}</style>""",unsafe_allow_html=True)
 st.markdown("<h1 class='centered-title'>BUKU KATING</h1>", unsafe_allow_html=True)
@@ -87,7 +88,7 @@ def display_images_with_data(gambar_urls, data_list):
             st.write(f"Umur: {data_list[i]['umur']}")
             st.write(f"Asal: {data_list[i]['asal']}")
             st.write(f"Alamat: {data_list[i]['alamat']}")
-            st.write(f"Hobbi: {data_list[i]['hobbi']}")
+            st.write(f"Hobi: {data_list[i]['hobi']}")
             st.write(f"Sosial Media: {data_list[i]['sosmed']}")
             st.write(f"Kesan: {data_list[i]['kesan']}")
             st.write(f"Pesan: {data_list[i]['pesan']}")
@@ -137,11 +138,11 @@ if menu == "Baleg":
             "https://drive.google.com/uc?export=view&id=1Y4VdYjpINET0WNLqOan8JRt4_0jFe3Iq",
             "https://drive.google.com/uc?export=view&id=1f_DkcgqoRIe-R7f8lMnxtt2xiABS1rIO",
             "https://drive.google.com/uc?export=view&id=1oH-2KFGVYJpJTgWJ5rzX_SQ5tqiAW_Pc",
-            "https://drive.google.com/uc?export=view&id=", 
+            "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", #1
             "https://drive.google.com/uc?export=view&id=1PS0Glqg4WrUKgeF1nsEMpM7JIwu6YXX7",
             "https://drive.google.com/uc?export=view&id=114SxAKeyMUaUgTSQZoM3xyVMsYnES0FV",
             "https://drive.google.com/uc?export=view&id=18kQOlCFHGLwAI_pzXI1F3TQDD5nQtBs3",
-            "https://drive.google.com/uc?export=view&id=", 
+            "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", #1 
             "https://drive.google.com/uc?export=view&id=15rb66HPbp0mKP-Us-oSrPJJ2FgaBNr3T",
             "https://drive.google.com/uc?export=view&id=15UGyigsmy5wl_bMAoSVG_YoKWqBSJz63",
         ]
@@ -150,8 +151,8 @@ if menu == "Baleg":
         display_images_with_data(gambar_urls, data_list)
     baleg()
 
-if menu == "Bason":
-    def bason():
+if menu == "Senator":
+    def senator():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1fvch54WFUi25gz552kes9Q1XQiC7WG4a",
             "https://drive.google.com/uc?export=view&id=1cJ9c7QFQZs4J34D7YvYe-d7S597Bxyi8",
@@ -164,7 +165,86 @@ if menu == "Bason":
             "https://drive.google.com/uc?export=view&id=12Eqm2SqaP0OTWDw9hsrT9Vsae_vczVr7",
             "https://drive.google.com/uc?export=view&id=1C39RbgMRYKF7YyVwAU7dnuS3_sV1I4aY",
         ]
-        data_list = ambil_data_sps("Bason")
+        data_list = ambil_data_sps("Senator")
 
         display_images_with_data(gambar_urls, data_list)
-    bason()
+    senator()
+
+if menu == "Departemen SSD":
+    def departemen_ssd():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=17pXV9gmQiCLnUS2XT5k8EcftBmkiiZFz",
+            "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", #1
+            "https://drive.google.com/uc?export=view&id=1RV5zOQ7-CFehK-iUmeYVKrBcV3lucgAq",
+            "https://drive.google.com/uc?export=view&id=15b7FJuWvwIe7FWYreidGsAQ9qvK4gXQX",
+            "https://drive.google.com/uc?export=view&id=1-e8ErgawiyitDN_aVur7vgCg_1PI8BJD",
+            "https://drive.google.com/uc?export=view&id=10vDGyYK-gy5XcGY8OLFVDzR3rCbj_7XW",
+            "https://drive.google.com/uc?export=view&id=1I-pLP73PtigoMb4LiSK8X0DAvhZkOE2J", 
+            "https://drive.google.com/uc?export=view&id=1f08QLd8d0u0EJKfh20782xhBvx0MzZc8",
+            "https://drive.google.com/uc?export=view&id=1kWoQ7_1KqkYV6m_2Vbj4MAIKsqbH8qDV",
+            "https://drive.google.com/uc?export=view&id=1tjViOzm4t0pdZ3gOkOj0IVEtFm3bQyaU",
+            "https://drive.google.com/uc?export=view&id=1JFFX4jJS0HhwwVix6_YDd4jNpsADU4rB",
+            "https://drive.google.com/uc?export=view&id=1eVo1OsDWrQzAJtAYsGilcCghNeCm1fnn",
+           
+        ]
+        data_list = ambil_data_sps("Departemen SSD")
+
+        display_images_with_data(gambar_urls, data_list)
+    departemen_ssd()
+
+if menu == "Departemen Internal":
+    def departemen_internal():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1xebnOudRMPzPvmU4n9Nopw5o2eLxCNNO",
+            "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", #1
+            "https://drive.google.com/uc?export=view&id=1JFxHzb08AinyO0j20muxpaK0TzPB8-_y",
+            "https://drive.google.com/uc?export=view&id=1kR9Btj1CZIQ9Lk9f3pLxBSSxclPblPA4",
+            "https://drive.google.com/uc?export=view&id=1cGfL0AlXCoqPUmr8ZeZZ9TWcAVtRNAie",
+            "https://drive.google.com/uc?export=view&id=1uQiakCbE1eSiTTijHtoUVZ9s_023tG05",
+            "https://drive.google.com/uc?export=view&id=1PeRBIKs160n_zfIh1yGvPVxW8t0NRmDc", 
+            "https://drive.google.com/uc?export=view&id=1uw7pwFmQqsYhhJ9E-sWw_AFjk-JZPVY4",
+            "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", #1
+            "https://drive.google.com/uc?export=view&id=1VBysj7IbKI1aglJ3X9GWzL72QZJSwHlq",
+            "https://drive.google.com/uc?export=view&id=12bgXAN3JdzW1y7OWa7PZ2-suT_mZBLMb",
+            "https://drive.google.com/uc?export=view&id=1L1XsWhg2L3sgPya5toZaaz2ZJdHMfWzD",
+            "https://drive.google.com/uc?export=view&id=1fvhS9OjfnIdWTEZR3vmIJBkO-D4gCjJa",
+            "https://drive.google.com/uc?export=view&id=1UemdV-jdmqtGvVlRC8oFnQ4zMdY4XVHo",
+            "https://drive.google.com/uc?export=view&id=1BNbrTlF2oVBFTjBxeb6jGQoNR7L-q75S",
+            "https://drive.google.com/uc?export=view&id=1orIhH1ExbV85W60Yjnvfv88uY2b7vd3k",
+        
+        ]
+        data_list = ambil_data_sps("Departemen Internal")
+
+        display_images_with_data(gambar_urls, data_list)
+    departemen_internal()
+
+if menu == "Departemen Internal":
+    def departemen_internal():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1FYOZsInYqTbmMiEyrNXOvtvtxSjwQp8I",
+            "https://drive.google.com/uc?export=view&id=1Gj0tdeq8eMO57g27tTl2IYcTG2TgmTFT",
+            "https://drive.google.com/uc?export=view&id=14Rv_jiHL2IEOOSQnVz1KNt9hWGQxmv30", 
+            "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", #1
+            "https://drive.google.com/uc?export=view&id=1B2YJKMKZIrJzoxBVYXITtSCFlHW3t5qm", 
+            "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", #1
+            "https://drive.google.com/uc?export=view&id=1nEW-yqIL4aFbqaoo3gS2iF3cKREq_xKz", 
+            "https://drive.google.com/uc?export=view&id=1mVW2p8w9ZqMknQIHYET6B9nGLqUQWApR", 
+            "https://drive.google.com/uc?export=view&id=1RCvX3-wO58o9KYco_0FNNtWXiX3d6up5", 
+            "https://drive.google.com/uc?export=view&id=175jBAcijJjrxRpOPdoCey95dE6-4E-9X", 
+            "https://drive.google.com/uc?export=view&id=1tCsvweutNgYoD760LZdtJcKwQitgeBvw", 
+            "https://drive.google.com/uc?export=view&id=1xZhT4V4GTOGUGNYnialJgG68Zta5ErFB", 
+            "https://drive.google.com/uc?export=view&id=1pLYNjXFbZov6__zVnh2YWHt9yLpDzRDE", 
+            "https://drive.google.com/uc?export=view&id=1vvGukK0m75nvTr7ErQp8adgX17wyA53M", 
+            "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", #1
+            "https://drive.google.com/uc?export=view&id=1A6wiwUEAPrBXWU58fP7XVyYz8ep4byEA", 
+            "https://drive.google.com/uc?export=view&id=1ec4_TC4bSYZgSb0_ryzG7yPADw7kIAET", 
+            "https://drive.google.com/uc?export=view&id=1dUcUOJoJsBliNekHJU52at0N85S_GlWy", 
+            "https://drive.google.com/uc?export=view&id=1EFKodN1EG01xt3uIRRh95oZmKFgUamka", 
+            "https://drive.google.com/uc?export=view&id=1KMdacBKU4DyG_Etav1evlzL9sltkxqpd", 
+            "https://drive.google.com/uc?export=view&id=1oB8HBDZj57PyD6gRBjHYgszej1g3oR-E", 
+            "https://drive.google.com/uc?export=view&id=1gkSBvxEVWhMe90eIYxqR0ShhzjyyqJq0",       
+        ]
+        data_list = ambil_data_sps("Departemen Internal")
+
+        display_images_with_data(gambar_urls, data_list)
+    departemen_internal()
