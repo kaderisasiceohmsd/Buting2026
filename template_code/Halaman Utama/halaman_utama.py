@@ -102,14 +102,14 @@ if menu == "Home":
             "<h1 class='centered-title'>Deskripsi Kelompok</h1>", unsafe_allow_html=True
         )
         st.markdown(
-            """<div style="text-align: justify;">GA BANYAK GAYA TAPI BIKIN HERAN, BAYESIAN.</div>""",
+            """<div style="text-align: justify;"Buku kating Bayesian!</div>""",
             unsafe_allow_html=True,
         )
         st.write(""" """)
-        foto_kelompok = "https://drive.google.com/uc?export=view&id=1dmdJJc0SY2JRooW5UQUrw01p0cPkCkdi"
+        foto_kelompok = "https://drive.google.com/file/d/16CjBeAIcly6SU8fgWmXCUGd6gsJ8-0nD/view?usp=sharing"
         layout(foto_kelompok)
         st.markdown(
-            """<div style="text-align: justify;">Kami Bayes.</div>""",
+            """<div style="text-align: justify;">Bayesian adalah kelompok yang terdiri dari 10 anggota.</div>""",
             unsafe_allow_html=True,
         )
         st.write(""" """)
@@ -133,16 +133,16 @@ elif menu == "About Us":
         ]
         data_list = [
             {
-                "nama": "x",
+                "nama": "Thomas Yustio",
                 "sebagai": "Pak Lurah",
-                "nim": "122450016",
+                "nim": "125450085",
                 "fun_fact": "suka makan pedes, tapi ga suka efeknya",
                 "motto_hidup": "new semester new me",
             },
             {
-                "nama": "x",
+                "nama": "Syalom Jubilate Nauli Simanjuntak",
                 "sebagai": "Bu Lurah",
-                "nim": "122450000",
+                "nim": "125450050",
                 "fun_fact": "nyemilin es bata",
                 "motto_hidup": "Ya apa ya",
             },
