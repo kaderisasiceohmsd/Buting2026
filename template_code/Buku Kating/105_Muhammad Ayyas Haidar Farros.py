@@ -194,7 +194,7 @@ if menu == "Baleg":
             "https://drive.google.com/uc?export=view&id=1zoX6B4MZI_g9nvUk7L7gsziMGwh5Q6uI",
             "https://drive.google.com/uc?export=view&id=1AhyLqnnTweqifExVL5yEg-sC-H4aMUgq",
         ]
-       data_list = [
+        data_list = [
             {
                 "nama": "Ridho Benedictus Togi Manik",
                 "nim": "123450060",
