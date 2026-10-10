@@ -23,18 +23,20 @@ st.markdown("""
         text-align: center;
         color: #701c23;
         font-weight: 700;
-        margin-top: 30px;
+        margin-top: 35px;
         margin-bottom: 25px;
     }
     .content-box {
         background-color: #ffffff;
-        padding: 25px;
+        padding: 30px;
         border-radius: 12px;
         box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         border: 1px solid #d9c3a3;
-        margin-bottom: 30px;
+        margin-bottom: 35px;
         text-align: justify;
-        line-height: 1.6;
+        line-height: 1.8;
+        font-size: 15px;
+        color: #333333;
     }
 
     /* --- STYLING PHOTO CARD GRID (HOVER EFFECT) --- */
@@ -182,7 +184,7 @@ def load_image(url):
 st.markdown("""
     <div>
         <h1 class='main-title' style='font-size: 3em;'>WEBSITE KATING</h1>
-        <p class='main-subtitle' style='font-size: 1.3em;'>CEO HMSD Adyatama ITERA 2024</p>
+        <p class='main-subtitle' style='font-size: 1.3em;'>CEO HMSD Adyatama ITERA 2026</p>
     </div>
 """, unsafe_allow_html=True)
 
@@ -200,7 +202,7 @@ layout_logo(url)
 st.write("")
 layout_logo(url1)
 
-st.markdown("<div style='margin-top: 40px;'></div>", unsafe_allow_html=True)
+st.markdown("<div style='margin-top: 50px;'></div>", unsafe_allow_html=True)
 
 def streamlit_menu():
     selected = option_menu(
@@ -215,7 +217,7 @@ def streamlit_menu():
                 "background-color": "#ffffff", 
                 "border-radius": "12px", 
                 "box-shadow": "0 3px 10px rgba(0,0,0,0.08)",
-                "margin-bottom": "30px"
+                "margin-bottom": "35px"
             },
             "icon": {"color": "#701c23", "font-size": "18px"},
             "nav-link": {
@@ -239,19 +241,20 @@ if menu == "Home":
         st.markdown("<h2 class='section-title'>Deskripsi Kelompok</h2>", unsafe_allow_html=True)
         st.markdown("""
             <div class='content-box'>
-                Selamat datang di website resmi kelompok kami! Website ini dibuat sebagai wadah informasi, dokumentasi, serta perkenalan anggota kelompok dalam rangkaian kegiatan pengenalan kampus dan buku kating.
+                <b>Selamat datang di portal resmi kelompok Poisson!</b><br><br>
+                Kelompok kami merupakan wadah kolaborasi, kebersamaan, dan dedikasi tinggi dalam menjalani rangkaian kegiatan pengenalan kampus dan penugasan Buku Kating. Di sini, kami tidak hanya belajar menyelesaikan setiap tantangan akademik secara bersama-sama, tetapi juga membangun ikatan kekeluargaan yang erat, saling mendukung dalam setiap proses adaptasi, serta menjunjung tinggi nilai solidaritas dan profesionalisme sebagai bagian dari keluarga besar HMSD Adyatama ITERA.
             </div>
         """, unsafe_allow_html=True)
         
-        st.markdown("<h3 class='section-title' style='font-size:20px;'>Dokumentasi Kegiatan Poisson (2 x 3 Grid)</h3>", unsafe_allow_html=True)
+        st.markdown("<h3 class='section-title' style='font-size:22px;'>Dokumentasi Kegiatan Poisson (2 x 3 Grid)</h3>", unsafe_allow_html=True)
         
         kegiatan_poisson = [
-            {"url": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", "judul": "Poisson Mengerjakan Tugas", "desc": "Poisson saat sedang berdiskusi tugas kelompok bersama."},
-            {"url": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", "judul": "Poisson Diskusi Santai", "desc": "Poisson saat sedang nongkrong dan curhat bareng."},
-            {"url": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", "judul": "Poisson Sesi Foto", "desc": "Poisson saat sedang mengabadikan momen di kampus."},
-            {"url": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", "judul": "Poisson Belajar Bersama", "desc": "Poisson saat sedang mempersiapkan presentasi."},
-            {"url": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", "judul": "Poisson Selesai Mentoring", "desc": "Poisson saat sedang merayakan kelulusan babak pertama."},
-            {"url": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", "judul": "Poisson Briefing", "desc": "Poisson saat sedang evaluasi kegiatan mingguan."}
+            {"url": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", "judul": "Poisson Mengerjakan Tugas", "desc": "Poisson saat sedang serius berdiskusi menyelesaikan penugasan kelompok bersama."},
+            {"url": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", "judul": "Poisson Diskusi Santai", "desc": "Poisson saat sedang nongkrong seru sambil melepas penat di kampus."},
+            {"url": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", "judul": "Poisson Sesi Foto", "desc": "Poisson saat sedang kompak mengabadikan momen kebersamaan."},
+            {"url": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", "judul": "Poisson Belajar Bersama", "desc": "Poisson saat sedang mempersiapkan materi dan bahan presentasi."},
+            {"url": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", "judul": "Poisson Selesai Mentoring", "desc": "Poisson saat sedang merayakan suksesnya sesi mentoring bersama."},
+            {"url": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", "judul": "Poisson Briefing", "desc": "Poisson saat sedang melakukan evaluasi dan arahan mingguan."}
         ]
 
         for i in range(0, len(kegiatan_poisson), 3):
@@ -273,7 +276,8 @@ if menu == "Home":
         
         st.markdown("""
             <div class='content-box'>
-                Kami berkomitmen untuk saling mendukung, bekerja sama secara aktif, dan menyelesaikan seluruh penugasan dengan penuh tanggung jawab serta kekompakan tinggi.
+                <b>Komitmen Kami:</b><br>
+                Kami berkomitmen penuh untuk terus bergerak seirama, saling menguatkan dalam menghadapi dinamika perkuliahan, serta menyelesaikan seluruh rangkaian tanggung jawab dengan hasil yang terbaik dan membanggakan.
             </div>
         """, unsafe_allow_html=True)
 
@@ -281,7 +285,7 @@ if menu == "Home":
 
 elif menu == "About Us":
     def about_page():
-        st.markdown("<h2 class='section-title'>About Us - Flashcard Anggota</h2>", unsafe_allow_html=True)
+        st.markdown("<h2 class='section-title'>About Us</h2>", unsafe_allow_html=True)
         
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_" for _ in range(11)
