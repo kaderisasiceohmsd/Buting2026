@@ -183,15 +183,15 @@ elif menu == "Badan Kesenatoran":
     def Bason():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1FDAQVM2f9jMzquRuK-uHAlYaPJtB584-",
-            "https://drive.google.com/uc?export=view&id=1ba18uljAh_SmDH5rCQuDfpoNk_CNJW-8",
-            "https://drive.google.com/uc?export=view&id=1f2WiomJkzKMRYpp14oc3Gx-wsI4ti-vr",
-            "https://drive.google.com/uc?export=view&id=1RTgfa6zxJnqhqS7R3wLXwW_-2r1rumb0",
-            "https://drive.google.com/uc?export=view&id=16zCWIbcZx4dxvcZM7sCqr9QO5gW9QTjf",
-            "https://drive.google.com/uc?export=view&id=1XDlfiU1_GRKQt1-Oz4V80WeTV78KOdOi",
-            "https://drive.google.com/uc?export=view&id=1laahXpYjdVJLUj6vpNg8LRqMcCJ-pDmI",
-            "https://drive.google.com/uc?export=view&id=1rKduKEzQMAPM7oR3IFZ1VX38mk7XacKg",
-            "https://drive.google.com/uc?export=view&id=1oouCnXYLzYbyTg60HK-GPBIXAk5OYOKw",
-            "https://drive.google.com/uc?export=view&id=1sEvAhZP5yxITkZsekx0s2kZyUy9c4xg2",
+            "https://drive.google.com/uc?export=view&id=1K-Cno2hj9cE2Yhyvu7GFlRvyfd8C7NsW",
+            "https://drive.google.com/uc?export=view&id=1euYqbAl3DVwJQK_oEJIy0sVSaSytdLpW",
+            "https://drive.google.com/uc?export=view&id=1Qg7bifTk-kcHeCcURt2b84EpPquLPU07",
+            "https://drive.google.com/uc?export=view&id=1G7fW0VyhnyRtT3r3-e6G5yI4CTXcKrh-",
+            "https://drive.google.com/uc?export=view&id=15FGtq2iFRKpp-Ivp3XFrv9t1iiTm3fSz",
+            "https://drive.google.com/uc?export=view&id=1VyGvytHLnudYUCUuXv4LEKJqjDiHVSa2",
+            "https://drive.google.com/uc?export=view&id=1SFElZnpJ90vValrC_m3V-0H1ShWWQXlO",
+            "https://drive.google.com/uc?export=view&id=15FGtq2iFRKpp-Ivp3XFrv9t1iiTm3fSz",
+            "https://drive.google.com/uc?export=view&id=1Hg6FSGKsbrRwsr_1c10w45zwnbjXhQGY",
         ]
         data_list = [
             {
@@ -202,8 +202,8 @@ elif menu == "Badan Kesenatoran":
                 "alamat": "Airan",
                 "hobbi": "Nulis Medium",
                 "sosmed": "@fathinahnaazh",
-                "kesan": "Kakanya keren banget jujurrr",  
-                "pesan": "Semangat terus kuliahnya kaaaa"
+                "kesan": "Kakaknya kerenn, baikk ramah juga, maniss suka deh.",  
+                "pesan": "Semangat terus ya kak dan pantang menyerah menghadapi tantangan."
             },
             {
                 "nama": "Helmy Surya Pratama",
@@ -213,8 +213,8 @@ elif menu == "Badan Kesenatoran":
                 "alamat": "Kedamaian",
                 "hobbi": "Ngesen kiri",
                 "sosmed": "@helmy_ist",
-                "kesan": "abangnya kalo diajak foto maunya melet wkwk",  
-                "pesan": "Semangat terus ya baaang"
+                "kesan": "Abangnya ramah banget,baikk lucuuu kalo diajak ngobrol nyambung.",  
+                "pesan": "S‎Tetap semangat ya bang menghadapi perkuliahan."
             },
             {
                 "nama": "Fernando Dimetrius Barus",
@@ -224,8 +224,8 @@ elif menu == "Badan Kesenatoran":
                 "alamat": "Sebelah kamar biwa",
                 "hobbi": "Badminton",
                 "sosmed": "@barus.fernando",
-                "kesan": "Asik bener abangnya wkwk",  
-                "pesan": "Semangat terus baaaang"
+                "kesan": "Abangnya seruuu, baikk lagi dan ramahh, jokesnya masuk lagi.",  
+                "pesan": "‎Semnagat terus ya bang dan semoga sukses selalu."
             },
             {
                 "nama": "Suci Aulia",
@@ -235,8 +235,8 @@ elif menu == "Badan Kesenatoran":
                 "alamat": "Kota Baru",
                 "hobbi": "Bikin video random dan upload di second",
                 "sosmed": "@sciia_staff",
-                "kesan": "Kakaknya asik sih jujur",  
-                "pesan": "Semangat terus ya kaa kuliahnyaaa"
+                "kesan": "‎Kakaknya cantik, manis lagi, baik juga dan ramah banget.",  
+                "pesan": "Semangat terus ya kakk dan sukses selalu."
             },
             {
                 "nama": "Wielman Itolo Halawa",
@@ -246,8 +246,8 @@ elif menu == "Badan Kesenatoran":
                 "alamat": "Asrama TB3",
                 "hobbi": "Mancing",
                 "sosmed": "@wielhawny",
-                "kesan": "Abangnya chill sih ini wkwk",  
-                "pesan": "Pokonya semangat terus baaang"
+                "kesan": "Abangnya kalem, baikk dan juga ramah, seru jugaa.",  
+                "pesan": "Sukses selalu ya bang dan pantang menyerah."
             },
             {
                 "nama": "Lia Hana Ichisasmita",
@@ -257,8 +257,8 @@ elif menu == "Badan Kesenatoran":
                 "alamat": "Belwis",
                 "hobbi": "Nyari jurnal",
                 "sosmed": "@lia.h_264",
-                "kesan": "Pengen belajar sama kakanyaaa wkwk",  
-                "pesan": "Semangat terus kaaaaa"
+                "kesan": "Kakaknya baikk ramah jugaa, imut banget dehh sukaa.",  
+                "pesan": "‎Tetap semangat ya kakkk semoga suskes selalu dan pantang menyerah."
             },
             {
                 "nama": "Aqila Zayyan Salsabil",
@@ -268,8 +268,8 @@ elif menu == "Badan Kesenatoran":
                 "alamat": "Sukarame",
                 "hobbi": "Mendokumentasikan bayyesian",
                 "sosmed": "@aqilazayyaan",
-                "kesan": "Kakanya jujur asik banget, apa aja diketawain wkwkw",  
-                "pesan": "Semangat terus kaaaaa"
+                "kesan": "‎Kakaknya cantik banget, ramah dan baik jugaa, asyik juga orangnya.",  
+                "pesan": "Terus semangat ya kak untuk menghadapi setiap rintangan."
             },
             {
                 "nama": "Hazel Mahesa Handhaka",
@@ -279,8 +279,8 @@ elif menu == "Badan Kesenatoran":
                 "alamat": "Ujung Terang",
                 "hobbi": "Bulu Tangkis",
                 "sosmed": "@hazelhandhaka",
-                "kesan": "Abangnya keren sih jujur",  
-                "pesan": "Semangat terus bang kuliahnya"
+                "kesan": "‎Abangnya baik dan ramah, manis jugaa. Asyik orangnya.",  
+                "pesan": "Terus semangat ya bang dan pantang menyerah."
             },
             {
                 "nama": "Nadya Ratu Anjani",
@@ -290,8 +290,8 @@ elif menu == "Badan Kesenatoran":
                 "alamat": "Sukarame",
                 "hobbi": "Denger Lagu",
                 "sosmed": "@nadyaanjaani",
-                "kesan": "Kakanya baek bangeeet heheh",  
-                "pesan": "Semangat terus kaaa"
+                "kesan": "Kakaknya imut banget dan baik jugaa, ramah dan cantik.",  
+                "pesan": "‎Tetap semangat ya kakk menghadapi perkuliahan dan semoga nilainya A terus"
             },
             {
                 "nama": "Dwi Rahma Fitriani",
@@ -301,8 +301,8 @@ elif menu == "Badan Kesenatoran":
                 "alamat": "Jl. Lapas Belwis",
                 "hobbi": "Dengerin musik",
                 "sosmed": "@dwi_rahmftrnii",
-                "kesan": "Kakaknya lucuuu hehe",  
-                "pesan": "Semangat terus ya kaaaa"
+                "kesan": "Kakaknya kalem, baikkk dan ramah, suka mehliat kakakny imut.",  
+                "pesan": "‎Semangat terus ya kak menghadapi tugas yang banyak."
             }
         ]
         display_images_with_data(gambar_urls, data_list)
