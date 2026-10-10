@@ -147,8 +147,9 @@ if menu == "Kesekjenan":
     "https://drive.google.com/uc?export=view&id=1lMm2cZotf4Zg5npQZTNsGulE71uamr0G",
     "https://drive.google.com/uc?export=view&id=1L1mV6NSK_dwiOB1dMLtHXVss8YvviGF7",
     "https://drive.google.com/uc?export=view&id=1arEBvurK397f3EPs4YmXihuHpY_0Ngnk",
-    "https://drive.google.com/uc?export=view&id=16feqaSynGDSLmG6TwVb8uUt8V9ylEypi",
+    "https://drive.google.com/file/d/1Iv7PgxUJ9qVu-8EuqH73CJZ0ZATL3irL",
     "https://drive.google.com/uc?export=view&id=1Iwen8hJLSVc5_-C7sEAhlDoByhm82chK"
+    "https://drive.google.com/file/d/16feqaSynGDSLmG6TwVb8uUt8V9ylEypi"
 ]
 
         data_list = [
@@ -175,6 +176,17 @@ if menu == "Kesekjenan":
                 "pesan": "-"
             },
             {
+                "nama": "Evi Defiati",
+                "nim": "123450005",
+                "umur": "21",
+                "asal": "Lamtim",
+                "alamat": "Airan",
+                "hobbi": "Membaca",
+                "sosmed": "@eeffifi",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
                 "nama": "Qois Alfio",
                 "nim": "123450067",
                 "umur": "22",
@@ -182,17 +194,6 @@ if menu == "Kesekjenan":
                 "alamat": "Kotabaru",
                 "hobbi": "Mainin surat",
                 "sosmed": "@qoidalfio_",
-                "kesan": "-",
-                "pesan": "-"
-            },
-            {
-                "nama": "Evi Defiani",
-                "nim": "123450005",
-                "umur": "21",
-                "asal": "Lamtim",
-                "alamat": "Airan",
-                "hobbi": "Membaca",
-                "sosmed": "@eeffifi",
                 "kesan": "-",
                 "pesan": "-"
             },
