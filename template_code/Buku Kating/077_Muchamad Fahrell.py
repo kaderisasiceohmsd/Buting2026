@@ -526,6 +526,8 @@ elif menu == "Departemen SSD":
         "pesan": "semangat terus kuliahnya kakak !!!",
     },
 ]
+        display_images_with_data(gambar_urls, data_list)
 
+    Departemen_SSD()
 
 # Tambahkan menu lainnya sesuai kebutuhan
