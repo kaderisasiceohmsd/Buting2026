@@ -474,7 +474,7 @@ elif menu == "Badan Legislatif":
     Baleg()
 
 elif menu == "Departemen Minbak":
-    def minbak():
+    def Minbak():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=18x8qz_Lqj6i6PEFA3JUyCfPJlReMZvUB",
             "https://drive.google.com/uc?export=view&id=1qsEatLS2i26ptSaL9N73Mg8Zr3kBvuCd",
@@ -661,7 +661,8 @@ elif menu == "Departemen Minbak":
 		    }
 		]
         display_images_with_data(gambar_urls, data_list)
-    minbak()
+    Minbak()
+    
 elif menu == "Departemen Minbak":
     def minbak():
         gambar_urls = [
