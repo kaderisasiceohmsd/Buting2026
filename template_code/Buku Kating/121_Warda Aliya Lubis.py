@@ -180,20 +180,21 @@ if menu == "Kesekjenan":
     Kesekjenan()
 
 if menu == "Baleg":
-    def Baleg():
-        gambar_urls = [
-            "https://lh3.googleusercontent.com/d/1BUFWaShMmF_XB0yozNhncdYolsaCVSJh",
-            "https://lh3.googleusercontent.com/d/1stIJh8GpzoJtJPaFnaIA5NlwuqjepMMw",
-            "https://lh3.googleusercontent.com/d/1aIYBC2oXXH2HHwu5-XWN0C0p6_C67PEi",
-            "https://lh3.googleusercontent.com/d/19l84A20tax57ABCt5omLT1tlQ_d-11-P",
-            "https://lh3.googleusercontent.com/d/1YZTAUTFYLhemXtrgyZd_LAWkxwq5gbbz",
-            "https://lh3.googleusercontent.com/d/1ALlzQ_cMFTOdnE0Kb4HOqN8oddGc_n9d",
-            "https://lh3.googleusercontent.com/d/1m7vqrhjpfAPesawC6KYSszTomCi11rsL",
-            "https://lh3.googleusercontent.com/d/1fCGaNN2r67AjHS4l3QM00ou6SHAqsmOT",
-            "https://lh3.googleusercontent.com/d/1feZAZr1J6UJ8KBVRAv9h9f6fN-Upogm8",
-            "https://lh3.googleusercontent.com/d/14uxZd7KoPrCSjKgfP_18kUpfOhLPzKKP",
-            "https://lh3.googleusercontent.com/d/1bpEhuMlbxD5NWvQM5e0pRUaII72vcJfn",
-            "https://lh3.googleusercontent.com/d/1SzDpfh5SwEU1kxlMvWJxh5NintVeUvgb"
+    def Baleg():
+        gambar_urls = [
+            "https://lh3.googleusercontent.com/d/1BUFWaShMmF_XB0yozNhncdYolsaCVSJh",
+            "https://lh3.googleusercontent.com/d/1stIJh8GpzoJtJPaFnaIA5NlwuqjepMMw",
+            "https://lh3.googleusercontent.com/d/1aIYBC2oXXH2HHwu5-XWN0C0p6_C67PEi",
+            "https://lh3.googleusercontent.com/d/19l84A20tax57ABCt5omLT1tlQ_d-11-P",
+            "https://lh3.googleusercontent.com/d/1aIYBC2oXXH2HHwu5-XWN0C0p6_C67PEi",
+            "https://lh3.googleusercontent.com/d/1YZTAUTFYLhemXtrgyZd_LAWkxwq5gbbz",
+            "https://lh3.googleusercontent.com/d/1ALlzQ_cMFTOdnE0Kb4HOqN8oddGc_n9d",
+            "https://lh3.googleusercontent.com/d/1m7vqrhjpfAPesawC6KYSszTomCi11rsL",
+            "https://lh3.googleusercontent.com/d/1fCGaNN2r67AjHS4l3QM00ou6SHAqsmOT",
+            "https://lh3.googleusercontent.com/d/1feZAZr1J6UJ8KBVRAv9h9f6fN-Upogm8",
+            "https://lh3.googleusercontent.com/d/14uxZd7KoPrCSjKgfP_18kUpfOhLPzKKP"
+            "https://lh3.googleusercontent.com/d/1bpEhuMlbxD5NWvQM5e0pRUaII72vcJfn"
+            "https://lh3.googleusercontent.com/d/1SzDpfh5SwEU1kxlMvWJxh5NintVeUvgb"
         ]
         
         # Menampilkan gambar satu per satu menggunakan Streamlit
