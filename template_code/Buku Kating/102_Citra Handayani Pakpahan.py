@@ -137,7 +137,7 @@ if menu == "Kesekjenan":
                 "Alamat": "Airan",
                 "Hobbi": "Membaca",
                 "Sosmed": "@eeffiidefi",
-                "Kesan": "Kakaknya baik, cantik,  sama kalem",  
+                "Kesan": "Kakaknya baik, cantik,  sama kalem juga ",  
                 "Pesan":"Semangat terus dan sehat selalu kak"
             },
             {
