@@ -453,7 +453,7 @@ elif menu == "Departemen SSD":
                 "hobbi": "Lagi suka olahraga",
                 "sosmed": "@dellaansaftr",
                 "kesan": "Kakaknya baik dan ramah",
-                "pesan": "Sehat selalu kak"
+                "pesan": "Sehat selalu kak, semoga sukses"
             },
         ]
         display_images_with_data(gambar_urls, data_list)
