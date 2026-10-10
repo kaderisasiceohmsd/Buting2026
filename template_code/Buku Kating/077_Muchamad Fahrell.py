@@ -153,6 +153,17 @@ if menu == "Kesekjenan":
 
         data_list = [
             {
+                "nama": "Ginda Fajar Marpaung",
+                "nim": "1234500fadil",
+                "umur": "22",
+                "asal": "Batam",
+                "alamat": "Sekretariat HMSD",
+                "hobbi": "Push Rank sampe IMO",
+                "sosmed": "@gars_mrp",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
                 "nama": "Muhammad Aqil",
                 "nim": "123450046",
                 "umur": "22",
@@ -171,17 +182,6 @@ if menu == "Kesekjenan":
                 "alamat": "Kotabaru",
                 "hobbi": "Mainin surat",
                 "sosmed": "@qoidalfio_",
-                "kesan": "-",
-                "pesan": "-"
-            },
-            {
-                "nama": "Ginda Fajar Marpaung",
-                "nim": "1234500fadil",
-                "umur": "22",
-                "asal": "Batam",
-                "alamat": "Sekretariat HMSD",
-                "hobbi": "Push Rank sampe IMO",
-                "sosmed": "@gars_mrp",
                 "kesan": "-",
                 "pesan": "-"
             },
@@ -240,107 +240,149 @@ if menu == "Baleg":
         data_list = [
             {
                 "nama": "Ridho Benedictus Togi Manik",
-                "nim": "23-060",
+                "nim": "123450060",
                 "umur": "20",
-                "asal": "Kota Manchester",
-                "alamat": "Di GH",
+                "asal":"Kota Manchester",
+                "alamat": "GH",
                 "hobbi": "Wawancara",
-                "sosmed": "@ridhomanik",
-                "kesan": "-",
-                "pesan": "Ketua Baleg"
+                "sosmed": "@iamridhomanik",
+                "kesan": "...",  
+                "pesan":"..."# 1
             },
             {
-                "nama": "Wanaswa Alhani Yuska",
-                "nim": "23-77",
+                "nama": "Juesi Apridelia Saragih",
+                "nim": "123450085",
+                "umur": "19",
+                "asal": "Singkawang",
+                "alamat": "Pelangi",
+                "hobbi": "Dengerin lagu semusim dari marsel",
+                "sosmed": "@j__eesie",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Dharu Cahyoaji Sasongko",
+                "nim": "123450023",
+                "umur": "19",
+                "asal": "Lampung",
+                "alamat": "Bandar Lampung",
+                "hobbi": "Ngidupin api baleg di tiktok",
+                "sosmed": "@exvoltas",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Gh. Mikael Niko Antoni Setiadi",
+                "nim": "124450025",
+                "umur": "20",
+                "asal": "Jabung",
+                "alamat": "Jati Agung",
+                "hobbi": "COD Musang",
+                "sosmed": "@me._kael",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Siti Sarifah Sumamah",
+                "nim": "124450015",
+                "umur": "19",
+                "asal": "Bekasi",
+                "alamat": "Kedaton",
+                "hobbi": "Mancing",
+                "sosmed": "@syt.rifa",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Givaro Ananta",
+                "nim": "123450078",
+                "umur": "19",
+                "asal": "Lampung Barat",
+                "alamat": "Sukabumi",
+                "hobbi": "Minum Kopi",
+                "sosmed": "@givarooo",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Afghanis Nursholehatunnisa",
+                "nim": "124450042",
+                "umur": "19",
+                "asal": "Kepulauan Mentawai",
+                "alamat": "Owen Kost",
+                "hobbi": "Ngoding",
+                "sosmed": "@afghanisnt_",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Hani Qurrota Aini",
+                "nim": "124450020",
+                "umur": "20",
+                "asal": "CTR",
+                "alamat": "Sukarame",
+                "hobbi": "Baca AU",
+                "sosmed": "@haniquratuain_",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Jeremia Halim",
+                "nim": "124450101",
+                "umur": "20",
+                "asal": "Cibaduyut",
+                "alamat": "Teluk",
+                "hobbi": "Nyanyi, olahraga",
+                "sosmed": "@jeremia_hm",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Monica Patricia Tanjung",
+                "nim": "123450073",
+                "umur": "21",
+                "asal": "Jakarta Barat",
+                "alamat": "Kotabaru",
+                "hobbi": "Lari",
+                "sosmed": "@monica_tjg",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Jona Timothy Ogatse Panjaitan",
+                "nim": "124450111",
+                "umur": "20",
+                "asal": "Depok",
+                "alamat": "Pemda Raya",
+                "hobbi": "Gym sama Koleksi figure, nafas manual",
+                "sosmed": "@nagatseee",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Sekar Dini Widya Putri",
+                "nim": "124450082",
+                "umur": "20",
+                "asal": "Metro",
+                "alamat": "Pemda",
+                "hobbi": "Jajan sama nisa, putri, suci",
+                "sosmed": "@sekardnwp",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Wan Nashwa Alhasni Yuska",
+                "nim": "123450077",
                 "umur": "20",
                 "asal": "Pasay",
                 "alamat": "Belwis",
                 "hobbi": "Nyapa angin",
                 "sosmed": "@nshaysk",
-                "kesan": "-",
-                "pesan": "-"
+                "kesan": "...",  
+                "pesan":"..."# 1
             },
-            {
-                "nama": "Juwesi Aprilia Saragih",
-                "nim": "23-085",
-                "umur": "19",
-                "asal": "Singkawang",
-                "alamat": "Pelangi",
-                "hobbi": "Dengerin lagu Semusim dari Marsel",
-                "sosmed": "@j__eesie",
-                "kesan": "-",
-                "pesan": "-"
-            },
-            {
-                "nama": "Ghifaro Ananta",
-                "nim": "23-78",
-                "umur": "19",
-                "asal": "Lambar",
-                "alamat": "Sukabumi",
-                "hobbi": "Minum kopi",
-                "sosmed": "-",
-                "kesan": "-",
-                "pesan": "-"
-            },
-            {
-                "nama": "Afghanis Nur Solehatunnisa",
-                "nim": "24-042",
-                "umur": "19",
-                "asal": "Kepulauan Mentawai",
-                "alamat": "Owen Kost",
-                "hobbi": "Ngoding",
-                "sosmed": "-",
-                "kesan": "-",
-                "pesan": "-"
-            },
-            {
-                "nama": "Hani Qurrota Aini",
-                "nim": "24-20",
-                "umur": "20",
-                "asal": "CTR?",
-                "alamat": "Sukarame",
-                "hobbi": "Baca AU",
-                "sosmed": "-",
-                "kesan": "-",
-                "pesan": "-"
-            },
-            {
-                "nama": "Sekardini Lidya Putri",
-                "nim": "24-82",
-                "umur": "20",
-                "asal": "Metro",
-                "alamat": "Pemda",
-                "hobbi": "Jajan sama Nisa, Putri, Suci",
-                "sosmed": "@sekardnwp",
-                "kesan": "-",
-                "pesan": "-"
-            },
-            {
-                "nama": "Jonna Timothy Ogatse Panjaitan",
-                "nim": "24-111",
-                "umur": "20",
-                "asal": "Depok",
-                "alamat": "Pemda Raya",
-                "hobbi": "Gym, koleksi figure, nafas manual",
-                "sosmed": "@nagatse",
-                "kesan": "-",
-                "pesan": "-"
-            },
-            {
-                "nama": "Siti Sarifah",
-                "nim": "...-15",
-                "umur": "19",
-                "asal": "Bekasi",
-                "alamat": "Kedaton",
-                "hobbi": "Mancing",
-                "sosmed": "-",
-                "kesan": "-",
-                "pesan": "-"
-            }
         ]
-
         display_images_with_data(gambar_urls, data_list)
-
     Baleg()
 
 if menu == "Departemen Minbak":
