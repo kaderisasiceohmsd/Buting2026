@@ -4,7 +4,7 @@ import requests
 from PIL import Image, ImageOps
 from io import BytesIO
 
-st.markdown("""<style>.centered-title {text-align: center;}</style>""",unsafe_allow_html=True)
+st.markdown("""<style>.centered-title {text-align: center;}</style>""", unsafe_allow_html=True)
 st.markdown("<h1 class='centered-title'>BUKU KATING</h1>", unsafe_allow_html=True)
 
 # bagian sini jangan diubah
@@ -13,7 +13,7 @@ def streamlit_menu():
         menu_title=None,
         options=[
             "Kesekjenan",
-            "Baleg",
+            "Badan Legislatif",
             "Badan Kesenatoran",
             "Departemen PSDA",
             "Departemen MIKFES",
@@ -21,7 +21,7 @@ def streamlit_menu():
             "Departemen Internal",
             "Departemen SSD",
             "Departemen Medkraf",
-            "Departemen Minbak",
+            "Departemen Minbak"
         ],
         icons=[
             "people-fill",
@@ -67,7 +67,7 @@ def load_image(url):
     except Exception as e:
         st.error(f"Error loading image: {e}")
         return None
-    
+     
 @st.cache_data
 def display_images_with_data(gambar_urls, data_list):
     images = []
@@ -95,8 +95,10 @@ def display_images_with_data(gambar_urls, data_list):
             st.write(f"Pesan: {data_list[i]['pesan']}")
             st.write("  ")
     st.write("Semua gambar telah dimuat!")
+
 menu = streamlit_menu()
 
+# BAGIAN SINI YANG HANYA BOLEH DIUBAH
 if menu == "Kesekjenan":
     def Kesekjenan():
         gambar_urls = [
@@ -175,11 +177,10 @@ if menu == "Kesekjenan":
                 "pesan": "Semangat terus kaaaa"
             }
         ]
-        
         display_images_with_data(gambar_urls, data_list)
     Kesekjenan()
 
-if menu == "Badan Kesenatoran":
+elif menu == "Badan Kesenatoran":
     def Bason():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1w3bLa62k0kGRg7zGRGNe09Q2Szp_4SsS",
@@ -193,7 +194,7 @@ if menu == "Badan Kesenatoran":
             "https://drive.google.com/uc?export=view&id=1oouCnXYLzYbyTg60HK-GPBIXAk5OYOKw",
             "https://drive.google.com/uc?export=view&id=1sEvAhZP5yxITkZsekx0s2kZyUy9c4xg2",
         ]
-       data_list = [
+        data_list = [
             {
                 "nama": "Fathinah Nur Azizah",
                 "nim": "123450072",
@@ -214,7 +215,7 @@ if menu == "Badan Kesenatoran":
                 "hobbi": "Ngesen kiri",
                 "sosmed": "@helmy_ist",
                 "kesan": "abangnya kalo diajak foto maunya melet wkwk",  
-                "pesan":"Semangat terus ya baaang"
+                "pesan": "Semangat terus ya baaang"
             },
             {
                 "nama": "Fernando Dimetrius Barus",
@@ -225,7 +226,7 @@ if menu == "Badan Kesenatoran":
                 "hobbi": "Badminton",
                 "sosmed": "@barus.fernando",
                 "kesan": "Asik bener abangnya wkwk",  
-                "pesan":"Semanagat terus baaaang"
+                "pesan": "Semangat terus baaaang"
             },
             {
                 "nama": "Suci Aulia",
@@ -236,7 +237,7 @@ if menu == "Badan Kesenatoran":
                 "hobbi": "Bikin video random dan upload di second",
                 "sosmed": "@sciia_staff",
                 "kesan": "Kakaknya asik sih jujur",  
-                "pesan":"Semangat terus ya kaa kuliahnyaaa"
+                "pesan": "Semangat terus ya kaa kuliahnyaaa"
             },
             {
                 "nama": "Wielman Itolo Halawa",
@@ -247,7 +248,7 @@ if menu == "Badan Kesenatoran":
                 "hobbi": "Mancing",
                 "sosmed": "@wielhawny",
                 "kesan": "Abangnya chill sih ini wkwk",  
-                "pesan":"Pokonya semangat terus baaang"
+                "pesan": "Pokonya semangat terus baaang"
             },
             {
                 "nama": "Lia Hana Ichisasmita",
@@ -258,7 +259,7 @@ if menu == "Badan Kesenatoran":
                 "hobbi": "Nyari jurnal",
                 "sosmed": "@lia.h_264",
                 "kesan": "Pengen belajar sama kakanyaaa wkwk",  
-                "pesan":"Semangat terus kaaaaa"
+                "pesan": "Semangat terus kaaaaa"
             },
             {
                 "nama": "Aqila Zayyan Salsabil",
@@ -269,7 +270,7 @@ if menu == "Badan Kesenatoran":
                 "hobbi": "Mendokumentasikan bayyesian",
                 "sosmed": "@aqilazayyaan",
                 "kesan": "Kakanya jujur asik banget, apa aja diketawain wkwkw",  
-                "pesan":"Semangat terus kaaaaa"
+                "pesan": "Semangat terus kaaaaa"
             },
             {
                 "nama": "Hazel Mahesa Handhaka",
@@ -280,7 +281,7 @@ if menu == "Badan Kesenatoran":
                 "hobbi": "Bulu Tangkis",
                 "sosmed": "@hazelhandhaka",
                 "kesan": "Abangnya keren sih jujur",  
-                "pesan":"Semangat terus bang kuliahnya"
+                "pesan": "Semangat terus bang kuliahnya"
             },
             {
                 "nama": "Nadya Ratu Anjani",
@@ -291,7 +292,7 @@ if menu == "Badan Kesenatoran":
                 "hobbi": "Denger Lagu",
                 "sosmed": "@nadyaanjaani",
                 "kesan": "Kakanya baek bangeeet heheh",  
-                "pesan":"Semangat terus kaaa"
+                "pesan": "Semangat terus kaaa"
             },
             {
                 "nama": "Dwi Rahma Fitriani",
@@ -302,59 +303,179 @@ if menu == "Badan Kesenatoran":
                 "hobbi": "Dengerin musik",
                 "sosmed": "@dwi_rahmftrnii",
                 "kesan": "Kakaknya lucuuu hehe",  
-                "pesan":"Semangat terus ya kaaaa"
+                "pesan": "Semangat terus ya kaaaa"
             }
         ]
         display_images_with_data(gambar_urls, data_list)
     Bason()
 
-if menu == "Baleg":
+elif menu == "Badan Legislatif":
     def Baleg():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1NyjZ5EWWar10sGRoPz4EohVmLjES0lei",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+           "https://drive.google.com/uc?export=view&id=15dX_z7PpNBeroFJl9GFrSgFPn91fWpK8",
+            "https://drive.google.com/uc?export=view&id=1Gg--iHbQNTGLlW1i03jUvxIWJrPTTmPy",
+            "https://drive.google.com/uc?export=view&id=1J1Ow3mPnTv1NZuoc5vtWmcrPZNIVovs5",
+            "https://drive.google.com/uc?export=view&id=1lVb_DRDLKg3v-K0vaCGfGCuvy8H8Aywe",
+            "https://drive.google.com/uc?export=view&id=1e9mbPMxdAnuLs80AjDceH0kKP1ubYpQV",
+            "https://drive.google.com/uc?export=view&id=1A717g1m6Pl_yQkREeN-fy6GNGwZgTpea",
+            "https://drive.google.com/uc?export=view&id=1DMPCpnCFfHAsAgXe9gsOLPghm24ppRWA",
+            "https://drive.google.com/uc?export=view&id=1l3IEEGrYFXfW9-ZrXDk3DUxOjejU7Jr_",
+            "https://drive.google.com/uc?export=view&id=1swlWLuvnhYIuncA3X_jmga-WUrSCDm2e",
+            "https://drive.google.com/uc?export=view&id=11bYc1s3Hdc7SXsymoVoO5xp_fJbWbswa",
+            "https://drive.google.com/uc?export=view&id=1U5rFZZlnPF_rL5luJ9Thw-uOT2b62c0J",
+            "https://drive.google.com/uc?export=view&id=1Cic7JXesS0nSp855SaBGZ9GtBENJKAOC",
+            "https://drive.google.com/uc?export=view&id=1bL_a8gWYvrND2p3KYrqGeW6sslbV5cvU",
         ]
         data_list = [
-            {
-                "nama": "Kakak A",
-                "nim": "122450000",
-                "umur": "18",
-                "asal":"Bekasi",
-                "alamat": "Gg.sakum",
-                "hobbi": "Mainn Bola, Belajar",
-                "sosmed": "@i",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
-            {
-                "nama": "Kakak B",
-                "nim": "122450000",
-                "umur": "18",
-                "asal":"Bekasi",
-                "alamat": "Gg.sakum",
-                "hobbi": "Mainn Bola, Belajar",
-                "sosmed": "@i",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
-            {
-                "nama": "Kakak CCc",
-                "nim": "122450000",
-                "umur": "18",
-                "asal":"Bekasi",
-                "alamat": "Gg.sakum",
-                "hobbi": "Mainn Bola, Belajar",
-                "sosmed": "@i",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
-        ]
-        display_images_with_data(gambar_urls, data_list)
-    Baleg()
+    {
+        "nama": "Ridho Benedictus Togi Manik",
+        "nim": "060",
+        "umur": "20",
+        "asal": "Palembang",
+        "alamat": "GH",
+        "hobbi": "Wawancara",
+        "sosmed": "@iamridhomanik",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    {
+        "nama": "Juesi Aprilia Saragih",
+        "nim": "85",
+        "umur": "19",
+        "asal": "Singkawang",
+        "alamat": "Pelangi",
+        "hobbi": "Dengerin lagu Duhai sayang",
+        "sosmed": "@j_eesie",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    {
+        "nama": "Dharu Cayo",
+        "nim": "23",
+        "umur": "19",
+        "asal": "Lampung",
+        "alamat": "Bandar lampung",
+        "hobbi": "Nonton drama ai",
+        "sosmed": "@exvoltas",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    {
+        "nama": "Gh Mikael Niko Antonio",
+        "nim": "25",
+        "umur": "20",
+        "asal": "jabung",
+        "alamat": "jati agung",
+        "hobbi": "COD MUSANG",
+        "sosmed": "",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    {
+        "nama": "Siti Sarifah",
+        "nim": "15(24)",
+        "umur": "18",
+        "asal": "Banten",
+        "alamat": "Kedaton",
+        "hobbi": "Koleksi Kartu Boboiboy",
+        "sosmed": "@syt.rifa",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    {
+        "nama": "Givaro Ananta",
+        "nim": "78",
+        "umur": "21",
+        "asal": "Lampung Barat",
+        "alamat": "Sukabumi",
+        "hobbi": "Ngopi",
+        "sosmed": "gifaroo",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    {
+        "nama": "Afghanis Nur Solehatunnisa",
+        "nim": "124450042",
+        "umur": "19",
+        "asal": "Kepulauan Mentawai",
+        "alamat": "Owen Kost",
+        "hobbi": "Ngoding",
+        "sosmed": "@",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    {
+        "nama": "Hani Qurrota Aini",
+        "nim": "20(24)",
+        "umur": "20",
+        "asal": "Kota bumi",
+        "alamat": "Sukarame",
+        "hobbi": "Baca AU",
+        "sosmed": "@",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    {
+        "nama": "Jeremia Halim",
+        "nim": "101(24)",
+        "umur": "20",
+        "asal": "Cibaduyut",
+        "alamat": "Teluk",
+        "hobbi": "Makan pedes",
+        "sosmed": "@jeremia_hm",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    {
+        "nama": "Monica Patricia Tanjung",
+        "nim": "101(24)",
+        "umur": "20",
+        "asal": "Cibaduyut",
+        "alamat": "Teluk",
+        "hobbi": "Makan pedes",
+        "sosmed": "@jeremia_hm",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    {
+        "nama": "Jona Timothy Ogatse Panjaitan",
+        "nim": "121(24)",
+        "umur": "20",
+        "asal": "Depok",
+        "alamat": "Pemda Raya",
+        "hobbi": "Gym dan koleksi figur",
+        "sosmed": "@nagatseee",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    {
+        "nama": "Sekar Dini Widya Putri",
+        "nim": "82",
+        "umur": "20",
+        "asal": "Metro",
+        "alamat": "Pemda",
+        "hobbi": "Nginep di kos putri",
+        "sosmed": "@sekardnwp",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+    {
+        "nama": "Wan Naswa",
+        "nim": "077(23)",
+        "umur": "20",
+        "asal": "Pasay",
+        "alamat": "Belwis",
+        "hobbi": "Nyapa angin",
+        "sosmed": "@nshayka",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!",
+    },
+]
 
+display_images_with_data(gambar_urls, data_list)
+Baleg()
 
-if menu == "Departemen SSD":
+elif menu == "Departemen SSD":
     def SSD():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1NyjZ5EWWar10sGRoPz4EohVmLjES0lei",
@@ -366,41 +487,40 @@ if menu == "Departemen SSD":
                 "nama": "Kakak A",
                 "nim": "122450000",
                 "umur": "18",
-                "asal":"Bekasi",
+                "asal": "Bekasi",
                 "alamat": "Gg.sakum",
                 "hobbi": "Mainn Bola, Belajar",
                 "sosmed": "@i",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "pesan": "semangat terus kuliahnya kakak !!!"
             },
             {
                 "nama": "Kakak B",
                 "nim": "122450000",
                 "umur": "18",
-                "asal":"Bekasi",
+                "asal": "Bekasi",
                 "alamat": "Gg.sakum",
                 "hobbi": "Mainn Bola, Belajar",
                 "sosmed": "@i",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "pesan": "semangat terus kuliahnya kakak !!!"
             },
             {
                 "nama": "Kakak CCc",
                 "nim": "122450000",
                 "umur": "18",
-                "asal":"Bekasi",
+                "asal": "Bekasi",
                 "alamat": "Gg.sakum",
                 "hobbi": "Mainn Bola, Belajar",
                 "sosmed": "@i",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "pesan": "semangat terus kuliahnya kakak !!!"
             },
         ]
         display_images_with_data(gambar_urls, data_list)
     SSD()
 
-
-if menu == "Departemen Minbak":
+elif menu == "Departemen Minbak":
     def minbak():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1NyjZ5EWWar10sGRoPz4EohVmLjES0lei",
@@ -412,81 +532,35 @@ if menu == "Departemen Minbak":
                 "nama": "Kakak A",
                 "nim": "122450000",
                 "umur": "18",
-                "asal":"Bekasi",
+                "asal": "Bekasi",
                 "alamat": "Gg.sakum",
                 "hobbi": "Mainn Bola, Belajar",
                 "sosmed": "@i",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "pesan": "semangat terus kuliahnya kakak !!!"
             },
             {
                 "nama": "Kakak B",
                 "nim": "122450000",
                 "umur": "18",
-                "asal":"Bekasi",
+                "asal": "Bekasi",
                 "alamat": "Gg.sakum",
                 "hobbi": "Mainn Bola, Belajar",
                 "sosmed": "@i",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "pesan": "semangat terus kuliahnya kakak !!!"
             },
             {
                 "nama": "Kakak CCc",
                 "nim": "122450000",
                 "umur": "18",
-                "asal":"Bekasi",
+                "asal": "Bekasi",
                 "alamat": "Gg.sakum",
                 "hobbi": "Mainn Bola, Belajar",
                 "sosmed": "@i",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "pesan": "semangat terus kuliahnya kakak !!!"
             },
         ]
         display_images_with_data(gambar_urls, data_list)
     minbak()
-
-
-if menu == "Departemen SSD":
-    def SSD():
-        gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1NyjZ5EWWar10sGRoPz4EohVmLjES0lei",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-        ]
-        data_list = [
-            {
-                "nama": "Kakak A",
-                "nim": "122450000",
-                "umur": "18",
-                "asal":"Bekasi",
-                "alamat": "Gg.sakum",
-                "hobbi": "Mainn Bola, Belajar",
-                "sosmed": "@i",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
-            {
-                "nama": "Kakak B",
-                "nim": "122450000",
-                "umur": "18",
-                "asal":"Bekasi",
-                "alamat": "Gg.sakum",
-                "hobbi": "Mainn Bola, Belajar",
-                "sosmed": "@i",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
-            {
-                "nama": "Kakak CCc",
-                "nim": "122450000",
-                "umur": "18",
-                "asal":"Bekasi",
-                "alamat": "Gg.sakum",
-                "hobbi": "Mainn Bola, Belajar",
-                "sosmed": "@i",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
-        ]
-        display_images_with_data(gambar_urls, data_list)
-    SSD()
