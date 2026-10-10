@@ -152,7 +152,7 @@ if menu == "Kesekjenan":
                 "alamat": "Kota Baru",
                 "hobbi": "Mainin surat",
                 "sosmed": "@qoisolifio_",
-                "kesan": "Abang ini seru dan baikk,  
+                "kesan": "Abang ini seru dan baikk",  
                 "pesan":"semangat kuliahnya bangg, dilancarin TA nyaa"# 1
             },
              {
