@@ -102,7 +102,7 @@ if menu == "Home":
             "<h1 class='centered-title'>Deskripsi Kelompok</h1>", unsafe_allow_html=True
         )
         st.markdown(
-            """<div style="text-align: justify;">COSVAL adalah kelompok yang mengutamakan kerja sama, semangat, dan tanggung jawab dalam setiap proses belajar. Dengan visi “Cosval Kuat Semangat, Terus Sampai Tuntas,” COSVAL berkomitmen untuk terus belajar, saling membantu, dan tidak mudah menyerah saat menghadapi kesulitan. Bersama-sama, kami berusaha memberikan yang terbaik dan menyelesaikan setiap tantangan sampai tuntas.</div>""",
+            """<div style="text-align: justify;">Cosval adalah kelompok yang mengutamakan kerja sama, semangat, dan tanggung jawab dalam setiap proses belajar. Dengan visi “Cosval Kuat Semangat, Terus Sampai Tuntas,” COSVAL berkomitmen untuk terus belajar, saling membantu, dan tidak mudah menyerah saat menghadapi kesulitan. Bersama-sama, kami berusaha memberikan yang terbaik dan menyelesaikan setiap tantangan sampai tuntas.</div>""",
             unsafe_allow_html=True
         )
         st.write(""" """)
