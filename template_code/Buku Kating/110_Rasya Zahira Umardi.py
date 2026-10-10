@@ -183,19 +183,19 @@ if menu == "Kesekjenan":
 if menu == "Badan Legislatif":
     def Baleg():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1S9a3wfmCNtl92iDQJkLRL91Pg7jakU5v",
-            "https://drive.google.com/uc?export=view&id=1etH0Xb1VCQJZPbm7kg7OqqWXB2KzfWzR",
-            "https://drive.google.com/uc?export=view&id=12MogNBBIACViZGMsZOWaFaDuK7R9gwj9",
-            "https://drive.google.com/uc?export=view&id=1ietblJPahxJvnt4rXvx9NSqyzEzA_B7F",
-            "https://drive.google.com/uc?export=view&id=1O4JgbsL6Q8j5SnUy7xwnO_rTvYaDk8HP",
-            "https://drive.google.com/uc?export=view&id=1sWA_T1boU0EqUpgt4D50fMaflw0a5UMP",
-            "https://drive.google.com/uc?export=view&id=1VvuV7sATqepvEryDH3B2g2SpT3UiKqNp",
-            "https://drive.google.com/uc?export=view&id=14U22QTQSkLCPTsWM8NZ6aizeQ8BKOH72",
-            "https://drive.google.com/uc?export=view&id=1PsFMYho5W7nljge2w7T1_W0X34Dq-FVR",
-            "https://drive.google.com/uc?export=view&id=1otrqRKrjN9ttaoKjJkwIGWdZcvul2FkK",
-            "https://drive.google.com/uc?export=view&id=1-SIM2lZ10K1y3iziCPtDTOhcIivZsATU",
-            "https://drive.google.com/uc?export=view&id=1ZBk4ifw3E84sSeR5ysMLRWD81oXaSCq4",
-            "https://drive.google.com/uc?export=view&id=1_cxnAWxAQ1sgiP5uGCKVysQYLIPrZDHD",
+            "https://drive.google.com/uc?export=view&id=1_BG2EUX_gvYG3PZYMd227eTMCmsbAs4F",
+        	"https://drive.google.com/uc?export=view&id=1a47pGM3ukNaWR_L8YRZZQjyy0POALQG-",
+        	"https://drive.google.com/uc?export=view&id=1CSLAfADxtOChcPhZuHB-RoAhrTONQ1xs",
+        	"https://drive.google.com/uc?export=view&id=1-nEDfGpB1Ex_lulubyV-sxtp-miQ60HU",
+        	"https://drive.google.com/uc?export=view&id=1_EasNsQ2LHV0tzM8pKg-zhcu6UtcjNsz",
+        	"https://drive.google.com/uc?export=view&id=1YTPcDC13TrQSBhVAgLy_99OMSug3HWPR",
+        	"https://drive.google.com/uc?export=view&id=1HTezkZLq5nueWyFseF7eeK52O7v3O8jc",
+        	"https://drive.google.com/uc?export=view&id=1laO1Z0qPKd37fHRwfsykQFFBPqpgeqCL",
+        	"https://drive.google.com/uc?export=view&id=10_2urUzNjE71abWnmR2ff2c7k9QL732m",
+        	"https://drive.google.com/uc?export=view&id=1yEVd7aXbYUoLLuKXli9FI3ZbXTTn1Adc",
+        	"https://drive.google.com/uc?export=view&id=1Xw218qPJPAe84LVqXgaQ0jOreAddEgeI",
+        	"https://drive.google.com/uc?export=view&id=1sILgZY2FesGpthVYI-Tf8Bw3IqiII7YE",
+         	"https://drive.google.com/uc?export=view&id=1ZfIx7ijEVXQlZ-0UZEelV8IBgqHhIhua",
         ]
         data_list = [
             {
@@ -206,8 +206,8 @@ if menu == "Badan Legislatif":
                 "alamat": "GH",
                 "hobbi": "Wawancara",
                 "sosmed": "@iamridhomanik",
-                "kesan": "Kesan pertama kali liat bang dido kek serem abangnya, ternyata baik banget, seru, asik, sangat masyallah tabarakallah",  
-                "pesan": "Semangat bang dido main futsalnya, hati-hati dijalan jangan lupa live nyaa wkwk"# 1
+                "kesan": "SERU BANGETTT!!! abangnya beneran lucu terus celetukannya, beneran pabrik jargon hahaha",  
+            	"pesan":"Semangat bang TA nyaa, semoga dilancarkan semuanya dan lulus tepat waktu ya bangg. Anak magang baleg selalu mendoakan yang terbaik untuk ayah dido"# 1
             },
             {
                 "nama": "Juesi Apridelia Saragih",
@@ -217,8 +217,8 @@ if menu == "Badan Legislatif":
                 "alamat": "Pelangi",
                 "hobbi": "Dengerin lagu semusim dari marsel",
                 "sosmed": "@j__eesie",
-                "kesan": "Kakaknya cantikk banget, suka kalo ngobrol sama kak jue banyak obrolannya terus kakaknya seru banget jugaa",  
-                "pesan": "Semangat kakak cantik TA dan penyiarannyaa, aku fans berat kakak, ditunggu cerita-cerita seru lainnyaa"# 1
+                "kesan": "GEMASSSSS! beneran imut kakanya dan seru banget dengerin storytelling ka juee, karena kayak sivia the catchup club cara kaka ngomong",  
+            	"pesan":"Semangatt terus kak kuliah dan TA nya, semoga dimudahkan segala urusannya yaa, aamiin"# 1
             },
             {
                 "nama": "Dharu Cahyoaji Sasongko",
@@ -228,8 +228,8 @@ if menu == "Badan Legislatif":
                 "alamat": "Bandar Lampung",
                 "hobbi": "Ngidupin api baleg di tiktok",
                 "sosmed": "@exvoltas",
-                "kesan": "Abang ini keren banget pas KDP, aku ngefans bang, terus pintarnya pintar banget (wajar ozt ini)",  
-                "pesan": "Infokan tutor mapress nya dong abangdaa"# 1
+                "kesan": "Pinter bnaget abangg, tips and trik mapres bangg",  
+            	"pesan":"Semangat kuliah dan TA nya, semoga dimudahkan seluruh urusannya, aamiin!"# 1
             },
             {
                 "nama": "Gh. Mikael Niko Antoni Setiadi",
@@ -239,8 +239,8 @@ if menu == "Badan Legislatif":
                 "alamat": "Jati Agung",
                 "hobbi": "COD Musang",
                 "sosmed": "@me._kael",
-                "kesan": "Bang niko baik banget, sangat chill, sangat baik, sangat keren",  
-                "pesan": "Semangat abangg kuliahnyaa, infokan tutor jadi pimsit"# 1
+                "kesan": "Lucu banget jokes jokes abangnyaa",  
+            	"pesan": "Semangat terus kuliah dan organisasinya!"# 1
             },
             {
                 "nama": "Siti Sarifah Sumamah",
@@ -250,8 +250,8 @@ if menu == "Badan Legislatif":
                 "alamat": "Kedaton",
                 "hobbi": "Mancing",
                 "sosmed": "@syt.rifa",
-                "kesan": "Kakaknya cantik, terus kaget karena nama kami mirip, kakaknya sarifah aku zharifa, sama sama dipanggil rifa lagi",  
-                "pesan": "Semangat kakak rifa kuliahnya - dari adik rifa"# 1
+                "kesan": "Imutt sekali kakanyaaa",  
+            	"pesan":"Semangattt kaa kuliahnyaa, kaka imut balegg"# 1
             },
             {
                 "nama": "Givaro Ananta",
@@ -261,8 +261,8 @@ if menu == "Badan Legislatif":
                 "alamat": "Sukabumi",
                 "hobbi": "Minum Kopi",
                 "sosmed": "@givarooo",
-                "kesan": "Bang gip seru banget orangnya, asik, baik bangett juga, penjelasan studi kasusnya masuk akal",  
-                "pesan": "Tutorkan kiat jadi kepala komisi II banggg"# 1
+                "kesan": "Bang gip chill banget orangnyaa dan seruu",  
+            	"pesan":"Semangat terus bang kuliahnya dan semoga dimudahkan TA nya ya banggg, Aamiin!"# 1
             },
             {
                 "nama": "Afghanis Nursholehatunnisa",
@@ -272,8 +272,8 @@ if menu == "Badan Legislatif":
                 "alamat": "Owen Kost",
                 "hobbi": "Ngoding",
                 "sosmed": "@afghanisnt_",
-                "kesan": "Kakaknya cantik dan baik bangett pas ngewawancarai aku, seru jugaa, terus kakaknya pas ngejawab pertanyaan di kelas masuk akal banget",  
-                "pesan": "Kakak pj kami semangat yaa ngejalanin tupoksinyaa, semangat juga menghadapi huru hara semester 5 nyaa"# 1
+                "kesan": "Public speakingnya bagus, aku dukung kaka jadi the next kadiv komisi 2 #YIPPIE",  
+            	"pesan":"Semangat kaa kuliah dan organisasinyaa!!"# 1
             },
             {
                 "nama": "Hani Qurrota Aini",
@@ -283,8 +283,8 @@ if menu == "Badan Legislatif":
                 "alamat": "Sukarame",
                 "hobbi": "Baca AU",
                 "sosmed": "@haniquratuain_",
-                "kesan": "Kakak ini cantik bangett, suka kalo ngeliat kakak ini karena cantik banget pas aku di semester 1",  
-                "pesan": "Semangat kak hani kuliahnyaa, semangat juga di baleg nya, kelompok greedy cinta kakak kokk"# 1
+                "kesan": "Lucu dan gemas bangettt",  
+            	"pesan":"Semangat ka menghadapi bang Ridhoo, semoga dilancarkan semua urusannya kaaa!"# 1
             },
             {
                 "nama": "Jeremia Halim",
@@ -294,8 +294,8 @@ if menu == "Badan Legislatif":
                 "alamat": "Teluk",
                 "hobbi": "Nyanyi, olahraga",
                 "sosmed": "@jeremia_hm",
-                "kesan": "Abang ini keren banget kalo nyanyii udah kek lagi di Orkestra Sydney",  
-                "pesan": "Abang semangat kuliahnya, semangat ketok ketok palunyaa, semangat abangg"# 1
+                "kesan": "Keren dan berwibawa",  
+            	"pesan":"Semangat bang kuliahnyaaa!"# 1
             },
             {
                 "nama": "Monica Patricia Tanjung",
@@ -305,8 +305,8 @@ if menu == "Badan Legislatif":
                 "alamat": "Kotabaru",
                 "hobbi": "Lari",
                 "sosmed": "@monica_tjg",
-                "kesan": "Kak monica keren banget pas ngejawab kalo dikasih pertanyaan, sukaa kerenn, cantik banget kakaknya jugaa",  
-                "pesan": "Kak monica semangat kuliahnyaa, semangat jugaa di baleg, kamu keren kak cantik bangett"# 1
+                "kesan": "Lucu, gemas, tapi tegas",  
+            	"pesan":"Semangat kaa kuliah dan organisasinyaaa!"# 1
             },
             {
                 "nama": "Jona Timothy Ogatse Panjaitan",
@@ -316,8 +316,8 @@ if menu == "Badan Legislatif":
                 "alamat": "Pemda Raya",
                 "hobbi": "Gym sama Koleksi figure, nafas manual",
                 "sosmed": "@nagatseee",
-                "kesan": "Abangnya asik banget, baik banget, keren banget, palu nya juga keren banget",  
-                "pesan": "Abang semangat kuliahnyaa, semangat ngebalegnyaa, infokan tutor ketok-ketok palunya bang"# 1
+                "kesan": "Lucu abangnya, jokes jokesnya juga fresh",  
+            	"pesan":"Semangat abang kuliah dan organisasinyaa!"# 1
             },
             {
                 "nama": "Sekar Dini Widya Putri",
@@ -327,8 +327,8 @@ if menu == "Badan Legislatif":
                 "alamat": "Pemda",
                 "hobbi": "Jajan sama nisa, putri, suci",
                 "sosmed": "@sekardnwp",
-                "kesan": "Kakaknya baik bangett, seru ngobrol sama kakaknya, terus ternyata kakaknya di baleg keren bangettt",  
-                "pesan": "Semangat kak sekar pdd-in balegnyaa, semangat juga kuliahnyaa kakak"# 1
+                "kesan": "Tegas tapi chill juga",  
+            	"pesan":"Semangat terus ka kuliah dan organisasinyaa!"# 1
             },
             {
                 "nama": "Wan Nashwa Alhasni Yuska",
@@ -338,8 +338,8 @@ if menu == "Badan Legislatif":
                 "alamat": "Belwis",
                 "hobbi": "Nyapa angin",
                 "sosmed": "@nshaysk",
-                "kesan": "Kakaknya cantik banget, ceria banget, suka kalo ngobrol sama kakak soalnya kakaknya seru banget pas diajak ngobrol",  
-                "pesan": "Kak Nashwa semangat yaa TA nyaa, sehat sehat kakak semester 7 dan kakak baleg"# 1
+                "kesan": "Lemah lembut sekaliii",  
+            	"pesan":"Semangat kaa TA dan kuliahnyaa!"# 1
             },
         ]
         display_images_with_data(gambar_urls, data_list)
