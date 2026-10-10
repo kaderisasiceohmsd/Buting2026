@@ -100,9 +100,8 @@ if menu == "Kesekjenan":
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1XVrHSuj9MdWm4xDvo1qHlRBo_iuzF6q6",
             "https://drive.google.com/uc?export=view&id=1_BgX-fzh2eRSelqbbPqCMqtY8agyYu-v",
-            "https://drive.google.com/uc?export=view&id=",
-        ],
-        ]
+            "https://drive.google.com/uc?export=view&id="]
+        
         data_list = [
             {
                 "nama": "Ginda Fajar Riadi Marpaung",
