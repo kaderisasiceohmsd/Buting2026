@@ -111,7 +111,6 @@ if menu == "Kesekjenan":
         data_list = [
             {
                 "Nama": "Ginda Fajar Riadi Marpaung",
-                "Jabatan" : "",
                 "Nim": "123450103",
                 "Umur": "22",
                 "Asal":"Batam",
@@ -123,7 +122,6 @@ if menu == "Kesekjenan":
             },
             {
                 "Nama": "Muhammad Aqil Ramadhan",
-                "Jabatan" : "",
                 "Nim": "123450066",
                 "Umur": "22",
                 "Asal":"Riau",
@@ -135,7 +133,6 @@ if menu == "Kesekjenan":
             },
             {
                 "Nama": "Efi Defiyati",
-                "Jabatan" : "",
                 "Nim": "123450005",
                 "Umur": "21",
                 "Asal":"Lampung Timur",
@@ -147,7 +144,6 @@ if menu == "Kesekjenan":
             },
             {
                 "Nama": "Qois Olifio",
-                "Jabatan" : "",
                 "Nim": "123450067",
                 "Umur": "22",
                 "Asal":"Batam",
@@ -159,7 +155,6 @@ if menu == "Kesekjenan":
             },
             {
                 "Nama": "Hafsa Fazila Arradhi",
-                "Jabatan" : "",
                 "Nim": "123450079",
                 "Umur": "21",
                 "Asal":"Bandar Lampung",
@@ -171,7 +166,6 @@ if menu == "Kesekjenan":
             },
             {
                 "Nama": "Luthfia Laila Ramadhani",
-                "Jabatan" : "",
                 "Nim": "123450004",
                 "Umur": "20",
                 "Asal":"Bekasi",
@@ -202,7 +196,6 @@ elif menu == "Senator":
         data_list = [
             {
                 "Nama": "Fathinah Nur Azizah",
-                "Jabatan": "",
                 "Nim": "123450072",
                 "Umur": "21",
                 "Asal": "Jakarta",
@@ -214,7 +207,6 @@ elif menu == "Senator":
             },
             {
                 "Nama": "Helmy Surya Pratama",
-                "Jabatan": "",
                 "Nim": "124450033",
                 "Umur": "20",
                 "Asal": "Jakarta",
@@ -226,7 +218,6 @@ elif menu == "Senator":
             },
             {
                 "Nama": "Fernando Dimetrius Barus",
-                "Jabatan": "",
                 "Nim": "124450063",
                 "Umur": "21",
                 "Asal": "Tangerang Kota",
@@ -238,7 +229,6 @@ elif menu == "Senator":
             },
             {
                 "Nama": "Suci Aulia",
-                "Jabatan": "",
                 "Nim": "124450034",
                 "Umur": "19",
                 "Asal": "Jakarta",
@@ -250,7 +240,6 @@ elif menu == "Senator":
             },
             {
                 "Nama": "Wielman Itolo Halawa",
-                "Jabatan": "",
                 "Nim": "124450072",
                 "Umur": "20",
                 "Asal": "Nias Selatan",
@@ -262,7 +251,6 @@ elif menu == "Senator":
             },
             {
                 "Nama": "Lia Hana Ichisasmita",
-                "Jabatan": "",
                 "Nim": "123450089",
                 "Umur": "21",
                 "Asal": "Jakarta",
@@ -274,7 +262,6 @@ elif menu == "Senator":
             },
             {
                 "Nama": "Aqila Zayyan Salsabil",
-                "Jabatan": "",
                 "Nim": "124450014",
                 "Umur": "19",
                 "Asal": "Lampung Utara",
@@ -286,7 +273,6 @@ elif menu == "Senator":
             },
             {
                 "Nama": "Hazel Mahesa Handhaka",
-                "Jabatan": "",
                 "Nim": "124450114",
                 "Umur": "20",
                 "Asal": "Lampung Timur",
@@ -298,7 +284,6 @@ elif menu == "Senator":
             },
             {
                 "Nama": "Nadya Ratu Anjani",
-                "Jabatan": "",
                 "Nim": "123450083",
                 "Umur": "21",
                 "Asal": "Bandar Lampung",
@@ -310,7 +295,6 @@ elif menu == "Senator":
             },
             {
                 "Nama": "Dwi Rahma Fitriani",
-                "Jabatan": "",
                 "Nim": "124450084",
                 "Umur": "19",
                 "Asal": "Tulang Bawang",
@@ -343,7 +327,6 @@ elif menu == "Departemen SSD":
         data_list = [
             {
                 "Nama": "Ihsan Maulana Yusuf",
-                "Jabatan": "",
                 "Nim": "123450110",
                 "Umur": "21",
                 "Asal": "Sumatera Barat",
@@ -355,7 +338,6 @@ elif menu == "Departemen SSD":
             },
             {
                 "Nama": "Hanifah Inaya Sani",
-                "Jabatan": "",
                 "Nim": "123450123",
                 "Umur": "20",
                 "Asal": "Bandar Lampung",
@@ -367,7 +349,6 @@ elif menu == "Departemen SSD":
             },
             {
                 "Nama": "Afifah Fauziah",
-                "Jabatan": "",
                 "Nim": "123450002",
                 "Umur": "19",
                 "Asal": "Depok",
@@ -379,7 +360,6 @@ elif menu == "Departemen SSD":
             },
             {
                 "Nama": "Hasan Nur Ramadhan",
-                "Jabatan": "",
                 "Nim": "124550012",
                 "Umur": "20",
                 "Asal": "Lampung Tengah",
@@ -391,7 +371,6 @@ elif menu == "Departemen SSD":
             },
             {
                 "Nama": "Layina Ropiqo",
-                "Jabatan": "",
                 "Nim": "124550016",
                 "Umur": "20",
                 "Asal": "Bandar Lampung",
@@ -403,7 +382,6 @@ elif menu == "Departemen SSD":
             },
             {
                 "Nama": "Moch. Iqbal Az-Zahir",
-                "Jabatan": "",
                 "Nim": "124450052",
                 "Umur": "20",
                 "Asal": "Bekasi",
@@ -415,7 +393,6 @@ elif menu == "Departemen SSD":
             },
             {
                 "Nama": "Talitha Justine",
-                "Jabatan": "",
                 "Nim": "124450076",
                 "Umur": "19",
                 "Asal": "Padang, Sumatera Barat",
@@ -427,7 +404,6 @@ elif menu == "Departemen SSD":
             },
             {
                 "Nama": "Anadia Carana",
-                "Jabatan": "",
                 "Nim": "123450019",
                 "Umur": "21",
                 "Asal": "Palembang",
@@ -439,7 +415,6 @@ elif menu == "Departemen SSD":
             },
             {
                 "Nama": "Abdillah Fikri Al Pome",
-                "Jabatan": "",
                 "Nim": "123450062",
                 "Umur": "21",
                 "Asal": "Oku, Sumatera Selatan",
@@ -451,7 +426,6 @@ elif menu == "Departemen SSD":
             },
             {
                 "Nama": "Afdhal Rahmad Setiawan",
-                "Jabatan": "",
                 "Nim": "124550008",
                 "Umur": "20",
                 "Asal": "Sumatera Barat",
@@ -463,7 +437,6 @@ elif menu == "Departemen SSD":
             },
             {
                 "Nama": "Anggun Nita",
-                "Jabatan": "",
                 "Nim": "124550009",
                 "Umur": "20",
                 "Asal": "Lampung Utara",
@@ -475,7 +448,6 @@ elif menu == "Departemen SSD":
             },
             {
                 "Nama": "Della Anisa Fitri",
-                "Jabatan": "",
                 "Nim": "124450095",
                 "Umur": "20",
                 "Asal": "Lampung Timur",
@@ -512,7 +484,6 @@ elif menu == "Departemen internal":
         data_list = [
             {
                 "Nama": "Haikal Fransisko Simbolon",
-                "Jabatan": "",
                 "Nim": "123450106",
                 "Umur": "20",
                 "Asal": "Tangerang Kota",
@@ -524,7 +495,6 @@ elif menu == "Departemen internal":
             },
             {
                 "Nama": "Kharisma Mustika Sari",
-                "Jabatan": "",
                 "Nim": "123450034",
                 "Umur": "21",
                 "Asal": "Way Kanan",
@@ -536,7 +506,6 @@ elif menu == "Departemen internal":
             },
             {
                 "Nama": "Hanna Gresia Sinaga",
-                "Jabatan": "",
                 "Nim": "123450038",
                 "Umur": "21",
                 "Asal": "Kisaran",
@@ -548,7 +517,6 @@ elif menu == "Departemen internal":
             },
             {
                 "Nama": "Ahmad Farhan Ghani",
-                "Jabatan": "",
                 "Nim": "124450021",
                 "Umur": "21",
                 "Asal": "Kemiling",
@@ -560,7 +528,6 @@ elif menu == "Departemen internal":
             },
             {
                 "Nama": "Aisyah Khairun Nisa",
-                "Jabatan": "",
                 "Nim": "124450096",
                 "Umur": "18",
                 "Asal": "Indragirihulu",
@@ -572,7 +539,6 @@ elif menu == "Departemen internal":
             },
             {
                 "Nama": "Cerine Sihotang",
-                "Jabatan": "",
                 "Nim": "124450049",
                 "Umur": "19",
                 "Asal": "Semarang",
@@ -584,7 +550,6 @@ elif menu == "Departemen internal":
             },
             {
                 "Nama": "Jaya Saputra Tamba",
-                "Jabatan": "",
                 "Nim": "124450094",
                 "Umur": "21",
                 "Asal": "Kisaran",
@@ -596,7 +561,6 @@ elif menu == "Departemen internal":
             },
             {
                 "Nama": "Najla Nursyifa",
-                "Jabatan": "",
                 "Nim": "124450051",
                 "Umur": "20",
                 "Asal": "Sumatra Barat",
@@ -608,7 +572,6 @@ elif menu == "Departemen internal":
             },
             {
                 "Nama": "Rozak Ramdani",
-                "Jabatan": "",
                 "Nim": "124450100",
                 "Umur": "19",
                 "Asal": "Lampung Selatan",
@@ -620,7 +583,6 @@ elif menu == "Departemen internal":
             },
             {
                 "Nama": "Teresa Christiani Purba",
-                "Jabatan": "",
                 "Nim": "124450046",
                 "Umur": "19",
                 "Asal": "Riau",
@@ -632,7 +594,6 @@ elif menu == "Departemen internal":
             },
             {
                 "Nama": "Muhammad Hanif Dzaky Arifin",
-                "Jabatan": "",
                 "Nim": "123450064",
                 "Umur": "21",
                 "Asal": "Padang",
@@ -644,7 +605,6 @@ elif menu == "Departemen internal":
             },
             {
                 "Nama": "Audina Fitria",
-                "Jabatan": "",
                 "Nim": "124450038",
                 "Umur": "20",
                 "Asal": "Sumatera Barat",
@@ -656,7 +616,6 @@ elif menu == "Departemen internal":
             },
             {
                 "Nama": "Cika Adelia BR Marbun",
-                "Jabatan": "",
                 "Nim": "124450107",
                 "Umur": "20",
                 "Asal": "Riau",
@@ -668,7 +627,6 @@ elif menu == "Departemen internal":
             },
             {
                 "Nama": "Gustin H Tampubolon",
-                "Jabatan": "",
                 "Nim": "124450068",
                 "Umur": "21",
                 "Asal": "Sumut",
@@ -680,7 +638,6 @@ elif menu == "Departemen internal":
             },
             {
                 "Nama": "Muhammad Harvinsyah",
-                "Jabatan": "",
                 "Nim": "124450128",
                 "Umur": "20",
                 "Asal": "Sumatera Selatan",
@@ -692,7 +649,6 @@ elif menu == "Departemen internal":
             },
             {
                 "Nama": "Rafa Sabina Fahimah",
-                "Jabatan": "",
                 "Nim": "124450036",
                 "Umur": "",
                 "Asal": "Natar",
