@@ -1,5 +1,24 @@
 import streamlit as st
 
+st.set_page_config(page_title="Buku Kating", layout="wide")
+
+st.markdown("""
+<style>
+    [data-testid="stSidebar"] {
+        background-color: #701c23 !important;
+    }
+    [data-testid="stSidebar"] *, 
+    [data-testid="stSidebar"] span, 
+    [data-testid="stSidebar"] p, 
+    [data-testid="stSidebar"] div, 
+    [data-testid="stSidebar"] svg {
+        color: #ffffff !important;
+        fill: #ffffff !important;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+
 # session state agar ketika pindah page tidak berubah data yang tersedia
 
 st.session_state.pindah = True
