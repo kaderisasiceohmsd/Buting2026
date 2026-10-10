@@ -160,7 +160,7 @@ if menu == "Kesekjenan":
                 "Hobbi": "Bertemu Kesekjenan",
                 "Sosmed": "@hafsafadhilaa",
                 "Kesan": "Kakaknya cantik, baik, kalem, asik juga",  
-                "Pesan":"Semangat terus kak, sehat selalu"
+                "Pesan":"Semangat terus kak, sehat selalu, jangan lupa istirahat"
             },
              {
                 "Nama": "Luthfia Laila Ramadhani",
@@ -171,7 +171,7 @@ if menu == "Kesekjenan":
                 "Hobbi": "Mintain Duit",
                 "Sosmed": "@luthfiaarmdhni ",
                 "Kesan": "Kakaknya lucu, baik, keren, asik juga",  
-                "Pesan":"Semangat terus kak, semoga dimudahkan selaluya kak segala urusannya"
+                "Pesan":"Semangat terus kak, semoga dimudahkan kuliahnya kak segala urusannya"
             },
         ]
         display_images_with_data(gambar_urls, data_list)
