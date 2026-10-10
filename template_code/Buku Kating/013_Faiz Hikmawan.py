@@ -13,7 +13,7 @@ def streamlit_menu():
         menu_title=None,
         options=[
             "Kesekjenan",
-            "Baleg",
+            "Badan Legislatif",
             "Badan Kesenatoran",
             "Departemen PSDA",
             "Departemen MIKFES",
@@ -21,10 +21,9 @@ def streamlit_menu():
             "Departemen Internal",
             "Departemen SSD",
             "Departemen Medkraf",
-            "Departemen Minbak",
+            "Departemen Minbak"
         ],
         icons=[
-            "people-fill",
             "people-fill",
             "people-fill",
             "people-fill",
@@ -97,6 +96,7 @@ def display_images_with_data(gambar_urls, data_list):
     st.write("Semua gambar telah dimuat!")
 menu = streamlit_menu()
 
+# BAGIAN SINI YANG HANYA BOLEH DIUABAH
 if menu == "Kesekjenan":
     def Kesekjenan():
         gambar_urls = [
