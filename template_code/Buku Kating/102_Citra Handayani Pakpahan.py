@@ -179,8 +179,8 @@ if menu == "Kesekjenan":
         ]
         display_images_with_data(gambar_urls, data_list)
 
-        if menu == "Kesekjenan":
-            kesekjenan()  # Harus memanggil fungsi ini!
+if menu == "Kesekjenan":
+    kesekjenan() # Harus memanggil fungsi ini!
         
 
         # Tambahkan menu lainnya sesuai kebutuhan
