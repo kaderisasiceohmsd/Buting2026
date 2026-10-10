@@ -146,12 +146,13 @@ if menu == "Kesekjenan":
                 "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"
     ]
     data_list = [
-        {"nama": "Yobel Imanuel Pasaribu", "nim": "122450016", "umur": "20", "asal": "Medan", "alamat": "Korpri", "hobbi": "Main Game, Futsal", "sosmed": "@yobelpasaribu", "kesan": "Sangat seru", "pesan": "Semangat!"},
-        {"nama": "Kakak B", "nim": "122450000", "umur": "19", "asal": "Bekasi", "alamat": "Gg. Sakul", "hobbi": "Belajar", "sosmed": "@b", "kesan": "Asik", "pesan": "Sukses selalu!"},
-                {"nama": "Kakak B", "nim": "122450000", "umur": "19", "asal": "Bekasi", "alamat": "Gg. Sakul", "hobbi": "Belajar", "sosmed": "@b", "kesan": "Asik", "pesan": "Sukses selalu!"},
-                        {"nama": "Kakak B", "nim": "122450000", "umur": "19", "asal": "Bekasi", "alamat": "Gg. Sakul", "hobbi": "Belajar", "sosmed": "@b", "kesan": "Asik", "pesan": "Sukses selalu!"},
-                {"nama": "Kakak B", "nim": "122450000", "umur": "19", "asal": "Bekasi", "alamat": "Gg. Sakul", "hobbi": "Belajar", "sosmed": "@b", "kesan": "Asik", "pesan": "Sukses selalu!"},
-                {"nama": "Kakak B", "nim": "122450000", "umur": "19", "asal": "Bekasi", "alamat": "Gg. Sakul", "hobbi": "Belajar", "sosmed": "@b", "kesan": "Asik", "pesan": "Sukses selalu!"}
+        {"nama": "Ginda Fajar Riadi Marpaung", "nim": "123450103", "umur": "22", "asal": "Batam", "alamat": "Kesekretariat HMSD", "hobbi": "Push IMO", "sosmed": "@jars_mrp", "kesan": "Abangnya seruu, dlu pernah jadi kadiv op pas natal SD25 bisa diajak serius dan bercanda.", "pesan": "Semangat dan sukses selalu bangg!!"},
+        {"nama": "Muhammad Aqil Ramadhan", "nim": "123450066", "umur": "22", "asal": "Riau", "alamat": "Kesekretariat HMSD", "hobbi": "Dzkir", "sosmed": "@muhammadaqil1111", "kesan": "Abangnya seru bisa diajak bercanda dan bisa diajak bicara serius.", "pesan": "Sukses selalu serta semangat dalam melaksanakan tugas!"},
+        {"nama": "Efi Defiyati", "nim": "123450005", "umur": "21", "asal": "Lampung Timur", "alamat": "Airan", "hobbi": "Membaca", "sosmed": "@eeffiidefi", "kesan": "Kakaknya murah senyum.", "pesan": "Sukses selalu kak dan semangat!"},
+        {"nama": "Qois Olifio", "nim": "123450067", "umur": "22", "asal": "Batam", "alamat": "Kota Baru", "hobbi": "Mainin surat", "sosmed": "@qoisolifio_", "kesan": "Abangnya soft spoken, lucuu.", "pesan": "Sukses selalu dan semangat bang!!"},
+        {"nama": "Hafsa Fazila Arradhi", "nim": "123450079", "umur": "21", "asal": "Bandar Lampung", "alamat": "Bandar Lampung", "hobbi": "Bertemu Luluk", "sosmed": "@hafsafazilahh", "kesan": "Kakaknya baik, murah senyum, dan suka duit.", "pesan": "Sukses selalu dan semangat kakk!!"},
+        {"nama": "Luthfia Laila Ramadhani", "nim": "123450004", "umur": "20", "asal": "Bengkulu", "alamat": "Airan", "hobbi": "Keliling Balam", "sosmed": "@luthhifiarmdhni", "kesan": "Kakaknya seru, lucuu, baikk.", "pesan": "Sukses selalu dan semangat kakkk!!"}
+
 
     ]
     display_images_with_data(gambar_urls, data_list)
