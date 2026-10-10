@@ -342,7 +342,7 @@ if menu == "Baleg":
         display_images_with_data(gambar_urls, data_list)
     Baleg()
 
-if menu == "Badan Kesenatoran":
+if menu == "Bason":
     def Bason():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
