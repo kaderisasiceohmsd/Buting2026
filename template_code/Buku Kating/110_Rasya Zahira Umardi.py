@@ -101,12 +101,12 @@ menu = streamlit_menu()
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=12c4HoUv_7ybIIRiVUarGlOrPdvmP-UJp",
-            "https://drive.google.com/uc?export=view&id=1uBQjMofh6xoZ3a2qa6oLWTici0hKOzGw",
-            "https://drive.google.com/uc?export=view&id=1md8uzDaCwQD7S83jP1PpYbRiv-DFfXmj",
-            "https://drive.google.com/uc?export=view&id=1msXyEAAoRiWRbkl6fTG4d2BraUUAu3KC",
-            "https://drive.google.com/uc?export=view&id=117IVKdyqqu7V-qYanyZMnb1YoQj36iaq",
-            "https://drive.google.com/uc?export=view&id=11BWvexjOAk9uBYCZJkqujxpIRqqD7khu",
+            "https://drive.google.com/uc?export=view&id=1twhP1U_DdBCpEx6b7-0vq6CL9OZytjDC",
+            "https://drive.google.com/uc?export=view&id=11uG-ovObNWpUqptHqFoaA1y6slz0Bzl5",
+            "https://drive.google.com/uc?export=view&id=1_hcR8JrfC1f8xVi1PFowPUnCh0vMXZwz",
+            "https://drive.google.com/uc?export=view&id=1k36lXwVGs5ljYjl_dcKK1qPr6iBm8GHS",
+            "https://drive.google.com/uc?export=view&id=1Kvp6HnZy2JX2eSACSsz83r4zqI6RCLdD",
+            "https://drive.google.com/uc?export=view&id=1l0qNaH-rtBQnHUs7rWxDHoU2UkPVQBzv"
         ]
         data_list = [
             {
@@ -117,8 +117,8 @@ if menu == "Kesekjenan":
                 "alamat": "Sekretariat HMSD",
                 "hobbi": "Push Rank sampe IMO",
                 "sosmed": "@jars_mrp",
-                "kesan": "Bang Ginda kesannya baik, seru, asik juga dan ternyata sesuai sama kesannya, terus pas wawancara juga jawaban abangnya keren",  
-                "pesan": "Semangat abang kahim, semoga cepat selesai TA nyaa"# 1
+                "kesan": "Keren dan berwibawa, keren banget manage waktunya",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
                 "nama": "Muhammad Aqil Ramadhan",
@@ -128,8 +128,8 @@ if menu == "Kesekjenan":
                 "alamat": "Sekretariat HMSD",
                 "hobbi": "Dzikir",
                 "sosmed": "@muhammadaqil1111",
-                "kesan": "Abangnya baik, terus kalo ngajar materi juga seru, keren juga kalo ngasih petuah bijak banget jujur",  
-                "pesan": "Semangat abang sekjen kita semester 7 nyaa, semoga TA cepet selesaii ketemu di riuh wisudah nanti kitaa abang"# 1
+                "kesan": "Abangnya chill bangett, dan memperoleh banyak ilmu dari sekjen",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
                 "nama": "Efi Defiyati",
@@ -139,8 +139,8 @@ if menu == "Kesekjenan":
                 "alamat": "Airan",
                 "hobbi": "Membaca",
                 "sosmed": "@eeffiidefi",
-                "kesan": "Kakak cantik sekali, baik jugaa, ramah, cantik pokoknya",  
-                "pesan": "Semangat kakak sekre kita yang paling cantik, semoga TA nya cepat selesaii"# 1
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
                 "nama": "Qois Olifio",
@@ -150,8 +150,8 @@ if menu == "Kesekjenan":
                 "alamat": "Kota Baru",
                 "hobbi": "Mainin Surat",
                 "sosmed": "@qoisolifio_",
-                "kesan": "Abangnya keren, baik banget saat wawancara, seruu banget jugaa",  
-                "pesan": "Semangat abang menjalankan tupoksinya dan semangat juga untuk TA nya abangg"# 1
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
                 "nama": "Hafsa Fazila Arradhi",
@@ -161,8 +161,8 @@ if menu == "Kesekjenan":
                 "alamat": "Bandar Lampung",
                 "hobbi": "Berenang",
                 "sosmed": "@hafsafazilaa",
-                "kesan": "Kakaknya cantik terus seru jugaa pas wawancara, kerenn kakaknyaa",  
-                "pesan": "Semangat kakak bendaharaa, semoga TA nya cepat selesai kakak"# 1
+                "kesan": "Kakaknya seruuuu",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
                 "nama": "Luthfia Laila Ramadhani",
@@ -172,8 +172,8 @@ if menu == "Kesekjenan":
                 "alamat": "Airan",
                 "hobbi": "Bertemu Pak Tirta",
                 "sosmed": "@luthfiaarmdhni",
-                "kesan": "Kakaknya cantik terus lucuu banget hobi ketemu pak tirtaa",  
-                "pesan": "Semangat kakak mengerjakan TA, meet sama pak tirta + menjalankan tupoksinya"# 1
+                "kesan": "Lucuuu kakanya, dan insight how to survive every semesternya sangat menarikk",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
         ]
         display_images_with_data(gambar_urls, data_list)
