@@ -11,6 +11,10 @@ Homepage = st.Page(
 
 # Diurutkan berdasarkan NIM (027 -> 131)
 Mahasiswa1 = st.Page(
+<<<<<<< HEAD
+    "Buku Kating/035_Pradana Ilhamsyah.py",
+    title="035 - Pradana Ilhamsyah",
+=======
     "Buku Kating/027_Zaky Firmansyah.py",
     title="027 - Zaky Firmansyah",
     icon=":material/person:",
@@ -63,6 +67,7 @@ Mahasiswa10 = st.Page(
 Mahasiswa11 = st.Page(
     "Buku Kating/131_Mayang Nuraini.py",
     title="131 - Mayang Nuraini",
+>>>>>>> a6543e5f84fecf062a2868651c368f68e328aee9
     icon=":material/person:",
 )
 
