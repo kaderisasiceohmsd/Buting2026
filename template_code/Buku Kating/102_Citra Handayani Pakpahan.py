@@ -4,7 +4,7 @@ import requests
 from PIL import Image, ImageOps
 from io import BytesIO
 
-st.markdown("""<style>.centered-title {text-align: center;}</style>""",unsafe_allow_html=True)
+st.markdown("""<style>.centered-title {text-align: center;}</style>""", unsafe_allow_html=True)
 st.markdown("<h1 class='centered-title'>BUKU KATING</h1>", unsafe_allow_html=True)
 
 # bagian sini jangan diubah
@@ -44,7 +44,7 @@ def streamlit_menu():
                 "margin": "0px",
                 "--hover-color": "#eee",
             },
-            "nav-link-selected": {"background-color": "#3FBAD8"},
+            "nav-link-selected": {"background-color": "#8D4C06"},
         },
     )
     return selected
@@ -82,20 +82,22 @@ def display_images_with_data(gambar_urls, data_list):
             st.image(img, use_container_width=True)
 
         if i < len(data_list):
-            st.write(f"Nama: {data_list[i]['nama']}")
-            st.write(f"NIM: {data_list[i]['nim']}")
-            st.write(f"Umur: {data_list[i]['umur']}")
-            st.write(f"Asal: {data_list[i]['asal']}")
-            st.write(f"Alamat: {data_list[i]['alamat']}")
-            st.write(f"Hobbi: {data_list[i]['hobbi']}")
-            st.write(f"Sosial Media: {data_list[i]['sosmed']}")
-            st.write(f"Kesan: {data_list[i]['kesan']}")
-            st.write(f"Pesan: {data_list[i]['pesan']}")
+            st.write(f"Nama: {data_list[i]['Nama']}")
+            st.write(f"Jabatan: {data_list[i]['Jabatan']}")
+            st.write(f"NIM: {data_list[i]['Nim']}")
+            st.write(f"Umur: {data_list[i]['Umur']}")
+            st.write(f"Asal: {data_list[i]['Asal']}")
+            st.write(f"Alamat: {data_list[i]['Alamat']}")
+            st.write(f"Hobbi: {data_list[i]['Hobbi']}")
+            st.write(f"Sosial Media: {data_list[i]['Sosmed']}")
+            st.write(f"Kesan: {data_list[i]['Kesan']}")
+            st.write(f"Pesan: {data_list[i]['Pesan']}")
             st.write("  ")
     st.write("Semua gambar telah dimuat!")
+
 menu = streamlit_menu()
 
-# BAGIAN SINI YANG HANYA BOLEH DIUABAH
+# BAGIAN SINI YANG HANYA BOLEH DIUBAH
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
@@ -115,8 +117,8 @@ if menu == "Kesekjenan":
                 "Alamat": "Sekretariat HMSD",
                 "Hobbi": "push rank sampe imo",
                 "Sosmed": "@jars_mrp",
-                "Kesan": "Abangnya baik, kalem, asik juga waktu jadi pemateri",  
-                "Pesan":"Semangat terus bang , jangan lupa makan"
+                "Kesan": "Abangnya keren, kalem, asik juga waktu jadi pemateri",  
+                "Pesan":"Semangat terus bang semoga skripsinya dimudahkan"
             },
             {
                 "Nama": "Muhammad Aqil Ramadhan",
@@ -126,8 +128,8 @@ if menu == "Kesekjenan":
                 "Alamat": "Sekretariat HMSD",
                 "Hobbi": "Zikir",
                 "Sosmed": "@muhammadaqil1111",
-                "Kesan": "Abangnya asik, suka bercanda juga, kalau jadi pemateri mudah dipahami ",  
-                "Pesan":"Semangat terus bang, selalu bang semoga dimudahkan segala urusan"
+                "Kesan": "Abangnya asik, lucu, suka bercanda juga, kalau jadi pemateri asik",  
+                "Pesan":"Sehat selalu bang semoga dimudahkan segala urusan"
             },
             {
                 "Nama": "Efi Defiyati",
@@ -137,7 +139,7 @@ if menu == "Kesekjenan":
                 "Alamat": "Airan",
                 "Hobbi": "Membaca",
                 "Sosmed": "@eeffiidefi",
-                "Kesan": "Kakaknya baik, cantik,  sama kalem juga ",  
+                "Kesan": "Kakaknya baik sama kalem",  
                 "Pesan":"Semangat terus dan sehat selalu kak"
             },
             {
@@ -148,10 +150,10 @@ if menu == "Kesekjenan":
                 "Alamat": "Kota Baru",
                 "Hobbi": "Mainin Surat",
                 "Sosmed": "@qoisolifio_ ",
-                "Kesan": "Abangnya keren, kalem, dan baik",  
-                "Pesan":"Semangat bikin bikin suratnyaa bang, Jangan lupa makan"
+                "Kesan": "Abangnya keren, kalem, lucu",  
+                "Pesan":"Semangat bikin bikin suratnyaa bang, semoga jadi mudah bikin skripsinya"
             },
-             {
+            {
                 "Nama": "Hafsa Fazila Arradhi",
                 "Nim": "123450079",
                 "Umur": "21",
@@ -162,7 +164,7 @@ if menu == "Kesekjenan":
                 "Kesan": "Kakaknya cantik, baik, kalem, asik juga",  
                 "Pesan":"Semangat terus kak, sehat selalu"
             },
-             {
+            {
                 "Nama": "Luthfia Laila Ramadhani",
                 "Nim": "123450004",
                 "Umur": "20",
@@ -171,10 +173,150 @@ if menu == "Kesekjenan":
                 "Hobbi": "Mintain Duit",
                 "Sosmed": "@luthfiaarmdhni ",
                 "Kesan": "Kakaknya lucu, baik, keren, asik juga",  
-                "Pesan":"Semangat terus kak, semoga dimudahkan selaluya kak segala urusannya"
+                "Pesan":"Semoga dimudahkan selalu ya kak segala urusannya"
+            },                                                  
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    kesekjenan()
+
+elif menu == "Senator":
+    def senator():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+        ]
+        data_list = [
+            {
+                "Nama": "Fathinah Nur Azizah",
+                "Jabatan": "Senator",
+                "Nim": "123450072",
+                "Umur": "21",
+                "Asal": "Jakarta",
+                "Alamat": "Belakang PB",
+                "Hobbi": "Nulis di medium",
+                "Sosmed": "@fathinahnazzh",
+                "Kesan": "Kakaknya cantik, baik, kalem, keren",
+                "Pesan": "Sehat selalu kak, semoga lancar skripsinya"
+            },
+            {
+                "Nama": "Helmy Surya Pratama",
+                "Jabatan": "Kepala Biro Aspirasi dan Media Komunikasi",
+                "Nim": "124450033",
+                "Umur": "20",
+                "Asal": "Jakarta",
+                "Alamat": "Tanya Bapas",
+                "Hobbi": "Ngesen kiri",
+                "Sosmed": "@helmy_inst",
+                "Kesan": "Abangnya seru, asik, lucu",
+                "Pesan": "Semangat terus bang"
+            },
+            {
+                "Nama": "Fernando Dimetrius Barus",
+                "Jabatan": "Staff Biro Aspirasi dan Media Komunikasi",
+                "Nim": "124450063",
+                "Umur": "21",
+                "Asal": "Tangerang Kota",
+                "Alamat": "Sebelah Kamar Biwa",
+                "Hobbi": "Badminton",
+                "Sosmed": "@barus.fernando",
+                "Kesan": "Abangnya baik, asik, kalem",
+                "Pesan": "Semoga selalu dimudahkan bang"
+            },
+            {
+                "Nama": "Suci Aulia",
+                "Jabatan": "Staff Biro Aspirasi dan Media Komunikasi",
+                "Nim": "124450034",
+                "Umur": "19",
+                "Asal": "Jakarta",
+                "Alamat": "Kota Baru",
+                "Hobbi": "Mancing",
+                "Sosmed": "@sciia_",
+                "Kesan": "Kakaknya kalem dan baik",
+                "Pesan": "Sehat selalu kak"
+            },
+            {
+                "Nama": "Wielman Itolo Halawa",
+                "Jabatan": "Staff Biro Aspirasi dan Media Komunikasi",
+                "Nim": "124450072",
+                "Umur": "20",
+                "Asal": "Nias Selatan",
+                "Alamat": "Asrama TB 3",
+                "Hobbi": "Dibonceng",
+                "Sosmed": "@wielhawn",
+                "Kesan": "Abangnya asik, keren, pinter juga",
+                "Pesan": "Sehat selalu bang, semangat terus juga"
+            },
+            {
+                "Nama": "Lia Hana Ichisasmita",
+                "Jabatan": "Kepala Biro Kajian Strategis dan Propaganda",
+                "Nim": "123450089",
+                "Umur": "21",
+                "Asal": "Jakarta",
+                "Alamat": "Belwis",
+                "Hobbi": "Nonton",
+                "Sosmed": "@lia,h_264",
+                "Kesan": "Kakaknya lucu, asik juga",
+                "Pesan": "Semoga kuliahnya lancar ya kak"
+            },
+            {
+                "Nama": "Aqila Zayyan Salsabil",
+                "Jabatan": "Staff Biro Kajian Strategis dan Propaganda",
+                "Nim": "124450014",
+                "Umur": "19",
+                "Asal": "Lampung Utara",
+                "Alamat": "Sukarame",
+                "Hobbi": "Mendokumentasi Bayes",
+                "Sosmed": "@aqilazayyaan",
+                "Kesan": "Kakaknya lucu, keren juga",
+                "Pesan": "Semoga kelompoknya nambah gacor kak"
+            },
+            {
+                "Nama": "Hazel Mahesa Handhaka",
+                "Jabatan": "Staff Biro Kajian Strategis dan Propaganda",
+                "Nim": "124450114",
+                "Umur": "20",
+                "Asal": "Lampung Timur",
+                "Alamat": "Lampung Timur",
+                "Hobbi": "Giring Ayam",
+                "Sosmed": "@hazelhandhaka",
+                "Kesan": "Abangnya keren, asik juga",
+                "Pesan": "Semoga sukses bang"
+            },
+            {
+                "Nama": "Nadya Ratu Anjani",
+                "Jabatan": "Kepala Biro Kesekretariatan",
+                "Nim": "123450083",
+                "Umur": "21",
+                "Asal": "Bandar Lampung",
+                "Alamat": "Sukarame",
+                "Hobbi": "Membaca",
+                "Sosmed": "@nadyaanjaani",
+                "Kesan": "Kakaknya cantik, ramah, baik",
+                "Pesan": "Semangat terus kak, semoga kuliahnya lancar"
+            },
+            {
+                "Nama": "Dwi Rahma Fitriani",
+                "Jabatan": "Staff Biro Kesekretariatan",
+                "Nim": "124450084",
+                "Umur": "19",
+                "Asal": "Tulang Bawang",
+                "Alamat": "Jl. Lapas",
+                "Hobbi": "Baca Buku, nonton film, dengerin musik",
+                "Sosmed": "@dwi_rahmftrnii",
+                "Kesan": "Kakaknya baik dan ramah",
+                "Pesan": "Sehat selalu dan semangat terus kak"
             },
         ]
         display_images_with_data(gambar_urls, data_list)
+    senator()
 
 if menu == "Kesekjenan":
     kesekjenan()
