@@ -124,7 +124,7 @@ if menu == "Kesekjenan":
                 "umur": "22",
                 "asal":"Riau, Bangkinang",
                 "alamat": "Sekretariat HMSD",
-                "hobbi": "Masak",
+                "hobbi": "Masakin Kahim",
                 "sosmed": "@muhammadaqil1111",
                 "kesan": "Keren berkharisma",  
                 "pesan":"Lulus tepat waktu ya bang"# 1
@@ -180,12 +180,19 @@ if menu == "Kesekjenan":
 if menu == "Baleg":
     def baleg():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1J-rsWHF5zwQ_-_xqxt7DYWF-5P5ymzKv",
-            "https://drive.google.com/uc?export=view&id=137c5EKVfSQvxD8cQ_htbjel-yHPUU_M5",
-            "https://drive.google.com/uc?export=view&id=18Tfshe_-1nTp82E9psDJK0f4nk2r0Ke3",
-            "https://drive.google.com/uc?export=view&id=1IvA_nI4wpruLlaCVw1ZL-JnDiMi1K03R",
-            "https://drive.google.com/uc?export=view&id=1K3sEk-WQWh1kF9zRNe4ajtM_QR37NRiT",
-            "https://drive.google.com/uc?export=view&id=1709lIORxWXXRmt_r0Bk0GcYqI55IYWgy",
+            "https://drive.google.com/uc?export=view&id=14dFj80Asu7cxYcUYTtY2uW2kE9K-ZRVs",
+            "https://drive.google.com/uc?export=view&id=1naNv94LqyBGQos2Spn3rY5z3UMPD1-yM",
+            "https://drive.google.com/uc?export=view&id=1MtSTGGauyaX9u8TsDuqCdktxW52KaAeJ",
+            "https://drive.google.com/uc?export=view&id=1ZWkR2u-0QMiKNLpYr67sj2htSq-YDF5M",
+            "https://drive.google.com/uc?export=view&id=1JmtbfmPDJszMGVDlsf0D2NQ4iijH0_Ey",
+            "https://drive.google.com/uc?export=view&id=1kiJnXvZ76aGhj5j6P7Nd43n3bhEc6gBb",
+            "https://drive.google.com/uc?export=view&id=1HGiCVFfTzSgVXKcs8M4hmkY5TXwjLcNL",
+            "https://drive.google.com/uc?export=view&id=1z_vv1EV40mZTwbB7h7uDbOlTDh-iHIbA",
+            "https://drive.google.com/uc?export=view&id=14P0ZMMfuJkFQbzNvSCnM0KDcWOkBf8oq",
+            "https://drive.google.com/uc?export=view&id=1U4qPL-7r4tGN-BX6eZdRM0p2vAllK6wC",
+            "https://drive.google.com/uc?export=view&id=1rVa5Bls7qjHS0eUnCKS1dSNVlcg6lX1T",
+            "https://drive.google.com/uc?export=view&id=1-Qaunfc0o-4nDos0ZWAAT9lshsFkZsEG",
+            "https://drive.google.com/uc?export=view&id=1b2TtcisKatC9yFw3Ep0_M2_rr6Vduh-x",
         ]
         data_list = [
             {
@@ -254,6 +261,83 @@ if menu == "Baleg":
                 "kesan": "humble dan baik",  
                 "pesan":"Jangan mudah patah semangat kak :)"# 1  
             },
+            {
+                "nama": "Ginda Fajar Riadi marpaung",
+                "nim": "123450103",
+                "umur": "22",
+                "asal":"Batam",
+                "alamat": "Sektariatan HMSD",
+                "hobbi": "push imo, mencuci",
+                "sosmed": "@jars_mrp",
+                "kesan": "Bang ginda ramahnya gak ketolongan, humble, adem liat bang ginda rasanya",  
+                "pesan":"gass cumlaude bang"# 1
+            },
+            {
+                "nama": "Muhammad Aqil Ramadhan",
+                "nim": "123450066",
+                "umur": "22",
+                "asal":"Riau, Bangkinang",
+                "alamat": "Sekretariat HMSD",
+                "hobbi": "Masak",
+                "sosmed": "@muhammadaqil1111",
+                "kesan": "Keren berkharisma",  
+                "pesan":"Lulus tepat waktu ya bang"# 1
+            },
+            {
+                "nama": "Efi Defiyati",
+                "nim": "123450005",
+                "umur": "21",
+                "asal":"Lampung Timur",
+                "alamat": "Airan",
+                "hobbi": "Membaca",
+                "sosmed": "@eeffiidefi",
+                "kesan": "humble, ramah, baik",  
+                "pesan":"Kak, senyum selalu ya kak"# 1
+            },
+            {
+                "nama": "Qois Olifio",
+                "nim": "123450067",
+                "umur": "22",
+                "asal":"Batam",
+                "alamat": "Kota Baru",
+                "hobbi": "Mainin Surat",
+                "sosmed": "@qoisolifio_",
+                "kesan": "Cool, dan keliatan orang yang Sistematis",  
+                "pesan":"Bang waktu presentasi jangan terlalu cepat ya bang hehe"# 1  
+            },
+            {
+                "nama": "Haffsa Fazila Arradhi",
+                "nim": "123450079",
+                "umur": "21",
+                "asal":"Bandar Lampung",
+                "alamat": "Bandar Lampung",
+                "hobbi": "Menyanyi",
+                "sosmed": "@hafsafazilaa",
+                "kesan": "humble dan baik",  
+                "pesan":"Selalu happy ya kak :)"# 1  
+            },
+            {
+                "nama": "Luthfia Laila Ramadhani",
+                "nim": "123450003",
+                "umur": "20",
+                "asal":"Jawa Barat, Bekasi",
+                "alamat": "Airan",
+                "hobbi": "Bertemu haffsa",
+                "sosmed": "@luthfiaarmdhni",
+                "kesan": "humble dan baik",  
+                "pesan":"Jangan mudah patah semangat kak :)"# 1  
+            },
+            {
+                "nama": "Qois Olifio",
+                "nim": "123450067",
+                "umur": "22",
+                "asal":"Batam",
+                "alamat": "Kota Baru",
+                "hobbi": "Mainin Surat",
+                "sosmed": "@qoisolifio_",
+                "kesan": "Cool, dan keliatan orang yang Sistematis",  
+                "pesan":"Bang waktu presentasi jangan terlalu cepat ya bang hehe"# 1  
+            }
         ]
         display_images_with_data(gambar_urls, data_list)
     baleg()

@@ -133,10 +133,10 @@ elif menu == "About Us":
         ]
         data_list = [
             {
-                "nama": "x",
+                "nama": "Dandy Romansyah",
                 "sebagai": "Pak Lurah",
-                "nim": "122450016",
-                "fun_fact": "suka makan pedes, tapi ga suka efeknya",
+                "nim": "125450006",
+                "fun_fact": "Fans Bernadya nomor 1 sedunia dengan jumlah mendengarkan 45.868 menit",
                 "motto_hidup": "new semester new me",
             },
             {
