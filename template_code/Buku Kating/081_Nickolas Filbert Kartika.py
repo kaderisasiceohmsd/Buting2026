@@ -475,9 +475,10 @@ if menu == "Badan Kesenatoran":
         display_images_with_data(gambar_urls, data_list)
     Bason()
 if menu == "Departemen Minbak":
-    def Departemen_Minbak():
+
+    def departemen_minbak():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1TgtXdkKN21D8kaL59ZLYa_WPTVIMvavc",
+            "https://drive.google.com/uc?export=view&id=1TgtXdkKN21D8kaL59ZLYa_WPTVIMvav",
             "https://drive.google.com/uc?export=view&id=1ejIuqpeZ3YK0rpsnmTZylEqPDG6HEIY6",
             "https://drive.google.com/uc?export=view&id=1YVYo_zYWkUh07Tk9pd1F6rzKw3O9c3xC",
             "https://drive.google.com/uc?export=view&id=1MB_IOXFtarTlJ0SIgj5MsnNi4JGXMQs0",
@@ -493,6 +494,7 @@ if menu == "Departemen Minbak":
             "https://drive.google.com/uc?export=view&id=1iy0fTja0KZaqe4v1jWV4TOz9_2oRkAFK",
             "https://drive.google.com/uc?export=view&id=1XZN5UPDIFtDKVjTg74unQGiOF8j4SEFb",
         ]
+
         data_list = [
             {
                 "nama": "Kevin Antonio Junior",
@@ -503,7 +505,7 @@ if menu == "Departemen Minbak":
                 "hobbi": "Mancing",
                 "sosmed": "@kevinaja__",
                 "kesan": "Sangat menginspirasi dan memimpin dengan baik",
-                "pesan": "Semangat terus kak!"
+                "pesan": "Semangat terus kak!",
             },
             {
                 "nama": "Gusti Putu Ferazka Dhiyamika",
@@ -513,8 +515,10 @@ if menu == "Departemen Minbak":
                 "alamat": "Way Dadi",
                 "hobbi": "Mendaki",
                 "sosmed": "@ferazkaa",
-                "kesan": "Sangat rapi dan cekatan dalam mengelola administrasi",
-                "pesan": "Sukses selalu kak!"
+                "kesan": (
+                    "Sangat rapi dan cekatan dalam mengelola administrasi"
+                ),
+                "pesan": "Sukses selalu kak!",
             },
             {
                 "nama": "Ali Aristo Muthahhari Parisi",
@@ -525,7 +529,7 @@ if menu == "Departemen Minbak":
                 "hobbi": "Nonton F1",
                 "sosmed": "@ali_parisi3",
                 "kesan": "Keren dan selalu memberikan arahan yang jelas",
-                "pesan": "Semangat menjalankan tugasnya kak!"
+                "pesan": "Semangat menjalankan tugasnya kak!",
             },
             {
                 "nama": "Ayu Andriani Parlina Wati",
@@ -536,7 +540,7 @@ if menu == "Departemen Minbak":
                 "hobbi": "Belajar + menghitung uang",
                 "sosmed": "@aayuandriani_",
                 "kesan": "Sangat ramah dan aktif berkontribusi",
-                "pesan": "Tetap semangat dan sukses terus!"
+                "pesan": "Tetap semangat dan sukses terus!",
             },
             {
                 "nama": "Dafa Elpriza",
@@ -547,7 +551,7 @@ if menu == "Departemen Minbak":
                 "hobbi": "Jogging",
                 "sosmed": "@dafaelpriza_",
                 "kesan": "Sangat menyenangkan dan mudah diajak kerja sama",
-                "pesan": "Sukses terus perkuliahan dan aktivitasnya!"
+                "pesan": "Sukses terus perkuliahan dan aktivitasnya!",
             },
             {
                 "nama": "Juwita Sari",
@@ -558,7 +562,7 @@ if menu == "Departemen Minbak":
                 "hobbi": "Mancing",
                 "sosmed": "@ju.juwitaaa_",
                 "kesan": "Sangat baik dan murah senyum",
-                "pesan": "Semangat terus kuliahnya!"
+                "pesan": "Semangat terus kuliahnya!",
             },
             {
                 "nama": "Muhammad Afdal Luthfi",
@@ -569,7 +573,7 @@ if menu == "Departemen Minbak":
                 "hobbi": "Memantau dl tugas",
                 "sosmed": "@afdall.03",
                 "kesan": "Sangat bertanggung jawab dan fokus",
-                "pesan": "Semangat terus kakak!"
+                "pesan": "Semangat terus kakak!",
             },
             {
                 "nama": "Salsabila Nazwa Putri",
@@ -580,7 +584,7 @@ if menu == "Departemen Minbak":
                 "hobbi": "Nongkrong di kopken",
                 "sosmed": "@slbnzw_",
                 "kesan": "Sangat asik dan ceria",
-                "pesan": "Tetap semangat kuliahnya ya kak!"
+                "pesan": "Tetap semangat kuliahnya ya kak!",
             },
             {
                 "nama": "Muhammad Ridwan",
@@ -591,7 +595,7 @@ if menu == "Departemen Minbak":
                 "hobbi": "Badminton",
                 "sosmed": "@mridwaan_22",
                 "kesan": "Sangat mengayomi dan membimbing dengan sabar",
-                "pesan": "Semangat terus memimpin divisinya kak!"
+                "pesan": "Semangat terus memimpin divisinya kak!",
             },
             {
                 "nama": "Andra Ilham Bintang",
@@ -602,7 +606,7 @@ if menu == "Departemen Minbak":
                 "hobbi": "Main rubik",
                 "sosmed": "@andra.lhm",
                 "kesan": "Sangat kreatif dan pintar",
-                "pesan": "Sukses selalu kuliahnya!"
+                "pesan": "Sukses selalu kuliahnya!",
             },
             {
                 "nama": "Bryan Paskah Telaumbanua",
@@ -613,7 +617,7 @@ if menu == "Departemen Minbak":
                 "hobbi": "Live tiktok",
                 "sosmed": "@bryantel_",
                 "kesan": "Sangat menghibur dan ramah",
-                "pesan": "Semangat terus berkarya kak!"
+                "pesan": "Semangat terus berkarya kak!",
             },
             {
                 "nama": "Ghiyats Thabularasa Meardhy",
@@ -624,7 +628,7 @@ if menu == "Departemen Minbak":
                 "hobbi": "Nanem Sawit",
                 "sosmed": "@meardhy_ghiyats",
                 "kesan": "Sangat unik dan bersemangat",
-                "pesan": "Tetap semangat dan sukses selalu!"
+                "pesan": "Tetap semangat dan sukses selalu!",
             },
             {
                 "nama": "Indah Julia Mawar Pratiwi",
@@ -635,7 +639,7 @@ if menu == "Departemen Minbak":
                 "hobbi": "Bengong",
                 "sosmed": "@indahjuliaa",
                 "kesan": "Sangat baik dan bersahabat",
-                "pesan": "Sukses terus perkuliahannya kak!"
+                "pesan": "Sukses terus perkuliahannya kak!",
             },
             {
                 "nama": "Jacinda Kesya Alvara",
@@ -646,7 +650,7 @@ if menu == "Departemen Minbak":
                 "hobbi": "Nyapu depan gacoan",
                 "sosmed": "@cacalvra",
                 "kesan": "Sangat ceria dan menyenangkan",
-                "pesan": "Semangat terus ya kak!"
+                "pesan": "Semangat terus ya kak!",
             },
             {
                 "nama": "Muhammad Rafka",
@@ -657,12 +661,16 @@ if menu == "Departemen Minbak":
                 "hobbi": "Bangun pagi",
                 "sosmed": "@muhammdrafka_",
                 "kesan": "Sangat disiplin dan dapat diandalkan",
-                "pesan": "Sukses selalu buat perkuliahannya!"
-            }
+                "pesan": "Sukses selalu buat perkuliahannya!",
+            },
         ]
+
         display_images_with_data(gambar_urls, data_list)
-    Departemen_Minbak()
+
+    departemen_minbak()
+
 if menu == "Departemen SSD":
+
     def Departemen_SSD():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1aMv9qlfsOuyoPiS2R8NTcgAxozaNZqou",
@@ -676,7 +684,9 @@ if menu == "Departemen SSD":
             "https://drive.google.com/uc?export=view&id=1z6mzgHPVOaHUuHgn2NFf5QtgvIhdqmfk",
             "https://drive.google.com/uc?export=view&id=1Zl7FrDBs1q_1u5ETnETkn5J25Ra5Lrdq",
         ]
+
         data_list = [
+            # --- Pimpinan & Sekretaris ---
             {
                 "nama": "Ihsan Maulana Yusuf",
                 "nim": "123450110",
@@ -699,6 +709,7 @@ if menu == "Departemen SSD":
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!",
             },
+            # --- Divisi Kemitraan ---
             {
                 "nama": "Afifah Fauziah",
                 "nim": "123450002",
@@ -743,6 +754,18 @@ if menu == "Departemen SSD":
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!",
             },
+            {
+                "nama": "Mochammad Iqbal Az-zahir",
+                "nim": "124450052",
+                "umur": "20",
+                "asal": "Bekasi",
+                "alamat": "Natar",
+                "hobbi": "Nonton Drakor",
+                "sosmed": "@iqbalazzahir_",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",
+                "pesan": "semangat terus kuliahnya kakak !!!",
+            },
+            # --- Divisi Kewirausahaan ---
             {
                 "nama": "Anadia Carana",
                 "nim": "123450019",
@@ -797,7 +820,9 @@ if menu == "Departemen SSD":
                 "sosmed": "@delaanisafitri",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!",
-            }
+            },
         ]
+
         display_images_with_data(gambar_urls, data_list)
+
     Departemen_SSD()
