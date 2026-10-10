@@ -480,22 +480,23 @@ if menu == "Badan Kesenatoran":
 elif menu == "Departemen Minbak":
     def Departemen_Minbak():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1qJRwzD08676Djt3ZV2UqPS2dovnOT8oG",
-            "https://drive.google.com/uc?export=view&id=1GdBBgsyjIvSDtfb8pzn8IwkOImLD07dC",
-            "https://drive.google.com/uc?export=view&id=1EHcJPQvp7pYCjY84_rT7n-0FGzPHGgX3",
-            "https://drive.google.com/uc?export=view&id=1MO1W0afCOQ7oJh6SZbWipGBwXUO6Ofu5",
-            "https://drive.google.com/uc?export=view&id=1E3h2Eb0yUqNMRZBEXLcODGW2-54ObXIV",
-            "https://drive.google.com/uc?export=view&id=1zVSku7Mki4SCfdcoxQ0H1LI2DeuXEhBy",
-            "https://drive.google.com/uc?export=view&id=1sd6e1uQ6lPt-4o7NlVqWQ48BR8yAHP27",
-            "https://drive.google.com/uc?export=view&id=1jE2zDYlM8eOeChu5rmuSrcPSdKSBqhBH",
-            "https://drive.google.com/uc?export=view&id=1VkzXQDX7NJAUdHe2lSlR_Dd5fRB1t55z",
-            "https://drive.google.com/uc?export=view&id=1WVVqSEsZl5Ff8ZYKZ3WGGImqzQdnqii4",
-            "https://drive.google.com/uc?export=view&id=1a2PpAAvwiHfXVB12iokm8v0bZd2Y9fU9",
-            "https://drive.google.com/uc?export=view&id=1mhystJqbH-IjE1aQ8pide77J-GaMJxgv",
-            "https://drive.google.com/uc?export=view&id=1aAc-S_iT5iOsZz1ciGc0a8hw585guFZu",
-            "https://drive.google.com/uc?export=view&id=1pixd5qOn7Nxgdv3T2jpk0emLtw5lK8oG",
-            "https://drive.google.com/uc?export=view&id=1R3sGTA6wb1LNIPRAoTCGvjT2qOoBiNCc",
+            "https://drive.google.com/uc?export=view&id=1Udk2xpvnZx6fPqH0f9wwTJN980Bz1TkV",
+            "https://drive.google.com/uc?export=view&id=15Yw6OAHvR23TlQWly2hcYUanBIOinm8K",
+            "https://drive.google.com/uc?export=view&id=1LAJkUbx8KooEozXE57nFs0fWwWtw2aIP",
+            "https://drive.google.com/uc?export=view&id=1ycj9bzqvPwFxuGZBljR6lo3qUM8UVrib",
+            "https://drive.google.com/uc?export=view&id=1bmq4huEEg36soPANR5uIcqpw-PPk38x2",
+            "https://drive.google.com/uc?export=view&id=10dndlb7oI4Iu3gjolRIzTLtk5cAeTpQF",
+            "https://drive.google.com/uc?export=view&id=17KZMQOw0MuSyUy28i0J71aVIFCwrPtNf",
+            "https://drive.google.com/uc?export=view&id=1CadH0SDhfRZiE9V3cehnGvRk7UDupoYm",
+            "https://drive.google.com/uc?export=view&id=1BUjU9oqJxp17o_Rn-Wg-QGqDnkfIZvyX",
+            "https://drive.google.com/uc?export=view&id=1Ic-k9SPonBkbgOwesBrmyK__ne-o-rvv",
+            "https://drive.google.com/uc?export=view&id=1Yruir4LTmRioWy3eogCH8peS6sw14xg2",
+            "https://drive.google.com/uc?export=view&id=1l6WFa-Obnwn1x7t9BQf3L7cAFL9iPss5",
+            "https://drive.google.com/uc?export=view&id=13yIUWXRoArqanTVyR5a4I_jGqslJ8J0o",
+            "https://drive.google.com/uc?export=view&id=13yIUWXRoArqanTVyR5a4I_jGqslJ8J0o",
+            "https://drive.google.com/uc?export=view&id=1cMHzTwL_osj4CvaWdPCSfrrpTdqQKAoJ"
         ]
+
         data_list = [
     {
         "nama": "Kevin Antonio Junior",
@@ -663,9 +664,11 @@ elif menu == "Departemen Minbak":
         "pesan": "Sukses selalu buat perkuliahannya!"
     }
 ]
-  
+
         display_images_with_data(gambar_urls, data_list)
+
     Departemen_Minbak()
+
     
 if menu == "Departemen SSD":
     def Departemen_SSD():
