@@ -269,5 +269,6 @@ if menu == "senator":
             },
         ]
         display_images_with_data(gambar_urls, data_list)
-    senator()
+    senator()\
+
 # Tambahkan menu lainnya sesuai kebutuhan
