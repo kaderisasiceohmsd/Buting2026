@@ -138,12 +138,12 @@ menu = streamlit_menu()
 
 if menu == "Kesekjenan":
     gambar_urls = [
-        "https://drive.google.com/uc?export=view&id=1RxaKvza2Df7IJIT4jjnfBndu0VftSy_h",
-        "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-         "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-                "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-                "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-                "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"
+        "https://drive.google.com/uc?export=view&id=12cWhixrwVc5uEATnocwRJHw5nhRFxCHv",
+        "https://drive.google.com/uc?export=view&id=1sv9FBDEIaKNUNrIBN4OJTc6Ovk85jgVP",
+         "https://drive.google.com/uc?export=view&id=1uLNAVgSX8A7F_n7IMQBu6KknNouVoF8d",
+                "https://drive.google.com/uc?export=view&id=18Bm8mmUYqE7daRUSPf4xEB5JWTY8YEyt",
+                "https://drive.google.com/uc?export=view&id=1mMMKw-5pKfFuazXUGLYs2r46INZzCyco",
+                "https://drive.google.com/uc?export=view&id=1D6lgpdAEXhaT7OnZ_yv4a606zIIY0NI5"
     ]
     data_list = [
         {"nama": "Yobel Imanuel Pasaribu", "nim": "122450016", "umur": "20", "asal": "Medan", "alamat": "Korpri", "hobbi": "Main Game, Futsal", "sosmed": "@yobelpasaribu", "kesan": "Sangat seru", "pesan": "Semangat!"},
