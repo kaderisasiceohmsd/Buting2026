@@ -43,6 +43,12 @@ Mahasiswa6 = st.Page(
     title="053 - Laura Brety Br Ginting",
     icon=":material/person:",
 )
+
+Mahasiswa7 = st.Page(
+    "Buku Kating/087_M.Ramadhan Bagus Ar-Rahman.py",
+    title="087 - M.Ramadhan Bagus Ar-Rahman",
+    icon=":material/person:",
+)
 #Perlu diperhatikan perubahannya
 KREASI = st.Page("tools/KREASI.py", title="KREASI", icon=":material/search:")
 KREASII = st.Page("tools/KREASII.py", title="KREASII", icon=":material/search:")
@@ -52,7 +58,7 @@ if st.session_state.pindah:
     pg = st.navigation(
         {
             "Halaman Utama": [Homepage],
-            "Buku Kating": [Mahasiswa1, Mahasiswa2, Mahasiswa3, Mahasiswa4, Mahasiswa5, Mahasiswa6],
+            "Buku Kating": [Mahasiswa1, Mahasiswa2, Mahasiswa3, Mahasiswa4, Mahasiswa5, Mahasiswa6, Mahasiswa7],
             "Try Me !!": [KREASI, KREASII],
         }
     )
