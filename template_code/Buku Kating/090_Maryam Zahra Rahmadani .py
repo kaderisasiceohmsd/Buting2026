@@ -105,7 +105,7 @@ if menu == "Kesekjenan":
         ]
         data_list = [
             {
-                "nama": "Muhammad Aqil Ramadhan",
+                "nama": "kakak aa",
                 "nim": "122450000",
                 "umur": "18",
                 "asal":"Bekasi",
