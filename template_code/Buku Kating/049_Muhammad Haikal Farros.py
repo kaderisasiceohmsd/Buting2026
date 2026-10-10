@@ -488,4 +488,177 @@ elif menu == "Departemen SSD":
         ]
         display_images_with_data(gambar_urls, data_list)
     ssd()
-# Tambahkan menu lainnya sesuai kebutuhan
+
+elif menu == "Departemen PSDA":
+    def Departemen_PSDA():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+        ]
+        data_list = [
+            {
+                "Nama": "Ginda Fajar Riadi Marpaung",
+                "Jabatan" : "Ketua Himpunan",
+                "Nim": "123450103",
+                "Umur": "22",
+                "Asal":"Batam",
+                "Alamat": "Sekretariat HMSD",
+                "Hobbi": "push rank sampe imo",
+                "Sosmed": "@jars_mrp",
+                "Kesan": "Abangnya keren, kalem, asik juga waktu jadi pemateri",  
+                "Pesan":"Semangat terus bang semoga skripsinya dimudahkan"
+            },
+            {
+                "Nama": "Muhammad Aqil Ramadhan",
+                "Jabatan" : "Sekretaris Jenderal",
+                "Nim": "123450066",
+                "Umur": "22",
+                "Asal":"Riau",
+                "Alamat": "Sekretariat HMSD",
+                "Hobbi": "Zikir",
+                "Sosmed": "@muhammadaqil1111",
+                "Kesan": "Abangnya asik, lucu, suka bercanda juga, kalau jadi pemateri asik",  
+                "Pesan":"Sehat selalu bang semoga dimudahkan segala urusan"
+            },
+            {
+                "Nama": "Efi Defiyati",
+                "Jabatan" : "Sekretaris 1",
+                "Nim": "123450005",
+                "Umur": "21",
+                "Asal":"Lampung Timur",
+                "Alamat": "Airan",
+                "Hobbi": "Membaca",
+                "Sosmed": "@eeffiidefi",
+                "Kesan": "Kakaknya baik sama kalem",  
+                "Pesan":"Semangat terus dan sehat selalu kak"
+            },
+            {
+                "Nama": "Qois Olifio",
+                "Jabatan" : "Sekretaris 2",
+                "Nim": "123450067",
+                "Umur": "22",
+                "Asal":"Batam",
+                "Alamat": "Kota Baru",
+                "Hobbi": "Mainin Surat",
+                "Sosmed": "@qoisolifio_ ",
+                "Kesan": "Abangnya keren, kalem, lucu",  
+                "Pesan":"Semangat bikin bikin suratnyaa bang, semoga jadi mudah bikin skripsinya"
+            },
+            {
+                "Nama": "Hafsa Fazila Arradhi",
+                "Jabatan" : "Bendahara 1",
+                "Nim": "123450079",
+                "Umur": "21",
+                "Asal":"Bandar Lampung",
+                "Alamat": "Bandar Lampung",
+                "Hobbi": "Bertemu Kesekjenan",
+                "Sosmed": "@hafsafadhilaa",
+                "Kesan": "Kakaknya cantik, baik, kalem, asik juga",  
+                "Pesan":"Semangat terus kak, sehat selalu"
+            },
+            {
+                "Nama": "Luthfia Laila Ramadhani",
+                "Jabatan" : "Bendahara 2",
+                "Nim": "123450004",
+                "Umur": "20",
+                "Asal":"Bekasi",
+                "Alamat": "Airan",
+                "Hobbi": "Mintain Duit",
+                "Sosmed": "@luthfiaarmdhni ",
+                "Kesan": "Kakaknya lucu, baik, keren, asik juga",  
+                "Pesan":"Semoga dimudahkan selalu ya kak segala urusannya"
+            },                                                  
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    Departemen_PSDA()
+
+elif menu == "Departemen MIKFES":
+    def Departemen_MIKFES():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+        ]
+        data_list = [
+            {
+                "Nama": "Ginda Fajar Riadi Marpaung",
+                "Jabatan" : "Ketua Himpunan",
+                "Nim": "123450103",
+                "Umur": "22",
+                "Asal":"Batam",
+                "Alamat": "Sekretariat HMSD",
+                "Hobbi": "push rank sampe imo",
+                "Sosmed": "@jars_mrp",
+                "Kesan": "Abangnya keren, kalem, asik juga waktu jadi pemateri",  
+                "Pesan":"Semangat terus bang semoga skripsinya dimudahkan"
+            },
+            {
+                "Nama": "Muhammad Aqil Ramadhan",
+                "Jabatan" : "Sekretaris Jenderal",
+                "Nim": "123450066",
+                "Umur": "22",
+                "Asal":"Riau",
+                "Alamat": "Sekretariat HMSD",
+                "Hobbi": "Zikir",
+                "Sosmed": "@muhammadaqil1111",
+                "Kesan": "Abangnya asik, lucu, suka bercanda juga, kalau jadi pemateri asik",  
+                "Pesan":"Sehat selalu bang semoga dimudahkan segala urusan"
+            },
+            {
+                "Nama": "Efi Defiyati",
+                "Jabatan" : "Sekretaris 1",
+                "Nim": "123450005",
+                "Umur": "21",
+                "Asal":"Lampung Timur",
+                "Alamat": "Airan",
+                "Hobbi": "Membaca",
+                "Sosmed": "@eeffiidefi",
+                "Kesan": "Kakaknya baik sama kalem",  
+                "Pesan":"Semangat terus dan sehat selalu kak"
+            },
+            {
+                "Nama": "Qois Olifio",
+                "Jabatan" : "Sekretaris 2",
+                "Nim": "123450067",
+                "Umur": "22",
+                "Asal":"Batam",
+                "Alamat": "Kota Baru",
+                "Hobbi": "Mainin Surat",
+                "Sosmed": "@qoisolifio_ ",
+                "Kesan": "Abangnya keren, kalem, lucu",  
+                "Pesan":"Semangat bikin bikin suratnyaa bang, semoga jadi mudah bikin skripsinya"
+            },
+            {
+                "Nama": "Hafsa Fazila Arradhi",
+                "Jabatan" : "Bendahara 1",
+                "Nim": "123450079",
+                "Umur": "21",
+                "Asal":"Bandar Lampung",
+                "Alamat": "Bandar Lampung",
+                "Hobbi": "Bertemu Kesekjenan",
+                "Sosmed": "@hafsafadhilaa",
+                "Kesan": "Kakaknya cantik, baik, kalem, asik juga",  
+                "Pesan":"Semangat terus kak, sehat selalu"
+            },
+            {
+                "Nama": "Luthfia Laila Ramadhani",
+                "Jabatan" : "Bendahara 2",
+                "Nim": "123450004",
+                "Umur": "20",
+                "Asal":"Bekasi",
+                "Alamat": "Airan",
+                "Hobbi": "Mintain Duit",
+                "Sosmed": "@luthfiaarmdhni ",
+                "Kesan": "Kakaknya lucu, baik, keren, asik juga",  
+                "Pesan":"Semoga dimudahkan selalu ya kak segala urusannya"
+            },                                                  
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    Departemen_MIKFES()
