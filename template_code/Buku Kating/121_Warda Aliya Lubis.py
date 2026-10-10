@@ -193,7 +193,13 @@ if menu == "Baleg":
             "https://lh3.googleusercontent.com/d/1feZAZr1J6UJ8KBVRAv9h9f6fN-Upogm8",
             "https://lh3.googleusercontent.com/d/14uxZd7KoPrCSjKgfP_18kUpfOhLPzKKP",
             "https://lh3.googleusercontent.com/d/1bpEhuMlbxD5NWvQM5e0pRUaII72vcJfn",
-            "https://lh3.googleusercontent.com/d/1SzDpfh5SwEU1kxlMvWJxh5NintVeUvgb"
+            "https://lh3.googleusercontent.com/d/1SzDpfh5SwEU1kxlMvWJxh5NintVeUvgb",
+        ]
+        
+        for url in gambar_urls:
+            st.image(url, use_container_width=True)
+
+    Baleg()
         ]
         
         # Menampilkan gambar satu per satu menggunakan Streamlit
