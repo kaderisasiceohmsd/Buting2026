@@ -1,0 +1,2426 @@
+[
+  {
+    "id": 1,
+    "departemen": "Kesekjenan",
+    "kategori": "BPH",
+    "jabatan": "Ketua Himpunan",
+    "divisi": "",
+    "nama": "Ginda Fajar Riadi Marpaung",
+    "nim": "123450103",
+    "umur": 17,
+    "asal": "Batam",
+    "alamat": "Sekretariat HMSD",
+    "hobi": [
+      "Push imo"
+    ],
+    "sosial_media": "@jars_mrp"
+  },
+  {
+    "id": 2,
+    "departemen": "Kesekjenan",
+    "kategori": "BPH",
+    "jabatan": "Sekretaris Jendral",
+    "divisi": "",
+    "nama": "Muhammad Aqil Ramadhan",
+    "nim": "123450066",
+    "umur": 22,
+    "asal": "Bakinang, Riau",
+    "alamat": "Sekretariat HMSD",
+    "hobi": [
+      "Main ML"
+    ],
+    "sosial_media": "@muhammadaqil1111"
+  },
+  {
+    "id": 3,
+    "departemen": "Kesekjenan",
+    "kategori": "BPH",
+    "jabatan": "Sekretaris",
+    "divisi": "",
+    "nama": "Efi Defiyati",
+    "nim": "123450005",
+    "umur": 21,
+    "asal": "Lampung Timur",
+    "alamat": "Airan",
+    "hobi": [
+      "Revisi"
+    ],
+    "sosial_media": "@eeffiidefi"
+  },
+  {
+    "id": 4,
+    "departemen": "Kesekjenan",
+    "kategori": "BPH",
+    "jabatan": "Sekretaris",
+    "divisi": "",
+    "nama": "Qois Olifio",
+    "nim": "123450067",
+    "umur": 22,
+    "asal": "Batam",
+    "alamat": "Kota Baru",
+    "hobi": [
+      "Mainin surat"
+    ],
+    "sosial_media": "@qoisolifio_"
+  },
+  {
+    "id": 5,
+    "departemen": "Kesekjenan",
+    "kategori": "BPH",
+    "jabatan": "Bendahara",
+    "divisi": "",
+    "nama": "Hafsa Fazila Arradhi",
+    "nim": "123450079",
+    "umur": 21,
+    "asal": "Bandar Lampung",
+    "alamat": "Bandar Lampung",
+    "hobi": [
+      "Menghitung uang"
+    ],
+    "sosial_media": "@hafsafazilaa"
+  },
+  {
+    "id": 6,
+    "departemen": "Kesekjenan",
+    "kategori": "BPH",
+    "jabatan": "Bendahara",
+    "divisi": "",
+    "nama": "Luthfia Laila Ramadhani",
+    "nim": "123450004",
+    "umur": 20,
+    "asal": "Bekasi",
+    "alamat": "Airan",
+    "hobi": [
+      "Membuat Bang Aqil marah"
+    ],
+    "sosial_media": "@luthfiaarmdhni"
+  },
+  {
+    "id": 7,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Departement",
+    "divisi": "",
+    "nama": "Fabio Banyu Cyto",
+    "nim": "123450104",
+    "umur": 21,
+    "asal": "Bandar Lampung",
+    "alamat": "Kedaton",
+    "hobi": [
+      "Tidur"
+    ],
+    "sosial_media": "@biyokcb"
+  },
+  {
+    "id": 8,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Sekretaris",
+    "divisi": "",
+    "nama": "Tanty Widiyastuti",
+    "nim": "123450094",
+    "umur": 21,
+    "asal": "Lampung",
+    "alamat": "Airan Raya",
+    "hobi": [
+      "Membaca"
+    ],
+    "sosial_media": "@tvnty_"
+  },
+  {
+    "id": 9,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Divisi",
+    "divisi": "Professional Skill Development",
+    "nama": "Fadil Prasetyo Alfarizzi",
+    "nim": "123450048",
+    "umur": 21,
+    "asal": "Bandar Lampung",
+    "alamat": "Bandar Lampung",
+    "hobi": [
+      "Gitar"
+    ],
+    "sosial_media": "@fadilalfarizzii"
+  },
+  {
+    "id": 10,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Divisi",
+    "divisi": "Pusat Inovasi dan Kajian Akademik",
+    "nama": "Akeyla Fairuz Shafi",
+    "nim": "123450119",
+    "umur": 21,
+    "asal": "Bandar Lampung",
+    "alamat": "Bandar Lampung",
+    "hobi": [
+      "Berenang"
+    ],
+    "sosial_media": "@keyashafi_"
+  },
+  {
+    "id": 11,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Divisi",
+    "divisi": "Research & Development",
+    "nama": "Razin Hafid Hamdi",
+    "nim": "123450096",
+    "umur": 21,
+    "asal": "Padang",
+    "alamat": "Belwis",
+    "hobi": [
+      "Futsal"
+    ],
+    "sosial_media": "@razyn.hfd"
+  },
+  {
+    "id": 12,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Professional Skill Development",
+    "nama": "Manuel Frederika",
+    "nim": "124450039",
+    "umur": 20,
+    "asal": "Batam",
+    "alamat": "Way Kandis",
+    "hobi": [
+      "Tenis meja"
+    ],
+    "sosial_media": "@manuelfdk_"
+  },
+  {
+    "id": 13,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Professional Skill Development",
+    "nama": "Ni Made Okta Viola Darma Putri",
+    "nim": "124450005",
+    "umur": 12,
+    "asal": "Bali",
+    "alamat": "Nusa Penida",
+    "hobi": [
+      "Menghayal"
+    ],
+    "sosial_media": "@Violaadrtr_"
+  },
+  {
+    "id": 14,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Professional Skill Development",
+    "nama": "Risa Romadona",
+    "nim": "124450127",
+    "umur": 20,
+    "asal": "Natar",
+    "alamat": "Natar",
+    "hobi": [
+      "Rolling Skate"
+    ],
+    "sosial_media": "@risarmdna"
+  },
+  {
+    "id": 15,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Professional Skill Development",
+    "nama": "Vannisa Ramadhani",
+    "nim": "124450078",
+    "umur": 19,
+    "asal": "Kepulauan Riau",
+    "alamat": "Teluk Betung",
+    "hobi": [
+      "Nonton KHW"
+    ],
+    "sosial_media": "@vunnycaa"
+  },
+  {
+    "id": 16,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Professional Skill Development",
+    "nama": "Yulia Kristine Malau",
+    "nim": "124450119",
+    "umur": 20,
+    "asal": "Jambi",
+    "alamat": "Sabah Balau",
+    "hobi": [
+      "Belajar"
+    ],
+    "sosial_media": "@krnylee"
+  },
+  {
+    "id": 17,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Pusat Inovasi dan Kajian Akademik",
+    "nama": "Elsa Sitorus",
+    "nim": "124450088",
+    "umur": 21,
+    "asal": "Sumatera Utara",
+    "alamat": "Pemda",
+    "hobi": [
+      "Rebahan"
+    ],
+    "sosial_media": "@_els.a"
+  },
+  {
+    "id": 18,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Pusat Inovasi dan Kajian Akademik",
+    "nama": "Fadya Izzatul 'Aini",
+    "nim": "124450062",
+    "umur": 20,
+    "asal": "Pringsewu",
+    "alamat": "Airan",
+    "hobi": [
+      "Mancing"
+    ],
+    "sosial_media": "@fadyaizzatul_"
+  },
+  {
+    "id": 19,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Pusat Inovasi dan Kajian Akademik",
+    "nama": "Lovianora Saragih",
+    "nim": "124450105",
+    "umur": 19,
+    "asal": "Sumatera Utara",
+    "alamat": "Way Huwi",
+    "hobi": [
+      "Dengerin musik"
+    ],
+    "sosial_media": "@_loviaa"
+  },
+  {
+    "id": 20,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Pusat Inovasi dan Kajian Akademik",
+    "nama": "M. Alsi Syahrulloh",
+    "nim": "124450092",
+    "umur": 20,
+    "asal": "Kalianda",
+    "alamat": "Kota Baru",
+    "hobi": [
+      "Main game",
+      "tidur"
+    ],
+    "sosial_media": "@aluccy_"
+  },
+  {
+    "id": 21,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Pusat Inovasi dan Kajian Akademik",
+    "nama": "Sherena Florencia",
+    "nim": "124450027",
+    "umur": 19,
+    "asal": "Bengkulu Selatan",
+    "alamat": "Belwis",
+    "hobi": [
+      "Make up"
+    ],
+    "sosial_media": "@sher_renna"
+  },
+  {
+    "id": 22,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Research & Development",
+    "nama": "Faiza Try Anjani",
+    "nim": "124450075",
+    "umur": 19,
+    "asal": "Padang",
+    "alamat": "Belwis",
+    "hobi": [
+      "Baca novel"
+    ],
+    "sosial_media": "@faizaanjanii"
+  },
+  {
+    "id": 23,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Research & Development",
+    "nama": "Gathfan Nadif Ali",
+    "nim": "124450001",
+    "umur": 20,
+    "asal": "Bandar Lampung",
+    "alamat": "Rajabasa",
+    "hobi": [
+      "Main game"
+    ],
+    "sosial_media": "@gathfannadif"
+  },
+  {
+    "id": 24,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Research & Development",
+    "nama": "Hafidz Wahdiansyah",
+    "nim": "124450064",
+    "umur": 20,
+    "asal": "Metro",
+    "alamat": "Metro Kibang, Lampung Timur",
+    "hobi": [
+      "3N (Ngoding, Ngegame, Nyibukin diri)"
+    ],
+    "sosial_media": "@apiszzaja_"
+  },
+  {
+    "id": 25,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Research & Development",
+    "nama": "Kaleb Filbert Istel",
+    "nim": "124450053",
+    "umur": 20,
+    "asal": "Bandar Lampung",
+    "alamat": "Campang Raya",
+    "hobi": [
+      "Ngegym",
+      "baca novel"
+    ],
+    "sosial_media": "@kelelep_comberan"
+  },
+  {
+    "id": 26,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Research & Development",
+    "nama": "Melva Shaprina Febrianti",
+    "nim": "124450087",
+    "umur": 19,
+    "asal": "Sumatera Selatan",
+    "alamat": "Sukarame",
+    "hobi": [
+      "Scroll"
+    ],
+    "sosial_media": "@melva_fbrt"
+  },
+  {
+    "id": 27,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Research & Development",
+    "nama": "Muhammad Syafiqul Falakh",
+    "nim": "124450099",
+    "umur": 20,
+    "asal": "Lampung Utara",
+    "alamat": "Asrama TB 3",
+    "hobi": [
+      "Membaca"
+    ],
+    "sosial_media": "@Syaafiqui"
+  },
+  {
+    "id": 28,
+    "departemen": "Akademik dan Keprofesian (MIKFES)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Research & Development",
+    "nama": "Rifky Henry Ferdianto",
+    "nim": "124450115",
+    "umur": 28,
+    "asal": "Kota bumi",
+    "alamat": "Rajabasa",
+    "hobi": [
+      "Lari dari kenyataan"
+    ],
+    "sosial_media": "@henryferdianto"
+  },
+  {
+    "id": 29,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Departement",
+    "divisi": "",
+    "nama": "Arini Puteri Elandra",
+    "nim": "123450069",
+    "umur": 21,
+    "asal": "Lampung",
+    "alamat": "Teluk Betung Selatan",
+    "hobi": [
+      "Nonton Kartun"
+    ],
+    "sosial_media": "@elandraa_"
+  },
+  {
+    "id": 30,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Sekretaris",
+    "divisi": "",
+    "nama": "Nabyla Sharfina",
+    "nim": "123450008",
+    "umur": 20,
+    "asal": "BENGKULU",
+    "alamat": "Jalan Lapas",
+    "hobi": [
+      "Jalan - jalan"
+    ],
+    "sosial_media": "@bylaash"
+  },
+  {
+    "id": 31,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Divisi",
+    "divisi": "Hubungan Luar",
+    "nama": "Khoirul Muttoharoh",
+    "nim": "123450021",
+    "umur": 21,
+    "asal": "Lampung barat",
+    "alamat": "Airan",
+    "hobi": [
+      "main"
+    ],
+    "sosial_media": "@khoirul_muttoharoh"
+  },
+  {
+    "id": 32,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Divisi",
+    "divisi": "Pengabdian Masyarakat",
+    "nama": "Aditya Taufiqurrohman",
+    "nim": "123450032",
+    "umur": 22,
+    "asal": "Tetangga Kadep",
+    "alamat": "Belwis",
+    "hobi": [
+      "memancing keributan"
+    ],
+    "sosial_media": "@adityatfq"
+  },
+  {
+    "id": 33,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Staff Ahli",
+    "divisi": "Hubungan Luar",
+    "nama": "Ahmad Rizky",
+    "nim": "123450050",
+    "umur": 21,
+    "asal": "Tangerang Selatan",
+    "alamat": "GH",
+    "hobi": [
+      "ga ngapa ngapain"
+    ],
+    "sosial_media": "@ahmad.rizky___"
+  },
+  {
+    "id": 34,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Staff Ahli",
+    "divisi": "Pengabdian Masyarakat",
+    "nama": "Fathya Intami Gusda",
+    "nim": "123450095",
+    "umur": 25,
+    "asal": "Tangsel",
+    "alamat": "Sukarame",
+    "hobi": [
+      "baca wattpad"
+    ],
+    "sosial_media": "@fatthyaa_"
+  },
+  {
+    "id": 35,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Staff Ahli",
+    "divisi": "Pengabdian Masyarakat",
+    "nama": "Tarisya Hidayatul Rahmi",
+    "nim": "123450052",
+    "umur": 25,
+    "asal": "Luhak tanah data",
+    "alamat": "Gerbar",
+    "hobi": [
+      "Jadi orang baik"
+    ],
+    "sosial_media": ""
+  },
+  {
+    "id": 36,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Hubungan Luar",
+    "nama": "Indah Khairunnisa",
+    "nim": "124450077",
+    "umur": 20,
+    "asal": "Ampera",
+    "alamat": "Disini aja",
+    "hobi": [
+      "mancing emosi",
+      "mancing ikan",
+      "mancing kecebong",
+      "mancing cupang"
+    ],
+    "sosial_media": "@khaindaa_"
+  },
+  {
+    "id": 37,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Hubungan Luar",
+    "nama": "Bima Ekayasa",
+    "nim": "124450106",
+    "umur": 20,
+    "asal": "Lampung",
+    "alamat": "Balam",
+    "hobi": [
+      "berlaku humoris dan manis"
+    ],
+    "sosial_media": "@bimayasa_"
+  },
+  {
+    "id": 38,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Hubungan Luar",
+    "nama": "Ahmad Bimo Akbar Arkana",
+    "nim": "124450113",
+    "umur": null,
+    "asal": "Tanggamus",
+    "alamat": "Balam",
+    "hobi": [
+      "lihat lihat perumahan"
+    ],
+    "sosial_media": "@bimo_arkana"
+  },
+  {
+    "id": 39,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Hubungan Luar",
+    "nama": "Adinda Deswita Maharani",
+    "nim": "124450083",
+    "umur": null,
+    "asal": "Ikut kadep",
+    "alamat": "love earth",
+    "hobi": [
+      "jadi idol"
+    ],
+    "sosial_media": "@adindaadma"
+  },
+  {
+    "id": 40,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Hubungan Luar",
+    "nama": "Yollanda Agustina",
+    "nim": "124450024",
+    "umur": 20,
+    "asal": "Kerangka Bawang Sebelah Barat",
+    "alamat": "Kayu Mulya",
+    "hobi": [
+      "Tanya bang Henry"
+    ],
+    "sosial_media": "@yollanda_agustina16"
+  },
+  {
+    "id": 41,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Hubungan Luar",
+    "nama": "Riska Erlis Dayu Tiara",
+    "nim": "124450022",
+    "umur": 20,
+    "asal": "Palembang",
+    "alamat": "Bebas",
+    "hobi": [
+      "ngefollow up chat"
+    ],
+    "sosial_media": "@erlsriska"
+  },
+  {
+    "id": 42,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Hubungan Luar",
+    "nama": "Alfaya Abiyyi",
+    "nim": "124450006",
+    "umur": 20,
+    "asal": "",
+    "alamat": "",
+    "hobi": [],
+    "sosial_media": "@alfabiyi"
+  },
+  {
+    "id": 43,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Hubungan Luar",
+    "nama": "Asri Meilani",
+    "nim": "124450010",
+    "umur": 20,
+    "asal": "Lampung Barat",
+    "alamat": "Korpri Raya",
+    "hobi": [],
+    "sosial_media": "@asrmeilani"
+  },
+  {
+    "id": 44,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Pengabdian Masyarakat",
+    "nama": "Selma Siti Aisyah",
+    "nim": "123450044",
+    "umur": 20,
+    "asal": "lampung",
+    "alamat": "balam",
+    "hobi": [
+      "jalan-jalan"
+    ],
+    "sosial_media": "@selmasiti_aisyah"
+  },
+  {
+    "id": 45,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Pengabdian Masyarakat",
+    "nama": "Ashila Islamisahfa Vanisha",
+    "nim": "124450028",
+    "umur": 20,
+    "asal": "sini",
+    "alamat": "jauh pokoknya",
+    "hobi": [
+      "Tidur"
+    ],
+    "sosial_media": "@kshigf"
+  },
+  {
+    "id": 46,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Pengabdian Masyarakat",
+    "nama": "Danil N Fadillah",
+    "nim": "124450103",
+    "umur": 19,
+    "asal": "Karawang",
+    "alamat": "Belakang Polda",
+    "hobi": [
+      "Ngasih makan ikan cupang"
+    ],
+    "sosial_media": "@d4niel_fdlh"
+  },
+  {
+    "id": 47,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Pengabdian Masyarakat",
+    "nama": "Favian Arkaanda",
+    "nim": "124450021",
+    "umur": 19,
+    "asal": "Swiss",
+    "alamat": "Tanya bapas",
+    "hobi": [
+      "ngesen kanan"
+    ],
+    "sosial_media": "@fvnnn05"
+  },
+  {
+    "id": 48,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Pengabdian Masyarakat",
+    "nama": "Muhammad Fathiy Zumar Yazid",
+    "nim": "124450081",
+    "umur": 20,
+    "asal": "situlah",
+    "alamat": "pohon mulia",
+    "hobi": [
+      "nyari hobi"
+    ],
+    "sosial_media": "@zydddddd__"
+  },
+  {
+    "id": 49,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Pengabdian Masyarakat",
+    "nama": "Muhammad Rizaldi",
+    "nim": "124450093",
+    "umur": null,
+    "asal": "Rahim Ibu",
+    "alamat": "Pasar lantai 3.5",
+    "hobi": [
+      "Tanyain sama yuder (beneran ditanya ya)"
+    ],
+    "sosial_media": "@jaldii._"
+  },
+  {
+    "id": 50,
+    "departemen": "Eksternal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Pengabdian Masyarakat",
+    "nama": "Saskia Nova Magdalena",
+    "nim": "124450074",
+    "umur": null,
+    "asal": "Banyak Begal",
+    "alamat": "Pinggir Jalan",
+    "hobi": [
+      "nonton thinkerbell"
+    ],
+    "sosial_media": "@snova.19"
+  },
+  {
+    "id": 51,
+    "departemen": "Internal",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Departement",
+    "divisi": "",
+    "nama": "Haikal Fransisko Simbolon",
+    "nim": "123450106",
+    "umur": 23,
+    "asal": "Jambi",
+    "alamat": "Jatimulyo",
+    "hobi": [
+      "Ngeroasting orang"
+    ],
+    "sosial_media": "@haikalsbln_"
+  },
+  {
+    "id": 52,
+    "departemen": "Internal",
+    "kategori": "Departemen",
+    "jabatan": "Sekretaris",
+    "divisi": "",
+    "nama": "Kharisma Mustika Sari",
+    "nim": "123450034",
+    "umur": 21,
+    "asal": "Way Kanan",
+    "alamat": "Untung Senopati",
+    "hobi": [
+      "Menolong orang"
+    ],
+    "sosial_media": "@rismaa.mustika_"
+  },
+  {
+    "id": 53,
+    "departemen": "Internal",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Divisi",
+    "divisi": "Keharmonisasian",
+    "nama": "Hanna Gresia Sinaga",
+    "nim": "123450038",
+    "umur": 21,
+    "asal": "Kisaran City",
+    "alamat": "Sukarame",
+    "hobi": [
+      "Menyapa satpam ITERA"
+    ],
+    "sosial_media": "@hanna_g_sinaga"
+  },
+  {
+    "id": 54,
+    "departemen": "Internal",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Divisi",
+    "divisi": "Kerohanian",
+    "nama": "Muhammad Hanid Dzaky Arifin",
+    "nim": "124450064",
+    "umur": 21,
+    "asal": "Sumatera Barat",
+    "alamat": "Way Kandis",
+    "hobi": [
+      "Nonton film"
+    ],
+    "sosial_media": "@hnfdzky_"
+  },
+  {
+    "id": 55,
+    "departemen": "Internal",
+    "kategori": "Departemen",
+    "jabatan": "Staff Ahli",
+    "divisi": "Keharmonisasian",
+    "nama": "Ahmad Farhan Ghani",
+    "nim": "123450121",
+    "umur": 20,
+    "asal": "Kemiling",
+    "alamat": "Kemiling",
+    "hobi": [
+      "Olahraga menembak"
+    ],
+    "sosial_media": "@farhnghnii"
+  },
+  {
+    "id": 56,
+    "departemen": "Internal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Keharmonisasian",
+    "nama": "Aisyah Khairun Nisa",
+    "nim": "124450096",
+    "umur": 20,
+    "asal": "Air Molek, Riau",
+    "alamat": "Belwis",
+    "hobi": [
+      "Menulis Wish list"
+    ],
+    "sosial_media": "@aisyahkhair_"
+  },
+  {
+    "id": 57,
+    "departemen": "Internal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Keharmonisasian",
+    "nama": "Cerine Sihotang",
+    "nim": "124450049",
+    "umur": 19,
+    "asal": "Medan",
+    "alamat": "Belwis",
+    "hobi": [
+      "Balap liar"
+    ],
+    "sosial_media": "@cerine_ipynb"
+  },
+  {
+    "id": 58,
+    "departemen": "Internal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Keharmonisasian",
+    "nama": "Jaya Saputra Tamba",
+    "nim": "124450094",
+    "umur": 22,
+    "asal": "Kisaran City",
+    "alamat": "Pemda",
+    "hobi": [
+      "Kick boxing"
+    ],
+    "sosial_media": "@jay.saputratmb"
+  },
+  {
+    "id": 59,
+    "departemen": "Internal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Keharmonisasian",
+    "nama": "Najla Nursyifa",
+    "nim": "124450051",
+    "umur": 20,
+    "asal": "Aceh",
+    "alamat": "Belwis",
+    "hobi": [
+      "Nonton ASMR"
+    ],
+    "sosial_media": "@njlanursyifa"
+  },
+  {
+    "id": 60,
+    "departemen": "Internal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Keharmonisasian",
+    "nama": "Rozak Ramdani",
+    "nim": "124450100",
+    "umur": 18,
+    "asal": "Lampung Selatan",
+    "alamat": "Korpri Raya",
+    "hobi": [
+      "Isengin Harvin di kelas"
+    ],
+    "sosial_media": "@rozakramdani__"
+  },
+  {
+    "id": 61,
+    "departemen": "Internal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Keharmonisasian",
+    "nama": "Teresa Christiani Purba",
+    "nim": "124450046",
+    "umur": 19,
+    "asal": "Riau",
+    "alamat": "Belwis",
+    "hobi": [
+      "Masak"
+    ],
+    "sosial_media": "@christiani8872"
+  },
+  {
+    "id": 62,
+    "departemen": "Internal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Kerohanian",
+    "nama": "Audina Fitria",
+    "nim": "124450038",
+    "umur": 20,
+    "asal": "Sumatera Barat",
+    "alamat": "Sukarame",
+    "hobi": [
+      "Main ke air terjun"
+    ],
+    "sosial_media": "@audinaf_03"
+  },
+  {
+    "id": 63,
+    "departemen": "Internal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Kerohanian",
+    "nama": "Cika Adelia Br Marbun",
+    "nim": "124450107",
+    "umur": 20,
+    "asal": "Pekanbaru, Riau",
+    "alamat": "Belwis",
+    "hobi": [
+      "Dengerin lagu"
+    ],
+    "sosial_media": "@cikamrbn"
+  },
+  {
+    "id": 64,
+    "departemen": "Internal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Kerohanian",
+    "nama": "Gustin Haleluya Tampubolon",
+    "nim": "124450068",
+    "umur": 21,
+    "asal": "Toba, Sumatera Utara",
+    "alamat": "Airan",
+    "hobi": [
+      "Nonton"
+    ],
+    "sosial_media": "@gustinhaleluya"
+  },
+  {
+    "id": 65,
+    "departemen": "Internal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Kerohanian",
+    "nama": "Muhammad Harvinsyah",
+    "nim": "124450128",
+    "umur": 20,
+    "asal": "Sumatera Selatan",
+    "alamat": "Belwis",
+    "hobi": [
+      "Beburu ayam hutan"
+    ],
+    "sosial_media": "@muhvinz_"
+  },
+  {
+    "id": 66,
+    "departemen": "Internal",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Kerohanian",
+    "nama": "Rafa Sabina Fahimah",
+    "nim": "124450036",
+    "umur": 20,
+    "asal": "Natar",
+    "alamat": "Natar",
+    "hobi": [
+      "Nginep di rumah Yollanda"
+    ],
+    "sosial_media": "@snasaa._"
+  },
+  {
+    "id": 67,
+    "departemen": "Media Kreatif (MEDKRAF)",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Departement",
+    "divisi": "",
+    "nama": "Nayla Salsabila Fathianisa",
+    "nim": "123450082",
+    "umur": 20,
+    "asal": "Payakumbuh, Sumatera Barat",
+    "alamat": "Jati Agung",
+    "hobi": [
+      "Nyusun TA"
+    ],
+    "sosial_media": "@naylasalsabilaa._"
+  },
+  {
+    "id": 68,
+    "departemen": "Media Kreatif (MEDKRAF)",
+    "kategori": "Departemen",
+    "jabatan": "Sekretaris",
+    "divisi": "",
+    "nama": "Donna Maya Puspita",
+    "nim": "123450028",
+    "umur": 21,
+    "asal": "Bekasi",
+    "alamat": "Way Huwi",
+    "hobi": [
+      "Listening to music"
+    ],
+    "sosial_media": "@donnamaya.p"
+  },
+  {
+    "id": 69,
+    "departemen": "Media Kreatif (MEDKRAF)",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Divisi",
+    "divisi": "Dokumentasi",
+    "nama": "Labo John Noel Napitupulu",
+    "nim": "123450037",
+    "umur": 20,
+    "asal": "Medan, Jakarta Utara, Palembang",
+    "alamat": "Belwis",
+    "hobi": [
+      "Tong Setan"
+    ],
+    "sosial_media": "@noerruuu"
+  },
+  {
+    "id": 70,
+    "departemen": "Media Kreatif (MEDKRAF)",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Divisi",
+    "divisi": "Media dan Konten Spesialis",
+    "nama": "Sania Dwi Ayu Lestari",
+    "nim": "123450086",
+    "umur": 21,
+    "asal": "Karawang",
+    "alamat": "Airan Raya",
+    "hobi": [
+      "Nonton Netflix"
+    ],
+    "sosial_media": "@saniayyllstr"
+  },
+  {
+    "id": 71,
+    "departemen": "Media Kreatif (MEDKRAF)",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Divisi",
+    "divisi": "Visual Design",
+    "nama": "Raihana Adelia Putri",
+    "nim": "123450041",
+    "umur": 20,
+    "asal": "Lampung Tengah",
+    "alamat": "Airan Raya 1",
+    "hobi": [
+      "Menulis",
+      "membaca"
+    ],
+    "sosial_media": "@n1tg._"
+  },
+  {
+    "id": 72,
+    "departemen": "Media Kreatif (MEDKRAF)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Dokumentasi",
+    "nama": "Anash Tasya Ausyaqila",
+    "nim": "124450050",
+    "umur": 20,
+    "asal": "Bandar Lampung",
+    "alamat": "Way Halim",
+    "hobi": [
+      "Nonton"
+    ],
+    "sosial_media": "@anshtsyaaql"
+  },
+  {
+    "id": 73,
+    "departemen": "Media Kreatif (MEDKRAF)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Dokumentasi",
+    "nama": "Felisya Nabila Putri Nugroho",
+    "nim": "124450104",
+    "umur": 19,
+    "asal": "Lampung Timur",
+    "alamat": "Kota Baru",
+    "hobi": [
+      "Gangguin Anash & Razan",
+      "jail di grup"
+    ],
+    "sosial_media": "@felisyanbl__"
+  },
+  {
+    "id": 74,
+    "departemen": "Media Kreatif (MEDKRAF)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Dokumentasi",
+    "nama": "Muhammad Razan Maulana Pratama",
+    "nim": "124450031",
+    "umur": 21,
+    "asal": "Jawa Barat",
+    "alamat": "Korpri",
+    "hobi": [
+      "Poto orang"
+    ],
+    "sosial_media": "@muh_razan_"
+  },
+  {
+    "id": 75,
+    "departemen": "Media Kreatif (MEDKRAF)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Media dan Konten Spesialis",
+    "nama": "Allisha",
+    "nim": "124450019",
+    "umur": 16,
+    "asal": "Kayangan",
+    "alamat": "Heaven",
+    "hobi": [
+      "Mancing"
+    ],
+    "sosial_media": "@aallishaa.a"
+  },
+  {
+    "id": 76,
+    "departemen": "Media Kreatif (MEDKRAF)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Media dan Konten Spesialis",
+    "nama": "Alya Ramadhanti",
+    "nim": "124450091",
+    "umur": 19,
+    "asal": "Jambi",
+    "alamat": "Airan",
+    "hobi": [
+      "Scroll TikTok"
+    ],
+    "sosial_media": "@alya.rmdhnti"
+  },
+  {
+    "id": 77,
+    "departemen": "Media Kreatif (MEDKRAF)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Media dan Konten Spesialis",
+    "nama": "Bunga Clarisa Sefa",
+    "nim": "124450097",
+    "umur": 20,
+    "asal": "Lampung Selatan",
+    "alamat": "Lampung Selatan",
+    "hobi": [
+      "Belajar"
+    ],
+    "sosial_media": "@bungaclrssf"
+  },
+  {
+    "id": 78,
+    "departemen": "Media Kreatif (MEDKRAF)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Media dan Konten Spesialis",
+    "nama": "Difanya Husakina",
+    "nim": "124450043",
+    "umur": 20,
+    "asal": "Pagar Alam",
+    "alamat": "Airan Raya",
+    "hobi": [
+      "Membaca Al-Qur'an"
+    ],
+    "sosial_media": "@difanyhsa_"
+  },
+  {
+    "id": 79,
+    "departemen": "Media Kreatif (MEDKRAF)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Media dan Konten Spesialis",
+    "nama": "Nazlah Auliya",
+    "nim": "124450054",
+    "umur": 20,
+    "asal": "Bandar Lampung",
+    "alamat": "Bandar Lampung",
+    "hobi": [
+      "Berenang"
+    ],
+    "sosial_media": "@nzlhauly_"
+  },
+  {
+    "id": 80,
+    "departemen": "Media Kreatif (MEDKRAF)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Visual Design",
+    "nama": "Daffa Kharisma Adzana",
+    "nim": "124450061",
+    "umur": 21,
+    "asal": "Surabaya",
+    "alamat": "Sukarame",
+    "hobi": [],
+    "sosial_media": "@daffascript"
+  },
+  {
+    "id": 81,
+    "departemen": "Media Kreatif (MEDKRAF)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Visual Design",
+    "nama": "Edsel Adya Pradipta",
+    "nim": "124450098",
+    "umur": 20,
+    "asal": "Lampung Selatan",
+    "alamat": "Natar",
+    "hobi": [
+      "Scroll Facebook"
+    ],
+    "sosial_media": "@edsel_0712"
+  },
+  {
+    "id": 82,
+    "departemen": "Media Kreatif (MEDKRAF)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Visual Design",
+    "nama": "Lucia Advencia Rachel Nainggolan",
+    "nim": "124450085",
+    "umur": 20,
+    "asal": "Bekasi",
+    "alamat": "Belwis",
+    "hobi": [
+      "Bucinin Andrew Garfield"
+    ],
+    "sosial_media": "@luciarachel_"
+  },
+  {
+    "id": 83,
+    "departemen": "Media Kreatif (MEDKRAF)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Visual Design",
+    "nama": "Shafa Delaila Azzahra",
+    "nim": "124450124",
+    "umur": 20,
+    "asal": "Lampung Tengah",
+    "alamat": "Perum Pemda",
+    "hobi": [
+      "Melukis",
+      "menulis"
+    ],
+    "sosial_media": "@_shaazzh"
+  },
+  {
+    "id": 84,
+    "departemen": "Media Kreatif (MEDKRAF)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Visual Design",
+    "nama": "Zannuba Arifah Ilman",
+    "nim": "124450112",
+    "umur": 18,
+    "asal": "Lampung Timur",
+    "alamat": "Rajabasa",
+    "hobi": [
+      "Bengong"
+    ],
+    "sosial_media": "@Xifasky"
+  },
+  {
+    "id": 85,
+    "departemen": "Minat dan Bakat (MINBAK)",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Departement",
+    "divisi": "",
+    "nama": "Kevin Antonio Junior",
+    "nim": "123450109",
+    "umur": 21,
+    "asal": "Bandar Lampung",
+    "alamat": "Panjang, Bandar Lampung",
+    "hobi": [
+      "Balap"
+    ],
+    "sosial_media": "@kevinaj__"
+  },
+  {
+    "id": 86,
+    "departemen": "Minat dan Bakat (MINBAK)",
+    "kategori": "Departemen",
+    "jabatan": "Sekretaris",
+    "divisi": "",
+    "nama": "Gusti Putu Ferazka Dhiyamika",
+    "nim": "123450046",
+    "umur": 21,
+    "asal": "Lampung Utara",
+    "alamat": "Way Halim",
+    "hobi": [
+      "Baca"
+    ],
+    "sosial_media": "@ferazkaa"
+  },
+  {
+    "id": 87,
+    "departemen": "Minat dan Bakat (MINBAK)",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Divisi",
+    "divisi": "Manajemen Aktivitas dan Kompetisi",
+    "nama": "Ari Aristo Muthahari Parisi",
+    "nim": "123450088",
+    "umur": 21,
+    "asal": "Lampung Timur",
+    "alamat": "Gang Sakum, Belwis",
+    "hobi": [
+      "Nonton F1"
+    ],
+    "sosial_media": "@ali_parisi3"
+  },
+  {
+    "id": 88,
+    "departemen": "Minat dan Bakat (MINBAK)",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Divisi",
+    "divisi": "Manajemen Minat dan Bakat",
+    "nama": "Muhammad Ridwan",
+    "nim": "123450091",
+    "umur": 21,
+    "asal": "Lampung Tengah",
+    "alamat": "Belwis",
+    "hobi": [
+      "Nganterin Datasena ke gedung F"
+    ],
+    "sosial_media": "@mridwaan_22"
+  },
+  {
+    "id": 89,
+    "departemen": "Minat dan Bakat (MINBAK)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Manajemen Aktivitas dan Kompetisi",
+    "nama": "Ayu Andriani Parlina Wati",
+    "nim": "124450058",
+    "umur": 20,
+    "asal": "Lampung Barat",
+    "alamat": "Airan",
+    "hobi": [
+      "Belajar"
+    ],
+    "sosial_media": "@aayuandrianni_"
+  },
+  {
+    "id": 90,
+    "departemen": "Minat dan Bakat (MINBAK)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Manajemen Aktivitas dan Kompetisi",
+    "nama": "Dafa Elpriza",
+    "nim": "124450131",
+    "umur": 21,
+    "asal": "Bekasi",
+    "alamat": "Way Kandis",
+    "hobi": [
+      "Nemenin Bryan live TikTok"
+    ],
+    "sosial_media": "@dafaelpriza_"
+  },
+  {
+    "id": 91,
+    "departemen": "Minat dan Bakat (MINBAK)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Manajemen Aktivitas dan Kompetisi",
+    "nama": "Juwita Sari",
+    "nim": "124450066",
+    "umur": 19,
+    "asal": "Lampung Barat",
+    "alamat": "Pemda",
+    "hobi": [
+      "Lihat bulan"
+    ],
+    "sosial_media": "@ju.juwitaaa_"
+  },
+  {
+    "id": 92,
+    "departemen": "Minat dan Bakat (MINBAK)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Manajemen Aktivitas dan Kompetisi",
+    "nama": "Muhammad Afdal Lutfi",
+    "nim": "124450047",
+    "umur": 19,
+    "asal": "Lampung Tengah",
+    "alamat": "Jl Pulau Damar",
+    "hobi": [
+      "Taptap layar kalo Bryan live"
+    ],
+    "sosial_media": "@afdall.03"
+  },
+  {
+    "id": 93,
+    "departemen": "Minat dan Bakat (MINBAK)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Manajemen Aktivitas dan Kompetisi",
+    "nama": "Salsabila Nazwa Putri",
+    "nim": "124450002",
+    "umur": 20,
+    "asal": "Metro",
+    "alamat": "Korpri",
+    "hobi": [
+      "Nongkrong di Kopken"
+    ],
+    "sosial_media": "@slbnzw_"
+  },
+  {
+    "id": 94,
+    "departemen": "Minat dan Bakat (MINBAK)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Manajemen Minat dan Bakat",
+    "nama": "Andra Ilham Bintang",
+    "nim": "124450060",
+    "umur": 18,
+    "asal": "Sumatera Selatan",
+    "alamat": "Kota Baru",
+    "hobi": [
+      "Ngitungin kelopak bunga di kebun"
+    ],
+    "sosial_media": "@andra.lhm"
+  },
+  {
+    "id": 95,
+    "departemen": "Minat dan Bakat (MINBAK)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Manajemen Minat dan Bakat",
+    "nama": "Bryan Paskah Telaumbanua",
+    "nim": "124450003",
+    "umur": 22,
+    "asal": "Nias",
+    "alamat": "Belwis",
+    "hobi": [
+      "Live TikTok"
+    ],
+    "sosial_media": "@bryantel_"
+  },
+  {
+    "id": 96,
+    "departemen": "Minat dan Bakat (MINBAK)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Manajemen Minat dan Bakat",
+    "nama": "Ghiyats Thabularasa Meardhy",
+    "nim": "124450067",
+    "umur": 17,
+    "asal": "Bekasi",
+    "alamat": "Korpri",
+    "hobi": [
+      "Ngegift live Bryan"
+    ],
+    "sosial_media": "@meardhy_ghiyats"
+  },
+  {
+    "id": 97,
+    "departemen": "Minat dan Bakat (MINBAK)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Manajemen Minat dan Bakat",
+    "nama": "Indah Julia Mawar Pratiwi",
+    "nim": "124450055",
+    "umur": 20,
+    "asal": "Pringsewu",
+    "alamat": "Airan",
+    "hobi": [
+      "Bengong"
+    ],
+    "sosial_media": "@indahjuliaa"
+  },
+  {
+    "id": 98,
+    "departemen": "Minat dan Bakat (MINBAK)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Manajemen Minat dan Bakat",
+    "nama": "Jacinda Kesya Alvara",
+    "nim": "124450023",
+    "umur": 18,
+    "asal": "Kalimantan Barat",
+    "alamat": "Korpri",
+    "hobi": [
+      "Nyapu depan gacoan"
+    ],
+    "sosial_media": "@cacalvra"
+  },
+  {
+    "id": 99,
+    "departemen": "Minat dan Bakat (MINBAK)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Manajemen Minat dan Bakat",
+    "nama": "Muhammad Rafka Fatih Al Ghathfaan",
+    "nim": "124450089",
+    "umur": 20,
+    "asal": "Padang",
+    "alamat": "Kota Baru",
+    "hobi": [
+      "Bangun pagi"
+    ],
+    "sosial_media": "@muhammdrafka_"
+  },
+  {
+    "id": 100,
+    "departemen": "Pengembangan Sumber Daya Anggota (PSDA)",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Departement",
+    "divisi": "",
+    "nama": "Arienta Khusnul Ananda",
+    "nim": "123450097",
+    "umur": 21,
+    "asal": "Deket Pantai Kedu, Kalianda",
+    "alamat": "Samping kos capo",
+    "hobi": [
+      "Baca jurnal"
+    ],
+    "sosial_media": "@arientakhsnl_"
+  },
+  {
+    "id": 101,
+    "departemen": "Pengembangan Sumber Daya Anggota (PSDA)",
+    "kategori": "Departemen",
+    "jabatan": "Sekretaris",
+    "divisi": "",
+    "nama": "Vany Salsabila Putri",
+    "nim": "123450022",
+    "umur": 20,
+    "asal": "Sibolga",
+    "alamat": "Pudan Kost",
+    "hobi": [
+      "Pacaran"
+    ],
+    "sosial_media": "@vany.salsabilaa"
+  },
+  {
+    "id": 102,
+    "departemen": "Pengembangan Sumber Daya Anggota (PSDA)",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Divisi",
+    "divisi": "Kaderisasi",
+    "nama": "Nobel Nizam Fathirizki",
+    "nim": "123450117",
+    "umur": 21,
+    "asal": "Bandar Lampung",
+    "alamat": "Urip",
+    "hobi": [
+      "Banyak"
+    ],
+    "sosial_media": "@nobelnizam"
+  },
+  {
+    "id": 103,
+    "departemen": "Pengembangan Sumber Daya Anggota (PSDA)",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Divisi",
+    "divisi": "Peningkatan Mutu Anggota",
+    "nama": "Desman Velius Halawa",
+    "nim": "123450114",
+    "umur": 17,
+    "asal": "Nias",
+    "alamat": "Airan",
+    "hobi": [
+      "Bermusik"
+    ],
+    "sosial_media": "@desmannhal_"
+  },
+  {
+    "id": 104,
+    "departemen": "Pengembangan Sumber Daya Anggota (PSDA)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Kaderisasi",
+    "nama": "Afriza Azmi",
+    "nim": "124450110",
+    "umur": 20,
+    "asal": "Malang",
+    "alamat": "Samping kos Jemar",
+    "hobi": [
+      "Berantem"
+    ],
+    "sosial_media": "@friezazmi"
+  },
+  {
+    "id": 105,
+    "departemen": "Pengembangan Sumber Daya Anggota (PSDA)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Kaderisasi",
+    "nama": "Ayake Alfatih Ramadan",
+    "nim": "124450108",
+    "umur": 21,
+    "asal": "Paninjauan, 10 kota di atas, Solok, Sumatera Barat",
+    "alamat": "Blok D 79, Jl Manggis 8 Perum Pemda, Way Huwi Jati Agung, Lampung Selatan, Lampung",
+    "hobi": [
+      "Masak ayam"
+    ],
+    "sosial_media": "@ykeall"
+  },
+  {
+    "id": 106,
+    "departemen": "Pengembangan Sumber Daya Anggota (PSDA)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Kaderisasi",
+    "nama": "Caesar Ozora Alrando",
+    "nim": "124450017",
+    "umur": 21,
+    "asal": "Painar, Sumatera Barat",
+    "alamat": "Gedung F",
+    "hobi": [
+      "Mandiin anak ayam"
+    ],
+    "sosial_media": "@caesar.oriza"
+  },
+  {
+    "id": 107,
+    "departemen": "Pengembangan Sumber Daya Anggota (PSDA)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Kaderisasi",
+    "nama": "Euodia Meiliana Friedita",
+    "nim": "124450029",
+    "umur": 18,
+    "asal": "Debu Tanah",
+    "alamat": "Di sebelah pasar, di bawah turunan, di atas tanjakan, di seberang kontrakan Yazid Rizal",
+    "hobi": [
+      "Ngegiring anak ayam bermain di Lapangan"
+    ],
+    "sosial_media": "@yudiameilianaa_"
+  },
+  {
+    "id": 108,
+    "departemen": "Pengembangan Sumber Daya Anggota (PSDA)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Kaderisasi",
+    "nama": "Haikal Seventino Tamba",
+    "nim": "124450012",
+    "umur": 18,
+    "asal": "Rantau Perapat",
+    "alamat": "Belakang kos Ayake",
+    "hobi": [
+      "Goreng ayam"
+    ],
+    "sosial_media": "@_haikaaall"
+  },
+  {
+    "id": 109,
+    "departemen": "Pengembangan Sumber Daya Anggota (PSDA)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Kaderisasi",
+    "nama": "Putri Manna Anantama Simbolon",
+    "nim": "124450056",
+    "umur": 18,
+    "asal": "Sabang",
+    "alamat": "Nomaden",
+    "hobi": [
+      "Duduk samping Henry"
+    ],
+    "sosial_media": "@putrimannaa"
+  },
+  {
+    "id": 110,
+    "departemen": "Pengembangan Sumber Daya Anggota (PSDA)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Kaderisasi",
+    "nama": "Queenta Thifaal Nabila",
+    "nim": "124450059",
+    "umur": 18,
+    "asal": "Kota Gajah",
+    "alamat": "Depan pemancingan",
+    "hobi": [
+      "Nyuapin anak ayam"
+    ],
+    "sosial_media": "@queentanabila"
+  },
+  {
+    "id": 111,
+    "departemen": "Pengembangan Sumber Daya Anggota (PSDA)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Peningkatan Mutu Anggota",
+    "nama": "Azzelya Thianandry",
+    "nim": "124450041",
+    "umur": 19,
+    "asal": "Lampung",
+    "alamat": "Sukarame",
+    "hobi": [
+      "Makan aice"
+    ],
+    "sosial_media": "@azzelytn"
+  },
+  {
+    "id": 112,
+    "departemen": "Pengembangan Sumber Daya Anggota (PSDA)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Peningkatan Mutu Anggota",
+    "nama": "Charrlindah",
+    "nim": "124450037",
+    "umur": 21,
+    "asal": "Jakarta Pusat",
+    "alamat": "Cendrawasih 1",
+    "hobi": [
+      "Ngurus peternakan"
+    ],
+    "sosial_media": "@charrlln"
+  },
+  {
+    "id": 113,
+    "departemen": "Pengembangan Sumber Daya Anggota (PSDA)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Peningkatan Mutu Anggota",
+    "nama": "Jeremi Marolop P. Situmorang",
+    "nim": "124450111",
+    "umur": 17,
+    "asal": "Nibire, Papua",
+    "alamat": "Sebelah kos Haikal",
+    "hobi": [
+      "Memahat patung"
+    ],
+    "sosial_media": "@jemarrro"
+  },
+  {
+    "id": 114,
+    "departemen": "Pengembangan Sumber Daya Anggota (PSDA)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Peningkatan Mutu Anggota",
+    "nama": "Nabila Nur Azizah",
+    "nim": "124450048",
+    "umur": 19,
+    "asal": "Lampung Timur",
+    "alamat": "Belwis",
+    "hobi": [
+      "Main Roblox"
+    ],
+    "sosial_media": "@n.bila_a"
+  },
+  {
+    "id": 115,
+    "departemen": "Pengembangan Sumber Daya Anggota (PSDA)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Peningkatan Mutu Anggota",
+    "nama": "Rafli Al Mansyah Tambunan",
+    "nim": "124450007",
+    "umur": 20,
+    "asal": "Tembung",
+    "alamat": "Belwis Tengah",
+    "hobi": [
+      "Mancing"
+    ],
+    "sosial_media": "@dearfkvmfl"
+  },
+  {
+    "id": 116,
+    "departemen": "Pengembangan Sumber Daya Anggota (PSDA)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Peningkatan Mutu Anggota",
+    "nama": "Salavia Naharani",
+    "nim": "124450090",
+    "umur": 20,
+    "asal": "Lampung Timur",
+    "alamat": "Jatimulyo",
+    "hobi": [
+      "Nonton"
+    ],
+    "sosial_media": "@avi.nhr"
+  },
+  {
+    "id": 117,
+    "departemen": "Storage Sains Data (SSD)",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Departement",
+    "divisi": "",
+    "nama": "Ihsan Maulana Yusuf",
+    "nim": "123450110",
+    "umur": 21,
+    "asal": "Sumatera Barat",
+    "alamat": "Belwis",
+    "hobi": [
+      "Nyari jurnal"
+    ],
+    "sosial_media": "@ihsan.myusuf"
+  },
+  {
+    "id": 118,
+    "departemen": "Storage Sains Data (SSD)",
+    "kategori": "Departemen",
+    "jabatan": "Sekretaris",
+    "divisi": "",
+    "nama": "Hanifah Inaya Sani",
+    "nim": "123450123",
+    "umur": 20,
+    "asal": "Bandar Lampung",
+    "alamat": "Korpri",
+    "hobi": [
+      "Masak"
+    ],
+    "sosial_media": "@inayasani"
+  },
+  {
+    "id": 119,
+    "departemen": "Storage Sains Data (SSD)",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Divisi",
+    "divisi": "Kemitraan",
+    "nama": "Afifah Fauziah",
+    "nim": "123450002",
+    "umur": 19,
+    "asal": "Sumatera Barat",
+    "alamat": "Hasan 4 belakang PB",
+    "hobi": [
+      "Baca jurnal",
+      "nonton marvel"
+    ],
+    "sosial_media": "@fifah.zy"
+  },
+  {
+    "id": 120,
+    "departemen": "Storage Sains Data (SSD)",
+    "kategori": "Departemen",
+    "jabatan": "Kepala Divisi",
+    "divisi": "Kewirausahaan",
+    "nama": "Anadia Carana",
+    "nim": "123450019",
+    "umur": 20,
+    "asal": "Palembang",
+    "alamat": "Way Huwi",
+    "hobi": [
+      "Nyari duit"
+    ],
+    "sosial_media": "@anadiacrn_"
+  },
+  {
+    "id": 121,
+    "departemen": "Storage Sains Data (SSD)",
+    "kategori": "Departemen",
+    "jabatan": "Staff Ahli",
+    "divisi": "Kewirausahaan",
+    "nama": "Abdillah Fikri Al pome",
+    "nim": "123450062",
+    "umur": 21,
+    "asal": "Baturaja, Sumatera Selatan",
+    "alamat": "Belakang PB",
+    "hobi": [
+      "Olahraga"
+    ],
+    "sosial_media": "@pomest__"
+  },
+  {
+    "id": 122,
+    "departemen": "Storage Sains Data (SSD)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Kemitraan",
+    "nama": "Hasan Nur Ramadhan",
+    "nim": "124450013",
+    "umur": 25,
+    "asal": "Lampung Tengah",
+    "alamat": "Sebelah Kosan Ayake",
+    "hobi": [
+      "Nonton Youtube"
+    ],
+    "sosial_media": "@hasan.ramadhan08"
+  },
+  {
+    "id": 123,
+    "departemen": "Storage Sains Data (SSD)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Kemitraan",
+    "nama": "Layina Ropiqo",
+    "nim": "124450016",
+    "umur": 19,
+    "asal": "Bandar Lampung",
+    "alamat": "Bandar Lampung",
+    "hobi": [
+      "Nonton film"
+    ],
+    "sosial_media": "@lay.inr_"
+  },
+  {
+    "id": 124,
+    "departemen": "Storage Sains Data (SSD)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Kemitraan",
+    "nama": "Mochammad Iqbal Az-Zahir",
+    "nim": "124450052",
+    "umur": 20,
+    "asal": "Bekasi",
+    "alamat": "Natar",
+    "hobi": [
+      "Nonton drakor"
+    ],
+    "sosial_media": "@iqbalazzahir_"
+  },
+  {
+    "id": 125,
+    "departemen": "Storage Sains Data (SSD)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Kemitraan",
+    "nama": "Talitha Justine",
+    "nim": "124450076",
+    "umur": 19,
+    "asal": "Jakarta",
+    "alamat": "Pemda",
+    "hobi": [
+      "Nonton"
+    ],
+    "sosial_media": ""
+  },
+  {
+    "id": 126,
+    "departemen": "Storage Sains Data (SSD)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Kewirausahaan",
+    "nama": "Afdhal Rahmad Setiawan",
+    "nim": "124450008",
+    "umur": 20,
+    "asal": "Sumatera Barat",
+    "alamat": "Belwis",
+    "hobi": [
+      "Fishing"
+    ],
+    "sosial_media": "@dhal_setiawan"
+  },
+  {
+    "id": 127,
+    "departemen": "Storage Sains Data (SSD)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Kewirausahaan",
+    "nama": "Anggun Nita",
+    "nim": "124450009",
+    "umur": 20,
+    "asal": "Lampung Utara",
+    "alamat": "Belwis",
+    "hobi": [
+      "Nonton Kartun"
+    ],
+    "sosial_media": "@anggunnitaaa_"
+  },
+  {
+    "id": 128,
+    "departemen": "Storage Sains Data (SSD)",
+    "kategori": "Departemen",
+    "jabatan": "Anggota",
+    "divisi": "Kewirausahaan",
+    "nama": "Della Anisa Fitri",
+    "nim": "124450095",
+    "umur": 17,
+    "asal": "Lampung Timur",
+    "alamat": "Kota Baru",
+    "hobi": [
+      "Berdandan"
+    ],
+    "sosial_media": "@dellaansaftr"
+  },
+  {
+    "id": 129,
+    "departemen": "Badan Kesenatoran (BASON)",
+    "kategori": "Badan",
+    "jabatan": "Senator",
+    "divisi": "",
+    "nama": "Fathinah Nur Azizah",
+    "nim": "123450072",
+    "umur": 21,
+    "asal": "Jakarta",
+    "alamat": "Airan",
+    "hobi": [
+      "Nulis di medium"
+    ],
+    "sosial_media": "@fathinahhzz"
+  },
+  {
+    "id": 130,
+    "departemen": "Badan Kesenatoran (BASON)",
+    "kategori": "Badan",
+    "jabatan": "Kepala Biro",
+    "divisi": "Biro Aspirasi dan Media Komunikasi",
+    "nama": "Helmy Surya Pratama",
+    "nim": "124450033",
+    "umur": 20,
+    "asal": "Jakarta",
+    "alamat": "Kedamaian",
+    "hobi": [
+      "Ngesen kiri"
+    ],
+    "sosial_media": "@helmy_inst"
+  },
+  {
+    "id": 131,
+    "departemen": "Badan Kesenatoran (BASON)",
+    "kategori": "Badan",
+    "jabatan": "Kepala Biro",
+    "divisi": "Biro Kajian Strategis dan Propaganda",
+    "nama": "Lia Hana Ichisasmita",
+    "nim": "123450089",
+    "umur": 21,
+    "asal": "Jakarta",
+    "alamat": "Belwis",
+    "hobi": [
+      "Sukarame"
+    ],
+    "sosial_media": "@lia.h_264"
+  },
+  {
+    "id": 132,
+    "departemen": "Badan Kesenatoran (BASON)",
+    "kategori": "Badan",
+    "jabatan": "Kepala Biro",
+    "divisi": "Biro Kesekretariatan",
+    "nama": "Nadya Ratu Anjani",
+    "nim": "123450083",
+    "umur": 21,
+    "asal": "Bandar Lampung",
+    "alamat": "Sukarame",
+    "hobi": [
+      "Denger lagu"
+    ],
+    "sosial_media": "@nadyaanjaani"
+  },
+  {
+    "id": 133,
+    "departemen": "Badan Kesenatoran (BASON)",
+    "kategori": "Badan",
+    "jabatan": "Staff Biro",
+    "divisi": "Biro Aspirasi dan Media Komunikasi",
+    "nama": "Fernando Dimetrius Barus",
+    "nim": "124450063",
+    "umur": 21,
+    "asal": "Tangerang Kota",
+    "alamat": "Sebelah kamar Biwa",
+    "hobi": [
+      "Main Badminton"
+    ],
+    "sosial_media": "@barus.fernando"
+  },
+  {
+    "id": 134,
+    "departemen": "Badan Kesenatoran (BASON)",
+    "kategori": "Badan",
+    "jabatan": "Staff Biro",
+    "divisi": "Biro Aspirasi dan Media Komunikasi",
+    "nama": "Suci Aulia",
+    "nim": "124450034",
+    "umur": 19,
+    "asal": "Pesisir Barat",
+    "alamat": "Kota Baru",
+    "hobi": [
+      "Mendokumentasikan segala hal yang ga penting terus taro di second account"
+    ],
+    "sosial_media": "@sciia__"
+  },
+  {
+    "id": 135,
+    "departemen": "Badan Kesenatoran (BASON)",
+    "kategori": "Badan",
+    "jabatan": "Staff Biro",
+    "divisi": "Biro Aspirasi dan Media Komunikasi",
+    "nama": "Wielman Itolo Halawa",
+    "nim": "124450072",
+    "umur": 20,
+    "asal": "Nias Selatan",
+    "alamat": "Asrama TB 3",
+    "hobi": [
+      "Mancing"
+    ],
+    "sosial_media": "@wielhawny"
+  },
+  {
+    "id": 136,
+    "departemen": "Badan Kesenatoran (BASON)",
+    "kategori": "Badan",
+    "jabatan": "Staff Biro",
+    "divisi": "Biro Kajian Strategis dan Propaganda",
+    "nama": "Aqila Zayyan Salsabil",
+    "nim": "124450014",
+    "umur": 19,
+    "asal": "Lampung Utara",
+    "alamat": "Sukarame",
+    "hobi": [
+      "Mendokumentasikan Bayes"
+    ],
+    "sosial_media": "@aqilazayyaan"
+  },
+  {
+    "id": 137,
+    "departemen": "Badan Kesenatoran (BASON)",
+    "kategori": "Badan",
+    "jabatan": "Staff Biro",
+    "divisi": "Biro Kajian Strategis dan Propaganda",
+    "nama": "Hazel Mahesa Handhaka",
+    "nim": "124450114",
+    "umur": 19,
+    "asal": "Lamtim Timur",
+    "alamat": "Bunter terang",
+    "hobi": [
+      "Cinematic Datavora"
+    ],
+    "sosial_media": "@hazelhandhaka"
+  },
+  {
+    "id": 138,
+    "departemen": "Badan Kesenatoran (BASON)",
+    "kategori": "Badan",
+    "jabatan": "Staff Biro",
+    "divisi": "Biro Kesekretariatan",
+    "nama": "Dwi Rahma Fitriani",
+    "nim": "124450085",
+    "umur": 20,
+    "asal": "Tulang Bawang",
+    "alamat": "Belwis",
+    "hobi": [
+      "Baca buku",
+      "dengerin musik",
+      "nonton film",
+      "beli matcha"
+    ],
+    "sosial_media": "@dwi_rahmftrnii"
+  },
+  {
+    "id": 139,
+    "departemen": "Badan Legislatif (BALEG)",
+    "kategori": "Badan",
+    "jabatan": "Ketua Baleg",
+    "divisi": "",
+    "nama": "Ridho Benedictus Togi Manik",
+    "nim": "123450060",
+    "umur": 20,
+    "asal": "Kuala Lumpur",
+    "alamat": "GH",
+    "hobi": [
+      "Ke cafe"
+    ],
+    "sosial_media": "@iamridhomanik"
+  },
+  {
+    "id": 140,
+    "departemen": "Badan Legislatif (BALEG)",
+    "kategori": "Badan",
+    "jabatan": "Sekretaris",
+    "divisi": "",
+    "nama": "Juesi Apridelia Saragih",
+    "nim": "123450085",
+    "umur": 19,
+    "asal": "Singkawang",
+    "alamat": "Pelangi",
+    "hobi": [
+      "Dengerin lagu pilihlah aku dari Krisdayanti"
+    ],
+    "sosial_media": "@j__eesie"
+  },
+  {
+    "id": 141,
+    "departemen": "Badan Legislatif (BALEG)",
+    "kategori": "Badan",
+    "jabatan": "Kepala Komisi",
+    "divisi": "Komisi I Legislasi",
+    "nama": "Dharu Cahyoaji Sasongko",
+    "nim": "123450023",
+    "umur": 19,
+    "asal": "Lampung",
+    "alamat": "Bandar Lampung",
+    "hobi": [
+      "Ngidupin api Baleg di TikTok"
+    ],
+    "sosial_media": "@ddharu_"
+  },
+  {
+    "id": 142,
+    "departemen": "Badan Legislatif (BALEG)",
+    "kategori": "Badan",
+    "jabatan": "Kepala Komisi",
+    "divisi": "Komisi II Pengawasan",
+    "nama": "Givaro Ananta",
+    "nim": "123450078",
+    "umur": 21,
+    "asal": "Lampung Barat",
+    "alamat": "Sukabumi",
+    "hobi": [
+      "Minum kopi"
+    ],
+    "sosial_media": "@givarooo"
+  },
+  {
+    "id": 143,
+    "departemen": "Badan Legislatif (BALEG)",
+    "kategori": "Badan",
+    "jabatan": "Kepala Komisi",
+    "divisi": "Komisi III Aspirasi dan Media Informasi",
+    "nama": "Monica Patricia Tanjung",
+    "nim": "123450073",
+    "umur": 21,
+    "asal": "Jakarta Barat",
+    "alamat": "Kota Baru",
+    "hobi": [
+      "Lari"
+    ],
+    "sosial_media": "@monica_tjg"
+  },
+  {
+    "id": 144,
+    "departemen": "Badan Legislatif (BALEG)",
+    "kategori": "Badan",
+    "jabatan": "Staff Komisi",
+    "divisi": "Komisi I Legislasi",
+    "nama": "Gh Mikael Niko A S",
+    "nim": "124450079",
+    "umur": 20,
+    "asal": "Pasir Sakti",
+    "alamat": "Jati Agung",
+    "hobi": [
+      "Tidur"
+    ],
+    "sosial_media": "@me._kael"
+  },
+  {
+    "id": 145,
+    "departemen": "Badan Legislatif (BALEG)",
+    "kategori": "Badan",
+    "jabatan": "Staff Komisi",
+    "divisi": "Komisi I Legislasi",
+    "nama": "Siti Sarifah Sumamah",
+    "nim": "124450015",
+    "umur": 19,
+    "asal": "Bekasi",
+    "alamat": "Kedaton",
+    "hobi": [
+      "Mancing"
+    ],
+    "sosial_media": "@syt.rifa"
+  },
+  {
+    "id": 146,
+    "departemen": "Badan Legislatif (BALEG)",
+    "kategori": "Badan",
+    "jabatan": "Staff Komisi",
+    "divisi": "Komisi II Pengawasan",
+    "nama": "Afghanis Nursholehatunnisa",
+    "nim": "124450042",
+    "umur": 18,
+    "asal": "Kepulauan Mentawai, Lampung",
+    "alamat": "Kadang di kos Sekar, kadang di kos Putri",
+    "hobi": [
+      "Memanjat"
+    ],
+    "sosial_media": "@afghanisnt_"
+  },
+  {
+    "id": 147,
+    "departemen": "Badan Legislatif (BALEG)",
+    "kategori": "Badan",
+    "jabatan": "Staff Komisi",
+    "divisi": "Komisi II Pengawasan",
+    "nama": "Hani Qurrota Aini",
+    "nim": "124450020",
+    "umur": 20,
+    "asal": "City Earth",
+    "alamat": "Sukarame",
+    "hobi": [
+      "Baca AU"
+    ],
+    "sosial_media": "@haniquratuain_"
+  },
+  {
+    "id": 148,
+    "departemen": "Badan Legislatif (BALEG)",
+    "kategori": "Badan",
+    "jabatan": "Staff Komisi",
+    "divisi": "Komisi II Pengawasan",
+    "nama": "Jeremia Halim",
+    "nim": "124450101",
+    "umur": 20,
+    "asal": "Tangerang",
+    "alamat": "Teluk Betung",
+    "hobi": [
+      "Nyanyi",
+      "olahraga"
+    ],
+    "sosial_media": "@jeremia_hm"
+  },
+  {
+    "id": 149,
+    "departemen": "Badan Legislatif (BALEG)",
+    "kategori": "Badan",
+    "jabatan": "Staff Komisi",
+    "divisi": "Komisi III Aspirasi dan Media Informasi",
+    "nama": "Jona Timothy Ogatse Panjaitan",
+    "nim": "124450121",
+    "umur": 20,
+    "asal": "Depok",
+    "alamat": "Pemda Raya",
+    "hobi": [
+      "Ngegym",
+      "koleksi figur"
+    ],
+    "sosial_media": "@nagatseee"
+  },
+  {
+    "id": 150,
+    "departemen": "Badan Legislatif (BALEG)",
+    "kategori": "Badan",
+    "jabatan": "Staff Komisi",
+    "divisi": "Komisi III Aspirasi dan Media Informasi",
+    "nama": "Sekar Dini Widya Putri",
+    "nim": "124450082",
+    "umur": 20,
+    "asal": "Metro",
+    "alamat": "Pemda",
+    "hobi": [
+      "Main sama Nisa"
+    ],
+    "sosial_media": "@sekardnwp"
+  },
+  {
+    "id": 151,
+    "departemen": "Badan Legislatif (BALEG)",
+    "kategori": "Badan",
+    "jabatan": "Staff Komisi",
+    "divisi": "Komisi III Aspirasi dan Media Informasi",
+    "nama": "Wan Nashwa Alhasni Yuska",
+    "nim": "123450077",
+    "umur": 20,
+    "asal": "Pasay",
+    "alamat": "Belwis",
+    "hobi": [
+      "Nyapa angin"
+    ],
+    "sosial_media": "@nshaysk"
+  }
+]
