@@ -399,12 +399,7 @@ elif menu == "Departemen Minbak":
 
 
 elif menu == "Departemen SSD":
-
     def Departemen_SSD():
-
-        # =========================
-        # DAFTAR URL GAMBAR
-        # =========================
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1KGNhbecJJbvZr65wajrzMgkyEvFRewTU",
             "https://drive.google.com/uc?export=view&id=1yWdWMPOKHaihUeg-wBKRe3hYTEmkYPfn",
@@ -417,10 +412,6 @@ elif menu == "Departemen SSD":
             "https://drive.google.com/uc?export=view&id=1ER_mNf7HXv__3jkIIkPnHjIx0allpGwA",
             "https://drive.google.com/uc?export=view&id=1IiZlidIX4sOhH0iAr5QFaSb6IHVuq3ia"
         ]
-
-        # =========================
-        # DATA ANGGOTA SSD
-        # =========================
         data_list = [
             # Pimpinan & Sekretaris
             {
@@ -539,16 +530,12 @@ elif menu == "Departemen SSD":
             }
         ]
 
-        # =========================
-        # TAMPILKAN DATA ANGGOTA
-        # =========================
         st.subheader("Departemen SSD")
         display_images_with_data(gambar_urls, data_list)
 
-    # Jalankan fungsi
     Departemen_SSD()
-
-if menu == "Bason":
+    
+elif menu == "Bason":
     def Bason():
         gambar_urls = [
         ]
@@ -664,7 +651,9 @@ if menu == "Bason":
                 "pesan":"Semangat terus kaa kuliahnyaa!!"# 1
             },
         ]
+        st.subheader("Badan Senator")
         display_images_with_data(gambar_urls, data_list)
+
     Bason()
 
 # Tambahkan menu lainnya sesuai kebutuhan
