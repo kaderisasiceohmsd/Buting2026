@@ -339,7 +339,7 @@ def get_divisions_for_dept(menu_label):
 # ========================================================================
 # DATA DINAMIS: foto massal, kesan, pesan — unik per pemilik buku kating
 # ========================================================================
-PEMILIK = "Rafli"  # <-- GANTI SESUAI NAMA PEMILIK BUKU KATING INI
+PEMILIK = "Bintang"  # <-- GANTI SESUAI NAMA PEMILIK BUKU KATING INI
 
 @st.cache_data
 def load_dinamis_data(pemilik_nama):
