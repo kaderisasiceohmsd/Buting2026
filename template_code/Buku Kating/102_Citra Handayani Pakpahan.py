@@ -99,12 +99,12 @@ menu = streamlit_menu()
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
-            "https://drive.google.com/drive/folders/1by3pHPLKnA9DSMcUAHBVwT4g7Kc28tCb",
-            "https://drive.google.com/drive/folders/1by3pHPLKnA9DSMcUAHBVwT4g7Kc28tCb",
-            "https://drive.google.com/drive/folders/1by3pHPLKnA9DSMcUAHBVwT4g7Kc28tCb",
-            "https://drive.google.com/drive/folders/1by3pHPLKnA9DSMcUAHBVwT4g7Kc28tCb",
-            "https://drive.google.com/drive/folders/1by3pHPLKnA9DSMcUAHBVwT4g7Kc28tCb",
-            "https://drive.google.com/drive/folders/1by3pHPLKnA9DSMcUAHBVwT4g7Kc28tCb",
+            "https://drive.google.com/uc?export=view&id=ID_FOTO_GINDA",
+            "https://drive.google.com/uc?export=view&id=ID_FOTO_AQIL",
+            "https://drive.google.com/uc?export=view&id=ID_FOTO_EFI",
+            "https://drive.google.com/uc?export=view&id=ID_FOTO_QOIS",
+            "https://drive.google.com/uc?export=view&id=ID_FOTO_HAFSA",
+            "https://drive.google.com/uc?export=view&id=ID_FOTO_LUTHFIA",
         ]
         data_list = [
             {
@@ -177,7 +177,5 @@ if menu == "Kesekjenan":
         display_images_with_data(gambar_urls, data_list)
 
 if menu == "Kesekjenan":
-    kesekjenan() # Harus memanggil fungsi ini!
-        
-
-        # Tambahkan menu lainnya sesuai kebutuhan
+    kesekjenan()
+    
