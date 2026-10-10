@@ -471,4 +471,194 @@ if menu == "Senator":
         display_images_with_data(gambar_urls, data_list)
     senator()
     
+if menu == "Minbak": 
+    def minbak():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1a1sBjH_mXdtnOipHSmpOD153hMMmCXvV",  # Bang Kevin
+            "https://drive.google.com/uc?export=view&id=1WkmJ_8PD3f1kPsj58fV9yBcqFI3j37Wc",  # Kak Gusti
+            "https://drive.google.com/uc?export=view&id=18H4VZIPuvnBmxctifDghI7zBAe-HOExF",  # Bang Ali
+            "https://drive.google.com/uc?export=view&id=18ezbH0RkboKb0ZAI8bZqOp4A1MBNjPa2",  # Kak Ayu
+            "https://drive.google.com/uc?export=view&id=1xC8WQ7J2U6fCrVRbt6d5muaJOYQlk38h",  # Bang Dafa
+            "https://drive.google.com/uc?export=view&id=1eX70j4VOmLs91LzLBj8q1qhKzXQYQ59w",  # Kak Salsabila
+            "https://drive.google.com/uc?export=view&id=1BRLxeGMntW3TzLFMcsoBtYyWaQXPhPdH",  # Bang Afdal
+            "https://drive.google.com/uc?export=view&id=1eryzmwGf9wBRetS2X9QUnLgu1dPBidLs",  # Kak Juwita
+            "https://drive.google.com/uc?export=view&id=1IB3bX6zrKDE-tyMGIlHnjslXKT66Z_sI",  # Bang Ridwan
+            "https://drive.google.com/uc?export=view&id=1kF4kNyIVVkeL2OGTh7Ubtp0EYYPWyOHf",  # Bang Andra
+            "https://drive.google.com/uc?export=view&id=1s9JnNvaxcDu-U9qjcb0teLs3ZmlwBgmc",  # Bang Bryan
+            "https://drive.google.com/uc?export=view&id=1EFN_VBTUUhZPi09tEPYx_dXxSzx6Een1",  # Bang Ghiyats
+            "https://drive.google.com/uc?export=view&id=138XSdPOo1ddiUGOXOuhMyHm4SVuVp9Tl",  # Kak Indah
+            "https://drive.google.com/uc?export=view&id=1-wTC8pFCBwcV36brrVoDmb2-D_44fGTa",  # Kak Jacinda
+            "https://drive.google.com/uc?export=view&id=1wk6IbkRr4lp0awkDRn6KdhvWzGQ14Be3",  # Bang Rafka
+        ]
+        data_list = [
+            {
+                "nama": "Kevin Antonio Junior",
+                "nim": "123450109",
+                "umur": "20",
+                "asal": "Maluku",
+                "alamat": "Panjang",
+                "hobbi": "Menari",
+                "sosmed": "@kevinaj__",
+                "kesan": "Abangnya keren, asik dan cool banget.",  
+                "pesan":"Semangat kuliahnya bang, jangan kasih kendor."# 1
+            },
+            {
+                "nama": "Gusti Putu Ferazka Dhiyamika",
+                "nim": "123450046",
+                "umur": "21",
+                "asal": "Lampung Utara",
+                "alamat": "Way Halim",
+                "hobbi": "Mendaki",
+                "sosmed": "@ferazkaa",
+                "kesan": "Kakaknya stylish banget dan cantikk",  
+                "pesan":"Semangat jalann kuliahnya kakk, kayak semnagat mendaki."# 1
+            },
+            {
+                "nama": "Ali Aristo Muthahhari Parisi",
+                "nim": "123450088",
+                "umur": "21",
+                "asal":"Lampung Timur",
+                "alamat": "Gang Sakum Belwis",
+                "hobbi": "Bawa makanan dari Luar",
+                "sosmed": "ali_parisi3",
+                "kesan": "Abangnya keren dan komuikasinya bagus banget.",  
+                "pesan":"Tips komunikasi yang bagus bang."# 1
+            },
+            {
+                "nama": "Ayu Andriani Parlina Wati",
+                "nim": "123450025",
+                "umur": "20",
+                "asal":"Jombang",
+                "alamat": "Jatiagung",
+                "hobbi": "Jalan-jalan nyari mangsa",
+                "sosmed": "@me._kael",
+                "kesan": "Kakaknya ramah dan baik banget.",  
+                "pesan":"Tetap jadi orang yang ramah dan bai hati ya kak."
+            },
+            {
+                "nama": "Dafa Elpriza",
+                "nim": "124450131",
+                "umur": "21",
+                "asal":"Bekasi",
+                "alamat": "Way Kandis",
+                "hobbi": "Mancing",
+                "sosmed": "@dafaelpriza_",
+                "kesan": "Kelihatan pendiem tapi lama kelamaan asik.",  
+                "pesan":"Suka mancing di mana bang?"# 1
+            },
+            {
+                "nama": "Salsabila Nazwa Putri",
+                "nim": "124450002",
+                "umur": "20",
+                "asal":"Metro",
+                "alamat": "Korpri",
+                "hobbi": "Pulang Kampung",
+                "sosmed": "@slbnzw_",
+                "kesan": "Kakaknya softspoken banget dan ramah ke kami.",  
+                "pesan":"Tetap semangat dan jangan menyerah kak."# 1
+            },
+            {
+                "nama": "Muhammad Afdal Lutfi",
+                "nim": "124450047",
+                "umur": "19",
+                "asal":"Lampung Tengah",
+                "alamat": "Jln. Pulau Damar",
+                "hobbi": "Surving",
+                "sosmed": "@afdall.03",
+                "kesan": "Pendiem dan kayaknya suka jajan ya.",  
+                "pesan":"Pernah surving di mana bang? Tipsnya sonhg."# 1
+            },
+            {
+                "nama": "Juwita Sari",
+                "nim": "124450066",
+                "umur": "19",
+                "asal":"Lampung Barat",
+                "alamat": "Pemda",
+                "hobbi": "Liat Bila nulis",
+                "sosmed": "@ju.juwitaaa_",
+                "kesan": "Kakaknya asik, ramah tapi kayak mirip sama seseorang di minbak.",  
+                "pesan":"Tips jago main basket dong kak biar jago kayak kakak."# 1
+            },
+            {
+                "nama": "Muhammad Ridwan",
+                "nim": "123450091",
+                "umur": "21",
+                "asal":"Lampung Tengah",
+                "alamat": "Belwis",
+                "hobbi": "Nontonin Fadyl Badminton",
+                "sosmed": "@mridwaan_22",
+                "kesan": "Abangnya keren dan kayaknya santai banget.",  
+                "pesan":"Ajakin nonton Fadyl Badminton juga."# 1
+            },
+            {
+                "nama": "Andra Ilham Bintang",
+                "nim": "124450060",
+                "umur": "18",
+                "asal":"Sumatera Selatan",
+                "alamat": "Kota Baru",
+                "hobbi": "Nonton Drama Korea",
+                "sosmed": "@andra.lhm",
+                "kesan": "Abangnya lucu, mau aja diajak pose imut.",  
+                "pesan":"Semangat terus bang jalanin  perkuliahannya bang."# 1
+            },
+            {
+                "nama": "Bryan Paskah Telaumbanua",
+                "nim": "124450003",
+                "umur": "20",
+                "asal":"Nias",
+                "alamat": "Belwis",
+                "hobbi": "Yoga",
+                "sosmed": "@bryantel_",
+                "kesan": "Abangnya pendiem banget sihh.",  
+                "pesan":"Tips biar bisa tetap diem dan tenang di situasi yang gedebak-gedebuk."# 1
+            },
+            {
+                "nama": "Ghiyats Thabularasa Meardhy",
+                "nim": "124....",
+                "umur": "..",
+                "asal":"...",
+                "alamat": "B...",
+                "hobbi": "....",
+                "sosmed": "@...",
+                "kesan": "Abangnya kayak pendiem auranya, tapi ternyata asik parah.",
+                "pesan":"Semangat terus bang, jangan main game mulu."# 1  
+            },
             
+            {
+                "nama": "Indah Julia Mawar Pratiwi",
+                "nim": "124450055",
+                "umur": "20",
+                "asal":"Pringsewu",
+                "alamat": "Airan",
+                "hobbi": "...",
+                "sosmed": "@...",
+                "kesan": "Kakaknya cantik dan kayaknya anak olharaga banget.",  
+                "pesan":"Tips semangat berolahraga."# 1
+            },
+            {
+                "nama": "Jacinda Kesya Alvara",
+                "nim": "....",
+                "umur": "..",
+                "asal":"...",
+                "alamat": "....",
+                "hobbi": "...",
+                "sosmed": "@....",
+                "kesan": "Kakaknya asik, ramah dan murah senyum banget.",  
+                "pesan":"Nggak capek ramah terus kak?"# 1
+            },
+            {
+                "nama": "Muhammad Rafka Fatih Al Ghathfaan",
+                "nim": "124450089",
+                "umur": "20",
+                "asal":"Padang",
+                "alamat": "Kota Baru",
+                "hobbi": "Bangun Pagi",
+                "sosmed": "@muhammdrafka_",
+                "kesan": "Abangnya pendiem dan pemalu ya.",  
+                "pesan":"Semangat berolahraga bang. Salam olahraga!"# 1
+            }
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    minbak()
+
+    
