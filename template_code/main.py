@@ -45,7 +45,7 @@ Mahasiswa7 = st.Page(
 )
 Mahasiswa8 = st.Page(
     "Buku Kating/018_Achmad Fardhan Al Basri Bandarudin.py",
-    title="018 - chmad Fardhan Al Basri Bandarudin",
+    title="018 - Achmad Fardhan Al Basri Bandarudin",
     icon=":material/person:",
 )
 Mahasiswa9 = st.Page(
@@ -55,7 +55,7 @@ Mahasiswa9 = st.Page(
 )
 Mahasiswa10 = st.Page(
     "Buku Kating/074_Alfajri Anwar.py",
-    title="074 - Nobel Nizam Fathirizki",
+    title="074 - Alfajri Anwar",
     icon=":material/person:",
 )
 Mahasiswa11 = st.Page(
@@ -73,7 +73,7 @@ if st.session_state.pindah:
     pg = st.navigation(
         {
             "Halaman Utama": [Homepage],
-            "Buku Kating": [Mahasiswa1],
+            "Buku Kating": [Mahasiswa1,Mahasiswa2,Mahasiswa3,Mahasiswa4,Mahasiswa5,Mahasiswa6,Mahasiswa7,Mahasiswa8,Mahasiswa9,Mahasiswa10,Mahasiswa11],
             "Try Me !!": [KREASI, KREASII],
         }
     )
