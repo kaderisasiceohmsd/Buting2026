@@ -368,8 +368,8 @@ if menu == "Badan Kesenatoran":
                 "alamat": "Airan",
                 "hobbi": "Nulis Medium",
                 "sosmed": "@fathinahnaazh",
-                "kesan": ".",  
-                "pesan": "."# 1
+                "kesan": "Kakaknya keren banget jujur, hebat banget bisa jadi senator terus kakaknya cantik banget",  
+                "pesan": "Semangat kakak cantikk kuliahnyaa, semangat juga menyampaikan aspirasi kami kakak dan terimakasih"# 1
             },
             {
                 "nama": "Helmy Surya Pratama",
@@ -379,8 +379,8 @@ if menu == "Badan Kesenatoran":
                 "alamat": "Kedamaian",
                 "hobbi": "Ngesen kiri",
                 "sosmed": "@helmy_ist",
-                "kesan": ".",  
-                "pesan": "."# 1
+                "kesan": "Abang ini lucu bangett pas wawancaraa #dutamelet, baik banget jujur, asik banget juga",  
+                "pesan": "Semangat abang baik kuliahnyaa, kamu keren bangg"# 1
             },
 	 {
                 "nama": "Fernando Dimetrius Barus",
@@ -390,8 +390,8 @@ if menu == "Badan Kesenatoran":
                 "alamat": "Sebelah kamar biwa",
                 "hobbi": "Badminton",
                 "sosmed": "@barus.fernando",
-                "kesan": ".",  
-                "pesan": "."# 1
+                "kesan": "Bang nando baik orangnya, seru jugaa, keren juga, masyallah sekali",  
+                "pesan": "Semangatt abang kuliahnyaaa"# 1
             },
 	 {
                 "nama": "Suci Aulia",
@@ -401,8 +401,8 @@ if menu == "Badan Kesenatoran":
                 "alamat": "Kota Baru",
                 "hobbi": "Bikin video random dan upload di second",
                 "sosmed": "@sciia_staff",
-                "kesan": ".",  
-                "pesan": "."# 1
+                "kesan": "Kakaknya cantik bangett, pertama kali ketemu kakaknya aku kaget karena cantik nya cantik banget",  
+                "pesan": "Semangat kak sucii kuliah dan mendampingi cosvalnyaa, jangan lupa senyum kakak cantik"# 1
             },
 	 {
                 "nama": "Wielman Itolo Halawa",
@@ -412,8 +412,8 @@ if menu == "Badan Kesenatoran":
                 "alamat": "Asrama TB3",
                 "hobbi": "Mancing",
                 "sosmed": "@wielhawny",
-                "kesan": ".",  
-                "pesan": "."# 1
+                "kesan": "Abangnya asik bangettt seruuuuuu, baik banget banget jugaa, seru ngobrol sama abangnya",  
+                "pesan": "Semangat bang wielman kuliahnyaa, semangat juga agenda mancingnyaa"# 1
             },
 	 {
                 "nama": "Lia Hana Ichisasmita",
@@ -423,8 +423,8 @@ if menu == "Badan Kesenatoran":
                 "alamat": "Belwis",
                 "hobbi": "Nyari jurnal",
                 "sosmed": "@lia.h_264",
-                "kesan": ".",  
-                "pesan": "."# 1
+                "kesan": "Kak lia itu keren bangett pas nyampaikan materi, keren banget, aku kagumm",  
+                "pesan": "Semangat kak lia kuliahnyaa, semangat juga ngerjain TA nyaa semoga cepat selesai"# 1
             },
 	 {
                 "nama": "Aqila Zayyan Salsabil",
@@ -434,8 +434,8 @@ if menu == "Badan Kesenatoran":
                 "alamat": "Sukarame",
                 "hobbi": "Mendokumentasikan bayyesian",
                 "sosmed": "@aqilazayyaan",
-                "kesan": ".",  
-                "pesan": "."# 1
+                "kesan": "Kak qila itu cantik banget gemasss, lucu juga kakaknyaa",  
+                "pesan": "Semangat kuliahnyaa kakakn cantik secantik bunga matahari"# 1
             },
 	 {
                 "nama": "Hazel Mahesa Handhaka",
@@ -445,8 +445,8 @@ if menu == "Badan Kesenatoran":
                 "alamat": "Ujung Terang",
                 "hobbi": "Bulu Tangkis",
                 "sosmed": "@hazelhandhaka",
-                "kesan": ".",  
-                "pesan": "."# 1
+                "kesan": "Bang hazel keren bangett, baik jugaa, ngefans aku bang",  
+                "pesan": "Semangat abangg kuliahnyaa, semangat basonnyaa, semangatt"# 1
             },
             {
                 "nama": "Nadya Ratu Anjani",
@@ -456,8 +456,8 @@ if menu == "Badan Kesenatoran":
                 "alamat": "Sukarame",
                 "hobbi": "Denger Lagu",
                 "sosmed": "@nadyaanjaani",
-                "kesan": ".",  
-                "pesan": "."# 1
+                "kesan": "Kak nadya cantik banget, keren bangett pas materii",  
+                "pesan": "Kakak semangat yaaa kuliahnyaa kamu keren bangett"# 1
             },
             {
                 "nama": "Dwi Rahma Fitriani",
@@ -467,9 +467,194 @@ if menu == "Badan Kesenatoran":
                 "alamat": "Jl. Lapas Belwis",
                 "hobbi": "Dengerin musik",
                 "sosmed": "@dwi_rahmftrnii",
-                "kesan": ".",  
-                "pesan": "."# 1
+                "kesan": "Ibu mentor yang cantik, baik, imup nan lucu sekaliii",  
+                "pesan": "Semangat kak dwiiii kuliahnyaaa, greedy cinta kamu kakakk"# 1
             },
         ]
         display_images_with_data(gambar_urls, data_list)
     bason()
+
+if menu == "Departemen Minbak":
+    def minbak():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=.",
+            "https://drive.google.com/uc?export=view&id=.",
+            "https://drive.google.com/uc?export=view&id=.",
+            "https://drive.google.com/uc?export=view&id=.",
+            "https://drive.google.com/uc?export=view&id=.",
+            "https://drive.google.com/uc?export=view&id=.",
+            "https://drive.google.com/uc?export=view&id=.",
+            "https://drive.google.com/uc?export=view&id=.",
+            "https://drive.google.com/uc?export=view&id=.",
+            "https://drive.google.com/uc?export=view&id=.",
+        ]
+		data_list = [
+		    {
+		        "nama": "Kevin Antonio Junior",
+		        "nim": "123450109",
+		        "umur": "23",
+		        "asal": "Sulawesi Tengah",
+		        "alamat": "Panjang",
+		        "hobbi": "Mancing",
+		        "sosmed": "@kevinaja__",
+		        "kesan": "Bang Kevin keren abangnyaa, semangat terus bangg",
+				"pesan": "Semangat terus bang Kevin, semoga kuliahnya lancar dan sukses selalu bangg!!"
+		    },
+		    {
+		        "nama": "Gusti Putu Ferazka Dhiyamika",
+		        "nim": "123450046",
+		        "umur": "21",
+		        "asal": "Bekasi",
+		        "alamat": "Way Dadi",
+		        "hobbi": ".",
+		        "sosmed": "@ferazkaa",
+				"kesan": "Bang Gusti keren bangett, baik bangett, asik orangnyaa",
+				"pesan": "Semangat terus bang Gusti, semangat kuliahnyaa abangg"
+		    },
+		    {
+		        "nama": "Ali Aristo Muthahhari Parisi",
+		        "nim": "123450088",
+		        "umur": "21",
+		        "asal": "Lampung Timur",
+		        "alamat": "Gang Sakum Belwis",
+		        "hobbi": "Nonton F1",
+		        "sosmed": "@ali_parisi3",
+				"kesan": "Bang Ali keren bangett, apalagi hobinya nonton F1 wkwk",
+				"pesan": "Semangat terus bang Ali ngejalanin tupoksinya, semoga kuliahnya lancar jugaa bangg"
+
+		    },
+		    {
+		        "nama": "Ayu Andriani Parlina Wati",
+		        "nim": "124450058",
+		        "umur": "20",
+		        "asal": "Lampung Barat",
+		        "alamat": "Airan",
+		        "hobbi": "Belajar + menghitung uang",
+		        "sosmed": "@aayuandriani_",
+		        "kesan": "Kakaknyaa cantik bangett, sangat ramah dan asik orangnyaa",
+		        "pesan": "Semangat terus kak ayuu, semoga kuliah dan semua kegiatannya lancar kak"
+		    },
+		    {
+		        "nama": "Dafa Elpriza",
+		        "nim": "124450131",
+		        "umur": "21",
+		        "asal": "Bekasi",
+		        "alamat": "Way Kandis",
+		        "hobbi": "Jogging",
+		        "sosmed": "@dafaelpriza_",
+		        "kesan": "Abangnya baik banget, keren jugaa, asik orangnyaa",
+		        "pesan": "Semangat abanggg kuliah dan latihannyaa"
+		    },
+		    {
+		        "nama": "Juwita Sari",
+		        "nim": "124450066",
+		        "umur": "19",
+		        "asal": "Lampung Barat",
+		        "alamat": "Pemda",
+		        "hobbi": "Mancing",
+		        "sosmed": "@ju.juwitaaa_",
+		        "kesan": "Kakaknya lucu bangett, asik juga diajak ngobrol",
+		        "pesan": "Semangat kakak cantik kuliah dan menjalankan tupoksinyaa"
+		    },
+		    {
+		        "nama": "Muhammad Afdal Luthfi",
+		        "nim": "124450047",
+		        "umur": "19",
+		        "asal": "Lampung Tengah",
+		        "alamat": "Jl. Pulau Damar",
+		        "hobbi": "Memantau dl tugas",
+		        "sosmed": "@afdall.03",
+		        "kesan": "Abangnya seruu, baik bangett jugaaa",
+		        "pesan": "Semangat bang afdal kuliahnyaa"
+		    },
+		    {
+		        "nama": "Salsabila Nazwa Putri",
+		        "nim": "124450002",
+		        "umur": "20",
+		        "asal": "Metro",
+		        "alamat": "Korpri",
+		        "hobbi": "Nongkrong di kopken",
+		        "sosmed": "@slbnzw_",
+		        "kesan": "Kakaknya cantik bangett, ceria bangett, keren bangett",
+		        "pesan": "Kakak semangat kuliahnya yaa kak"
+		    },
+		    {
+		        "nama": "Muhammad Ridwan",
+		        "nim": "123450091",
+		        "umur": "21",
+		        "asal": "Lampung Tengah",
+		        "alamat": "Belwis",
+		        "hobbi": "Badminton",
+		        "sosmed": "@mridwaan_22",
+		        "kesan": "Abangnya baik bangett, sabar bangett, asik seruu diajak ngobrol",
+		        "pesan": "Semangat terus abang menjalankan tupoksinya dan ngerjain TA nyaa"
+		    },
+		    {
+		        "nama": "Andra Ilham Bintang",
+		        "nim": "124450060",
+		        "umur": "18",
+		        "asal": "Sumatera Selatan",
+		        "alamat": "Kotabaru",
+		        "hobbi": "Main rubik",
+		        "sosmed": "@andra.lhm",
+		        "kesan": "Abangda mentor gridicuwikuki yang paling keren, paling baik. paling ganteng, paling pintar, paling masyallah tabarakallah alhamdulillah dapat mentor kek abangda",
+		        "pesan": "Semangat abang baik kuliah dan latihan basketnyaa. Semoga ditengah jalan nemu laporan KP, Jurnal 5 tahun terakhir, judul TA terus TA nya 1 bulan selesai"
+		    },
+		    {
+		        "nama": "Bryan Paskah Telaumbanua",
+		        "nim": "124450003",
+		        "umur": "20",
+		        "asal": "Nias",
+		        "alamat": "Belwis",
+		        "hobbi": "Live tiktok",
+		        "sosmed": "@bryantel_",
+		        "kesan": "Bang bryan baikk bangett, seruu, asik jugaa",
+		        "pesan": "Nanti aku join live tiktoknya bang"
+		    },
+		    {
+		        "nama": "Ghiyats Thabularasa Meardhy",
+		        "nim": "124450067",
+		        "umur": "17",
+		        "asal": "Surabaya",
+		        "alamat": "Kemiling",
+		        "hobbi": "Nanem Sawit",
+		        "sosmed": "@meardhy_ghiyats",
+		        "kesan": "Abangnya kerenn, baik banget dan asik jugaa pas wawancara",
+		        "pesan": "Infokan kebun sawit buat dipalingin bang"
+		    },
+		    {
+		        "nama": "Indah Julia Mawar Pratiwi",
+		        "nim": "124450055",
+		        "umur": "20",
+		        "asal": "Pringsewu",
+		        "alamat": "Airan",
+		        "hobbi": "Bengong",
+		        "sosmed": "@indahjuliaa",
+		        "kesan": "Kakaknya cantikk banget, kerenn terus seruu banget kakaknyaa",
+		        "pesan": "Semangat kakak cantik kuliahnyaa, semangat jugaaa menjalankan tupoksinyaa"
+		    },
+		    {
+		        "nama": "Jacinda Kesya Alvara",
+		        "nim": "124450023",
+		        "umur": "18",
+		        "asal": "Kalimantan Barat",
+		        "alamat": "Korpri",
+		        "hobbi": "Nyapu depan gacoan",
+		        "sosmed": "@cacalvra",
+		        "kesan": "Kakaknya ceria bangett, cantik bangett, keren bangett",
+		        "pesan": "Semangat terus yaa kakak cantik kuliahnyaa"
+		    },
+		    {
+		        "nama": "Muhammad Rafka",
+		        "nim": "124450089",
+		        "umur": "20",
+		        "asal": "Padang",
+		        "alamat": "Kotabaru",
+		        "hobbi": "Bangun pagi",
+		        "sosmed": "@muhammdrafka_",
+		        "kesan": "Abangnyaa baik bangett, keren banget jugaaa",
+		        "pesan": "Sukses terus abangg, semangat yaa abang kuliahnyaaa"
+		    }
+		]
+        display_images_with_data(gambar_urls, data_list)
+    minbak()
