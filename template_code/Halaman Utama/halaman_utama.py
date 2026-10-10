@@ -292,9 +292,9 @@ elif menu == "About Us":
         ]
         
         data_list = [
-            {"nama": "Yobel Imanuel Pasaribu", "sebagai": "Pak Lurah", "nim": "122450016", "fun_fact": "Suka makan pedas, tapi tidak suka efeknya", "motto_hidup": "New semester new me"},
-            {"nama": "Siti Rahma", "sebagai": "Bu Lurah", "nim": "122450002", "fun_fact": "Suka nyemilin es bata saat santai", "motto_hidup": "Konsisten adalah kunci sukses"},
-            {"nama": "Ahmad Fauzi", "sebagai": "Anggota", "nim": "122450083", "fun_fact": "Hafal seluruh lirik lagu daerah", "motto_hidup": "Tetap semangat pantang menyerah"},
+            {"nama": "Yobel Imanuel Pasaribu", "sebagai": "Pak Lurah", "nim": "125450116", "fun_fact": "Bawa bantal guling dari kecil sampe sekaran", "motto_hidup": "New semester new me"},
+            {"nama": "Rena Aprilia", "sebagai": "Bu Lurah", "nim": "125450109", "fun_fact": "Suka nyemilin es batu saat santai", "motto_hidup": "Konsisten adalah kunci sukses"},
+            {"nama": "Samuel Kristian", "sebagai": "Anggota", "nim": "125450084", "fun_fact": "Hafal seluruh lirik lagu daerah", "motto_hidup": "Tetap semangat pantang menyerah"},
             {"nama": "Dinda Permata", "sebagai": "Anggota", "nim": "122450045", "fun_fact": "Bisa tidur di segala jenis kendaraan", "motto_hidup": "Jalanin dulu aja dengan ikhlas"},
             {"nama": "Rizky Ramadhan", "sebagai": "Anggota", "nim": "122450100", "fun_fact": "Suka begadang demi nonton bola", "motto_hidup": "Usaha tidak mengkhianati hasil"},
             {"nama": "Nabila Zahra", "sebagai": "Anggota", "nim": "122450112", "fun_fact": "Pecinta kucing garis keras", "motto_hidup": "Jadilah versi terbaik dirimu"},
