@@ -138,12 +138,12 @@ menu = streamlit_menu()
 
 if menu == "Kesekjenan":
     gambar_urls = [
-        "https://drive.google.com/uc?export=view&id=1xqeKQ3AAq5nB5b1o_qA8iETjSM0pW6Yy",
-        "https://drive.google.com/uc?export=view&id=1xulHbLUSVeQUQ0v2VPziDbAZG-IX6e8s",
-         "https://drive.google.com/uc?export=view&id=1v1EwOXYZHrKfEZsUg0sfwA2U3oHbJZZG",
-                "https://drive.google.com/uc?export=view&id=1lhpHZXDOh1bGlPQltgov8wRWwMjQp8at",
-                "https://drive.google.com/uc?export=view&id=1E2XjjKenQj15IDy5M2agb_KT3bPdTbHb",
-                "https://drive.google.com/uc?export=view&id=1MRiAd3b4-SHNBRkS2LJIo0vwVfGG7u7U"
+        "https://drive.google.com/uc?export=view&id=12QdXjuDnQDgFjZ53SQuKa14r1KlfZdtC",
+        "https://drive.google.com/uc?export=view&id=1dCRWi5V03bDmaN8EXzTquEh56RbmzWH5",
+         "https://drive.google.com/uc?export=view&id=1Nl37phlxmCYNGC8fQiEWGBngxmdTYWrS",
+                "https://drive.google.com/uc?export=view&id=1-RHonktea6ug0hMHWJb075mq8lUfSxVo",
+                "https://drive.google.com/uc?export=view&id=1tPhSsXlKDmI0HV1lXhVVXZ3pj-SlX6-1",
+                "https://drive.google.com/uc?export=view&id=1J_tlUQwAwRqlkmQ1ctjO6VxpS9syNjG6"
     ]
     data_list = [
         {"nama": "Ginda Fajar Riadi Marpaung", "nim": "123450103", "umur": "22", "asal": "Batam", "alamat": "Kesekretariat HMSD", "hobbi": "Push IMO", "sosmed": "@jars_mrp", "kesan": "Abangnya seruu, dlu pernah jadi kadiv op pas natal SD25 bisa diajak serius dan bercanda.", "pesan": "Semangat dan suksek selalu bangg!!"},
