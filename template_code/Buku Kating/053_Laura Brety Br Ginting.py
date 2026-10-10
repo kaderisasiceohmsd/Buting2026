@@ -171,7 +171,7 @@ if menu == "Kesekjenan":
                 "hobbi": "Bertemu Haffsa",
                 "sosmed": "@luthfiaarmdhni",
                 "kesan": "Kakaknya seru dan imut banget.",  
-                "pesan":"Semangat terus kuliahnya kak, tetap jadi orang yang lucu dan imut."# 1
+                "pesan":"Semangat terus kuliahnya kak, tetap jadi orang yang lucu dan imut"# 1
             },
         ]
         display_images_with_data(gambar_urls, data_list)
