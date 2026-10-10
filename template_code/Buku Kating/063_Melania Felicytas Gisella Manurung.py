@@ -307,169 +307,148 @@ if menu == "Senator":
         display_images_with_data(gambar_urls, data_list)
     Senator()
 
-# Badan Legislatif 
-if menu == "Baleg":
-    def Baleg():
+#Departemen SSD
+if menu == "Departemen SSD":
+    def Departemen_SSD():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1IbebTFBPkSyxMkr0d6EINJ9t2NdXM6uF",
-            "https://drive.google.com/uc?export=view&id=1hepjAmdngtGvSGRCAAcNz5j-IDqnoBMu",
-            "https://drive.google.com/uc?export=view&id=1le945I1B9Qouk17zUfTODlP2KVdtV712",
-            "https://drive.google.com/uc?export=view&id=1aCKDCE_C7SEMkQsSU8IvjOO1GkH5kxzy",
-            "https://drive.google.com/uc?export=view&id=1HWHoBhnZ90GOi6Lk6r59ghw7p_p_dr7H",
-            "https://drive.google.com/uc?export=view&id=16bYXiDkPtv1aShmC0s99thr5bvqczzBS",
-            "https://drive.google.com/uc?export=view&id=1Uotc_UxnxxXuOvBpp-NAb9weGeVYd9q1",
-            "https://drive.google.com/uc?export=view&id=1ic2OtJqDQQQB3SLNjyF0etuMpDxMmcEs",
-            "https://drive.google.com/uc?export=view&id=1q8fjdTM0YqdWGNV6-2V7nyYXQwUU2HvP",
-            "https://drive.google.com/uc?export=view&id=1f6xt4TZHsB0JexNrHygefn_h_dlnMFQu",
-            "https://drive.google.com/uc?export=view&id=1x_SlpEMcE3OWaxqSJRzik1PMD9CpyN7t",
-            "https://drive.google.com/uc?export=view&id=1J-BQ3Ty7KGbhzsXX1P_D7_LnRxhc5BB2",
-            "https://drive.google.com/uc?export=view&id=1nVbN2s7WWqzcpmKeDKPnfeDcl2_pgiHl",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", 
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", 
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", 
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", 
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
         ]
         data_list = [
-    {
-        "nama": "Ridho Benedictus Togi Manik",
-        "nim": "123450066",
-        "umur": "20",
-        "asal": "Kuala Lumpur",
-        "alamat": "GH",
-        "hobbi": "Wawancara",
-        "sosmed": "@iamridhomanik",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
-    },
-    {
-        "nama": "Juesi Apridelia Saragih",
-        "nim": "123450085",
-        "umur": "19",
-        "asal": "Pelangi",
-        "alamat": "Singkawang",
-        "hobbi": "Dengerin lagu zona merah dari Kunto Aji",
-        "sosmed": "@j__eesie",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
-    },
-    {
-        "nama": "Dharu Cahyoaji Sasongko",
-        "nim": "123450023",
-        "umur": "19",
-        "asal": "Lampung",
-        "alamat": "Bandar Lampung",
-        "hobbi": "Makan mie gomak",
-        "sosmed": "@exvoltas & @ddharu",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
-    },
-    {
-        "nama": "GH Mikael Niko A S",
-        "nim": "124450079",
-        "umur": "20",
-        "asal": "Pasir Sakti",
-        "alamat": "Jati Agung",
-        "hobbi": "Tidur",
-        "sosmed": "@me._kael",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
-    },
-    {
-        "nama": "Siti Sarifah Sumamah",
-        "nim": "124450015",
-        "umur": "19",
-        "asal": "Bekasi",
-        "alamat": "Kedaton",
-        "hobbi": "Mancing",
-        "sosmed": "@syt.rifa",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
-    },
-    {
-        "nama": "Givaro Ananta",
-        "nim": "123450078",
-        "umur": "21",
-        "asal": "Lampung Barat",
-        "alamat": "Sukabumi",
-        "hobbi": "Minum Kopi",
-        "sosmed": "@givarooo",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
-    },
-    {
-        "nama": "Afghanis Nursholehatunisa",
-        "nim": "124450042",
-        "umur": "20",
-        "asal": "Kepulauan Mentawai",
-        "alamat": "Kadang di kost putri kadang di kost sekar",
-        "hobbi": "Memanjat",
-        "sosmed": "@afghanisnt_",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
-    },
-    {
-        "nama": "Hani Qurrota Aini",
-        "nim": "124450020",
-        "umur": "20",
-        "asal": "City earth",
-        "alamat": "Sukarame",
-        "hobbi": "Baca AU",
-        "sosmed": "@haniqurratuain_",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
-    },
-    {
-        "nama": "Jeremia Halim",
-        "nim": "124450101",
-        "umur": "20",
-        "asal": "Tangerang",
-        "alamat": "Teluk Betung",
-        "hobbi": "Nyanyi, olahraga",
-        "sosmed": "jeremia_hm",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
-    },
-    {
-        "nama": "Monica Patricia Tanjung",
-        "nim": "123450073",
-        "umur": "21",
-        "asal": "Jakarta Barat",
-        "alamat": "Kotabaru",
-        "hobbi": "Lari",
-        "sosmed": "@monica_tjg",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
-    },
-    {
-        "nama": "Jona Timothy Ogatse Panjaitan",
-        "nim": "124450121",
-        "umur": "20",
-        "asal": "Depok",
-        "alamat": "Pemda Raya",
-        "hobbi": "Nge-gym, koleksi figur",
-        "sosmed": "@nagatseee",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
-    },
-    {
-        "nama": "Sekar Dini Widya Putri",
-        "nim": "124450082",
-        "umur": "20",
-        "asal": "Metro",
-        "alamat": "Pemda",
-        "hobbi": "Melukis",
-        "sosmed": "@sekardnwp",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
-    },
-    {
-        "nama": "Wan Nashwa Alhasni Yuska",
-        "nim": "123450077",
-        "umur": "20",
-        "asal": "Pasay",
-        "alamat": "Belwis",
-        "hobbi": "Nyapa angin",
-        "sosmed": "@nshaysk",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
-    }
+            {
+                "nama": "Ihsan Maulana Yusuf ",
+                "nim": "123450110",
+                "umur": "21",
+                "asal":"Sumatera Barat ",
+                "alamat": "Belwis ",
+                "hobbi": "Jualan",
+                "sosmed": "@ihsan.myusuf",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Hanifah Inaya Sani",
+                "nim": "123450123",
+                "umur": "20",
+                "asal":"Bandar Lampung ",
+                "alamat": "Bandar Lampung ",
+                "hobbi": "Masak",
+                "sosmed": "@_inayasani",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Afifah Fauziah ",
+                "nim": "123450002",
+                "umur": "20",
+                "asal":"Bandung ",
+                "alamat": "Airan",
+                "hobbi": "Nonton marvel",
+                "sosmed": "@fifah.zy",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Hasan Nur Ramadhan",
+                "nim": "124450013",
+                "umur": "25",
+                "asal":"Lampung Tengah ",
+                "alamat": "Sebelah kostan Ayake",
+                "hobbi": "Nonton YouTube ",
+                "sosmed": "@hasan.ramdhan08",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Talitha Justine",
+                "nim": "124450076",
+                "umur": "19",
+                "asal":"Jakarta",
+                "alamat": "Pemda",
+                "hobbi": "Nonton",
+                "sosmed": "-",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Layina Ropiqo",
+                "nim": "124450016",
+                "umur": "19",
+                "asal":"Bandar Lampung ",
+                "alamat": "Bandar Lampung ",
+                "hobbi": "Nonton dracin ",
+                "sosmed": "@lay.inr_",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Mochammad Iqbal Az-zahir",
+                "nim": "124450052",
+                "umur": "20",
+                "asal":"Bekasi",
+                "alamat": "Natar",
+                "hobbi": "Nonton drakor ",
+                "sosmed": "@iqbalazzahir_",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Abdilah Fikri Alpome",
+                "nim": "123450062",
+                "umur": "21",
+                "asal":"Baturaja Sumatera Selatan ",
+                "alamat": "Airan ",
+                "hobbi": "Basket ",
+                "sosmed": "@pomest__",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Afdhal Rahmad Setiawan",
+                "nim": "124450008",
+                "umur": "20",
+                "asal":"Sumatera Barat ",
+                "alamat": "Belwis",
+                "hobbi": "Fishing",
+                "sosmed": "@dhalsetiawan",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Anggun Nita",
+                "nim": "124450009",
+                "umur": "20",
+                "asal":"Lampung Utara ",
+                "alamat": "Belwis ",
+                "hobbi": "Nonton kartun ",
+                "sosmed": "@anggunnitaaa_",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Della Anisa Fitri",
+                "nim": "124450095",
+                "umur": "18",
+                "asal":"Lampung Timur ",
+                "alamat": "Margo Lestari  ",
+                "hobbi": "Lagi gak punya hobi ",
+                "sosmed": "@dellaansaftr",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
         ]
         display_images_with_data(gambar_urls, data_list)
-    baleg()
+    Departemen_SSD()
+
 # Tambahkan menu lainnya sesuai kebutuhan
