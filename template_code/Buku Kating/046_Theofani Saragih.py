@@ -634,7 +634,7 @@ if menu == "Departemen SSD":
 
 
 # Minat dan Bakat
-if menu == "Departemen Minbak":
+elif menu == "Departemen Minbak":
     def Departemen_Minbak():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1NyJ_4DBVum_5PPU2FMtrgDXzxO4rQd5p",
@@ -653,7 +653,7 @@ if menu == "Departemen Minbak":
             "https://drive.google.com/uc?export=view&id=1FuviEQ5SjKb80RMB7xIgkYzDiosMbIcC",
             "https://drive.google.com/uc?export=view&id=1ciCEmKohqRvB1XROIJB5qH8IaotU7acL"
         ]
-		data_list = [
+        data_list = [
 		    {
 		        "nama": "Kevin Antonio Junior",
 		        "nim": "123450109",
@@ -662,8 +662,8 @@ if menu == "Departemen Minbak":
 		        "alamat": "Panjang",
 		        "hobbi": "Mancing",
 		        "sosmed": "@kevinaja__",
-		        "kesan": "Bang Kevin keren abangnyaa, semangat terus bangg",
-				"pesan": "Semangat terus bang Kevin, semoga kuliahnya lancar dan sukses selalu bangg!!"
+		        "kesan": "Sangat menginspirasi dan memimpin dengan baik",
+		        "pesan": "Semangat terus kak!"
 		    },
 		    {
 		        "nama": "Gusti Putu Ferazka Dhiyamika",
@@ -671,10 +671,10 @@ if menu == "Departemen Minbak":
 		        "umur": "21",
 		        "asal": "Bekasi",
 		        "alamat": "Way Dadi",
-		        "hobbi": ".",
+		        "hobbi": "Mendaki",
 		        "sosmed": "@ferazkaa",
-				"kesan": "Bang Gusti keren bangett, baik bangett, asik orangnyaa",
-				"pesan": "Semangat terus bang Gusti, semangat kuliahnyaa abangg"
+		        "kesan": "Sangat rapi dan cekatan dalam mengelola administrasi",
+		        "pesan": "Sukses selalu kak!"
 		    },
 		    {
 		        "nama": "Ali Aristo Muthahhari Parisi",
@@ -684,9 +684,8 @@ if menu == "Departemen Minbak":
 		        "alamat": "Gang Sakum Belwis",
 		        "hobbi": "Nonton F1",
 		        "sosmed": "@ali_parisi3",
-				"kesan": "Bang Ali keren bangett, apalagi hobinya nonton F1 wkwk",
-				"pesan": "Semangat terus bang Ali ngejalanin tupoksinya, semoga kuliahnya lancar jugaa bangg"
-
+		        "kesan": "Keren dan selalu memberikan arahan yang jelas",
+		        "pesan": "Semangat menjalankan tugasnya kak!"
 		    },
 		    {
 		        "nama": "Ayu Andriani Parlina Wati",
@@ -696,8 +695,8 @@ if menu == "Departemen Minbak":
 		        "alamat": "Airan",
 		        "hobbi": "Belajar + menghitung uang",
 		        "sosmed": "@aayuandriani_",
-		        "kesan": "Kakaknyaa cantik bangett, sangat ramah dan asik orangnyaa",
-		        "pesan": "Semangat terus kak ayuu, semoga kuliah dan semua kegiatannya lancar kak"
+		        "kesan": "Sangat ramah dan aktif berkontribusi",
+		        "pesan": "Tetap semangat dan sukses terus!"
 		    },
 		    {
 		        "nama": "Dafa Elpriza",
@@ -707,8 +706,8 @@ if menu == "Departemen Minbak":
 		        "alamat": "Way Kandis",
 		        "hobbi": "Jogging",
 		        "sosmed": "@dafaelpriza_",
-		        "kesan": "Abangnya baik banget, keren jugaa, asik orangnyaa",
-		        "pesan": "Semangat abanggg kuliah dan latihannyaa"
+		        "kesan": "Sangat menyenangkan dan mudah diajak kerja sama",
+		        "pesan": "Sukses terus perkuliahan dan aktivitasnya!"
 		    },
 		    {
 		        "nama": "Juwita Sari",
@@ -718,8 +717,8 @@ if menu == "Departemen Minbak":
 		        "alamat": "Pemda",
 		        "hobbi": "Mancing",
 		        "sosmed": "@ju.juwitaaa_",
-		        "kesan": "Kakaknya lucu bangett, asik juga diajak ngobrol",
-		        "pesan": "Semangat kakak cantik kuliah dan menjalankan tupoksinyaa"
+		        "kesan": "Sangat baik dan murah senyum",
+		        "pesan": "Semangat terus kuliahnya!"
 		    },
 		    {
 		        "nama": "Muhammad Afdal Luthfi",
@@ -729,8 +728,8 @@ if menu == "Departemen Minbak":
 		        "alamat": "Jl. Pulau Damar",
 		        "hobbi": "Memantau dl tugas",
 		        "sosmed": "@afdall.03",
-		        "kesan": "Abangnya seruu, baik bangett jugaaa",
-		        "pesan": "Semangat bang afdal kuliahnyaa"
+		        "kesan": "Sangat bertanggung jawab dan fokus",
+		        "pesan": "Semangat terus kakak!"
 		    },
 		    {
 		        "nama": "Salsabila Nazwa Putri",
@@ -740,8 +739,8 @@ if menu == "Departemen Minbak":
 		        "alamat": "Korpri",
 		        "hobbi": "Nongkrong di kopken",
 		        "sosmed": "@slbnzw_",
-		        "kesan": "Kakaknya cantik bangett, ceria bangett, keren bangett",
-		        "pesan": "Kakak semangat kuliahnya yaa kak"
+		        "kesan": "Sangat asik dan ceria",
+		        "pesan": "Tetap semangat kuliahnya ya kak!"
 		    },
 		    {
 		        "nama": "Muhammad Ridwan",
@@ -751,8 +750,8 @@ if menu == "Departemen Minbak":
 		        "alamat": "Belwis",
 		        "hobbi": "Badminton",
 		        "sosmed": "@mridwaan_22",
-		        "kesan": "Abangnya baik bangett, sabar bangett, asik seruu diajak ngobrol",
-		        "pesan": "Semangat terus abang menjalankan tupoksinya dan ngerjain TA nyaa"
+		        "kesan": "Sangat mengayomi dan membimbing dengan sabar",
+		        "pesan": "Semangat terus memimpin divisinya kak!"
 		    },
 		    {
 		        "nama": "Andra Ilham Bintang",
@@ -762,8 +761,8 @@ if menu == "Departemen Minbak":
 		        "alamat": "Kotabaru",
 		        "hobbi": "Main rubik",
 		        "sosmed": "@andra.lhm",
-		        "kesan": "Abangda mentor gridicuwikuki yang paling keren, paling baik. paling ganteng, paling pintar, paling masyallah tabarakallah alhamdulillah dapat mentor kek abangda",
-		        "pesan": "Semangat abang baik kuliah dan latihan basketnyaa. Semoga ditengah jalan nemu laporan KP, Jurnal 5 tahun terakhir, judul TA terus TA nya 1 bulan selesai"
+		        "kesan": "Sangat kreatif dan pintar",
+		        "pesan": "Sukses selalu kuliahnya!"
 		    },
 		    {
 		        "nama": "Bryan Paskah Telaumbanua",
@@ -773,8 +772,8 @@ if menu == "Departemen Minbak":
 		        "alamat": "Belwis",
 		        "hobbi": "Live tiktok",
 		        "sosmed": "@bryantel_",
-		        "kesan": "Bang bryan baikk bangett, seruu, asik jugaa",
-		        "pesan": "Nanti aku join live tiktoknya bang"
+		        "kesan": "Sangat menghibur dan ramah",
+		        "pesan": "Semangat terus berkarya kak!"
 		    },
 		    {
 		        "nama": "Ghiyats Thabularasa Meardhy",
@@ -784,8 +783,8 @@ if menu == "Departemen Minbak":
 		        "alamat": "Kemiling",
 		        "hobbi": "Nanem Sawit",
 		        "sosmed": "@meardhy_ghiyats",
-		        "kesan": "Abangnya kerenn, baik banget dan asik jugaa pas wawancara",
-		        "pesan": "Infokan kebun sawit buat dipalingin bang"
+		        "kesan": "Sangat unik dan bersemangat",
+		        "pesan": "Tetap semangat dan sukses selalu!"
 		    },
 		    {
 		        "nama": "Indah Julia Mawar Pratiwi",
@@ -795,8 +794,8 @@ if menu == "Departemen Minbak":
 		        "alamat": "Airan",
 		        "hobbi": "Bengong",
 		        "sosmed": "@indahjuliaa",
-		        "kesan": "Kakaknya cantikk banget, kerenn terus seruu banget kakaknyaa",
-		        "pesan": "Semangat kakak cantik kuliahnyaa, semangat jugaaa menjalankan tupoksinyaa"
+		        "kesan": "Sangat baik dan bersahabat",
+		        "pesan": "Sukses terus perkuliahannya kak!"
 		    },
 		    {
 		        "nama": "Jacinda Kesya Alvara",
@@ -806,8 +805,8 @@ if menu == "Departemen Minbak":
 		        "alamat": "Korpri",
 		        "hobbi": "Nyapu depan gacoan",
 		        "sosmed": "@cacalvra",
-		        "kesan": "Kakaknya ceria bangett, cantik bangett, keren bangett",
-		        "pesan": "Semangat terus yaa kakak cantik kuliahnyaa"
+		        "kesan": "Sangat ceria dan menyenangkan",
+		        "pesan": "Semangat terus ya kak!"
 		    },
 		    {
 		        "nama": "Muhammad Rafka",
@@ -817,8 +816,8 @@ if menu == "Departemen Minbak":
 		        "alamat": "Kotabaru",
 		        "hobbi": "Bangun pagi",
 		        "sosmed": "@muhammdrafka_",
-		        "kesan": "Abangnyaa baik bangett, keren banget jugaaa",
-		        "pesan": "Sukses terus abangg, semangat yaa abang kuliahnyaaa"
+		        "kesan": "Sangat disiplin dan dapat diandalkan",
+		        "pesan": "Sukses selalu buat perkuliahannya!"
 		    }
 		]
         display_images_with_data(gambar_urls, data_list)
