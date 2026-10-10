@@ -457,7 +457,7 @@ if menu == "Departemen Medkraf":
                 "asal":"Bekasi",
                 "alamat": "Gg.sakum",
                 "hobbi": "Mainn Bola, Belajar",
-                "sosmed": "@i",
+                "sosmed": "@",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
                 "pesan":"semangat terus kuliahnya kakak!!!"# 1
             },
