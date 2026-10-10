@@ -96,8 +96,8 @@ def display_images_with_data(gambar_urls, data_list):
 menu = streamlit_menu()
 
 # BAGIAN SINI YANG HANYA BOLEH DIUABAH
-if menu == "Storage Sains Data":
-    def ssd():
+if menu == "Departemen SSD":
+    def Departemen_SSD():
         gambar_urls = [
             "https://drive.google.com/file/d/1NyjZ5EWWar10sGRoPz4EohVmLjES0lei/view",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
