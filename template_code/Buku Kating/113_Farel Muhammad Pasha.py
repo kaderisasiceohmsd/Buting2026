@@ -147,6 +147,8 @@ if menu == "Baleg":
             "https://drive.google.com/uc?export=view&id=1IbebTFBPkSyxMkr0d6EINJ9t2NdXM6uF",
             "https://drive.google.com/uc?export=view&id=1hepjAmdngtGvSGRCAAcNz5j-IDqnoBMu",
             "https://drive.google.com/uc?export=view&id=1le945I1B9Qouk17zUfTODlP2KVdtV712",
+            "https://drive.google.com/uc?export=view&id=1aCKDCE_C7SEMkQsSU8IvjOO1GkH5kxzy",
+            "https://drive.google.com/uc?export=view&id=1HWHoBhnZ90GOi6Lk6r59ghw7p_p_dr7H",
         ]
         data_list = [
     {
