@@ -177,7 +177,7 @@ if menu == "Kesekjenan":
         display_images_with_data(gambar_urls, data_list)
     kesekjenan()
 
-elif menu == "Badan Legislatif":
+if menu == "Badan Legislatif":
     def Baleg():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1S9a3wfmCNtl92iDQJkLRL91Pg7jakU5v",
@@ -342,7 +342,7 @@ elif menu == "Badan Legislatif":
         display_images_with_data(gambar_urls, data_list)
     Baleg()
 
-elif menu == "Badan Kesenatoran":
+if menu == "Badan Kesenatoran":
     def Bason():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1kfsDzh0GuhsMEzhDdFSLlMpaDbTFM9j7",
@@ -471,7 +471,7 @@ elif menu == "Badan Kesenatoran":
         display_images_with_data(gambar_urls, data_list)
     Bason()
 
-elif menu == "Departemen Minbak":
+if menu == "Departemen Minbak":
     def Departemen_Minbak():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1bw-tWsxCkMWthCOEQ4GZSGhGHF6i-lk",
@@ -660,7 +660,7 @@ elif menu == "Departemen Minbak":
         display_images_with_data(gambar_urls, data_list)
     Departemen_Minbak()
 
-elif menu == "Departemen SSD":
+if menu == "Departemen SSD":
     def Departemen_SSD():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1czsr9Dj-azxzauGlnfYLXwJvqAto2f8G",
