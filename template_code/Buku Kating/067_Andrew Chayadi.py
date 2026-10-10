@@ -21,6 +21,7 @@ def streamlit_menu():
             "Departemen Internal",
             "Departemen SSD",
             "Departemen Medkraf",
+			"Departemen Minbak",
         ],
         icons=[
             "people-fill",
@@ -472,7 +473,7 @@ if menu == "Senator":
     Senator()
 	
 if menu == "Departemen Minbak":
-    def minbak():
+    def Departemen_Minbak():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=.",
             "https://drive.google.com/uc?export=view&id=.",
@@ -654,5 +655,5 @@ if menu == "Departemen Minbak":
 		    }
 		]
         display_images_with_data(gambar_urls, data_list)
-    minbak()
+    Departemen_Minbak()
 # Tambahkan menu lainnya sesuai kebutuhan
