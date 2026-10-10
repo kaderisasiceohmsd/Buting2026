@@ -101,79 +101,79 @@ menu = streamlit_menu()
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1xGPANYdh1va2y4_fUP0WdBnA1xDfB2Xb",
-            "https://drive.google.com/uc?export=view&id=1CZuWR8cgBUVwATr1WrMIpsUfXDrh3N4b",
-            "https://drive.google.com/uc?export=view&id=1rGKMfosDCQltl41Sz2ehjEUQV3LAaw8K",
-            "https://drive.google.com/uc?export=view&id=1A9_GD_ng31Z0eTg1uvrwEUQFq-K-b4dL",
-            "https://drive.google.com/uc?export=view&id=1fTovPjdfQCSGBXSg_viryFMm8yWEVGvc",
-            "https://drive.google.com/uc?export=view&id=1bDcokqXsfus5IqecUG12RU9PS4ISZn4F",
+            "https://drive.google.com/uc?export=view&id=1rNX8JWhepOwpQ3Kv3_M0IUS4YnkM09Rd", #fajar
+            "https://drive.google.com/uc?export=view&id=1AH9lznjyK0Nu28zxDlhnnPOvC_EBKHXS", #aqil
+            "https://drive.google.com/uc?export=view&id=1grdCErrJIeSHUbT8EuQtHoSU5KskhWTC", #efi
+            "https://drive.google.com/uc?export=view&id=1yB9zDdneKVq6in5YWmgU-qUEZj_K-2EL", #qois
+            "https://drive.google.com/uc?export=view&id=1W-ZACfd_5fCOvJ5cM1JZKty9SBoT9tAf", #hafsa
+            "https://drive.google.com/uc?export=view&id=1CCaZprQaFDkd236ce27rQVkGtleDlvLU", #luthfia
         ]
         data_list = [
             {
-                "nama": "Ginda Fajar Riadi Marpaung",
-                "nim": "123450103",
-                "umur": "22",
-                "asal":"Batam",
-                "alamat": "Kesektariatan HMSD",
-                "hobbi": "Push IMO",
-                "sosmed": "@jars_mrp",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
+                "Nama": "Ginda Fajar Riadi Marpaung",
+                "Nim": "123450103",
+                "Umur": "22 tahun",
+                "Asal":"Batam",
+                "Alamat": "Kesektariatan HMSD",
+                "Hobbi": "Push IMO",
+                "Sosmed": "@jars_mrp",
+                "Kesan": "Bang Fajar orangnya baik, humble, ramah, keren.",  
+                "Pesan":"Semoga selalu amanah dan semangat terus!"
             },
             {
-                "nama": "Muhammmad Aqil Ramadhan",
-                "nim": "1233450066",
-                "umur": "22",
-                "asal":"Bekasi",
-                "alamat": "Gg.sakum",
-                "hobbi": "Dzikie",
-                "sosmed": "@muhammadaqil1111",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "Nama": "Muhammmad Aqil Ramadhan",
+                "Nim": "1233450066",
+                "Umur": "22 tahun",
+                "Asal":"Bangkinang",
+                "Alamat": "Kesekretariatan HMSD",
+                "Hobbi": "Dzikir",
+                "Sosmed": "@muhammadaqil1111",
+                "Kesan": "Bang Aqil orangnya keren, ramah, baik, lucu, humble.",  
+                "Pesan":"semangat terus kuliahnya, semoga suksess!"
+            }, #kesan smpe sini
+            {
+                "Nama": "Efi Defiyati",
+                "Nim": "123450005",
+                "Umur": "21 tahun",
+                "Asal":"Lampung Timur",
+                "Alamat": "Airan",
+                "Hobbi": "Membaca",
+                "Sosmed": "@eeffiidefi",
+                "Kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "Pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
-                "nama": "Efi Defiyati",
-                "nim": "123450005",
-                "umur": "21",
-                "asal":"Lampung Timur",
-                "alamat": "Airan",
-                "hobbi": "Membaca",
-                "sosmed": "@eeffiidefi",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "Nama": "Qois Olifio",
+                "Nim": "123450067",
+                "Umur": "22 tahun",
+                "Asal":"Batam",
+                "Alamat": "Kota Baru",
+                "Hobbi": "Mainin Surat",
+                "Sosmed": "@qoisolifio",
+                "Kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "Pesan":"Semoga kedepannya fadyl"
             },
             {
-                "nama": "Qois Olifio",
-                "nim": "123450067",
-                "umur": "22",
-                "asal":"Batam",
-                "alamat": "Kota Baru",
-                "hobbi": "Mainin Surat",
-                "sosmed": "@qoisolifio",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya fadyl"
+                "Nama": "Hafsa Fazila Arradhi",
+                "Nim": "123450079",
+                "Umur": "21 tahun",
+                "Asal":"Bandar Lampung",
+                "Alamat": "Bandar Lampung",
+                "Hobbi": "Berkuda",
+                "Sosmed": "@Hafsafazilaa",
+                "Kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "Pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
             },
             {
-                "nama": "Hafsa Fazila Arradhi",
-                "nim": "123450079",
-                "umur": "21",
-                "asal":"Bandar Lampung",
-                "alamat": "Bandar Lampung",
-                "hobbi": "Berkuda",
-                "sosmed": "@Hafsafazilaa",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
-            },
-            {
-                "nama": "Luthfia Laila RAmadhani",
-                "nim": "123450004",
-                "umur": "21",
-                "asal":"Bengkulu",
-                "alamat": "Airan",
-                "hobbi": "Bermain ke kost Efi",
-                "sosmed": "@luthfiaarmdhni",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
+                "Nama": "Luthfia Laila RAmadhani",
+                "Nim": "123450004",
+                "Umur": "21 tahun",
+                "Asal":"Bengkulu",
+                "Alamat": "Airan",
+                "Hobbi": "Bermain ke kost Efi",
+                "Sosmed": "@luthfiaarmdhni",
+                "Kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "Pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
             },
         ]
         display_images_with_data(gambar_urls, data_list)
@@ -182,164 +182,164 @@ if menu == "Kesekjenan":
 elif menu == "Baleg":
     def baleg():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1K-isIFgn6HvwJtwTmbI-3RtqdS7aGK_S", #ridho
+            "https://drive.google.com/uc?export=view&id=1gJ0bWveF75juLLKSv7Wz5M6f1b7cOOPE", #juesi
+            "https://drive.google.com/uc?export=view&id=13hOQxPJhR0LP-4NLHZ6Tq22IknUroKev", #dharu
+            "https://drive.google.com/uc?export=view&id=1uf7X3C-e-6q6hC9NdYcz4resSg3vrZJM", #niko
+            "https://drive.google.com/uc?export=view&id=1unhvBuU4oIhHEICwm203iQ2fNZ1zowh3", #siti
+            "https://drive.google.com/uc?export=view&id=1hymilXDXDFtHVvoI3wpLYa3zVPS7VfIh", #givaro
+            "https://drive.google.com/uc?export=view&id=1dWCfMFeECsVXDOAourJtOaxN5DKo8IOQ", #afghanis
+            "https://drive.google.com/uc?export=view&id=1SrbqqKK0GbkBQ0kAAPOI_UlmZBMTme_O", #hani
+            "https://drive.google.com/uc?export=view&id=14Zi5341mjd7Gyz0dGX0s0LrannlgKtlt", #jeremia
+            "https://drive.google.com/uc?export=view&id=1VpR1pzSnRTt9hqlhNRDTDTB07Yd0j1tq", #monica
+            "https://drive.google.com/uc?export=view&id=1L-Tf8joRiSpRjavQltAT8aux1v4-azmH", #jona
+            "https://drive.google.com/uc?export=view&id=1fFx49X97EvHMW3J8MXPbXeVn_OKNDok6", #sekar
+            "https://drive.google.com/uc?export=view&id=18CuJjVPSbFHD0ujBimjECwLt5wAHXd3b", #wan
 
         ]
         data_list = [
             {
-                "nama": "Ridho Benedictus Togi Manik",
-                "nim": "123450060",
-                "umur": "20",
-                "asal": "Kuala lumpur",
-                "alamat": "GH",
-                "hobbi": "Bernyanyi",
-                "sosmed": "@iamridhomanik",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
+                "Nama": "Ridho Benedictus Togi Manik",
+                "Nim": "123450060",
+                "Umur": "20 tahun",
+                "Asal": "Kuala lumpur",
+                "Alamat": "GH",
+                "Hobbi": "Bernyanyi",
+                "Sosmed": "@iamridhomanik",
+                "Kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "Pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
             },
             {
-                "nama": "Juesi Apridelia Saragih",
-                "nim": "123450085",
-                "umur": "19",
-                "asal": "Singkawang",
-                "alamat": "Pelangi",
-                "hobbi": "ngerepeat lagu lover dari taylor swiff",
-                "sosmed": "@j__eesie",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "Nama": "Juesi Apridelia Saragih",
+                "Nim": "123450085",
+                "Umur": "19 tahun",
+                "Asal": "Singkawang",
+                "Alamat": "Pelangi",
+                "Hobbi": "ngerepeat lagu lover dari taylor swiff",
+                "Sosmed": "@j__eesie",
+                "Kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "Pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
-                "nama": "Dharu Cahyoaji Sasongko",
-                "nim": "123450023",
-                "umur": "19",
-                "asal":"Lampung",
-                "alamat": "Bandar Lampung",
-                "hobbi": "Suka nonton AGZ",
-                "sosmed": "@ddharu_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "Nama": "Dharu Cahyoaji Sasongko",
+                "Nim": "123450023",
+                "Umur": "19 tahun",
+                "Asal":"Lampung",
+                "Alamat": "Bandar Lampung",
+                "Hobbi": "Suka nonton AGZ",
+                "Sosmed": "@ddharu_",
+                "Kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "Pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
-                "nama": "GH. Mikael Niko Antoni Setiadi",
-                "nim": "123450025",
-                "umur": "20",
-                "asal":"Jombang",
-                "alamat": "Jatiagung",
-                "hobbi": "Jalan-jalan nyari mangsa",
-                "sosmed": "@me._kael",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya fadyl"
+                "Nama": "GH. Mikael Niko Antoni Setiadi",
+                "Nim": "123450025",
+                "Umur": "20 tahun",
+                "Asal":"Jombang",
+                "Alamat": "Jatiagung",
+                "Hobbi": "Jalan-jalan nyari mangsa",
+                "Sosmed": "@me._kael",
+                "Kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "Pesan":"Semoga kedepannya fadyl"
             },
             {
-                "nama": "Siti Sarifah Sumamahsa",
-                "nim": "124450015",
-                "umur": "18",
-                "asal":"Palembang",
-                "alamat": "Kedaton",
-                "hobbi": "Bikin Pempek",
-                "sosmed": "@syt.sarifa",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
+                "Nama": "Siti Sarifah Sumamahsa",
+                "Nim": "124450015",
+                "Umur": "18 tahun",
+                "Asal":"Palembang",
+                "Alamat": "Kedaton",
+                "Hobbi": "Bikin Pempek",
+                "Sosmed": "@syt.sarifa",
+                "Kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "Pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
             },
             {
-                "nama": "Givaro Ananta",
-                "nim": "123450078",
-                "umur": "20",
-                "asal":"Gunung Pesagi",
-                "alamat": "Sukabumi",
-                "hobbi": "Minum Kopi",
-                "sosmed": "@givarooo",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
+                "Nama": "Givaro Ananta",
+                "Nim": "123450078",
+                "Umur": "20 tahun",
+                "Asal":"Gunung Pesagi",
+                "Alamat": "Sukabumi",
+                "Hobbi": "Minum Kopi",
+                "Sosmed": "@givarooo",
+                "Kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "Pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
             },
             {
-                "nama": "Afghanis Nursholehatunnisa",
-                "nim": "124450042",
-                "umur": "20",
-                "asal":"Krui",
-                "alamat": "Jatimulyo",
-                "hobbi": "Memancing",
-                "sosmed": "@afghanisnt_",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
+                "Nama": "Afghanis Nursholehatunnisa",
+                "Nim": "124450042",
+                "Umur": "20 tahun",
+                "Asal":"Krui",
+                "Alamat": "Jatimulyo",
+                "Hobbi": "Memancing",
+                "Sosmed": "@afghanisnt_",
+                "Kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "Pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
             },
             {
-                "nama": "Hani Qurrota Aini",
-                "nim": "124450020",
-                "umur": "19",
-                "asal":"City Eart",
-                "alamat": "Sukarame",
-                "hobbi": "Baca Au",
-                "sosmed": "@haniquratuain_",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
+                "Nama": "Hani Qurrota Aini",
+                "Nim": "124450020",
+                "Umur": "19 tahun",
+                "Asal":"City Eart",
+                "Alamat": "Sukarame",
+                "Hobbi": "Baca Au",
+                "Sosmed": "@haniquratuain_",
+                "Kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "Pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
             },
             {
-                "nama": "Jeremia Halim",
-                "nim": "124450101",
-                "umur": "20",
-                "asal":"Beijing",
-                "alamat": "Teluk",
-                "hobbi": "Olahraga",
-                "sosmed": "@jeremia_hm",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "Nama": "Jeremia Halim",
+                "Nim": "124450101",
+                "Umur": "20 tahun",
+                "Asal":"Beijing",
+                "Alamat": "Teluk",
+                "Hobbi": "Olahraga",
+                "Sosmed": "@jeremia_hm",
+                "Kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "Pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
-                "nama": "Monica Patricia Tanjung",
-                "nim": "123450073",
-                "umur": "21",
-                "asal":"Sumatera Utara",
-                "alamat": "Kota Baru",
-                "hobbi": "Tidur",
-                "sosmed": "@monica_tjg",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "Nama": "Monica Patricia Tanjung",
+                "Nim": "123450073",
+                "Umur": "21 tahun",
+                "Asal":"Sumatera Utara",
+                "Alamat": "Kota Baru",
+                "Hobbi": "Tidur",
+                "Sosmed": "@monica_tjg",
+                "Kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "Pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
-                "nama": "Jona Timothy Ogatse Panjaitan",
-                "nim": "123450121",
-                "umur": "20",
-                "asal":"Depok",
-                "alamat": "Pemda Raya",
-                "hobbi": "Ngegym dan Koleksi Figure",
-                "sosmed": "@nagatseee",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "Nama": "Jona Timothy Ogatse Panjaitan",
+                "Nim": "123450121",
+                "Umur": "20 tahun",
+                "Asal":"Depok",
+                "Alamat": "Pemda Raya",
+                "Hobbi": "Ngegym dan Koleksi Figure",
+                "Sosmed": "@nagatseee",
+                "Kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "Pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
-                "nama": "Sekar Dini Widya Putri",
-                "nim": "124450082",
-                "umur": "20",
-                "asal":"Metro",
-                "alamat": "Pemda",
-                "hobbi": "Main",
-                "sosmed": "@sekardnwp",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "Nama": "Sekar Dini Widya Putri",
+                "Nim": "124450082",
+                "Umur": "20 tahun",
+                "Asal":"Metro",
+                "Alamat": "Pemda",
+                "Hobbi": "Main",
+                "Sosmed": "@sekardnwp",
+                "Kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "Pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
-                "nama": "Wan Nashwa Alhasni Yuska",
-                "nim": "123450077",
-                "umur": "20",
-                "asal":"Pasay",
-                "alamat": "Belwis",
-                "hobbi": "Nyapa",
-                "sosmed": "@nshaysk",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "Nama": "Wan Nashwa Alhasni Yuska",
+                "Nim": "123450077",
+                "Umur": "20 tahun",
+                "Asal":"Pasay",
+                "Alamat": "Belwis",
+                "Hobbi": "Nyapa",
+                "Sosmed": "@nshaysk",
+                "Kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "Pesan":"semangat terus kuliahnya kakak !!!"# 1
             }
         ]
         display_images_with_data(gambar_urls, data_list)
@@ -348,178 +348,389 @@ elif menu == "Baleg":
 elif menu == "Departemen Minbak":
     def DepartemenMinbak():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-
+            "https://drive.google.com/uc?export=view&id=1CJIu5sTnUs6JNNWiYs-2AdasT_aej_xo", #kevin
+            "https://drive.google.com/uc?export=view&id=1wX0BymmYMlRwClJKN6t1-8hEVVYJdtPk", #gusti
+            "https://drive.google.com/uc?export=view&id=1ON8FBjE95Z9LCOak7NkP94MOuX2uvEk-", #ali
+            "https://drive.google.com/uc?export=view&id=1h6fyIiHFZpu1seeQQlpf_Yz6kDCIRYad", #ayu
+            "https://drive.google.com/uc?export=view&id=177Ai9cOfSLvee5asW3jIGo4fLaq-38Om", #dafa
+            "https://drive.google.com/uc?export=view&id=1EvuW6TTyR4CG7kalq_Ze6LScCeDAvMzT", #salsabila
+            "https://drive.google.com/uc?export=view&id=1cS7fK5FoMGluiZh6p6s2O-ztZlVwBUO4", #afdal
+            "https://drive.google.com/uc?export=view&id=1h8hf9VI2KwG61mEWflRWOun4T7od8qQi", #juwita
+            "https://drive.google.com/uc?export=view&id=12orv3wrkpcDjyrDR3ica0hchewVNlcE3", #ridwan
+            "https://drive.google.com/uc?export=view&id=1m9BcmPjOeWPpVTdMM2jmptlgBxqjI2vN", #andra
+            "https://drive.google.com/uc?export=view&id=18oHkIFpp7CO6KYVrGJDQS3PpSlDnzjJ4", #bryan
+            "https://drive.google.com/uc?export=view&id=1fWLqujL3WZrJaqPNaD-JRSyusrd3aKW2", #ghiyats
+            "https://drive.google.com/uc?export=view&id=1Z8s2-r5slmsCTkXCWCyA02xQJv81ZRTk", #indah
+            "https://drive.google.com/uc?export=view&id=1eSzDKM-W8pNm4KTDent8525LLW999hJL", #jacinda
+            "https://drive.google.com/uc?export=view&id=1h3FaobzvfXeXjEoLdozJb-qqggLckWJA",#rafka
         ]
         data_list = [
             {
-                "nama": "Kevin Antonio Junior",
-                "nim": "123450109",
-                "umur": "20",
-                "asal": "Maluku",
-                "alamat": "Panjang",
-                "hobbi": "Menari",
-                "sosmed": "@kevinaj__",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
+                "Nama": "Kevin Antonio Junior",
+                "Nim": "123450109",
+                "Umur": "20 tahun",
+                "Asal": "Maluku",
+                "Alamat": "Panjang",
+                "Hobbi": "Menari",
+                "Sosmed": "@kevinaj__",
+                "Kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "Pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
             },
             {
-                "nama": "Gusti Putu Ferazka Dhiyamika",
-                "nim": "123450046",
-                "umur": "21",
-                "asal": "Lampung Utara",
-                "alamat": "Way Halim",
-                "hobbi": "Mendaki",
-                "sosmed": "@ferazkaa",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "Nama": "Gusti Putu Ferazka Dhiyamika",
+                "Nim": "123450046",
+                "Umur": "21 tahun",
+                "Asal": "Lampung Utara",
+                "Alamat": "Way Halim",
+                "Hobbi": "Mendaki",
+                "Sosmed": "@ferazkaa",
+                "Kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "Pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
-                "nama": "Ali Aristo Muthahhari Parisi",
-                "nim": "123450088",
-                "umur": "21",
-                "asal":"Lampung Timur",
-                "alamat": "Gang Sakum Belwis",
-                "hobbi": "Bawa makanan dari Luar",
-                "sosmed": "ali_parisi3",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "Nama": "Ali Aristo Muthahhari Parisi",
+                "Nim": "123450088",
+                "Umur": "21 tahun",
+                "Asal":"Lampung Timur",
+                "Alamat": "Gang Sakum Belwis",
+                "Hobbi": "Bawa makanan dari Luar",
+                "Sosmed": "ali_parisi3",
+                "Kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "Pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
-                "nama": "Ayu Andriani Parlina Wati",
-                "nim": "123450025",
-                "umur": "20",
-                "asal":"Jombang",
-                "alamat": "Jatiagung",
-                "hobbi": "Jalan-jalan nyari mangsa",
-                "sosmed": "@me._kael",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya fadyl"
+                "Nama": "Ayu Andriani Parlina Wati",
+                "Nim": "123450025",
+                "Umur": "20 tahun",
+                "Asal":"Jombang",
+                "Alamat": "Jatiagung",
+                "Hobbi": "Jalan-jalan nyari mangsa",
+                "Sosmed": "@me._kael",
+                "Kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "Pesan":"Semoga kedepannya fadyl"
             },
             {
-                "nama": "Dafa Elpriza",
-                "nim": "124450131",
-                "umur": "21",
-                "asal":"Bekasi",
-                "alamat": "Way Kandis",
-                "hobbi": "Mancing",
-                "sosmed": "@dafaelpriza_",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
+                "Nama": "Dafa Elpriza",
+                "Nim": "124450131",
+                "Umur": "21 tahun",
+                "Asal":"Bekasi",
+                "Alamat": "Way Kandis",
+                "Hobbi": "Mancing",
+                "Sosmed": "@dafaelpriza_",
+                "Kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "Pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
             },
             {
-                "nama": "Salsabila Nazwa Putri",
-                "nim": "124450002",
-                "umur": "20",
-                "asal":"Metro",
-                "alamat": "Korpri",
-                "hobbi": "Pulang Kampung",
-                "sosmed": "@slbnzw_",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
+                "Nama": "Salsabila Nazwa Putri",
+                "Nim": "124450002",
+                "Umur": "20 tahun",
+                "Asal":"Metro",
+                "Alamat": "Korpri",
+                "Hobbi": "Pulang Kampung",
+                "Sosmed": "@slbnzw_",
+                "Kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "Pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
             },
             {
-                "nama": "Muhammad Afdal Lutfi",
-                "nim": "124450047",
-                "umur": "19",
-                "asal":"Lampung Tengah",
-                "alamat": "Jln. Pulau Damar",
-                "hobbi": "Surving",
-                "sosmed": "@afdall.03",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
+                "Nama": "Muhammad Afdal Lutfi",
+                "Nim": "124450047",
+                "Umur": "19 tahun",
+                "Asal":"Lampung Tengah",
+                "Alamat": "Jln. Pulau Damar",
+                "Hobbi": "Surving",
+                "Sosmed": "@afdall.03",
+                "Kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "Pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
             },
             {
-                "nama": "Juwita Sari",
-                "nim": "124450066",
-                "umur": "19",
-                "asal":"Lampung Barat",
-                "alamat": "Pemda",
-                "hobbi": "Liat Bila nulis",
-                "sosmed": "@ju.juwitaaa_",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
+                "Nama": "Juwita Sari",
+                "Nim": "124450066",
+                "Umur": "19 tahun",
+                "Asal":"Lampung Barat",
+                "Alamat": "Pemda",
+                "Hobbi": "Liat Bila nulis",
+                "Sosmed": "@ju.juwitaaa_",
+                "Kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "Pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
             },
             {
-                "nama": "Muhammad Ridwan",
-                "nim": "123450091",
-                "umur": "21",
-                "asal":"Lampung Tengah",
-                "alamat": "Belwis",
-                "hobbi": "Nontonin Fadyl Badminton",
-                "sosmed": "@mridwaan_22",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "Nama": "Muhammad Ridwan",
+                "Nim": "123450091",
+                "Umur": "21 tahun",
+                "Asal":"Lampung Tengah",
+                "Alamat": "Belwis",
+                "Hobbi": "Nontonin Fadyl Badminton",
+                "Sosmed": "@mridwaan_22",
+                "Kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "Pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
-                "nama": "Andra Ilham Bintang",
-                "nim": "124450060",
-                "umur": "18",
-                "asal":"Sumatera Selatan",
-                "alamat": "Kota Baru",
-                "hobbi": "Nonton Drama Korea",
-                "sosmed": "@andra.lhm",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "Nama": "Andra Ilham Bintang",
+                "Nim": "124450060",
+                "Umur": "18",
+                "Asal":"Sumatera Selatan",
+                "Alamat": "Kota Baru",
+                "Hobbi": "Nonton Drama Korea",
+                "Sosmed": "@andra.lhm",
+                "Kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "Pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
-                "nama": "Bryan Paskah Telaumbanua",
-                "nim": "124450003",
-                "umur": "20",
-                "asal":"Nias",
-                "alamat": "Belwis",
-                "hobbi": "Yoga",
-                "sosmed": "@bryantel_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "Nama": "Bryan Paskah Telaumbanua",
+                "Nim": "124450003",
+                "Umur": "20 tahun",
+                "Asal":"Nias",
+                "Alamat": "Belwis",
+                "Hobbi": "Yoga",
+                "Sosmed": "@bryantel_",
+                "Kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "Pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
-                "nama": "Indah Julia Mawar Pratiwi",
-                "nim": "124450055",
-                "umur": "20",
-                "asal":"Pringsewu",
-                "alamat": "Airan",
-                "hobbi": "Main",
-                "sosmed": "@sekardnwp",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "Nama": "Ghiyats Thabularasa Meardhy",
+                "Nim": "124450067",
+                "Umur": "17 tahun",
+                "Asal":"Jati Asih",
+                "Alamat": "Korpri",
+                "Hobbi": "Nyawit",
+                "Sosmed": "@meardhy_ghiyats",
+                "Kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "Pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
-                "nama": "Jacinda Kesya Alvara",
-                "nim": "....",
-                "umur": "..",
-                "asal":"...",
-                "alamat": "....",
-                "hobbi": "...",
-                "sosmed": "@....",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "Nama": "Indah Julia Mawar Pratiwi",
+                "Nim": "124450055",
+                "Umur": "20 tahun",
+                "Asal":"Pringsewu",
+                "Alamat": "Airan",
+                "Hobbi": "Main",
+                "Sosmed": "@sekardnwp",
+                "Kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "Pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
-                "nama": "Muhammad Rafka Fatih Al Ghathfaan",
-                "nim": "124450089",
-                "umur": "20",
-                "asal":"Padang",
-                "alamat": "Kota Baru",
-                "hobbi": "Bangun Pagi",
-                "sosmed": "@muhammdrafka_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "Nama": "Jacinda Kesya Alvara",
+                "Nim": "....",
+                "Umur": "..",
+                "Asal":"...",
+                "Alamat": "....",
+                "Hobbi": "...",
+                "Sosmed": "@....",
+                "Kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "Pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "Nama": "Muhammad Rafka Fatih Al Ghathfaan",
+                "Nim": "124450089",
+                "Umur": "20 tahun",
+                "Asal":"Padang",
+                "Alamat": "Kota Baru",
+                "Hobbi": "Bangun Pagi",
+                "Sosmed": "@muhammdrafka_",
+                "Kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "Pesan":"semangat terus kuliahnya kakak !!!"# 1
             }
         ]
         display_images_with_data(gambar_urls, data_list)
     DepartemenMinbak()
 
-# Tambahkan menu lainnya sesuai kebutuhan
+elif menu == "Departemen Internal":
+    def DepartemenInternal():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1qxbBD6czsVvJ4cqC69ab6_79nzy4coD_", #haikal
+            "https://drive.google.com/uc?export=view&id=1p-k60X15MJjHQhrnTb3z5SX251WLtbWH", #kharisma
+            "https://drive.google.com/uc?export=view&id=1sndFgONdHm-vYdutBIPrIbvo0kRCbmn4", #hanna
+            "https://drive.google.com/uc?export=view&id=19CpFORRvs7H2Wo1MCZRHhP_iFEt1aLo5", #farhan
+            "https://drive.google.com/uc?export=view&id=1lDuzjioWFOgZQKLaJf9fELfrVWoZLyIj", #aisyah
+            "https://drive.google.com/uc?export=view&id=1TC6soPOyhMr9FWXoDUmdoNU8Y3UkDe8l", #cerine
+            "https://drive.google.com/uc?export=view&id=1VntZ_fZ5216tNnoQGjgQGUI1w9VO0cBq", #jaya
+            "https://drive.google.com/uc?export=view&id=1tJ8wlsUid3e7Vxp1UmdFFTHr99GIlb9j", #najla
+            "https://drive.google.com/uc?export=view&id=1Ge-6ysk-JO9gog4QooeBE2M1t_Elh8LK", #rozak
+            "https://drive.google.com/uc?export=view&id=1FvIrVA5IAC4T863j79UMAL8mNgIcrkIE", #teresa
+            "https://drive.google.com/uc?export=view&id=1BhoQuImukdQ5zTEH0VP5SBHjo48ErN4I", #hanif
+            "https://drive.google.com/uc?export=view&id=1Y5jPem66McDOpQFxb58IZUvvHXLnpx7S", #audina
+            "https://drive.google.com/uc?export=view&id=1H2bCRXhpPeLgQeI_aOs5oijdLvhSjJhV", #cika
+            "https://drive.google.com/uc?export=view&id=1sqi9nGf4Ql4p7HvfHiPlKzjEEuViPn0r", #gustin
+            "https://drive.google.com/uc?export=view&id=1goED48S0PjjaYjjPeELk8jU1bWLKQvuF", #harvinsyah
+            "https://drive.google.com/uc?export=view&id=1KQP8_iK2dE3ZoIyyzQE6iEJSBPNLd21f", #sabina     
+        ]
+        data_list = [
+            {
+                "nama": "Haikal Fransiskus Simbolon",
+                "nim": "123450123",
+                "umur": "23",
+                "asal": "Bengkulu",
+                "alamat": "Belwis",
+                "hobbi": "Merokok",
+                "sosmed": "@haikalsbln_",
+                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
+            },
+            {
+                "nama": "Kharisma Mustika Sari",
+                "nim": "123450034",
+                "umur": "21",
+                "asal": "Way Kanan",
+                "alamat": "untung suropat",
+                "hobbi": "Suka menolong orang",
+                "sosmed": "@rismaa.mustika_",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Hanna Grecia Sinaga",
+                "nim": "123450038",
+                "umur": "21",
+                "asal":"Kisaran",
+                "alamat": "Sukarame",
+                "hobbi": "menyapa satpam gedung f",
+                "sosmed": "@hanna_g_sinaga",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Farhan Ghani",
+                "nim": "123450121",
+                "umur": "19",
+                "asal":"Kemiling",
+                "alamat": "Kemiling",
+                "hobbi": "Suka motor bukan ngabers",
+                "sosmed": "@farhanghani",
+                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "pesan":"Semoga kedepannya fadyl"
+            },
+            {
+                "nama": "Aisyah Khairun Nissa",
+                "nim": "124450096",
+                "umur": "18",
+                "asal":"Riau",
+                "alamat": "Belwis",
+                "hobbi": "Ngestalker in orang",
+                "sosmed": "@aisyahkhair",
+                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
+            },
+            {
+                "nama": "Cerine Sihotang",
+                "nim": "124450049",
+                "umur": "....",
+                "asal":"....",
+                "alamat": "....",
+                "hobbi": "....",
+                "sosmed": "@...",
+                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
+            },
+            {
+                "nama": "Jaya Saputra Tamba",
+                "nim": "124450094",
+                "umur": "22",
+                "asal":"kisaran city",
+                "alamat": "Pemda city",
+                "hobbi": "Balap liar",
+                "sosmed": "@jay_saputra_tmb",
+                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
+            },
+            {
+                "nama": "Najla Nursyifa",
+                "nim": "124450051",
+                "umur": "...",
+                "asal":"...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "@...",
+                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
+                "pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
+            },
+            {
+                "nama": "Rozak Ramdani",
+                "nim": "124450100",
+                "umur": "...",
+                "asal":"...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "@...",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Teresa Christiani Purba",
+                "nim": "124450046",
+                "umur": "...",
+                "asal":"...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "@...",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Muhammad Hanif Dzaky Arifin",
+                "nim": "123450064",
+                "umur": "21",
+                "asal":"Padang",
+                "alamat": "Perumnas Way Kandis",
+                "hobbi": "Main game fps",
+                "sosmed": "@hndfzky_",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Audina Fitria",
+                "nim": "124450038",
+                "umur": "...",
+                "asal":"....",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "@...",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Cika Adelia Br Marbun",
+                "nim": "124450050",
+                "umur": "20",
+                "asal": "Riau",
+                "alamat": "Belwis",
+                "hobbi": "Dengerin Musik",
+                "sosmed": "@Cikamrbn",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Gustin H. Tampubolon",
+                "nim": "124450068",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "@...",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Muhammad Harvinsyah",
+                "nim": "124450128",
+                "umur": "20",
+                "asal": "Sumatera Selatan",
+                "alamat": "Belwis",
+                "hobbi": "Berkuda",
+                "sosmed": "@Muhvnz_",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Rafa Sabina Fahimah",
+                "nim": "124450036",
+                "umur": "...",
+                "asal": "...",
+                "alamat": "...",
+                "hobbi": "...",
+                "sosmed": "@...",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            }
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    DepartemenInternal()
