@@ -51,19 +51,23 @@ def streamlit_menu():
 
 @st.cache_data
 def load_image(url):
-    response = requests.get(url)
-    if response.status_code != 200:
-        st.error(
-            f"Failed to fetch image from {url}, status code: {response.status_code}"
-        )
-        return None
     try:
+        response = requests.get(
+            url,
+            timeout=20,
+            headers={"User-Agent": "Mozilla/5.0"}
+        )
+        response.raise_for_status()
+
         img = Image.open(BytesIO(response.content))
+        img.load()
         img = ImageOps.exif_transpose(img)
         img = img.resize((300, 400))
+
         return img
+
     except Exception as e:
-        st.error(f"Error loading image: {e}")
+        st.error(f"Gagal memuat gambar: {e}")
         return None
     
 @st.cache_data
