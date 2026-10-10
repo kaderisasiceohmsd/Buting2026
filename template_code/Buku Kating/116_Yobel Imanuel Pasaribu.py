@@ -207,8 +207,8 @@ elif menu == "Departemen MIKFES":
 
 elif menu == "Departemen Eksternal":
     gambar_urls = [
-        "https://drive.google.com/uc?export=view&id=1T9KmB0RwP5-SilddU6OZcsfFG3bawIvZ",
-                "https://drive.google.com/uc?export=view&id=1YOVWslfyu7D_-DTN7SBDJ844vkv9O1Sx",
+        "https://drive.google.com/uc?export=view&id=1EVldkaIupq6Njvj_JOXemWuzdh4kWM2_",
+        "https://drive.google.com/uc?export=view&id=1YOVWslfyu7D_-DTN7SBDJ844vkv9O1Sx",
         "https://drive.google.com/uc?export=view&id=1FYE9gemcer66-YsK6RijIP3hPCNBiH5f",
         "https://drive.google.com/uc?export=view&id=1J59ZlC49K09GhZITuMRntVBxnfflDCMr",
         "https://drive.google.com/uc?export=view&id=1orX1JTcukBgh9dh3eXtWyeqz2V8h5JqO",
