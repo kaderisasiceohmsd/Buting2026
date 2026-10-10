@@ -26,14 +26,14 @@ Mahasiswa3 = st.Page(
 )
 
 Mahasiswa4 = st.Page(
-    "Buku Kating/077_Muchamad Fahrell.py",
-    title="077 - Muchamad Fahrell",
+    "Buku Kating/067_Andrew Chayadi.py",
+    title="067 - Andrew Chayadi",
     icon=":material/person:",
 )
 
 Mahasiswa5 = st.Page(
-    "Buku Kating/067_Andrew Chayadi.py",
-    title="067 - Andrew Chayadi",
+    "Buku Kating/077_Muchamad Fahrell.py",
+    title="077 - Muchamad Fahrell",
     icon=":material/person:",
 )
 
