@@ -288,7 +288,7 @@ elif menu == "About Us":
         st.markdown("<h2 class='section-title'>About Us</h2>", unsafe_allow_html=True)
         
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_" for _ in range(11)
+            "https://drive.google.com/uc?export=view&id=1VZfU_oBz3w68OXo4xKuAQ14wcS7wtC4E" for _ in range(11)
         ]
         
         data_list = [
