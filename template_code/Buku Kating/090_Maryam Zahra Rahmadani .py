@@ -99,82 +99,44 @@ menu = streamlit_menu()
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
-                        "https://drive.google.com/uc?export=view&id=19ROTFld7HX_F3wFMyVcUo7XE0ecja5lT",
-                        "https://drive.google.com/uc?export=view&id=1kuYd6XlUje4KOP8Jtnu7mZNH9B1X2j6q",
-                        "https://drive.google.com/uc?export=view&id=14eTxLiIzl9YHXokX2YKuA9W79ggcutgJ",
-                        "https://drive.google.com/uc?export=view&id=1ESX89iJstfPzDnwTjA6ad1JiGTEUcxq7",
-                        "https://drive.google.com/uc?export=view&id=1HzXgBcN_BZPJ1-JSBUDCRBVSxeP9vDgj",
-                        "https://drive.google.com/uc?export=view&id=1-_VaDONRYup5c1H5ttDwOYA6ClADusc_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
         ]
         data_list = [
             {
-                "nama": "Ginda Fajar Riadi Marpaung",
-                "nim": "123450103",
-                "umur": "22",
-                "asal":"Batam",
-                "alamat": "Kesektariatan HMSD",
-                "hobbi": "Push IMO",
-                "sosmed": "@jars_mrp",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya saya bisa tumbuh seperti bang fajar, terimakasih bang"
-            },
-            {
-                "nama": "Muhammmad Aqil Ramadhan",
-                "nim": "1233450066",
-                "umur": "22",
+                "nama": "kakak aa",
+                "nim": "122450000",
+                "umur": "18",
                 "asal":"Bekasi",
                 "alamat": "Gg.sakum",
-                "hobbi": "Dzikie",
-                "sosmed": "@muhammadaqil1111",
+                "hobbi": "Mainn Bola, Belajar",
+                "sosmed": "@i",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"Semangat terus kuliahnya kakak !!!"
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
-                "nama": "Efi Defiyati",
-                "nim": "123450005",
-                "umur": "21",
-                "asal":"Lampung Timur",
-                "alamat": "Airan",
-                "hobbi": "Membaca",
-                "sosmed": "@eeffiidefi",
+                "nama": "Kakak B",
+                "nim": "122450000",
+                "umur": "18",
+                "asal":"Bekasi",
+                "alamat": "Gg.sakum",
+                "hobbi": "Mainn Bola, Belajar",
+                "sosmed": "@i",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"Semangat terus kuliahnya kakak !!!"
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
-                "nama": "Qois Olifio",
-                "nim": "123450067",
-                "umur": "22",
-                "asal":"Batam",
-                "alamat": "Kota Baru",
-                "hobbi": "Mainin Surat",
-                "sosmed": "@qoisolifio",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya saya bisa mencontoh hal baik dari kakak."
-            },
-            {
-                "nama": "Hafsa Fazila Arradhi",
-                "nim": "123450079",
-                "umur": "21",
-                "asal":"Bandar Lampung",
-                "alamat": "Bandar Lampung",
-                "hobbi": "Berkuda",
-                "sosmed": "@Hafsafazilaa",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya saya bisa tumbuh seperti bang fajar, terimakasih bang"
-            },
-            {
-                "nama": "Luthfia Laila Ramadhani",
-                "nim": "123450004",
-                "umur": "21",
-                "asal":"Bengkulu",
-                "alamat": "Airan",
-                "hobbi": "Bermain ke kost Efi",
-                "sosmed": "@luthfiaarmdhni",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya saya bisa tumbuh seperti bang fajar, terimakasih bang"
+                "nama": "Kakak CCc",
+                "nim": "122450000",
+                "umur": "18",
+                "asal":"Bekasi",
+                "alamat": "Gg.sakum",
+                "hobbi": "Mainn Bola, Belajar",
+                "sosmed": "@i",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
         ]
         display_images_with_data(gambar_urls, data_list)
     kesekjenan()
-
-# Tambahkan menu lainnya sesuai kebutuhan
