@@ -179,3 +179,167 @@ if menu == "Kesekjenan":
     kesekjenan()
 
 # Tambahkan menu lainnya sesuai kebutuhan
+if menu == "Badan Legislatif":
+    def Baleg():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1S9a3wfmCNtl92iDQJkLRL91Pg7jakU5v",
+            "https://drive.google.com/uc?export=view&id=1etH0Xb1VCQJZPbm7kg7OqqWXB2KzfWzR",
+            "https://drive.google.com/uc?export=view&id=12MogNBBIACViZGMsZOWaFaDuK7R9gwj9",
+            "https://drive.google.com/uc?export=view&id=1ietblJPahxJvnt4rXvx9NSqyzEzA_B7F",
+            "https://drive.google.com/uc?export=view&id=1O4JgbsL6Q8j5SnUy7xwnO_rTvYaDk8HP",
+            "https://drive.google.com/uc?export=view&id=1sWA_T1boU0EqUpgt4D50fMaflw0a5UMP",
+            "https://drive.google.com/uc?export=view&id=1VvuV7sATqepvEryDH3B2g2SpT3UiKqNp",
+            "https://drive.google.com/uc?export=view&id=14U22QTQSkLCPTsWM8NZ6aizeQ8BKOH72",
+            "https://drive.google.com/uc?export=view&id=1PsFMYho5W7nljge2w7T1_W0X34Dq-FVR",
+            "https://drive.google.com/uc?export=view&id=1otrqRKrjN9ttaoKjJkwIGWdZcvul2FkK",
+            "https://drive.google.com/uc?export=view&id=1-SIM2lZ10K1y3iziCPtDTOhcIivZsATU",
+            "https://drive.google.com/uc?export=view&id=1ZBk4ifw3E84sSeR5ysMLRWD81oXaSCq4",
+            "https://drive.google.com/uc?export=view&id=1_cxnAWxAQ1sgiP5uGCKVysQYLIPrZDHD",
+        ]
+        data_list = [
+            {
+                "nama": "Ridho Benedictus Togi Manik",
+                "nim": "123450060",
+                "umur": "20",
+                "asal":"Kota Manchester",
+                "alamat": "GH",
+                "hobbi": "Wawancara",
+                "sosmed": "@iamridhomanik",
+                "kesan": "Kesan pertama kali liat bang dido kek serem abangnya, ternyata baik banget, seru, asik, sangat masyallah tabarakallah",  
+                "pesan": "Semangat bang dido main futsalnya, hati-hati dijalan jangan lupa live nyaa wkwk"# 1
+            },
+            {
+                "nama": "Juesi Apridelia Saragih",
+                "nim": "123450085",
+                "umur": "19",
+                "asal": "Singkawang",
+                "alamat": "Pelangi",
+                "hobbi": "Dengerin lagu semusim dari marsel",
+                "sosmed": "@j__eesie",
+                "kesan": "Kakaknya cantikk banget, suka kalo ngobrol sama kak jue banyak obrolannya terus kakaknya seru banget jugaa",  
+                "pesan": "Semangat kakak cantik TA dan penyiarannyaa, aku fans berat kakak, ditunggu cerita-cerita seru lainnyaa"# 1
+            },
+            {
+                "nama": "Dharu Cahyoaji Sasongko",
+                "nim": "123450023",
+                "umur": "19",
+                "asal": "Lampung",
+                "alamat": "Bandar Lampung",
+                "hobbi": "Ngidupin api baleg di tiktok",
+                "sosmed": "@exvoltas",
+                "kesan": "Abang ini keren banget pas KDP, aku ngefans bang, terus pintarnya pintar banget (wajar ozt ini)",  
+                "pesan": "Infokan tutor mapress nya dong abangdaa"# 1
+            },
+            {
+                "nama": "Gh. Mikael Niko Antoni Setiadi",
+                "nim": "124450025",
+                "umur": "20",
+                "asal": "Jabung",
+                "alamat": "Jati Agung",
+                "hobbi": "COD Musang",
+                "sosmed": "@me._kael",
+                "kesan": "Bang niko baik banget, sangat chill, sangat baik, sangat keren",  
+                "pesan": "Semangat abangg kuliahnyaa, infokan tutor jadi pimsit"# 1
+            },
+            {
+                "nama": "Siti Sarifah Sumamah",
+                "nim": "124450015",
+                "umur": "19",
+                "asal": "Bekasi",
+                "alamat": "Kedaton",
+                "hobbi": "Mancing",
+                "sosmed": "@syt.rifa",
+                "kesan": "Kakaknya cantik, terus kaget karena nama kami mirip, kakaknya sarifah aku zharifa, sama sama dipanggil rifa lagi",  
+                "pesan": "Semangat kakak rifa kuliahnya - dari adik rifa"# 1
+            },
+            {
+                "nama": "Givaro Ananta",
+                "nim": "123450078",
+                "umur": "19",
+                "asal": "Lampung Barat",
+                "alamat": "Sukabumi",
+                "hobbi": "Minum Kopi",
+                "sosmed": "@givarooo",
+                "kesan": "Bang gip seru banget orangnya, asik, baik bangett juga, penjelasan studi kasusnya masuk akal",  
+                "pesan": "Tutorkan kiat jadi kepala komisi II banggg"# 1
+            },
+            {
+                "nama": "Afghanis Nursholehatunnisa",
+                "nim": "124450042",
+                "umur": "19",
+                "asal": "Kepulauan Mentawai",
+                "alamat": "Owen Kost",
+                "hobbi": "Ngoding",
+                "sosmed": "@afghanisnt_",
+                "kesan": "Kakaknya cantik dan baik bangett pas ngewawancarai aku, seru jugaa, terus kakaknya pas ngejawab pertanyaan di kelas masuk akal banget",  
+                "pesan": "Kakak pj kami semangat yaa ngejalanin tupoksinyaa, semangat juga menghadapi huru hara semester 5 nyaa"# 1
+            },
+            {
+                "nama": "Hani Qurrota Aini",
+                "nim": "124450020",
+                "umur": "20",
+                "asal": "CTR",
+                "alamat": "Sukarame",
+                "hobbi": "Baca AU",
+                "sosmed": "@haniquratuain_",
+                "kesan": "Kakak ini cantik bangett, suka kalo ngeliat kakak ini karena cantik banget pas aku di semester 1",  
+                "pesan": "Semangat kak hani kuliahnyaa, semangat juga di baleg nya, kelompok greedy cinta kakak kokk"# 1
+            },
+            {
+                "nama": "Jeremia Halim",
+                "nim": "124450101",
+                "umur": "20",
+                "asal": "Tanggerang",
+                "alamat": "Teluk",
+                "hobbi": "Nyanyi, olahraga",
+                "sosmed": "@jeremia_hm",
+                "kesan": "Abang ini keren banget kalo nyanyii udah kek lagi di Orkestra Sydney",  
+                "pesan": "Abang semangat kuliahnya, semangat ketok ketok palunyaa, semangat abangg"# 1
+            },
+            {
+                "nama": "Monica Patricia Tanjung",
+                "nim": "123450073",
+                "umur": "21",
+                "asal": "Jakarta Barat",
+                "alamat": "Kotabaru",
+                "hobbi": "Lari",
+                "sosmed": "@monica_tjg",
+                "kesan": "Kak monica keren banget pas ngejawab kalo dikasih pertanyaan, sukaa kerenn, cantik banget kakaknya jugaa",  
+                "pesan": "Kak monica semangat kuliahnyaa, semangat jugaa di baleg, kamu keren kak cantik bangett"# 1
+            },
+            {
+                "nama": "Jona Timothy Ogatse Panjaitan",
+                "nim": "124450111",
+                "umur": "20",
+                "asal": "Depok",
+                "alamat": "Pemda Raya",
+                "hobbi": "Gym sama Koleksi figure, nafas manual",
+                "sosmed": "@nagatseee",
+                "kesan": "Abangnya asik banget, baik banget, keren banget, palu nya juga keren banget",  
+                "pesan": "Abang semangat kuliahnyaa, semangat ngebalegnyaa, infokan tutor ketok-ketok palunya bang"# 1
+            },
+            {
+                "nama": "Sekar Dini Widya Putri",
+                "nim": "124450082",
+                "umur": "20",
+                "asal": "Metro",
+                "alamat": "Pemda",
+                "hobbi": "Jajan sama nisa, putri, suci",
+                "sosmed": "@sekardnwp",
+                "kesan": "Kakaknya baik bangett, seru ngobrol sama kakaknya, terus ternyata kakaknya di baleg keren bangettt",  
+                "pesan": "Semangat kak sekar pdd-in balegnyaa, semangat juga kuliahnyaa kakak"# 1
+            },
+            {
+                "nama": "Wan Nashwa Alhasni Yuska",
+                "nim": "123450077",
+                "umur": "20",
+                "asal": "Pasay",
+                "alamat": "Belwis",
+                "hobbi": "Nyapa angin",
+                "sosmed": "@nshaysk",
+                "kesan": "Kakaknya cantik banget, ceria banget, suka kalo ngobrol sama kakak soalnya kakaknya seru banget pas diajak ngobrol",  
+                "pesan": "Kak Nashwa semangat yaa TA nyaa, sehat sehat kakak semester 7 dan kakak baleg"# 1
+            },
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    Baleg()
