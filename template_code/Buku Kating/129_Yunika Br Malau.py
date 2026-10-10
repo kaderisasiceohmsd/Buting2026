@@ -99,12 +99,12 @@ menu = streamlit_menu()
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1hSXYw6ZGNp_7Y-A15BS7eR5YwP2HJ5qA",
+            "https://drive.google.com/uc?export=view&id=1fP95YaSjhAvkBQ3ELbbE48ybTAiMSkiI",
+            "https://drive.google.com/uc?export=view&id=1KVpeBiIKfCVyftM5FEK8V9WRVYR0WOc_",
+            "https://drive.google.com/uc?export=view&id=1sMP2My5JlKwoVNTEAnCUQYk37MCfwohm",
+            "https://drive.google.com/uc?export=view&id=109zbLVgztc65bJ7WHYyy7ln8Kv1gIILJ",
+            "https://drive.google.com/uc?export=view&id=1DOqOekXeeT2pZ80fv3vhDccnQuzwLOuf",
         ]
         data_list = [
             {
@@ -115,8 +115,8 @@ if menu == "Kesekjenan":
                 "alamat": "Tinggal Sekretariat HMSD",
                 "hobbi": "Push Rank Sampai imo",
                 "sosmed": "@jars_mrp",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Bang fajar ganteng",  
+                "pesan":"Semoga semangat jadi kahim !!!"# 1
             },
             {
                 "nama": "Muhammad Aqil Ramadhan",
@@ -126,8 +126,8 @@ if menu == "Kesekjenan":
                 "alamat": "Sekretariat HMSD",
                 "hobbi": "Tahajud",
                 "sosmed": "@muhammadaqil1111",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Baik dan pintar",  
+                "pesan":"semangat terus kuliahnya bang !!!"# 1
             },
             {
                 "nama": "Efi Defiyati",
@@ -137,7 +137,7 @@ if menu == "Kesekjenan":
                 "alamat": "Airan",
                 "hobbi": "Membaca",
                 "sosmed": "@eeffiidefi",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "kesan": "Kakak baik, ramah",  
                 "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
@@ -148,7 +148,7 @@ if menu == "Kesekjenan":
                 "alamat": "Kotabaru",
                 "hobbi": "Mainin Surat",
                 "sosmed": "@qoisolifio_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "kesan": "Abang Qois kelihatan pinter dan baik ",  
                 "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
@@ -159,7 +159,7 @@ if menu == "Kesekjenan":
                 "alamat": "Bandar Lampung",
                 "hobbi": "Basket",
                 "sosmed": "@hafsafazilaa",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "kesan": "Kakak ini asik baik dan cantik",  
                 "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
@@ -170,7 +170,7 @@ if menu == "Kesekjenan":
                 "alamat": "Airan",
                 "hobbi": "Nemuin Pak Tirta",
                 "sosmed": "@Luthfiaarmdhni",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "kesan": "Kak Lutfia baik ramah dan cantik",  
                 "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
         ]
@@ -180,18 +180,18 @@ if menu == "Kesekjenan":
 if menu == "Baleg":
     def baleg():
         gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1obfVrNnPv9PJVA8nzqaRLkhBf2JNAyNs",
+            "https://drive.google.com/uc?export=view&id=1fSLfPZGsC7jhHCCQjta6hdsY6YORIR_Y",
+            "https://drive.google.com/uc?export=view&id=1UQbYlSOIfej2lLM2TJYkTB0BNUU74ePq",
+            "https://drive.google.com/uc?export=view&id=1K8sKAvn-SynJv3wG1efFD-yC1qLogldr",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"            
+            "https://drive.google.com/uc?export=view&id=1ECpiwzZ2VQTzQfmKetSFF7wVExHVqj6x",
+            "https://drive.google.com/uc?export=view&id=1Mgn6nEhBTwecVpviV_6vipM7j9zxVEtX",
+            "https://drive.google.com/uc?export=view&id=1ZXvOuTrW0Y8VTItDmYdl2RVKDyn6ZmJR",
+            "https://drive.google.com/uc?export=view&id=1lxJ5BK_uzPSQG5nkKwi9q19rrFEU7lCf",
+            "https://drive.google.com/uc?export=view&id=14AuQmBliZWxOR3ijzl6M1rWjBi2NHhwJ",
+            "https://drive.google.com/uc?export=view&id=1rX9lUpaBnBPn5PKTdAflWRksc1anoCFe",
+            "https://drive.google.com/uc?export=view&id=1tA0i3Q2e2s8R0wiS-Tk3gpUe7Mfpdc-B"            
         ]
         data_list = [
             {
@@ -202,8 +202,8 @@ if menu == "Baleg":
                 "alamat": "GH",
                 "hobbi": "Menonton Seminar",
                 "sosmed": "@iamridhomanik",
-                "kesan": "Abang ini asik parah dan yapping banget dan sedikit npd juga",  
-                "pesan":"Semoga cepat selesai TA nya bang"# 1
+                "kesan": "Abang ini asik parah dan yapping ",  
+                "pesan":"Semangat kuliahnya bang"# 1
             },
             {
                 "nama": "Juesi Apridelia Saragih",
@@ -213,7 +213,7 @@ if menu == "Baleg":
                 "alamat": "Pelangi",
                 "hobbi": "Repeat lagu if only by skyline setiap hari di jam 8",
                 "sosmed": "@j__eesie",
-                "kesan": "Kakaknya gemas dan cantik bangett, aku suka banget",  
+                "kesan": "Kakaknya gemas dan cantik bangett",  
                 "pesan":"Semangat terus belajarnya kak"# 1
             },
             {
@@ -224,7 +224,7 @@ if menu == "Baleg":
                 "alamat": "Bandar Lampung",
                 "hobbi": "Nonton drama AI",
                 "sosmed": "@ddharu_",
-                "kesan": "Abangnya aktif dan keren banget, aku kagum liatnya",  
+                "kesan": "Abangnya aktif dan keren banget,",  
                 "pesan":"semangat terus dan aktif terus bang kuliahnya"# 1
             },
             {
@@ -235,7 +235,7 @@ if menu == "Baleg":
                 "alamat": "Sukabumi",
                 "hobbi": "Minum Kopi",
                 "sosmed": "@givarooo",
-                "kesan": "Abangnya asik, baik, dan ternyata receh parah, ketawa mulu",
+                "kesan": "Abangnya asik dan baik",
                 "pesan":"Semangat terus belajar dan kuliahnya bang"# 1
             },
             {
@@ -344,7 +344,7 @@ if menu == "Baleg":
 if menu == "Departemen Eksternal":
     def Departemen_Eksternal():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1cP3GVgpQWxzCGGdUlFjAuVvKTCrAdDrM",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
@@ -617,18 +617,18 @@ if menu == "Departemen Eksternal":
 if menu == "Departemen SSD":
     def Departemen_SSD():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"
+            "https://drive.google.com/uc?export=view&id=1mrID04Jxww7Y55VuEAzSf4jIzlPrZsdB",
+            "https://drive.google.com/uc?export=view&id=1iNZtuohSvo0VONuK0WQ0Gp0DUDp0HJ9i",
+            "https://drive.google.com/uc?export=view&id=1rgq_y0a6cyPOZJNcoxmZjg5WM5ZOYDNp",
+            "https://drive.google.com/uc?export=view&id=12ugC55IwShpQjQRgzPBxtHjw2xFKj9sU",
+            "https://drive.google.com/uc?export=view&id=1N-cE6lJfgju3QsoRi5FcijqQ_XZlaqy2",
+            "https://drive.google.com/uc?export=view&id=1mESp4BH7loxrAi01yn5qyYAP8gYxwLYZ",
+            "https://drive.google.com/uc?export=view&id=1fbSYnpkQnOKXVKIo-v76sbj_mv56EQtd",
+            "https://drive.google.com/uc?export=view&id=1wWjlyTx6MvrkSLDE-XKhy5z5v_A3ZV0i",
+            "https://drive.google.com/uc?export=view&id=1WeokYvlSKxKHwl7dyld1KAMiKEI4c8gC",
+            "https://drive.google.com/uc?export=view&id=1dvD6XvrblMMLwCOYadX8Od7c7QsGyU0W",
+            "https://drive.google.com/uc?export=view&id=1QaQgkoyJvi1ZwlNpPX612QrlwUlpN0uJ",
+            "https://drive.google.com/uc?export=view&id=1FxYIqGA2VzxDrGvMRcHovNpzr-yj6mqj"
         ]
         data_list = [
             {
@@ -771,7 +771,7 @@ if menu == "Departemen SSD":
 if menu == "Departemen Medkraf":
     def Departemen_Medkraf():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=15LR_pw_sZqkEs3Nl3NMlEB0Sd_6SxkxX",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
