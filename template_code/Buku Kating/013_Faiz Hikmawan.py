@@ -33,6 +33,7 @@ def streamlit_menu():
             "people-fill",
             "people-fill",
             "people-fill",
+            "people-fill",
         ],
         default_index=0,
         orientation="horizontal",
@@ -324,17 +325,17 @@ elif menu == "Badan Legislatif":
             "https://drive.google.com/uc?export=view&id=1Cic7JXesS0nSp855SaBGZ9GtBENJKAOC",
             "https://drive.google.com/uc?export=view&id=1bL_a8gWYvrND2p3KYrqGeW6sslbV5cvU",
         ]
-       data_list = [
+        data_list = [
             {
                 "nama": "Ridho Benedictus Togi Manik",
                 "nim": "123450060",
                 "umur": "20",
-                "asal":"Kota Manchester",
+                "asal": "Kota Manchester",
                 "alamat": "GH",
                 "hobbi": "Wawancara",
                 "sosmed": "@iamridhomanik",
                 "kesan": "...",  
-                "pesan":"..."# 1
+                "pesan": "..."
             },
             {
                 "nama": "Juesi Apridelia Saragih",
@@ -345,7 +346,7 @@ elif menu == "Badan Legislatif":
                 "hobbi": "Dengerin lagu semusim dari marsel",
                 "sosmed": "@j__eesie",
                 "kesan": "...",  
-                "pesan":"..."# 1
+                "pesan": "..."
             },
             {
                 "nama": "Dharu Cahyoaji Sasongko",
@@ -356,7 +357,7 @@ elif menu == "Badan Legislatif":
                 "hobbi": "Ngidupin api baleg di tiktok",
                 "sosmed": "@exvoltas",
                 "kesan": "...",  
-                "pesan":"..."# 1
+                "pesan": "..."
             },
             {
                 "nama": "Gh. Mikael Niko Antoni Setiadi",
@@ -367,7 +368,7 @@ elif menu == "Badan Legislatif":
                 "hobbi": "COD Musang",
                 "sosmed": "@me._kael",
                 "kesan": "...",  
-                "pesan":"..."# 1
+                "pesan": "..."
             },
             {
                 "nama": "Siti Sarifah Sumamah",
@@ -378,7 +379,7 @@ elif menu == "Badan Legislatif":
                 "hobbi": "Mancing",
                 "sosmed": "@syt.rifa",
                 "kesan": "...",  
-                "pesan":"..."# 1
+                "pesan": "..."
             },
             {
                 "nama": "Givaro Ananta",
@@ -389,7 +390,7 @@ elif menu == "Badan Legislatif":
                 "hobbi": "Minum Kopi",
                 "sosmed": "@givarooo",
                 "kesan": "...",  
-                "pesan":"..."# 1
+                "pesan": "..."
             },
             {
                 "nama": "Afghanis Nursholehatunnisa",
@@ -400,7 +401,7 @@ elif menu == "Badan Legislatif":
                 "hobbi": "Ngoding",
                 "sosmed": "@afghanisnt_",
                 "kesan": "...",  
-                "pesan":"..."# 1
+                "pesan": "..."
             },
             {
                 "nama": "Hani Qurrota Aini",
@@ -411,7 +412,7 @@ elif menu == "Badan Legislatif":
                 "hobbi": "Baca AU",
                 "sosmed": "@haniquratuain_",
                 "kesan": "...",  
-                "pesan":"..."# 1
+                "pesan": "..."
             },
             {
                 "nama": "Jeremia Halim",
@@ -422,7 +423,7 @@ elif menu == "Badan Legislatif":
                 "hobbi": "Nyanyi, olahraga",
                 "sosmed": "@jeremia_hm",
                 "kesan": "...",  
-                "pesan":"..."# 1
+                "pesan": "..."
             },
             {
                 "nama": "Monica Patricia Tanjung",
@@ -433,7 +434,7 @@ elif menu == "Badan Legislatif":
                 "hobbi": "Lari",
                 "sosmed": "@monica_tjg",
                 "kesan": "...",  
-                "pesan":"..."# 1
+                "pesan": "..."
             },
             {
                 "nama": "Jona Timothy Ogatse Panjaitan",
@@ -444,7 +445,7 @@ elif menu == "Badan Legislatif":
                 "hobbi": "Gym sama Koleksi figure, nafas manual",
                 "sosmed": "@nagatseee",
                 "kesan": "...",  
-                "pesan":"..."# 1
+                "pesan": "..."
             },
             {
                 "nama": "Sekar Dini Widya Putri",
@@ -455,7 +456,7 @@ elif menu == "Badan Legislatif":
                 "hobbi": "Jajan sama nisa, putri, suci",
                 "sosmed": "@sekardnwp",
                 "kesan": "...",  
-                "pesan":"..."# 1
+                "pesan": "..."
             },
             {
                 "nama": "Wan Nashwa Alhasni Yuska",
@@ -466,7 +467,7 @@ elif menu == "Badan Legislatif":
                 "hobbi": "Nyapa angin",
                 "sosmed": "@nshaysk",
                 "kesan": "...",  
-                "pesan":"..."# 1
+                "pesan": "..."
             },
         ]
         display_images_with_data(gambar_urls, data_list)
@@ -474,6 +475,51 @@ elif menu == "Badan Legislatif":
 
 elif menu == "Departemen SSD":
     def SSD():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1NyjZ5EWWar10sGRoPz4EohVmLjES0lei",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+        ]
+        data_list = [
+            {
+                "nama": "Kakak A",
+                "nim": "122450000",
+                "umur": "18",
+                "asal": "Bekasi",
+                "alamat": "Gg.sakum",
+                "hobbi": "Mainn Bola, Belajar",
+                "sosmed": "@i",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan": "semangat terus kuliahnya kakak !!!"
+            },
+            {
+                "nama": "Kakak B",
+                "nim": "122450000",
+                "umur": "18",
+                "asal": "Bekasi",
+                "alamat": "Gg.sakum",
+                "hobbi": "Mainn Bola, Belajar",
+                "sosmed": "@i",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan": "semangat terus kuliahnya kakak !!!"
+            },
+            {
+                "nama": "Kakak CCc",
+                "nim": "122450000",
+                "umur": "18",
+                "asal": "Bekasi",
+                "alamat": "Gg.sakum",
+                "hobbi": "Mainn Bola, Belajar",
+                "sosmed": "@i",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan": "semangat terus kuliahnya kakak !!!"
+            },
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    SSD()
+
+elif menu == "Departemen Minbak":
+    def minbak():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1NyjZ5EWWar10sGRoPz4EohVmLjES0lei",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
