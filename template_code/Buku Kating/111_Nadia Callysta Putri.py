@@ -59,6 +59,10 @@ def load_image(url):
         )
         response.raise_for_status()
 
+        st.write("URL:", url)
+        st.write("Content-Type:", response.headers.get("Content-Type"))
+        st.write("Status:", response.status_code)
+
         img = Image.open(BytesIO(response.content))
         img.load()
         img = ImageOps.exif_transpose(img)
