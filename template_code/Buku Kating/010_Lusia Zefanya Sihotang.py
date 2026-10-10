@@ -486,6 +486,17 @@ elif menu == "Departemen Minbak":
                 "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
+                "nama": "Ghiyats Thabularasa Meardhy",
+                "nim": "124450067",
+                "umur": "17 tahun",
+                "asal":"Jati Asih",
+                "alamat": "Korpri",
+                "hobbi": "Nyawit",
+                "sosmed": "@meardhy_ghiyats",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
                 "nama": "Indah Julia Mawar Pratiwi",
                 "nim": "124450055",
                 "umur": "20",

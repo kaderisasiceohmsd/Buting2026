@@ -101,12 +101,12 @@ menu = streamlit_menu()
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1xGPANYdh1va2y4_fUP0WdBnA1xDfB2Xb",
-            "https://drive.google.com/uc?export=view&id=1CZuWR8cgBUVwATr1WrMIpsUfXDrh3N4b",
-            "https://drive.google.com/uc?export=view&id=1rGKMfosDCQltl41Sz2ehjEUQV3LAaw8K",
-            "https://drive.google.com/uc?export=view&id=1A9_GD_ng31Z0eTg1uvrwEUQFq-K-b4dL",
-            "https://drive.google.com/uc?export=view&id=1fTovPjdfQCSGBXSg_viryFMm8yWEVGvc",
-            "https://drive.google.com/uc?export=view&id=1bDcokqXsfus5IqecUG12RU9PS4ISZn4F",
+            "https://drive.google.com/uc?export=1z-9R-TWHSXeOUNKdDyWvIZVkur2QQLIo",
+            "https://drive.google.com/uc?export=1gNeqpCK5iwwT4W3MONVk-SG_aCy_Pb_N",
+            "https://drive.google.com/uc?export=1PEspklJKSdYAwIBwwPu_dOE1z-G6kmKJ",
+            "https://drive.google.com/uc?export=1er7nIAMXGdKagngyWjh6JOCAmD_A3z0-",
+            "https://drive.google.com/uc?export=1XVBX82MB4QACh8LE2gopBt4D_jILJbHx",
+            "https://drive.google.com/uc?export=1yTQXcTH83raL-W2XrWy0rk1pWtkvPfnN",
         ]
         data_list = [
             {
@@ -117,8 +117,8 @@ if menu == "Kesekjenan":
                 "alamat": "Kesektariatan HMSD",
                 "hobbi": "Push IMO",
                 "sosmed": "@jars_mrp",
-                "kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
+                "kesan": "Bang Fajar orangnya keren dan menginspirasi.",  
+                "pesan":"Semoga dilancarkan perkulihannya dan bisa lulus tepat waktu"# 1
             },
             {
                 "nama": "Muhammmad Aqil Ramadhan",
@@ -128,7 +128,7 @@ if menu == "Kesekjenan":
                 "alamat": "Gg.sakum",
                 "hobbi": "Dzikie",
                 "sosmed": "@muhammadaqil1111",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "kesan": "Bang Aqil",  
                 "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
@@ -139,8 +139,8 @@ if menu == "Kesekjenan":
                 "alamat": "Airan",
                 "hobbi": "Membaca",
                 "sosmed": "@eeffiidefi",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Kirain bang aqil orangnya selalu serius ternyata banyak bercandanya juga",  
+                "pesan":"hahahahahah"# 1
             },
             {
                 "nama": "Qois Olifio",
