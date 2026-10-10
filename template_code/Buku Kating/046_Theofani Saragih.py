@@ -634,8 +634,8 @@ if menu == "Departemen SSD":
 
 
 # Minat dan Bakat
-if menu == "Departemen Minat dan Bakat":
-    def minbak():
+if menu == "Departemen Minbak":
+    def Departemen_Minbak():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1NyJ_4DBVum_5PPU2FMtrgDXzxO4rQd5p",
             "https://drive.google.com/uc?export=view&id=1nrpTGqeKfrYsfdpC_HYIbLMjB0h8sbf-",
@@ -822,4 +822,4 @@ if menu == "Departemen Minat dan Bakat":
 		    }
 		]
         display_images_with_data(gambar_urls, data_list)
-    minbak()
+    Departemen_Minbak()
