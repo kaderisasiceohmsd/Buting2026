@@ -21,8 +21,10 @@ def streamlit_menu():
             "Departemen Internal",
             "Departemen SSD",
             "Departemen Medkraf",
+            "Departemen Minbak",
         ],
         icons=[
+            "people-fill",
             "people-fill",
             "people-fill",
             "people-fill",
@@ -96,8 +98,8 @@ def display_images_with_data(gambar_urls, data_list):
 menu = streamlit_menu()
 
 # BAGIAN SINI YANG HANYA BOLEH DIUABAH
-if menu == "Kesekjenan":
-    def kesekjenan():
+if menu == "Internal":
+    def Internal():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
@@ -105,40 +107,182 @@ if menu == "Kesekjenan":
         ]
         data_list = [
             {
-                "nama": "Kakak ester",
-                "nim": "122450000",
-                "umur": "18",
-                "asal":"Bekasi",
-                "alamat": "Gg.sakum",
-                "hobbi": "Mainn Bola, Belajar",
-                "sosmed": "@i",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "nama": "Haikal Fransisko Simbolon",
+                "nim": "123450106",
+                "umur": "20",
+                "asal": "Jambi",
+                "alamat": "Way Halim",
+                "hobbi": "Ngeledek orang",
+                "sosmed": "@haikalsbln",
+                "kesan": " ",  
+                "pesan": " "# 1
             },
             {
-                "nama": "Kakak B",
-                "nim": "122450000",
-                "umur": "18",
-                "asal":"Bekasi",
-                "alamat": "Gg.sakum",
-                "hobbi": "Mainn Bola, Belajar",
-                "sosmed": "@i",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "nama": "Kharisma Mustika Sari",
+                "nim": "123450034",
+                "umur": "21",
+                "asal": "Way Kanan",
+                "alamat": "Untung Senopati",
+                "hobbi": "Suka nolong orang",
+                "sosmed": "@rismaa.mustika_",
+                "kesan": " ",  
+                "pesan": " "# 1
             },
             {
-                "nama": "Kakak CCc",
-                "nim": "122450000",
+                "nama": "Hanna Grecia Sinaga",
+                "nim": "123450038",
+                "umur": "21",
+                "asal": "Sumatra Utara, Kisaran City",
+                "alamat": "Sukarame",
+                "hobbi": "Ngabarin orang tua",
+                "sosmed": "@hanna_g_sinaga",
+                "kesan": " ",  
+                "pesan": " "# 1
+            },
+            {
+                "nama": "A Farhan Ghani",
+                "nim": "123450121",
+                "umur": "21",
+                "asal": "Kemiling",
+                "alamat": "Kemiling",
+                "hobbi": "Balap Liar",
+                "sosmed": "@farhanghani",
+                "kesan": " ",  
+                "pesan": " "# 1
+            },
+            {
+                "nama": "Aisyah Khairun Nisa",
+                "nim": "124450096",
                 "umur": "18",
-                "asal":"Bekasi",
-                "alamat": "Gg.sakum",
-                "hobbi": "Mainn Bola, Belajar",
-                "sosmed": "@i",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "asal": "Riau",
+                "alamat": "Belwis",
+                "hobbi": "Ngeliatin orang",
+                "sosmed": "@aisyahkhair._",
+                "kesan": " ",  
+                "pesan": " "# 1
+            },
+            {
+                "nama": "Cerine Sihotang",
+                "nim": "124450049",
+                "umur": "19",
+                "asal": "Medan",
+                "alamat": "Belwis",
+                "hobbi": "Balap liar",
+                "sosmed": "@cerine_ipynb",
+                "kesan": " ",  
+                "pesan": " "# 1
+            },
+            {
+                "nama": "Jaya Saputra Tamba",
+                "nim": "124450094",
+                "umur": "19",
+                "asal": "Medan",
+                "alamat": "Pemda",
+                "hobbi": "Berkebun dan membuat lagu",
+                "sosmed": "@jay.saputratmb",
+                "kesan": " ",  
+                "pesan": " "# 1
+            },
+            {
+                "nama": "Najla Nur Syifa",
+                "nim": "124450051",
+                "umur": "20",
+                "asal": "Aceh",
+                "alamat": "Belwis",
+                "hobbi": "Gangguin cika",
+                "sosmed": "@njlanursyifa",
+                "kesan": " ",  
+                "pesan": " "# 1
+            },
+            {
+                "nama": "Rozaq Ramdani",
+                "nim": "124450100",
+                "umur": "18",
+                "asal": "Lampung Selatan",
+                "alamat": "Korpri Raya",
+                "hobbi": "Isengin harvin di kelas",
+                "sosmed": "@rozaqramdani__",
+                "kesan": " ",  
+                "pesan": " "# 1
+            },
+            {
+                "nama": "Teresa Christiani Purba",
+                "nim": "124450046",
+                "umur": "19",
+                "asal": "Riau",
+                "alamat": "Belwis",
+                "hobbi": "Masak",
+                "sosmed": "@christiani8872",
+                "kesan": " ",  
+                "pesan": " "# 1
+            },
+            {
+                "nama": "Muhammad Hanif Dzaky",
+                "nim": "124450064",
+                "umur": "21",
+                "asal": "Padang Sumbar",
+                "alamat": "Perumnas Way Kandis",
+                "hobbi": "Ngedistro",
+                "sosmed": "@hnfdzky_",
+                "kesan": " ",  
+                "pesan": " "# 1
+            },
+            {
+                "nama": "Audina Fitria ",
+                "nim": "124450038",
+                "umur": "20",
+                "asal": "Sumatera Barat",
+                "alamat": "Sukarame",
+                "hobbi": "Main ke air terjun",
+                "sosmed": "@audinaf_03",
+                "kesan": " ",  
+                "pesan": " "# 1
+            },
+            {
+                "nama": "Cika Adelia Br Marbun",
+                "nim": "124450107",
+                "umur": "20",
+                "asal": "Riau",
+                "alamat": "Belwis",
+                "hobbi": "Terlambat ",
+                "sosmed": "@cikamrbn",
+                "kesan": " ",  
+                "pesan": " "# 1
+            },
+            {
+                "nama": "Gustin Haleluya Tampubolon",
+                "nim": "124450068",
+                "umur": "21",
+                "asal": "Toba Sumatera Utara",
+                "alamat": "Airan",
+                "hobbi": "Nonton",
+                "sosmed": "@gustinhaleluya",
+                "kesan": " ",  
+                "pesan": " "# 1
+            },
+            {
+                "nama": "Muhammad Harvinsyah",
+                "nim": "124450128",
+                "umur": "20",
+                "asal": "Sumatera Selatan",
+                "alamat": "Belwis",
+                "hobbi": "Nembak Burung",
+                "sosmed": "@muhvinz_",
+                "kesan": " ",  
+                "pesan": " "# 1
+            },
+            {
+                "nama": "Rafa Sabina Fahimah",
+                "nim": "124450036",
+                "umur": "20",
+                "asal": "Natar",
+                "alamat": "Natar",
+                "hobbi": "Cari duit",
+                "sosmed": "@snasaa._",
+                "kesan": " ",  
+                "pesan": " "# 1
             },
         ]
         display_images_with_data(gambar_urls, data_list)
-    kesekjenan()
+    Internal()
 
-# Tambahkan menu lainnya sesuai kebutuhan
