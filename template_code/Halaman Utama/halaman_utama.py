@@ -102,24 +102,19 @@ if menu == "Home":
             "<h1 class='centered-title'>Deskripsi Kelompok</h1>", unsafe_allow_html=True
         )
         st.markdown(
-            """<div style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                    laborum.</div>""",
+            """<div style="text-align: justify;">Pandas, "A"nya apa? ASIK. Kelompok 6 di Kaderisasi CEO HMSD Adyatama ITERA.
+            Berisikan berbagai macam orang unik yang berasal dari berbagai daerah. Ada Minang, ada Jawa, ada Lampung, ada Batak,
+            namun semua perbedaan itu yang membuat kelompok ini unik, tapi seluruhnya juga punya tujuan yang sama yaitu menjadi 
+            lebih baik melalui Kaderisasi ini.</div>""",
             unsafe_allow_html=True,
         )
         st.write(""" """)
-        foto_kelompok = "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"
+        foto_kelompok = "https://drive.google.com/uc?export=view&id=15_GjrUPEJAT5kQh4hWcxLTr7cID059TL"
         layout(foto_kelompok)
         st.markdown(
-            """<div style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                    laborum.</div>""",
+            """<div style="text-align: justify;">Kelompok ini sebenarnya tidak sepenuhnya saling tidak mengenal dari awal.
+            Beberapa orang sudah menjadi teman dekat dari awal, namun tidak menutup untuk menjadi lebih terbuka,
+            di kelompok ini kami berubah menjadi lebih baik dan terus berkembang.</div>""",
             unsafe_allow_html=True,
         )
         st.write(""" """)
