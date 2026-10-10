@@ -14,7 +14,7 @@ def streamlit_menu():
         options=[
             "Kesekjenan",
             "Baleg",
-            "Senator",
+            "Bason",
             "Departemen PSDA",
             "Departemen MIKFES",
             "Departemen Eksternal",
