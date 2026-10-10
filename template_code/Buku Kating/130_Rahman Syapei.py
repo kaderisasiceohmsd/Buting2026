@@ -494,7 +494,7 @@ elif menu == "Departemen Minbak":
                 "hobbi": "Main",
                 "sosmed": "@sekardnwp",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "pesan":"semangat terus kuliahnya kakak !!!!!!"# 1
             },
             {
                 "nama": "Jacinda Kesya Alvara",
