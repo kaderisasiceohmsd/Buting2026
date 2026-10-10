@@ -140,6 +140,7 @@ if menu == "Kesekjenan":
         ]
         display_images_with_data(gambar_urls, data_list)
     kesekjenan()
+    
 if menu == "Internal":
     def Internal():
         gambar_urls = [
