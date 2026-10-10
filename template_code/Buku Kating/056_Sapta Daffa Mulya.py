@@ -382,7 +382,7 @@ if menu == "Departemen Internal":
     departemen_internal()
 
 # MINBAK
-if menu == "Departemen Minbak":
+if menu == "Departemen MINBAK":
     def departemen_minbak():
         gambar_urls = [
                 "https://drive.google.com/thumbnail?id=1_gOUHD30VcRsD-QCP2KXLi4xpQDbJ5dD&sz=w1000",
@@ -572,7 +572,7 @@ if menu == "Departemen Minbak":
         display_images_with_data(gambar_urls, data_list)
     departemen_minbak()
 
-if menu == "Departemen Mikfes":
+if menu == "Departemen MIKFES":
     def departemen_mikfes():
         gambar_urls = [
                 "https://drive.google.com/thumbnail?id=1HMUeNF_3vQ5_SKFRdJ4dipcI7Rj8DdfR&sz=w1000",
@@ -826,7 +826,7 @@ if menu == "Departemen Mikfes":
         display_images_with_data(gambar_urls, data_list)
     departemen_mikfes()
 
-if menu == "Departemen Medkraf":
+if menu == "Departemen MEDKRAF":
     def departemen_medkraf():
         gambar_urls = [
                 "https://drive.google.com/thumbnail?id=1UnP7znBx2E13rEjHOTvNVtnUW00b9yxW&sz=w1000",
