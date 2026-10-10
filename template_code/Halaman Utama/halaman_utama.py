@@ -104,9 +104,9 @@ if menu == "Home":
         st.markdown(
             """<div style="text-align: justify;">Satu tim dengan satu visi: Pantang pulang sebelum selesai, pantang menyerah sebelum optimal! 
             Kami anggota Greedy menganut sifat greedy yaitu selalu haus akan proses belajar dan eksplorasi. Di setiap langkah, kami selalu cari cara terbaik 
-            untuk berkembang bersama!
-             
-            Greedy, Grab the best, Reach  the TOP!" </div>""",
+            untuk berkembang bersama! 
+            
+            Greedy, Grab the best, Reach  the TOP!",
             unsafe_allow_html=True,
         )
         st.write(""" """)
