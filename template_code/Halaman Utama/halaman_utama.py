@@ -99,15 +99,12 @@ if menu == "Home":
             unsafe_allow_html=True,
         )
         st.markdown(
-            "<h1 class='centered-title'>Deskripsi Kelompok</h1>", unsafe_allow_html=True
+            "<h1 class='centered-title'>Kami Jordan!</h1>", unsafe_allow_html=True
         )
         st.markdown(
-            """<div style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                    laborum.</div>""",
+            """<div style="text-align: justify;">Nama kelompok kami terinspirasi dari Michael I. Jordan, salah satu tokoh pelopor paling berpengaruh di dunia Data Science dan Machine Learning.
+Seperti halnya Jordan Network—arsitektur Recurrent Neural Network yang belajar dari feedback masa lalu untuk memberikan hasil terbaik di masa depan—kelompok kami berdedikasi untuk terus belajar, beradaptasi, dan mengolah data menjadi wawasan (insight) yang bernilai.
+Kami terdiri dari 13 orang yang siap mengeksplorasi dunia data, analitik, dan kecerdasan buatan.</div>""",
             unsafe_allow_html=True,
         )
         st.write(""" """)
