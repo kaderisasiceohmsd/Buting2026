@@ -1,6 +1,7 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 import requests
+import re
 from PIL import Image, ImageOps
 from io import BytesIO
 
@@ -51,50 +52,92 @@ def streamlit_menu():
     )
     return selected
 
-@st.cache_data
-def load_image(url):
-    response = requests.get(url)
-    if response.status_code != 200:
-        st.error(
-            f"Failed to fetch image from {url}, status code: {response.status_code}"
-        )
-        return None
-    try:
-        img = Image.open(BytesIO(response.content))
-        img = ImageOps.exif_transpose(img)
-        img = img.resize((300, 400))
-        return img
-    except Exception as e:
-        st.error(f"Error loading image: {e}")
-        return None
-    
-@st.cache_data
-def display_images_with_data(gambar_urls, data_list):
-    images = []
-    for i, url in enumerate(gambar_urls):
-        with st.spinner(f"Memuat gambar {i + 1} dari {len(gambar_urls)}"):
-            img = load_image(url)
-            if img is not None:
-                images.append(img)
+def get_direct_image_url(url):
+    """Mengubah link berbagi Google Drive menjadi URL unduhan langsung."""
+    match = re.search(r"/file/d/([^/?]+)", url)
+    if match:
+        file_id = match.group(1)
+        return f"https://drive.google.com/uc?export=download&id={file_id}"
 
-    for i, img in enumerate(images):
-        # Menggunakan Streamlit untuk menampilkan gambar di tengah kolom
+    match = re.search(r"[?&]id=([^&]+)", url)
+    if "drive.google.com" in url and match:
+        file_id = match.group(1)
+        return f"https://drive.google.com/uc?export=download&id={file_id}"
+
+    return url
+
+
+@st.cache_data(show_spinner=False)
+def load_image(url):
+    """Mengambil dan memvalidasi gambar sebelum ditampilkan."""
+    direct_url = get_direct_image_url(url)
+
+    try:
+        response = requests.get(
+            direct_url,
+            timeout=20,
+            allow_redirects=True,
+            headers={"User-Agent": "Mozilla/5.0"}
+        )
+        response.raise_for_status()
+
+        # Pastikan respons benar-benar berisi data gambar, bukan halaman HTML.
+        content_type = response.headers.get("Content-Type", "").lower()
+        if "image" not in content_type:
+            try:
+                image = Image.open(BytesIO(response.content))
+                image.verify()
+            except Exception:
+                return None
+
+        image = Image.open(BytesIO(response.content))
+        image = ImageOps.exif_transpose(image).convert("RGB")
+        image.thumbnail((600, 800))
+        return image
+
+    except Exception:
+        return None
+
+
+def display_images_with_data(gambar_urls, data_list):
+    """Menampilkan setiap data orang dengan gambar yang sesuai."""
+    jumlah = max(len(gambar_urls), len(data_list))
+
+    for i in range(jumlah):
         col1, col2, col3 = st.columns([1, 2, 1])
+
         with col2:
-            st.image(img, use_container_width=True)
+            if i < len(gambar_urls):
+                with st.spinner(f"Memuat gambar {i + 1} dari {len(gambar_urls)}"):
+                    img = load_image(gambar_urls[i])
+
+                if img is not None:
+                    st.image(img, use_container_width=True)
+                else:
+                    st.info(
+                        f"Gambar ke-{i + 1} tidak dapat dimuat. "
+                        "Pastikan link benar dan akses Google Drive diatur "
+                        "ke 'Siapa saja yang memiliki link'."
+                    )
+            else:
+                st.info("URL gambar belum ditambahkan.")
 
         if i < len(data_list):
-            st.write(f"Nama: {data_list[i]['nama']}")
-            st.write(f"NIM: {data_list[i]['nim']}")
-            st.write(f"Umur: {data_list[i]['umur']}")
-            st.write(f"Asal: {data_list[i]['asal']}")
-            st.write(f"Alamat: {data_list[i]['alamat']}")
-            st.write(f"Hobbi: {data_list[i]['hobbi']}")
-            st.write(f"Sosial Media: {data_list[i]['sosmed']}")
-            st.write(f"Kesan: {data_list[i]['kesan']}")
-            st.write(f"Pesan: {data_list[i]['pesan']}")
-            st.write("  ")
-    st.write("Semua gambar telah dimuat!")
+            orang = data_list[i]
+            st.write(f"Nama: {orang.get('nama', '-')}")
+            st.write(f"NIM: {orang.get('nim', '-')}")
+            st.write(f"Umur: {orang.get('umur', '-')}")
+            st.write(f"Asal: {orang.get('asal', '-')}")
+            st.write(f"Alamat: {orang.get('alamat', '-')}")
+            st.write(f"Hobi: {orang.get('hobbi', '-')}")
+            st.write(f"Sosial Media: {orang.get('sosmed', '-')}")
+            st.write(f"Kesan: {orang.get('kesan', '-')}")
+            st.write(f"Pesan: {orang.get('pesan', '-')}")
+            st.divider()
+
+    st.success("Selesai memproses daftar anggota.")
+
+
 menu = streamlit_menu()
 
 # BAGIAN SINI YANG HANYA BOLEH DIUABAH
