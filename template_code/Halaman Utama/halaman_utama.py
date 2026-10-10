@@ -99,10 +99,13 @@ if menu == "Home":
             unsafe_allow_html=True,
         )
         st.markdown(
-            "<h1 class='centered-title'>Deskripsi Kelompok</h1>", unsafe_allow_html=True
+            "<h1 class='centered-title'>Kami Bayes!</h1>", unsafe_allow_html=True
         )
         st.markdown(
+          thomas
             """<div style="text-align: justify;">GA BANYAK GAYA TAPI BIKIN HERAN, BAYESIAN.</div>""",
+
+          Bayesian
             unsafe_allow_html=True,
         )
         st.write(""" """)
