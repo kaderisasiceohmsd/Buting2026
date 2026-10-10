@@ -149,7 +149,7 @@ if menu == "Kesekjenan":
     "https://drive.google.com/uc?export=view&id=1arEBvurK397f3EPs4YmXihuHpY_0Ngnk",
     "https://drive.google.com/file/d/1Iv7PgxUJ9qVu-8EuqH73CJZ0ZATL3irL",
     "https://drive.google.com/uc?export=view&id=1Iwen8hJLSVc5_-C7sEAhlDoByhm82chK"
-    "https://drive.google.com/file/d/16feqaSynGDSLmG6TwVb8uUt8V9ylEypi"
+    "https://drive.google.com/file/d/1Iwen8hJLSVc5_-C7sEAhlDoByhm82chK"
 ]
 
         data_list = [
