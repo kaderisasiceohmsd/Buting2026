@@ -8,7 +8,7 @@ Homepage = st.Page("Halaman Utama/halaman_utama.py",
     title="Nama_Kelompok",
     default=True)
 
-Mahasiswa1 = st.Page(
+Mahasiswa_n = st.Page(
     "Buku Kating/049_Muhammad Haikal Farros.py",
     title="049 - Muhammad Haikal Farros",
     icon=":material/person:",
