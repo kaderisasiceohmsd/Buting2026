@@ -224,7 +224,7 @@ if menu == "senator":
                 "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
-                "nama": "Aqila Zayyan Salsabil",
+                "nama": "Aqila Zayyan SalsabiL",
                 "nim": "124450014",
                 "umur": "19",
                 "asal": "Lampung Utara",
