@@ -99,13 +99,16 @@ menu = streamlit_menu()
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1YVYo_zYWkUh07Tk9pd1F6rzKw3O9c3xC",
-            "https://drive.google.com/uc?export=view&id=1YVYo_zYWkUh07Tk9pd1F6rzKw3O9c3xC",
-            "https://drive.google.com/uc?export=view&id=1YVYo_zYWkUh07Tk9pd1F6rzKw3O9c3xC",
+            "https://drive.google.com/uc?export=view&id=1RPRXY1_sjMuAcDhD0A46aDYlfkQ2CnXW",
+            "https://drive.google.com/uc?export=view&id=1jdVwET2zp7CHeChA-vVKx9gtzMfUdivU",
+            "https://drive.google.com/uc?export=1fuD4xooOTLVZdFMz7hiojychS2CrjbGQ",
+            "https://drive.google.com/uc?export=view&id=1xi8ilNCyKhE5IACbKCcjI2XC7mxcGpjU",
+            "https://drive.google.com/uc?export=view&id=1wiWYI_oP_P6Ih95sQ1ANvnG9lfnLA448",
+            "https://drive.google.com/uc?export=view&id=1-6X5KDbE1W1WC8jKiNFuWCByUKE_Il48",
         ]
         data_list = [
             {
-                "nama": "Kakak Andra",
+                "nama": "Ginda Fajar Riadi Marpaung",
                 "nim": "122450000",
                 "umur": "18",
                 "asal":"Bekasi",
@@ -117,6 +120,39 @@ if menu == "Kesekjenan":
             },
             {
                 "nama": "Kakak B",
+                "nim": "122450000",
+                "umur": "18",
+                "asal":"Bekasi",
+                "alamat": "Gg.sakum",
+                "hobbi": "Mainn Bola, Belajar",
+                "sosmed": "@i",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Kakak CCc",
+                "nim": "122450000",
+                "umur": "18",
+                "asal":"Bekasi",
+                "alamat": "Gg.sakum",
+                "hobbi": "Mainn Bola, Belajar",
+                "sosmed": "@i",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Kakak CCc",
+                "nim": "122450000",
+                "umur": "18",
+                "asal":"Bekasi",
+                "alamat": "Gg.sakum",
+                "hobbi": "Mainn Bola, Belajar",
+                "sosmed": "@i",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Kakak CCc",
                 "nim": "122450000",
                 "umur": "18",
                 "asal":"Bekasi",
