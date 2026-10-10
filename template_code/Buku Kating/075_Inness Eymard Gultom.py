@@ -315,7 +315,7 @@ elif menu == "Departemen Medkraf":
         "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
         "https://drive.google.com/uc?export=view&id=1TXczhSAV1e0DFdQ7rBtQ6XwLtOHVaX5M",
         "https://drive.google.com/uc?export=view&id=1jqpe5nWNyJ5HwsJ4ihHdoizx8bkcwEI0",
-        "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_,
+        "https://drive.google.com/uc?export=view&id=1UKkwqBsLFl62XaN69frWNrLdqYu9OY3p",
         "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"
 
                   ]
