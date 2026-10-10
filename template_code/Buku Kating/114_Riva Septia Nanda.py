@@ -218,8 +218,8 @@ if menu == "Departemen Internal":
         display_images_with_data(gambar_urls, data_list)
     departemen_internal()
 
-if menu == "Departemen Internal":
-    def departemen_internal():
+if menu == "Departemen Eksternal":
+    def departemen_eksternal():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1FYOZsInYqTbmMiEyrNXOvtvtxSjwQp8I",
             "https://drive.google.com/uc?export=view&id=1Gj0tdeq8eMO57g27tTl2IYcTG2TgmTFT",
@@ -244,7 +244,9 @@ if menu == "Departemen Internal":
             "https://drive.google.com/uc?export=view&id=1oB8HBDZj57PyD6gRBjHYgszej1g3oR-E", 
             "https://drive.google.com/uc?export=view&id=1gkSBvxEVWhMe90eIYxqR0ShhzjyyqJq0",       
         ]
-        data_list = ambil_data_sps("Departemen Internal")
+        data_list = ambil_data_sps("Departemen Eksternal")
 
         display_images_with_data(gambar_urls, data_list)
-    departemen_internal()
+    departemen_eksternal()
+
+    
