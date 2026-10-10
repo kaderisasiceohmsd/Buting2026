@@ -187,6 +187,7 @@ if menu == "Baleg":
             "https://drive.google.com/uc?export=view&id=1K3sEk-WQWh1kF9zRNe4ajtM_QR37NRiT",
             "https://drive.google.com/uc?export=view&id=1709lIORxWXXRmt_r0Bk0GcYqI55IYWgy",
         ]
+        
         data_list = [
             {
                 "nama": "Ginda Fajar Riadi marpaung",
