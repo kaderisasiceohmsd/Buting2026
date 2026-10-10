@@ -4,7 +4,7 @@ import requests
 from PIL import Image, ImageOps
 from io import BytesIO
 
-st.markdown("""<style>.centered-title {text-align: center;}</style>""",unsafe_allow_html=True)
+st.markdown("""<style>.centered-title {text-align: center;}</style>""", unsafe_allow_html=True)
 st.markdown("<h1 class='centered-title'>BUKU KATING</h1>", unsafe_allow_html=True)
 
 # bagian sini jangan diubah
@@ -82,23 +82,28 @@ def display_images_with_data(gambar_urls, data_list):
             st.image(img, use_container_width=True)
 
         if i < len(data_list):
-            st.write(f"Nama: {data_list[i]['nama']}")
-            st.write(f"NIM: {data_list[i]['nim']}")
-            st.write(f"Umur: {data_list[i]['umur']}")
-            st.write(f"Asal: {data_list[i]['asal']}")
-            st.write(f"Alamat: {data_list[i]['alamat']}")
-            st.write(f"Hobbi: {data_list[i]['hobbi']}")
-            st.write(f"Sosial Media: {data_list[i]['sosmed']}")
-            st.write(f"Kesan: {data_list[i]['kesan']}")
-            st.write(f"Pesan: {data_list[i]['pesan']}")
+            st.write(f"Nama: {data_list[i]['Nama']}")
+            st.write(f"Jabatan: {data_list[i]['Jabatan']}")
+            st.write(f"NIM: {data_list[i]['Nim']}")
+            st.write(f"Umur: {data_list[i]['Umur']}")
+            st.write(f"Asal: {data_list[i]['Asal']}")
+            st.write(f"Alamat: {data_list[i]['Alamat']}")
+            st.write(f"Hobbi: {data_list[i]['Hobbi']}")
+            st.write(f"Sosial Media: {data_list[i]['Sosmed']}")
+            st.write(f"Kesan: {data_list[i]['Kesan']}")
+            st.write(f"Pesan: {data_list[i]['Pesan']}")
             st.write("  ")
     st.write("Semua gambar telah dimuat!")
+
 menu = streamlit_menu()
 
-# BAGIAN SINI YANG HANYA BOLEH DIUABAH
+# BAGIAN SINI YANG HANYA BOLEH DIUBAH
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
@@ -152,7 +157,7 @@ if menu == "Kesekjenan":
                 "Kesan": "Abangnya keren, kalem, lucu",  
                 "Pesan":"Semangat bikin bikin suratnyaa bang, semoga jadi mudah bikin skripsinya"
             },
-             {
+            {
                 "Nama": "Hafsa Fazila Arradhi",
                 "Jabatan" : "Bendahara 1",
                 "Nim": "123450079",
@@ -164,7 +169,7 @@ if menu == "Kesekjenan":
                 "Kesan": "Kakaknya cantik, baik, kalem, asik juga",  
                 "Pesan":"Semangat terus kak, sehat selalu"
             },
-             {
+            {
                 "Nama": "Luthfia Laila Ramadhani",
                 "Jabatan" : "Bendahara 2",
                 "Nim": "123450004",
@@ -175,7 +180,7 @@ if menu == "Kesekjenan":
                 "Sosmed": "@luthfiaarmdhni ",
                 "Kesan": "Kakaknya lucu, baik, keren, asik juga",  
                 "Pesan":"Semoga dimudahkan selaluya kak segala urusannya"
-            },                                  
+            },                                                  
         ]
         display_images_with_data(gambar_urls, data_list)
     kesekjenan()
