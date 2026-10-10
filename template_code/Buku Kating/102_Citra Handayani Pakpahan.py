@@ -1,0 +1,186 @@
+import streamlit as st
+from streamlit_option_menu import option_menu
+import requests
+from PIL import Image, ImageOps
+from io import BytesIO
+
+st.markdown("""<style>.centered-title {text-align: center;}</style>""",unsafe_allow_html=True)
+st.markdown("<h1 class='centered-title'>BUKU KATING</h1>", unsafe_allow_html=True)
+
+# bagian sini jangan diubah
+def streamlit_menu():
+    selected = option_menu(
+        menu_title=None,
+        options=[
+            "Kesekjenan",
+            "Baleg",
+            "Senator",
+            "Departemen PSDA",
+            "Departemen MIKFES",
+            "Departemen Eksternal",
+            "Departemen Internal",
+            "Departemen SSD",
+            "Departemen Medkraf",
+        ],
+        icons=[
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+        ],
+        default_index=0,
+        orientation="horizontal",
+        styles={
+            "container": {"padding": "0!important", "background-color": "#fafafa"},
+            "icon": {"color": "black", "font-size": "19px"},
+            "nav-link": {
+                "font-size": "15px",
+                "text-align": "left",
+                "margin": "0px",
+                "--hover-color": "#eee",
+            },
+            "nav-link-selected": {"background-color": "#3FBAD8"},
+        },
+    )
+    return selected
+
+@st.cache_data
+def load_image(url):
+    response = requests.get(url)
+    if response.status_code != 200:
+        st.error(
+            f"Failed to fetch image from {url}, status code: {response.status_code}"
+        )
+        return None
+    try:
+        img = Image.open(BytesIO(response.content))
+        img = ImageOps.exif_transpose(img)
+        img = img.resize((300, 400))
+        return img
+    except Exception as e:
+        st.error(f"Error loading image: {e}")
+        return None
+    
+@st.cache_data
+def display_images_with_data(gambar_urls, data_list):
+    images = []
+    for i, url in enumerate(gambar_urls):
+        with st.spinner(f"Memuat gambar {i + 1} dari {len(gambar_urls)}"):
+            img = load_image(url)
+            if img is not None:
+                images.append(img)
+
+    for i, img in enumerate(images):
+        # Menggunakan Streamlit untuk menampilkan gambar di tengah kolom
+        col1, col2, col3 = st.columns([1, 2, 1])
+        with col2:
+            st.image(img, use_container_width=True)
+
+        if i < len(data_list):
+            st.write(f"Nama: {data_list[i]['nama']}")
+            st.write(f"NIM: {data_list[i]['nim']}")
+            st.write(f"Umur: {data_list[i]['umur']}")
+            st.write(f"Asal: {data_list[i]['asal']}")
+            st.write(f"Alamat: {data_list[i]['alamat']}")
+            st.write(f"Hobbi: {data_list[i]['hobbi']}")
+            st.write(f"Sosial Media: {data_list[i]['sosmed']}")
+            st.write(f"Kesan: {data_list[i]['kesan']}")
+            st.write(f"Pesan: {data_list[i]['pesan']}")
+            st.write("  ")
+    st.write("Semua gambar telah dimuat!")
+menu = streamlit_menu()
+
+# BAGIAN SINI YANG HANYA BOLEH DIUABAH
+if menu == "Kesekjenan":
+    def kesekjenan():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+        ]
+        data_list = [
+            {
+                "Nama": "Ginda Fajar Riadi Marpaung",
+                "Jabatan" : "Ketua Himpunan",
+                "Nim": "123450103",
+                "Umur": "22",
+                "Asal":"Batam",
+                "Alamat": "Sekretariat HMSD",
+                "Hobbi": "push rank sampe imo",
+                "Sosmed": "@jars_mrp",
+                "Kesan": "Abangnya baik, kalem, asik juga waktu jadi pemateri",  
+                "Pesan":"Semangat terus bang , jangan lupa makan"
+            },
+            {
+                "Nama": "Muhammad Aqil Ramadhan",
+                "Jabatan" : "Sekretaris Jenderal",
+                "Nim": "123450066",
+                "Umur": "22",
+                "Asal":"Riau",
+                "Alamat": "Sekretariat HMSD",
+                "Hobbi": "Zikir",
+                "Sosmed": "@muhammadaqil1111",
+                "Kesan": "Abangnya asik, suka bercanda juga, kalau jadi pemateri mudah dipahami ",  
+                "Pesan":"Semangat terus bang, selalu bang semoga dimudahkan segala urusan"
+            },
+            {
+                "Nama": "Efi Defiyati",
+                "Jabatan" : "Sekretaris 1",
+                "Nim": "123450005",
+                "Umur": "21",
+                "Asal":"Lampung Timur",
+                "Alamat": "Airan",
+                "Hobbi": "Membaca",
+                "Sosmed": "@eeffiidefi",
+                "Kesan": "Kakaknya baik, cantik,  sama kalem juga ",  
+                "Pesan":"Semangat terus dan sehat selalu kak"
+            },
+            {
+                "Nama": "Qois Olifio",
+                "Jabatan" : "Sekretaris 2",
+                "Nim": "123450067",
+                "Umur": "22",
+                "Asal":"Batam",
+                "Alamat": "Kota Baru",
+                "Hobbi": "Mainin Surat",
+                "Sosmed": "@qoisolifio_ ",
+                "Kesan": "Abangnya keren, kalem, dan baik",  
+                "Pesan":"Semangat bikin bikin suratnyaa bang, Jangan lupa makan"
+            },
+             {
+                "Nama": "Hafsa Fazila Arradhi",
+                "Jabatan" : "Bendahara 1",
+                "Nim": "123450079",
+                "Umur": "21",
+                "Asal":"Bandar Lampung",
+                "Alamat": "Bandar Lampung",
+                "Hobbi": "Bertemu Kesekjenan",
+                "Sosmed": "@hafsafadhilaa",
+                "Kesan": "Kakaknya cantik, baik, kalem, asik juga",  
+                "Pesan":"Semangat terus kak, sehat selalu"
+            },
+             {
+                "Nama": "Luthfia Laila Ramadhani",
+                "Jabatan" : "Bendahara 2",
+                "Nim": "123450004",
+                "Umur": "20",
+                "Asal":"Bekasi",
+                "Alamat": "Airan",
+                "Hobbi": "Mintain Duit",
+                "Sosmed": "@luthfiaarmdhni ",
+                "Kesan": "Kakaknya lucu, baik, keren, asik juga",  
+                "Pesan":"Semangat terus kak, semoga dimudahkan selaluya kak segala urusannya"
+            },
+        ]
+        display_images_with_data(gambar_urls, data_list)
+
+if menu == "Kesekjenan":
+    kesekjenan() # Harus memanggil fungsi ini!
+        
+
+        # Tambahkan menu lainnya sesuai kebutuhan
