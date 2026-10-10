@@ -477,16 +477,21 @@ if menu == "Badan Kesenatoran":
 if menu == "Departemen Minbak":
     def minbak():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=.",
-            "https://drive.google.com/uc?export=view&id=.",
-            "https://drive.google.com/uc?export=view&id=.",
-            "https://drive.google.com/uc?export=view&id=.",
-            "https://drive.google.com/uc?export=view&id=.",
-            "https://drive.google.com/uc?export=view&id=.",
-            "https://drive.google.com/uc?export=view&id=.",
-            "https://drive.google.com/uc?export=view&id=.",
-            "https://drive.google.com/uc?export=view&id=.",
-            "https://drive.google.com/uc?export=view&id=.",
+            "https://drive.google.com/uc?export=view&id=1bw-tWsxCkMWthCOEQ4GZSGhGHF6i-lk",
+            "https://drive.google.com/uc?export=view&id=1eIy28QHPHGf9wL5sU8XVzdE_Lc1DcZPN",
+            "https://drive.google.com/uc?export=view&id=1ATX_7PAtWnJnyTnea0qDftzMp2zhvaK9",
+            "https://drive.google.com/uc?export=view&id=1Fhtc4mYImWTeLbt9Cc5HsMdDLN2EIwuH",
+            "https://drive.google.com/uc?export=view&id=1JGNnyDUAhdSr5XmDs3V7x3govOnaXdFc",
+            "https://drive.google.com/uc?export=view&id=1mJEaaQRvuUIJY0i9QBsqQdVcNJykcVVU",
+            "https://drive.google.com/uc?export=view&id=1Fmh7Mb86_8x0fvExc_pWvhyzNOqE0uh5",
+            "https://drive.google.com/uc?export=view&id=1cMqYGgmNO3cnucr0SIx40N6p5Fhu2YDo",
+            "https://drive.google.com/uc?export=view&id=1PZdkbyONKMM4AOeDbvmhQk2Z-nNrT7Au",
+            "https://drive.google.com/uc?export=view&id=1KJcUQNsz45ckAQs2N334ycvLrNJsn3zv",
+			"https://drive.google.com/uc?export=view&id=1ApyHCN4uSIycvHAoNaQgxMM-qpc-4IU",
+            "https://drive.google.com/uc?export=view&id=1UO9qCXDOXlkmcoYDnTSquZtUjibeAswU",
+            "https://drive.google.com/uc?export=view&id=11YJeGGdPFy5jR68xYGKlJi7566ESyZ8E",
+            "https://drive.google.com/uc?export=view&id=19tjruBkU5thskut-URLo97AQc1ydZ8v1",
+            "https://drive.google.com/uc?export=view&id=1PibI1ia-ymJ549PLIZ3ZOUoiw6KjuWqs",
         ]
 		data_list = [
 		    {
