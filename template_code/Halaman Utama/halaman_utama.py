@@ -99,7 +99,7 @@ if menu == "Home":
             unsafe_allow_html=True,
         )
         st.markdown(
-            "<h1 class='centered-title'>Deskripsi Kelompok</h1>", unsafe_allow_html=True
+            "<h1 class='centered-title'>Kami Cosval!</h1>", unsafe_allow_html=True
         )
         st.markdown(
             """<div style="text-align: justify;">testing buting cosvalflow ganis</div>""",
