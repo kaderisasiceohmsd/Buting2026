@@ -34,6 +34,7 @@ def streamlit_menu():
             "people-fill",
             "people-fill",
             "people-fill",
+			"people-fill",
         ],
         default_index=0,
         orientation="horizontal",
@@ -806,6 +807,5 @@ if menu == "Departemen SSD":
                 "pesan": "semangat terus kuliahnya kakak !!!",
             },
         ]
-
         display_images_with_data(gambar_urls, data_list)
     Departemen_SSD()
