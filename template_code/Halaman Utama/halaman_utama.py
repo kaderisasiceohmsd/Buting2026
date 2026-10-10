@@ -37,7 +37,6 @@ def display_images_with_data(gambar_urls, data_list):
 
 
 # JANGAN DIUBAH
-
 st.markdown(
     """
     <div style='text-align: center;'>
@@ -53,12 +52,12 @@ url = "https://drive.google.com/uc?export=view&id=12cQ4T8NkVvVPVNX6zBQC4sviFcc4c
 url1 = "https://drive.google.com/uc?export=view&id=12RBvQdMiqqqph-Q1QqLb0zvvIPnBjCYb"
 
 
-def layout(url):
+def layout(img_url):
     col1, col2, col3 = st.columns([1, 2, 1])  # Menggunakan kolom dengan rasio 1:2:1
     with col1:
         st.write("")  # Menyisakan kolom kosong
     with col2:
-        st.image(load_image(url), use_container_width="True", width=350)
+        st.image(load_image(img_url), use_container_width=True, width=350)
     with col3:
         st.write("")  # Menyisakan kolom kosong
 
