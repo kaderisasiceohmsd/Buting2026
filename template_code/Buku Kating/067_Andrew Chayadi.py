@@ -177,4 +177,168 @@ if menu == "Kesekjenan":
         display_images_with_data(gambar_urls, data_list)
     Kesekjenan()
 
+if menu == "Baleg":
+    def Baleg():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1PaFVMM16zVLGAH5tC0fo8er7lcC0viI0",
+            "https://drive.google.com/uc?export=view&id=1yCUD3uOmKTBl99yWejErFkethZMhpeJO",
+            "https://drive.google.com/uc?export=view&id=1CXFOYQL0KK06gOXczNQJbLDTiZgiiYYl",
+            "https://drive.google.com/uc?export=view&id=11JYhRq75vmupS7Fc93D2kQ5xFawdMrp1",
+            "https://drive.google.com/uc?export=view&id=1OxMRDhINlMD0wbPadm5aYPSm9C8zVHtA",
+            "https://drive.google.com/uc?export=view&id=1If9CVnfUGnvrYzaBOGioQ-ICAksX3ovD",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+        ]
+        data_list = [
+            {
+                "nama": "Ridho Benedictus Togi Manik",
+                "nim": "123450060",
+                "umur": "20",
+                "asal":"Kota Manchester",
+                "alamat": "GH",
+                "hobbi": "Wawancara",
+                "sosmed": "@iamridhomanik",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Juesi Apridelia Saragih",
+                "nim": "123450085",
+                "umur": "19",
+                "asal": "Singkawang",
+                "alamat": "Pelangi",
+                "hobbi": "Dengerin lagu semusim dari marsel",
+                "sosmed": "@j__eesie",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Dharu Cahyoaji Sasongko",
+                "nim": "123450023",
+                "umur": "19",
+                "asal": "Lampung",
+                "alamat": "Bandar Lampung",
+                "hobbi": "Ngidupin api baleg di tiktok",
+                "sosmed": "@exvoltas",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Gh. Mikael Niko Antoni Setiadi",
+                "nim": "124450025",
+                "umur": "20",
+                "asal": "Jabung",
+                "alamat": "Jati Agung",
+                "hobbi": "COD Musang",
+                "sosmed": "@me._kael",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Siti Sarifah Sumamah",
+                "nim": "124450015",
+                "umur": "19",
+                "asal": "Bekasi",
+                "alamat": "Kedaton",
+                "hobbi": "Mancing",
+                "sosmed": "@syt.rifa",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Givaro Ananta",
+                "nim": "123450078",
+                "umur": "19",
+                "asal": "Lampung Barat",
+                "alamat": "Sukabumi",
+                "hobbi": "Minum Kopi",
+                "sosmed": "@givarooo",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Afghanis Nursholehatunnisa",
+                "nim": "124450042",
+                "umur": "19",
+                "asal": "Kepulauan Mentawai",
+                "alamat": "Owen Kost",
+                "hobbi": "Ngoding",
+                "sosmed": "@afghanisnt_",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Hani Qurrota Aini",
+                "nim": "124450020",
+                "umur": "20",
+                "asal": "CTR",
+                "alamat": "Sukarame",
+                "hobbi": "Baca AU",
+                "sosmed": "@haniquratuain_",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Jeremia Halim",
+                "nim": "124450101",
+                "umur": "20",
+                "asal": "Tanggerang",
+                "alamat": "Teluk",
+                "hobbi": "Nyanyi, olahraga",
+                "sosmed": "@jeremia_hm",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Monica Patricia Tanjung",
+                "nim": "123450073",
+                "umur": "21",
+                "asal": "Jakarta Barat",
+                "alamat": "Kotabaru",
+                "hobbi": "Lari",
+                "sosmed": "@monica_tjg",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Jona Timothy Ogatse Panjaitan",
+                "nim": "124450111",
+                "umur": "20",
+                "asal": "Depok",
+                "alamat": "Pemda Raya",
+                "hobbi": "Gym sama Koleksi figure, nafas manual",
+                "sosmed": "@nagatseee",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Sekar Dini Widya Putri",
+                "nim": "124450082",
+                "umur": "20",
+                "asal": "Metro",
+                "alamat": "Pemda",
+                "hobbi": "Jajan sama nisa, putri, suci",
+                "sosmed": "@sekardnwp",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+            {
+                "nama": "Wan Nashwa Alhasni Yuska",
+                "nim": "123450077",
+                "umur": "20",
+                "asal": "Pasay",
+                "alamat": "Belwis",
+                "hobbi": "Nyapa angin",
+                "sosmed": "@nshaysk",
+                "kesan": "...",  
+                "pesan":"..."# 1
+            },
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    Baleg()
 # Tambahkan menu lainnya sesuai kebutuhan
