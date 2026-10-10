@@ -7,6 +7,7 @@ import requests
 from PIL import Image, ImageOps
 from io import BytesIO
 
+menu = streamlit_menu()
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
