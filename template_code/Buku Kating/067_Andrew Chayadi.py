@@ -473,7 +473,7 @@ if menu == "Senator":
     Senator()
 	
 if menu == "Departemen Minbak":
-    def Departemen_Minbak():
+    def minbak():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=.",
             "https://drive.google.com/uc?export=view&id=.",
@@ -655,5 +655,5 @@ if menu == "Departemen Minbak":
 		    }
 		]
         display_images_with_data(gambar_urls, data_list)
-    Departemen_Minbak()
+    minbak()
 # Tambahkan menu lainnya sesuai kebutuhan
