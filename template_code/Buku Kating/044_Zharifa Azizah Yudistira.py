@@ -34,6 +34,7 @@ def streamlit_menu():
             "people-fill",
             "people-fill",
             "people-fill",
+			"people-fill",
         ],
         default_index=0,
         orientation="horizontal",
@@ -494,17 +495,17 @@ if menu == "Departemen Minbak":
             "https://drive.google.com/uc?export=view&id=1PibI1ia-ymJ549PLIZ3ZOUoiw6KjuWqs",
         ]
 		data_list = [
-		    {
-		        "nama": "Kevin Antonio Junior",
-		        "nim": "123450109",
-		        "umur": "23",
-		        "asal": "Sulawesi Tengah",
-		        "alamat": "Panjang",
-		        "hobbi": "Mancing",
-		        "sosmed": "@kevinaja__",
-		        "kesan": "Bang Kevin keren abangnyaa, semangat terus bangg",
+			{
+				"nama": "Kevin Antonio Junior",
+				"nim": "123450109",
+				"umur": "23",
+				"asal": "Sulawesi Tengah",
+				"alamat": "Panjang",
+				"hobbi": "Mancing",
+				"sosmed": "@kevinaja__",
+				"kesan": "Bang Kevin keren abangnyaa, semangat terus bangg",
 				"pesan": "Semangat terus bang Kevin, semoga kuliahnya lancar dan sukses selalu bangg!!"
-		    },
+			},
 		    {
 		        "nama": "Gusti Putu Ferazka Dhiyamika",
 		        "nim": "123450046",
