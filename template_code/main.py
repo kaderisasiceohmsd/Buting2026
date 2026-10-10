@@ -9,8 +9,8 @@ Homepage = st.Page("Halaman Utama/halaman_utama.py",
     default=True)
 
 Mahasiswa1 = st.Page(
-    "Buku Kating/119_Aura Krisna Azzira.py",
-    title="119 - Aura Krisna Azzira",
+    "Buku Kating/088_Dimas Ardhiteo Putra.py",
+    title="088 - Dimas Ardhiteo Putra",
     icon=":material/person:",
 )
 
