@@ -9,3 +9,4 @@ Berikut Domain Deploy Streamlit masing-masing kelompok:
 - https://kelompok-08-cosval.streamlit.app
 - https://kelompok-09-bayesian.streamlit.app
 - https://kelompok-10-greedy.streamlit.app
+YA
