@@ -42,7 +42,7 @@ st.markdown(
     """
     <div style='text-align: center;'>
         <h1 style='font-size: 5.5em;'>WEBSITE KATING</h1>
-        <p style='font-size: 2em;'>CEO HMSD Adyatama ITERA 2024</p>
+        <p style='font-size: 2em;'>CEO HMSD Adyatama ITERA 2026</p>
     </div>
     """,
     unsafe_allow_html=True,
@@ -111,7 +111,7 @@ if menu == "Home":
             unsafe_allow_html=True,
         )
         st.write(""" """)
-        foto_kelompok = "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"
+        foto_kelompok = "https://drive.google.com/uc?export=view&id=1_2RuzY18oqdjj4M4Ue0V50LZBXIga_LQ"
         layout(foto_kelompok)
         st.markdown(
             """<div style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -143,9 +143,9 @@ elif menu == "About Us":
         ]
         data_list = [
             {
-                "nama": "x",
+                "nama": "Yosep Winarto Sinulingga",
                 "sebagai": "Pak Lurah",
-                "nim": "122450016",
+                "nim": "125450125",
                 "fun_fact": "suka makan pedes, tapi ga suka efeknya",
                 "motto_hidup": "new semester new me",
             },
