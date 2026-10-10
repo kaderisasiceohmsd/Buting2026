@@ -187,7 +187,7 @@ if menu == "Baleg":
             "https://lh3.googleusercontent.com/d/1aIYBC2oXXH2HHwu5-XWN0C0p6_C67PEi",
             "https://lh3.googleusercontent.com/d/19l84A20tax57ABCt5omLT1tlQ_d-11-P",
             "https://lh3.googleusercontent.com/d/1aIYBC2oXXH2HHwu5-XWN0C0p6_C67PEi",
-            "https://lh3.googleusercontent.com/d/19l84A20tax57ABCt5omLT1tlQ_d-11-P",
+            "https://lh3.googleusercontent.com/d/1YZTAUTFYLhemXtrgyZd_LAWkxwq5gbbz",
             "https://lh3.googleusercontent.com/d/1aIYBC2oXXH2HHwu5-XWN0C0p6_C67PEi",
             "https://lh3.googleusercontent.com/d/1YZTAUTFYLhemXtrgyZd_LAWkxwq5gbbz",
             "https://lh3.googleusercontent.com/d/1ALlzQ_cMFTOdnE0Kb4HOqN8oddGc_n9d",
