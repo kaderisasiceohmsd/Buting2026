@@ -96,24 +96,24 @@ def display_images_with_data(gambar_urls, data_list):
 menu = streamlit_menu()
 
 # BAGIAN SINI YANG HANYA BOLEH DIUABAH
-if menu == "Departemen MIKFES":
-    def mikfes():
+if menu == "Kesekjenan":
+    def Kesekjenan():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=125BxR9PtLy5zlC2nj6WAdfq2L7uF5YEd",
+            "https://drive.google.com/uc?export=view&id=16bQZ8J7__zOcQYS-0wbb8Jfh_tGNvFAO",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
         ]
         data_list = [
             {
-                "nama": "Kakak A",
-                "nim": "122450000",
-                "umur": "18",
-                "asal":"Bekasi",
-                "alamat": "Gg.sakum",
-                "hobbi": "Mainn Bola, Belajar",
-                "sosmed": "@i",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "nama": "Ginda Fajar Riadi Marpaung",
+                "nim": "123450103",
+                "umur": "22",
+                "asal":"Batam",
+                "alamat": "Sekretariat HMSD",
+                "hobbi": "Push Rank sampe IMO",
+                "sosmed": "@jars_mrp",
+                "kesan": "Abang nya baik jujur sangat menginspiratif saya, balance antara organisasi dan kuliahnya",  
+                "pesan":"Semangat terus bang gindaa, lancar luncur kuliahnya semangat TA nya bang"# 1
             },
             {
                 "nama": "Kakak B",
@@ -139,6 +139,6 @@ if menu == "Departemen MIKFES":
             },
         ]
         display_images_with_data(gambar_urls, data_list)
-    mikfes()
+    Kesekjenan()
 
 # Tambahkan menu lainnya sesuai kebutuhan
