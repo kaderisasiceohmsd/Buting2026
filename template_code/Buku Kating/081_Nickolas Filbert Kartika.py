@@ -338,17 +338,7 @@ if menu == "Baleg":
                 "kesan": "...",  
                 "pesan":"..."# 1
             },
-            {
-                "nama": "...",
-                "nim": "...",
-                "umur": "...",
-                "asal": "...",
-                "alamat": "...",
-                "hobbi": "...",
-                "sosmed": "...",
-                "kesan": "...",  
-                "pesan":"..."# 1
-            },
+        
         ]
         display_images_with_data(gambar_urls, data_list)
     Baleg()
@@ -367,7 +357,6 @@ if menu == "Senator":
             "https://drive.google.com/uc?export=view&id=1dlDTw7hOo-XTSc1X94HK97YtOcmFutm5",
             "https://drive.google.com/uc?export=view&id=1sLE-dVR8G7XK4_y3fAEeF4QfK2BydGKT,
         ]
-        data_list = [
            data_list = [
     {
         "nama": "Fathinah Nur Azizah",
