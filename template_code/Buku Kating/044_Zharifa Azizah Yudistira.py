@@ -344,3 +344,132 @@ if menu == "Badan Legislatif":
         ]
         display_images_with_data(gambar_urls, data_list)
     Baleg()
+
+if menu == "Badan Kesenatoran":
+    def bason():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1kfsDzh0GuhsMEzhDdFSLlMpaDbTFM9j7",
+            "https://drive.google.com/uc?export=view&id=16sCBm1YpXgr3jPky-NQJLlX2vR2Mx_ko",
+            "https://drive.google.com/uc?export=view&id=1xw3BMBt23OFcnN2QueVk8IthDltpi3ix",
+            "https://drive.google.com/uc?export=view&id=1vgsu3sIq-r98fQcVRsdPZvjpuVImOCy8",
+            "https://drive.google.com/uc?export=view&id=17L2NMq0Ks5w9g4dpRLldpS8zPsgEtN5b",
+            "https://drive.google.com/uc?export=view&id=1XBnNkDEgsaeUu-PUr1ip9A_kN4sK6b5f",
+            "https://drive.google.com/uc?export=view&id=1DSqeVvOR4b3r-jhWnbzYtn-MC-r7f8xH",
+            "https://drive.google.com/uc?export=view&id=1numH0a1kzhVRH7XmeyCfdBeN0nHdT0d_",
+            "https://drive.google.com/uc?export=view&id=16vhK-aUqvcEfZeqliAgdXGMbE16ABHGv",
+            "https://drive.google.com/uc?export=view&id=1jCPM0UQ-rDZfuzQXvi7tqfuWp6FPUla0",
+        ]
+        data_list = [
+            {
+                "nama": "Fathinah Nur Azizah",
+                "nim": "123450072",
+                "umur": "21",
+                "asal": "Jakarta Timur",
+                "alamat": "Airan",
+                "hobbi": "Nulis Medium",
+                "sosmed": "@fathinahnaazh",
+                "kesan": ".",  
+                "pesan": "."# 1
+            },
+            {
+                "nama": "Helmy Surya Pratama",
+                "nim": "124450033",
+                "umur": "20",
+                "asal": "Jakarta",
+                "alamat": "Kedamaian",
+                "hobbi": "Ngesen kiri",
+                "sosmed": "@helmy_ist",
+                "kesan": ".",  
+                "pesan": "."# 1
+            },
+	 {
+                "nama": "Fernando Dimetrius Barus",
+                "nim": "124450063",
+                "umur": "21",
+                "asal": "Tangerang",
+                "alamat": "Sebelah kamar biwa",
+                "hobbi": "Badminton",
+                "sosmed": "@barus.fernando",
+                "kesan": ".",  
+                "pesan": "."# 1
+            },
+	 {
+                "nama": "Suci Aulia",
+                "nim": "124450034",
+                "umur": "19",
+                "asal": "Krui",
+                "alamat": "Kota Baru",
+                "hobbi": "Bikin video random dan upload di second",
+                "sosmed": "@sciia_staff",
+                "kesan": ".",  
+                "pesan": "."# 1
+            },
+	 {
+                "nama": "Wielman Itolo Halawa",
+                "nim": "124450072",
+                "umur": "20",
+                "asal": "Nias Selatan",
+                "alamat": "Asrama TB3",
+                "hobbi": "Mancing",
+                "sosmed": "@wielhawny",
+                "kesan": ".",  
+                "pesan": "."# 1
+            },
+	 {
+                "nama": "Lia Hana Ichisasmita",
+                "nim": "123450089",
+                "umur": "21",
+                "asal": "Jakarta Timur",
+                "alamat": "Belwis",
+                "hobbi": "Nyari jurnal",
+                "sosmed": "@lia.h_264",
+                "kesan": ".",  
+                "pesan": "."# 1
+            },
+	 {
+                "nama": "Aqila Zayyan Salsabil",
+                "nim": "124450014",
+                "umur": "19",
+                "asal": "Lampung Utara",
+                "alamat": "Sukarame",
+                "hobbi": "Mendokumentasikan bayyesian",
+                "sosmed": "@aqilazayyaan",
+                "kesan": ".",  
+                "pesan": "."# 1
+            },
+	 {
+                "nama": "Hazel Mahesa Handhaka",
+                "nim": "124450114",
+                "umur": "20",
+                "asal": "Lampung Timur",
+                "alamat": "Ujung Terang",
+                "hobbi": "Bulu Tangkis",
+                "sosmed": "@hazelhandhaka",
+                "kesan": ".",  
+                "pesan": "."# 1
+            },
+            {
+                "nama": "Nadya Ratu Anjani",
+                "nim": "123450083",
+                "umur": "21",
+                "asal": "Bandar Lampung",
+                "alamat": "Sukarame",
+                "hobbi": "Denger Lagu",
+                "sosmed": "@nadyaanjaani",
+                "kesan": ".",  
+                "pesan": "."# 1
+            },
+            {
+                "nama": "Dwi Rahma Fitriani",
+                "nim": "124450084",
+                "umur": "19",
+                "asal": "Tulang Bawang",
+                "alamat": "Jl. Lapas Belwis",
+                "hobbi": "Dengerin musik",
+                "sosmed": "@dwi_rahmftrnii",
+                "kesan": ".",  
+                "pesan": "."# 1
+            },
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    bason()

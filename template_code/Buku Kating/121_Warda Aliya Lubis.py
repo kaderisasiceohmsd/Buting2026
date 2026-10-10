@@ -182,20 +182,18 @@ if menu == "Kesekjenan":
 if menu == "Baleg":
     def Baleg():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1fq9orydmm-d4Tc6RRS8OLl4CuyoZLDkS",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1NyjZ5EWWar10sGRoPz4EohVmLjES0lei",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1fq9orydmm-d4Tc6RRS8OLl4CuyoZLDkS",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1NyjZ5EWWar10sGRoPz4EohVmLjES0lei",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-]
+            "https://lh3.googleusercontent.com/d/1BUFWaShMmF_XB0yozNhncdYolsaCVSJh",
+            "https://lh3.googleusercontent.com/d/1stIJh8GpzoJtJPaFnaIA5NlwuqjepMMw",
+            "https://lh3.googleusercontent.com/d/1aIYBC2oXXH2HHwu5-XWN0C0p6_C67PEi",
+            "https://lh3.googleusercontent.com/d/19l84A20tax57ABCt5omLT1tlQ_d-11-P",
+            "https://lh3.googleusercontent.com/d/1aIYBC2oXXH2HHwu5-XWN0C0p6_C67PEi",
+            "https://lh3.googleusercontent.com/d/1YZTAUTFYLhemXtrgyZd_LAWkxwq5gbbz",
+            "https://lh3.googleusercontent.com/d/1aIYBC2oXXH2HHwu5-XWN0C0p6_C67PEi",
+            "https://lh3.googleusercontent.com/d/1YZTAUTFYLhemXtrgyZd_LAWkxwq5gbbz",
+            "https://lh3.googleusercontent.com/d/1ALlzQ_cMFTOdnE0Kb4HOqN8oddGc_n9d",
+            "https://lh3.googleusercontent.com/d/1m7vqrhjpfAPesawC6KYSszTomCi11rsL",
+            "https://lh3.googleusercontent.com/d/1fCGaNN2r67AjHS4l3QM00ou6SHAqsmOT"
+        ]
         data_list = [
             {
                 "nama": "Ridho Benedictus Togi Manik",

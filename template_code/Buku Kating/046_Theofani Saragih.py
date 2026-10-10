@@ -14,7 +14,7 @@ def streamlit_menu():
         options=[
             "Kesekjenan",
             "Baleg",
-            "Senator",
+            "Bason",
             "Departemen PSDA",
             "Departemen MIKFES",
             "Departemen Eksternal",
@@ -344,8 +344,8 @@ if menu == "Baleg":
     Baleg()
 
 # Tambahkan menu lainnya sesuai kebutuhan
-if menu == "Badan Kesenatoran":
-    def Badan Kesenatoran():
+if menu == "Bason":
+    def Bason():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1cpgYi7s-PdGAJcCCxZY_ynTQlFfwI_78",
             "https://drive.google.com/uc?export=view&id=1VfWOJ3OAUUL_wMCSB0eNvrxUMXh3ZxXI",
@@ -471,4 +471,4 @@ if menu == "Badan Kesenatoran":
             },
         ]
         display_images_with_data(gambar_urls, data_list)
-    Senator() 
+    Bason() 

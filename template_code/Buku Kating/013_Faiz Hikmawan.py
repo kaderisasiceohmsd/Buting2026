@@ -33,7 +33,6 @@ def streamlit_menu():
             "people-fill",
             "people-fill",
             "people-fill",
-            "people-fill",
         ],
         default_index=0,
         orientation="horizontal",
