@@ -1,0 +1,424 @@
+import streamlit as st
+from streamlit_option_menu import option_menu
+import requests
+from PIL import Image, ImageOps
+from io import BytesIO
+
+st.markdown("""<style>.centered-title {text-align: center;}</style>""",unsafe_allow_html=True)
+st.markdown("<h1 class='centered-title'>BUKU KATING</h1>", unsafe_allow_html=True)
+
+# bagian sini jangan diubah
+def streamlit_menu():
+    selected = option_menu(
+        menu_title=None,
+        options=[
+            "Kesekjenan",
+            "Baleg",
+            "Senator",
+            "Departemen PSDA",
+            "Departemen MIKFES",
+            "Departemen Eksternal",
+            "Departemen Internal",
+            "Departemen SSD",
+            "Departemen Medkraf",
+            "Departemen Minbak"
+        ],
+        icons=[
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+        ],
+        default_index=0,
+        orientation="horizontal",
+        styles={
+            "container": {"padding": "0!important", "background-color": "#fafafa"},
+            "icon": {"color": "black", "font-size": "19px"},
+            "nav-link": {
+                "font-size": "15px",
+                "text-align": "left",
+                "margin": "0px",
+                "--hover-color": "#eee",
+            },
+            "nav-link-selected": {"background-color": "#3FBAD8"},
+        },
+    )
+    return selected
+
+@st.cache_data
+def load_image(url):
+    response = requests.get(url)
+    if response.status_code != 200:
+        st.error(
+            f"Failed to fetch image from {url}, status code: {response.status_code}"
+        )
+        return None
+    try:
+        img = Image.open(BytesIO(response.content))
+        img = ImageOps.exif_transpose(img)
+        img = img.resize((300, 400))
+        return img
+    except Exception as e:
+        st.error(f"Error loading image: {e}")
+        return None
+    
+@st.cache_data
+def display_images_with_data(gambar_urls, data_list):
+    images = []
+    for i, url in enumerate(gambar_urls):
+        with st.spinner(f"Memuat gambar {i + 1} dari {len(gambar_urls)}"):
+            img = load_image(url)
+            if img is not None:
+                images.append(img)
+
+    for i, img in enumerate(images):
+        # Menggunakan Streamlit untuk menampilkan gambar di tengah kolom
+        col1, col2, col3 = st.columns([1, 2, 1])
+        with col2:
+            st.image(img, use_container_width=True)
+
+        if i < len(data_list):
+            st.write(f"Nama: {data_list[i]['nama']}")
+            st.write(f"NIM: {data_list[i]['nim']}")
+            st.write(f"Umur: {data_list[i]['umur']}")
+            st.write(f"Asal: {data_list[i]['asal']}")
+            st.write(f"Alamat: {data_list[i]['alamat']}")
+            st.write(f"Hobbi: {data_list[i]['hobbi']}")
+            st.write(f"Sosial Media: {data_list[i]['sosmed']}")
+            st.write(f"Kesan: {data_list[i]['kesan']}")
+            st.write(f"Pesan: {data_list[i]['pesan']}")
+            st.write("  ")
+    st.write("Semua gambar telah dimuat!")
+menu = streamlit_menu()
+
+# BAGIAN SINI YANG HANYA BOLEH DIUABAH
+if menu == "Kesekjenan":
+    def kesekjenan():
+        gambar_urls = [
+            "https://drive.google.com/file/d/1lMm2cZotf4Zg5npQZTNsGulE71uamr0G",
+            "https://drive.google.com/file/d/1L1mV6NSK_dwiOB1dMLtHXVss8YvviGF7",
+            "https://drive.google.com/file/d/1arEBvurK397f3EPs4YmXihuHpY_0Ngnk",
+            "https://drive.google.com/file/d/16feqaSynGDSLmG6TwVb8uUt8V9ylEypi",
+            "https://drive.google.com/file/d/1Iwen8hJLSVc5_-C7sEAhlDoByhm82chK"
+        ]
+
+        data_list = [
+            {
+                "nama": "Muhammad Aqil",
+                "nim": "123450046",
+                "umur": "22",
+                "asal": "Bangkinang",
+                "alamat": "Sekretariat HMSD",
+                "hobbi": "Dzikir",
+                "sosmed": "@muhammadaqil1111",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
+                "nama": "Qois Alfio",
+                "nim": "123450067",
+                "umur": "22",
+                "asal": "Batam",
+                "alamat": "Kotabaru",
+                "hobbi": "Mainin surat",
+                "sosmed": "@qoidalfio_",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
+                "nama": "Ginda Fajar Marpaung",
+                "nim": "1234500fadil",
+                "umur": "22",
+                "asal": "Batam",
+                "alamat": "Sekretariat HMSD",
+                "hobbi": "Push Rank sampe IMO",
+                "sosmed": "@gars_mrp",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
+                "nama": "Evi Defiani",
+                "nim": "123450005",
+                "umur": "21",
+                "asal": "Lamtim",
+                "alamat": "Airan",
+                "hobbi": "Membaca",
+                "sosmed": "@eeffifi",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
+                "nama": "Hafsa Fadzilah Arraadhila",
+                "nim": "079",
+                "umur": "21",
+                "asal": "Balam",
+                "alamat": "Balam",
+                "hobbi": "Berenang",
+                "sosmed": "@hafsafadhilaa",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
+                "nama": "Luthfia Laila Ramadhani",
+                "nim": "004",
+                "umur": "20",
+                "asal": "Bengkulu",
+                "alamat": "Airan",
+                "hobbi": "Bertemu Pak Tirta",
+                "sosmed": "@lutfiaarmdhn",
+                "kesan": "-",
+                "pesan": "-"
+            }
+        ]
+
+        display_images_with_data(gambar_urls, data_list)
+
+    kesekjenan()
+
+if menu == "Baleg":
+    def Baleg():
+        gambar_urls = [
+            "https://drive.google.com/file/d/1lMm2cZotf4Zg5npQZTNsGulE71uamr0G",
+            "https://drive.google.com/file/d/1L1mV6NSK_dwiOB1dMLtHXVss8YvviGF7",
+            "https://drive.google.com/file/d/1arEBvurK397f3EPs4YmXihuHpY_0Ngnk",
+            "https://drive.google.com/file/d/16feqaSynGDSLmG6TwVb8uUt8V9ylEypi",
+            "https://drive.google.com/file/d/1Iwen8hJLSVc5_-C7sEAhlDoByhm82chK",
+            "https://drive.google.com/file/d/112PQJYl9BJ8q5ORQYnSRGyH8n9l32F8E",
+            "https://drive.google.com/file/d/1NkMl76Maz1x0FhMtcM1IBmT2SrfIroUj",
+            "https://drive.google.com/file/d/1w1Pfz_aCH3SSyhmhkDnHJw02PurUwtoH",
+        ]
+
+        data_list = [
+            {
+                "nama": "Ridho Benedictus Togi Manik",
+                "nim": "23-060",
+                "umur": "20",
+                "asal": "Kota Manchester",
+                "alamat": "Di GH",
+                "hobbi": "Wawancara",
+                "sosmed": "@ridhomanik",
+                "kesan": "-",
+                "pesan": "Ketua Baleg"
+            },
+            {
+                "nama": "Wanaswa Alhani Yuska",
+                "nim": "23-77",
+                "umur": "20",
+                "asal": "Pasay",
+                "alamat": "Belwis",
+                "hobbi": "Nyapa angin",
+                "sosmed": "@nshaysk",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
+                "nama": "Juwesi Aprilia Saragih",
+                "nim": "23-085",
+                "umur": "19",
+                "asal": "Singkawang",
+                "alamat": "Pelangi",
+                "hobbi": "Dengerin lagu Semusim dari Marsel",
+                "sosmed": "@j__eesie",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
+                "nama": "Ghifaro Ananta",
+                "nim": "23-78",
+                "umur": "19",
+                "asal": "Lambar",
+                "alamat": "Sukabumi",
+                "hobbi": "Minum kopi",
+                "sosmed": "-",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
+                "nama": "Afghanis Nur Solehatunnisa",
+                "nim": "24-042",
+                "umur": "19",
+                "asal": "Kepulauan Mentawai",
+                "alamat": "Owen Kost",
+                "hobbi": "Ngoding",
+                "sosmed": "-",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
+                "nama": "Hani Qurrota Aini",
+                "nim": "24-20",
+                "umur": "20",
+                "asal": "CTR?",
+                "alamat": "Sukarame",
+                "hobbi": "Baca AU",
+                "sosmed": "-",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
+                "nama": "Sekardini Lidya Putri",
+                "nim": "24-82",
+                "umur": "20",
+                "asal": "Metro",
+                "alamat": "Pemda",
+                "hobbi": "Jajan sama Nisa, Putri, Suci",
+                "sosmed": "@sekardnwp",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
+                "nama": "Jonna Timothy Ogatse Panjaitan",
+                "nim": "24-111",
+                "umur": "20",
+                "asal": "Depok",
+                "alamat": "Pemda Raya",
+                "hobbi": "Gym, koleksi figure, nafas manual",
+                "sosmed": "@nagatse",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
+                "nama": "Siti Sarifah",
+                "nim": "...-15",
+                "umur": "19",
+                "asal": "Bekasi",
+                "alamat": "Kedaton",
+                "hobbi": "Mancing",
+                "sosmed": "-",
+                "kesan": "-",
+                "pesan": "-"
+            }
+        ]
+
+        display_images_with_data(gambar_urls, data_list)
+
+    Baleg()
+
+if menu == "Departemen Minbak":
+    def Departemen_Minbak():
+        gambar_urls = [
+            "https://drive.google.com/file/d/1GEVx0r0hwY_jXQP3pD4X-uwE0DMZebcI",
+            "https://drive.google.com/file/d/1fUMJq1YXVoroSqWkLIL1wXO73H1eEvDJ",
+            "https://drive.google.com/file/d/1Qabc-2O6m8ku8oPNsJSFQToiJh6rekMP",
+            "https://drive.google.com/file/d/1inHomptv1djGZGSLZo7fg2VHn03O7x13",
+            "https://drive.google.com/file/d/173RgfXc3ezh7t14WsWPd49Eddybzjzx0",
+            "https://drive.google.com/file/d/1lpeaME0D5oCgx78rV3HNcAOdsu1p1dXs",
+            "https://drive.google.com/file/d/1p4Rk4TqyvpxkE5RrXRIzg6fWGzOsQ0qj",
+            "https://drive.google.com/file/d/1hPqAx0Th8801yxRCCmmuQ_40z1lBZbBw",
+            "https://drive.google.com/file/d/17hJfFqdJ0J9e2fvMAH-I54-nD0WZJ9fF",
+
+        ]
+
+        data_list = [
+            {
+                "nama": "Ridho Benedictus Togi Manik",
+                "nim": "23-060",
+                "umur": "20",
+                "asal": "Kota Manchester",
+                "alamat": "Di GH",
+                "hobbi": "Wawancara",
+                "sosmed": "@ridhomanik",
+                "kesan": "-",
+                "pesan": "Ketua Baleg"
+            },
+            {
+                "nama": "Wanaswa Alhani Yuska",
+                "nim": "23-77",
+                "umur": "20",
+                "asal": "Pasay",
+                "alamat": "Belwis",
+                "hobbi": "Nyapa angin",
+                "sosmed": "@nshaysk",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
+                "nama": "Juwesi Aprilia Saragih",
+                "nim": "23-085",
+                "umur": "19",
+                "asal": "Singkawang",
+                "alamat": "Pelangi",
+                "hobbi": "Dengerin lagu Semusim dari Marsel",
+                "sosmed": "@j__eesie",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
+                "nama": "Ghifaro Ananta",
+                "nim": "23-78",
+                "umur": "19",
+                "asal": "Lambar",
+                "alamat": "Sukabumi",
+                "hobbi": "Minum kopi",
+                "sosmed": "-",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
+                "nama": "Afghanis Nur Solehatunnisa",
+                "nim": "24-042",
+                "umur": "19",
+                "asal": "Kepulauan Mentawai",
+                "alamat": "Owen Kost",
+                "hobbi": "Ngoding",
+                "sosmed": "-",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
+                "nama": "Hani Qurrota Aini",
+                "nim": "24-20",
+                "umur": "20",
+                "asal": "CTR?",
+                "alamat": "Sukarame",
+                "hobbi": "Baca AU",
+                "sosmed": "-",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
+                "nama": "Sekardini Lidya Putri",
+                "nim": "24-82",
+                "umur": "20",
+                "asal": "Metro",
+                "alamat": "Pemda",
+                "hobbi": "Jajan sama Nisa, Putri, Suci",
+                "sosmed": "@sekardnwp",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
+                "nama": "Jonna Timothy Ogatse Panjaitan",
+                "nim": "24-111",
+                "umur": "20",
+                "asal": "Depok",
+                "alamat": "Pemda Raya",
+                "hobbi": "Gym, koleksi figure, nafas manual",
+                "sosmed": "@nagatse",
+                "kesan": "-",
+                "pesan": "-"
+            },
+            {
+                "nama": "Siti Sarifah",
+                "nim": "...-15",
+                "umur": "19",
+                "asal": "Bekasi",
+                "alamat": "Kedaton",
+                "hobbi": "Mancing",
+                "sosmed": "-",
+                "kesan": "-",
+                "pesan": "-"
+            }
+        ]
+
+        display_images_with_data(gambar_urls, data_list)
+
+    Departemen_Minbak()
+
+# Tambahkan menu lainnya sesuai kebutuhan
