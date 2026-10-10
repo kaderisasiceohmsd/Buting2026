@@ -99,10 +99,14 @@ if menu == "Home":
             unsafe_allow_html=True,
         )
         st.markdown(
-            "<h1 class='centered-title'>Kami Greedy!</h1>", unsafe_allow_html=True
+            "<h1 class='centered-title'>Hola, welcome to GreedyCuwiKuki!</h1>", unsafe_allow_html=True
         )
         st.markdown(
-            """<div style="text-align: justify;">Greedy kelompok imup</div>""",
+            """<div style="text-align: justify;">Satu tim dengan satu visi: Pantang pulang sebelum selesai, pantang menyerah sebelum optimal! 
+            Kami anggota Greedy menganut sifat greedy yaitu selalu haus akan proses belajar dan eksplorasi. Di setiap langkah, kami selalu cari cara terbaik 
+            untuk berkembang bersama!
+             
+            Greedy, Grab the best, Reach  the TOP!" </div>""",
             unsafe_allow_html=True,
         )
         st.write(""" """)
