@@ -192,6 +192,28 @@ if menu == "Baleg":
                 "pesan":"semangat terus dan aktif terus bang kuliahnya"# 1
             },
             {
+                "nama": "Givaro Ananta",
+                "nim": "123450078",
+                "umur": "20",
+                "asal":"Gunung Pesagi",
+                "alamat": "Sukabumi",
+                "hobbi": "Minum Kopi",
+                "sosmed": "@givarooo",
+                "kesan": "Abangnya asik, baik, dan ternyata receh parah, ketawa mulu",
+                "pesan":"Semangat terus belajar dan kuliahnya bang"# 1
+            },
+            {
+                "nama": "Monica Patricia Tanjung",
+                "nim": "124",
+                "umur": "20",
+                "asal":"Kupang",
+                "alamat": "Jatiagung",
+                "hobbi": "Main PS",
+                "sosmed": "@me._kael",
+                "kesan": "kakak ini baik banget",  
+                "pesan":"Semangat terus dan aktif terus bang kuliahnya"# 1
+            },
+            {
                 "nama": "Gh Mikael Niko Antoni Setiadi",
                 "nim": "124450025",
                 "umur": "20",
@@ -212,18 +234,6 @@ if menu == "Baleg":
                 "sosmed": "@syt.rifa",
                 "kesan": "Kakaknya cantik dan baik banget",  
                 "pesan":"Semangat terus belajar dan kuliahnya kak"# 1
-            },
-            {
-                
-                "nama": "Givaro Ananta",
-                "nim": "123450078",
-                "umur": "20",
-                "asal":"Gunung Pesagi",
-                "alamat": "Sukabumi",
-                "hobbi": "Minum Kopi",
-                "sosmed": "@givarooo",
-                "kesan": "Abangnya asik, baik, dan ternyata receh parah, ketawa mulu",
-                "pesan":"Semangat terus belajar dan kuliahnya bang"# 1
             },
             {
                 "nama": "Afghanis Nursholehatunnisa",
