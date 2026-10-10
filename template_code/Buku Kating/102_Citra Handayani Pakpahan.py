@@ -99,12 +99,12 @@ menu = streamlit_menu()
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=ID_FOTO_GINDA",
-            "https://drive.google.com/uc?export=view&id=ID_FOTO_AQIL",
-            "https://drive.google.com/uc?export=view&id=ID_FOTO_EFI",
-            "https://drive.google.com/uc?export=view&id=ID_FOTO_QOIS",
-            "https://drive.google.com/uc?export=view&id=ID_FOTO_HAFSA",
-            "https://drive.google.com/uc?export=view&id=ID_FOTO_LUTHFIA",
+            "https://drive.google.com/file/d/1Yro_FiWM13COyTiubMR23sjR5v5EdKZB/view?usp=drive_link",
+            "https://drive.google.com/file/d/16i6ZBe3fFC7PIMT-OxHi-nSfBgLHSTzf/view?usp=drive_link",
+            "https://drive.google.com/file/d/1TPHBkQDDpCpF-uHuOkZkE2j58QgWKesb/view?usp=drive_link",
+            "https://drive.google.com/file/d/1HNkx2-8WrgbVhufU7vIdeKPlkhi66NlR/view?usp=drive_link",
+            "https://drive.google.com/file/d/1mhlOxKmXscotUGYn4hwjj7fO6X6TuBPX/view?usp=drive_link",
+            "https://drive.google.com/file/d/1OUaA6I7TtdOwh1Y_aApoar95wnbYhHcc/view?usp=drive_link",
         ]
         data_list = [
             {
@@ -178,4 +178,3 @@ if menu == "Kesekjenan":
 
 if menu == "Kesekjenan":
     kesekjenan()
-    
