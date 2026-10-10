@@ -40,7 +40,7 @@ Mahasiswa5 = st.Page(
 
 Mahasiswa6 = st.Page(
     "Buku Kating/057_Maria Raphita Hutauruk.py",
-    title="057 - Maria Raphita Huaturuk",
+    title="057 - Maria Raphita Hutauruk",
     icon=":material/person:",
 )
 
@@ -71,6 +71,12 @@ Mahasiswa10 = st.Page(
 Mahasiswa11 = st.Page(
     "Buku Kating/113_Farel Muhammad Pasha.py",
     title="113 - Farel Muhammad Pasha",
+    icon=":material/person:",
+)
+
+Mahasiswa2 = st.Page(
+    "Buku Kating/005_Ganis Zahrani Sausan.py",
+    title="005 - Ganis Zahrani Sausan",
     icon=":material/person:",
 )
 
