@@ -99,7 +99,7 @@ menu = streamlit_menu()
 
 # BAGIAN SINI YANG HANYA BOLEH DIUABAH
 if menu == "Departemen Internal":
-    def Departemen_Internal():
+    def Internal():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
@@ -297,5 +297,5 @@ if menu == "Departemen Internal":
             },
         ]
         display_images_with_data(gambar_urls, data_list)
-        Departemen_Internal()
+        Internal()
 
