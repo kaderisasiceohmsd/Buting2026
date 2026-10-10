@@ -13,15 +13,15 @@ def streamlit_menu():
         menu_title=None,
         options=[
             "Kesekjenan",
-            "Baleg",
-            "Senator",
+            "Badan Legislatif",
+            "Badan Kesenatoran",
             "Departemen PSDA",
             "Departemen MIKFES",
             "Departemen Eksternal",
             "Departemen Internal",
             "Departemen SSD",
             "Departemen Medkraf",
-			"Departemen Minbak"
+            "Departemen Minbak"
         ],
         icons=[
             "people-fill",
@@ -33,7 +33,6 @@ def streamlit_menu():
             "people-fill",
             "people-fill",
             "people-fill",
-			"people-fill",
         ],
         default_index=0,
         orientation="horizontal",
