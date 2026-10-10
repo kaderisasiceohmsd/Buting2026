@@ -139,19 +139,19 @@ menu = streamlit_menu()
 if menu == "Kesekjenan":
     gambar_urls = [
         "https://drive.google.com/uc?export=view&id=1RxaKvza2Df7IJIT4jjnfBndu0VftSy_h",
-        "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-         "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-                "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-                "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-                "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"
+        "https://drive.google.com/uc?export=view&id=1xulHbLUSVeQUQ0v2VPziDbAZG-IX6e8s",
+         "https://drive.google.com/uc?export=view&id=1v1EwOXYZHrKfEZsUg0sfwA2U3oHbJZZG",
+                "https://drive.google.com/uc?export=view&id=1lhpHZXDOh1bGlPQltgov8wRWwMjQp8at",
+                "https://drive.google.com/uc?export=view&id=1E2XjjKenQj15IDy5M2agb_KT3bPdTbHb",
+                "https://drive.google.com/uc?export=view&id=1MRiAd3b4-SHNBRkS2LJIo0vwVfGG7u7U"
     ]
     data_list = [
-        {"nama": "Yobel Imanuel Pasaribu", "nim": "122450016", "umur": "20", "asal": "Medan", "alamat": "Korpri", "hobbi": "Main Game, Futsal", "sosmed": "@yobelpasaribu", "kesan": "Sangat seru", "pesan": "Semangat!"},
-        {"nama": "Kakak B", "nim": "122450000", "umur": "19", "asal": "Bekasi", "alamat": "Gg. Sakul", "hobbi": "Belajar", "sosmed": "@b", "kesan": "Asik", "pesan": "Sukses selalu!"},
-                {"nama": "Kakak B", "nim": "122450000", "umur": "19", "asal": "Bekasi", "alamat": "Gg. Sakul", "hobbi": "Belajar", "sosmed": "@b", "kesan": "Asik", "pesan": "Sukses selalu!"},
-                        {"nama": "Kakak B", "nim": "122450000", "umur": "19", "asal": "Bekasi", "alamat": "Gg. Sakul", "hobbi": "Belajar", "sosmed": "@b", "kesan": "Asik", "pesan": "Sukses selalu!"},
-                {"nama": "Kakak B", "nim": "122450000", "umur": "19", "asal": "Bekasi", "alamat": "Gg. Sakul", "hobbi": "Belajar", "sosmed": "@b", "kesan": "Asik", "pesan": "Sukses selalu!"},
-                {"nama": "Kakak B", "nim": "122450000", "umur": "19", "asal": "Bekasi", "alamat": "Gg. Sakul", "hobbi": "Belajar", "sosmed": "@b", "kesan": "Asik", "pesan": "Sukses selalu!"}
+        {"nama": "Ginda Fajar Riadi Marpaung", "nim": "123450103", "umur": "20", "asal": "Medan", "alamat": "Korpri", "hobbi": "Main Game, Futsal", "sosmed": "@yobelpasaribu", "kesan": "Sangat seru", "pesan": "Semangat!"},
+        {"nama": "Muhammad Aqil Ramadhan", "nim": "123450066", "umur": "22", "asal": "Riau", "alamat": "Sekretariat HMSD", "hobbi": "Dzkir", "sosmed": "@muhammadaqil1111", "kesan": "Abangnya seru bisa diajak bercanda dan bisa diajak bicara serius", "pesan": "Sukses selalu serta semangat dalam melaksanakan tugas!"},
+        {"nama": "Efi Defiyati", "nim": "123450005", "umur": "21", "asal": "Lampung Timur", "alamat": "Airan", "hobbi": "Membaca", "sosmed": "@eeffiidefi", "kesan": "Kakaknya murah senyum", "pesan": "Sukses selalu kak dan semangat!"},
+        {"nama": "Qois Olifio", "nim": "123450067", "umur": "22", "asal": "Batam", "alamat": "Kota Baru", "hobbi": "Mainin surat", "sosmed": "@qoisolifio_", "kesan": "Abangnya sof spoken, lucuu", "pesan": "Sukses selalu dan semangat bang!!"},
+        {"nama": "Hafsa Fazila Arradhi", "nim": "123450079", "umur": "21", "asal": "Bandar Lampung", "alamat": "Bandar Lampung", "hobbi": "Bertemu Luluk", "sosmed": "@hafsafazilahh", "kesan": "Kakaknya baik, murah senyum, dan suka duit", "pesan": "Sukses selalu dan semangat kakk!!"},
+        {"nama": "Luthfia Laila Ramadhani", "nim": "123450004", "umur": "20", "asal": "Bengkulu", "alamat": "Airan", "hobbi": "Keliling Balam", "sosmed": "@luthhifiarmdhni", "kesan": "Kakaknya seru, lucuu, baikk", "pesan": "Sukses selalu dan semangat kakkk!!"}
 
     ]
     display_images_with_data(gambar_urls, data_list)
