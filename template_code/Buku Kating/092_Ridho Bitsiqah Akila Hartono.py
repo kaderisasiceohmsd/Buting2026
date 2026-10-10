@@ -179,7 +179,7 @@ if menu == "Kesekjenan":
                 "Hobbi": "Mintain Duit",
                 "Sosmed": "@luthfiaarmdhni ",
                 "Kesan": "Kakaknya lucu, baik, keren, asik juga",  
-                "Pesan":"Semoga dimudahkan selaluya kak segala urusannya"
+                "Pesan":"Semoga dimudahkan selalu ya kak segala urusannya"
             },                                                  
         ]
         display_images_with_data(gambar_urls, data_list)
@@ -405,10 +405,10 @@ elif menu == "Departemen SSD":
                 "Nama": "Moch. Iqbal Az-Zahir",
                 "Jabatan": "Staff Divisi Kemitraan",
                 "Nim": "124450052",
-                "Umur": "-",
-                "Asal": "-",
-                "Alamat": "-",
-                "Hobbi": "-",
+                "Umur": "20",
+                "Asal": "Bekasi",
+                "Alamat": "Natar",
+                "Hobbi": "Nonton Drakor",
                 "Sosmed": "@iqbalazzahir_",
                 "Kesan": "Abangnya kalem dan baik",
                 "Pesan": "Sehat terus bang"
