@@ -33,7 +33,6 @@ def streamlit_menu():
             "people-fill",
             "people-fill",
             "people-fill",
-            "people-fill",
         ],
         default_index=0,
         orientation="horizontal",
@@ -98,7 +97,7 @@ def display_images_with_data(gambar_urls, data_list):
 
 menu = streamlit_menu()
 
-# BAGIAN SINI YANG HANYA BOLEH DIUBAH
+# BAGIAN SINI YANG HANYA BOLEH DIUABAH
 if menu == "Kesekjenan":
     def Kesekjenan():
         gambar_urls = [
