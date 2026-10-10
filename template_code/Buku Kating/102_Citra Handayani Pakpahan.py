@@ -99,14 +99,16 @@ menu = streamlit_menu()
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/drive/folders/1by3pHPLKnA9DSMcUAHBVwT4g7Kc28tCb",
+            "https://drive.google.com/drive/folders/1by3pHPLKnA9DSMcUAHBVwT4g7Kc28tCb",
+            "https://drive.google.com/drive/folders/1by3pHPLKnA9DSMcUAHBVwT4g7Kc28tCb",
+            "https://drive.google.com/drive/folders/1by3pHPLKnA9DSMcUAHBVwT4g7Kc28tCb",
+            "https://drive.google.com/drive/folders/1by3pHPLKnA9DSMcUAHBVwT4g7Kc28tCb",
+            "https://drive.google.com/drive/folders/1by3pHPLKnA9DSMcUAHBVwT4g7Kc28tCb",
         ]
         data_list = [
             {
                 "Nama": "Ginda Fajar Riadi Marpaung",
-                "Jabatan" : "Ketua Himpunan",
                 "Nim": "123450103",
                 "Umur": "22",
                 "Asal":"Batam",
@@ -118,7 +120,6 @@ if menu == "Kesekjenan":
             },
             {
                 "Nama": "Muhammad Aqil Ramadhan",
-                "Jabatan" : "Sekretaris Jenderal",
                 "Nim": "123450066",
                 "Umur": "22",
                 "Asal":"Riau",
@@ -130,7 +131,6 @@ if menu == "Kesekjenan":
             },
             {
                 "Nama": "Efi Defiyati",
-                "Jabatan" : "Sekretaris 1",
                 "Nim": "123450005",
                 "Umur": "21",
                 "Asal":"Lampung Timur",
@@ -142,7 +142,6 @@ if menu == "Kesekjenan":
             },
             {
                 "Nama": "Qois Olifio",
-                "Jabatan" : "Sekretaris 2",
                 "Nim": "123450067",
                 "Umur": "22",
                 "Asal":"Batam",
@@ -154,7 +153,6 @@ if menu == "Kesekjenan":
             },
              {
                 "Nama": "Hafsa Fazila Arradhi",
-                "Jabatan" : "Bendahara 1",
                 "Nim": "123450079",
                 "Umur": "21",
                 "Asal":"Bandar Lampung",
@@ -166,7 +164,6 @@ if menu == "Kesekjenan":
             },
              {
                 "Nama": "Luthfia Laila Ramadhani",
-                "Jabatan" : "Bendahara 2",
                 "Nim": "123450004",
                 "Umur": "20",
                 "Asal":"Bekasi",
