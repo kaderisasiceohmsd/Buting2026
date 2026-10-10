@@ -397,22 +397,7 @@ elif menu == "Departemen Minbak":
 
     Departemen_Minbak()
 
-elif menu == "Departemen SSD":
-    def Departemen_SSD():
-        gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1KGNhbecJJbvZr65wajrzMgkyEvFRewTU",
-
-            "https://drive.google.com/uc?export=view&id=1yWdWMPOKHaihUeg-wBKRe3hYTEmkYPfn",
-            "https://drive.google.com/uc?export=view&id=10NctbY2MrUvJ-TDYguVCMaDsDYOzokFc",
-            "https://drive.google.com/uc?export=view&id=1lonoBPJYVxWpDdPv8IH3FQUWtC-xLRCr",
-            "https://drive.google.com/uc?export=view&id=1brlAstkmLBb26_RptHuq4WFcooc77OAs",
-            "https://drive.google.com/uc?export=view&id=13LZNR2UKs5-CkVm_8d1YZOU9Rv90Vvfu",
-            "https://drive.google.com/uc?export=view&id=13NoUA9gdgZ5CCcfgR1lia-UMgDpj0zKf",
-            "https://drive.google.com/uc?export=view&id=1AoKUIoXm_0Me7gwEyMPBgSZFFcYhMvJW",
-            "https://drive.google.com/uc?export=view&id=1ER_mNf7HXv__3jkIIkPnHjIx0allpGwA",
-            "https://drive.google.com/uc?export=view&id=1IiZlidIX4sOhH0iAr5QFaSb6IHVuq3ia"
-        ]
-    # --- Pimpinan & Sekretaris ---
+data_ssd = [
     {
         "nama": "Ihsan Maulana Yusuf",
         "nim": "123450110",
@@ -422,9 +407,8 @@ elif menu == "Departemen SSD":
         "hobbi": "Baca jurnal, cari jurnal yang berhubungan ta",
         "sosmed": "@ihsan.myusuf",
         "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!",
+        "pesan": "Semangat terus kuliahnya kakak!!!"
     },
-    # --- Divisi Kemitraan ---
     {
         "nama": "Afifah Fauziah",
         "nim": "123450002",
@@ -434,7 +418,7 @@ elif menu == "Departemen SSD":
         "hobbi": "Baca jurnal, nonton Marvel",
         "sosmed": "-",
         "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!",
+        "pesan": "Semangat terus kuliahnya kakak!!!"
     },
     {
         "nama": "Hasan Nur Ramadhan",
@@ -445,7 +429,7 @@ elif menu == "Departemen SSD":
         "hobbi": "Nonton yutub",
         "sosmed": "-",
         "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!",
+        "pesan": "Semangat terus kuliahnya kakak!!!"
     },
     {
         "nama": "Layina Ropiqo",
@@ -456,7 +440,7 @@ elif menu == "Departemen SSD":
         "hobbi": "Nonton dracin",
         "sosmed": "@layinr_",
         "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!",
+        "pesan": "Semangat terus kuliahnya kakak!!!"
     },
     {
         "nama": "Talitha Justine",
@@ -467,9 +451,8 @@ elif menu == "Departemen SSD":
         "hobbi": "Nonton",
         "sosmed": "@talljtine_",
         "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!",
+        "pesan": "Semangat terus kuliahnya kakak!!!"
     },
-    # --- Divisi Kewirausahaan ---
     {
         "nama": "Anadia Carana",
         "nim": "123450019",
@@ -479,7 +462,7 @@ elif menu == "Departemen SSD":
         "hobbi": "Nyari duit",
         "sosmed": "@anadiacrn",
         "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!",
+        "pesan": "Semangat terus kuliahnya kakak!!!"
     },
     {
         "nama": "Abdillah Fikri Al pome",
@@ -490,7 +473,7 @@ elif menu == "Departemen SSD":
         "hobbi": "Basket",
         "sosmed": "@pomest",
         "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!",
+        "pesan": "Semangat terus kuliahnya kakak!!!"
     },
     {
         "nama": "Afdhal Rahmad Setiawan",
@@ -501,7 +484,7 @@ elif menu == "Departemen SSD":
         "hobbi": "Fishing and game",
         "sosmed": "@Afdhal",
         "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!",
+        "pesan": "Semangat terus kuliahnya kakak!!!"
     },
     {
         "nama": "Anggun Nita",
@@ -512,7 +495,7 @@ elif menu == "Departemen SSD":
         "hobbi": "Nonton kartun",
         "sosmed": "@anggunitaaa_",
         "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!",
+        "pesan": "Semangat terus kuliahnya kakak!!!"
     },
     {
         "nama": "Della Anisa Fitri",
@@ -523,11 +506,57 @@ elif menu == "Departemen SSD":
         "hobbi": "Olahraga",
         "sosmed": "@delaanisafitri",
         "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!",
-    },
+        "pesan": "Semangat terus kuliahnya kakak!!!"
+    }
 ]
-        display_images_with_data(gambar_urls, data_list)
 
-    Departemen_SSD()
+gambar_ssd = [
+    "https://drive.google.com/uc?export=view&id=1KGNhbecJJbvZr65wajrzMgkyEvFRewTU",
+    "https://drive.google.com/uc?export=view&id=1yWdWMPOKHaihUeg-wBKRe3hYTEmkYPfn",
+    "https://drive.google.com/uc?export=view&id=10NctbY2MrUvJ-TDYguVCMaDsDYOzokFc",
+    "https://drive.google.com/uc?export=view&id=1lonoBPJYVxWpDdPv8IH3FQUWtC-xLRCr",
+    "https://drive.google.com/uc?export=view&id=1brlAstkmLBb26_RptHuq4WFcooc77OAs",
+    "https://drive.google.com/uc?export=view&id=13LZNR2UKs5-CkVm_8d1YZOU9Rv90Vvfu",
+    "https://drive.google.com/uc?export=view&id=13NoUA9gdgZ5CCcfgR1lia-UMgDpj0zKf",
+    "https://drive.google.com/uc?export=view&id=1AoKUIoXm_0Me7gwEyMPBgSZFFcYhMvJW",
+    "https://drive.google.com/uc?export=view&id=1ER_mNf7HXv__3jkIIkPnHjIx0allpGwA",
+    "https://drive.google.com/uc?export=view&id=1IiZlidIX4sOhH0iAr5QFaSb6IHVuq3ia"
+]
+
+
+menu = streamlit_menu()
+
+if menu == "Kesekjenan":
+    st.subheader("Departemen Kesekjenan")
+    display_images_with_data(
+        gambar_kesekjenan,
+        data_kesekjenan
+    )
+
+elif menu == "Baleg":
+    st.subheader("Badan Legislatif")
+    display_images_with_data(
+        gambar_baleg,
+        data_baleg
+    )
+
+elif menu == "Departemen Minbak":
+    st.subheader("Departemen Minat dan Bakat")
+    display_images_with_data(
+        gambar_minbak,
+        data_minbak
+    )
+
+elif menu == "Departemen SSD":
+    st.subheader("Departemen SSD")
+    display_images_with_data(
+        gambar_ssd,
+        data_ssd
+    )
+
+else:
+    st.info(
+        f"Halaman {menu} belum memiliki data anggota."
+    )
 
 # Tambahkan menu lainnya sesuai kebutuhan
