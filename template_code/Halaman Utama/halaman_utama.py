@@ -42,7 +42,7 @@ st.markdown(
     """
     <div style='text-align: center;'>
         <h1 style='font-size: 5.5em;'>WEBSITE KATING</h1>
-        <p style='font-size: 2em;'>CEO HMSD Adyatama ITERA 2024</p>
+        <p style='font-size: 2em;'>CEO HMSD Adyatama ITERA 2026</p>
     </div>
     """,
     unsafe_allow_html=True,
@@ -102,24 +102,28 @@ if menu == "Home":
             "<h1 class='centered-title'>Deskripsi Kelompok</h1>", unsafe_allow_html=True
         )
         st.markdown(
-            """<div style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                    laborum.</div>""",
+            """<div style="text-align: justify; line-height: 1.6; font-size: 16px;">
+            Kami adalah kelompok Tensor yang terdiri dari mahasiswa/i Sains Data angkatan 2025. 
+            Melalui website ini, kami bertujuan untuk mendokumentasikan hasil wawancara dan interaksi kami dengan 
+            Kakak Tingkat (Kating) dalam rangkaian kegiatan CEO HMSD Adyatama ITERA. 
+            Website ini merupakan wujud nyata penerapan ilmu pemrograman Python dan framework Streamlit 
+            yang telah kami pelajari.
+            </div>""",
             unsafe_allow_html=True,
         )
         st.write(""" """)
-        foto_kelompok = "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"
+        
+        # Ganti dengan link foto kelompok yang asli
+        foto_kelompok = "https://drive.google.com/uc?export=view&id=1BFaWjCYfj0HFeGBBDB8SmUYsZkxcEvM7"
         layout(foto_kelompok)
+        
         st.markdown(
-            """<div style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                    laborum.</div>""",
+            """<div style="text-align: justify; line-height: 1.6; font-size: 16px;">
+            Dalam proses pembuatan buku digital ini, kami belajar banyak hal, mulai dari manajemen proyek menggunakan Git/GitHub, 
+            perancangan antarmuka pengguna (UI/UX) sederhana, hingga kolaborasi tim yang solid. 
+            Semoga website Buku Kating ini dapat menjadi referensi dan kenang-kenangan yang bermanfaat 
+            bagi kami maupun pembaca.
+            </div>""",
             unsafe_allow_html=True,
         )
         st.write(""" """)
@@ -133,72 +137,78 @@ elif menu == "About Us":
             """<style>.centered-title {text-align: center;}</style>""",
             unsafe_allow_html=True,
         )
-        st.markdown("<h1 class='centered-title'>About Us</h1>", unsafe_allow_html=True)
+        
+        # --- KODE CSS TAMBAHAN UNTUK TAMPILAN PROFESIONAL ---
+        st.markdown("""
+        <style>
+            /* Styling agar foto membulat sedikit dan memiliki bayangan lembut */
+            img {
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                margin-bottom: 10px;
+            }
+            
+            /* Merapikan jarak teks biodata agar lebih lega saat dibaca */
+            .stMarkdown p {
+                line-height: 1.8;
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+        </style>
+        """, unsafe_allow_html=True)
+        # ----------------------------------------------------
+        
+        st.markdown("<h1 class='centered-title'>Anggota Kelompok</h1>", unsafe_allow_html=True)
+        
+        # Ganti URL ini dengan foto masing-masing anggota kelompokmu
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", # Foto Anggota 1
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", # Foto Anggota 2
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", # Foto Anggota 3
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", # Foto Anggota 4
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", # Foto Anggota 5
         ]
+        
+        # Ganti data ini dengan data asli anggota kelompokmu
         data_list = [
             {
-                "nama": "x",
-                "sebagai": "Pak Lurah",
-                "nim": "122450016",
-                "fun_fact": "suka makan pedes, tapi ga suka efeknya",
-                "motto_hidup": "new semester new me",
+                "nama": "**Ahmad Fadylah**",
+                "sebagai": "Pak lurah",
+                "nim": "124450103",
+                "fun_fact": "Suka ngeliatin Sunset",
+                "motto_hidup": "Nothing is impossible",
             },
             {
-                "nama": "x",
-                "sebagai": "Bu Lurah",
-                "nim": "122450000",
-                "fun_fact": "nyemilin es bata",
-                "motto_hidup": "Ya apa ya",
-            },
-            {
-                "nama": "x",
+                "nama": "**Nobel Nizam Fathirizki**",
                 "sebagai": "Anggota",
-                "nim": "122450083",
-                "fun_fact": "nyemilin es bata",
-                "motto_hidup": "mantap",
+                "nim": "124450117",
+                "fun_fact": "Suka ngoding sampai pagi",
+                "motto_hidup": "Tetap santuy walaupun error banyak",
             },
             {
-                "nama": "x",
-                "sebagai": "Anggotaa",
-                "nim": "122450000",
-                "fun_fact": "nyemilin",
-                "motto_hidup": "jalanin dulu aja",
+                "nama": "**[Nama Teman 3]**",
+                "sebagai": "Anggota",
+                "nim": "12445xxxx",
+                "fun_fact": "[Isi Fun Fact]",
+                "motto_hidup": "[Isi Motto]",
             },
             {
-                "nama": "x",
-                "sebagai": "Anggotaa",
-                "nim": "122450100",
-                "fun_fact": "nyemilin es bata, kiko",
-                "motto_hidup": "jalanin dulu keles",
+                "nama": "**[Nama Teman 4]**",
+                "sebagai": "Anggota",
+                "nim": "12445xxxx",
+                "fun_fact": "[Isi Fun Fact]",
+                "motto_hidup": "[Isi Motto]",
             },
             {
-                "nama": "x",
-                "sebagai": "Anggotaa",
-                "nim": "122450100",
-                "fun_fact": "nyemilin es bata, kiko",
-                "motto_hidup": "jalanin dulu keles",
-            },
-            {
-                "nama": "x",
-                "sebagai": "Anggotaa",
-                "nim": "122450100",
-                "fun_fact": "nyemilin es bata, kiko",
-                "motto_hidup": "jalanin dulu keles",
-            },
-            {
-                "nama": "x",
-                "sebagai": "Anggotaa",
-                "nim": "122450110",
-                "fun_fact": "nyemilin es bata, kiko",
-                "motto_hidup": "jalanin dulu keles",
+                "nama": "**[Nama Teman 5]**",
+                "sebagai": "Anggota",
+                "nim": "12445xxxx",
+                "fun_fact": "[Isi Fun Fact]",
+                "motto_hidup": "[Isi Motto]",
             },
         ]
+        
+        # Menampilkan gambar dan data menggunakan fungsi bawaan yang JANGAN DIUBAH
         display_images_with_data(gambar_urls, data_list)
 
     about_page()
