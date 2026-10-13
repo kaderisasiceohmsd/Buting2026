@@ -4,6 +4,56 @@ import requests
 from PIL import Image, ImageOps
 from io import BytesIO
 
+st.markdown("""
+<style>
+.bio-frame {
+    max-width: 720px;
+    margin: 25px auto;
+    padding: 30px;
+    border: 2px solid #3278C8;
+    border-radius: 22px;
+    background: linear-gradient(145deg, #ffffff, #f0f6ff);
+    box-shadow: 0 8px 24px rgba(30, 80, 140, 0.12);
+    position: relative;
+}
+
+.bio-frame::before {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 5px;
+    background: #F9C846;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+}
+
+.bio-name {
+    text-align: center;
+    color: #204F87;
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.bio-item {
+    padding: 12px 15px;
+    margin: 10px 0;
+    background: white;
+    border-left: 4px solid #F9C846;
+    border-radius: 8px;
+    color: #283747;
+    line-height: 1.6;
+}
+
+.bio-footer {
+    text-align: center;
+    color: #66809E;
+    font-size: 12px;
+    margin-top: 20px;
+}
+</style>
+""", unsafe_allow_html=True)
+
 
 # JANGAN DIUBAH
 @st.cache_data
