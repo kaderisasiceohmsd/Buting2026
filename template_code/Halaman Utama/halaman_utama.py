@@ -219,7 +219,7 @@ elif menu == "About Us":
                 "nim": "125450067",
                 "fun_fact": "...",
                 "motto_hidup": "...",
-                "ig": "https://instagram.com/instagram"
+                "ig": "https://instagram.com/instagra"
             },
             {
                 "nama": "Wardah Aliya Lubis",
