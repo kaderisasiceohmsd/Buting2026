@@ -101,7 +101,7 @@ menu = streamlit_menu()
 if menu == "Kesekjenan":
     def Kesekjenan():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=14VNqTqu-26uuqY90BcDKQ3yGC5P_6GWV",
+            "https://drive.google.com/uc?export=view&id=1Cz2rtO-3Yo-UO7FafWyu3gcd76GLuyUa",
             "https://drive.google.com/uc?export=view&id=1Ta3xp-gx50zUjKvOxudovrvY0jkXslr8",
             "https://drive.google.com/uc?export=view&i1z0_usfqOKi66hvxHrL7AMI2moRNIcb1w",
             "https://drive.google.com/uc?export=view&id=/1MV-5Uhc5okjjL1nXfygPUCu99Jfe-pvS",
@@ -110,7 +110,7 @@ if menu == "Kesekjenan":
         ]
         data_list = [
             {
-                  "nama": "Ginda Fajar Riadi Marpaung",
+                "nama": "Ginda Fajar Riadi Marpaung",
                 "nim": "123450103",
                 "umur": "22",
                 "asal": "Batam",
