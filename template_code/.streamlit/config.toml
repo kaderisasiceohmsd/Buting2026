@@ -1,5 +1,6 @@
 [theme]
-primaryColor="#146c94"
-backgroundColor="#f6f1f1"
-secondaryBackgroundColor="#19a7ce"
-textColor="#000000"
+primaryColor = "#D4A373"          # Warna aksen/tombol aktif (Warm Butterscotch)
+backgroundColor = "#FAEDCD"       # Latar belakang utama halaman (Cream Pastel)
+secondaryBackgroundColor = "#E9EDC9" # Warna sidebar & kontainer sekunder (Soft Sage-Cream)
+textColor = "#2B2D42"             # Warna teks utama 
+font = "sans serif"
