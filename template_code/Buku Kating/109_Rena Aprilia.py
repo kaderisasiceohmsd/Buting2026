@@ -39,9 +39,42 @@ elif menu == "Senator":
     display_images_with_data(gambar_urls, data_list, key="senator")
 
 elif menu == "Departemen PSDA":
-    gambar_urls = ["https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"]
+    gambar_urls = ["https://drive.google.com/uc?export=view&id=1ugRy9I-IThSGyshDV40ZZCj5Ij0zA_dM",
+                  "https://drive.google.com/uc?export=view&id=1XL5MVecX_5eBy_qYPQSHipW7_NM3YC6u",
+                  "https://drive.google.com/uc?export=view&id=1oDy2uDWrLDhJKXWoKncsTHvLcS6uoBYb",
+                  "https://drive.google.com/uc?export=view&id=1ubIf8n1wNXmS1mSg5XEecHUg5flXufBz",
+                  "https://drive.google.com/uc?export=view&id=1m--jD9dD3qj7en8icFLz4X0WD8A3WDbt",
+                  "https://drive.google.com/uc?export=view&id=1byXG-3ZAOu55VsJu6gMxcowDlhESJF8T",
+                  "https://drive.google.com/uc?export=view&id=17a0GCKlbImpkVqwRJyNJht1N9UwDRcuH",
+                  "https://drive.google.com/uc?export=view&id=1-DL-YEtkYoOdmMG74Jv_IiSJrXJCC8A_",
+                  "https://drive.google.com/uc?export=view&id=1HJbCosZONLYJ6F2H3T4Ep5LeXRUV73ir",
+                  "https://drive.google.com/uc?export=view&id=1tLwohSuK2xfdrCpX9I6yJbtGFzy9YMlR",
+                  "https://drive.google.com/uc?export=view&id=1ITrIaHsNGIYrLBeFjKaqmNqekWH0pV8C",
+                  "https://drive.google.com/uc?export=view&id=1AVbyN636abRPwg26jT3Q1Pqe9cp37OFg",
+                  "https://drive.google.com/uc?export=view&id=1VDgB7thn0EFUarebPi-mgOl5JGuNE4-C",
+                  "https://drive.google.com/uc?export=view&id=16PnYv63FMdmq-gQ5VlBrLVuuuZ0K22GJ",
+                  "https://drive.google.com/uc?export=view&id=1E4hWGT1PdW0kbULKbGmeEI-wdph84SMe",
+                  "https://drive.google.com/uc?export=view&id=13aI1RPyvr1xLgDwM8qc_QtZDWZM_67IH",
+                  "https://drive.google.com/uc?export=view&id=1u8mLN491Z3DCf95uaIjX82zeMTsazbu1",
+    ]
     data_list = [
-        {"nama": "Anggota PSDA", "jabatan": "Staf PSDA", "nim": "122450033", "umur": "20", "asal": "Bogor", "alamat": "Korpri", "hobbi": "Leadership", "sosmed": "@psda", "kesan": "Keren", "pesan": "Semangat PSDA!"},
+        {"nama": "Arienta Khusnul Ananda", "jabatan": "Kepala Departemen PSDA", "nim": "123450097", "umur": "21", "asal": "Pinggir pantai", "alamat": "Samping kost kapo", "hobbi": "Ngerjain anak kader", "sosmed": "@arientakhsnl_", "kesan": "Cantikk banget kak, makeupnya flawless", "pesan": "Semangat jadi kadep psda, dan selalu keren kak"},
+        {"nama": "Vany Salsabila Putri", "jabatan": "Sekretaris Departemen PSDA", "nim": "122450033", "umur": "20", "asal": "Bogor", "alamat": "Korpri", "hobbi": "Leadership", "sosmed": "@vany.salsabilaa", "kesan": "kakanya lucuu", "pesan": "semangatt kak sekdep"},
+        {"nama": "Nobel Nizam F", "jabatan": "Kepala Divisi Kaderisasi", "nim": "122450033", "umur": "20", "asal": "Bogor", "alamat": "Korpri", "hobbi": "Leadership", "sosmed": "@psda", "kesan": "Keren main sulap kartunya", "pesan": "semoga semakin banyak trik sulapnyaa bang"},
+        {"nama": "Afriza Azmi", "jabatan": "Staf Kaderisasi", "nim": "122450033", "umur": "20", "asal": "Bogor", "alamat": "Korpri", "hobbi": "Leadership", "sosmed": "@psda", "kesan": "enerjik banget pas damaskusan", "pesan": "semangatt terus bangg"},
+        {"nama": "Ayake Alfatih Ramadan", "jabatan": "Staf Kaderisasi", "nim": "122450033", "umur": "20", "asal": "Bogor", "alamat": "Korpri", "hobbi": "Leadership", "sosmed": "@psda", "kesan": "Keren", "pesan": "Semangat PSDA!"},
+        {"nama": "Caesar Ozora Alrando" , "jabatan": "Staf Kaderisasi", "nim": "122450033", "umur": "20", "asal": "Bogor", "alamat": "Korpri", "hobbi": "Leadership", "sosmed": "@psda", "kesan": "Keren", "pesan": "Semangat PSDA!"},
+        {"nama": "Euodia Meiliana Friedita", "jabatan": "Staf Kaderisasi", "nim": "122450033", "umur": "20", "asal": "Bogor", "alamat": "Korpri", "hobbi": "Leadership", "sosmed": "@psda", "kesan": "Keren", "pesan": "Semangat PSDA!"},
+        {"nama": "Haikal Seventino Tamba", "jabatan": "Staf Kaderisasi", "nim": "122450033", "umur": "20", "asal": "Bogor", "alamat": "Korpri", "hobbi": "Leadership", "sosmed": "@psda", "kesan": "Keren", "pesan": "Semangat PSDA!"},
+        {"nama": "Putri Manna Anantama Simbolon", "jabatan": "Staf Kaderisasi", "nim": "122450033", "umur": "20", "asal": "Bogor", "alamat": "Korpri", "hobbi": "Leadership", "sosmed": "@psda", "kesan": "Keren", "pesan": "Semangat PSDA!"},
+        {"nama": "Queenta Thifaal Nabila", "jabatan": "Staf Kaderisasi", "nim": "122450033", "umur": "20", "asal": "Bogor", "alamat": "Korpri", "hobbi": "Leadership", "sosmed": "@psda", "kesan": "Keren", "pesan": "Semangat PSDA!"},
+        {"nama": "Desman Velius Halawa", "jabatan": "Kepala Divisi Peningkatan Mutu Anggota", "nim": "122450033", "umur": "20", "asal": "Bogor", "alamat": "Korpri", "hobbi": "Leadership", "sosmed": "@psda", "kesan": "Keren", "pesan": "Semangat PSDA!"},
+        {"nama": "Azzelya Thianandry", "jabatan": "Staf Peningkatan Mutu Anggota", "nim": "122450033", "umur": "20", "asal": "Bogor", "alamat": "Korpri", "hobbi": "Leadership", "sosmed": "@psda", "kesan": "Keren", "pesan": "Semangat PSDA!"},
+        {"nama": "Charrlindah", "jabatan": "Staf Peningkatan Mutu Anggota", "nim": "122450033", "umur": "20", "asal": "Bogor", "alamat": "Korpri", "hobbi": "Leadership", "sosmed": "@psda", "kesan": "Keren", "pesan": "Semangat PSDA!"},
+        {"nama": "Jeremi Marolop P. Situmorang", "jabatan": "Staf Peningkatan Mutu Anggota", "nim": "122450033", "umur": "20", "asal": "Bogor", "alamat": "Korpri", "hobbi": "Leadership", "sosmed": "@psda", "kesan": "Keren", "pesan": "Semangat PSDA!"},
+        {"nama": "Nabila Nur Azizah", "jabatan": "Staf Peningkatan Mutu Anggota", "nim": "122450033", "umur": "20", "asal": "Bogor", "alamat": "Korpri", "hobbi": "Leadership", "sosmed": "@psda", "kesan": "Keren", "pesan": "Semangat PSDA!"},
+        {"nama": "Rafli Al Mansyah Tambunan", "jabatan": "Staf Peningkatan Mutu Anggota", "nim": "122450033", "umur": "20", "asal": "Bogor", "alamat": "Korpri", "hobbi": "Leadership", "sosmed": "@psda", "kesan": "Keren", "pesan": "Semangat PSDA!"},
+        {"nama": "Salavi Naharani", "jabatan": "Staf Peningkatan Mutu Anggota", "nim": "122450033", "umur": "20", "asal": "Bogor", "alamat": "Korpri", "hobbi": "Leadership", "sosmed": "@psda", "kesan": "Keren", "pesan": "Semangat PSDA!"},
     ]
     display_images_with_data(gambar_urls, data_list, key="psda")
 
