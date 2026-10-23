@@ -39,14 +39,20 @@ def image_to_html_link(img, url_ig, img_width="100%"):
     """
     return html_code
 
-
-# JANGAN DIUBAH
+# JANGAN DIUBAH 
 @st.cache_data
 def load_image(url):
-    response = requests.get(url)
-    img = Image.open(BytesIO(response.content))
-    img = ImageOps.exif_transpose(img)
-    return img
+    try:
+        response = requests.get(url)
+        # Pastikan response adalah file gambar, bukan HTML
+        if 'text/html' in response.headers.get('Content-Type', ''):
+            return None
+        
+        img = Image.open(BytesIO(response.content))
+        img = ImageOps.exif_transpose(img)
+        return img
+    except Exception as e:
+        return None
 
 def display_images_with_data(gambar_urls, data_list):
     images = []
@@ -211,7 +217,7 @@ elif menu == "About Us":
                 "nim": "124450060",
                 "fun_fact": "...",
                 "motto_hidup": "...",
-                "ig": "https://www.instagram.com/andra.lhm?utm_source=ig_web_button_share_sheet&mdxt=ZDNlZDc0MzIxNw==" 
+                "ig": "https://instagram.com/instagram" 
             },
             {
                 "nama": "Andrew Chayadi",
@@ -219,7 +225,7 @@ elif menu == "About Us":
                 "nim": "125450067",
                 "fun_fact": "...",
                 "motto_hidup": "...",
-                "ig": "https://instagram.com/instagra"
+                "ig": "https://instagram.com/instagram"
             },
             {
                 "nama": "Wardah Aliya Lubis",
