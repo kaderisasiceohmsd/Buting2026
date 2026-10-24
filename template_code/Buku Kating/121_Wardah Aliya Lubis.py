@@ -403,6 +403,7 @@ elif menu == "Departemen SSD":
     def Departemen_SSD():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1P4ruEk7NETFmFwSpA5IasehjcCj_sTyC",
+            "https://drive.google.com/uc?export=view&id=1wRjdlOB4OOG6GVoBPHd45vGyhNOTJFkx",
             "https://drive.google.com/uc?export=view&id=15isF6NFx2_fp9zXGRDcHM0HEGulMmCdM",
             "https://drive.google.com/uc?export=view&id=1s5GvbYr-xmxzzzr7nDjm63DSaSYOQq7y",
             "https://drive.google.com/uc?export=view&id=1bSOCPQwxcSPGQ_JXWL-4Zwm1OCuweCu4",
