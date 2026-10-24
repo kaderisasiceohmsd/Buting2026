@@ -540,6 +540,12 @@ elif menu == "Departemen SSD":
 elif menu == "Bason":
     def Bason():
         gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1_eqne9wh7Vv3r72alnNC09hPcCCcozBA",
+            "https://drive.google.com/uc?export=view&id=1A64fxbdMjm5-4tAkRQEfv-4TAvGDudYF",
+            "https://drive.google.com/uc?export=view&id=1oI-tT7AdEqI1YOlPBf4vookLQPQvnZ6K",
+            "https://drive.google.com/uc?export=view&id=17HrIBmIQ4HNvBWrX2sRAqIkiFLwbnVhT",
+            "https://drive.google.com/uc?export=view&id=1-G9OLCTeEkZJT4D_4wEoi8theUGrLRj_",
+            "https://drive.google.com/uc?export=view&id=1Kq9LFbKNgmgMMjhaFoaPTnsE7UaxAmlZ",
         ]
         data_list = [
             {
