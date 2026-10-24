@@ -1,18 +1,13 @@
 import streamlit as st
-import numpy as np
 import random
 
-st.set_page_config(page_title="CosWave Challenge", layout="wide")
+st.set_page_config(page_title="Gold Vault Challenge", layout="centered")
 
 st.markdown("""
 <style>
 .stApp {
     background-color: #0b0b0b;
     color: #e5e5e5;
-}
-[data-testid="stSidebar"] {
-    background-color: #141414;
-    color: #d4af37;
 }
 h1, h2, h3 {
     color: #ffd700 !important;
@@ -30,34 +25,32 @@ h1, h2, h3 {
 </style>
 """, unsafe_allow_html=True)
 
-st.title("CosWave Target Challenge")
-st.markdown("Sesuaikan sudut untuk mencocokkan nilai target cosinus yang ditentukan.")
+st.title("Gold Vault Challenge")
+st.markdown("Tebak kombinasi angka rahasia brankas antara 1 sampai 100.")
 
-if "target_cos" not in st.session_state:
-    st.session_state.target_cos = round(random.uniform(-1, 1), 2)
+if "secret_number" not in st.session_state:
+    st.session_state.secret_number = random.randint(1, 100)
+    st.session_state.attempts = 0
+    st.session_state.game_over = False
 
-col1, col2 = st.columns(2)
-with col1:
-    st.metric("Target Nilai Cosinus", st.session_state.target_cos)
-with col2:
-    if st.button("Acak Target Baru"):
-        st.session_state.target_cos = round(random.uniform(-1, 1), 2)
-        st.rerun()
-
-angle_deg = st.slider("Pilih Sudut (Derajat)", 0, 360, 0, 1)
-angle_rad = np.radians(angle_deg)
-current_cos = round(float(np.cos(angle_rad)), 2)
-
-diff = round(abs(current_cos - st.session_state.target_cos), 2)
-
-st.metric("Nilai Cosinus Anda", current_cos, delta=f"Selisih: {diff}", delta_color="inverse")
-
-if diff <= 0.03:
-    st.success("Target Berhasil Dicapai")
+if not st.session_state.game_over:
+    guess = st.number_input("Masukkan Angka Tebakan Anda", min_value=1, max_value=100, step=1)
+    
+    if st.button("Coba Buka Brankas"):
+        st.session_state.attempts += 1
+        if guess == st.session_state.secret_number:
+            st.session_state.game_over = True
+            st.rerun()
+        elif guess < st.session_state.secret_number:
+            st.warning("Angka terlalu kecil. Naikkan tebakan Anda.")
+        else:
+            st.warning("Angka terlalu besar. Turunkan tebakan Anda.")
+            
+    st.metric("Total Percobaan", st.session_state.attempts)
 else:
-    st.warning("Geser sudut untuk mendekati nilai target")
-
-x = np.linspace(0, 360, 361)
-y = np.cos(np.radians(x))
-chart_data = {"Sudut": x, "Cosinus": y}
-st.line_chart(chart_data, x="Sudut", y="Cosinus", color=["#ffd700"])
+    st.success(f"Brankas Berhasil Dibuka dalam {st.session_state.attempts} percobaan!")
+    if st.button("Main Lagi"):
+        st.session_state.secret_number = random.randint(1, 100)
+        st.session_state.attempts = 0
+        st.session_state.game_over = False
+        st.rerun()
