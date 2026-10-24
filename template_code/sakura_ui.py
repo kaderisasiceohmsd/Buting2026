@@ -1203,10 +1203,10 @@ def render_polaroid_about_us(gambar_urls, data_list, mentor_data=None):
     default_mentor = {
         "nama": "Farhanah Hadaya Fatin",
         "sebagai": "Mentor Kelompok 02",
-        "nim": "124450045",
-        "fun_fact": "Sosok pembimbing paling sabar dan selalu siap sedia mengarahkan Kelompok 02 Jacobi!",
-        "motto_hidup": "Bertumbuh bersama dalam harmoni, melangkah pasti menuju konvergensi.",
-        "foto_url": "",
+        "nim": "124450026",
+        "fun_fact": "Bisa tidur dimana aja kapan aja",
+        "motto_hidup": "Risking better than regretting",
+        "foto_url": "https://drive.google.com/uc?export=view&id=1CYURN_LuyaB9QmaVCpIStS1VvjfjQksw",
     }
     if not mentor_data:
         mentor_data = default_mentor

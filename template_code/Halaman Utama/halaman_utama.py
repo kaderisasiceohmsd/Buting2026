@@ -108,7 +108,7 @@ menu = streamlit_menu()
 if menu == "Home":
 
     def home_page():
-        foto_kelompok = "https://drive.google.com/uc?export=view&id=1X8ixiPEye7AhBVRrl-Qm5dJ2amaSB3Y5"
+        foto_kelompok = "https://drive.google.com/uc?export=view&id=1zwDzbQycF6FUnJdc5hM6TK-BnZc9SnC8"
         render_home_tab(foto_kelompok)
 
     home_page()
@@ -116,31 +116,30 @@ if menu == "Home":
 elif menu == "About Us":
 
     def about_page():
-        # DATA MENTOR (Di luar 13 orang anggota kelompok, tampil Paling Atas Tengah)
         mentor_data = {
             "nama": "Farhanah Hadaya Fatin",
             "sebagai": "Mentor Kelompok 02",
-            "nim": "124450005",
-            "fun_fact": "Sosok pembimbing paling sabar dan selalu siap sedia mengarahkan Kelompok 02 Jacobi!",
-            "motto_hidup": "Bertumbuh bersama dalam harmoni, melangkah pasti menuju konvergensi.",
-            "foto_url": "",  # Masukkan link Google Drive foto Kak Farhanah di sini (jika kosong "", otomatis tampil avatar sakura estetik)
+            "nim": "124450026",
+            "fun_fact": "Bisa tidur dimana aja kapan aja",
+            "motto_hidup": "Risking better than regretting",
+            "foto_url": "https://drive.google.com/uc?export=view&id=1CYURN_LuyaB9QmaVCpIStS1VvjfjQksw",  # Masukkan link Google Drive foto Kak Farhanah di sini (jika kosong "", otomatis tampil avatar sakura estetik)
         }
 
         # FOTO 13 ANGGOTA KELOMPOK 02 JACOBI
         gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1X2KwiLJ1v2Gvc_qN_6_m3ZSZbXcVdkkl",
+            "https://drive.google.com/uc?export=view&id=1DtO2eY0GOsxoaVHQb5kwfI9UOv7NoBW4",
+            "https://drive.google.com/uc?export=view&id=1fR93yciuJ9ZKr07WJSFW3POJusDkiVI9",
+            "https://drive.google.com/uc?export=view&id=1FeCH9VKK6xSXyDOlarBJsz6upKpZkKw6",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1ldYVGXEoWrMVi_QEcTB27_3g9JNVco-R",
+            "https://drive.google.com/uc?export=view&id=1DGsviu96SH9ELmkhlNT3c2eVzMorb2do",
+            "https://drive.google.com/uc?export=view&id=1Egnh5rSF6GJZdMeEp0Y0rYMM2n_Ja9Bg",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1HshxbkzrYbq3cZISXpWunElyB0lCPsCf",
         ]
 
         # BIODATA 13 ANGGOTA KELOMPOK 02 JACOBI (2 Pemimpin: Ketua/Palu & Wakil/Bulu + 11 Anggota)
