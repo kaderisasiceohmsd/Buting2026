@@ -4,6 +4,54 @@ import requests
 from PIL import Image, ImageOps
 from io import BytesIO
 
+# Pengaturan Konfigurasi Tema Global & Warna Sidebar agar Tampil Jelas
+st.markdown(
+    """
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@400;600;700&display=swap');
+
+    /* Global Styling */
+    .stApp {
+        background: radial-gradient(circle at 50% 10%, #090d16 0%, #030712 100%);
+        color: #ffffff;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+
+    /* Sidebar dikembalikan seperti awal, hanya menyesuaikan warna teks agar terang & terbaca */
+    [data-testid="stSidebar"] {
+        background-color: #060918 !important;
+        border-right: 1px solid rgba(0, 243, 255, 0.2);
+    }
+    [data-testid="stSidebar"] span, [data-testid="stSidebar"] p, [data-testid="stSidebar"] div {
+        color: #ffffff !important;
+    }
+
+    .main-title {
+        font-family: 'Orbitron', sans-serif;
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: 900;
+        background: linear-gradient(135deg, #00f3ff 0%, #7928ca 50%, #ff007f 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 30px rgba(0, 243, 255, 0.4);
+        margin-bottom: 0px;
+    }
+
+    .sub-title {
+        font-family: 'Orbitron', sans-serif;
+        text-align: center;
+        font-size: 1.5rem;
+        color: #ffffff;
+        letter-spacing: 3px;
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        margin-bottom: 30px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 st.markdown("""<style>.centered-title {text-align: center;}</style>""", unsafe_allow_html=True)
 st.markdown("<h1 class='centered-title'>BUKU KATING</h1>", unsafe_allow_html=True)
 
