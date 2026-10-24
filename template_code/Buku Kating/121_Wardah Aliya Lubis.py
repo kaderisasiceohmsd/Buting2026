@@ -542,9 +542,14 @@ elif menu == "Bason":
         gambar_urls = [
            "https://drive.google.com/uc?export=view&id=1EYe2Nn4eqtp4qel7pAXeVKqpCE53XfIJ",
             "https://drive.google.com/uc?export=view&id=1lxXfp8aAfOmpuXvWe_22zGbWzQ5Abiyk",
+            "https://drive.google.com/uc?export=view&id=1SO_faxm5V5_r5NFt1FCiqugPThQxlxvu",
             "https://drive.google.com/uc?export=view&id=1ao9tFwYtntSzlFP66MTKQcvzVTtRfUWH",
             "https://drive.google.com/uc?export=view&id=1zum85YU5f5qUu_qKAgyoxx4p_50vJQXG",
             "https://drive.google.com/uc?export=view&id=15p-0fDihk2pvwmG4r13CESQpXFFDSaxB",
+            "https://drive.google.com/uc?export=view&id=1ZZF5zYy3XHmZloUZ7QvHkaG5phNZXqhU",
+            "https://drive.google.com/uc?export=view&id=1ZZF5zYy3XHmZloUZ7QvHkaG5phNZXqhU",
+            "https://drive.google.com/uc?export=view&id=142oPjv5d9-kPp_d_--17J9T05xUlxkdV",
+            "https://drive.google.com/drive/folders/1wKZJHIZK2dn1JLoaEE9Vi1Nml2HuyJ3W",
         ]
         data_list = [
             {
