@@ -21,8 +21,10 @@ def streamlit_menu():
             "Departemen Internal",
             "Departemen SSD",
             "Departemen Medkraf",
+            "Departemen Minbak"
         ],
         icons=[
+            "people-fill",
             "people-fill",
             "people-fill",
             "people-fill",
@@ -44,7 +46,7 @@ def streamlit_menu():
                 "margin": "0px",
                 "--hover-color": "#eee",
             },
-            "nav-link-selected": {"background-color": "#3FBAD8"},
+            "nav-link-selected": {"background-color": "#606060"},
         },
     )
     return selected
@@ -99,12 +101,12 @@ menu = streamlit_menu()
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1fwLPLl9PiJgDcPgqjfyx_6gcavfnekYV",
+            "https://drive.google.com/uc?export=view&id=1mU6-9OLIUSU3lIS7AWkD5lxZZtdtuA3N",
+            "https://drive.google.com/uc?export=view&id=1Mjhm_0o6IA391OrLiEUV53D84HUNH0vz",
+            "https://drive.google.com/uc?export=view&id=1flmlfqGRuZXo8Pe6kI-TT4Wxd5XznLqw",
+            "https://drive.google.com/uc?export=view&id=1ZURwHGl_zZ4XXrPuH2xrWZ5MSbDzGv5c",
+            "https://drive.google.com/uc?export=view&id=1N9VhZ383Am2zFn6ZSOvGj8d7T47514xx",
         ]
         data_list = [
             {
@@ -115,8 +117,8 @@ if menu == "Kesekjenan":
                 "alamat": "Tinggal Sekretariat HMSD",
                 "hobbi": "Push Rank Sampai imo",
                 "sosmed": "@jars_mrp",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Abangnya seru dan banyak insight yang bisa diambil dari abangnya",  
+                "pesan": "Semoga tetap semangat dan sukses dalam menjalani kuliahnya"# 1
             },
             {
                 "nama": "Muhammad Aqil Ramadhan",
@@ -126,8 +128,8 @@ if menu == "Kesekjenan":
                 "alamat": "Sekretariat HMSD",
                 "hobbi": "Tahajud",
                 "sosmed": "@muhammadaqil1111",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Abangnya lucu tapi tetap serius dalam menjalankan tugasnya",  
+                "pesan":"Semoga kuliahnya lancar"# 1
             },
             {
                 "nama": "Efi Defiyati",
@@ -137,8 +139,8 @@ if menu == "Kesekjenan":
                 "alamat": "Airan",
                 "hobbi": "Membaca",
                 "sosmed": "@eeffiidefi",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Kakaknya baik dan sering ngasih tips",  
+                "pesan":"Tetap jadi orang baik"# 1
             },
             {
                 "nama": "Qois Olifio",
@@ -148,8 +150,8 @@ if menu == "Kesekjenan":
                 "alamat": "Kotabaru",
                 "hobbi": "Mainin Surat",
                 "sosmed": "@qoisolifio_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Abangnya kalem tapi sering ngelucu",  
+                "pesan":"Semoga tetap jadi orang yang kalem"# 1
             },
             {
                 "nama": "Hafsa Fazila Arradhi",
@@ -159,8 +161,8 @@ if menu == "Kesekjenan":
                 "alamat": "Bandar Lampung",
                 "hobbi": "Basket",
                 "sosmed": "@hafsafazilaa",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Kakaknya baik, asik dan seru",  
+                "pesan":"Semoga urusan kakaknya lancar dan kuliahnya aman"# 1
             },
             {
                 "nama": "Lutfia Laila Ramadhani",
@@ -170,8 +172,8 @@ if menu == "Kesekjenan":
                 "alamat": "Airan",
                 "hobbi": "Nemuin Pak Tirta",
                 "sosmed": "@Luthfiaarmdhni",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Kakaknya seru dan lucu, tapi kadang suka kaget",  
+                "pesan":"Semoga kakaknya tetap jadi seru dan lucu"# 1
             },
         ]
         display_images_with_data(gambar_urls, data_list)
@@ -180,18 +182,19 @@ if menu == "Kesekjenan":
 if menu == "Baleg":
     def baleg():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"            
+            "https://drive.google.com/uc?export=view&id=1mPKsjgdBOBC6SPq0ol2iXFLGOJOT4hps",
+            "https://drive.google.com/uc?export=view&id=1wtmxbv7-HJgvOICrx_8gW5qccoj8DJD9",
+            "https://drive.google.com/uc?export=view&id=1aXvQV3_PrKRkmoK9uawSS908roc-ISz2",
+            "https://drive.google.com/uc?export=view&id=1cyM4IQ0LWaiExqAy_GJOEtZ0GWqf89BX",
+            "https://drive.google.com/uc?export=view&id=1-i8AB1ntksWAMPUOXZc2DE8fdfov13G5",
+            "https://drive.google.com/uc?export=view&id=1LfFnTe84LiB36Dx1akOgCGqFAQaRNY3V",
+            "https://drive.google.com/uc?export=view&id=1IugDIyKQkkiAu1vLRbyxpBPiTwHmjYSN",
+            "https://drive.google.com/uc?export=view&id=1cCxGYKIQ8uVJ3ZYO5M3dz_dxpwYzynI6",
+            "https://drive.google.com/uc?export=view&id=1PlguIsd6D7fv6_XgBH_Mg_muWbeD1Bga",
+            "https://drive.google.com/uc?export=view&id=1oI2dpo8sdGHtDrC1oD7niz3tzH6vQtZc",
+            "https://drive.google.com/uc?export=view&id=1Je5PNkWfkATsPcD6__zZxYNry0J08aZ9",
+            "https://drive.google.com/uc?export=view&id=1r5jKoBa30AZ3yiBnPxb5Zu-uCeU4z_5Z",
+            "https://drive.google.com/uc?export=view&id=1WvMdoQVdUWEw-SGo55DIK71o1GNv_mFC"            
         ]
         data_list = [
             {
@@ -202,8 +205,8 @@ if menu == "Baleg":
                 "alamat": "GH",
                 "hobbi": "Menonton Seminar",
                 "sosmed": "@iamridhomanik",
-                "kesan": "Abang ini asik parah dan yapping banget dan sedikit npd juga",  
-                "pesan":"Semoga cepat selesai TA nya bang"# 1
+                "kesan": "Abang ini lucu banget dan usil kadang-kadang",  
+                "pesan":"Semoga selalu jadi orang yang lucu"# 1
             },
             {
                 "nama": "Juesi Apridelia Saragih",
@@ -213,8 +216,8 @@ if menu == "Baleg":
                 "alamat": "Pelangi",
                 "hobbi": "Repeat lagu if only by skyline setiap hari di jam 8",
                 "sosmed": "@j__eesie",
-                "kesan": "Kakaknya gemas dan cantik bangett, aku suka banget",  
-                "pesan":"Semangat terus belajarnya kak"# 1
+                "kesan": "Kakaknya cantik dan lucu, enerjik pokoknya",  
+                "pesan":"Semangat selalu kuliahnya kak"# 1
             },
             {
                 "nama": "Dharu Cahyoaji Sasongko",
@@ -344,28 +347,28 @@ if menu == "Baleg":
 if menu == "Departemen Eksternal":
     def Departemen_Eksternal():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"
+            "https://drive.google.com/uc?export=view&id=1saGMBw3H37z6EyD-LKd45CFRud8fh3e8",
+            "https://drive.google.com/uc?export=view&id=1aURuQZKxTJ3an-asxZHUpLPZBSL8Apaj",
+            "https://drive.google.com/uc?export=view&id=1xW78k0TnQ5qG7eilfZOUrnYK0Knd8JrB",
+            "https://drive.google.com/uc?export=view&id=1-ztNpztGFjmghg2bO-81J21N8T2B5SJn",
+            "https://drive.google.com/uc?export=view&id=1_WKCpgS1MeEQ_cimVika9XJngj76Q3xB",
+            "https://drive.google.com/uc?export=view&id=1X4dBwn5IPOrnz6blAev9CpzZclhYbso4",
+            "https://drive.google.com/uc?export=view&id=1_fyOoDohsaD8rYxyhhTakmL6HSDzvJe5",
+            "https://drive.google.com/uc?export=view&id=1BHiba6gd6cwk7JueaJg6NxDNTxJGzO9Z",
+            "https://drive.google.com/uc?export=view&id=1e835zXyzrYJWBqVDfVcjbUkO7-yAb1A9",
+            "https://drive.google.com/uc?export=view&id=1PSHp_-CZxxk6tgfzWjuEvYdNWPX8JEmp",
+            "https://drive.google.com/uc?export=view&id=1oABfWOBnNoSJqAmDGm_iA8pHskwK9zvJ",
+            "https://drive.google.com/uc?export=view&id=1sr7AxvQsrxZcshipI1MBr5i2_9zEv-6z",
+            "https://drive.google.com/uc?export=view&id=1jhb6M9bLebEPy-JswthYWWgHW5-SvfU9",
+            "https://drive.google.com/uc?export=view&id=1VK43NMLrsbqSASbCX90WemmQxvydZVAp",
+            "https://drive.google.com/uc?export=view&id=1n4hmfDl8y-m3jsRVmQRbkd16aiDfloze",
+            "https://drive.google.com/uc?export=view&id=1-MnFFCQAIOqu_6mFhIP8RqXQ8Zx_gh6A",
+            "https://drive.google.com/uc?export=view&id=1q0md6NQoA_T-tS9XcmooLXjUXVoTyuzl",
+            "https://drive.google.com/uc?export=view&id=1ie8VYvJ13BwxTwPiYRPU_EsPiL4MguHf",
+            "https://drive.google.com/uc?export=view&id=1SLU5s5X_lgyFQvr8ZQC2OcouYdcpWt4N",
+            "https://drive.google.com/uc?export=view&id=1J7tNvd6lUEEQ3sSjXtDOHNAZD8wAONLP",
+            "https://drive.google.com/uc?export=view&id=1vcq4SESe-TokAplvob9SpypdlN4Gov3a",
+            "https://drive.google.com/uc?export=view&id=1_N--GgHYK6POLwyMyJyrBJtDrZ5UYyfE"
         ]
         data_list = [
             {
@@ -617,18 +620,18 @@ if menu == "Departemen Eksternal":
 if menu == "Departemen SSD":
     def Departemen_SSD():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"
+            "https://drive.google.com/uc?export=view&id=1O1SSqIBGBC49X9b6axtVFTPQMcKF0qSz",
+            "https://drive.google.com/uc?export=view&id=1G5EsG8BHFKxUhJqPsSFN3lNYvngr8Yfw",
+            "https://drive.google.com/uc?export=view&id=1SBsKSK27r5L6NE9xq_5HanAOLVY3ETY2",
+            "https://drive.google.com/uc?export=view&id=1TSFfJi2lyT6dbS8y2DF2HQ7EaUe48wed",
+            "https://drive.google.com/uc?export=view&id=1D1LH6yJgyZieBMRqKMvr_nAvgJNYn574",
+            "https://drive.google.com/uc?export=view&id=1rro8Tz2DarzU2ZUEM0v_IdmH_5uppyjr",
+            "https://drive.google.com/uc?export=view&id=1B-978G1MZvhJ4Z8Jos_zFRvlMTsKko5e",
+            "https://drive.google.com/uc?export=view&id=1lyGImhMihOaY_z7-LR6tYpC2MtpAMrk0",
+            "https://drive.google.com/uc?export=view&id=1k74AKYyvCXANk3UA6oVdbTXudg4CRf4Z",
+            "https://drive.google.com/uc?export=view&id=1AY0PtSy1V-7RNFqzg9U5N67snQx8X7H4",
+            "https://drive.google.com/uc?export=view&id=1qG1VM4FpnGW4LUzfQpgCV1oTQShQSb2m",
+            "https://drive.google.com/uc?export=view&id=1DjmbSm6oBEPm4K11Uhy9jeOAT3uszLsX"
         ]
         data_list = [
             {
@@ -771,24 +774,24 @@ if menu == "Departemen SSD":
 if menu == "Departemen Medkraf":
     def Departemen_Medkraf():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"
+            "https://drive.google.com/uc?export=view&id=1zMrHuLAl_ob41NEsjIXpbUCC-VDf66Zj",
+            "https://drive.google.com/uc?export=view&id=1WIN2apvbQsShTU1z07xArE2_N58wHem2",
+            "https://drive.google.com/uc?export=view&id=1yuE96tiZibIOPwjnKBEHZconQhM8udch",
+            "https://drive.google.com/uc?export=view&id=1FYHSmY9qJodPXY_MTeRPzY-doWIHqJz9",
+            "https://drive.google.com/uc?export=view&id=1W2JNAhXVfoDOBIXocmmkEDZ1J5mfBThS",
+            "https://drive.google.com/uc?export=view&id=1TR38RT9H-1v2vr6BbayuzVqrw35BXDTE",
+            "https://drive.google.com/uc?export=view&id=1cY6lljFel-DnUx_wUm4ydZaDhIj18rMm",
+            "https://drive.google.com/uc?export=view&id=1hUoRycJt3BgAbjd1dMVmA1oUtSrzpeE8",
+            "https://drive.google.com/uc?export=view&id=1Alq5MpjyiYHI_utzccwhXzdxn6zb-r1L",
+            "https://drive.google.com/uc?export=view&id=1QC5obWq9C7ZvjZTgO6THTZnkOZIgxIJs",
+            "https://drive.google.com/uc?export=view&id=1gfLpBSCkULizuzGSyjY6c4W3CQXtgU-V",
+            "https://drive.google.com/uc?export=view&id=1rpxDWVnCzmdrD50iubjRUBW4lAoaQkUm",
+            "https://drive.google.com/uc?export=view&id=1e0pVQhVr0cJJwTkGCRFdgGzOR2wLc_Fp",
+            "https://drive.google.com/uc?export=view&id=1SEG-KvKUrEAgMLaO5eNzbKPWm8VX38hv",
+            "https://drive.google.com/uc?export=view&id=1ReK4q7_I3t4roCxUBarM1TWrkXHKfoyq",
+            "https://drive.google.com/uc?export=view&id=1z27avelIPlZh62G67MLZLhLlt1NOMyF7",
+            "https://drive.google.com/uc?export=view&id=1jQOZMrEKEHMBTlBBHSkHbjO5miyTFUOP",
+            "https://drive.google.com/uc?export=view&id=1RqfIfrhSQ582fDDLzjq0QmBEaKR-S---"
         ]
         data_list = [
             {
@@ -800,7 +803,7 @@ if menu == "Departemen Medkraf":
                 "hobbi": "Musingin TA",
                 "sosmed": "@naylasalsabilaa._",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan": "semangat terus kuliahnya kakak !!!"# 1
+                "pesan": "semoga terus semangat kak"# 1
             },
             {
                 "nama": " Donna Maya Puspita",
@@ -992,5 +995,134 @@ if menu == "Departemen Medkraf":
         ]
         display_images_with_data(gambar_urls, data_list)
     Departemen_Medkraf()
+
+if menu == "Senator":
+    def Senator():
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1JIX8_QjMgUxhtA-CiP9-PIaZU-gQnlzB",
+            "https://drive.google.com/uc?export=view&id=1caqDXjOTj23XTR1mPZP3IObXpzZ4iJmk",
+            "https://drive.google.com/uc?export=view&id=1jgBeUn5pVZyXm_lQAHgtfv0HgrS9PbRi",
+            "https://drive.google.com/uc?export=view&id=1EYZa7Ttj9OZWphdPde1R-1GjBYqfd-9T",
+            "https://drive.google.com/uc?export=view&id=1eqd1xxdpslQLd7OByeeTvsmZqO-ZTQDe",
+            "https://drive.google.com/uc?export=view&id=1W1oL1UvD5VysyY3sL8oVdzLKhbyZGbRG",
+            "https://drive.google.com/uc?export=view&id=1Kuq5qfmIyGyPfc4NNGdvQDmqvPQ-26vr",
+            "https://drive.google.com/uc?export=view&id=1DvIah3ZsvupZletIi1rB96JYxPJv1xJh",
+            "https://drive.google.com/uc?export=view&id=1JDI8vTPNeykjBUbAXH0SS3ooyu883t1M",
+            "https://drive.google.com/uc?export=view&id=17wlgZkOUf7MZ3_FpHSs3qs3mB6fg5CDZ"
+        ]
+        data_list = [
+            {
+                "nama": "Fathinah Nur Azizah",
+                "nim": "123450072",
+                "umur": "21 Tahun",
+                "asal":"Jakarta",
+                "alamat": "Airan",
+                "hobbi": "Nulis di medium",
+                "sosmed": "@fathinahnazzh",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Nadya Ratu Anjani",
+                "nim": "123450083",
+                "umur": "21 tahun",
+                "asal":"Bandar lampung",
+                "alamat": "Sukarame",
+                "hobbi": "Dengar lagu",
+                "sosmed": "@nadyaanjaani",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Lia Hana Ichisasmita",
+                "nim": "123450089",
+                "umur": "21 tahun",
+                "asal":"Jakarta",
+                "alamat": "Belwis",
+                "hobbi": "beres beres",
+                "sosmed": "@lia.h_264",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Helmy Surya Pratama",
+                "nim": "124450033",
+                "umur": "20 Tahun",
+                "asal":"Jakarta",
+                "alamat": "Kedamaian",
+                "hobbi": "ngesen kiri",
+                "sosmed": "@helmy.inst",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Fernando Dimetrius Barus",
+                "nim": "124450063",
+                "umur": "21 Tahun",
+                "asal":"Tangerang kota",
+                "alamat": "Sebelah Kamar Biwa",
+                "hobbi": "Main Badminton",
+                "sosmed": "@barus.fernando",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Suci Aulia",
+                "nim": "124450034",
+                "umur": "19 Tahun",
+                "asal":"Pesisir Barat",
+                "alamat": "Kobar",
+                "hobbi": "Dokum hal tidak penting",
+                "sosmed": "@sciia__",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Wielman Itolo Halawa",
+                "nim": "124450072",
+                "umur": "20",
+                "asal":"Nias Selatan",
+                "alamat": "Asrama TB 3",
+                "hobbi": "Mancing",
+                "sosmed": "@wielhawny",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Aqila Zayyan Salsabil",
+                "nim": "124450014",
+                "umur": "19 tahun",
+                "asal":"Lampung Utara",
+                "alamat": "Sukarame",
+                "hobbi": "Mendokumentasi Bayes",
+                "sosmed": "@aqilazayyaan",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Hazel Mahesa Handhaka",
+                "nim": "124450114",
+                "umur": "19 Tahun",
+                "asal":"Lamtim timur",
+                "alamat": "Gunter terang",
+                "hobbi": "Cinematic Datavora",
+                "sosmed": "@hazelhandhaka",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Dwi Rahma Fitriani",
+                "nim": "124450095",
+                "umur": "20",
+                "asal":"Lampung Timur",
+                "alamat": "Nargo Lestari",
+                "hobbi": "Olahraga, Makan makanan manis",
+                "sosmed": "@dellaansaftr",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            }
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    Senator()
 
 # Tambahkan menu lainnya sesuai kebutuhan

@@ -83,7 +83,7 @@ def streamlit_menu():
                 "margin": "0px",
                 "--hover-color": "#eee",
             },
-            "nav-link-selected": {"background-color": "#3FBAD8"},
+            "nav-link-selected": {"background-color": "#606060"},
         },
     )
     return selected
@@ -102,24 +102,23 @@ if menu == "Home":
             "<h1 class='centered-title'>Deskripsi Kelompok</h1>", unsafe_allow_html=True
         )
         st.markdown(
-            """<div style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                    laborum.</div>""",
+            """<div style="text-align: justify;">Kelompok Anova merupakan penjabaran dari metode statistik
+            yang digunakan untuk menguji perbedaan rata-rata antara tiga kelompok atau lebih.
+            Filosofi dasar di balik ANOVA adalah untuk mengetahui
+            apakah beberapa kelompok memiliki rata-rata yang sama atau tidak,
+            pemeriksaan rata-ratanya tidak secara langsung,
+            melainkan memeriksa variabilitas atau keragaman dari data yang ada.</div>""",
             unsafe_allow_html=True,
         )
         st.write(""" """)
         foto_kelompok = "https://drive.google.com/uc?export=view&id=1_2RuzY18oqdjj4M4Ue0V50LZBXIga_LQ"
         layout(foto_kelompok)
         st.markdown(
-            """<div style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                    laborum.</div>""",
+            """<div style="text-align: justify;">Dengan kata lain, kelompok Anova yang beragam dan bervariasi
+            baik itu dari asal daerah, latar belakang, maupun pengalaman yang berbeda-beda diharapkan
+            dapat saling melengkapi satu sama lain, memiliki rasa dan pengalaman yang sama
+            untuk menghadapi tantangan dan rintangan kedepannya dan dapat menjalin hubungan baik
+            serta bahu-membahu menghadapi keadaan atau permasalahan yang ada.</div>""",
             unsafe_allow_html=True,
         )
         st.write(""" """)
@@ -140,6 +139,13 @@ elif menu == "About Us":
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1LmYWz88aq2OL749V38x_tlFQJ4MtZ-f1",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"
         ]
         data_list = [
             {
@@ -150,54 +156,82 @@ elif menu == "About Us":
                 "motto_hidup": "new semester new me",
             },
             {
-                "nama": "x",
+                "nama": "Tiara Amelia",
                 "sebagai": "Bu Lurah",
-                "nim": "122450000",
+                "nim": "125450015",
                 "fun_fact": "nyemilin es bata",
                 "motto_hidup": "Ya apa ya",
             },
             {
-                "nama": "x",
+                "nama": "Muhammad Rizky Pratama",
                 "sebagai": "Anggota",
-                "nim": "122450083",
+                "nim": "125450017",
                 "fun_fact": "nyemilin es bata",
                 "motto_hidup": "mantap",
             },
             {
-                "nama": "x",
-                "sebagai": "Anggotaa",
-                "nim": "122450000",
+                "nama": "Rasya Rajid Pratama",
+                "sebagai": "Anggota",
+                "nim": "125450029",
                 "fun_fact": "nyemilin",
                 "motto_hidup": "jalanin dulu aja",
             },
             {
-                "nama": "x",
-                "sebagai": "Anggotaa",
-                "nim": "122450100",
+                "nama": "Elena Fariza Zahra",
+                "sebagai": "Anggota",
+                "nim": "125450031",
                 "fun_fact": "nyemilin es bata, kiko",
                 "motto_hidup": "jalanin dulu keles",
             },
             {
-                "nama": "x",
-                "sebagai": "Anggotaa",
-                "nim": "122450100",
+                "nama": "Muhammad Irfan Nugraha",
+                "sebagai": "Anggota",
+                "nim": "125450065",
+                "fun_fact": "Hobi dengerin musik, tapi ga bisa main alat musik",
+                "motto_hidup": "Don't cry because it's over, smile because it happened",
+            },
+            {
+                "nama": "Elisabeth Yulyanti Gultom",
+                "sebagai": "Anggota",
+                "nim": "125450078",
                 "fun_fact": "nyemilin es bata, kiko",
                 "motto_hidup": "jalanin dulu keles",
             },
             {
-                "nama": "x",
-                "sebagai": "Anggotaa",
-                "nim": "122450100",
+                "nama": "Zetkin Alando Dzaqwan",
+                "sebagai": "Anggota",
+                "nim": "125450086",
                 "fun_fact": "nyemilin es bata, kiko",
                 "motto_hidup": "jalanin dulu keles",
             },
             {
-                "nama": "x",
-                "sebagai": "Anggotaa",
-                "nim": "122450110",
+                "nama": "Jhonatan Best Kingsil Sakerebau",
+                "sebagai": "Anggota",
+                "nim": "125450108",
                 "fun_fact": "nyemilin es bata, kiko",
                 "motto_hidup": "jalanin dulu keles",
             },
+            {
+                "nama": "Jeanis Nahwadisa",
+                "sebagai": "Anggota",
+                "nim": "125450117",
+                "fun_fact": "nyemilin es bata, kiko",
+                "motto_hidup": "jalanin dulu keles",
+            },
+            {
+                "nama": "Intan Abelia Sari",
+                "sebagai": "Anggota",
+                "nim": "125450124",
+                "fun_fact": "nyemilin es bata, kiko",
+                "motto_hidup": "jalanin dulu keles",
+            },
+            {
+                "nama": "Yunika Br Malau",
+                "sebagai": "Anggota",
+                "nim": "125450129",
+                "fun_fact": "nyemilin es bata, kiko",
+                "motto_hidup": "jalanin dulu keles",
+            }
         ]
         display_images_with_data(gambar_urls, data_list)
 
