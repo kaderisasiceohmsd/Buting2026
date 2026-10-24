@@ -540,9 +540,7 @@ elif menu == "Departemen SSD":
 elif menu == "Bason":
     def Bason():
         gambar_urls = [
-            gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1s_w0hubRnMu90OKKfRz_Tz4EpKcLmreU",
-        ]
         ]
         data_list = [
             {
