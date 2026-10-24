@@ -177,8 +177,8 @@ menu = streamlit_menu()
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1PPqcqT5Fuw-UdYji_m7JK3X9NqHaLdD0",
-            "https://drive.google.com/uc?export=view&id=1KuSZTs7KvIC7SmxjKggXuPr0qU9UeSYF",
+            "https://drive.google.com/uc?export=view&id=1SCwtHz2HqyvQe_rPFmxXMB6mxV6EW5xf",
+            "https://drive.google.com/uc?export=d/11k208IYsZRYf6balagxJFgynXRtRhaUa",
             "https://drive.google.com/uc?export=view&id=12VgN5JGWlnpGhfYZXd5QaTjg6a2zqVrZ",
             "https://drive.google.com/uc?export=view&id=1NsUs9Blri5FHJ9xUAw_TpDMiTaGIfnpc",
             "https://drive.google.com/uc?export=view&id=1nrzqiP2azCdLD5UBHwJo0BIGBeCOIixK",
