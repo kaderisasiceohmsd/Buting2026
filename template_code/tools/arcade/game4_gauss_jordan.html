@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100%; background: transparent; color: #e2e8f0; font-family: 'Poppins', sans-serif; padding: 4px; overflow-x: hidden; overflow-y: auto; }
+  .shell { width: 100%; background: linear-gradient(160deg, #121428 0%, #080915 100%); border: 1px solid rgba(255,215,64,.32); border-radius: 18px; padding: 20px; box-shadow: 0 12px 36px rgba(0,0,0,.65); }
+  .top { display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; align-items: center; padding-bottom: 12px; margin-bottom: 14px; border-bottom: 1px solid rgba(255,215,64,.2); }
+  .levels { display: flex; flex-wrap: wrap; gap: 6px; }
+  button, select, input { font-family: 'Poppins', sans-serif; font-size: 12.5px; font-weight: 600; border-radius: 9px; padding: 7px 11px; border: 1px solid rgba(255,215,64,.35); background: #161a36; color: #ffe082; }
+  button { cursor: pointer; } button:hover { filter: brightness(1.18); }
+  button.on { background: #ff9800; color: #120c00; border-color: #ff9800; }
+  button.main { background: linear-gradient(135deg,#ffb300,#ff6f00); color: #120c00; border: none; font-weight: 800; }
+  input { width: 64px; text-align: center; font-family: 'JetBrains Mono', monospace; color: #fff; }
+  .hud { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill { font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #0d1024; border: 1px solid rgba(128,216,255,.25); padding: 5px 10px; border-radius: 99px; }
+  .pill b { color: #ffd740; }
+  .grid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 18px; }
+  .story { background: rgba(64,196,255,.07); border-left: 3px solid #40c4ff; border-radius: 10px; padding: 10px 14px; font-size: 12.5px; line-height: 1.6; margin-bottom: 12px; color: #cfd8dc; display: none; }
+  .matrix-wrap { display: flex; justify-content: center; padding: 16px 8px; background: #0b0d1d; border-radius: 14px; border: 1px solid rgba(255,215,64,.15); }
+  table.mx { border-collapse: separate; border-spacing: 4px 6px; font-family: 'JetBrains Mono', monospace; position: relative; }
+  table.mx td { min-width: 70px; height: 46px; text-align: center; font-size: 18px; font-weight: 700; border-radius: 8px; background: #141833; transition: background .35s, transform .35s; }
+  table.mx td.rl { min-width: 34px; background: transparent; color: #80d8ff; font-size: 13px; cursor: pointer; }
+  table.mx td.sep { min-width: 4px; background: rgba(255,215,64,.5); padding: 0; }
+  table.mx td.b { color: #69f0ae; }
+  table.mx td.one { color: #ffd740; box-shadow: inset 0 0 0 1.5px rgba(255,215,64,.6); }
+  table.mx td.zero { color: #546e7a; }
+  tr.flash td:not(.rl):not(.sep) { background: rgba(255,152,0,.45); transform: scale(1.06); }
+  tr.sel td.rl { color: #ffd740; }
+  .vars { text-align: center; font-size: 11.5px; color: #90a4ae; margin-top: 6px; }
+  .ops { display: flex; flex-direction: column; gap: 10px; }
+  .op { background: #0d1024; border: 1px solid rgba(128,216,255,.18); border-radius: 12px; padding: 10px 12px; }
+  .op h5 { font-size: 12px; color: #80d8ff; margin-bottom: 7px; letter-spacing: .4px; }
+  .op .row { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+  .log { background: #0b0d1d; border-radius: 10px; padding: 8px 12px; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; height: 92px; overflow-y: auto; color: #b0bec5; }
+  .msg { margin-top: 12px; padding: 10px 14px; border-radius: 10px; font-size: 12.8px; line-height: 1.55; background: rgba(255,215,64,.07); border: 1px solid rgba(255,215,64,.25); }
+  .win { background: rgba(105,240,174,.1); border-color: rgba(105,240,174,.45); }
+  .help { font-size: 11.8px; color: #90a4ae; line-height: 1.6; margin-top: 10px; }
+  @media (max-width: 780px) { .grid { grid-template-columns: 1fr; } }
+  @media (max-width: 560px) {
+    .shell { padding: 12px; border-radius: 14px; }
+    table.mx td { min-width: 48px; height: 38px; font-size: 14px; }
+    table.mx td.rl { min-width: 28px; font-size: 11.5px; }
+    button, select, input { font-size: 11.5px; padding: 6px 9px; }
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="top">
+    <div class="levels" id="levels"></div>
+    <div class="hud">
+      <span class="pill">Langkah: <b id="steps">0</b></span>
+      <span class="pill">Target optimal: <b id="opt">-</b></span>
+      <span class="pill">Hint: <b id="hints">0</b></span>
+      <span class="pill">Rekor: <b id="best">-</b></span>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div>
+      <div class="story" id="story"></div>
+      <div class="matrix-wrap"><table class="mx" id="mx"></table></div>
+      <div class="vars" id="vars"></div>
+      <div class="msg" id="msg"></div>
+    </div>
+    <div class="ops">
+      <div class="op"><h5>① TUKAR BARIS</h5>
+        <div class="row">R<select id="sw1"></select> ↔ R<select id="sw2"></select><button id="doSwap" class="main">Tukar</button></div></div>
+      <div class="op"><h5>② KALIKAN BARIS DENGAN SKALAR</h5>
+        <div class="row">R<select id="sc1"></select> ← <input id="scK" value="1/2"> × R<span id="scEcho">1</span><button id="doScale" class="main">Kalikan</button></div></div>
+      <div class="op"><h5>③ TAMBAH KELIPATAN BARIS LAIN</h5>
+        <div class="row">R<select id="ad1"></select> ← R<span id="adEcho">1</span> + <input id="adK" value="-1"> × R<select id="ad2"></select><button id="doAdd" class="main">Terapkan</button></div></div>
+      <div class="row" style="display:flex;gap:8px;flex-wrap:wrap">
+        <button id="undo">↩️ Undo</button><button id="hint">💡 Hint (-100)</button><button id="restart">🔄 Ulang Level</button><button id="newm">🎲 Matriks Baru</button>
+      </div>
+      <div class="log" id="log"></div>
+      <div class="help">Tujuan: ubah bagian kiri menjadi <b style="color:#ffd740">matriks identitas</b> (1 di diagonal, 0 di tempat lain). Kolom hijau di kanan otomatis menjadi solusi SPL. Skalar boleh pecahan seperti <b>1/3</b> atau <b>-2/5</b>. Klik label baris untuk memilihnya cepat.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+function syncFrame(){
+  try {
+    const f = window.frameElement;
+    if (f) {
+      f.style.width = '100%';
+      if (f.parentElement) f.parentElement.style.width = '100%';
+      const sh = document.querySelector('.shell');
+      const h = (sh ? sh.offsetHeight : document.body.scrollHeight) + 20;
+      if (h > 300) f.style.height = h + 'px';
+    }
+  } catch(e){}
+}
+syncFrame();
+window.addEventListener('resize', syncFrame);
+if (typeof ResizeObserver !== 'undefined') { new ResizeObserver(syncFrame).observe(document.body); }
+
+// ---------- Fraction ----------
+function gcd(a,b){ a=Math.abs(a); b=Math.abs(b); while(b){ [a,b]=[b,a%b]; } return a||1; }
+class F { constructor(n,d=1){ if(d<0){n=-n;d=-d;} const g=gcd(n,d); this.n=n/g; this.d=d/g; }
+  add(o){ return new F(this.n*o.d+o.n*this.d, this.d*o.d); } mul(o){ return new F(this.n*o.n, this.d*o.d); }
+  neg(){ return new F(-this.n,this.d); } inv(){ return new F(this.d,this.n); } isZero(){ return this.n===0; } isOne(){ return this.n===1&&this.d===1; }
+  toString(){ return this.d===1 ? ""+this.n : this.n+"/"+this.d; } }
+function parseF(s){ s=(s||"").trim().replace(",","."); if(!s) return null; if(s.includes("/")){ const [a,b]=s.split("/").map(Number); if(!Number.isInteger(a)||!Number.isInteger(b)||b===0) return null; return new F(a,b); }
+  const x=Number(s); if(!isFinite(x)) return null; if(Number.isInteger(x)) return new F(x); const d=10**Math.min(4,(s.split(".")[1]||"").length); return new F(Math.round(x*d),d); }
+
+// ---------- Levels ----------
+const LEVELS = [
+  { name: "1. Pemanasan 2x2", n: 2, mix: 2, range: 3 },
+  { name: "2. Orbit 3x3", n: 3, mix: 3, range: 3 },
+  { name: "3. Pecahan 3x3", n: 3, mix: 4, range: 4, frac: true },
+  { name: "4. Cerita Kating", n: 3, story: true },
+  { name: "5. Tantangan 4x4", n: 4, mix: 5, range: 3 }
+];
+const VARN = ["x","y","z","w"];
+let L = 0, M = [], start = [], hist = [], steps = 0, hints = 0, optimal = 0, solved = false, sol = [];
+
+function randInt(a,b){ return a+Math.floor(Math.random()*(b-a+1)); }
+function genMatrix(lv) {
+  const n = lv.n;
+  if (lv.story) {
+    // Kating Departemen A (a), B (b), C (c)
+    const a=randInt(8,16), b=randInt(6,14), c=randInt(5,12); sol=[a,b,c];
+    const rows=[[1,1,1,a+b+c],[1,-1,0,a-b],[2,0,-1,2*a-c]];
+    document.getElementById("story").style.display="block";
+    document.getElementById("story").innerHTML = `📖 <b>Soal cerita:</b> Di tiga departemen HMSD terdapat <b>x</b>, <b>y</b>, dan <b>z</b> kating. Totalnya <b>${a+b+c}</b> orang. Departemen pertama punya <b>${a-b>=0?(a-b)+" orang lebih banyak":(b-a)+" orang lebih sedikit"}</b> dari departemen kedua. Dua kali jumlah departemen pertama dikurangi departemen ketiga sama dengan <b>${2*a-c}</b>. Berapa isi tiap departemen?`;
+    return rows.map(r=>r.map(v=>new F(v)));
+  }
+  document.getElementById("story").style.display="none";
+  sol = Array.from({length:n},()=>randInt(-lv.range,lv.range)||1);
+  let A = Array.from({length:n},(_,i)=>Array.from({length:n+1},(_,j)=> j===n ? new F(sol[i]) : new F(i===j?1:0)));
+  // campur dengan operasi baris acak sampai tidak trivial
+  for (let t=0;t<lv.mix*n;t++){ const i=randInt(0,n-1); let j=randInt(0,n-1); if(i===j) j=(j+1)%n; const k=new F(randInt(-2,2)||1); A[i]=A[i].map((v,c)=>v.add(A[j][c].mul(k))); }
+  for (let i=0;i<n;i++){ const k = lv.frac ? randInt(2,3) : (Math.random()<.4?-1:1); A[i]=A[i].map(v=>v.mul(new F(k))); }
+  if (Math.random()<.5){ const i=randInt(0,n-1), j=(i+1)%n; [A[i],A[j]]=[A[j],A[i]]; }
+  // pastikan tidak ada yang terlalu besar dan bukan identitas
+  const big = A.flat().some(v=>Math.abs(v.n)>40); if (big || isIdentity(A)) return genMatrix(lv);
+  return A;
+}
+function isIdentity(A){ const n=A.length; for(let i=0;i<n;i++)for(let j=0;j<n;j++){ const v=A[i][j]; if(i===j? !v.isOne() : !v.isZero()) return false; } return true; }
+function clone(A){ return A.map(r=>r.slice()); }
+
+// ---------- Hint solver: langkah Gauss-Jordan berikutnya ----------
+function nextOp(A){
+  const n=A.length;
+  for (let c=0;c<n;c++){
+    if (A[c][c].isZero()){ for(let r=c+1;r<n;r++) if(!A[r][c].isZero()) return {t:"swap",i:c,j:r}; return null; }
+    if (!A[c][c].isOne()) return {t:"scale",i:c,k:A[c][c].inv()};
+    for (let r=0;r<n;r++) if (r!==c && !A[r][c].isZero()) return {t:"add",i:r,j:c,k:A[r][c].neg()};
+  }
+  return null;
+}
+function applyOp(A,op){
+  const B=clone(A);
+  if(op.t==="swap") [B[op.i],B[op.j]]=[B[op.j],B[op.i]];
+  else if(op.t==="scale") B[op.i]=B[op.i].map(v=>v.mul(op.k));
+  else B[op.i]=B[op.i].map((v,c)=>v.add(B[op.j][c].mul(op.k)));
+  return B;
+}
+function opText(op){ const k=op.k?op.k.toString():""; if(op.t==="swap") return `R${op.i+1} ↔ R${op.j+1}`; if(op.t==="scale") return `R${op.i+1} ← (${k}) × R${op.i+1}`;
+  const neg=op.k.n<0; const ka=neg?op.k.neg():op.k; return `R${op.i+1} ← R${op.i+1} ${neg?"-":"+"} ${ka.isOne()?"":"("+ka+")"}R${op.j+1}`; }
+function countOptimal(A){ let B=clone(A), c=0, op; while((op=nextOp(B)) && c<60){ B=applyOp(B,op); c++; } return c; }
+
+// ---------- UI ----------
+const $=id=>document.getElementById(id);
+function bestKey(){ return "jordan_gj_best_"+L; }
+function renderLevels(){ $("levels").innerHTML=""; LEVELS.forEach((lv,i)=>{ const b=document.createElement("button"); b.textContent=lv.name; if(i===L) b.className="on"; b.onclick=()=>{ L=i; newMatrix(); }; $("levels").appendChild(b); }); }
+function fillSelects(){ const n=M.length; ["sw1","sw2","sc1","ad1","ad2"].forEach((id,ix)=>{ const s=$(id), v=s.value; s.innerHTML=""; for(let i=1;i<=n;i++) s.add(new Option(i,i-1)); s.value = v && +v<n ? v : ({sw2:1,ad2:1}[id]||0); }); echo(); }
+function echo(){ $("scEcho").textContent=+$("sc1").value+1; $("adEcho").textContent=+$("ad1").value+1; }
+function render(flashRow=-1){
+  const n=M.length, t=$("mx"); t.innerHTML="";
+  M.forEach((row,i)=>{ const tr=document.createElement("tr"); if(i===flashRow) tr.className="flash";
+    const lab=document.createElement("td"); lab.className="rl"; lab.textContent="R"+(i+1); lab.title="Pilih baris ini"; lab.onclick=()=>{ $("sc1").value=i; $("ad1").value=i; $("sw1").value=i; echo(); }; tr.appendChild(lab);
+    row.forEach((v,j)=>{ if(j===n){ const s=document.createElement("td"); s.className="sep"; tr.appendChild(s); }
+      const td=document.createElement("td"); td.textContent=v.toString(); if(j===n) td.className="b"; else if(i===j&&v.isOne()) td.className="one"; else if(v.isZero()) td.className="zero"; tr.appendChild(td); });
+    t.appendChild(tr); });
+  if(flashRow>=0) setTimeout(()=>{ const r=t.rows[flashRow]; if(r) r.className=""; },380);
+  $("vars").textContent = "Kolom: " + VARN.slice(0,n).join("  ") + "  |  konstanta";
+  $("steps").textContent=steps; $("opt").textContent=optimal; $("hints").textContent=hints;
+  const b=localStorage.getItem(bestKey()); $("best").textContent=b?b:"-";
+}
+function log(t){ $("log").innerHTML = `<div>${steps}. ${t}</div>` + $("log").innerHTML; }
+function say(h,win=false){ $("msg").innerHTML=h; $("msg").className="msg"+(win?" win":""); }
+function newMatrix(){ M=genMatrix(LEVELS[L]); start=clone(M); resetState(); }
+function resetState(){ M=clone(start); hist=[]; steps=0; hints=0; solved=false; optimal=countOptimal(M); $("log").innerHTML=""; renderLevels(); fillSelects(); render();
+  say(`🎯 Ubah matriks kiri menjadi identitas. Solver standar butuh sekitar <b>${optimal} langkah</b>. Bisa lebih cepat? Coba cari jalan pintas!`); }
+function doOp(op){
+  if(solved) return;
+  if(op.t==="scale" && op.k.isZero()){ say("⚠️ Tidak boleh mengalikan baris dengan 0, nanti informasinya hilang."); return; }
+  if((op.t==="swap"||op.t==="add") && op.i===op.j){ say("⚠️ Pilih dua baris yang berbeda."); return; }
+  hist.push(clone(M)); M=applyOp(M,op); steps++; log(opText(op)); render(op.i);
+  if(isIdentity(M)) win(); else say(`✅ ${opText(op)}`);
+}
+function win(){
+  solved=true; const n=M.length;
+  const score=Math.max(100, 1000 - Math.max(0,steps-optimal)*40 - hints*100 + Math.max(0,optimal-steps)*60);
+  const prev=+localStorage.getItem(bestKey())||0; if(score>prev) localStorage.setItem(bestKey(),score);
+  const ans = M.map((r,i)=>`<b>${VARN[i]} = ${r[n]}</b>`).join(", ");
+  say(`🏆 <b>Eselon baris tereduksi tercapai!</b> Solusi: ${ans}.<br>Langkah: ${steps} (optimal ${optimal}), hint: ${hints}. <b>Skor: ${score}</b>${score>prev?" 🎉 Rekor baru!":""}`, true);
+  render();
+}
+$("doSwap").onclick=()=>doOp({t:"swap",i:+$("sw1").value,j:+$("sw2").value});
+$("doScale").onclick=()=>{ const k=parseF($("scK").value); if(!k){ say("⚠️ Skalar tidak valid. Contoh: 2, -1, 1/3"); return; } doOp({t:"scale",i:+$("sc1").value,k}); };
+$("doAdd").onclick=()=>{ const k=parseF($("adK").value); if(!k||k.isZero()){ say("⚠️ Kelipatan tidak valid atau 0."); return; } doOp({t:"add",i:+$("ad1").value,j:+$("ad2").value,k}); };
+$("undo").onclick=()=>{ if(!hist.length||solved) return; M=hist.pop(); steps++; log("Undo (tetap dihitung 1 langkah)"); render(); say("↩️ Dibatalkan."); };
+$("hint").onclick=()=>{ if(solved) return; const op=nextOp(M); if(!op) return; hints++;
+  if(op.t==="swap"){ $("sw1").value=op.i; $("sw2").value=op.j; } else if(op.t==="scale"){ $("sc1").value=op.i; $("scK").value=op.k.toString(); } else { $("ad1").value=op.i; $("ad2").value=op.j; $("adK").value=op.k.toString(); }
+  echo(); render(); say(`💡 Coba: <b>${opText(op)}</b> (sudah diisikan ke panel, tinggal tekan tombolnya).`); };
+$("restart").onclick=resetState; $("newm").onclick=newMatrix;
+["sc1","ad1"].forEach(id=>$(id).onchange=echo);
+newMatrix();
+</script>
+</body>
+</html>
