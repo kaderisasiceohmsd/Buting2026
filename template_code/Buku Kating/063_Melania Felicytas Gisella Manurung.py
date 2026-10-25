@@ -1022,13 +1022,13 @@ if menu == "Departemen Medkraf":
                 "umur": "21",
                 "asal":"Karawang",
                 "alamat": "Airan raya",
-                "hobbi": "nonton netflix",
+                "hobbi": "Nonton netflix",
                 "sosmed": "@saniayyllstr",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
                 "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
-                "nama": "Raihana Adelia putri",
+                "nama": "Raihana Adelia Putri",
                 "nim": "123450041",
                 "umur": "20",
                 "asal":"Lampung Tengah",
@@ -1077,8 +1077,8 @@ if menu == "Departemen Medkraf":
                 "umur": "16",
                 "asal":"Bekasi",
                 "alamat": "Gg.sakum",
-                "hobbi": "Mainn Bola, Belajar",
-                "sosmed": "@i",
+                "hobbi": "Mancing",
+                "sosmed": "@aallishaa.a",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
                 "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
@@ -1121,7 +1121,7 @@ if menu == "Departemen Medkraf":
                 "umur": "20",
                 "asal":"Bandar Lampung",
                 "alamat": "Bandar Lampung",
-                "hobbi": "berenang",
+                "hobbi": "Berenang",
                 "sosmed": "@nzlhauly_",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
                 "pesan":"semangat terus kuliahnya kakak !!!"# 1
@@ -1132,7 +1132,7 @@ if menu == "Departemen Medkraf":
                 "umur": "21",
                 "asal":"Surabaya",
                 "alamat": "Sukarame",
-                "hobbi": "Dangir",
+                "hobbi": "-",
                 "sosmed": "@daffascript",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
                 "pesan":"semangat terus kuliahnya kakak !!!"# 1
@@ -1165,8 +1165,8 @@ if menu == "Departemen Medkraf":
                 "umur": "20",
                 "asal":"Lampung Tengah",
                 "alamat": "Perum Pemda",
-                "hobbi": "Mainn Bola, Belajar",
-                "sosmed": "@Melukis & Menulis",
+                "hobbi": "Melukis & Menulis",
+                "sosmed": "@_shaazzh",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
                 "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
