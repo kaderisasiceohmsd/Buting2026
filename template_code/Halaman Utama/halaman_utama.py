@@ -1214,10 +1214,10 @@ elif menu == "About Us":
                 "nama": "Rahmad Bayu Ridho",
                 "sebagai": "Anggota",
                 "nim": "125450093",
-                "fun_fact": "Isi fun fact di sini",
-                "motto_hidup": "Isi motto di sini",
+                "fun_fact": "Selalu tersenyum tanpa sebab",
+                "motto_hidup": "time is education karena setiap hari pasti ada hal yang harus perubahan di perbaiki",
                 "sosmed": "@rby_sel17",
-                "foto": "",
+                "foto": "https://drive.google.com/uc?export=view&id=1AeNI3iwCdGOXgrjncpYatIqfuv4qvZ3W",
             },
             {
                 "urut": "06",
