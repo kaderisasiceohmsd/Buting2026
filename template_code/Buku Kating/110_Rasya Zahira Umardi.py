@@ -2114,7 +2114,7 @@ elif menu == "Departemen Eksternal":
                 "umur": "Masih muda lah",
                 "asal": "Rahim Ibu",
                 "alamat": "Pasar lantai 3.5",
-                "hobbi": "Membantu Yudia",
+                "hobbi": "Main layangan waktu hujan",
                 "sosmed": "@jaldii._",
                 "divisi" : "Pengabdian Masyarakat",
                 "kesan": "KERENNN, jujur inspiring bangett",
