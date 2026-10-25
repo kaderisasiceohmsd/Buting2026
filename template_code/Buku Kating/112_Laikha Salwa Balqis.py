@@ -498,7 +498,7 @@ elif menu == "Departemen Internal":
     def DepartemenInternal():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1HdsPQEmwHDzA4-_v_CtfZAVAQ-7-Rp-4",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1Mg9SETbG0s37ZVbCdv0fv0R-tvg5R-2-",
             "https://drive.google.com/uc?export=view&id=1HYWfmIn3bCntw40Dww4qn2G3mDecxIXJ",
             "https://drive.google.com/uc?export=view&id=1_qXAoBXJ2XsiloHr5Wq8f6UTMZBRqn-a",
             "https://drive.google.com/uc?export=view&id=1NAJ9DyVnee4cRQ1rYoaYAUMuuN1eOOYR",

@@ -909,7 +909,7 @@ elif menu == "Departemen PSDA":
         display_images_with_data(gambar_urls, data_list)
     DepartemenPSDA()
 
-elif menu == "Departemen Senator":
+elif menu == "Senator":
     def Senator():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=14Rz2UuS_U76fIX13dPQlrQPFQ1Ig8QqN",

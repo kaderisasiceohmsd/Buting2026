@@ -291,8 +291,8 @@ elif menu == "About Us":
                 "nama": "Nadira Alifa Arifin",
                 "sebagai": "Anggota",
                 "nim": "125450101",
-                "fun_fact": " cinta kopi walau aslam",
-                "motto_hidup": "[Isi Motto]",
+                "fun_fact": "cinta kopi walau aslam",
+                "motto_hidup": "Still waras adalah achievement yang underrated",
             },
             {
                 "nama": "Gisella Salvia Pavita",
