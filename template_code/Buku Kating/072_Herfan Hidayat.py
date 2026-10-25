@@ -1,52 +1,66 @@
-from io import BytesIO
-from PIL import Image, ImageOps
-import requests
 import streamlit as st
 from streamlit_option_menu import option_menu
+import requests
+from PIL import Image, ImageOps
+from io import BytesIO
+import streamlit as st
 
-# Stylings Khusus: Kombinasi Krem Warm + Aksens Cokelat Tembaga
 st.markdown(
     """
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Inter:wght@400;500;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap');
 
-    /* Background Utama Krem Soft */
+    /* Global Styling - Background Krim dengan Grafik Multi-Layer Bertumpuk */
     .stApp {
-        background-color: #f7f3eb !important;
-        color: #2b2623;
+        background-color: #fbf9f5;
+        background-image: 
+            radial-gradient(rgba(181, 142, 75, 0.28) 1.5px, transparent 1.5px), 
+            radial-gradient(rgba(92, 64, 51, 0.15) 1.5px, #fbf9f5 1.5px),
+            linear-gradient(45deg, rgba(181, 142, 75, 0.05) 25%, transparent 25%),
+            linear-gradient(-45deg, rgba(181, 142, 75, 0.05) 25%, transparent 25%);
+        background-size: 36px 36px, 36px 36px, 60px 60px, 60px 60px;
+        background-position: 0 0, 18px 18px, 0 0, 30px 30px;
+        background-attachment: fixed;
+        color: #1e1b18;
         font-family: 'Inter', sans-serif;
     }
 
-    /* Sidebar dengan Tampilan Clean */
+    /* Sidebar disesuaikan warnanya agar senada, terang, dan rapi */
     [data-testid="stSidebar"] {
-        background-color: #ede6d5 !important;
-        border-right: 1px solid rgba(140, 110, 75, 0.2);
+        background-color: #f0e8d5 !important;
+        border-right: 2px solid rgba(181, 142, 75, 0.4);
     }
     [data-testid="stSidebar"] span, [data-testid="stSidebar"] p, [data-testid="stSidebar"] div, [data-testid="stSidebar"] label {
-        color: #2b2623 !important;
+        color: #1e1b18 !important;
         font-weight: 500;
     }
 
-    /* Judul Utama */
-    .centered-title {
-        text-align: center;
-        font-family: 'Plus Jakarta Sans', sans-serif;
-        font-weight: 800;
-        letter-spacing: 1.5px;
-        color: #3e3228;
-        margin-top: 10px;
+    /* Gaya Kotak Profil / Konten di halaman person */
+    .person-card {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(246, 240, 226, 0.96) 100%); 
+        backdrop-filter: blur(8px);
+        border: 2px solid #b58e4b; 
+        outline: 2px dashed rgba(181, 142, 75, 0.4);
+        outline-offset: -6px;
+        padding: 26px; 
+        border-radius: 20px; 
+        box-shadow: 0 10px 30px rgba(181, 142, 75, 0.15); 
+        color: #1e1b18;
+        font-family: 'Inter', sans-serif;
+        position: relative;
+        overflow: hidden;
         margin-bottom: 20px;
-        text-transform: uppercase;
     }
     </style>
     """,
     unsafe_allow_html=True,
 )
 
+
+st.markdown("""<style>.centered-title {text-align: center;}</style>""",unsafe_allow_html=True)
 st.markdown("<h1 class='centered-title'>BUKU KATING</h1>", unsafe_allow_html=True)
 
-
-# Bagian menu navigasi
+# bagian sini jangan diubah
 def streamlit_menu():
     selected = option_menu(
         menu_title=None,
@@ -77,29 +91,21 @@ def streamlit_menu():
         default_index=0,
         orientation="horizontal",
         styles={
-            "container": {
-                "padding": "6px!important",
-                "background-color": "#ebdcc4",
-                "border-radius": "12px",
-            },
-            "icon": {"color": "#3e3228", "font-size": "16px"},
+            "container": {"padding": "0!important", "background-color": "#fafafa"},
+            "icon": {"color": "black", "font-size": "19px"},
             "nav-link": {
-                "font-size": "13px",
-                "text-align": "center",
-                "margin": "3px",
-                "border-radius": "8px",
-                "color": "#3e3228",
-                "--hover-color": "#dfcbab",
+                "font-size": "15px",
+                "text-align": "left",
+                "margin": "0px",
+                "--hover-color": "#eee",
             },
             "nav-link-selected": {
-                "background-color": "#8c6d46 !important",
-                "color": "#ffffff !important",
-                "font-weight": "600",
+                "background-color": "#FCF0DA !important",
+                "color": "#000000 !important",
             },
         },
     )
     return selected
-
 
 @st.cache_data
 def load_image(url):
@@ -118,60 +124,52 @@ def load_image(url):
         st.error(f"Error loading image: {e}")
         return None
 
-
 @st.cache_data
 def display_images_with_data(gambar_urls, data_list):
-    # CSS Custom untuk Tampilan Kartu Foto & Biodata
+    # CSS Murni untuk Efek Gulungan Kertas (Scroll) Otentik
     st.markdown(
         """
         <style>
-        /* Tampilan Foto dengan Frame & Soft Shadow */
-        [data-testid="stImage"] img {
-            border-radius: 14px !important;
-            border: 3px solid #ffffff;
-            box-shadow: 0px 8px 20px rgba(62, 50, 40, 0.15);
-            transition: transform 0.2s ease;
-        }
-
         /* Kontainer Utama Gulungan */
         .scroll-wrapper {
             max-width: 420px;
-            margin: 15px auto;
+            margin: 20px auto;
             position: relative;
-            filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.2));
+            filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.35));
         }
 
-        /* Roll Atas & Bawah */
+        /* Roll Atas & Bawah (Batang Kayu/Kertas Gulung) */
         .scroll-roller {
-            height: 22px;
-            background: linear-gradient(90deg, #4a341e 0%, #7c5835 20%, #d4a76a 50%, #7c5835 80%, #4a341e 100%);
-            border-radius: 11px;
-            border: 1px solid #2b1d0f;
-            box-shadow: inset 0 2px 4px rgba(255,255,255,0.3), inset 0 -2px 4px rgba(0,0,0,0.5);
+            height: 26px;
+            background: linear-gradient(90deg, #5c3818 0%, #8d5b2d 20%, #e0aa68 50%, #8d5b2d 80%, #5c3818 100%);
+            border-radius: 13px;
+            border: 2px solid #3d230d;
+            box-shadow: inset 0 3px 5px rgba(255,255,255,0.3), inset 0 -3px 5px rgba(0,0,0,0.5);
             position: relative;
             z-index: 2;
         }
 
         /* Badan Kertas Kuno */
         .scroll-body {
-            background: radial-gradient(circle, #fcf5e3 0%, #edd8a4 85%, #d9bd7e 100%);
-            border-left: 2px dashed #9c7b45;
-            border-right: 2px dashed #9c7b45;
-            padding: 20px 24px;
-            box-shadow: inset 0 0 18px rgba(115, 77, 20, 0.3);
-            margin: -4px 10px;
+            background: #f4e3b1;
+            background: radial-gradient(circle, #f9edd1 0%, #e8d08d 85%, #d1b164 100%);
+            border-left: 3px dashed #b89547;
+            border-right: 3px dashed #b89547;
+            padding: 25px 30px;
+            box-shadow: inset 0 0 25px rgba(115, 77, 20, 0.45);
+            margin: -6px 12px; /* Menyelip halus di antara roller */
             position: relative;
             z-index: 1;
         }
 
-        /* Teks Biodata */
+        /* Gaya Teks di Dalam Kertas */
         .scroll-body p {
-            color: #3b2712 !important;
+            color: #3d220a !important;
             font-family: 'Georgia', serif;
-            font-size: 0.93em;
-            line-height: 1.5;
-            margin-bottom: 6px;
-            border-bottom: 1px dashed rgba(140, 90, 30, 0.2);
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 8px;
+            border-bottom: 1px dashed rgba(140, 90, 30, 0.25);
             padding-bottom: 4px;
         }
 
@@ -179,7 +177,7 @@ def display_images_with_data(gambar_urls, data_list):
             border-bottom: none;
         }
 
-        /* Merapikan Expander Streamlit */
+        /* Merapikan ekspander Streamlit */
         div[data-testid="stExpander"] {
             border: none !important;
             box-shadow: none !important;
@@ -224,8 +222,8 @@ def display_images_with_data(gambar_urls, data_list):
                         """,
                         unsafe_allow_html=True,
                     )
-
-
+    st.write("Semua gambar telah dimuat!")
+    
 menu = streamlit_menu()
 
 # BAGIAN SINI YANG HANYA BOLEH DIUBAH
