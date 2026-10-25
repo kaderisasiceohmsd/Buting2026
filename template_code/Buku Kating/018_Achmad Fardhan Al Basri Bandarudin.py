@@ -30,14 +30,37 @@ if menu == "Kesekjenan":
     display_images_with_data(gambar_urls, data_list, key="kesekjenan")
 
 elif menu == "Baleg":
-    gambar_urls = ["https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"]
+    gambar_urls = ["https://drive.google.com/uc?export=view&id=1nb6wQCMKYJ-qpm_JJX5mf3ZNLK-J_H3i",
+                   "https://drive.google.com/uc?export=view&id=17OL5MYhd-mPGuqd3MQUn-GEt3F0BzWdV",
+                   "https://drive.google.com/uc?export=view&id=1PwKjv3GE4YpyIHMxbgZuSV0X6DOnCKPm",
+                   "https://drive.google.com/uc?export=view&id=13r76KMeRBGdgw_T1BS1qSyZop0qHoUir",
+                   "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                   "https://drive.google.com/uc?export=view&id=1asiSAi8307nYlUj6NELCI7r3VXVlVE3q",
+                   "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                   "https://drive.google.com/uc?export=view&id=1kLwtXjx2olEgmOaEKgusg7kVCJUBDHFe",
+                   "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                   "https://drive.google.com/uc?export=view&id=1IagjaSmKoMlNQuKstWP2TbyQVig0eUZe",
+                   "https://drive.google.com/uc?export=view&id=1IVbitzGVgyhbI1W3YRlHSdMaHfyqDmWG",
+                   "https://drive.google.com/uc?export=view&id=1WFD00bxXLtyJKy2gBjM1N_Hsd38ainaa",
+                   "https://drive.google.com/uc?export=view&id=1IlzmNGNYQx6UilONk2kXu0NQqyXjeNsv",
+    ]
     data_list = [
         {"nama": "Anggota Baleg", "jabatan": "Ketua Badan Legislatif", "nim": "12245001", "umur": "20", "asal": "B. Lampung", "alamat": "Way Halim", "hobbi": "Organisasi", "sosmed": "@baleg", "kesan": "Mantap", "pesan": "Jaya selalu!"},
     ]
     display_images_with_data(gambar_urls, data_list, key="baleg")
 
 elif menu == "Senator":
-    gambar_urls = ["https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"] * 11
+    gambar_urls = ["https://drive.google.com/uc?export=view&id=1adDzBL83GRxrkpCHbabR-KGkHvdDaDLw",
+                   "https://drive.google.com/uc?export=view&id=1h6knY8DO-nKuqMLUGbB0WiP_vZ2hnXxl",
+                   "https://drive.google.com/uc?export=view&id=1OzMDgEK9aGkBknqyE7YTUvZisSXt9vvX",
+                   "https://drive.google.com/uc?export=view&id=1sT6F4idooVcQzZEOlpZFD5uZhVlTs4dQ",
+                   "https://drive.google.com/uc?export=view&id=1yYdbKWsiGJwdy2BLhuUw3Knv8nYBUCup",
+                   "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                   "https://drive.google.com/uc?export=view&id=1uUf8cobIcp275cg1nhdsgv4u8028adTF",
+                   "https://drive.google.com/uc?export=view&id=1dpucSmlYuZfVW9W3tPnpmAxQsctbXr63",
+                   "https://drive.google.com/uc?export=view&id=13tfR7Wt7bwXk6pAv6KzyRxoIniUn2xbr",
+                   "https://drive.google.com/uc?export=view&id=1kdFTZEnPYkuNpJG0jHDK1qz9ImbP4LE8",
+    ]
     data_list = [{"nama": "Anggota Senator", "jabatan": "Senator Mahasiswa", "nim": "122450022", "umur": "21", "asal": "Jakarta", "alamat": "Sukarame", "hobbi": "Debat", "sosmed": "@senator", "kesan": "Informatif", "pesan": "Terus berkarya!"}] * 11
     display_images_with_data(gambar_urls, data_list, key="senator")
 
@@ -85,7 +108,7 @@ elif menu == "Departemen MIKFES":
                    "https://drive.google.com/uc?export=view&id=1g26jRfNBn8JKtfyZ1MSzFtm3MGiTdnhb",
                    "https://drive.google.com/uc?export=view&id=1nd6kcxPIYZos6NGcGxPTYA2-GJiV6reQ",
                    "https://drive.google.com/uc?export=view&id=14SmXrXQ-mBZ7dBBBtjJRp6_PpGBuwI_X",
-                   "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                   "https://drive.google.com/uc?export=view&id=1LTfRoN1EDCeTC9SdaSF_XVqZM6Y1rBMZ",
                    "https://drive.google.com/uc?export=view&id=1Dt2btj9-PSXxtbddvVMJCDaRXpo14ZoI",
                    "https://drive.google.com/uc?export=view&id=18CBehY0eqQRgc0Y1ETHMpzyo8cFdgPUE",
     ]
@@ -157,3 +180,41 @@ elif menu == "Departemen Medkraf":
     ]
     data_list = [{"nama": "Anggota Medkraf", "jabatan": "Staf Medkraf", "nim": "122450088", "umur": "20", "asal": "Yogyakarta", "alamat": "Airan", "hobbi": "Editing & Foto", "sosmed": "@medkraf", "kesan": "Kreatif banget", "pesan": "Karya tanpa batas!"}] * 18
     display_images_with_data(gambar_urls, data_list, key="medkraf")
+
+elif menu == "Departemen MINBAK":
+    gambar_urls = [
+        "https://drive.google.com/uc?export=view&id=1rTmyPLmmDxWdvEsGojwQjDQTovodjHXH",
+        "https://drive.google.com/uc?export=view&id=1-Ul5mfV_JXU_tk4ewgtPAwNKRjDvcI_O",
+        "https://drive.google.com/uc?export=view&id=1koQA-1DFOIst7QmIp8QiqEG_i0uKC6hw",
+        "https://drive.google.com/uc?export=view&id=1oBwVTXUj1JzhE1SfY7AJ6HW02kQqm4r9",
+        "https://drive.google.com/uc?export=view&id=1S368q3066zNocOivsVIfT3HPMacAOnwU",
+        "https://drive.google.com/uc?export=view&id=1HAGEusSLz7Op2kSiqAKU3BSS5nfonb1U",
+        "https://drive.google.com/uc?export=view&id=1x4xqU9dtQfgjl_PD_inA2NfDJSl_IJnG",
+        "https://drive.google.com/uc?export=view&id=13FW3ZkOoZlrV3z8mmEN71GWzGeDPjnU_",
+        "https://drive.google.com/uc?export=view&id=1ELAQDS9dg80CPedaIymlWZh0l5uSefp9",
+        "https://drive.google.com/uc?export=view&id=1ezjw-g4sBfWNZuNWvWHfUlKpUs8qgzMG",
+        "https://drive.google.com/uc?export=view&id=10dw6LaqrRzuGU9ndHKfU74mW0yxsYRqf",
+        "https://drive.google.com/uc?export=view&id=1BDlk31IbbCvMF9wBAneSRfrCItNHpP-J",
+        "https://drive.google.com/uc?export=view&id=1dOPlMxo4Ztv6ZAjYS0USlm18DSK6CB7c",
+        "https://drive.google.com/uc?export=view&id=16-Va12Or_hc5nfa2s2GXuya756S666Mk",
+        "https://drive.google.com/uc?export=view&id=13oe9JWflY4KkHze5eszVV7xJ-4uKfWXF",
+    ]
+    data_list = [
+        {"nama": "Kevin Antonio Junior", "jabatan": "Staf Medkraf", "nim": "123450082", "umur": "20", "asal": "Payakumbuh, Sumatera Barat", "alamat": "Way Huwi", "hobbi": "Musingin TA", "sosmed": "@naylasalsabilaa._", "kesan": "Kreatif banget", "pesan": "Karya tanpa batas!"},
+        {"nama": "Gusti Putu Ferazka D.", "jabatan": "Staf Medkraf", "nim": "123450028", "umur": "20", "asal": "Bekasi", "alamat": "Way Huwi", "hobbi": "Berenang", "sosmed": "@donnamaya.p", "kesan": "Kreatif banget", "pesan": "Karya tanpa batas!"},
+        {"nama": "Ali Aristo Muthahhari Parisi", "jabatan": "Staf Medkraf", "nim": "123450037", "umur": "20", "asal": "Medan, Jakut, Palembang", "alamat": "Way Huwi", "hobbi": "Buka tutup laptop", "sosmed": "@noerruuu", "kesan": "Kreatif banget", "pesan": "Karya tanpa batas!"},
+        {"nama": "Ayu Andriani Parlina Wati", "jabatan": "Staf Medkraf", "nim": "124450050", "umur": "20", "asal": "Bandar Lampung", "alamat": "Way Huwi", "hobbi": "Ballet", "sosmed": "@anshtsyaaql", "kesan": "Kreatif banget", "pesan": "Karya tanpa batas!"},
+        {"nama": "Dafa Elpriza", "jabatan": "Staf Medkraf", "nim": "124450104", "umur": "18", "asal": "Bekasi", "alamat": "Belwis", "hobbi": "Mancing emosi", "sosmed": "@felisyanbl", "kesan": "Kreatif banget", "pesan": "Karya tanpa batas!"},
+        {"nama": "Juwita Sari", "jabatan": "Staf Medkraf", "nim": "124450031", "umur": "18", "asal": "Tangerang Selatan", "alamat": "Ryacudu", "hobbi": "Badminton ama tensor 24", "sosmed": "@muh_razan_", "kesan": "Kreatif banget", "pesan": "Karya tanpa batas!"},
+        {"nama": "Muhammad Afdal Lutfi", "jabatan": "Staf Medkraf", "nim": "123450087", "umur": "21", "asal": "Karawang", "alamat": "Airan", "hobbi": "Nongkrong depan ruang prodi", "sosmed": "@saniayyllstr", "kesan": "Kreatif banget", "pesan": "Karya tanpa batas!"},
+        {"nama": "Salsabila Nazwa Putri", "jabatan": "Staf Medkraf", "nim": "125450019", "umur": "3", "asal": "Jepang", "alamat": "Cafe Kali", "hobbi": "Jalan bareng my love", "sosmed": "@aallishaa.aa", "kesan": "Kreatif banget", "pesan": "Karya tanpa batas!"},
+        {"nama": "Muhammad Ridwan", "jabatan": "Staf Medkraf", "nim": "124450091", "umur": "19", "asal": "Jambi", "alamat": "Airan", "hobbi": "Main futsal", "sosmed": "@alya.rmdhnti", "kesan": "Kreatif banget", "pesan": "Karya tanpa batas!"},
+        {"nama": "Andra Ilham Bintang", "jabatan": "Staf Medkraf", "nim": "124450097", "umur": "2", "asal": "Sidomulyo", "alamat": "Pemda", "hobbi": "Mengkoding", "sosmed": "@buncaclrssf", "kesan": "Kreatif banget", "pesan": "Karya tanpa batas!"},
+        {"nama": "Bryan Paskah Telaumbanua", "jabatan": "Staf Medkraf", "nim": "124450043", "umur": "7.137 hari per hari ini", "asal": "Kalimantan Utara", "alamat": "Deket ITERA", "hobbi": "Mancing mania", "sosmed": "@difanyhsa", "kesan": "Kreatif banget", "pesan": "Karya tanpa batas!"},
+        {"nama": "Ghiyats Thabularasa Meardhy", "jabatan": "Staf Medkraf", "nim": "124450054", "umur": "20", "asal": "Bandar Lampung", "alamat": "Bandar Lampung", "hobbi": "Main badmin lawan razan", "sosmed": "@nzlhauly_", "kesan": "Kreatif banget", "pesan": "Karya tanpa batas!"},
+        {"nama": "Indah Julia Mawar Pratiwi", "jabatan": "Staf Medkraf", "nim": "123450041", "umur": "20", "asal": "Lampung tengah", "alamat": "Airan Raya 1", "hobbi": "Membaca, menulis", "sosmed": "@n1tg._", "kesan": "Kreatif banget", "pesan": "Karya tanpa batas!"},
+        {"nama": "Jacinda Kesya Alvara", "jabatan": "Staf Medkraf", "nim": "122450088", "umur": "20", "asal": "Yogyakarta", "alamat": "Airan", "hobbi": "Editing & Foto", "sosmed": "@medkraf", "kesan": "Kreatif banget", "pesan": "Karya tanpa batas!"},
+        {"nama": "Muhammad Rafka Fatih Al Ghathfaan", "jabatan": "Staf Medkraf", "nim": "124450098", "umur": "20", "asal": "Lampung Selatan", "alamat": "Natar", "hobbi": "Scrolling Fesbuk", "sosmed": "@eddel_0712", "kesan": "Kreatif banget", "pesan": "Karya tanpa batas!"},
+
+    ]
+    display_images_with_data(gambar_urls, data_list, key="minbak")
