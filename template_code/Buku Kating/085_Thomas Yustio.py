@@ -1188,8 +1188,8 @@ if menu == "Badan Kesenatoran":
                 "Alamat": "Sukarame",
                 "Hobi": "Mendokumentasi Bayes",
                 "Sosmed": "@aqilazayyaan",
-                "Kesan": "Kakaknya lucu, baik, ramah banget, keren juga, suka bunga matahari",
-                "Pesan": "Semoga sehat selalu, sukses kuliahnya, lancar selalu jadi mentor kami, jangan lupa tersenyum"
+                "Kesan": "Kak Aqila awalnya aku udah expect bakal aktif, tapi jujur kirain ga se aktif sekarang, maksudnya tuh excited banget banget sampe kalo ketawa tu kaya lagi nonton stand up comedy gitu kan. Disamping itu, aku udah anggap kak Aqila seperti kakak ku sendiri ya mungkin karena aku anak pertama gitu kan jadi beru ngerasain punya kakak. Kesannya dari awal first meet ga berubah si dan semoga ga berubah terus sampai kapan pun.",
+                "Pesan": "Semoga sehat selalu, sukses kuliahnya, lancar selalu jadi mentor kami, jangan lupa tersenyum kak. Semua doa terbaik untuk kakak Aqila mentor kami tercinta"
             },
             {
                 "Nama": "Hazel Mahesa Handhaka",
