@@ -503,7 +503,7 @@ elif menu == "Departemen Minbak":
                 "asal":"Surabaya",
                 "alamat": "Kemiling",
                 "hobbi": "Nanem Sawit",
-                "sosmed": ""@meardhy_ghiyats",
+                "sosmed": "@meardhy_ghiyats",
                 "kesan": "Bang ghiyats orangnya lucu dan humble parah",  
                 "pesan":"Semangattt bang bangg jadi pj game nyaaa hihi"# 1
             },
