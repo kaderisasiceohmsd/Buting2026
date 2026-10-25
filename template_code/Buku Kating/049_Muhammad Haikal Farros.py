@@ -119,8 +119,8 @@ if menu == "Kesekjenan":
                 "Alamat": "Sekretariat HMSD",
                 "Hobbi": "push rank sampe imo",
                 "Sosmed": "@jars_mrp",
-                "Kesan": "Abangnya keren, kalem, asik juga waktu jadi pemateri",  
-                "Pesan":"Semangat terus bang semoga skripsinya dimudahkan"
+                "Kesan": "Abangnya keren, kalem, asik juga waktu kami ngobrol",  
+                "Pesan":"Semangat terus bang semoga apapun urusannya dipermudah"
             },
             {
                 "Nama": "Muhammad Aqil Ramadhan",
