@@ -1154,7 +1154,7 @@ if menu == "Departemen Eksternal":
             "https://drive.google.com/uc?export=view&id=1Mr_Rrz5ID6oLbLgvKvp3zQ1LMlSa24nQ",
             "https://drive.google.com/uc?export=view&id=1G_p8ngMFwT2mPJWH1YhceXgBMRhLO8oO",
             "https://drive.google.com/uc?export=view&id=1_vxK1jKMBZZLcTq3dDWeqLNUJKmNC2hV",
-            "https://drive.google.com/uc?export=view&id=1I3sjjB97eljIxMwVPOe4Tg85THjxUVsk",
+            "https://drive.google.com/uc?export=view&id=1mkUvWQUsfAYSWQ1fSMzOFb3A0IEsJJ2S",
         ]
         data_list = [
             {
