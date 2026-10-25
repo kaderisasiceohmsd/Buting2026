@@ -1474,9 +1474,9 @@ if menu == "Departemen Eksternal":
                 "kesan": "Orangnya asik, seru kalau diajak ngobrol, dan pembawaannya santai.",
                 "pesan": "Semoga semua harapan serta rencana kuliahnya berjalan lancar, sukses terus!"
               },
-            ]
-            display_images_with_data(gambar_urls, data_list)
-        Departemen_Eksternal()
+        ]
+        display_images_with_data(gambar_urls, data_list)
+    Departemen_Eksternal()
     
 if menu == "Departemen Minbak":
     def Departemen_Minbak():
