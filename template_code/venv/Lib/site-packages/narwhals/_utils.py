@@ -17,6 +17,7 @@ from enum import Enum, auto
 from functools import cache, lru_cache, wraps
 from importlib.util import find_spec
 from inspect import getattr_static, getdoc
+from io import IOBase
 from operator import attrgetter
 from pathlib import Path
 from secrets import token_hex
@@ -66,7 +67,7 @@ from narwhals.exceptions import (
 if TYPE_CHECKING:
     from collections.abc import Set  # noqa: PYI025
     from types import ModuleType
-    from typing import Concatenate, TypeAlias
+    from typing import IO, Concatenate, TypeAlias
 
     import pandas as pd
     import polars as pl
@@ -130,6 +131,7 @@ if TYPE_CHECKING:
         MultiIndexSelector,
         NestedLiteral,
         NormalizedPath,
+        NormalizedSource,
         SingleIndexSelector,
         SizedMultiBoolSelector,
         SizedMultiIndexSelector,
@@ -1198,7 +1200,7 @@ def is_ordered_categorical(series: Series[Any]) -> bool:
             # NOTE: Deprecated https://github.com/pola-rs/polars/pull/23779
             # Since version 1.32.0, ordering parameter is ignored and
             # it always behaves as if 'lexical' was passed.
-            result = cast("pl.Categorical", native.dtype).ordering == "physical"
+            result = cast("pl.Categorical", native.dtype).ordering == "physical"  # type: ignore[attr-defined]
         elif impl.is_pandas_like():
             result = bool(native.cat.ordered)
         elif impl.is_pyarrow():
@@ -1974,6 +1976,32 @@ def convert_str_slice_to_int_slice(
     return (start, stop, step)
 
 
+class SupportsFloorMod(Protocol):
+    """Object supporting `%` and `+` with a same-typed operand.
+
+    Native expression types of backends whose `%` follows C sign semantics
+    (duckdb `Expression`, pyspark `Column`, ibis `Value`, polars `Expr` and
+    `Series` before 0.20.8) satisfy this structurally.
+    """
+
+    def __mod__(self, other: Self, /) -> Self: ...
+
+    def __add__(self, other: Self, /) -> Self: ...
+
+
+_SupportsFloorModT = TypeVar("_SupportsFloorModT", bound=SupportsFloorMod)
+
+
+def floor_mod(expr: _SupportsFloorModT, other: _SupportsFloorModT) -> _SupportsFloorModT:
+    """Restore Python-style (floored) modulo from C-style remainder semantics.
+
+    Backends whose `%` follows C sign semantics (sign of the dividend, like
+    `math.fmod`) can still compute the Python-style one (sign of the
+    divisor) with the double-modulus identity `((a % b) + b) % b`.
+    """
+    return ((expr % other) + other) % other
+
+
 def inherit_doc(
     tp_parent: Callable[P, R1], /
 ) -> Callable[[_Constructor[_T, P, R2]], _Constructor[_T, P, R2]]:
@@ -2175,6 +2203,33 @@ def to_pyarrow_table(tbl: pa.Table | pa.RecordBatchReader) -> pa.Table:
     return tbl
 
 
+def validate_str_non_negative(name: str, arg_name: str, value: int, /) -> None:
+    """Reject a negative width/length for a `str` method that backends disagree on.
+
+    Natively these either raise something inscrutable, or quietly return the input
+    unchanged, so the public `Expr`/`Series` accessors validate up-front and every
+    backend gets the same error.
+    """
+    if value < 0:
+        msg = f"`str.{name}` only supports a non-negative `{arg_name}`, got {value}."
+        raise ValueError(msg)
+
+
+def str_slice_stop(offset: int, length: int | None) -> int | None:
+    """Translate Polars' `str.slice(offset, length)` into a Python-slice `stop`."""
+    if length is None or offset < 0 <= offset + length:
+        return None
+    return offset + length
+
+
+def validate_pad_arguments(name: str, length: int, fill_char: str, /) -> None:
+    """Reject `str.pad_start`/`str.pad_end` arguments that backends disagree on."""
+    if len(fill_char) != 1:
+        msg = f"`str.{name}` only supports a single-character `fill_char`, got {fill_char!r}."
+        raise ValueError(msg)
+    validate_str_non_negative(name, "length", length)
+
+
 def validate_separators(
     separator: str, native_separators: tuple[str, ...], kwds: Mapping[str, Any], /
 ) -> None:
@@ -2188,9 +2243,26 @@ def validate_separators(
             raise TypeError(msg)
 
 
+def is_file_like(obj: object, /) -> TypeIs[IO[bytes] | IO[str]]:
+    return isinstance(obj, IOBase)
+
+
+def ensure_path_source(
+    source: NormalizedSource, backend: Implementation | PluginName, /
+) -> NormalizedPath:
+    """Reject file-like objects for backends whose native reader requires a path."""
+    if is_file_like(source):
+        msg = (
+            f"Reading from a file-like object is not supported for the {backend} backend.\n\n"
+            "Hint: use 'pandas', 'polars' or 'pyarrow', or write the buffer to a file first."
+        )
+        raise TypeError(msg)
+    return source
+
+
 if sys.platform != "win32":
 
-    def normalize_path(source: FileSource, /) -> NormalizedPath:
+    def _normalize_path(source: str | os.PathLike[str], /) -> NormalizedPath:
         from narwhals.typing import NormalizedPath
 
         return NormalizedPath(source if isinstance(source, str) else str(Path(source)))
@@ -2201,10 +2273,14 @@ else:  # pragma: no cover
     # If we stringify that, we get:
     #     `'\\narwhals\\narwhals\\_utils.py'`
     # Which contains 2x `"\n"` characters
-    def normalize_path(source: FileSource, /) -> NormalizedPath:
+    def _normalize_path(source: str | os.PathLike[str], /) -> NormalizedPath:
         from narwhals.typing import NormalizedPath
 
         return NormalizedPath(Path(source).as_posix())
+
+
+def normalize_source(source: FileSource, /) -> NormalizedSource:
+    return source if is_file_like(source) else _normalize_path(source)
 
 
 def extend_bool(

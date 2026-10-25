@@ -19,8 +19,7 @@
 
 #include "arrow/extension_type.h"
 
-namespace arrow {
-namespace extension {
+namespace arrow::extension {
 
 class ARROW_EXPORT FixedShapeTensorArray : public ExtensionArray {
  public:
@@ -38,13 +37,17 @@ class ARROW_EXPORT FixedShapeTensorArray : public ExtensionArray {
   static Result<std::shared_ptr<FixedShapeTensorArray>> FromTensor(
       const std::shared_ptr<Tensor>& tensor);
 
+ protected:
   /// \brief Create a Tensor from FixedShapeTensorArray
   ///
   /// This method will create a Tensor from a FixedShapeTensorArray, setting its first
   /// dimension as length equal to the FixedShapeTensorArray's length and the remaining
   /// dimensions as the FixedShapeTensorType's shape. Shape and dim_names will be
   /// permuted according to permutation stored in the FixedShapeTensorType metadata.
-  const Result<std::shared_ptr<Tensor>> ToTensor() const;
+  ///
+  /// Nulls are ignored, leaving the output tensor with unspecified values where this
+  /// array has null entries.
+  Result<std::shared_ptr<Tensor>> ToTensorWithNulls() const override;
 };
 
 /// \brief Concrete type class for constant-size Tensor data.
@@ -112,7 +115,6 @@ class ARROW_EXPORT FixedShapeTensorType : public ExtensionType {
       const std::vector<std::string>& dim_names = {});
 
  private:
-  std::shared_ptr<DataType> storage_type_;
   std::shared_ptr<DataType> value_type_;
   std::vector<int64_t> shape_;
   std::vector<int64_t> strides_;
@@ -126,5 +128,4 @@ ARROW_EXPORT std::shared_ptr<DataType> fixed_shape_tensor(
     const std::vector<int64_t>& permutation = {},
     const std::vector<std::string>& dim_names = {});
 
-}  // namespace extension
-}  // namespace arrow
+}  // namespace arrow::extension

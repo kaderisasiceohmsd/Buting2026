@@ -1,14 +1,11 @@
 import datetime as dt
-from typing import Any, TypeAlias, TypeVar, cast
+from typing import Any, cast
 
 import numpy as np
 import numpy.typing as npt
 from numpy._typing import _Shape
 
-_ScalarT = TypeVar("_ScalarT", bound=np.generic)
-MaskedArray: TypeAlias = np.ma.MaskedArray[_Shape, np.dtype[_ScalarT]]
-
-# mypy: disable-error-code=no-untyped-call
+type MaskedArray[ScalarT: np.generic] = np.ma.MaskedArray[_Shape, np.dtype[ScalarT]]
 
 MAR_b: MaskedArray[np.bool] = np.ma.MaskedArray([True])
 MAR_u: MaskedArray[np.uint32] = np.ma.MaskedArray([1], dtype=np.uint32)
@@ -197,3 +194,6 @@ MAR_c **= AR_LIKE_u
 MAR_c **= AR_LIKE_i
 MAR_c **= AR_LIKE_f
 MAR_c **= AR_LIKE_c
+
+# https://github.com/numpy/numpy/issues/31737
+np.ma.masked_array([1])
