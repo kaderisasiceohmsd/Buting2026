@@ -8,13 +8,19 @@ import streamlit as st
 
 
 class _State:
-
+    """Wrapper aman untuk st.session_state dengan prefix 'dq_'."""
 
     def setdefault(self, k, v):
-        return st.session_state.setdefault("dq_" + k, v)
+        key = "dq_" + k
+        if key not in st.session_state:
+            st.session_state[key] = v
+        return st.session_state[key]
 
     def __getattr__(self, k):
-        return st.session_state["dq_" + k]
+        try:
+            return st.session_state["dq_" + k]
+        except KeyError:
+            raise AttributeError(k)
 
     def __setattr__(self, k, v):
         st.session_state["dq_" + k] = v
@@ -118,6 +124,27 @@ def conveyor(names, states):
     return f'<div class="dq-pipe">{body}</div>'
 
 
+def altair_chart(chart):
+    """Render Altair chart dengan fallback API Streamlit lama/baru."""
+    try:
+        st.altair_chart(chart, width="stretch")
+    except TypeError:
+        st.altair_chart(chart, use_container_width=True)
+
+
+def progress(value, text=None):
+    """Render progress dengan fallback untuk Streamlit < 1.18."""
+    try:
+        if text is not None:
+            st.progress(value, text=text)
+        else:
+            st.progress(value)
+    except TypeError:
+        st.progress(value)
+        if text:
+            st.caption(text)
+
+
 def game_shell(r, *labels):
     """Hero + tab Briefing (kenapa & manfaat & mata kuliah). Mengembalikan tab untuk tiap misi."""
     R = ROLES[r]
@@ -142,7 +169,7 @@ def game_shell(r, *labels):
 def lose(k):
     if k in ss.done:
         return
-    ss.lives[k] = ss.lives.setdefault(k, 3) - 1
+    ss.lives[k] = ss.setdefault("lives", {}).get(k, 3) - 1
     if ss.lives[k] <= 0:
         ss.xp = max(0, ss.xp - 10)
 
@@ -155,16 +182,25 @@ def miss(k, msg):
 
 
 def reset(k):
-    ss.lives[k], ss.flash = 3, None
+    lives = ss.setdefault("lives", {})
+    lives[k] = 3
+    ss.lives = lives
+    ss.flash = None
     if k == "analyst":
-        ss.a_seed, ss.a_pts, ss.a_last = ss.a_seed + 1, 5, None
+        ss.a_seed = ss.a_seed + 1
+        ss.a_pts = 5
+        ss.a_last = None
     elif k == "sci":
-        ss.s_seed += 1
+        ss.s_seed = ss.s_seed + 1
 
 
 def gate(k):
     """Tampilkan nyawa & feedback. Return False bila Game Over."""
-    n = ss.lives.setdefault(k, 3)
+    lives = ss.setdefault("lives", {})
+    n = lives.get(k, 3)
+    if k not in lives:
+        lives[k] = n
+        ss.lives = lives
     c1, c2 = st.columns([1, 3])
     c1.markdown(f'<div class="dq-hearts">{"❤️" * n}{"🖤" * (3 - n)}</div>', unsafe_allow_html=True)
     c2.caption("✅ Misi selesai: mode latihan tanpa penalti." if k in ss.done else
@@ -183,9 +219,12 @@ def gate(k):
 def award(k, base, extra=0):
     if k in ss.done:
         return
-    bonus = 15 * ss.lives.setdefault(k, 3) + extra
-    ss.done.append(k)
-    ss.xp += base + bonus
+    lives = ss.setdefault("lives", {})
+    bonus = 15 * lives.get(k, 3) + extra
+    done = list(ss.done)
+    done.append(k)
+    ss.done = done
+    ss.xp = ss.xp + base + bonus
     st.balloons()
     _, skill, badge = MISSIONS[k]
     st.markdown(f'<div class="dq-win">🏆 <b>Misi selesai: {badge}</b><br>+{base} XP dasar · +{bonus} XP bonus '
@@ -197,7 +236,8 @@ def award(k, base, extra=0):
 # BERANDA
 # ======================================================================
 def go(page):
-    st.session_state["dq_page"] = page
+    """Navigasi aman: tulis ke session_state widget key (dipanggil sebagai callback)."""
+    st.session_state["dq_nav"] = page
 
 
 def home():
@@ -209,7 +249,8 @@ def home():
         with col.container(border=True):
             st.markdown(f"### {name}\n*{R['analogi']}*\n\n{R['tag']}\n\n**Tools:** {R['tools']}")
             st.caption("  ·  ".join(("✅ " if k in ss.done else "🔒 ") + m[2] for k, m in MISSIONS.items() if m[0] == r))
-            st.button("Mulai misi ➜", key=f"dq_go_{r}", type="primary", use_container_width=True, on_click=go, args=(name,))
+            st.button("Mulai misi ➜", key=f"dq_go_{r}", type="primary", use_container_width=True,
+                      on_click=go, args=(name,))
     with st.container(border=True):
         st.markdown("#### 🎮 Aturan main\n"
                     "- ❤️ **3 nyawa** per misi. Jawaban salah **-1 nyawa**.\n"
@@ -330,7 +371,7 @@ def game_engineer():
 CITIES = ["Jakarta", "Bandung", "Surabaya", "Medan"]
 CATS = ["Elektronik", "Fashion", "Makanan", "Buku"]
 CITYW = dict(zip(CITIES, [120, 80, 90, 60]))
-CATW = dict(zip(CATS, [0.5, 2, 10, 5]))       
+CATW = dict(zip(CATS, [0.5, 2, 10, 5]))
 PRICE = dict(zip(CATS, [2.0, 0.5, 0.1, 0.2]))
 
 
@@ -448,17 +489,17 @@ def mission_model():
     pts = pd.DataFrame({"x": x, "y": y, "set": np.where(np.isin(np.arange(40), tr), "Train", "Test")})
     gx = np.linspace(0, 10, 200)
     sc = alt.Scale(domain=[-6, 9])
-    st.altair_chart(alt.layer(
+    altair_chart(alt.layer(
         alt.Chart(pd.DataFrame({"x": gx, "y": p(gx / 5 - 1)})).mark_line(color="#888", clip=True)
         .encode(x="x:Q", y=alt.Y("y:Q", scale=sc)),
         alt.Chart(pts).mark_circle(size=80, opacity=0.85).encode(x="x:Q", y=alt.Y("y:Q", scale=sc), color="set:N"),
-    ).properties(height=330), use_container_width=True)
+    ).properties(height=330))
 
     m = st.columns(3)
     m[0].metric("Error Train", f"{e_tr:.2f}")
     m[1].metric("Error Test", f"{e_te:.2f}")
     m[2].metric("Target Test ≤", f"{goal:.2f}")
-    st.progress(min(1.0, goal / e_te), text="Menuju target (penuh = tercapai)")
+    progress(min(1.0, goal / e_te), text="Menuju target (penuh = tercapai)")
     if e_tr > 1.2:
         st.warning("📉 **Underfitting**: model terlalu sederhana, pola belum tertangkap (error train pun tinggi).")
     elif e_te <= goal:
@@ -488,23 +529,47 @@ def game_scientist():
     with t1:
         mission_model()
 
-PAGES = {"🏠 Beranda": home, **{f"{R['icon']} {R['name']}": fn for R, fn in
-                               zip(ROLES.values(), (game_engineer, game_analyst, game_scientist))}}
+
+PAGES = {
+    "🏠 Beranda": home,
+    **{f"{R['icon']} {R['name']}": fn for R, fn in
+       zip(ROLES.values(), (game_engineer, game_analyst, game_scientist))}
+}
 
 
 def render():
-    for k, v in dict(xp=0, done=[], lives={}, flash=None, a_seed=1, a_pts=5, a_last=None, s_seed=3).items():
+    defaults = dict(xp=0, done=[], lives={}, flash=None, a_seed=1, a_pts=5, a_last=None, s_seed=3)
+    for k, v in defaults.items():
         ss.setdefault(k, v)
-    st.session_state.setdefault("dq_page", "🏠 Beranda")
+
+    # navigasi: gunakan key widget terpisah agar tidak konflik dengan state halaman
+    page_labels = list(PAGES)
+    if "dq_nav" not in st.session_state:
+        st.session_state["dq_nav"] = page_labels[0]
+    if st.session_state["dq_nav"] not in page_labels:
+        st.session_state["dq_nav"] = page_labels[0]
+
     st.markdown(CSS, unsafe_allow_html=True)
     status = st.empty()
-    if hasattr(st, "segmented_control"):
-        page = st.segmented_control("Menu", list(PAGES), key="dq_page", label_visibility="collapsed")
-    else:
-        page = st.radio("Menu", list(PAGES), horizontal=True, key="dq_page", label_visibility="collapsed")
-    PAGES[page or "🏠 Beranda"]()
+
+    try:
+        if hasattr(st, "segmented_control"):
+            page = st.segmented_control(
+                "Menu", page_labels, key="dq_nav", label_visibility="collapsed"
+            )
+            page = page or st.session_state["dq_nav"]
+        else:
+            page = st.radio(
+                "Menu", page_labels, horizontal=True, key="dq_nav", label_visibility="collapsed"
+            )
+    except Exception:
+        # fallback terakhir: selectbox
+        page = st.selectbox("Menu", page_labels, key="dq_nav", label_visibility="collapsed")
+
+    PAGES[page]()
+
     with status.container():
-        st.progress((ss.xp % 100) / 100, text=f"⚡ Level {ss.xp // 100 + 1} · {ss.xp} XP")
+        progress((ss.xp % 100) / 100, text=f"⚡ Level {ss.xp // 100 + 1} · {ss.xp} XP")
         st.caption("  ·  ".join(("✅ " if k in ss.done else "🔒 ") + m[2] for k, m in MISSIONS.items()))
 
 
