@@ -1267,7 +1267,7 @@ elif menu == "About Us":
                 "fun_fact": "Isi fun fact di sini",
                 "motto_hidup": "Isi motto di sini",
                 "sosmed": "@filzhhy",
-                "foto": "https://drive.google.com/uc?export=view&id=1fkdAu5a7UGyEBMMcIcysaN3f04fM2PVd",
+                "foto": "https://drive.google.com/uc?export=view&id=13yOwhEQH_zVkrbuGiohD--90zVLc_zQK",
             },
             {
                 "urut": "11",
@@ -1287,7 +1287,7 @@ elif menu == "About Us":
                 "fun_fact": "Isi fun fact di sini",
                 "motto_hidup": "Isi motto di sini",
                 "sosmed": "@lintar.abhinaya",
-                "foto": "",
+                "foto": "https://drive.google.com/uc?export=view&id=1fkdAu5a7UGyEBMMcIcysaN3f04fM2PVd",
             },
             {
                 "urut": "13",
