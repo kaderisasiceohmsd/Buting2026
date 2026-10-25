@@ -349,7 +349,7 @@ if menu == "Badan Legislatif":
 if menu == "Badan Kesenatoran":
     def Bason():
         gambar_urls = [
-			"https://drive.google.com/uc?export=view&id=1_eqne9wh7Vv3r72alnNC09hPcCCcozBA",
+			"https://drive.google.com/uc?export=view&id=1olgRYQ9NcAy8wij651Kni8UU6wn8325w",
             "https://drive.google.com/uc?export=view&id=1A64fxbdMjm5-4tAkRQEfv-4TAvGDudYF",
             "https://drive.google.com/uc?export=view&id=1oI-tT7AdEqI1YOlPBf4vookLQPQvnZ6K",
             "https://drive.google.com/uc?export=view&id=17HrIBmIQ4HNvBWrX2sRAqIkiFLwbnVhT",
