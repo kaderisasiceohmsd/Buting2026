@@ -350,11 +350,15 @@ if menu == "Badan Kesenatoran":
     def Bason():
         gambar_urls = [
 			"https://drive.google.com/uc?export=view&id=1olgRYQ9NcAy8wij651Kni8UU6wn8325w",
-            "https://drive.google.com/uc?export=view&id=1A64fxbdMjm5-4tAkRQEfv-4TAvGDudYF",
-            "https://drive.google.com/uc?export=view&id=1oI-tT7AdEqI1YOlPBf4vookLQPQvnZ6K",
-            "https://drive.google.com/uc?export=view&id=17HrIBmIQ4HNvBWrX2sRAqIkiFLwbnVhT",
-            "https://drive.google.com/uc?export=view&id=1-G9OLCTeEkZJT4D_4wEoi8theUGrLRj_",
-            "https://drive.google.com/uc?export=view&id=1Kq9LFbKNgmgMMjhaFoaPTnsE7UaxAmlZ",
+            "https://drive.google.com/uc?export=view&id=1lxXfp8aAfOmpuXvWe_22zGbWzQ5Abiyk",
+            "https://drive.google.com/uc?export=view&id=1SO_faxm5V5_r5NFt1FCiqugPThQxlxvu",
+            "https://drive.google.com/uc?export=view&id=1ao9tFwYtntSzlFP66MTKQcvzVTtRfUWH",
+            "https://drive.google.com/uc?export=view&id=1zum85YU5f5qUu_qKAgyoxx4p_50vJQXG",
+            "https://drive.google.com/uc?export=view&id=1ZZF5zYy3XHmZloUZ7QvHkaG5phNZXqhU",
+			"https://drive.google.com/uc?export=view&id=15p-0fDihk2pvwmG4r13CESQpXFFDSaxB",
+			"https://drive.google.com/uc?export=view&id=142oPjv5d9-kPp_d_--17J9T05xUlxkdV",
+			"https://drive.google.com/uc?export=view&id=1JhEsMwYPlFfHXZzClFz-2m_5EuUb2Mm4",
+			"https://drive.google.com/uc?export=view&id=1BysBCy1if1wUQCyRkAm0Cw_SwGvLnI4e",
         ]
         data_list = [
             {
