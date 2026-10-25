@@ -547,7 +547,7 @@ elif menu == "Departemen Eksternal":
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
-            { 1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX
+            { 
                 "nama": "Ashila Islamisahfa Vanisha",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1A6wiwUEAPrBXWU58fP7XVyYz8ep4byEA",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
