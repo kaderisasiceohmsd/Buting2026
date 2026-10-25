@@ -425,8 +425,8 @@ if menu == "Badan Kesenatoran":
                 "alamat": "Sukarame",
                 "hobbi": "Mendokumentasikan Bayes",
                 "sosmed": "@aqilazayyaan",
-                "kesan": "kk ini baik banget dan aku melihat ada bintang bintang bersinar di mata kk nya masyaAllah ternyata nama kita samaan masyaAllah happy banget nama aku samaan kaya bidadari",  
-                "pesan":"semoga kakak sehat selalu dan dalam lindungan Allah SWT aamiin YRA"# 6
+                "kesan": "kk ini baik banget dan aku melihat ada bintang bintang bersinar di mata kk nya masyaAllah ternyata nama kita samaan masyaAllah happy banget nama aku samaan kaya bidadari. Okay serius ya ini kesan nya, agak kaget waktu pengumuman kelompok mentor aku namanya sama kaya aku wkwk lucu banget jadinya kalo dipanggil dua duanya nengok!! long story short selama kurang lebih 5bulan ini amaze banget sama mentorku yang bener bener perhatian ke mentee nya bahkan sampe aku sendiri berani ceritain masalah pribadi aku karena aku tau kak aqila would be good listener, hari itu aku nangis baca chat dari kamu huhu gemes banget dan aku sangat berterimakasih untuk itu kak it means a lot <3",  
+                "pesan":"untuk semua kebaikan yang kamu lakukan semoga berbalik ke kamu ya kak, aku percaya kamu akan selalu dikelilingi hal baik karena kamu such a good person too, gada kata yang bisa aku ucapin selain banyak berterimakasih sama kamu kak, jangan lupa tetap ceria ya kak cause it suits you well!, loveyouuu sm kakkk"# 6
             },                      
             {
                 "nama": "Wielman Itolo Halawa",
@@ -658,7 +658,7 @@ if menu == "Departemen MIKFES":
                 "umur" : "21",
                 "sosmed" : "@fadilalfarizzii",
                 "kesan" : "abangnya baik dan ramah",
-                "pesan" : "semangat terus kuliahnya bang"
+                "pesan" : "senang bisa sempat kenal abang walau sebentar, al fatihah buat bang fadil"
             },
             {
                 "nama": "Manuel Frederika",
