@@ -134,7 +134,7 @@ elif menu == "Departemen MIKFES":
                    "https://drive.google.com/uc?export=view&id=1NVkgQ6A0X5LTnS8n9MH-pb1-J2t47pzt",
                    "https://drive.google.com/uc?export=view&id=1hGlXdE6OyPgM-Ta2O0C5Nj42rkaGT0c7",
                    "https://drive.google.com/uc?export=view&id=1lYK66JEChrj_B71M_vS4ifu_nkVpyp4W",
-                   "https://drive.google.com/uc?export=view&id=1KWQFMJgDuQ0Wijx3fe_knmxbxcsj45RH"'
+                   "https://drive.google.com/uc?export=view&id=1KWQFMJgDuQ0Wijx3fe_knmxbxcsj45RH",
                    "https://drive.google.com/uc?export=view&id=1_bOPyUlbJL26ZPlMPFfkbbXe_LHBWrAA",
                    "https://drive.google.com/uc?export=view&id=1hdlYvrLGfaFwDnRVR8G6rcAlfh0LPSzV",
                    "https://drive.google.com/uc?export=view&id=15qDJH5UaQWMqx97dzgC9JJ2aVQH6yJY4",
@@ -220,7 +220,7 @@ elif menu == "Departemen Internal":
                   "https://drive.google.com/uc?export=view&id=12VNXZqd_CQrxbKoDLg78MvmOInj1rJn8",
                   "https://drive.google.com/uc?export=view&id=1fMC0Pk3wxA34x_BTPxp601hL-dTJol68",
                   "https://drive.google.com/uc?export=view&id=1-pBYEj5JtPcSGP21OmFrn4AL22jA1EqS",
-                  "https://drive.google.com/uc?export=view&id=1HXLn9bsLXJtR4gL9kviDt_vpHGQFOId0",
+                  "https://drive.google.com/uc?export=view&id=1HXLn9bsLXJtR4gL9kviDt_vpHGQFOId0"
     ]
     data_list = [
         {"nama": "Haikal Fransisko Simbolon", "jabatan": "Kepala Departemen Internal", "nim": "123450106", "umur": "20", "asal": "Jambi", "alamat": "Way Halim", "hobbi": "Ngeledek Orang", "sosmed": "@haikalsbln", "kesan": "Humornya sederhana tapi bikin akrab.", "pesan": "Jaga suasana cair tanpa berlebihan."},
@@ -353,5 +353,3 @@ elif menu == "Departemen MINBAK":
 
     ]
     display_images_with_data(gambar_urls, data_list, key="minbak")
-
-
