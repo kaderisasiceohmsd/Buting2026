@@ -3,29 +3,24 @@
 # and ensure that it doesn't blow up (e.g. with unicode/bytes issues in
 # python 3)
 
-import unittest
+from unittest import mock
 
+from tornado import gen
 from tornado.auth import (
-    OpenIdMixin,
-    OAuthMixin,
-    OAuth2Mixin,
-    GoogleOAuth2Mixin,
     FacebookGraphMixin,
+    GoogleOAuth2Mixin,
+    OAuth2Mixin,
+    OAuthMixin,
+    OpenIdMixin,
     TwitterMixin,
 )
 from tornado.escape import json_decode
-from tornado import gen
 from tornado.httpclient import HTTPClientError
 from tornado.httputil import url_concat
 from tornado.log import app_log
-from tornado.testing import AsyncHTTPTestCase, ExpectLog, setup_with_context_manager
-from tornado.test.util import ignore_deprecation
-from tornado.web import RequestHandler, Application, HTTPError
-
-try:
-    from unittest import mock
-except ImportError:
-    mock = None  # type: ignore
+from tornado.testing import ExpectLog, setup_with_context_manager
+from tornado.test.util import AsyncHTTPTestCase, ignore_deprecation
+from tornado.web import Application, HTTPError, RequestHandler
 
 
 class OpenIdClientLoginHandler(RequestHandler, OpenIdMixin):
@@ -85,8 +80,7 @@ class OAuth1ClientLoginHandler(RequestHandler, OAuthMixin):
             return
         yield self.authorize_redirect(http_client=self.settings["http_client"])
 
-    @gen.coroutine
-    def _oauth_get_user_future(self, access_token):
+    async def _oauth_get_user_future(self, access_token):
         if self.get_argument("fail_in_get_user", None):
             raise Exception("failing in get_user")
         if access_token != dict(key="uiop", secret="5678"):
@@ -431,7 +425,6 @@ class AuthTest(AsyncHTTPTestCase):
             response.headers["Set-Cookie"],
         )
 
-    @unittest.skipIf(mock is None, "mock package not present")
     def test_oauth10a_redirect_error(self):
         with mock.patch.object(OAuth1ServerRequestTokenHandler, "get") as get:
             get.side_effect = Exception("boom")

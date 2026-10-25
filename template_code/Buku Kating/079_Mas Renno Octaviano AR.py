@@ -101,12 +101,12 @@ menu = streamlit_menu()
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1-iCmlRJteY4p3MHy3IeVmmcxSZd3vr1x",
+            "https://drive.google.com/uc?export=view&id=1QA4r4oO44y8va91G5kMJJHAQVfhXb8Y_",
+            "https://drive.google.com/uc?export=view&id=1fhmHXpkS_0ZgIUtXZZQcbIc5-RW1wkXl",
+            "https://drive.google.com/uc?export=view&id=1tsZv6xj1ERjup9ZEMalw_TzM-qDEUj8V",
+            "https://drive.google.com/uc?export=view&id=1VAAzOl3j52bsMVaQG3XV9OCJli98cyh-",
+            "https://drive.google.com/uc?export=view&id=1FqViu-03d1cQlOodvq5bbbAgp2tWSAYd",
         ]
         data_list = [
             {
@@ -118,8 +118,8 @@ if menu == "Kesekjenan":
                 "Alamat": "Sekretariat HMSD",
                 "Hobbi": "push rank sampe imo",
                 "Sosmed": "@jars_mrp",
-                "Kesan": "Abangnya keren, kalem, asik juga waktu jadi pemateri",  
-                "Pesan":"Semangat terus bang semoga skripsinya dimudahkan"
+                "Kesan": "Abang himku ini orangnya kalem dan seru jugaa kalo diajak ngobrol lah",
+                "Pesan":"Semoga selalu diberikan kesehatan dan dipermudah yaa bang dari semua urusannya"
             },
             {
                 "Nama": "Muhammad Aqil Ramadhan",
@@ -130,8 +130,8 @@ if menu == "Kesekjenan":
                 "Alamat": "Sekretariat HMSD",
                 "Hobbi": "Zikir",
                 "Sosmed": "@muhammadaqil1111",
-                "Kesan": "Abangnya asik, lucu, suka bercanda juga, kalau jadi pemateri asik",  
-                "Pesan":"Sehat selalu bang semoga dimudahkan segala urusan"
+                "Kesan": "Bang Aqil ini jujur ga expect orangnya itu kalem tapi kalo ngobrol itu bisa bikin energik banget lah",  
+                "Pesan":"Semoga club bola favoritnya bisa menang treble"
             },
             {
                 "Nama": "Efi Defiyati",
@@ -142,8 +142,8 @@ if menu == "Kesekjenan":
                 "Alamat": "Airan",
                 "Hobbi": "Membaca",
                 "Sosmed": "@eeffiidefi",
-                "Kesan": "Kakaknya baik sama kalem",  
-                "Pesan":"Semangat terus dan sehat selalu kak"
+                "Kesan": "kak efi ini jujur ku kira dia orangnya agak galak tapi plot twistnya kalem banget dan asik sih",  
+                "Pesan":"semogaa diberikan kesehatan dan nasinya selalu hangat ya kak"
             },
             {
                 "Nama": "Qois Olifio",
@@ -154,8 +154,8 @@ if menu == "Kesekjenan":
                 "Alamat": "Kota Baru",
                 "Hobbi": "Mainin Surat",
                 "Sosmed": "@qoisolifio_ ",
-                "Kesan": "Abangnya keren, kalem, lucu",  
-                "Pesan":"Semangat bikin bikin suratnyaa bang, semoga jadi mudah bikin skripsinya"
+                "Kesan": "Bang qois ini jujur aku hampir susah membedakan ama bang jay sih tapi kalo diliat emang beda orang",  
+                "Pesan":"Perbanyakin makan yaa bangg biar selalu sehat dan dimudahkan ujiannya"
             },
             {
                 "Nama": "Hafsa Fazila Arradhi",
@@ -166,8 +166,8 @@ if menu == "Kesekjenan":
                 "Alamat": "Bandar Lampung",
                 "Hobbi": "Bertemu Kesekjenan",
                 "Sosmed": "@hafsafadhilaa",
-                "Kesan": "Kakaknya cantik, baik, kalem, asik juga",  
-                "Pesan":"Semangat terus kak, sehat selalu"
+                "Kesan": "Kakak nimku ini jujur agak shock dan banggaa karena kita punya nim yang sama namun beda 2 tingkat angkatan",  
+                "Pesan":"Semoga nim 79 selalu jaya jaya"
             },
             {
                 "Nama": "Luthfia Laila Ramadhani",
