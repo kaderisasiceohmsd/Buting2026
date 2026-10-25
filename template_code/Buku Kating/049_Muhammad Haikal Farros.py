@@ -1790,8 +1790,8 @@ elif menu == "Departemen PSDA":
                 "Alamat": "Samping Rumah Henry",
                 "Hobbi": "Banyak",
                 "Sosmed": "@nobelnizam",
-                "Kesan": "",
-                "Pesan": ""
+                "Kesan": "emang beneran banyak hobi abang ini, jago sulap, jago billiard, jago main gitar",
+                "Pesan": "tetap semangat ya bang, semoga sehat selalu dan sukses selalu, bang, jaga kesehatan ya bang"
             },
             {
                 "Nama": "Afriza Azmi",
