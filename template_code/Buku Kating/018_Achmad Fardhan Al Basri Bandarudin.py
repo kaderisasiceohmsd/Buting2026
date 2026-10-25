@@ -42,22 +42,84 @@ elif menu == "Senator":
     display_images_with_data(gambar_urls, data_list, key="senator")
 
 elif menu == "Departemen PSDA":
-    gambar_urls = ["https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"]
+    gambar_urls = ["https://drive.google.com/uc?export=view&id=1Wuc4L6sgBoo0_bEfODDm4qnmhV0lb5Fs",
+                   "https://drive.google.com/uc?export=view&id=1mYHpz8j3-LdffghK3--meBlWQV6S6TRE",
+                   "https://drive.google.com/uc?export=view&id=1lhv5Fzb2y7vN6dKi3-iFs2kP29Opl_Wa",
+                   "https://drive.google.com/uc?export=view&id=1ord9VbP1G8yKkezIjNab8CBwUPEV_q12",
+                   "https://drive.google.com/uc?export=view&id=1mMekmzXyU1mld6BgK4yJVSBBfdp4LOJq",
+                   "https://drive.google.com/uc?export=view&id=1rjP2j9ScK6YgzGP1FsTQJcNX5tiJwgiX",
+                   "https://drive.google.com/uc?export=view&id=1HAql4KGgPOKK_NAKQr-MDrERmW_2CXre",
+                   "https://drive.google.com/uc?export=view&id=19R7Y9-gHOeLnSQLBkM2KvmUhlF7UXgYm",
+                   "https://drive.google.com/uc?export=view&id=1Ab96qg09_6NUt8LGb8yme7WSErzvvhEh",
+                   "https://drive.google.com/uc?export=view&id=1Htn6O5u6FeCM-EgAwzdYhl0hwGcIwr2q",
+                   "https://drive.google.com/uc?export=view&id=1T3En8p8NqynR7wSEqNRTtn2JVUjlLLRw",
+                   "https://drive.google.com/uc?export=view&id=1ULsT6Pk7G7dSbUbjx3GFDpTRuA_uOglf",
+                   "https://drive.google.com/uc?export=view&id=1WJatEYATBbA-ex6gPJKNzE-6_fHzTnKI",
+                   "https://drive.google.com/uc?export=view&id=1_J8cADzoEhS_gwj9OfK--v0GtK1b8Xmn",
+                   "https://drive.google.com/uc?export=view&id=1nDp-XlUNqD0CR5bHBR-9soFX16zo1nmT",
+                   "https://drive.google.com/uc?export=view&id=1BhoiSznhDKNgzQPiGKd8ycLRQqWwOM6p",
+                   "https://drive.google.com/uc?export=view&id=1OXFzj9MDHDtUtI_T-04-qy7uf5zsaO8w",
+    ]
     data_list = [
         {"nama": "Anggota PSDA", "jabatan": "Staf PSDA", "nim": "122450033", "umur": "20", "asal": "Bogor", "alamat": "Korpri", "hobbi": "Leadership", "sosmed": "@psda", "kesan": "Keren", "pesan": "Semangat PSDA!"},
     ]
     display_images_with_data(gambar_urls, data_list, key="psda")
 
 elif menu == "Departemen MIKFES":
-    gambar_urls = ["https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"]
+    gambar_urls = ["https://drive.google.com/uc?export=view&id=1Vrf6tfghe4NB6LkTN8Oknosvx-tvjIuT",
+                   "https://drive.google.com/uc?export=view&id=1DJHzP85moU2DdSX4CxJGm-_-F41UjGNy",
+                   "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy",
+                   "https://drive.google.com/uc?export=view&id=19TTnEGSUEpbkRYRqOHKYryECCpjv8C4R",
+                   "https://drive.google.com/uc?export=view&id=1yOoxvdC9Gt64-rwPCIGI7Ewa2cNO0By3",
+                   "https://drive.google.com/uc?export=view&id=1UhJh2xq3RUjmqHllYVMonwgll5fWdK-H",
+                   "https://drive.google.com/uc?export=view&id=1RT0VsPQObAZZoP-JNpek2y7ebUxtD4ru",
+                   "https://drive.google.com/uc?export=view&id=1dsdC6LlV7SHIZcD6_hFts6VZtBamXW1w",
+                   "https://drive.google.com/uc?export=view&id=1DvKA-VfwJO5JL-evbEIcPqAyGl4d2J8d",
+                   "https://drive.google.com/uc?export=view&id=1r4HNsPcYjhAg4qakI7gCZbEiyvZ3Q2KH",
+                   "https://drive.google.com/uc?export=view&id=1ZXVJfjxABm470NG57wIeuO8ffBHkq-AY",
+                   "https://drive.google.com/uc?export=view&id=1c82ZZAFTaTMTO_BuF5xBZabozz5Kpn-P",
+                   "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                   "https://drive.google.com/uc?export=view&id=1jxM3Zx3NsXFshrSiumapbCEDaDhc1OJi",
+                   "https://drive.google.com/uc?export=view&id=1JlZ1I2w6r4cwtLnN1Lhz0A70vW6tBf3p",
+                   "https://drive.google.com/uc?export=view&id=1XZ24oWA_GIp8ugfyixhyooo25sy8CSB1",
+                   "https://drive.google.com/uc?export=view&id=1g26jRfNBn8JKtfyZ1MSzFtm3MGiTdnhb",
+                   "https://drive.google.com/uc?export=view&id=1nd6kcxPIYZos6NGcGxPTYA2-GJiV6reQ",
+                   "https://drive.google.com/uc?export=view&id=14SmXrXQ-mBZ7dBBBtjJRp6_PpGBuwI_X",
+                   "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                   "https://drive.google.com/uc?export=view&id=1Dt2btj9-PSXxtbddvVMJCDaRXpo14ZoI",
+                   "https://drive.google.com/uc?export=view&id=18CBehY0eqQRgc0Y1ETHMpzyo8cFdgPUE",
+    ]
     data_list = [
         {"nama": "Anggota MIKFES", "jabatan": "Staf MIKFES", "nim": "122450044", "umur": "20", "asal": "Bandung", "alamat": "Airan", "hobbi": "Olahraga", "sosmed": "@mikfes", "kesan": "Solid", "pesan": "Solid terus!"},
     ]
     display_images_with_data(gambar_urls, data_list, key="mikfes")
 
 elif menu == "Departemen Eksternal":
-    gambar_urls = ["https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"] * 22
-    data_list = [{"nama": "Anggota Eksternal", "jabatan": "Staf Eksternal", "nim": "122450055", "umur": "20", "asal": "Palembang", "alamat": "Korpri", "hobbi": "Networking", "sosmed": "@eksternal", "kesan": "Ramah", "pesan": "Jalin relasi luas!"}] * 22
+    gambar_urls = ["https://drive.google.com/uc?export=view&id=1u0GPQcg6pHKddidEpCW03MXJf09nWlIS",
+                   "https://drive.google.com/uc?export=view&id=1JTz0JQx0o9-41SIRGD65asvBT12cblY4",
+                   "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                   "https://drive.google.com/uc?export=view&id=19rM4QJg_4tsWzJQVcz4iQGMy3TXh2-yu",
+                   "https://drive.google.com/uc?export=view&id=1dIbxHxXQppoA-M3k5EepeIBTDQUVsy3d",
+                   "https://drive.google.com/uc?export=view&id=1ZnDz5dmr5l393QuVk5n_jTLGG5Vz9npw",
+                   "https://drive.google.com/uc?export=view&id=1NmEcnANricdiLQHQpOMmpoTRC0Hye78q",
+                   "https://drive.google.com/uc?export=view&id=1xjrIXgMNPoQ2HWIy999JwbwxAo7082Tv",
+                   "https://drive.google.com/uc?export=view&id=1_naA2Pr1kaARtrUhbugRY-kCZ2YJK8au",
+                   "https://drive.google.com/uc?export=view&id=1aW5YaTpcIe2qXV7T7tcHXWcJl3vWjq58",
+                   "https://drive.google.com/uc?export=view&id=1f1lZjkYB4GiIoHMD_9Z_4GHE5QFK-2kN",
+                   "https://drive.google.com/uc?export=view&id=1B2zO2sAjI6f1wfg6j4laPwVWBGaBcKPn",
+                   "https://drive.google.com/uc?export=view&id=1dzpXZ3fCjKBS1W2zAoCvIZ0_Au2xQOQR",
+                   "https://drive.google.com/uc?export=view&id=1R_vevwV9Cc9w48X4QFc01NdkzzAULZM9",
+                   "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                   "https://drive.google.com/uc?export=view&id=1QM_o_q09j0JHvWvTY_vTxlDQAdwrqEOP",
+                   "https://drive.google.com/uc?export=view&id=1XIbGvb-weBGgRegGDou624O_JMaSEMxV",
+                   "https://drive.google.com/uc?export=view&id=1NI01CC_jV1yL6PEoK0TNs187fAWD7oJD",
+                   "https://drive.google.com/uc?export=view&id=1Cirzwsa96DiGo8VzurOpFQ21X8yzyDAF",
+                   "https://drive.google.com/uc?export=view&id=1XhM8mEeL6RGY90UOEVNV2HUa0w81muwm",
+                   "https://drive.google.com/uc?export=view&id=1ZoMYZhC_1_jndLI6bYX7PjKDj1FTSYum",
+                   "https://drive.google.com/uc?export=view&id=1cbKV3XfEjp40oQfndBzi438W3I79ymLP",
+    ]
+    data_list = [{"nama": "Anggota Eksternal", "jabatan": "Staf Eksternal", "nim": "122450055", "umur": "20", "asal": "Palembang", "alamat": "Korpri", "hobbi": "Networking", "sosmed": "@eksternal", "kesan": "Ramah", "pesan": "Jalin relasi luas!"},
+    ]
     display_images_with_data(gambar_urls, data_list, key="eksternal")
 
 elif menu == "Departemen Internal":
