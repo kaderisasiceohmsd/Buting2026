@@ -202,175 +202,352 @@ if menu == "Home":
 
 elif menu == "About Us":
 
-    def about_page():
-        st.markdown(
-            """
-            <div style="text-align: center; margin: 10px 0 20px 0;">
-                <h2 style="font-size: 2.2rem; font-weight: 700; color: #ffffff; margin: 0;">Anggota Kelompok</h2>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
+    import requests
+    from io import BytesIO
+    from PIL import Image
+    from html import escape
 
-        # Menggunakan format lh3.googleusercontent.com/d/[FILE_ID]
-        gambar_urls = [
-            "https://lh3.googleusercontent.com/d/1U9qL_kV5pRVGxwjX5vY9Ye60zewUyis1",
-            "https://lh3.googleusercontent.com/d/1VDxX_RUW42qOiFcx2ZzNQIOC5EVmBt9p",  # wawa
-            "https://lh3.googleusercontent.com/d/1JyZqi_gGn-Z0U7rbn6wm6yCff3iBAXUY",  # anoy
-            "https://lh3.googleusercontent.com/d/1qn7DTt5dewAf4lrewAOw1wdGqarl4Gjy",  # juju
-            "https://lh3.googleusercontent.com/d/1pE1AmXiK-KOvxQgsWiw8LOIJFmSC4qBt",  # anya
-            "https://lh3.googleusercontent.com/d/1t-jcrs_NnloNmQS9C1Yx6x79HpRA3PyC",  # tingting
-            "https://lh3.googleusercontent.com/d/1Q9BG3ckhXSkR241w6WQKUgks1NOisDVR",  # lui
-            "https://lh3.googleusercontent.com/d/1wYkTJHX0mhBy9UVW_9XoDMAvXd56xI2r",  # cella
-            "https://lh3.googleusercontent.com/d/1BZHhEBU0fE6kbtvuc67sUinlTB8yeKmq",  # esha
-            "https://lh3.googleusercontent.com/d/1WDDcHs08ui8kpk4ZgElSmS9LqSPwa3NB",  # alip
-            "https://lh3.googleusercontent.com/d/MASUKKAN_ID_IA_DISINI",  # ia (isi ID file ia)
-            "https://lh3.googleusercontent.com/d/13nJeccLKDvlcb9X08Vbo2ZKEjyXf0TuR",  # oni
-        ]
+    # =========================
+    # FUNGSI MENGAMBIL GAMBAR
+    # =========================
+    @st.cache_data(ttl=3600, show_spinner=False)
+    def get_drive_image(file_id):
+        """
+        Mengambil gambar dari Google Drive menggunakan file ID.
+        Mengembalikan gambar PIL jika berhasil.
+        """
+        if not file_id or file_id == "MASUKKAN_ID_IA_DISINI":
+            return None
 
-        data_list = [
-            {
-                "nama": "Ahmad Fadylah",
-                "sebagai": "Pak lurah",
-                "nim": "125450103",
-                "fun_fact": "Suka ngeliatin Sunset",
-                "motto_hidup": "Dalam setiap Interaksi pasti ada Komunikasi, Didalam komunikasi adakalanya terjadi Miskomunikasi, Maka dari itu butuh Evaluasi agar dalam komunikasi, tak terjadi lagi miskomunikasi",
-            },
-            {
-                "nama": "Laikha Salwa Balqis",
-                "sebagai": "Bu Lurah",
-                "nim": "125450112",
-                "fun_fact": "strict parents, suka hewan, suka jadi penjelajah",
-                "motto_hidup": "Tenang, gausah dibikin pusing gausah dibikin ribet. Everything's gonna be ok!",
-            },
-            {
-                "nama": "Hanifa Az'zahra",
-                "sebagai": "Anggota",
-                "nim": "125450001",
-                "fun_fact": "Pindah kost 3 kali dlm satu semester, suka tidur dimotor",
-                "motto_hidup": "Melangkah ke arah yang asing, membaca apa yang tak terucap dan yang terlihat",
-            },
-            {
-                "nama": "Jauza Virna Radyta",
-                "sebagai": "Anggota",
-                "nim": "125450009",
-                "fun_fact": "banyak cowo, ga punya pacar",
-                "motto_hidup": "semua hal itu butuh proses bukan protes",
-            },
-            {
-                "nama": "Lusia Zefanya Sihotang",
-                "sebagai": "Anggota",
-                "nim": "125450010",
-                "fun_fact": "cinta piscok uin",
-                "motto_hidup": "Ad Maiorem Dei Gloriam",
-            },
-            {
-                "nama": "Enzo Hamman Albarru",
-                "sebagai": "Anggota",
-                "nim": "125450022",
-                "fun_fact": "sarapan nasi uduk setiap hari",
-                "motto_hidup": "hidup tenang, bebas nafas, nasi padang, kopi panas",
-            },
-            {
-                "nama": "Mario Figo Dito",
-                "sebagai": "Anggota",
-                "nim": "125450048",
-                "fun_fact": "mirip bang zaldy kata kak tanty",
-                "motto_hidup": "Coba aja dulu bkakakak",
-            },
-            {
-                "nama": "Kasih Martha Reichella",
-                "sebagai": "Anggota",
-                "nim": "125450060",
-                "fun_fact": "Lebih suka baca novel sedih dibandingkan novel happy ending",
-                "motto_hidup": "Apapun masalahnya jangan lupa buat selalu mengandalkan Tuhan",
-            },
-            {
-                "nama": "Muhammad Reyza Fasihurahman",
-                "sebagai": "Anggota",
-                "nim": "125450094",
-                "fun_fact": "suka belajar fisika mesin",
-                "motto_hidup": "Hidup itu mudah, yang susah itu cuma ADS",
-            },
-            {
-                "nama": "Nadira Alifa Arifin",
-                "sebagai": "Anggota",
-                "nim": "125450101",
-                "fun_fact": " cinta kopi walau aslam",
-                "motto_hidup": "[Isi Motto]",
-            },
-            {
-                "nama": "Gisella Salvia Pavita",
-                "sebagai": "Anggota",
-                "nim": "125450107",
-                "fun_fact": "[Isi Fun Fact]",
-                "motto_hidup": "[Isi Motto]",
-            },
-            {
-                "nama": "Piligo Arga Gayoni",
-                "sebagai": "Anggota",
-                "nim": "125450123",
-                "fun_fact": "suka kesandung kalau jalan",
-                "motto_hidup": "susah senang jalani saja, tapi hati hati jalan bolong, nanti kesandung",
-            },
-        ]
+        url = f"https://drive.google.com/uc?export=download&id={file_id}"
 
-        # Tampilkan anggota secara vertikal proporsional (2 kolom) dengan efek kaca saat disentuh
-        for row in range(0, len(data_list), 2):
-            # empty side columns shrink the two cards while keeping 2 per row
-            _pad_l, col_a, col_b, _pad_r = st.columns([1.2, 3, 3, 1.2], gap="medium")
-            cols = [col_a, col_b]
-            for ci in range(2):
-                idx = row + ci
-                if idx >= len(data_list):
-                    break
-                data = data_list[idx]
-                url_img = gambar_urls[idx] if idx < len(gambar_urls) else ""
-                nama = clean_text(data.get("nama", "Anggota"))
-                sebagai = clean_text(data.get("sebagai", "Anggota"))
-                nim = clean_text(data.get("nim", "-"))
-                fun_fact = clean_text(data.get("fun_fact", "-"))
-                motto = clean_text(data.get("motto_hidup", "-"))
+        try:
+            response = requests.get(
+                url,
+                timeout=20,
+                headers={
+                    "User-Agent": "Mozilla/5.0"
+                }
+            )
+            response.raise_for_status()
 
-                is_lurah = "lurah" in sebagai.lower()
-                badge_class = "tm-lurah" if is_lurah else "tm-member"
+            content_type = response.headers.get("Content-Type", "")
 
-                with cols[ci]:
-                    with st.container(key=f"glass-card-{idx}"):
-                        with st.container(key=f"glass-photo-{idx}"):
-                            img = load_image(url_img, fallback_name=nama)
-                            st.image(img, use_container_width=True)
+            # Pastikan respons berupa gambar
+            if not content_type.startswith("image/"):
+                # Coba baca respons sebagai gambar
+                # untuk mengantisipasi header server yang tidak tepat.
+                try:
+                    image = Image.open(BytesIO(response.content))
+                    image.load()
+                    return image.convert("RGB")
+                except Exception:
+                    return None
 
-                            st.markdown(
-                                f"""
-                                <div class="photo-overlay">
-                                    <div class="po-head">
-                                        <div class="po-name">{nama}</div>
-                                        <span class="tm-role {badge_class}">{sebagai}</span>
-                                    </div>
-                                    <div class="po-more">
-                                        <div class="po-row">
-                                            <span class="po-ico">🎓</span>
-                                            <div>
-                                                <div class="po-label">NIM</div>
-                                                <div class="po-val po-mono">{nim}</div>
-                                            </div>
-                                        </div>
-                                        <div class="po-row">
-                                            <span class="po-ico">✨</span>
-                                            <div>
-                                                <div class="po-label">Fun Fact</div>
-                                                <div class="po-val">{fun_fact}</div>
-                                            </div>
-                                        </div>
-                                        <div class="po-quote">
-                                            <span class="po-label">Motto</span>
-                                            "{motto}"
-                                        </div>
-                                    </div>
-                                </div>
-                                """,
-                                unsafe_allow_html=True,
-                            )
+            image = Image.open(BytesIO(response.content))
+            image.load()
 
-    about_page()
+            return image.convert("RGB")
+
+        except Exception as e:
+            print(f"Gagal memuat gambar {file_id}: {e}")
+            return None
+
+    # =========================
+    # JUDUL HALAMAN
+    # =========================
+    st.markdown(
+        """
+        <div style="text-align:center; margin:10px 0 25px 0;">
+            <h2 style="
+                font-size:2.2rem;
+                font-weight:700;
+                color:#ffffff;
+                margin:0;">
+                Anggota Kelompok
+            </h2>
+            <p style="color:#c4b5fd; margin-top:8px;">
+                Kenali lebih dekat keluarga besar Kelompok Tensor
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    # =========================
+    # ID FOTO GOOGLE DRIVE
+    # Masukkan ID file saja, bukan URL lengkap
+    # =========================
+    gambar_ids = [
+        "1U9qL_kV5pRVGxwjX5vY9Ye60zewUyis1",
+        "1VDxX_RUW42qOiFcx2ZzNQIOC5EVmBt9p",
+        "1JyZqi_gGn-Z0U7rbn6wm6yCff3iBAXUY",
+        "1qn7DTt5dewAf4lrewAOw1wdGqarl4Gjy",
+        "1pE1AmXiK-KOvxQgsWiw8LOIJFmSC4qBt",
+        "1t-jcrs_NnloNmQS9C1Yx6x79HpRA3PyC",
+        "1Q9BG3ckhXSkR241w6WQKUgks1NOisDVR",
+        "1wYkTJHX0mhBy9UVW_9XoDMAvXd56xI2r",
+        "1BZHhEBU0fE6kbtvuc67sUinlTB8yeKmq",
+        "1WDDcHs08ui8kpk4ZgElSmS9LqSPwa3NB",
+        "MASUKKAN_ID_IA_DISINI",
+        "13nJeccLKDvlcb9X08Vbo2ZKEjyXf0TuR",
+    ]
+
+    # =========================
+    # DATA ANGGOTA
+    # =========================
+    data_list = [
+        {
+            "nama": "Ahmad Fadylah",
+            "sebagai": "Pak Lurah",
+            "nim": "125450103",
+            "fun_fact": "Suka ngeliatin sunset",
+            "motto_hidup": (
+                "Dalam setiap interaksi pasti ada komunikasi. "
+                "Di dalam komunikasi adakalanya terjadi miskomunikasi. "
+                "Maka dari itu, butuh evaluasi agar tidak terjadi "
+                "miskomunikasi lagi."
+            ),
+        },
+        {
+            "nama": "Laikha Salwa Balqis",
+            "sebagai": "Bu Lurah",
+            "nim": "125450112",
+            "fun_fact": "Strict parents, suka hewan, suka jadi penjelajah",
+            "motto_hidup": (
+                "Tenang, gausah dibikin pusing, gausah dibikin ribet. "
+                "Everything's gonna be ok!"
+            ),
+        },
+        {
+            "nama": "Hanifa Az'zahra",
+            "sebagai": "Anggota",
+            "nim": "125450001",
+            "fun_fact": "Pindah kost 3 kali dalam satu semester, suka tidur di motor",
+            "motto_hidup": (
+                "Melangkah ke arah yang asing, membaca apa yang tak "
+                "terucap dan yang terlihat."
+            ),
+        },
+        {
+            "nama": "Jauza Virna Radyta",
+            "sebagai": "Anggota",
+            "nim": "125450009",
+            "fun_fact": "Banyak cowo, ga punya pacar",
+            "motto_hidup": "Semua hal itu butuh proses, bukan protes.",
+        },
+        {
+            "nama": "Lusia Zefanya Sihotang",
+            "sebagai": "Anggota",
+            "nim": "125450010",
+            "fun_fact": "Cinta piscok UIN",
+            "motto_hidup": "Ad Maiorem Dei Gloriam",
+        },
+        {
+            "nama": "Enzo Hamman Albarru",
+            "sebagai": "Anggota",
+            "nim": "125450022",
+            "fun_fact": "Sarapan nasi uduk setiap hari",
+            "motto_hidup": "Hidup tenang, bebas napas, nasi padang, kopi panas.",
+        },
+        {
+            "nama": "Mario Figo Dito",
+            "sebagai": "Anggota",
+            "nim": "125450048",
+            "fun_fact": "Mirip Bang Zaldy kata Kak Tanty",
+            "motto_hidup": "Coba aja dulu bkakakak",
+        },
+        {
+            "nama": "Kasih Martha Reichella",
+            "sebagai": "Anggota",
+            "nim": "125450060",
+            "fun_fact": "Lebih suka baca novel sedih dibanding novel happy ending",
+            "motto_hidup": "Apa pun masalahnya, jangan lupa selalu mengandalkan Tuhan.",
+        },
+        {
+            "nama": "Muhammad Reyza Fasihurahman",
+            "sebagai": "Anggota",
+            "nim": "125450094",
+            "fun_fact": "Suka belajar fisika mesin",
+            "motto_hidup": "Hidup itu mudah, yang susah itu cuma ADS.",
+        },
+        {
+            "nama": "Nadira Alifa Arifin",
+            "sebagai": "Anggota",
+            "nim": "125450101",
+            "fun_fact": "Cinta kopi walau aslam",
+            "motto_hidup": "[Isi Motto]",
+        },
+        {
+            "nama": "Gisella Salvia Pavita",
+            "sebagai": "Anggota",
+            "nim": "125450107",
+            "fun_fact": "[Isi Fun Fact]",
+            "motto_hidup": "[Isi Motto]",
+        },
+        {
+            "nama": "Piligo Arga Gayoni",
+            "sebagai": "Anggota",
+            "nim": "125450123",
+            "fun_fact": "Suka kesandung kalau jalan",
+            "motto_hidup": (
+                "Susah senang jalani saja, tapi hati-hati jalan bolong, "
+                "nanti kesandung."
+            ),
+        },
+    ]
+
+    # =========================
+    # CSS KARTU ANGGOTA
+    # =========================
+    st.markdown(
+        """
+        <style>
+        .member-card {
+            background: rgba(30, 27, 75, 0.68);
+            border: 1px solid rgba(196, 181, 253, 0.25);
+            border-radius: 18px;
+            overflow: hidden;
+            margin-bottom: 22px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .member-info {
+            padding: 17px;
+            color: #e2e8f0;
+        }
+
+        .member-name {
+            font-size: 1.15rem;
+            font-weight: 750;
+            color: #ffffff;
+            margin-bottom: 8px;
+            overflow-wrap: anywhere;
+        }
+
+        .member-role {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            background: rgba(167, 139, 250, 0.18);
+            border: 1px solid rgba(196, 181, 253, 0.4);
+            color: #ddd6fe;
+            font-size: 0.8rem;
+            margin-bottom: 14px;
+        }
+
+        .member-detail {
+            font-size: 0.91rem;
+            line-height: 1.65;
+            margin-bottom: 10px;
+            overflow-wrap: anywhere;
+        }
+
+        .member-label {
+            color: #c4b5fd;
+            font-size: 0.76rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .member-motto {
+            border-left: 3px solid #a78bfa;
+            padding-left: 12px;
+            margin-top: 13px;
+            font-size: 0.9rem;
+            font-style: italic;
+            line-height: 1.6;
+            overflow-wrap: anywhere;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    # =========================
+    # TAMPILKAN KARTU ANGGOTA
+    # =========================
+    for row in range(0, len(data_list), 2):
+
+        col_a, col_b = st.columns(2, gap="medium")
+        cols = [col_a, col_b]
+
+        for ci in range(2):
+            idx = row + ci
+
+            if idx >= len(data_list):
+                break
+
+            data = data_list[idx]
+            file_id = gambar_ids[idx]
+
+            nama = escape(data["nama"])
+            sebagai = escape(data["sebagai"])
+            nim = escape(data["nim"])
+            fun_fact = escape(data["fun_fact"])
+            motto = escape(data["motto_hidup"])
+
+            with cols[ci]:
+
+                # Muat foto dari Google Drive
+                img = get_drive_image(file_id)
+
+                if img is not None:
+                    st.image(
+                        img,
+                        use_container_width=True,
+                    )
+                else:
+                    # Fallback jika foto belum berhasil dimuat
+                    st.markdown(
+                        f"""
+                        <div style="
+                            height:180px;
+                            display:flex;
+                            align-items:center;
+                            justify-content:center;
+                            text-align:center;
+                            padding:15px;
+                            background:rgba(139,92,246,0.12);
+                            border:1px dashed rgba(196,181,253,0.5);
+                            border-radius:16px;
+                            color:#c4b5fd;
+                            margin-bottom:10px;">
+                            <div>
+                                <div style="font-size:2rem;">📷</div>
+                                <b>{nama}</b><br>
+                                <small>Foto belum dapat dimuat</small>
+                            </div>
+                        </div>
+                        """,
+                        unsafe_allow_html=True,
+                    )
+
+                # Informasi anggota
+                st.markdown(
+                    f"""
+                    <div class="member-card">
+                        <div class="member-info">
+                            <div class="member-name">{nama}</div>
+                            <span class="member-role">{sebagai}</span>
+
+                            <div class="member-detail">
+                                <span class="member-label">NIM</span><br>
+                                🎓 {nim}
+                            </div>
+
+                            <div class="member-detail">
+                                <span class="member-label">Fun Fact</span><br>
+                                ✨ {fun_fact}
+                            </div>
+
+                            <div class="member-motto">
+                                <span class="member-label">Motto Hidup</span><br>
+                                "{motto}"
+                            </div>
+                        </div>
+                    </div>
+                    """,
+                    unsafe_allow_html=True,
+                )
