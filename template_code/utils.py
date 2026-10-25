@@ -9,7 +9,7 @@ import base64
 import html as html_lib
 
 # ============================================================
-# 🎨 PREMIUM CSS — BUKU KATING
+# 🎨 PREMIUM CSS — BUKU KATING (FIXED)
 # ============================================================
 PREMIUM_CSS = """
 <style>
@@ -29,24 +29,56 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; color: #222222; }
     -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     display: block;
 }
+.centered-title::after {
+    content: ''; display: block; width: 90px; height: 3px; margin: 14px auto 0;
+    background: linear-gradient(90deg, transparent, #701c23, transparent); border-radius: 3px;
+}
 .profile-card {
     background: linear-gradient(135deg, #ffffff 0%, #fdfbf8 100%);
     padding: 28px 32px; border-radius: 20px; border: 1px solid rgba(217,195,163,0.55);
     box-shadow: 0 10px 30px rgba(112,28,35,0.08); margin-bottom: 22px; position: relative; overflow: hidden;
 }
-.profile-header { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #701c23; margin-bottom: 6px; }
-.profile-subheader { display: inline-block; padding: 4px 14px; font-size: 10px; font-weight: 700; border-radius: 999px; background: #701c23; color: #fff; margin-bottom: 16px; }
+.profile-card::before {
+    content: ''; position: absolute; top: 0; left: 0; width: 5px; height: 100%;
+    background: linear-gradient(180deg, #701c23, #d9c3a3, #701c23);
+}
+.profile-header { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #701c23; margin-bottom: 6px; position: relative; z-index: 1; }
+.profile-subheader { display: inline-block; padding: 4px 14px; font-size: 10px; font-weight: 700; border-radius: 999px; background: #701c23; color: #fff; margin-bottom: 16px; position: relative; z-index: 1; }
 .profile-subheader.leader { background: #b8912e; color: #4e1318; }
-.info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 18px; }
-.info-item { font-size: 13px; padding: 8px 12px; border-radius: 10px; background: rgba(217,195,163,0.10); border-left: 2px solid #d9c3a3; }
+.profile-divider { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, #d9c3a3, transparent); margin: 4px 0 16px 0; }
+.info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 18px; position: relative; z-index: 1; }
+.info-item { font-size: 13px; padding: 8px 12px; border-radius: 10px; background: rgba(217,195,163,0.10); border-left: 2px solid #d9c3a3; transition: background 0.3s ease; }
+.info-item:hover { background: rgba(217,195,163,0.20); border-left-color: #701c23; }
 .info-item.full { grid-column: 1 / -1; }
 .info-label { display: block; font-weight: 700; color: #701c23; font-size: 9.5px; margin-bottom: 2px; text-transform: uppercase; }
 .info-value { color: #2b2320; font-weight: 500; }
-.quote-box { margin-top: 14px; padding: 14px 18px 14px 22px; border-radius: 12px; background: rgba(217,195,163,0.10); border: 1px solid rgba(217,195,163,0.45); }
+.quote-box { margin-top: 14px; padding: 14px 18px 14px 22px; border-radius: 12px; background: rgba(217,195,163,0.10); border: 1px solid rgba(217,195,163,0.45); position: relative; z-index: 1; }
+.quote-box::before { content: '"'; position: absolute; top: -6px; left: 8px; font-family: 'Playfair Display', serif; font-size: 44px; color: rgba(112,28,35,0.15); }
 .quote-label { font-size: 9.5px; font-weight: 700; color: #701c23; margin-bottom: 4px; text-transform: uppercase; }
 .quote-text { font-family: 'Playfair Display', serif; font-style: italic; font-size: 13.5px; color: #4e1318; }
-.photo-wrapper { padding: 6px; border-radius: 18px; background: linear-gradient(135deg, #701c23 0%, #d9c3a3 50%, #701c23 100%); margin-bottom: 12px; }
-.photo-wrapper img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 13px; }
+
+/* 💥 EFEK FOTO (HOVER, BINGKAI, DAN SUDUT) */
+.photo-wrapper {
+    position: relative;
+    padding: 6px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #701c23 0%, #d9c3a3 50%, #701c23 100%);
+    box-shadow: 0 12px 28px rgba(112,28,35,0.22), 0 4px 10px rgba(112,28,35,0.12);
+    margin-bottom: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.photo-wrapper:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 38px rgba(112,28,35,0.32), 0 6px 14px rgba(112,28,35,0.18);
+}
+.photo-wrapper img {
+    display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 13px;
+}
+.photo-corner {
+    position: absolute; width: 22px; height: 22px; border: 2px solid #f4f0eb; opacity: 0.9; pointer-events: none;
+}
+.photo-corner.tl { top: 10px; left: 10px; border-right: none; border-bottom: none; border-top-left-radius: 8px; }
+.photo-corner.br { bottom: 10px; right: 10px; border-left: none; border-top: none; border-bottom-right-radius: 8px; }
 </style>
 """
 
@@ -88,7 +120,7 @@ def load_image(url):
             response.raise_for_status()
             img_bytes = BytesIO(response.content)
             
-            # 💥 FIX: Jangan langsung di-convert ke RGB agar transparansi tidak hilang
+            # 💥 Jangan convert ke RGB agar transparansi logo tidak hilang
             img = ImageOps.exif_transpose(Image.open(img_bytes))
             img.load(); response.close(); img_bytes.close()
             return img
@@ -101,7 +133,7 @@ def image_data_uri(url, max_dim=800, quality=80):
     if img is None: return None
     img = img.copy()
     
-    # 💥 FIX: Deteksi apakah gambar punya transparansi (RGBA atau P)
+    # 💥 Deteksi gambar transparan (PNG)
     has_transparency = False
     if img.mode in ('RGBA', 'LA') or (img.mode == 'P' and 'transparency' in img.info):
         has_transparency = True
@@ -112,11 +144,9 @@ def image_data_uri(url, max_dim=800, quality=80):
     buffer = BytesIO()
     
     if has_transparency:
-        # Simpan sebagai PNG jika transparan agar background tidak hitam
         img.save(buffer, format="PNG", optimize=True)
         mime_type = "image/png"
     else:
-        # Simpan sebagai JPEG jika tidak transparan (lebih hemat memori)
         img.convert("RGB").save(buffer, format="JPEG", quality=quality, optimize=True)
         mime_type = "image/jpeg"
 
@@ -124,11 +154,18 @@ def image_data_uri(url, max_dim=800, quality=80):
     buffer.close()
     return f"data:{mime_type};base64,{encoded}"
 
+# 💥 FUNGSI RENDER FOTO DENGAN SUDUT & EFEK HOVER
 def render_photo(img_src, alt="Foto"):
     if not img_src:
         st.markdown('<div style="width:100%;aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;background:#eee;border-radius:13px;">Foto tidak tersedia</div>', unsafe_allow_html=True)
         return
-    st.markdown(f'<div class="photo-wrapper"><img src="{img_src}" alt="{html_lib.escape(alt, quote=True)}"></div>', unsafe_allow_html=True)
+    st.markdown(f"""
+        <div class="photo-wrapper">
+            <div class="photo-corner tl"></div>
+            <div class="photo-corner br"></div>
+            <img src="{img_src}" alt="{html_lib.escape(alt, quote=True)}">
+        </div>
+    """, unsafe_allow_html=True)
 
 def render_profile_card(m):
     nama = html_lib.escape(str(m.get("nama", "-")))
@@ -150,6 +187,7 @@ def render_profile_card(m):
     html_block = f"""<div class="profile-card">
 <div class="profile-header">{nama}</div>
 <div class="{subheader_class}">{jabatan}</div>
+<div class="profile-divider"></div>
 <div class="info-grid">
 <div class="info-item"><span class="info-label">NIM</span><span class="info-value">{nim}</span></div>
 <div class="info-item"><span class="info-label">Umur</span><span class="info-value">{umur} Tahun</span></div>
@@ -215,7 +253,6 @@ SIDEBAR_CSS = """
 [data-testid="stSidebar"] [data-testid="stSidebarNav"] strong { 
     font-family: 'Playfair Display', serif !important; 
 }
-/* Menyembunyikan teks aneh di pojok kanan atas */
 #MainMenu { visibility: hidden; }
 header { visibility: hidden; }
 </style>
