@@ -3,6 +3,59 @@ from streamlit_option_menu import option_menu
 import requests
 from PIL import Image, ImageOps
 from io import BytesIO
+import streamlit as st
+
+st.markdown(
+    """
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap');
+
+    /* Global Styling - Background Krim dengan Grafik Multi-Layer Bertumpuk */
+    .stApp {
+        background-color: #fbf9f5;
+        background-image: 
+            radial-gradient(rgba(181, 142, 75, 0.28) 1.5px, transparent 1.5px), 
+            radial-gradient(rgba(92, 64, 51, 0.15) 1.5px, #fbf9f5 1.5px),
+            linear-gradient(45deg, rgba(181, 142, 75, 0.05) 25%, transparent 25%),
+            linear-gradient(-45deg, rgba(181, 142, 75, 0.05) 25%, transparent 25%);
+        background-size: 36px 36px, 36px 36px, 60px 60px, 60px 60px;
+        background-position: 0 0, 18px 18px, 0 0, 30px 30px;
+        background-attachment: fixed;
+        color: #1e1b18;
+        font-family: 'Inter', sans-serif;
+    }
+
+    /* Sidebar disesuaikan warnanya agar senada, terang, dan rapi */
+    [data-testid="stSidebar"] {
+        background-color: #f0e8d5 !important;
+        border-right: 2px solid rgba(181, 142, 75, 0.4);
+    }
+    [data-testid="stSidebar"] span, [data-testid="stSidebar"] p, [data-testid="stSidebar"] div, [data-testid="stSidebar"] label {
+        color: #1e1b18 !important;
+        font-weight: 500;
+    }
+
+    /* Gaya Kotak Profil / Konten di halaman person */
+    .person-card {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(246, 240, 226, 0.96) 100%); 
+        backdrop-filter: blur(8px);
+        border: 2px solid #b58e4b; 
+        outline: 2px dashed rgba(181, 142, 75, 0.4);
+        outline-offset: -6px;
+        padding: 26px; 
+        border-radius: 20px; 
+        box-shadow: 0 10px 30px rgba(181, 142, 75, 0.15); 
+        color: #1e1b18;
+        font-family: 'Inter', sans-serif;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 
 st.markdown("""<style>.centered-title {text-align: center;}</style>""",unsafe_allow_html=True)
 st.markdown("<h1 class='centered-title'>BUKU KATING</h1>", unsafe_allow_html=True)
@@ -46,7 +99,10 @@ def streamlit_menu():
                 "margin": "0px",
                 "--hover-color": "#eee",
             },
-            "nav-link-selected": {"background-color": "#3FBAD8"},
+            "nav-link-selected": {
+                "background-color": "#FCF0DA !important",
+                "color": "#000000 !important",
+            },
         },
     )
     return selected
@@ -67,9 +123,71 @@ def load_image(url):
     except Exception as e:
         st.error(f"Error loading image: {e}")
         return None
-    
+
 @st.cache_data
 def display_images_with_data(gambar_urls, data_list):
+    # CSS Murni untuk Efek Gulungan Kertas (Scroll) Otentik
+    st.markdown(
+        """
+        <style>
+        /* Kontainer Utama Gulungan */
+        .scroll-wrapper {
+            max-width: 420px;
+            margin: 20px auto;
+            position: relative;
+            filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.35));
+        }
+
+        /* Roll Atas & Bawah (Batang Kayu/Kertas Gulung) */
+        .scroll-roller {
+            height: 26px;
+            background: linear-gradient(90deg, #5c3818 0%, #8d5b2d 20%, #e0aa68 50%, #8d5b2d 80%, #5c3818 100%);
+            border-radius: 13px;
+            border: 2px solid #3d230d;
+            box-shadow: inset 0 3px 5px rgba(255,255,255,0.3), inset 0 -3px 5px rgba(0,0,0,0.5);
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Badan Kertas Kuno */
+        .scroll-body {
+            background: #f4e3b1;
+            background: radial-gradient(circle, #f9edd1 0%, #e8d08d 85%, #d1b164 100%);
+            border-left: 3px dashed #b89547;
+            border-right: 3px dashed #b89547;
+            padding: 25px 30px;
+            box-shadow: inset 0 0 25px rgba(115, 77, 20, 0.45);
+            margin: -6px 12px; /* Menyelip halus di antara roller */
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Gaya Teks di Dalam Kertas */
+        .scroll-body p {
+            color: #3d220a !important;
+            font-family: 'Georgia', serif;
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 8px;
+            border-bottom: 1px dashed rgba(140, 90, 30, 0.25);
+            padding-bottom: 4px;
+        }
+
+        .scroll-body p:last-child {
+            border-bottom: none;
+        }
+
+        /* Merapikan ekspander Streamlit */
+        div[data-testid="stExpander"] {
+            border: none !important;
+            box-shadow: none !important;
+            background: transparent !important;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
     images = []
     for i, url in enumerate(gambar_urls):
         with st.spinner(f"Memuat gambar {i + 1} dari {len(gambar_urls)}"):
@@ -78,23 +196,34 @@ def display_images_with_data(gambar_urls, data_list):
                 images.append(img)
 
     for i, img in enumerate(images):
-        # Menggunakan Streamlit untuk menampilkan gambar di tengah kolom
         col1, col2, col3 = st.columns([1, 2, 1])
         with col2:
             st.image(img, use_container_width=True)
 
-        if i < len(data_list):
-            st.write(f"Nama: {data_list[i]['nama']}")
-            st.write(f"NIM: {data_list[i]['nim']}")
-            st.write(f"Umur: {data_list[i]['umur']}")
-            st.write(f"Asal: {data_list[i]['asal']}")
-            st.write(f"Alamat: {data_list[i]['alamat']}")
-            st.write(f"Hobbi: {data_list[i]['hobbi']}")
-            st.write(f"Sosial Media: {data_list[i]['sosmed']}")
-            st.write(f"Kesan: {data_list[i]['kesan']}")
-            st.write(f"Pesan: {data_list[i]['pesan']}")
-            st.write("  ")
+            if i < len(data_list):
+                with st.expander(f"📜 Buka Biodata: {data_list[i]['nama']}"):
+                    st.markdown(
+                        f"""
+                        <div class="scroll-wrapper">
+                            <div class="scroll-roller"></div>
+                            <div class="scroll-body">
+                                <p><b>Nama:</b> {data_list[i]['nama']}</p>
+                                <p><b>NIM:</b> {data_list[i]['nim']}</p>
+                                <p><b>Umur:</b> {data_list[i]['umur']}</p>
+                                <p><b>Asal:</b> {data_list[i]['asal']}</p>
+                                <p><b>Alamat:</b> {data_list[i]['alamat']}</p>
+                                <p><b>Hobbi:</b> {data_list[i]['hobbi']}</p>
+                                <p><b>Sosmed:</b> {data_list[i]['sosmed']}</p>
+                                <p><b>Kesan:</b> {data_list[i]['kesan']}</p>
+                                <p><b>Pesan:</b> {data_list[i]['pesan']}</p>
+                            </div>
+                            <div class="scroll-roller"></div>
+                        </div>
+                        """,
+                        unsafe_allow_html=True,
+                    )
     st.write("Semua gambar telah dimuat!")
+    
 menu = streamlit_menu()
 
 # BAGIAN SINI YANG HANYA BOLEH DIUABAH
