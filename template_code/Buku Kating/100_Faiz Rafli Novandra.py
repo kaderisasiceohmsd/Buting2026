@@ -974,7 +974,7 @@ if menu == "Departemen Medkraf":
             "https://drive.google.com/uc?export=view&id=1jLV0KNO6YnRLOJ4dQkRTM5oS7NsiWeSd",
             "https://drive.google.com/uc?export=view&id=11r1tFpSdvfRGge46WBkbaqfi0mIDPN1w",
             "https://drive.google.com/uc?export=view&id=1KclV-RlyzYqS2RhTjsW7JeWhgTLScuKH",
-            "https://drive.google.com/uc?export=view&id=5k70ElxQVvP27iJV4rvLY3nFXix5YtLG",
+            "https://drive.google.com/uc?export=view&id=15k70ElxQVvP27iJV4rvLY3nFXix5YtLG",
             "https://drive.google.com/uc?export=view&id=1v-9yZRA0J2RBo6ZFtfT-RHzhSmBPbOJQ",
             "https://drive.google.com/uc?export=view&id=12TJALBWRHByJ_y7ZuDdlWu234aSjStjD",
             "https://drive.google.com/uc?export=view&id=1e16b_itBTHuq5TtYDwDBNRWE9TmfZXgJ",
