@@ -402,7 +402,7 @@ elif menu == "Departemen Minbak":
 elif menu == "Departemen SSD":
     def Departemen_SSD():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1KGNhbecJJbvZr65wajrzMgkyEvFRewTU",
+            "https://drive.google.com/uc?export=view&id=1P4ruEk7NETFmFwSpA5IasehjcCj_sTyC",
             "https://drive.google.com/uc?export=view&id=1yWdWMPOKHaihUeg-wBKRe3hYTEmkYPfn",
             "https://drive.google.com/uc?export=view&id=10NctbY2MrUvJ-TDYguVCMaDsDYOzokFc",
             "https://drive.google.com/uc?export=view&id=1lonoBPJYVxWpDdPv8IH3FQUWtC-xLRCr",
@@ -548,6 +548,7 @@ elif menu == "Bason":
 			"https://drive.google.com/uc?export=view&id=15p-0fDihk2pvwmG4r13CESQpXFFDSaxB",
 			"https://drive.google.com/uc?export=view&id=142oPjv5d9-kPp_d_--17J9T05xUlxkdV",
 			"https://drive.google.com/uc?export=view&id=1JhEsMwYPlFfHXZzClFz-2m_5EuUb2Mm4",
+			"https://drive.google.com/uc?export=view&id=1BysBCy1if1wUQCyRkAm0Cw_SwGvLnI4e",
         ]
         data_list = [
             {
