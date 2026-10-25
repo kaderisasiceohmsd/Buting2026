@@ -70,10 +70,11 @@ def to_data_uri(url, width, height=None):
         return ""
 
 
+
 # ==================================================
-# CSS TEMA BIRU
+# CSS TEMA BIRU (+ SIDEBAR)
 # ==================================================
-st.markdown("""
+CSS = """
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=Unbounded:wght@500;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
 
@@ -431,21 +432,75 @@ div[data-testid="stImage"] img {
     .glass-card { padding: 24px 20px; }
     .section-head { flex-direction: column; align-items: flex-start; }
 }
+
+/* ---------- SIDEBAR (sama tema dengan kartu) ---------- */
+section[data-testid="stSidebar"] {
+    background:
+        radial-gradient(420px 300px at 100% 0%, rgba(94, 162, 255, 0.26), transparent 62%),
+        radial-gradient(380px 300px at 0% 100%, rgba(23, 105, 232, 0.34), transparent 62%),
+        linear-gradient(170deg, #133f99 0%, #0d2c70 45%, #081c50 100%);
+    border-right: 1px solid rgba(120, 175, 255, 0.30);
+    box-shadow: 8px 0 30px rgba(0, 0, 0, 0.35);
+}
+section[data-testid="stSidebar"] > div { background: transparent; }
+
+[data-testid="stSidebarNav"] { padding-top: 14px; }
+[data-testid="stSidebarNav"]::before {
+    content: "MENU";
+    display: inline-block;
+    margin: 4px 0 12px 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--light);
+    padding: 6px 16px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.09), rgba(255,255,255,0.02));
+}
+[data-testid="stSidebarNav"] ul { padding: 0 12px; gap: 6px; }
+
+[data-testid="stSidebarNav"] a,
+[data-testid="stSidebarNavLink"] {
+    border-radius: 14px;
+    padding: 10px 14px;
+    border: 1px solid transparent;
+    transition: all .22s ease;
+}
+[data-testid="stSidebarNav"] a span,
+[data-testid="stSidebarNavLink"] span {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--light) !important;
+}
+[data-testid="stSidebarNav"] a:hover,
+[data-testid="stSidebarNavLink"]:hover {
+    background: linear-gradient(135deg, rgba(23,105,232,0.38), rgba(23,105,232,0.12));
+    border-color: rgba(94, 162, 255, 0.45);
+    transform: translateX(4px);
+}
+[data-testid="stSidebarNav"] a:hover span,
+[data-testid="stSidebarNavLink"]:hover span { color: #fff !important; }
+
+[data-testid="stSidebarNav"] a[aria-current="page"],
+[data-testid="stSidebarNavLink"][aria-current="page"] {
+    background: linear-gradient(135deg, #2a7bff, #1244a8);
+    border-color: rgba(163, 196, 243, 0.5);
+    box-shadow: 0 8px 22px rgba(23, 105, 232, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+[data-testid="stSidebarNav"] a[aria-current="page"] span,
+[data-testid="stSidebarNavLink"][aria-current="page"] span {
+    color: #fff !important;
+    font-weight: 800;
+}
+[data-testid="stSidebarCollapseButton"] button,
+[data-testid="stExpandSidebarButton"] { color: var(--light); }
+
+[data-testid="stWidgetLabel"] p, [data-testid="stRadio"] label p, .stCaption p { color: #fff !important; }
 </style>
-""", unsafe_allow_html=True)
-
-
-# ==================================================
-# HEADER UTAMA
-# ==================================================
-st.markdown(
-    """<div class="hero">
-<div class="hero-eyebrow">CEO HMSD Adyatama ITERA 2026</div>
-<h1 class="hero-title">WEBSITE KATING</h1>
-<p class="hero-sub">KELOMPOK BAYESIAN</p>
-</div>""",
-    unsafe_allow_html=True,
-)
+"""
 
 url = "https://drive.google.com/uc?export=view&id=12cQ4T8NkVvVPVNX6zBQC4sviFcc4cDWx"
 url1 = "https://drive.google.com/uc?export=view&id=12RBvQdMiqqqph-Q1QqLb0zvvIPnBjCYb"
@@ -461,9 +516,6 @@ def layout(url):
         st.write("")
 
 
-layout(url)
-layout(url1)
-
 
 # ==================================================
 # NAVIGASI MENU
@@ -471,8 +523,8 @@ layout(url1)
 def streamlit_menu():
     selected = option_menu(
         menu_title=None,
-        options=["Home", "About Us", "Kreasi 1", "Kreasi 2"],
-        icons=["house-door", "people", "lightbulb", "controller"],
+        options=["Home", "About Us"],
+        icons=["house-door", "people"],
         default_index=0,
         orientation="horizontal",
         styles={
@@ -501,8 +553,6 @@ def streamlit_menu():
     )
     return selected
 
-
-menu = streamlit_menu()
 
 
 # ==================================================
@@ -818,13 +868,246 @@ def build_book(items, judul_cover, sub_cover):
 
 
 # ==================================================
-# KREASI 1 & KREASI 2 (versi simpel)
+# HALAMAN UTAMA (Home & About Us)
 # ==================================================
-st.markdown("""<style>
-[data-testid="stWidgetLabel"] p, [data-testid="stRadio"] label p, .stCaption p { color: #fff !important; }
-</style>""", unsafe_allow_html=True)
+def halaman_utama():
+    st.markdown(
+        """<div class="hero">
+<div class="hero-eyebrow">CEO HMSD Adyatama ITERA 2026</div>
+<h1 class="hero-title">WEBSITE KATING</h1>
+<p class="hero-sub">KELOMPOK BAYESIAN</p>
+</div>""",
+        unsafe_allow_html=True,
+    )
 
 
+    layout(url)
+    layout(url1)
+
+    menu = streamlit_menu()
+
+    # ==================================================
+    # HALAMAN HOME
+    # ==================================================
+    if menu == "Home":
+
+        def home_page():
+            st.markdown(
+                '<div class="section-head"><h2>Deskripsi Kelompok Bayesian</h2></div>',
+                unsafe_allow_html=True,
+            )
+            st.markdown(
+                """<div class="glass-card">
+<b>Selamat datang di portal resmi Kelompok Bayesian!</b>
+<span class="motto">&ldquo;Gapai Cita, Kejar Mimpi, di Angkasa.&rdquo;</span>
+Terinspirasi dari <b>Teorema Bayes</b> dalam Sains Data dan Statistika, kelompok <b>Bayesian</b> melambangkan semangat pembelajaran dan kekeluargaan yang adaptif: setiap pengalaman, tantangan, dan kebersamaan baru adalah bukti nyata yang terus memperbarui serta menguatkan langkah kita untuk bertumbuh bersama di <b>CEO HMSD Adyatama ITERA 2026</b>.
+</div>""",
+                unsafe_allow_html=True,
+            )
+
+            # Foto utama kelompok
+            st.write("")
+            foto_kelompok = "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq"
+            layout(foto_kelompok)
+            st.markdown(
+                """<div class="caption-chip">
+<b>&#10022; Keluarga Bayesian &#10022;</b>
+<span>Momen kebersamaan yang tidak akan terlupakan.</span>
+</div>""",
+                unsafe_allow_html=True,
+            )
+
+            # Dokumentasi kegiatan (buku)
+            kegiatan_Bayesian = [
+                {"url": "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq",
+                 "judul": "Kegiatan 1", "ket": "Ganti dengan keterangan kegiatan"},
+                {"url": "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq",
+                 "judul": "Kegiatan 2", "ket": "Ganti dengan keterangan kegiatan"},
+                {"url": "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq",
+                 "judul": "Kegiatan 3", "ket": "Ganti dengan keterangan kegiatan"},
+                {"url": "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq",
+                 "judul": "Kegiatan 4", "ket": "Ganti dengan keterangan kegiatan"},
+                {"url": "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq",
+                 "judul": "Kegiatan 5", "ket": "Ganti dengan keterangan kegiatan"},
+                {"url": "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq",
+                 "judul": "Kegiatan 6", "ket": "Ganti dengan keterangan kegiatan"},
+            ]
+
+            st.markdown(
+                f'<div class="section-head"><h2>Dokumentasi Kegiatan</h2>'
+                f'<span class="count-chip">{len(kegiatan_Bayesian)} Momen</span></div>',
+                unsafe_allow_html=True,
+            )
+            with st.spinner("Menyiapkan buku dokumentasi..."):
+                book_html = build_book(kegiatan_Bayesian, "Dokumentasi Bayesian", "Geser untuk membuka halaman")
+            components.html(book_html, height=720, scrolling=False)
+
+        home_page()
+
+
+    # ==================================================
+    # HALAMAN ABOUT US
+    # ==================================================
+    elif menu == "About Us":
+
+        def member_card(no, d, uri, featured=False):
+            nama = d["nama"]
+            inisial = "".join(w[0] for w in nama.split()[:2]).upper()
+            gold = featured
+            star = "&#9733; " if gold else ""
+
+            if uri:
+                foto = f'<img src="{uri}" alt="{html.escape(nama)}">'
+            else:
+                foto = f'<div class="m-initial">{html.escape(inisial)}</div>'
+
+            def tile(label, value):
+                kosong = value.strip() in ("", "--")
+                teks = "Belum diisi" if kosong else html.escape(value)
+                cls = "m-value muted" if kosong else "m-value"
+                return (
+                    f'<div class="m-tile"><div class="m-label">{label}</div>'
+                    f'<div class="{cls}">{teks}</div></div>'
+                )
+
+            return (
+                f'<div class="member-card{" featured" if featured else ""}" style="animation-delay:{no * 0.06:.2f}s">'
+                f'<div class="m-photo">{foto}'
+                f'<div class="m-index">{no:02d}</div>'
+                f'<div class="m-role{" gold" if gold else ""}">{star}{html.escape(d["sebagai"])}</div>'
+                f'</div>'
+                f'<div class="m-body">'
+                f'<h3 class="m-name">{html.escape(nama)}</h3>'
+                f'<div class="m-nim">{html.escape(d["nim"])}</div>'
+                f'{tile("Fun Fact", d["fun_fact"])}'
+                f'{tile("Motto Hidup", d["motto_hidup"])}'
+                f'</div></div>'
+            )
+
+        def about_page():
+            st.markdown(
+                '<div class="section-head"><h2>About Us — Buku Kating Bayesian</h2></div>',
+                unsafe_allow_html=True,
+            )
+
+            # 10 URL gambar sesuai jumlah 10 anggota di data_list
+            gambar_urls = [
+                "https://drive.google.com/uc?export=view&id=19KrR82_PA5lsmyDn-8iBcBBVxWqctEp9",  # 1. Thomas Yustio
+                "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 2. Syalom Nauli Jubilate
+                "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 3. Chavia Chairunissa
+                "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 4. Aqila Chika Aurelia
+                "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 5. Sefina Amanda Putri
+                "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 6. Aura Putri Ghefira
+                "https://drive.google.com/uc?export=view&id=1SaqIKBazfbklZ87SPixrd5eO0PfvydN3",  # 7. Ezra Hamizan
+                "https://drive.google.com/uc?export=view&id=1OPEq99LUbLHfdDUTj95ueH52KCoFkKXo",  # 8. Afdhi Hafiidz Habibie
+                "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 9. Rizqy Ramadhan
+                "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 10. Alan Garcia Sinaga
+            ]
+
+            # Data lengkap 10 anggota Bayesian
+            data_list = [
+                {
+                    "nama": "Thomas Yustio",
+                    "sebagai": "Pak Lurah",
+                    "nim": "125450085",
+                    "fun_fact": "Saya pernah patah gigi 4x dan saya karbitan",
+                    "motto_hidup": "Hidup cuma sekali, maka lakukan apa yang kamu mau, misal mancing",
+                },
+                {
+                    "nama": "Syalom Nauli Jubilate",
+                    "sebagai": "Bu Lurah",
+                    "nim": "125450050",
+                    "fun_fact": "--",
+                    "motto_hidup": "--",
+                },
+                {
+                    "nama": "Chavia Chairunissa",
+                    "sebagai": "Anggota 01",
+                    "nim": "125450026",
+                    "fun_fact": "--",
+                    "motto_hidup": "--",
+                },
+                {
+                    "nama": "Aqila Chika Aurelia",
+                    "sebagai": "Anggota 02",
+                    "nim": "125450038",
+                    "fun_fact": "--",
+                    "motto_hidup": "--",
+                },
+                {
+                    "nama": "Sefina Amanda Putri",
+                    "sebagai": "Anggota 03",
+                    "nim": "125450042",
+                    "fun_fact": "--",
+                    "motto_hidup": "--",
+                },
+                {
+                    "nama": "Aura Putri Ghefira",
+                    "sebagai": "Anggota 04",
+                    "nim": "125450047",
+                    "fun_fact": "--",
+                    "motto_hidup": "--",
+                },
+                {
+                    "nama": "Ezra Hamizan",
+                    "sebagai": "Anggota 05",
+                    "nim": "125450052",
+                    "fun_fact": "Sangat Konyol & Selalu Konyol",
+                    "motto_hidup": "Cacing-Cacing, Naga-Naga, Go Big Or Go Home",
+                },
+                {
+                    "nama": "Afdhi Hafiidz Habibie",
+                    "sebagai": "Anggota 06",
+                    "nim": "125450061",
+                    "fun_fact": "Waktu belajar sepeda pernah nyemplung ke bekas adukan semen",
+                    "motto_hidup": "Hidup di dunia ini kayak plat Jakarta B aja",
+                },
+                {
+                    "nama": "Rizqy Ramadhan",
+                    "sebagai": "Anggota 07",
+                    "nim": "125450066",
+                    "fun_fact": "Selalu dikira orang Kristen Aslinya Islam Alhamdulillah",
+                    "motto_hidup": "Tetap lah bernafas",
+                },
+                {
+                    "nama": "Alan Garcia Sinaga",
+                    "sebagai": "Anggota 08",
+                    "nim": "125450091",
+                    "fun_fact": "--",
+                    "motto_hidup": "--",
+                },
+            ]
+
+            with st.spinner("Memuat foto anggota..."):
+                uris = [to_data_uri(u, 640, 800) for u in gambar_urls]
+
+            lurah_html = "".join(
+                member_card(i + 1, data_list[i], uris[i], featured=True) for i in range(2)
+            )
+            anggota_html = "".join(
+                member_card(i + 1, data_list[i], uris[i]) for i in range(2, len(data_list))
+            )
+
+            st.markdown(
+                f'<div class="section-head"><h2>Pimpinan Kelompok</h2>'
+                f'<span class="count-chip">2 Orang</span></div>'
+                f'<div class="lurah-grid">{lurah_html}</div>',
+                unsafe_allow_html=True,
+            )
+            st.markdown(
+                f'<div class="section-head"><h2>Anggota</h2>'
+                f'<span class="count-chip">{len(data_list) - 2} Orang</span></div>'
+                f'<div class="member-grid">{anggota_html}</div>',
+                unsafe_allow_html=True,
+            )
+
+        about_page()
+
+
+
+# ==================================================
+# KREASI 1 & KREASI 2 (muncul di SIDEBAR)
+# ==================================================
 def kreasi1():
     st.markdown('<div class="section-head"><h2>Kreasi 1 — Kalkulator Bayes</h2></div>', unsafe_allow_html=True)
     st.markdown(
@@ -846,30 +1129,30 @@ Contoh: sebuah penyakit langka dan tes yang cukup akurat. Geser angkanya!
 
     st.markdown(
         f"""<div class="glass-card">
-<span class="motto">{post * 100:.1f}%</span>
-Peluang kamu benar-benar sakit jika hasil tesmu positif.<br>
-Dari 1.000 orang, ada <b>{positif}</b> yang hasilnya positif, tetapi hanya <b>{sakit}</b> yang benar-benar sakit.
-</div>""",
+    <span class="motto">{post * 100:.1f}%</span>
+    Peluang kamu benar-benar sakit jika hasil tesmu positif.<br>
+    Dari 1.000 orang, ada <b>{positif}</b> yang hasilnya positif, tetapi hanya <b>{sakit}</b> yang benar-benar sakit.
+    </div>""",
         unsafe_allow_html=True,
     )
     st.progress(float(post))
 
 
-SOAL = [
-    ("Teorema Bayes dipakai untuk menghitung...",
-     ["Rata-rata data", "Peluang hipotesis setelah melihat bukti", "Jumlah data"], 1),
-    ("Keyakinan awal sebelum melihat data disebut...",
-     ["Posterior", "Likelihood", "Prior"], 2),
-    ("Naive Bayes sering dipakai untuk...",
-     ["Filter spam", "Mengompres gambar", "Membuat grafik"], 0),
-    ("Apa motto Kelompok Bayesian?",
-     ["Bersama Kita Bisa", "Gapai Cita, Kejar Mimpi, di Angkasa", "Data adalah Raja"], 1),
-    ("Siapa Pak Lurah Kelompok Bayesian?",
-     ["Thomas Yustio", "Ezra Hamizan", "Alan Garcia Sinaga"], 0),
-]
-
-
 def kreasi2():
+    SOAL = [
+        ("Teorema Bayes dipakai untuk menghitung...",
+         ["Rata-rata data", "Peluang hipotesis setelah melihat bukti", "Jumlah data"], 1),
+        ("Keyakinan awal sebelum melihat data disebut...",
+         ["Posterior", "Likelihood", "Prior"], 2),
+        ("Naive Bayes sering dipakai untuk...",
+         ["Filter spam", "Mengompres gambar", "Membuat grafik"], 0),
+        ("Apa motto Kelompok Bayesian?",
+         ["Bersama Kita Bisa", "Gapai Cita, Kejar Mimpi, di Angkasa", "Data adalah Raja"], 1),
+        ("Siapa Pak Lurah Kelompok Bayesian?",
+         ["Thomas Yustio", "Ezra Hamizan", "Alan Garcia Sinaga"], 0),
+    ]
+
+
     st.markdown('<div class="section-head"><h2>Kreasi 2 — Kuis Bayesian</h2>'
                 f'<span class="count-chip">{len(SOAL)} Soal</span></div>', unsafe_allow_html=True)
     with st.form("kuis"):
@@ -885,228 +1168,13 @@ def kreasi2():
 
 
 # ==================================================
-# HALAMAN HOME
+# NAVIGASI SIDEBAR
 # ==================================================
-if menu == "Home":
+st.markdown(CSS, unsafe_allow_html=True)
 
-    def home_page():
-        st.markdown(
-            '<div class="section-head"><h2>Deskripsi Kelompok Bayesian</h2></div>',
-            unsafe_allow_html=True,
-        )
-        st.markdown(
-            """<div class="glass-card">
-<b>Selamat datang di portal resmi Kelompok Bayesian!</b>
-<span class="motto">&ldquo;Gapai Cita, Kejar Mimpi, di Angkasa.&rdquo;</span>
-Terinspirasi dari <b>Teorema Bayes</b> dalam Sains Data dan Statistika, kelompok <b>Bayesian</b> melambangkan semangat pembelajaran dan kekeluargaan yang adaptif: setiap pengalaman, tantangan, dan kebersamaan baru adalah bukti nyata yang terus memperbarui serta menguatkan langkah kita untuk bertumbuh bersama di <b>CEO HMSD Adyatama ITERA 2026</b>.
-</div>""",
-            unsafe_allow_html=True,
-        )
-
-        # Foto utama kelompok
-        st.write("")
-        foto_kelompok = "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq"
-        layout(foto_kelompok)
-        st.markdown(
-            """<div class="caption-chip">
-<b>&#10022; Keluarga Bayesian &#10022;</b>
-<span>Momen kebersamaan yang tidak akan terlupakan.</span>
-</div>""",
-            unsafe_allow_html=True,
-        )
-
-        # Dokumentasi kegiatan (buku)
-        kegiatan_Bayesian = [
-            {"url": "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq",
-             "judul": "Kegiatan 1", "ket": "Ganti dengan keterangan kegiatan"},
-            {"url": "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq",
-             "judul": "Kegiatan 2", "ket": "Ganti dengan keterangan kegiatan"},
-            {"url": "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq",
-             "judul": "Kegiatan 3", "ket": "Ganti dengan keterangan kegiatan"},
-            {"url": "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq",
-             "judul": "Kegiatan 4", "ket": "Ganti dengan keterangan kegiatan"},
-            {"url": "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq",
-             "judul": "Kegiatan 5", "ket": "Ganti dengan keterangan kegiatan"},
-            {"url": "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq",
-             "judul": "Kegiatan 6", "ket": "Ganti dengan keterangan kegiatan"},
-        ]
-
-        st.markdown(
-            f'<div class="section-head"><h2>Dokumentasi Kegiatan</h2>'
-            f'<span class="count-chip">{len(kegiatan_Bayesian)} Momen</span></div>',
-            unsafe_allow_html=True,
-        )
-        with st.spinner("Menyiapkan buku dokumentasi..."):
-            book_html = build_book(kegiatan_Bayesian, "Dokumentasi Bayesian", "Geser untuk membuka halaman")
-        components.html(book_html, height=720, scrolling=False)
-
-    home_page()
-
-
-# ==================================================
-# HALAMAN ABOUT US
-# ==================================================
-elif menu == "About Us":
-
-    def member_card(no, d, uri, featured=False):
-        nama = d["nama"]
-        inisial = "".join(w[0] for w in nama.split()[:2]).upper()
-        gold = featured
-        star = "&#9733; " if gold else ""
-
-        if uri:
-            foto = f'<img src="{uri}" alt="{html.escape(nama)}">'
-        else:
-            foto = f'<div class="m-initial">{html.escape(inisial)}</div>'
-
-        def tile(label, value):
-            kosong = value.strip() in ("", "--")
-            teks = "Belum diisi" if kosong else html.escape(value)
-            cls = "m-value muted" if kosong else "m-value"
-            return (
-                f'<div class="m-tile"><div class="m-label">{label}</div>'
-                f'<div class="{cls}">{teks}</div></div>'
-            )
-
-        return (
-            f'<div class="member-card{" featured" if featured else ""}" style="animation-delay:{no * 0.06:.2f}s">'
-            f'<div class="m-photo">{foto}'
-            f'<div class="m-index">{no:02d}</div>'
-            f'<div class="m-role{" gold" if gold else ""}">{star}{html.escape(d["sebagai"])}</div>'
-            f'</div>'
-            f'<div class="m-body">'
-            f'<h3 class="m-name">{html.escape(nama)}</h3>'
-            f'<div class="m-nim">{html.escape(d["nim"])}</div>'
-            f'{tile("Fun Fact", d["fun_fact"])}'
-            f'{tile("Motto Hidup", d["motto_hidup"])}'
-            f'</div></div>'
-        )
-
-    def about_page():
-        st.markdown(
-            '<div class="section-head"><h2>About Us — Buku Kating Bayesian</h2></div>',
-            unsafe_allow_html=True,
-        )
-
-        # 10 URL gambar sesuai jumlah 10 anggota di data_list
-        gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=19KrR82_PA5lsmyDn-8iBcBBVxWqctEp9",  # 1. Thomas Yustio
-            "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 2. Syalom Nauli Jubilate
-            "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 3. Chavia Chairunissa
-            "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 4. Aqila Chika Aurelia
-            "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 5. Sefina Amanda Putri
-            "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 6. Aura Putri Ghefira
-            "https://drive.google.com/uc?export=view&id=1SaqIKBazfbklZ87SPixrd5eO0PfvydN3",  # 7. Ezra Hamizan
-            "https://drive.google.com/uc?export=view&id=1OPEq99LUbLHfdDUTj95ueH52KCoFkKXo",  # 8. Afdhi Hafiidz Habibie
-            "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 9. Rizqy Ramadhan
-            "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 10. Alan Garcia Sinaga
-        ]
-
-        # Data lengkap 10 anggota Bayesian
-        data_list = [
-            {
-                "nama": "Thomas Yustio",
-                "sebagai": "Pak Lurah",
-                "nim": "125450085",
-                "fun_fact": "Saya pernah patah gigi 4x dan saya karbitan",
-                "motto_hidup": "Hidup cuma sekali, maka lakukan apa yang kamu mau, misal mancing",
-            },
-            {
-                "nama": "Syalom Nauli Jubilate",
-                "sebagai": "Bu Lurah",
-                "nim": "125450050",
-                "fun_fact": "--",
-                "motto_hidup": "--",
-            },
-            {
-                "nama": "Chavia Chairunissa",
-                "sebagai": "Anggota 01",
-                "nim": "125450026",
-                "fun_fact": "--",
-                "motto_hidup": "--",
-            },
-            {
-                "nama": "Aqila Chika Aurelia",
-                "sebagai": "Anggota 02",
-                "nim": "125450038",
-                "fun_fact": "--",
-                "motto_hidup": "--",
-            },
-            {
-                "nama": "Sefina Amanda Putri",
-                "sebagai": "Anggota 03",
-                "nim": "125450042",
-                "fun_fact": "--",
-                "motto_hidup": "--",
-            },
-            {
-                "nama": "Aura Putri Ghefira",
-                "sebagai": "Anggota 04",
-                "nim": "125450047",
-                "fun_fact": "--",
-                "motto_hidup": "--",
-            },
-            {
-                "nama": "Ezra Hamizan",
-                "sebagai": "Anggota 05",
-                "nim": "125450052",
-                "fun_fact": "Sangat Konyol & Selalu Konyol",
-                "motto_hidup": "Cacing-Cacing, Naga-Naga, Go Big Or Go Home",
-            },
-            {
-                "nama": "Afdhi Hafiidz Habibie",
-                "sebagai": "Anggota 06",
-                "nim": "125450061",
-                "fun_fact": "Waktu belajar sepeda pernah nyemplung ke bekas adukan semen",
-                "motto_hidup": "Hidup di dunia ini kayak plat Jakarta B aja",
-            },
-            {
-                "nama": "Rizqy Ramadhan",
-                "sebagai": "Anggota 07",
-                "nim": "125450066",
-                "fun_fact": "Selalu dikira orang Kristen Aslinya Islam Alhamdulillah",
-                "motto_hidup": "Tetap lah bernafas",
-            },
-            {
-                "nama": "Alan Garcia Sinaga",
-                "sebagai": "Anggota 08",
-                "nim": "125450091",
-                "fun_fact": "--",
-                "motto_hidup": "--",
-            },
-        ]
-
-        with st.spinner("Memuat foto anggota..."):
-            uris = [to_data_uri(u, 640, 800) for u in gambar_urls]
-
-        lurah_html = "".join(
-            member_card(i + 1, data_list[i], uris[i], featured=True) for i in range(2)
-        )
-        anggota_html = "".join(
-            member_card(i + 1, data_list[i], uris[i]) for i in range(2, len(data_list))
-        )
-
-        st.markdown(
-            f'<div class="section-head"><h2>Pimpinan Kelompok</h2>'
-            f'<span class="count-chip">2 Orang</span></div>'
-            f'<div class="lurah-grid">{lurah_html}</div>',
-            unsafe_allow_html=True,
-        )
-        st.markdown(
-            f'<div class="section-head"><h2>Anggota</h2>'
-            f'<span class="count-chip">{len(data_list) - 2} Orang</span></div>'
-            f'<div class="member-grid">{anggota_html}</div>',
-            unsafe_allow_html=True,
-        )
-
-    about_page()
-
-
-# ==================================================
-# HALAMAN KREASI 1 & KREASI 2
-# ==================================================
-elif menu == "Kreasi 1":
-    kreasi1()
-
-elif menu == "Kreasi 2":
-    kreasi2()
+pg = st.navigation([
+    st.Page(halaman_utama, title="Halaman Utama", icon="🏠", default=True),
+    st.Page(kreasi1, title="Kreasi 1", icon="💡", url_path="kreasi-1"),
+    st.Page(kreasi2, title="Kreasi 2", icon="🎮", url_path="kreasi-2"),
+])
+pg.run()
