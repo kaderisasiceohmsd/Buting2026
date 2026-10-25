@@ -24,14 +24,12 @@ from numpy._core.shape_base import (
 )
 from numpy.exceptions import AxisError
 from numpy.testing import (
-    IS_PYPY,
     assert_,
     assert_array_equal,
     assert_equal,
     assert_raises,
     assert_raises_regex,
 )
-from numpy.testing._private.utils import requires_memory
 
 
 class TestAtleast1d:
@@ -293,21 +291,27 @@ class TestConcatenate:
         # No arrays to concatenate raises ValueError
         assert_raises(ValueError, concatenate, ())
 
-    @pytest.mark.slow
     @pytest.mark.skipif(
         sys.maxsize < 2**32,
         reason="only problematic on 64bit platforms"
     )
-    @requires_memory(2 * np.iinfo(np.intc).max)
-    @pytest.mark.thread_unsafe(reason="crashes with low memory")
     def test_huge_list_error(self):
-        a = np.array([1])
         max_int = np.iinfo(np.intc).max
-        arrs = (a,) * (max_int + 1)
+
+        class HugeSequence:
+            def __len__(self):
+                return max_int + 1
+
+            def __getitem__(self, index):
+                raise RuntimeError(
+                    "concatenate must raise before accessing any item")
+
         msg = (fr"concatenate\(\) only supports up to {max_int} arrays"
                f" but got {max_int + 1}.")
         with pytest.raises(ValueError, match=msg):
-            np.concatenate(arrs)
+            # the __array_function__ dispatcher would iterate all entries
+            # before the length check, so call the implementation directly
+            np.concatenate._implementation(HugeSequence())
 
     def test_concatenate_axis_None(self):
         a = np.arange(4, dtype=np.float64).reshape((2, 2))
@@ -389,10 +393,6 @@ class TestConcatenate:
         with pytest.raises(ValueError, match="^casting must be one of"):
             concatenate([r4, r4], casting="same_value")
 
-    @pytest.mark.skipif(
-        IS_PYPY,
-        reason="PYPY handles sq_concat, nb_add differently than cpython"
-    )
     def test_operator_concat(self):
         import operator
         a = array([1, 2])
