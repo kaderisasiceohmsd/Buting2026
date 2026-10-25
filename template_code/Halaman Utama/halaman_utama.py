@@ -1274,10 +1274,10 @@ elif menu == "About Us":
                 "nama": "Bening Arianti",
                 "sebagai": "Anggota",
                 "nim": "125450068",
-                "fun_fact": "Isi fun fact di sini",
-                "motto_hidup": "Isi motto di sini",
+                "fun_fact": "Sehari makan 2 sendok, minum 2 liter",
+                "motto_hidup": "Sleep Well, Live Better",
                 "sosmed": "@beningarnt",
-                "foto": "",
+                "foto": "https://drive.google.com/uc?export=view&id=1wqq9-YkpFJ7D6_WQyKqKsg6UWvXzku-4",
             },
             {
                 "urut": "12",
