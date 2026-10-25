@@ -102,7 +102,7 @@ if menu == "Kesekjenan":
                 "umur": "22",
                 "asal":"Bekasi",
                 "alamat": "Gg.sakum",
-                "hobbi": "Dzikie",
+                "hobbi": "Dzikir",
                 "sosmed": "@muhammadaqil1111",
                 "kesan": "Bang Aqil asik orangnya dan ternyata orang Riau juga",  
                 "pesan":"Semangat terus bang, dan sukses selalu kedepanya"# 1
@@ -226,7 +226,7 @@ elif menu == "Baleg":
                 "alamat": "Kedaton",
                 "hobbi": "Bikin Pempek",
                 "sosmed": "@syt.sarifa",
-                "kesan": "Kakak ini ramah dan cantik, keren juga.",  
+                "kesan": "Kakak ini ramah dan cartik, keren juga.",  
                 "pesan":"Semangat menjalani kuliahnya yaa kak"# 1
             },
             {
@@ -1058,7 +1058,7 @@ elif menu == "Senator":
             },
         ]
         display_images_with_data(gambar_urls, data_list)
-    DepartemenSenator()
+    Senator()
 
 elif menu == "Departemen Eksternal":
     def DepartemenEksternal():
@@ -1174,7 +1174,7 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "Ngasih makan ikan cupang",
                 "sosmed": "@d4niel_fdlh",
                 "kesan": "abangnya ramah dan baik orangnya",
-                "pesan": "sukses terus kedepanya ya kak"# 1
+                "pesan": "sukses terus kedepanya ya bang"# 1
             },
             {
                 "nama": "Favian Arkaanda",
@@ -1345,7 +1345,7 @@ elif menu == "Departemen MIKFES":
             "https://drive.google.com/uc?export=view&id=1R_k9ljSxueyPY1_1pJqyvq0EvEb8W6Zg",
             "https://drive.google.com/uc?export=view&id=11M5c8jk8jNrnDGd5mpDnANT0VHoKPblF",
             "https://drive.google.com/uc?export=view&id=1Lw_PkUrf8s3zJKUjT2ZfvNcqEDGFNUHs",#yulia
-            "https://drive.google.com/uc?export=view&id=1Lvj5o5FKmS8QWm967Smrz_xkfBjoPIyZ",
+            "https://drive.google.com/uc?export=view&id=18v3H2LtQUkBJ7mw8yIJShzlm09rwyfbR",
             "https://drive.google.com/uc?export=view&id=1WW63fm0wD0x8wPxlqGBMBHLOXx1cJCV3",
             "https://drive.google.com/uc?export=view&id=1fk9Cq02gP6UEUZFBaIpXWFr3155J8BV9",
             "https://drive.google.com/uc?export=view&id=13rYjfoBdgl8e9hiqYo6kjiXcW2yTWKXA",
@@ -1370,7 +1370,7 @@ elif menu == "Departemen MIKFES":
                 "alamat": "Kedaton Bandar Lampung ",
                 "hobbi": "Gangguin bang keya",
                 "sosmed": "@biyokcb ig",
-                "kesan": "abang ini orangnya keren, apalagi kalo naympein materi",
+                "kesan": "abang ini orangnya keren, apalagi pas naympein materi",
                 "pesan": "sukses selalu bang, semoga selalu menginspirasi"# 1
             },
             {
@@ -1640,7 +1640,7 @@ elif menu == "Departemen SSD":
                 "pesan": "semangat terus dan semoga dilancarkan terus rezekinya ya bang"# 1
             },
             {
-                "nama": "hanifah inaya sani",
+                "nama": "Hanifah inaya sani",
                 "nim": "123450123",
                 "umur": "20",
                 "asal": "Bandar Lampung ",
@@ -1863,7 +1863,7 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Airan Raya",
                 "hobbi": "Nonton netflix",
                 "sosmed": "@saniayyllstr",
-                "kesan": "kak cantik, softspoken, humble, dan baik banget orangnya",
+                "kesan": "kak sania cantik, softspoken, humble, dan baik banget orangnya",
                 "pesan": "semangat terus kak sania, makasi banyak udah ngebantu pas magang"# 1
             },
             {
@@ -1985,7 +1985,7 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Bengong",
                 "sosmed": "@xifasky",
                 "kesan" : "kakanya kalem dan baik orangnya",
-                "pesan": "semoga selalu dikelilingin orang - orang baik"
+                "pesan": "semoga selalu dikelilingin orang - orang baik."
             }
 
         ]
