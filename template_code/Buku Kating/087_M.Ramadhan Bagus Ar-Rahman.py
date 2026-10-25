@@ -882,7 +882,7 @@ elif menu == "Departemen Medkraf":
             },
             {
                 "nama": "Shafa Delaila Azzahra",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1FM83p6qPUBMehbCqOm96dr6278QAjf0u_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1FM83p6qPUBMehbCqOm96dr6278QAjf0u",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
