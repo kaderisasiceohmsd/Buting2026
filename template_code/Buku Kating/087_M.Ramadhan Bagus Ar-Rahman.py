@@ -46,13 +46,13 @@ if menu == "Kesekjenan":
             },
             {
                 "nama": "Hafsa Fazila Arradhi",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1NiN9gdOMSWZqPHM5BBoCd-K6wr7a8ESY",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1ca25_WajQEIdSeWyBUY8wcFlBwPIktRL",
                 "kesan": "lucuuuuu",
                 "pesan": "semangat trs kakkk",
             },
             {
                 "nama": "Luthfia Laila Ramadhani",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1ca25_WajQEIdSeWyBUY8wcFlBwPIktRL",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1NiN9gdOMSWZqPHM5BBoCd-K6wr7a8ESY",
                 "kesan": "friendlyyyyyyy",
                 "pesan": "semangat kak dengan tugasnyaa",
             },
