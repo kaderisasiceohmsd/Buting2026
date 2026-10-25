@@ -713,13 +713,13 @@ elif menu == "About Us":
 
     # ─── DATA MENTOR ───
     mentor = {
-        "nama": "Kakak Mentor Poisson",
-        "sebagai": "Mentor Kating",
-        "nim": "123456789",
-        "fun_fact": "Suka ngasih tugas jam 12 malam",
-        "motto_hidup": "Semangat terus, nak kating!"
+        "nama": "Hafidz Wahdiansyah",
+        "sebagai": "Mentor",
+        "nim": "124450064",
+        "fun_fact": "Pernah ngoding sampai 12 jam",
+        "motto_hidup": "Motivasi hari ini adalah motivasi untuk esok"
     }
-    mentor_img_url = "https://drive.google.com/uc?export=view&id=1VZfU_oBz3w68OXo4xKuAQ14wcS7wtC4E" # Ganti URL ini
+    mentor_img_url = "https://drive.google.com/uc?export=view&id=1UJWhabFk6lWj7fylxUR6apqPbZHvoCoz" # Ganti URL ini
 
     # Tampilkan Mentor (Full width kolom tengah)
     col_mid1, col_mid2, col_mid3 = st.columns([1, 2, 1])
