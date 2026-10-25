@@ -838,7 +838,7 @@ Terinspirasi dari <b>Teorema Bayes</b> dalam Sains Data dan Statistika, kelompok
 
         # Foto utama kelompok
         st.write("")
-        foto_kelompok = "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq"
+        foto_kelompok = "https://drive.google.com/uc?export=view&id=1VMcw7U-pCJ5lQUFfNUaexo8zWSUr4u2u"
         layout(foto_kelompok)
         st.markdown(
             """<div class="caption-chip">
@@ -850,18 +850,18 @@ Terinspirasi dari <b>Teorema Bayes</b> dalam Sains Data dan Statistika, kelompok
 
         # Dokumentasi kegiatan (buku)
         kegiatan_Bayesian = [
-            {"url": "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq",
-             "judul": "Kegiatan 1", "ket": "Ganti dengan keterangan kegiatan"},
-            {"url": "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq",
-             "judul": "Kegiatan 2", "ket": "Ganti dengan keterangan kegiatan"},
-            {"url": "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq",
-             "judul": "Kegiatan 3", "ket": "Ganti dengan keterangan kegiatan"},
-            {"url": "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq",
-             "judul": "Kegiatan 4", "ket": "Ganti dengan keterangan kegiatan"},
-            {"url": "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq",
-             "judul": "Kegiatan 5", "ket": "Ganti dengan keterangan kegiatan"},
-            {"url": "https://drive.google.com/uc?export=view&id=1iC5C15zecDnw5K7ZQDw3Nr41lubTjYSq",
-             "judul": "Kegiatan 6", "ket": "Ganti dengan keterangan kegiatan"},
+            {"url": "https://drive.google.com/uc?export=view&id=1l6TaJH8la_Y1JL_sSXsc43tHR_s3EKty",
+             "judul": "Kegiatan 1", "ket": "Wawancara buku kating bersama bayesian"},
+            {"url": "https://drive.google.com/uc?export=view&id=1-wCu0pBIxh1gjf346w0NRNAZcIjuMDf3",
+             "judul": "Kegiatan 2", "ket": "bayesian warna warni"},
+            {"url": "https://drive.google.com/uc?export=view&id=11sMLkc5wFh9cUIc56sMCRg6MQn5DTx1o",
+             "judul": "Kegiatan 3", "ket": "POH prakader doneee"},
+            {"url": "https://drive.google.com/uc?export=view&id=11Z_Htx_jpe0YU1hXB7TrXgLZPmCmxBBV",
+             "judul": "Kegiatan 4", "ket": "bayesian nonton konser bandalm"},
+            {"url": "https://drive.google.com/uc?export=view&id=13s54Bfs-gZy6G8ygDakdbzEfHqsM_zYk",
+             "judul": "Kegiatan 5", "ket": "first meet bayesian"},
+            {"url": "https://drive.google.com/uc?export=view&id=1oCcj4bs6I0TT6FEmC5tdCI8yafqFuAAS",
+             "judul": "Kegiatan 6", "ket": "bayesian di data pudi"},
         ]
 
         st.markdown(
@@ -924,15 +924,15 @@ elif menu == "About Us":
         # 10 URL gambar sesuai jumlah 10 anggota di data_list
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=19KrR82_PA5lsmyDn-8iBcBBVxWqctEp9",  # 1. Thomas Yustio
-            "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 2. Syalom Nauli Jubilate
-            "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 3. Chavia Chairunissa
-            "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 4. Aqila Chika Aurelia
-            "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 5. Sefina Amanda Putri
-            "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 6. Aura Putri Ghefira
+            "https://drive.google.com/uc?export=view&id=1dJjZYs0KsEw7ZoCHbWdDiISC76R4v816",  # 2. Syalom Nauli Jubilate
+            "https://drive.google.com/uc?export=view&id=1DTxHOcPBjfuSVVSqKGDci-uJrnCOOLC1",  # 3. Chavia Chairunissa
+            "https://drive.google.com/uc?export=view&id=1wxNSkkaIKX_4-vJ_7LWzmYYDVWFTxpTk",  # 4. Aqila Chika Aurelia
+            "https://drive.google.com/uc?export=view&id=1vH6wQPfSP7I1JxvjaOtnnWvOOtMNJ3-3",  # 5. Sefina Amanda Putri
+            "https://drive.google.com/uc?export=view&id=1l6PIbnmNnpBLEgUwfXNnS7eEPKt-GB0q",  # 6. Aura Putri Ghefira
             "https://drive.google.com/uc?export=view&id=1SaqIKBazfbklZ87SPixrd5eO0PfvydN3",  # 7. Ezra Hamizan
             "https://drive.google.com/uc?export=view&id=1OPEq99LUbLHfdDUTj95ueH52KCoFkKXo",  # 8. Afdhi Hafiidz Habibie
             "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 9. Rizqy Ramadhan
-            "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 10. Alan Garcia Sinaga
+            "https://drive.google.com/uc?export=view&id=1ipO3EE275QolqqFAspAAVcfBo1r7Xroy",  # 10. Alan Garcia Sinaga
         ]
 
         # Data lengkap 10 anggota Bayesian
@@ -945,39 +945,39 @@ elif menu == "About Us":
                 "motto_hidup": "Hidup cuma sekali, maka lakukan apa yang kamu mau, misal mancing",
             },
             {
-                "nama": "Syalom Nauli Jubilate",
+                "nama": "Syalom Nauli Jubilate Simanjuntak",
                 "sebagai": "Bu Lurah",
                 "nim": "125450050",
-                "fun_fact": "--",
-                "motto_hidup": "--",
+                "fun_fact": "Kemana-mana harus pakai eyeliner",
+                "motto_hidup": "Tuhan akan berperang dalam hidupmu dan kau akan diam saja",
             },
             {
                 "nama": "Chavia Chairunissa",
                 "sebagai": "Anggota 01",
                 "nim": "125450026",
-                "fun_fact": "--",
-                "motto_hidup": "--",
+                "fun_fact": "gabisa pake maskara, gampang bintitan",
+                "motto_hidup": "Do good feel good",
             },
             {
                 "nama": "Aqila Chika Aurelia",
                 "sebagai": "Anggota 02",
                 "nim": "125450038",
-                "fun_fact": "--",
-                "motto_hidup": "--",
+                "fun_fact": "gabisa tidur kalo lampu kamar dimatiin",
+                "motto_hidup": "do process to progress",
             },
             {
                 "nama": "Sefina Amanda Putri",
                 "sebagai": "Anggota 03",
                 "nim": "125450042",
-                "fun_fact": "--",
-                "motto_hidup": "--",
+                "fun_fact": "di tanggal 25/10/26 datavora sibuk semua",
+                "motto_hidup": "selesaikan apa yang sudah di mulai",
             },
             {
                 "nama": "Aura Putri Ghefira",
                 "sebagai": "Anggota 04",
                 "nim": "125450047",
-                "fun_fact": "--",
-                "motto_hidup": "--",
+                "fun_fact": "setiap malem pasti nonton asmr",
+                "motto_hidup": "just do what you want to do",
             },
             {
                 "nama": "Ezra Hamizan",
@@ -1004,8 +1004,8 @@ elif menu == "About Us":
                 "nama": "Alan Garcia Sinaga",
                 "sebagai": "Anggota 08",
                 "nim": "125450091",
-                "fun_fact": "--",
-                "motto_hidup": "--",
+                "fun_fact": "Jangan tertipu ukuran, nafsu makan di luar dugaan",
+                "motto_hidup": "pelan-pelan aja, yang penting sampai",
             },
         ]
 
