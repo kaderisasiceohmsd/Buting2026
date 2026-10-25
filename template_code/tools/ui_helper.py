@@ -506,21 +506,83 @@ html, body, [class*="css"], .stMarkdown p, .stMarkdown div, h1, h2, h3, h4, labe
     transition: all 0.8s ease-in-out;
 }
 
-/* Gallery photos: same ratio so the three columns line up */
-[class*="st-key-shine-photo-gallery-"] .stImage img,
-[class*="st-key-shine-photo-gallery-"] [data-testid="stImage"] img {
-    aspect-ratio: 4 / 3 !important;
-    height: auto !important;
-    width: 100% !important;
-    object-fit: cover !important;
-    object-position: center 30% !important;
-}
-
 /* Less empty space above the page title */
 .block-container,
 [data-testid="stMainBlockContainer"] {
     padding-top: 3.5rem !important;
 }
+
+/* ── Flip cards (Home gallery): photo on the front, text on the back ── */
+[class*="st-key-flip-card-"] {
+    position: relative;
+    gap: 0;
+    transform: perspective(1100px) rotateY(0deg);
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transition: transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+}
+/* hover is read on the column (which doesn't rotate), so the flip never flickers at the edges */
+:is([data-testid="stColumn"], [data-testid="column"]):hover [class*="st-key-flip-card-"] {
+    transform: perspective(1100px) rotateY(180deg);
+}
+
+/* both faces hide their reverse side */
+[class*="st-key-flip-card-"] :is([data-testid="stElementContainer"], .element-container) {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* front: the photo (sets the card size) */
+[class*="st-key-flip-card-"] .stImage img,
+[class*="st-key-flip-card-"] [data-testid="stImage"] img {
+    aspect-ratio: 1 / 1;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+[class*="st-key-flip-card-"] button[title="View fullscreen"],
+[class*="st-key-flip-card-"] [data-testid="stImageToolbar"],
+[class*="st-key-flip-card-"] [data-testid="StyledFullScreenButton"] {
+    display: none;
+}
+
+/* back: the text, laid over the same area and turned around */
+[class*="st-key-flip-card-"] :is([data-testid="stElementContainer"], .element-container):has(.flip-back) {
+    position: absolute;
+    inset: 0;
+    margin: 0 !important;
+    transform: rotateY(180deg);
+}
+[class*="st-key-flip-card-"] :is([data-testid="stElementContainer"], .element-container):has(.flip-back) [data-testid="stMarkdown"],
+[class*="st-key-flip-card-"] :is([data-testid="stElementContainer"], .element-container):has(.flip-back) [data-testid="stMarkdownContainer"] {
+    height: 100%;
+    margin: 0 !important;
+}
+.flip-back {
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 18px 20px;
+    border-radius: 14px;
+    overflow: hidden;
+    background:
+        radial-gradient(120% 90% at 50% 0%, rgba(139, 92, 246, 0.28), transparent 70%),
+        linear-gradient(160deg, rgba(28, 22, 54, 0.98), rgba(16, 12, 32, 0.98));
+    border: 1px solid rgba(168, 85, 247, 0.4);
+    box-shadow: 0 14px 36px rgba(139, 92, 246, 0.3);
+}
+.flip-emoji { font-size: 1.8rem; margin-bottom: 8px; }
+.flip-title { font-size: 1.02rem; font-weight: 700; color: #f1f5f9; margin-bottom: 8px; line-height: 1.3; }
+.flip-desc  { font-size: 0.82rem; line-height: 1.55; color: #cbd5e1; }
 
 /* ── Jargon Banner Estetis ── */
 .jargon-card {
