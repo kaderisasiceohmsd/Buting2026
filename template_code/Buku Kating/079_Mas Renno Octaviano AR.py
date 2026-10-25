@@ -509,12 +509,14 @@ elif menu == "Departemen PSDA":
             "https://drive.google.com/uc?export=view&id=1YjIBR0Ir0pq5yCgpVsQTQ5diPYKWNyKa",
             "https://drive.google.com/uc?export=view&id=1wzRGeKSOTjuOUAnD64xYO0knx6ookEjf",
             "https://drive.google.com/uc?export=view&id=1B0kwwvgyq-qkxCmFuVVmD8H7_2ml9-s3",
+            "https://drive.google.com/uc?export=view&id=ISI_LINK_FOTO_17",  # Kosong untuk nomor 17
         
         ]
         
         data_list = [
             {
                "Nama": "Arienta Khusnul Ananda",
+               "Jabatan": "Anggota Departemen PSDA",
                 "Nim": "",
                 "Umur": "",
                 "Asal": "",
@@ -526,6 +528,7 @@ elif menu == "Departemen PSDA":
             },
             {
                 "Nama": "Vany Salsabila Putri",
+                "Jabatan": "Anggota Departemen PSDA",
                 "Nim": "123450022",
                 "Umur": "21",
                 "Asal": "Sibologa",
@@ -537,6 +540,7 @@ elif menu == "Departemen PSDA":
             },
             {
                 "Nama": "Nobel Nizam Fathirizki",
+                "Jabatan": "Anggota Departemen PSDA",
                 "Nim": "123450117",
                 "Umur": "21",
                 "Asal": "Tanah Indonesia",
@@ -548,6 +552,7 @@ elif menu == "Departemen PSDA":
             },
             {
                 "Nama": "Afriza Azmi",
+                "Jabatan": "Anggota Departemen PSDA",
                 "Nim": "124450110",
                 "Umur": "20",
                 "Asal": "Malang",
@@ -559,6 +564,7 @@ elif menu == "Departemen PSDA":
             },
             {
                 "Nama": "Ayake Alfatih Ramadan",
+                "Jabatan": "Anggota Departemen PSDA",
                 "Nim": "124450108",
                 "Umur": "21",
                 "Asal": "Paninjauan Solok, sepuluh kota diatas, Sumatera Barat, Indonesia",
@@ -570,6 +576,7 @@ elif menu == "Departemen PSDA":
             },
             {
                 "Nama": "Caesar Ozora Alrando",
+                "Jabatan": "Anggota Departemen PSDA",
                 "Nim": "",
                 "Umur": "",
                 "Asal": "",
@@ -581,6 +588,7 @@ elif menu == "Departemen PSDA":
             },
             {
                 "Nama": "Euodia Meiliana Friedita",
+                "Jabatan": "Anggota Departemen PSDA",
                 "Nim": "124450029",
                 "Umur": "18",
                 "Asal": "Kampung lama",
@@ -592,6 +600,7 @@ elif menu == "Departemen PSDA":
             },
             {
                 "Nama": "Haikal Seventino Tamba",
+                "Jabatan": "Anggota Departemen PSDA",
                 "Nim": "124450016",
                 "Umur": "21",
                 "Asal": "Palembang",
@@ -603,6 +612,7 @@ elif menu == "Departemen PSDA":
             },
             {
                 "Nama": "Putri Manna Anantama Simbolon",
+                "Jabatan": "Anggota Departemen PSDA",
                 "Nim": "124450056",
                 "Umur": "18",
                 "Asal": "",
@@ -614,6 +624,7 @@ elif menu == "Departemen PSDA":
             },
             {
                 "Nama": "Queenta Thifaal Nabila",
+                "Jabatan": "Anggota Departemen PSDA",
                 "Nim": "123450059",
                 "Umur": "21",
                 "Asal": "johor baru",
@@ -625,6 +636,7 @@ elif menu == "Departemen PSDA":
             },
             {
                 "Nama": "Desman Velius Halawa (Kepala Divisi PMA)",
+                "Jabatan": "Anggota Departemen PSDA",
                 "Nim": "123450114",
                 "Umur": "19",
                 "Asal": "Nias",
@@ -636,6 +648,7 @@ elif menu == "Departemen PSDA":
             },
             {
                 "Nama": "Azzelya Thianandry",
+                "Jabatan": "Anggota Departemen PSDA",
                 "Nim": "123450041",
                 "Umur": "19",
                 "Asal": "Lampung",
@@ -647,6 +660,7 @@ elif menu == "Departemen PSDA":
             },
             {
                 "Nama": "Charrlindah",
+                "Jabatan": "Anggota Departemen PSDA",
                 "Nim": "123450037",
                 "Umur": "21",
                 "Asal": "Jakarta Pusat",
@@ -658,6 +672,7 @@ elif menu == "Departemen PSDA":
             },
             {
                 "Nama": "Jeremi Marolop P. Situmorang",
+                "Jabatan": "Anggota Departemen PSDA",
                 "Nim": "123450111",
                 "Umur": "17",
                 "Asal": "Sidingkalang",
@@ -669,6 +684,7 @@ elif menu == "Departemen PSDA":
             },
             {
                 "Nama": "Nabila Nur Azizah",
+                "Jabatan": "Anggota Departemen PSDA",
                 "Nim": "123450048",
                 "Umur": "18",
                 "Asal": "Lampung",
@@ -680,6 +696,7 @@ elif menu == "Departemen PSDA":
             },
             {
                 "Nama": "Rafli Al Mansyah Tambunan",
+                "Jabatan": "Anggota Departemen PSDA",
                 "Nim": "123450007",
                 "Umur": "20",
                 "Asal": "Kota Ikan",
@@ -691,6 +708,7 @@ elif menu == "Departemen PSDA":
             },
             {
                 "Nama": "Salavi Naharani",
+                "Jabatan": "Anggota Departemen PSDA",
                 "Nim": "123450090",
                 "Umur": "20",
                 "Asal": "Lampung timur",
