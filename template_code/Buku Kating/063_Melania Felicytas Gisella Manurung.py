@@ -3,6 +3,7 @@ from streamlit_option_menu import option_menu
 import requests
 from PIL import Image, ImageOps
 from io import BytesIO
+import streamlit as st
 
 st.markdown(
     """
@@ -55,6 +56,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+
 st.markdown("""<style>.centered-title {text-align: center;}</style>""",unsafe_allow_html=True)
 st.markdown("<h1 class='centered-title'>BUKU KATING</h1>", unsafe_allow_html=True)
 
@@ -97,11 +99,32 @@ def streamlit_menu():
                 "margin": "0px",
                 "--hover-color": "#eee",
             },
-            "nav-link-selected": {"background-color": "#3FBAD8"},
+            "nav-link-selected": {
+                "background-color": "#FCF0DA !important",
+                "color": "#000000 !important",
+            },
         },
     )
     return selected
 
+@st.cache_data
+def load_image(url):
+    response = requests.get(url)
+    if response.status_code != 200:
+        st.error(
+            f"Failed to fetch image from {url}, status code: {response.status_code}"
+        )
+        return None
+    try:
+        img = Image.open(BytesIO(response.content))
+        img = ImageOps.exif_transpose(img)
+        img = img.resize((300, 400))
+        return img
+    except Exception as e:
+        st.error(f"Error loading image: {e}")
+        return None
+
+@st.cache_data
 def display_images_with_data(gambar_urls, data_list):
     # CSS Murni untuk Efek Gulungan Kertas (Scroll) Otentik
     st.markdown(
@@ -165,25 +188,6 @@ def display_images_with_data(gambar_urls, data_list):
         unsafe_allow_html=True,
     )
 
-@st.cache_data
-def load_image(url):
-    response = requests.get(url)
-    if response.status_code != 200:
-        st.error(
-            f"Failed to fetch image from {url}, status code: {response.status_code}"
-        )
-        return None
-    try:
-        img = Image.open(BytesIO(response.content))
-        img = ImageOps.exif_transpose(img)
-        img = img.resize((300, 400))
-        return img
-    except Exception as e:
-        st.error(f"Error loading image: {e}")
-        return None
-    
-@st.cache_data
-def display_images_with_data(gambar_urls, data_list):
     images = []
     for i, url in enumerate(gambar_urls):
         with st.spinner(f"Memuat gambar {i + 1} dari {len(gambar_urls)}"):
@@ -192,23 +196,34 @@ def display_images_with_data(gambar_urls, data_list):
                 images.append(img)
 
     for i, img in enumerate(images):
-        # Menggunakan Streamlit untuk menampilkan gambar di tengah kolom
         col1, col2, col3 = st.columns([1, 2, 1])
         with col2:
             st.image(img, use_container_width=True)
 
-        if i < len(data_list):
-            st.write(f"Nama: {data_list[i]['nama']}")
-            st.write(f"NIM: {data_list[i]['nim']}")
-            st.write(f"Umur: {data_list[i]['umur']}")
-            st.write(f"Asal: {data_list[i]['asal']}")
-            st.write(f"Alamat: {data_list[i]['alamat']}")
-            st.write(f"Hobbi: {data_list[i]['hobbi']}")
-            st.write(f"Sosial Media: {data_list[i]['sosmed']}")
-            st.write(f"Kesan: {data_list[i]['kesan']}")
-            st.write(f"Pesan: {data_list[i]['pesan']}")
-            st.write("  ")
+            if i < len(data_list):
+                with st.expander(f"📜 Buka Biodata: {data_list[i]['nama']}"):
+                    st.markdown(
+                        f"""
+                        <div class="scroll-wrapper">
+                            <div class="scroll-roller"></div>
+                            <div class="scroll-body">
+                                <p><b>Nama:</b> {data_list[i]['nama']}</p>
+                                <p><b>NIM:</b> {data_list[i]['nim']}</p>
+                                <p><b>Umur:</b> {data_list[i]['umur']}</p>
+                                <p><b>Asal:</b> {data_list[i]['asal']}</p>
+                                <p><b>Alamat:</b> {data_list[i]['alamat']}</p>
+                                <p><b>Hobbi:</b> {data_list[i]['hobbi']}</p>
+                                <p><b>Sosmed:</b> {data_list[i]['sosmed']}</p>
+                                <p><b>Kesan:</b> {data_list[i]['kesan']}</p>
+                                <p><b>Pesan:</b> {data_list[i]['pesan']}</p>
+                            </div>
+                            <div class="scroll-roller"></div>
+                        </div>
+                        """,
+                        unsafe_allow_html=True,
+                    )
     st.write("Semua gambar telah dimuat!")
+    
 menu = streamlit_menu()
 
 # BAGIAN SINI YANG HANYA BOLEH DIUABAH
