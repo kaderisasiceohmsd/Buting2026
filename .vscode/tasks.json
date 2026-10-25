@@ -1,0 +1,33 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Install Streamlit Dependencies",
+			"type": "shell",
+			"command": "py",
+			"args": [
+				"-3.14",
+				"-m",
+				"pip",
+				"install",
+				"-r",
+				"template_code/requirements.txt"
+			],
+			"problemMatcher": []
+		},
+		{
+			"label": "Run Streamlit App",
+			"type": "shell",
+			"command": "py",
+			"args": [
+				"-3.14",
+				"-m",
+				"streamlit",
+				"run",
+				"template_code/main.py"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}
