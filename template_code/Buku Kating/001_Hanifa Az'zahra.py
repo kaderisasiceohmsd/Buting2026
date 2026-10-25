@@ -1291,10 +1291,10 @@ elif menu == "Departemen Eksternal":
             {
                 "nama": "Yollanda Agustina",
                 "nim": "124450024",
-                "umur": "-",
+                "umur": "21",
                 "asal": "Kerangka Bawang Sebelah Barat",
                 "alamat": "Kayu Mulya",
-                "hobbi": "Tanya bang Henry",
+                "hobbi": "nyari duit",
                 "sosmed": "@yollanda_agustina16",
                 "kesan": "mentor yang baik dan ceriaa bangettt",  
                 "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi Kakak dilancarkan sampai lulus."
