@@ -1018,8 +1018,8 @@ if menu == "Senator":
                 "alamat": "Airan",
                 "hobbi": "Nulis di medium",
                 "sosmed": "@fathinahnazzh",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Kakaknya ramah dan punya pembawaan yang baik, kakak juga dewasa",  
+                "pesan":"Semoga selalu semangangat dan sukses terus kedepannya ya kak!"# 1
             },
             {
                 "nama": "Nadya Ratu Anjani",
@@ -1029,8 +1029,8 @@ if menu == "Senator":
                 "alamat": "Sukarame",
                 "hobbi": "Dengar lagu",
                 "sosmed": "@nadyaanjaani",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Kakaknya asik dan menyenangkan",  
+                "pesan":"Semoga bisa jadi orang yang membawa pengaruh positif kedepannya"# 1
             },
             {
                 "nama": "Lia Hana Ichisasmita",
@@ -1040,8 +1040,8 @@ if menu == "Senator":
                 "alamat": "Belwis",
                 "hobbi": "beres beres",
                 "sosmed": "@lia.h_264",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "First impression ke kak lia hana itu baik, kakaknya kelihatan tegas dan berwibawa gitu",  
+                "pesan":"Semoga untuk setiap perjalanan baik kuliah, organisasi dan pekerjaan ke depannya diberikan kelancaran dalam setiap tanggung jawabnya"# 1
             },
             {
                 "nama": "Helmy Surya Pratama",
@@ -1051,8 +1051,8 @@ if menu == "Senator":
                 "alamat": "Kedamaian",
                 "hobbi": "ngesen kiri",
                 "sosmed": "@helmy.inst",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Bang helmy asik, periang, agak jahil orangnya dan suka melet",
+                "pesan":"sSemoga kedepannya gaya melet abang masuk nominasi gaya terkeren se-internasional"# 1
             },
             {
                 "nama": "Fernando Dimetrius Barus",
@@ -1062,8 +1062,8 @@ if menu == "Senator":
                 "alamat": "Sebelah Kamar Biwa",
                 "hobbi": "Main Badminton",
                 "sosmed": "@barus.fernando",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Bang fernando baik, lucu, panjang sabar, dan kelihatan bijak",  
+                "pesan":"Semoga lancar terus ya bang kuliahnya, fighting!"# 1
             },
             {
                 "nama": "Suci Aulia",
@@ -1073,8 +1073,8 @@ if menu == "Senator":
                 "alamat": "Kobar",
                 "hobbi": "Dokum hal tidak penting",
                 "sosmed": "@sciia__",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Kakaknya kelihatan santai, tetapi tetap serius kalau emang situasinya lagi serius",  
+                "pesan":"Semoga semua urusannya kakak kedepannya dilancarkan, dan sukses terus ya kak buat studinya"# 1
             },
             {
                 "nama": "Wielman Itolo Halawa",
@@ -1084,8 +1084,8 @@ if menu == "Senator":
                 "alamat": "Asrama TB 3",
                 "hobbi": "Mancing",
                 "sosmed": "@wielhawny",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Bang wielman keren, public speakingnya bagus,mulai dari intonasi sama pemilihan kata abangnya wow banget",  
+                "pesan":"Semoga tetap rendah hati dan selalu bawa energi positif di tiap situasi ya kak"# 1
             },
             {
                 "nama": "Aqila Zayyan Salsabil",
