@@ -244,8 +244,8 @@ if menu == "Kesekjenan":
                 "alamat": "Sekretariat HMSD ",
                 "hobbi": "Push Rank",
                 "sosmed": "@jars_mrp",
-                "kesan": "Bang Fajar orangnya keren dan berwibawa",  
-                "pesan":"Semangat menjalani hari-harinya bangg!."
+                "kesan": "Bang Fajar orangnya keren dan terlihat berwibawa",  
+                "pesan":"Semangat menjalani hari-harinya sebagai kahim bangg!."
             },
             {
                 "nama": "Muhammad Aqil Ramadhan ",
@@ -255,8 +255,8 @@ if menu == "Kesekjenan":
                 "alamat": "Sekretariat HMSD ",
                 "hobbi": "Zikir",
                 "sosmed": "@muhammadaqil1111",
-                "kesan": "Bang Aqil orangnya ramah dan baik",  
-                "pesan":"Sehat selalu dan semangat terus kuliahnya bangg!"
+                "kesan": "Bang Aqil orangnya ramah dan baik karena sudah beli jajanan di sentra magangnya ssd",  
+                "pesan":"Semangat terus bang kuliahnyaa, jangan lupa beli jajanan di sentra lagii"
             },
             {
                 "nama": "Efi Defiyati",
@@ -266,8 +266,8 @@ if menu == "Kesekjenan":
                 "alamat": "Airan",
                 "hobbi": "Membaca",
                 "sosmed": "@eefidefiyati",
-                "kesan": "Kak Efi kakak NIM kuu:D, kakak orangnya ramah dan baik.",  
-                "pesan":"Semangat terus kakk dan makin keren kedepannya!"
+                "kesan": "Kak Efi kakak NIM kuu:D, kakak orangnya cantik dan kerenn.",  
+                "pesan":"Sukses terus ya kakk kedepannya dan semoga urusannya di lancarinn:D"
             },
             {
                 "nama": "Qois Olifio",
@@ -277,8 +277,8 @@ if menu == "Kesekjenan":
                 "alamat": "Kotabaru",
                 "hobbi": "Mainin surat",
                 "sosmed": "@qoisolifio_",
-                "kesan": "Abangnya ramah dan keren.",  
-                "pesan":"Semangat bangg kuliahnyaa!"
+                "kesan": "Pembawaan abang pas wwc santai.",  
+                "pesan":"Semangat ya bangg semoga plan abang kedepannya berjalan sesuai yang abang mau.."
             },
             {
                 "nama": "Hafsa Fazila Arradhi",
@@ -299,8 +299,8 @@ if menu == "Kesekjenan":
                 "alamat": "Airan",
                 "hobbi": "Nyari motor Pak Tirta ",
                 "sosmed": "@luthfiaarmdhni",
-                "kesan": "Kakaknya lucuu dan ramah",  
-                "pesan":"Semangat dan sehat selalu kakk!"
+                "kesan": "Kakaknya lucuu, cantik, dan suka bercandaa",  
+                "pesan":"Selalu jadi diri sendiri dan membawa energi positif buat orang-orang sekitar ya kakk:D"
             },
         ]
         display_images_with_data(gambar_urls, data_list)
