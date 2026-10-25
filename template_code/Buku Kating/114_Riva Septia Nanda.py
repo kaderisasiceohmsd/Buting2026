@@ -610,7 +610,7 @@ elif menu == "Departemen Internal":
             },
             {
                 "nama": "Kharisma Mustika Sari",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", # 1
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1YG_2nCFBdxmwpD98Kn_WRYfZc7WQvy_1",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
