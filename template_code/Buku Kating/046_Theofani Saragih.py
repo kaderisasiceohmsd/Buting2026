@@ -667,7 +667,7 @@ elif menu == "Departemen SSD":
                     "alamat": "Belwis",
                     "hobbi": "Baca jurnal, cari jurnal yang berhubungan ta",
                     "sosmed": "@ihsan.myusuf",
-                    "kesan": "Abangnya seru dan chill bangett diajak ngobrol",
+                    "kesan": "Abangnya seru dan chill bangett diajak ngobro",
                     "pesan": "Semangat terus kuliahnya abangg",
                 },
             ]
