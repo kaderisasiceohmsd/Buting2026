@@ -449,18 +449,7 @@ elif menu == "Departemen Minbak":
                 "pesan":"jangan lupa untuk mengandalkan Tuhan"# 1
             },
             {
-                "nama": "Indah Julia Mawar Pratiwi",
-                "nim": "124450055",
-                "umur": "20",
-                "asal":"Pringsewu",
-                "alamat": "Airan",
-                "hobbi": "Main",
-                "sosmed": "@sekardnwp",
-                "kesan": "",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
-            {
-                "nama": "Ghiyats Thabularasa Meardhy",
+               "nama": "Ghiyats Thabularasa Meardhy",
                 "nim": "124450067",
                 "umur": "17",
                 "asal":"Surabaya ",
@@ -469,6 +458,17 @@ elif menu == "Departemen Minbak":
                 "sosmed": "@meardhy_ghiyats",
                 "kesan": "Abangnya keren banget, pasti punya kebon sawit berhektar-hektar",
                 "pesan": "OTW jadi CEO SAWIT!!! semangat menjalankan tugas di minbak, "# 1
+            },
+            {
+                "nama": "Indah Julia Mawar Pratiwi",
+                "nim": "124450055",
+                "umur": "20",
+                "asal":"Pringsewu",
+                "alamat": "Airan",
+                "hobbi": "Main",
+                "sosmed": "@sekardnwp",
+                "kesan": "Kakak ini asik dan menggemaskan",
+                "pesan": "semangat terus kuliahnya kakak !!!"# 
             },
             {  
                 "nama": "Jacinda Kesya Alvara",
@@ -521,14 +521,14 @@ elif menu == "Departemen Internal":
         ]
         data_list = [
             {
-                "nama": "Haikal Fransiskus Simbolon",
+                "nama": "Haikal Fransisko Simbolon",
                 "nim": "123450106",
                 "umur": "23",
                 "asal": "Bengkulu",
                 "alamat": "Belwis",
                 "hobbi": "Merokok",
                 "sosmed": "@haikalsbln_",
-                "kesan": "banh haikal orangnya asik sekali dan jokesnya ituloh yang buat lucu.",  
+                "kesan": "bang haikal orangnya asik sekali dan jokesnya ituloh yang buat lucu.",  
                 "pesan":"jangan kebanyakan merokok bang"# 1
             },
             {
@@ -578,13 +578,13 @@ elif menu == "Departemen Internal":
             {
                 "nama": "Cerine Sihotang",
                 "nim": "124450049",
-                "umur": "....",
-                "asal":"....",
-                "alamat": "....",
-                "hobbi": "....",
-                "sosmed": "@...",
-                "kesan": "kakak ini kalau ngomel mukanya lucu gemess.",  
-                "pesan":"Semangat kak kuliahnya dan jangan marah-marah mulu"# 1
+                "umur": "19",
+                "asal": "Medan",
+                "alamat": "Belwis",
+                "hobbi": "Balap liar",
+                "sosmed": "@cerine_ipynb",
+                "kesan": "orangnya lucu banget apa lagi waktu dia manggil aku hey polkadot karna baju aku.",
+                "pesan": "tetep ceria ya kak"# 1
             },
             {
                 "nama": "Jaya Saputra Tambak",
@@ -600,13 +600,13 @@ elif menu == "Departemen Internal":
             {
                 "nama": "Najla Nursyifa",
                 "nim": "124450051",
-                "umur": "...",
-                "asal":"...",
-                "alamat": "...",
-                "hobbi": "...",
-                "sosmed": "@...",
-                "kesan": "kakak ini gemass dan lumayan pendiam.",  
-                "pesan":"Semoga rejekinya dilancarkan selalu"# 1
+                "umur": "20",
+                "asal":"Aceh",
+                "alamat": "Belwis",
+                "hobbi": "Gangguin cika",
+                "sosmed": "@njlanursyifa",
+                "kesan": "kakaknya cantik dan cute.",
+                "pesan": "Semangat kuliahnya mengejar sampai ujung dunia"# 1
             },
             {
                 "nama": "Rozak Ramdani",
@@ -666,13 +666,13 @@ elif menu == "Departemen Internal":
             {
                 "nama": "Gustin H. Tampubolon",
                 "nim": "124450068",
-                "umur": "...",
-                "asal": "...",
-                "alamat": "...",
-                "hobbi": "...",
-                "sosmed": "@...",
-                "kesan": "Kakak ini vibenya cewe-cewe kalem",  
-                "pesan":"semangat terus kuliahnya kak dan diberikan kelancaran"# 1
+                "umur": "21",
+                "asal": "Toba Sumatera Utara ",
+                "alamat": "airan",
+                "hobbi": "nonton",
+                "sosmed": "@gustinhaleluya",
+                "kesan": "Kakak lucu dan cute bangettt",
+                "pesan": "semangat terus kuliahnya kakak !!!"# 1
             },
             {
                 "nama": "Muhammad Harvinsyah",
