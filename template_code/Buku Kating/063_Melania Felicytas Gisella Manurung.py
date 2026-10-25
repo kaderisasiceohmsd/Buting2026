@@ -358,7 +358,7 @@ if menu == "Baleg":
         "hobbi": "Makan mie gomak",
         "sosmed": "@exvoltas & @ddharu",
         "kesan": "Bang Dharu keren banget, hebat, pinter juga pokoknya salut deh sama bang Dharu.",
-        "pesan": "emoga semua rencana Bang Dharu ke depannya bisa terwujud ya bang, dilancarkan semua urusannya, semoga bisa makan mie gomak kalau lagi bm ya bang hehe."
+        "pesan": "Semoga semua rencana Bang Dharu ke depannya bisa terwujud ya bang, dilancarkan semua urusannya, semoga bisa makan mie gomak kalau lagi bm ya bang hehe."
     },
     {
         "nama": "Givaro Ananta",
@@ -498,8 +498,8 @@ if menu == "Senator":
                 "alamat": "Belakang PB",
                 "hobbi": "Nulis di medium",
                 "sosmed": "@fathinahnazzh",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Kak Fathinah baik banget, cantik, pinterr, humble juga, terus vibes-nya positif banget kak.",  
+                "pesan": "Semoga apa pun impian kak Fathinah bisa terwujud ya kak, semoga dilancarkan terus semua urusannya.""# 1
             },
             {
                 "nama": "Helmy Surya Pratama",
@@ -509,8 +509,8 @@ if menu == "Senator":
                 "alamat": "Kedamaian",
                 "hobbi": "Ngesen kiri",
                 "sosmed": "@helmy_inst",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Bang Helmy asik, baik juga. Jadi keinget waktu Bang Helmy jadi asisten praktikum Alpro semester 2 baik banget.",  
+                "pesan": "Menyalaa teruss Bang Helmy, semangat terus jalani kuliahnyaa."# 1
             },
             {
                 "nama": "Lia Hana Ichisasmita",
@@ -520,8 +520,8 @@ if menu == "Senator":
                 "alamat": "Belwis",
                 "hobbi": "Nonton",
                 "sosmed": "@lia.h_264",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Kak Hana baik dan ramah banget orangnya.",  
+                "pesan": " Semoga lancar terus ya kak kuliahnya, btw rekomendasi film-film yang bagus dong kak, siapa tau ada yang menarik hehe."# 1
             },
              {
                 "nama": "Nadya Ratu Anjani",
@@ -531,8 +531,8 @@ if menu == "Senator":
                 "alamat": "Sukarame",
                 "hobbi": "Denger lagu",
                 "sosmed": "@nadyaanjaani",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Kak Nadia cantik sudah pasti, humble lagi orangnya.",  
+                "pesan": "Semangat terus ya kak, apa pun yang bakal kakak hadapi ke depannya jangan pernah nyerah kak."# 1
             },
             {
                 "nama": "Fernando Diemtrius Barus",
@@ -542,8 +542,8 @@ if menu == "Senator":
                 "alamat": "Sebelah kamar biwa",
                 "hobbi": "Badminton",
                 "sosmed": "@barus.fernando",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Baru tau kalau Bang Fernando itu abang NIM aku, ternyata aktif banget orangnya bang.",  
+                "pesan": "Semoga apa pun yang abang jalanin sekarang dilancarkan terus ya bang."# 1
             },
             {
                 "nama": "Suci Aulia",
@@ -553,8 +553,8 @@ if menu == "Senator":
                 "alamat": "Kotabaru",
                 "hobbi": "Mancing",
                 "sosmed": "@sciia__",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Kak Sucii my luv, baik banget, ceria banget, aktif juga kakaknya.",  
+                "pesan":"Semangat terus kak Sucii, apapun yang kakak lalui itu ada hikmahnya. Selalu jadi kakaknya Cosval ya kak, terimakasih sudah membersamai kami sejauh ini."# 1
             },
             {
                 "nama": "Wielman Itolo Halawa",
@@ -564,8 +564,8 @@ if menu == "Senator":
                 "alamat": "Asrama TB3",
                 "hobbi": "Dibonceng",
                 "sosmed": "@wielhawn",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Bang Wielman keren banget, ketemu bang Wielman pertama kali di kelas Kewarganegaraan. Apalagi kemarin liat bang Wielman debat di kelas dibabat semua, kerenn bangg.",  
+                "pesan":"Semangat teruss bang, semoga hari-hari abang dipenuhi bunga selalu"# 1
             },
             {
                 "nama": "Aqila Zayyan SalsabiL",
@@ -575,8 +575,8 @@ if menu == "Senator":
                 "alamat": "Sukarame",
                 "hobbi": "Mendokumentasikan bayes",
                 "sosmed": "@aqilazayyaan",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Kak Aqila keliatannya extrovert banget, ceria, aktif, asik kalau diajak ngobrol.",  
+                "pesan": "Semangat terus ya kak Aqila, semoga kuliahnya lancar terus dan jangan pernah ilang cheerfulnya kak"# 1
             },
             {
                 "nama": "Hazel Mahesa Handhaka",
@@ -586,8 +586,8 @@ if menu == "Senator":
                 "alamat": "Gunung Terang",
                 "hobbi": "Giring ayam",
                 "sosmed": "@hazelhandhaka",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Bang Hazel baik walaupun vibesnya kayak galak gitu",  
+                "pesan": "Kurangi vibes galaknya bang, jangan lupa tersenyum ditengah kehidupan yang hectic ini."# 1
             },
             {
                 "nama": "Dwi Rahma Fitriani",
@@ -597,8 +597,8 @@ if menu == "Senator":
                 "alamat": "Jl. Lapas",
                 "hobbi": "Baca buku, nonton film, dengerin musik",
                 "sosmed": "@dwi_rahmftrnii",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Baik bangett, cantik lagii, positif juga.",  
+                "pesan": "Rekomendasi dong kak buku yang bagus tapi yang happy ending kak hehe."# 1
             },
         ]
         display_images_with_data(gambar_urls, data_list)
