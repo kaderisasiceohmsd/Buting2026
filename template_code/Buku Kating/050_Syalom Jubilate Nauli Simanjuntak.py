@@ -467,8 +467,7 @@ if menu == "Badan Kesenatoran":
                 "hobbi": "badminton",
                 "sosmed": "@barus.fernando",
                 "kesan": "abangnya keliatan kalem banget",  
-                "pesan":"semoga perkuliahannya lancar selalu ya bang!
-                "# 10
+                "pesan":"semoga perkuliahannya lancar selalu ya bang!"
             },  
         ]
         display_images_with_data(gambar_urls, data_list)
