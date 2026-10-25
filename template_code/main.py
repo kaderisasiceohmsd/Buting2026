@@ -1,14 +1,25 @@
 import streamlit as st
-from utils import setup_common
 
-st.set_page_config(page_title="Buku Kating | Poisson", layout="wide")
+st.set_page_config(page_title="Buku Kating", layout="wide")
 
-# 💥 Panggil CSS Sidebar dari utils.py
-setup_common()
+st.markdown("""
+<style>
+    [data-testid="stSidebar"] {
+        background-color: #701c23 !important;
+    }
+    [data-testid="stSidebar"] *,
+    [data-testid="stSidebar"] span,
+    [data-testid="stSidebar"] p,
+    [data-testid="stSidebar"] div,
+    [data-testid="stSidebar"] svg {
+        color: #ffffff !important;
+        fill: #ffffff !important;
+    }
+</style>
+""", unsafe_allow_html=True)
 
-# ============================================================
-# 🧭 NAVIGASI HALAMAN
-# ============================================================
+st.session_state.pindah = True
+
 Homepage = st.Page("Halaman Utama/halaman_utama.py", title="07 - POISSON", default=True)
 
 Mahasiswa1  = st.Page("Buku Kating/116_Yobel Imanuel Pasaribu.py", title="116 - Yobel Imanuel Pasaribu", icon=":material/person:")
@@ -26,7 +37,7 @@ Mahasiswa11 = st.Page("Buku Kating/037_Nailatun Inayah.py", title="037 - Nailatu
 KREASI  = st.Page("tools/KREASI.py", title="KREASI", icon=":material/search:")
 KREASII = st.Page("tools/KREASII.py", title="KREASII", icon=":material/search:")
 
-if st.session_state.get("pindah", True):
+if st.session_state.pindah:
     pg = st.navigation({
         "Halaman Utama": [Homepage],
         "Buku Kating": [Mahasiswa1, Mahasiswa2, Mahasiswa3, Mahasiswa4, Mahasiswa5,
