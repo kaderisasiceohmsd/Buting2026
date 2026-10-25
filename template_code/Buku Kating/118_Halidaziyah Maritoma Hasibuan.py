@@ -65,7 +65,7 @@ elif menu == "Baleg":
         kating_data = [
             {
                 "nama": "Ridho Benedictus Togi Manik",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1sgiK2C73QaZRvFJMgdUFhqQ3ZDPGHjKy",
                 "kesan": "Bang Ridho sangat ramah dan humble",  
                 "pesan":"Semoga semua urusan bg ridho di permudah",
             },
