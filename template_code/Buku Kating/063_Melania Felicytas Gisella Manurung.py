@@ -480,13 +480,13 @@ if menu == "Senator":
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1rPuXuIHggu71ychtVz50v80G8ALWpkgR",
             "https://drive.google.com/uc?export=view&id=1AnYr_CukRTzzAgLAAoT1YvYd0bTakyN8",
-            "https://drive.google.com/uc?export=view&id=19vKdUP7niOFejaABntMgxQX-syAO9FAd",
             "https://drive.google.com/uc?export=view&id=10gGWtYKkE7FHu1udlgdgp3njQFaGpJKK",
             "https://drive.google.com/uc?export=view&id=1ZIjJWMyPaw3FHktc0A_Qc-6iXCXdUhVK",
             "https://drive.google.com/uc?export=view&id=1b-XqBCxMBGO3FXGvFBhxJtqvsDyv6Uhc",
             "https://drive.google.com/uc?export=view&id=18Yizn-7w5xYyaCDj4Aael-e80akqBN_N", 
             "https://drive.google.com/uc?export=view&id=19oVp9qTFPGorU_HsiG4WDyWFONq38eFc",
-             "https://drive.google.com/uc?export=view&id=1MiQ7ppx1WxNUvuGwzRiMHV_64yQie3tF", 
+            "https://drive.google.com/uc?export=view&id=19vKdUP7niOFejaABntMgxQX-syAO9FAd",
+            "https://drive.google.com/uc?export=view&id=1MiQ7ppx1WxNUvuGwzRiMHV_64yQie3tF", 
             "https://drive.google.com/uc?export=view&id=1_zKMz2adPsJHzZUz-MBxxl3WWQQ-_kb7",
         ]
         data_list = [
