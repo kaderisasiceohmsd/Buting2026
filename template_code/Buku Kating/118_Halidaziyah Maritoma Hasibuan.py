@@ -393,8 +393,8 @@ elif menu == "Departemen MIKFES":
             {
                 "nama": "Fadya Izzatul 'Aini",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1T485vNqtRA50hZlzsupHlzLxZYkQalqX",
-                "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
-                "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
+                "kesan": "Kakaknya sangat ramah, dan baikk",
+                "pesan": "Semangat terus kakak",
             },
             {
                 "nama": "Lovianora Saragih",
@@ -430,7 +430,7 @@ elif menu == "Departemen MIKFES":
                 "nama": "Hafidz Wahdiansyah",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1elgV3c0kK_TrFyDdvq6iWugSSjRy0x9z",
                 "kesan": "Kakaknya sangat ramah dan baikk",
-                "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
+                "pesan": "Happy terus kakak",
             },
             {
                 "nama": "Kaleb Filbert Istel",
