@@ -1289,10 +1289,10 @@ elif menu == "Departemen Eksternal":
             {
                 "nama": "Yollanda Agustina",
                 "nim": "124450024",
-                "umur": "-",
+                "umur": "21",
                 "asal": "Kerangka Bawang Sebelah Barat",
                 "alamat": "Kayu Mulya",
-                "hobbi": "Tanya bang Henry",
+                "hobbi": "nyari duit",
                 "sosmed": "@yollanda_agustina16",
                 "kesan": "kakak ini ramah dan baik orangnya",
                 "pesan": "semangat dan jangan lupa istirahat kak"
@@ -1784,7 +1784,7 @@ elif menu == "Departemen Medkraf":
             "https://drive.google.com/uc?export=view&id=1AbUAaukVf8RHqt-7O-E-PzQsDDwveu4J",
             "https://drive.google.com/uc?export=view&id=1JhnMZYi3ZvD3fd5Dr2TO8NnwvfkoauYE",
             "https://drive.google.com/uc?export=view&id=1XvoMJ3EvTtCBZunfsN__kRfm8BRFnUMT",
-            "https://drive.google.com/uc?export=view&id=",#shafa
+            "https://drive.google.com/uc?export=view&id=1d63Ys35f3BFUvc4b2wdem_AgnfnrHiJ1",#shafa
             "https://drive.google.com/uc?export=view&id=1JqN49sIJy3ELyoVwExLpbR2f60uhqkOc",
 
         ]
