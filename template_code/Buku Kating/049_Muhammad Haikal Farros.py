@@ -1817,7 +1817,7 @@ elif menu == "Departemen PSDA":
             },
             {
                 "Nama": "Caesar Ozora Alrando",
-                "Nim": "",
+                "Nim": "125450017",
                 "Umur": "124450021",
                 "Asal": "Tanya Biwa",
                 "Alamat": "Kontrakan Hijau",
@@ -1933,8 +1933,8 @@ elif menu == "Departemen PSDA":
                 "Alamat": "Disamping Kost Afdal",
                 "Hobbi": "Memancing",
                 "Sosmed": "dearfkvmfl",
-                "Kesan": "",
-                "Pesan": ""
+                "Kesan": "abangnya kalem, softspoken, dan asik orangnya",
+                "Pesan": "semoga sehat selalu dan sukses selalu, bang, jaga kesehatan ya bang"
             },
             {
                 "Nama": "Salavi Naharani",

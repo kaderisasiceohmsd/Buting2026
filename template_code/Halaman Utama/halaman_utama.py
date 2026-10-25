@@ -175,7 +175,7 @@ elif menu == "About Us":
         )
         st.markdown("<h1 class='centered-title'>About Us</h1>", unsafe_allow_html=True)
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1rCHpAW7n7XM5J5-78wNuHXaD4B2qr5P8",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=10hH3ZahcCSye-uxU9INHp_BOQUbu-08T",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
@@ -189,11 +189,11 @@ elif menu == "About Us":
         ]
         data_list = [
             {
-                "nama": "",
+                "nama": "Muhammad Haikal Farros",
                 "sebagai": "Pak Lurah",
-                "nim": "",
-                "fun_fact": "",
-                "motto_hidup": "",
+                "nim": "125450049",
+                "fun_fact": "Minum espresso 6 shoots (muntah dikit), waktu kecil pernah jatuh di septitank",
+                "motto_hidup": "im still standing like a soldier, that is how i survive",
             },
             {
                 "nama": "Resti Amanda Ritonga",
