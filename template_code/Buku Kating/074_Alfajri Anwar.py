@@ -284,7 +284,6 @@ elif menu == "Departemen SSD":
         "https://drive.google.com/uc?export=view&id=1qAtFg84Mbmj_ZJNVLt-400ggYtD1fln-",
     ] 
     data_list = [
-        data_list = [
         {"nama": "Ihsan Maulana Yusuf", "jabatan": "Kepala Departemen SSD", "nim": "123450110", "umur": "21", "asal": "Sumatera Barat", "alamat": "Belwis", "hobbi": "Cari dan baca jurnal, cari pak lucky, jualan", "sosmed": "@ihsan.myusuf", "kesan": "Abangnya ramah, asik dan suka banget becanda", "pesan": "Semangat bang semoga jualannya laris manis"},
         {"nama": "Hanifah Inaya Sani", "jabatan": "Sekretaris SSD", "nim": "123450123", "umur": "20", "asal": "Bandar Lampung", "alamat": "Bandar Lampung", "hobbi": "Masak", "sosmed": "@_inayasani", "kesan": "Kakaknya suka becanda kayak marah marah dan tensi gitu", "pesan": "Lancar selalu urusannya kak"},
         {"nama": "Afifah Fauziah", "jabatan": "Kepala Divisi Kemitraan", "nim": "12345002", "umur": "19", "asal": "Sumatera Barat", "alamat": "Airan", "hobbi": "Nonton Marvel", "sosmed": "@fifah.zy", "kesan": "Kakaknya ramah baik dan tidak sombong", "pesan": "Semoga tamat nonton marvelnya kak!"},
@@ -379,4 +378,3 @@ elif menu == "Departemen MINBAK":
         {"nama": "Muhammad Rafka Fatih Al Ghathfaan", "jabatan": "Staf Manajemen Minat dan Bakat", "nim": "124450089", "umur": "20", "asal": "Padang", "alamat": "Kota Baru", "hobbi": "Bangun Pagi", "sosmed": "@muhammdrafka_", "kesan": "Abangnya keliatan tenang dan kalem gitu", "pesan": "Tetap jadi morning person bang"}
     ]
     display_images_with_data(gambar_urls, data_list, key="minbak")
-
