@@ -1481,21 +1481,21 @@ if menu == "Departemen Eksternal":
 if menu == "Departemen Minbak":
     def Departemen_Minbak():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=14yfo0rLuX9hIbbzzk-sIRD3B028ludQY", #Kadep
+            "https://drive.google.com/uc?export=view&id=1YGOzflTGYzBPFouHvgMCoB4HPyktU951", #Sekdep
+            "https://drive.google.com/uc?export=view&id=1ndP90TTpUPdJHyzvTRCZuE2qm4N3eHUp", #Kadiv mankom
+            "https://drive.google.com/uc?export=view&id=1CkW46S194EIjcmW4Zr9yHx9AU5GLQcuu",
+            "https://drive.google.com/uc?export=view&id=19pe8RN_HEv1FT-FZa0WsHY5u8ZX-cnSR",
+            "https://drive.google.com/uc?export=view&id=1w3zXLCaXuIfV5CbswLqqepmA3PvumLye",
+            "https://drive.google.com/uc?export=view&id=1nwJkZj065k1gumUAboUoEqnUK8od9Nbe",
+            "https://drive.google.com/uc?export=view&id=12SoE1C-WaY3BXdHP3yqtRWivtBZ7J2-l",
+            "https://drive.google.com/uc?export=view&id=1dT1cz0z9j9NXmeui24paeSY2mjazljcR", #Kadiv manjakat
+            "https://drive.google.com/uc?export=view&id=1Jm9QUkk0Z7fBz7xhNyB245p9Y2zU4IkF",
+            "https://drive.google.com/uc?export=view&id=1KqGFbaNwjO9UuCmtDLckgKEHjcDtkgnQ",
+            "https://drive.google.com/uc?export=view&id=1tYguC13-ihNBKYBrdl9EotMm6n5BZf8i",
+            "https://drive.google.com/uc?export=view&id=12-WQi6qUsgwsFpRhMSDz8mocZG4K_-3U",
+            "https://drive.google.com/uc?export=view&id=1D8g1gpfrppQk6VX9rrbgpb_aVArbNrWg",
+            "https://drive.google.com/uc?export=view&id=1a_045yw14M5Rk5l0c_mPQlDdgU_0VeVm",
         ]
         data_list = [
             {
@@ -1506,8 +1506,8 @@ if menu == "Departemen Minbak":
                 "alamat": "Panjang, Bandar Lampung",
                 "hobbi": "Balap",
                 "sosmed": "@kevinaj__",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Bang Kevin ini orangnya baik, ramah dan keren",
+                "pesan": "Semangat dan sehat selalu bang, gapai semuanya yang di cita-citakan!!!"
             },
             {
                 "nama": "Gusti Putu Ferazka Dhiyamika",
