@@ -1091,8 +1091,8 @@ if menu == "Departemen Eksternal":
                 "alamat": "bandar Lampung",
                 "hobbi": "Berlaku humoris dan manis",
                 "sosmed": "@bimayasa_",
-                "kesan": "bang bima keren banget, ramah, dan baik",  
-                "pesan":"Semangat terus bang kulaihnya semoga lancar selalu"# 8
+                "kesan": "bang bima keren banget, ramah, dan baik selama magang bang bima mengayomi banget!",  
+                "pesan":"Semangat terus bang kuliahnya semoga lancar selalu, aamiin."# 8
             },
             {
                 "nama": "Ahmad Bimo Akbar Arkana",
