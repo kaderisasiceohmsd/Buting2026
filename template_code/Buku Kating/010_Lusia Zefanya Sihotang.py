@@ -928,7 +928,7 @@ elif menu == "Departemen PSDA":
     DepartemenPSDA()
 
 
-elif menu == "Departemen Senator":
+elif menu == "Senator":
     def DepartemenSenator():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1LkhFXq5faxyG3i9ou5XjLDUY0GGExhyB", #fathinah
