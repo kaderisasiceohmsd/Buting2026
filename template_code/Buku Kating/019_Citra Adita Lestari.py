@@ -263,7 +263,7 @@ if menu == "Senator":
             "https://drive.google.com/uc?export=view&id=17xJk_Q3cjute8S6KKy93ecivzhfGP_15",
             "https://drive.google.com/uc?export=view&id=1WhBeWJU0iQC_f4BiRA933C5l3H9-dN21",
             "https://drive.google.com/uc?export=view&id=1b7T-1KjnFGjPDXY98rQ2-BWuph-7X_w9",
-            "https://drive.google.com/uc?export=view&id=15HSwWVkNK3r53fv7rvArtWSPcqoAZHt6",
+            "https://drive.google.com/uc?export=view&id=1M--QLeqFcAH-v_3ofKRnOJxU9qcmzWdx",
             "https://drive.google.com/uc?export=view&id=1U87Vb1CrpyjL6QXT5l075HcuHTUZgpNB",
             "https://drive.google.com/uc?export=view&id=1uzIun3PUbzwZ-pXTLCcdxklKpE-7Mgoe",
             "https://drive.google.com/uc?export=view&id=12Sm0qqncAbWRTw4Mmf6Klml1lJVFh4MR",
