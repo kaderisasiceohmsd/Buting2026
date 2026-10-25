@@ -1171,7 +1171,7 @@ if menu == "Departemen PSDA":
             {
                 "Nama": "Haikal Seventino Tamba",
                 "NIM": "124450032",
-                "Umur": "Tinggi Yosep - 170",
+                "Umur": "18",
                 "Asal":"Jambi",
                 "Alamat": "Belakang Pemancingan",
                 "Hobi": "Goreng Ayam",
