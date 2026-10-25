@@ -705,7 +705,7 @@ if menu == "Departemen SSD":
                 "asal":"Jakarta",
                 "alamat": "Pemda",
                 "hobbi": "Nonton",
-                "sosmed": "-",
+                "sosmed": "@talljtine_",
                 "kesan": "Kak Talitha ramahhh dan baik banget. Senang bisa kenal sama Kak Talitha",  
                 "pesan":"Semoga selalu ketemu hal-hal baik di setiap langkahnya, Kak. Jangan lupa bahagiaa"
             },
@@ -713,7 +713,7 @@ if menu == "Departemen SSD":
                 "nama": "Abdilah Fikri Alpome",
                 "nim": "123450062",
                 "umur": "21",
-                "asal":"Baturaja Sumatera Selatan ",
+                "asal":"Baturaja, Sumatera Selatan ",
                 "alamat": "Airan ",
                 "hobbi": "Basket ",
                 "sosmed": "@pomest__",
