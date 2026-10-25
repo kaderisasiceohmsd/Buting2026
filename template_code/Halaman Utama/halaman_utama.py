@@ -8,7 +8,7 @@ from utils import load_image, image_data_uri
 
 
 # ============================================================
-# 🎨 CUSTOM CSS HALAMAN UTAMA (UTUH 100% ASLI + TAMBAHAN MENTOR)
+# 🎨 CUSTOM CSS HALAMAN UTAMA (FIXED & RESPONSIVE)
 # ============================================================
 HALAMAN_UTAMA_CSS = """
 <style>
@@ -27,6 +27,7 @@ html, body, [class*="css"] {
     background-attachment: fixed;
 }
 
+/* --- TITLE & HEADER --- */
 .main-title {
     text-align: center;
     font-family: 'Playfair Display', serif;
@@ -52,7 +53,6 @@ html, body, [class*="css"] {
     background: linear-gradient(90deg, transparent, #701c23, transparent);
     border-radius: 3px;
 }
-
 .main-subtitle {
     text-align: center;
     font-family: 'Inter', sans-serif;
@@ -64,7 +64,6 @@ html, body, [class*="css"] {
     margin-bottom: 30px;
     margin-top: 6px;
 }
-
 .section-title {
     text-align: center;
     font-family: 'Playfair Display', serif;
@@ -89,10 +88,7 @@ html, body, [class*="css"] {
     background: linear-gradient(135deg, #ffffff 0%, #fdfbf8 100%);
     padding: 38px 42px;
     border-radius: 20px;
-    box-shadow:
-        0 1px 0 rgba(255,255,255,0.9) inset,
-        0 10px 30px rgba(112,28,35,0.07),
-        0 2px 8px rgba(112,28,35,0.04);
+    box-shadow: 0 10px 30px rgba(112,28,35,0.07);
     border: 1px solid rgba(217,195,163,0.55);
     margin-bottom: 38px;
     text-align: justify;
@@ -115,97 +111,50 @@ html, body, [class*="css"] {
     letter-spacing: 0.2px;
 }
 
+/* --- HOME PHOTO CARD --- */
 .photo-card {
     position: relative;
     overflow: hidden;
     border-radius: 16px;
-    box-shadow:
-        0 4px 14px rgba(112,28,35,0.10),
-        0 1px 3px rgba(0,0,0,0.05);
     border: 1px solid rgba(217,195,163,0.7);
     margin-bottom: 22px;
     height: 210px;
     background-color: #ffffff;
-    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
-                box-shadow 0.4s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 .photo-card:hover {
     transform: translateY(-6px);
-    box-shadow:
-        0 18px 40px rgba(112,28,35,0.22),
-        0 4px 12px rgba(112,28,35,0.12);
+    box-shadow: 0 18px 40px rgba(112,28,35,0.22);
 }
 .photo-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1),
-                filter 0.5s ease;
-    filter: saturate(1) brightness(1);
+    transition: transform 0.7s ease;
 }
-.photo-card:hover img {
-    transform: scale(1.1);
-    filter: saturate(1.15) brightness(1.05);
-}
-.photo-card::after {
-    content: '';
-    position: absolute;
-    top: 0; left: -75%;
-    width: 50%; height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent 0%,
-        rgba(255,255,255,0.35) 50%,
-        transparent 100%
-    );
-    transform: skewX(-20deg);
-    transition: left 0.7s ease;
-    pointer-events: none;
-}
-.photo-card:hover::after {
-    left: 125%;
-}
+.photo-card:hover img { transform: scale(1.1); }
 .photo-card .overlay {
     position: absolute;
     bottom: 0; left: 0; right: 0;
-    background: linear-gradient(
-        to top,
-        rgba(112,28,35,0.97) 0%,
-        rgba(112,28,35,0.85) 55%,
-        transparent 100%
-    );
+    background: linear-gradient(to top, rgba(112,28,35,0.97), transparent);
     color: #ffffff;
     padding: 26px 14px 14px 14px;
     opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.4s ease, transform 0.4s ease;
     text-align: center;
+    transition: opacity 0.4s ease;
 }
-.photo-card:hover .overlay {
-    opacity: 1;
-    transform: translateY(0);
-}
-.photo-card .overlay-title {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-size: 15px;
-    color: #f4f0eb;
-    margin-bottom: 4px;
-    letter-spacing: 0.4px;
-}
-.photo-card .overlay-desc {
-    font-size: 11.5px;
-    line-height: 1.4;
-    color: rgba(244,240,235,0.92);
-    font-weight: 400;
-}
+.photo-card:hover .overlay { opacity: 1; }
+.photo-card .overlay-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 15px; }
+.photo-card .overlay-desc { font-size: 11.5px; }
 
+/* --- FLIP CARD UTAMA (Tengah & Responsive) --- */
 .flip-card {
     background-color: transparent;
     width: 100%;
-    height: 380px;
+    max-width: 280px; /* Diperkecil agar tidak terlalu lebar */
+    height: 360px;
     perspective: 1600px;
-    margin-bottom: 24px;
+    margin: 0 auto 24px auto; /* Center otomatis */
     position: relative;
 }
 .flip-card-inner {
@@ -213,17 +162,14 @@ html, body, [class*="css"] {
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1);
     transform-style: preserve-3d;
     border-radius: 18px;
-    box-shadow:
-        0 10px 28px rgba(112,28,35,0.10),
-        0 2px 8px rgba(112,28,35,0.06);
+    box-shadow: 0 10px 28px rgba(112,28,35,0.10);
 }
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
-
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -232,73 +178,26 @@ html, body, [class*="css"] {
     backface-visibility: hidden;
     border-radius: 18px;
     overflow: hidden;
-}
-
-.flip-card-front {
-    background:
-        radial-gradient(circle at 50% 0%, rgba(217,195,163,0.35) 0%, transparent 55%),
-        linear-gradient(165deg, #ffffff 0%, #fdf9f3 60%, #f6efe4 100%);
-    color: #701c23;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 16px 16px 16px;
-    box-sizing: border-box;
+    justify-content: center; /* Konten ke tengah vertikal */
+    align-items: center;     /* Konten ke tengah horizontal */
+}
+.flip-card-front {
+    background: linear-gradient(165deg, #ffffff 0%, #fdf9f3 60%, #f6efe4 100%);
+    color: #701c23;
+    padding: 20px 16px;
     border: 1px solid rgba(217,195,163,0.75);
-    box-shadow:
-        0 0 0 1px rgba(255,255,255,0.9) inset,
-        0 0 40px rgba(217,195,163,0.20) inset;
 }
-
-.flip-card-front::before,
-.flip-card-front::after {
-    content: '';
-    position: absolute;
-    width: 28px;
-    height: 28px;
-    border: 2px solid #701c23;
-    opacity: 0.55;
-    transition: all 0.5s ease;
-}
-.flip-card-front::before {
-    top: 10px; left: 10px;
-    border-right: none;
-    border-bottom: none;
-    border-top-left-radius: 10px;
-}
-.flip-card-front::after {
-    bottom: 10px; right: 10px;
-    border-left: none;
-    border-top: none;
-    border-bottom-right-radius: 10px;
-}
-.flip-card:hover .flip-card-front::before,
-.flip-card:hover .flip-card-front::after {
-    width: 38px;
-    height: 38px;
-    opacity: 0.85;
-    border-color: #a8323d;
-}
-
 .flip-card-front .photo-frame {
     position: relative;
-    width: 148px;
-    height: 180px;
+    width: 130px; /* Ukuran foto proporsional */
+    height: 160px;
     margin-bottom: 14px;
     border-radius: 12px;
     padding: 4px;
     background: linear-gradient(135deg, #701c23 0%, #d9c3a3 50%, #701c23 100%);
-    box-shadow:
-        0 8px 22px rgba(112,28,35,0.26),
-        0 3px 8px rgba(112,28,35,0.15);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-.flip-card:hover .flip-card-front .photo-frame {
-    transform: scale(1.04) translateY(-2px);
-    box-shadow:
-        0 14px 32px rgba(112,28,35,0.36),
-        0 4px 12px rgba(112,28,35,0.22);
+    box-shadow: 0 8px 22px rgba(112,28,35,0.26);
 }
 .flip-card-front .photo-frame img {
     width: 100%;
@@ -306,183 +205,131 @@ html, body, [class*="css"] {
     object-fit: cover;
     border-radius: 9px;
     display: block;
-    filter: saturate(1.02) contrast(1.03);
 }
-
 .flip-card-front h4 {
     margin: 2px 0 6px 0;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: #701c23;
-    font-size: 15.5px;
+    font-size: 16px;
     letter-spacing: 0.3px;
     line-height: 1.25;
-    max-width: 92%;
+    text-align: center; /* Nama center */
+    width: 100%;
 }
-
 .flip-card-front .role-badge {
     display: inline-block;
-    padding: 3px 12px;
-    font-size: 9.5px;
+    padding: 4px 14px;
+    font-size: 10px;
     font-weight: 700;
     letter-spacing: 1.3px;
     text-transform: uppercase;
     border-radius: 999px;
     background: linear-gradient(135deg, #701c23 0%, #a8323d 100%);
     color: #f4f0eb;
-    box-shadow: 0 3px 10px rgba(112,28,35,0.30);
     margin-bottom: 4px;
 }
 .flip-card-front .role-badge.anggota {
     background: linear-gradient(135deg, #d9c3a3 0%, #c4a882 100%);
     color: #4e1318;
-    box-shadow: 0 3px 10px rgba(217,195,163,0.45);
 }
-
 .flip-card-front .flip-hint {
     font-size: 9px;
     color: #a89790;
-    letter-spacing: 1.3px;
     text-transform: uppercase;
-    margin-top: 3px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    opacity: 0.85;
-}
-.flip-card-front .flip-hint::before,
-.flip-card-front .flip-hint::after {
-    content: '';
-    width: 12px;
-    height: 1px;
-    background: #a89790;
-    opacity: 0.5;
+    margin-top: 5px;
 }
 
 .flip-card-back {
-    background:
-        radial-gradient(circle at 30% 20%, rgba(217,195,163,0.18) 0%, transparent 50%),
-        radial-gradient(circle at 80% 90%, rgba(168,50,61,0.35) 0%, transparent 55%),
-        linear-gradient(150deg, #701c23 0%, #4e1318 55%, #2d0a0d 100%);
+    background: linear-gradient(150deg, #701c23 0%, #4e1318 100%);
     color: #ffffff;
     transform: rotateY(180deg);
     text-align: left;
-    padding: 20px 18px 18px 18px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+    padding: 20px;
     justify-content: center;
-    border: 1px solid rgba(217,195,163,0.4);
-    box-shadow:
-        0 0 0 1px rgba(217,195,163,0.15) inset,
-        0 0 60px rgba(0,0,0,0.35) inset;
 }
-
-.flip-card-back::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: radial-gradient(rgba(217,195,163,0.15) 1px, transparent 1px);
-    background-size: 12px 12px;
-    opacity: 0.5;
-    pointer-events: none;
-    border-radius: 18px;
-}
-
-.flip-card-back::after {
-    content: '"';
-    position: absolute;
-    top: -6px;
-    right: 16px;
-    font-family: 'Playfair Display', serif;
-    font-size: 70px;
-    color: rgba(217,195,163,0.18);
-    line-height: 1;
-    pointer-events: none;
-}
-
 .flip-card-back h4 {
-    position: relative;
     font-family: 'Playfair Display', serif;
     color: #d9c3a3;
     font-weight: 700;
-    margin: 0 0 4px 0;
-    font-size: 16px;
-    letter-spacing: 0.3px;
-    line-height: 1.2;
-    z-index: 1;
+    margin: 0 0 10px 0;
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
 }
 .flip-card-back .back-role {
-    position: relative;
-    font-size: 9px;
+    font-size: 10px;
     font-weight: 700;
-    letter-spacing: 1.8px;
-    text-transform: uppercase;
     color: #f4f0eb;
     opacity: 0.85;
-    margin-bottom: 12px;
-    z-index: 1;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
 }
-
 .flip-card-back .divider {
-    position: relative;
     width: 100%;
     height: 1px;
     background: linear-gradient(90deg, transparent, #d9c3a3, transparent);
-    margin-bottom: 12px;
-    z-index: 1;
+    margin-bottom: 15px;
 }
-.flip-card-back .divider::after {
-    content: '◆';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: #d9c3a3;
-    font-size: 7px;
-    background: #4e1318;
-    padding: 0 8px;
-}
-
 .flip-card-back p {
-    position: relative;
-    font-size: 11.5px;
-    margin: 0 0 6px 0;
+    font-size: 12px;
+    margin: 0 0 8px 0;
     line-height: 1.4;
     color: rgba(255,255,255,0.95);
-    padding: 6px 10px;
+    padding: 8px 12px;
     border-radius: 8px;
     background: rgba(255,255,255,0.05);
     border-left: 2px solid #d9c3a3;
-    z-index: 1;
-    transition: background 0.3s ease, border-color 0.3s ease;
-}
-.flip-card-back p:hover {
-    background: rgba(217,195,163,0.12);
-    border-left-color: #f4f0eb;
-}
-.flip-card-back p:last-child {
-    margin-bottom: 0;
+    width: 100%;
 }
 .flip-card-back .label {
     display: block;
     font-weight: 700;
     color: #d9c3a3;
-    letter-spacing: 1.2px;
     text-transform: uppercase;
-    font-size: 8.5px;
-    margin-bottom: 1px;
+    font-size: 9px;
+    margin-bottom: 2px;
 }
 
+/* --- CSS KHUSUS MENTOR --- */
+.mentor-flip-card {
+    height: 400px;
+    max-width: 320px; /* Sedikit lebih besar dari anggota */
+}
+.mentor-flip-card .flip-card-front {
+    border: 2px solid #b8912e;
+    background: linear-gradient(165deg, #fffdf5 0%, #fdf4e3 100%);
+}
+.mentor-flip-card .photo-frame {
+    width: 150px;
+    height: 190px;
+    background: linear-gradient(135deg, #b8912e 0%, #e8c874 50%, #b8912e 100%);
+}
+.mentor-flip-card h4 {
+    font-size: 19px;
+    color: #b8912e;
+}
+.mentor-flip-card .role-badge {
+    background: linear-gradient(135deg, #b8912e, #e8c874);
+    color: #4e1318;
+    font-size: 11px;
+    padding: 6px 18px;
+}
+.mentor-flip-card .flip-card-back {
+    background: linear-gradient(150deg, #b8912e 0%, #8a6a1f 100%);
+}
+.mentor-flip-card .flip-card-back h4 { color: #ffffff; }
+.mentor-flip-card .flip-card-back .label { color: #ffffff; }
+.mentor-flip-card .flip-card-back p { border-left-color: #ffffff; }
+
+/* --- HERO IMAGE --- */
 .hero-image-wrapper {
     position: relative;
     max-width: 1000px;
     margin: 0 auto 28px auto;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow:
-        0 20px 45px rgba(112,28,35,0.18),
-        0 6px 14px rgba(112,28,35,0.10);
     border: 1px solid rgba(217,195,163,0.65);
 }
 .hero-image-wrapper img {
@@ -490,106 +337,39 @@ html, body, [class*="css"] {
     height: 380px;
     object-fit: cover;
     display: block;
-    filter: saturate(1.05) contrast(1.02);
 }
 .hero-image-wrapper .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        to top,
-        rgba(112,28,35,0.85) 0%,
-        rgba(112,28,35,0.35) 40%,
-        transparent 75%
-    );
+    background: linear-gradient(to top, rgba(112,28,35,0.85) 0%, transparent 75%);
     pointer-events: none;
 }
 .hero-image-wrapper .hero-caption {
     position: absolute;
-    bottom: 26px;
-    left: 30px;
-    right: 30px;
-    color: #f4f0eb;
+    bottom: 26px; left: 30px; right: 30px; color: #f4f0eb;
 }
 .hero-image-wrapper .hero-badge {
     display: inline-block;
     padding: 4px 14px;
     background: rgba(244,240,235,0.15);
     backdrop-filter: blur(8px);
-    border: 1px solid rgba(217,195,163,0.6);
     border-radius: 999px;
     font-size: 10px;
     font-weight: 700;
-    letter-spacing: 2.2px;
-    text-transform: uppercase;
     color: #f4f0eb;
     margin-bottom: 10px;
 }
 .hero-image-wrapper .hero-caption h3 {
     font-family: 'Playfair Display', serif;
     font-size: 26px;
-    font-weight: 700;
     margin: 0;
-    letter-spacing: 0.4px;
     color: #ffffff;
-    text-shadow: 0 2px 12px rgba(0,0,0,0.35);
 }
 .hero-image-wrapper .hero-caption p {
     font-size: 12.5px;
     margin: 6px 0 0 0;
     color: rgba(244,240,235,0.9);
-    letter-spacing: 0.3px;
 }
-
-/* ============================================================
-   ✨ CSS TAMBAHAN KHUSUS UNTUK MENTOR ✨
-   ============================================================ */
-.mentor-flip-card {
-    height: 420px;
-    max-width: 400px;
-    margin: 0 auto 40px auto;
-}
-.mentor-flip-card .flip-card-front {
-    border: 2px solid #b8912e;
-    background: linear-gradient(165deg, #fffdf5 0%, #fdf4e3 100%);
-}
-.mentor-flip-card .photo-frame {
-    width: 180px;
-    height: 220px;
-    background: linear-gradient(135deg, #b8912e 0%, #e8c874 50%, #b8912e 100%);
-}
-.mentor-flip-card h4 {
-    font-size: 20px;
-    color: #b8912e;
-}
-.mentor-flip-card .role-badge {
-    background: linear-gradient(135deg, #b8912e, #e8c874);
-    color: #4e1318;
-    font-size: 11px;
-    padding: 5px 16px;
-}
-.mentor-flip-card .flip-card-back {
-    background:
-        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.2) 0%, transparent 50%),
-        linear-gradient(150deg, #b8912e 0%, #8a6a1f 100%);
-}
-.mentor-flip-card .flip-card-back h4,
-.mentor-flip-card .flip-card-back .label {
-    color: #fdf4e3;
-}
-.mentor-flip-card .flip-card-back p {
-    border-left-color: #fdf4e3;
-}
-
-::-webkit-scrollbar { width: 10px; }
-::-webkit-scrollbar-track { background: #f4f0eb; }
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #701c23, #a8323d);
-    border-radius: 10px;
-    border: 2px solid #f4f0eb;
-}
-::-webkit-scrollbar-thumb:hover { background: #701c23; }
-
-.block-container { padding-top: 2rem !important; }
 </style>
 """
 
@@ -599,7 +379,7 @@ st.markdown(HALAMAN_UTAMA_CSS, unsafe_allow_html=True)
 # ============================================================
 # HERO IMAGE HELPER
 # ============================================================
-def hero_image(url, badge="✦ Keluarga Poisson ✦", title="Satu Tim, Satu Cerita", subtitle="Momen kebersamaan yang menjadi awal dari segalanya."):
+def hero_image(url, title="Satu Tim, Satu Cerita", subtitle="Momen kebersamaan."):
     img_src = image_data_uri(url, max_dim=1200, quality=85)
     if not img_src:
         return
@@ -608,7 +388,7 @@ def hero_image(url, badge="✦ Keluarga Poisson ✦", title="Satu Tim, Satu Ceri
             <img src="{img_src}" alt="{html.escape(title, quote=True)}">
             <div class="hero-overlay"></div>
             <div class="hero-caption">
-                <div class="hero-badge">{html.escape(badge)}</div>
+                <div class="hero-badge">✦ Keluarga Poisson ✦</div>
                 <h3>{html.escape(title)}</h3>
                 <p>{html.escape(subtitle)}</p>
             </div>
@@ -647,7 +427,7 @@ st.markdown("<div style='margin-top: 50px;'></div>", unsafe_allow_html=True)
 menu = option_menu(
     menu_title=None, options=["Home", "About Us"], icons=["house-door", "hand-index"], default_index=0, orientation="horizontal",
     styles={
-        "container": {"padding": "10px!important", "background-color": "rgba(255,255,255,0.85)", "border-radius": "14px", "border": "1px solid rgba(217,195,163,0.6)", "margin-bottom": "38px"},
+        "container": {"background-color": "rgba(255,255,255,0.85)", "border-radius": "14px", "border": "1px solid rgba(217,195,163,0.6)", "margin-bottom": "38px"},
         "nav-link-selected": {"background": "linear-gradient(135deg, #701c23 0%, #a8323d 100%)", "color": "#ffffff"}
     }
 )
@@ -663,7 +443,7 @@ if menu == "Home":
     st.markdown("""
         <div class='content-box'>
             <b>Selamat datang di portal resmi kelompok Poisson!</b><br><br>
-            Kelompok kami merupakan wadah kolaborasi, kebersamaan, dan dedikasi tinggi dalam menjalani rangkaian kegiatan pengenalan kampus dan penugasan Buku Kating. Di sini, kami tidak hanya belajar menyelesaikan setiap tantangan akademik secara bersama-sama, tetapi juga membangun ikatan kekeluargaan yang erat, saling mendukung dalam setiap proses adaptasi, serta menjunjung tinggi nilai solidaritas dan profesionalisme sebagai bagian dari keluarga besar HMSD Adyatama ITERA.
+            Kelompok kami merupakan wadah kolaborasi, kebersamaan, dan dedikasi tinggi dalam menjalani rangkaian kegiatan pengenalan kampus dan penugasan Buku Kating.
         </div>
     """, unsafe_allow_html=True)
 
@@ -697,16 +477,9 @@ if menu == "Home":
                             </div>
                         """, unsafe_allow_html=True)
 
-    st.markdown("""
-        <div class='content-box'>
-            <b>Komitmen Kami:</b><br>
-            Kami berkomitmen penuh untuk terus bergerak seirama, saling menguatkan dalam menghadapi dinamika perkuliahan, serta menyelesaikan seluruh rangkaian tanggung jawab dengan hasil yang terbaik dan membanggakan.
-        </div>
-    """, unsafe_allow_html=True)
-
 
 # ============================================================
-# ABOUT US PAGE (Mentor Ditaruh di Atas)
+# ABOUT US PAGE
 # ============================================================
 elif menu == "About Us":
     st.markdown("<h2 class='section-title'>Our Mentor</h2>", unsafe_allow_html=True)
@@ -719,10 +492,10 @@ elif menu == "About Us":
         "fun_fact": "Pernah ngoding sampai 12 jam",
         "motto_hidup": "Motivasi hari ini adalah motivasi untuk esok"
     }
-    mentor_img_url = "https://drive.google.com/uc?export=view&id=1UJWhabFk6lWj7fylxUR6apqPbZHvoCoz" # Ganti URL ini
+    mentor_img_url = "https://drive.google.com/uc?export=view&id=1UJWhabFk6lWj7fylxUR6apqPbZHvoCoz"
 
-    # Tampilkan Mentor (Full width kolom tengah)
-    col_mid1, col_mid2, col_mid3 = st.columns([1, 2, 1])
+    # Tampilkan Mentor (Posisi di Tengah)
+    col_mid1, col_mid2, col_mid3 = st.columns([1, 1.5, 1])
     with col_mid2:
         img_src = image_data_uri(mentor_img_url, max_dim=1200, quality=85)
         if img_src:
@@ -739,6 +512,8 @@ elif menu == "About Us":
                         </div>
                         <div class="flip-card-back">
                             <h4>{mentor['nama']}</h4>
+                            <div class="back-role">{mentor['sebagai']}</div>
+                            <div class="divider"></div>
                             <p><span class="label">NIM</span>{mentor['nim']}</p>
                             <p><span class="label">Fun Fact</span>{mentor['fun_fact']}</p>
                             <p><span class="label">Motto Hidup</span>{mentor['motto_hidup']}</p>
@@ -749,15 +524,16 @@ elif menu == "About Us":
 
     st.markdown("<h2 class='section-title'>Anggota Kelompok</h2>", unsafe_allow_html=True)
 
+    # ─── DATA ANGGOTA ───
     gambar_urls = [
         "https://drive.google.com/uc?export=view&id=1OZWQEzUE1biYVl5igEDRCdqYE1Kdculc",
-        "https://drive.google.com/uc?export=view&id=1VZfU_oBz3w68OXo4xKuAQ14wcS7wtC4E",
         "https://drive.google.com/uc?export=view&id=1DF_qQCOIFDvyjG5SEOL8DURaTbjy1OWc",
         "https://drive.google.com/uc?export=view&id=19FctJT5o6JBmGICiSu15NAIwLR4VFhW_",
         "https://drive.google.com/uc?export=view&id=1jDU86oPLsjea0l0FiwbVjF6Esuekw4MG",
         "https://drive.google.com/uc?export=view&id=1OOVOfx6v2WEL_lPFwtqt_2Pnp9dmZNAU",
         "https://drive.google.com/uc?export=view&id=1OcyHkxkcelFVtIa2oc0fF1aO85im1_Vp",
         "https://drive.google.com/uc?export=view&id=1K1XEcndMVCAyAFS2i6j8SlWriPLSNAau",
+        "https://drive.google.com/uc?export=view&id=1VZfU_oBz3w68OXo4xKuAQ14wcS7wtC4E",
         "https://drive.google.com/uc?export=view&id=1VZfU_oBz3w68OXo4xKuAQ14wcS7wtC4E",
         "https://drive.google.com/uc?export=view&id=1VZfU_oBz3w68OXo4xKuAQ14wcS7wtC4E",
         "https://drive.google.com/uc?export=view&id=1VZfU_oBz3w68OXo4xKuAQ14wcS7wtC4E",
