@@ -1,15 +1,487 @@
-import streamlit as st
-from streamlit_option_menu import option_menu
-import requests
-from PIL import Image, ImageOps
+import re
+import base64
+import html
+import random
 from io import BytesIO
+from concurrent.futures import ThreadPoolExecutor
 
-st.markdown("""<style>.centered-title {text-align: center;}</style>""",unsafe_allow_html=True)
-st.markdown("<h1 class='centered-title'>BUKU KATING</h1>", unsafe_allow_html=True)
+import requests
+import streamlit as st
+from PIL import Image, ImageOps
+from streamlit_option_menu import option_menu
 
-# bagian sini jangan diubah
+# ==================================================
+# KONFIGURASI HALAMAN
+# ==================================================
+st.set_page_config(
+    page_title="Buku Kating HMSD",
+    page_icon="💙",
+    layout="wide"
+)
+
+# ==================================================
+# CSS (Desain dari Afdhi + Tambahan Lencana & Game)
+# ==================================================
+st.markdown("""
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap');
+
+:root {
+    --bg: #0d214d;
+    --accent: #1769e8;
+    --sky: #5ea2ff;
+    --light: #a3c4f3;
+    --dim: #cad8f2;
+    --line: rgba(163, 196, 243, 0.18);
+    --gold1: #fff0b3;
+    --gold2: #f6c744;
+    --gold3: #d8960f;
+}
+
+.stApp {
+    background:
+        radial-gradient(900px 480px at 10% -10%, rgba(23, 105, 232, 0.34), transparent 60%),
+        radial-gradient(800px 460px at 100% 0%, rgba(36, 88, 200, 0.28), transparent 58%),
+        linear-gradient(180deg, #0d214d 0%, #0a1a42 100%);
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+header[data-testid="stHeader"] { background: transparent; }
+footer, #MainMenu { visibility: hidden; }
+
+.block-container {
+    max-width: 1220px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* ---------- HERO ---------- */
+.hero { text-align: center; margin-bottom: 26px; }
+
+.hero-eyebrow {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--light);
+    padding: 6px 16px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.09), rgba(255,255,255,0.02));
+    margin-bottom: 14px;
+}
+
+.hero-title {
+    font-family: 'Sora', sans-serif;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin: 0 0 6px 0;
+    background: linear-gradient(180deg, #ffffff 30%, #a9cbff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 4px 20px rgba(23, 105, 232, 0.5));
+}
+
+.hero-sub { color: var(--light); font-size: 15px; margin: 0; }
+
+/* ---------- JUDUL BAGIAN ---------- */
+.section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 26px 0 14px 0;
+}
+
+.section-head h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+}
+
+.count-chip {
+    font-size: 12px;
+    font-weight: 700;
+    color: #dbe8ff;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(23,105,232,0.38), rgba(23,105,232,0.12));
+    border: 1px solid rgba(94, 162, 255, 0.45);
+}
+
+/* ---------- INPUT CARI ---------- */
+.stTextInput input {
+    background: linear-gradient(135deg, #0c1d4a, #081431) !important;
+    color: #fff !important;
+    border: 1px solid #1f3e82 !important;
+    border-radius: 14px !important;
+    padding: 12px 16px !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+.stTextInput input:focus {
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 0 3px rgba(23, 105, 232, 0.28) !important;
+}
+
+/* ---------- KARTU PROFIL (GRADASI) ---------- */
+.profile-card {
+    display: grid;
+    grid-template-columns: 400px minmax(0, 1fr);
+    min-height: 520px;
+    border-radius: 28px;
+    overflow: hidden;
+    background:
+        radial-gradient(620px 320px at 100% 0%, rgba(94, 162, 255, 0.30), transparent 62%),
+        radial-gradient(520px 320px at 35% 115%, rgba(23, 105, 232, 0.38), transparent 62%),
+        linear-gradient(135deg, #1b52c9 0%, #133f99 32%, #0d2c70 68%, #081c50 100%);
+    box-shadow:
+        inset 0 0 0 1px rgba(120, 175, 255, 0.30),
+        inset 0 1px 0 rgba(255, 255, 255, 0.14),
+        0 18px 40px rgba(0, 0, 0, 0.42);
+    margin-bottom: 32px;
+    transition: transform .25s ease, box-shadow .25s ease;
+    animation: rise .5s ease both;
+}
+
+.profile-card:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        inset 0 0 0 1px rgba(140, 190, 255, 0.55),
+        inset 0 1px 0 rgba(255, 255, 255, 0.18),
+        0 26px 55px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes rise {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- SISI FOTO ---------- */
+.photo-pane {
+    position: relative;
+    min-height: 520px;
+    background: linear-gradient(160deg, #2a7bff 0%, #1244a8 55%, #0a2a6e 100%);
+    border-right: 1px solid var(--line);
+}
+
+.photo-pane img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 18%;
+}
+
+.photo-pane::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(8, 28, 80, 0.25) 0%, transparent 25%, transparent 62%, rgba(8, 28, 80, 0.7) 100%);
+    pointer-events: none;
+}
+
+.card-index {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 2;
+    font-family: 'Sora', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    background: rgba(8, 20, 49, 0.72);
+    color: #fff;
+    border: 1px solid var(--line);
+    backdrop-filter: blur(6px);
+}
+
+.avatar-fallback {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.avatar-fallback span {
+    font-family: 'Sora', sans-serif;
+    font-size: 5.5rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: rgba(255, 255, 255, 0.92);
+    text-shadow: 0 6px 24px rgba(5, 20, 70, 0.5);
+}
+
+.avatar-fallback small { color: var(--dim); font-size: 12px; letter-spacing: 1px; }
+
+/* ---------- SISI BIODATA ---------- */
+.info-pane {
+    min-width: 0;
+    padding: 40px 48px 40px 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 26px;
+}
+
+.profile-name {
+    font-family: 'Sora', sans-serif;
+    font-size: clamp(1.5rem, 2.6vw, 2.2rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 14px 0;
+    word-break: break-word;
+    background: linear-gradient(180deg, #ffffff 40%, #c4dcff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ---------- LENCANA JABATAN ---------- */
+.jabatan-badge {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 9px 20px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #3a2a00;
+    background: linear-gradient(135deg, var(--gold1), var(--gold2) 45%, var(--gold3));
+    box-shadow: 0 6px 20px rgba(246, 199, 68, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.65);
+    margin-bottom: 16px;
+}
+
+.jabatan-badge::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.65), transparent);
+    transform: skewX(-20deg);
+    animation: shine 3.6s ease-in-out infinite;
+}
+
+@keyframes shine {
+    0%   { left: -60%; }
+    55%  { left: 130%; }
+    100% { left: 130%; }
+}
+
+.jabatan-star { font-size: 13px; }
+
+/* ---------- GRID INFO ---------- */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+}
+
+.info-tile {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.03));
+    border: 1px solid rgba(163, 196, 243, 0.16);
+    border-radius: 14px;
+    padding: 13px 15px;
+}
+
+.info-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--light);
+    margin-bottom: 5px;
+}
+
+.info-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.45;
+    word-break: break-word;
+}
+
+.social-chip {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(23, 105, 232, 0.5), rgba(23, 105, 232, 0.2));
+    border: 1px solid rgba(94, 162, 255, 0.6);
+    color: #e3eeff;
+}
+
+/* ---------- KESAN & PESAN ---------- */
+.quote-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    align-items: start;
+}
+
+.quote-box {
+    border-radius: 16px;
+    padding: 14px 16px 14px 18px;
+    background: linear-gradient(135deg, rgba(8, 20, 49, 0.72), rgba(19, 63, 153, 0.28));
+    border: 1px solid rgba(163, 196, 243, 0.10);
+    border-left: 3px solid var(--sky);
+}
+
+.quote-label {
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--light);
+    margin-bottom: 6px;
+}
+
+.quote-text {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--dim);
+    word-break: break-word;
+}
+
+.muted { opacity: .55; font-style: italic; }
+
+.quote-long summary {
+    list-style: none;
+    cursor: pointer;
+    outline: none;
+}
+.quote-long summary::-webkit-details-marker { display: none; }
+
+.quote-more, .quote-less {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--sky);
+}
+.quote-long summary:hover .quote-more,
+.quote-long summary:hover .quote-less { color: #ffffff; }
+
+.quote-less { display: none; }
+.quote-long[open] .quote-more,
+.quote-long[open] .quote-preview { display: none; }
+.quote-long[open] .quote-less { display: inline-block; margin-top: 0; margin-bottom: 8px; }
+
+.quote-full {
+    max-height: 220px;
+    overflow-y: auto;
+    padding-right: 8px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(94, 162, 255, 0.6) transparent;
+}
+.quote-full::-webkit-scrollbar { width: 6px; }
+.quote-full::-webkit-scrollbar-thumb { background: rgba(94, 162, 255, 0.6); border-radius: 6px; }
+
+/* ---------- KOMPONEN GAME KREASI ---------- */
+.glass-card {
+    background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+    border: 1px solid rgba(163, 196, 243, 0.18);
+    border-radius: 20px;
+    color: var(--dim);
+    font-size: 14.5px;
+    line-height: 1.6;
+}
+.quiz-card {
+    border-radius: 22px;
+    padding: 22px 26px;
+    background: linear-gradient(160deg, #0e255c 0%, #0a1838 100%);
+    border: 1px solid rgba(94,162,255,0.25);
+    margin-bottom: 14px;
+}
+.quiz-badge {
+    display: inline-block; padding: 4px 12px; border-radius: 999px;
+    font-size: 11px; font-weight: 800; letter-spacing: 1px;
+    background: var(--accent); color: #fff; margin-bottom: 12px;
+}
+.quiz-q { font-size: 16px; font-weight: 700; color: #e3eeff; margin: 6px 0 14px; }
+.box-grid { display: flex; gap: 14px; flex-wrap: wrap; }
+.box-card {
+    flex: 1; min-width: 150px;
+    background: linear-gradient(150deg, rgba(23,105,232,0.25), rgba(8,20,49,0.4));
+    border: 1px solid rgba(94,162,255,0.35);
+    border-radius: 16px; padding: 14px 16px; text-align: center;
+}
+.box-name { font-size: 12px; font-weight: 800; letter-spacing: 1.2px; color: var(--light); text-transform: uppercase; }
+.balls { font-size: 26px; letter-spacing: 3px; margin-top: 6px; }
+.fb-ok { background: rgba(34,197,94,0.14); border-left: 4px solid #22c55e; border-radius: 10px; padding: 12px 16px; color: #d1fae5; }
+.fb-no { background: rgba(239,68,68,0.14); border-left: 4px solid #ef4444; border-radius: 10px; padding: 12px 16px; color: #fee2e2; }
+.score-card { text-align: center; }
+.score-big {
+    font-family: 'Sora', sans-serif; font-size: 3rem; font-weight: 800;
+    background: linear-gradient(180deg, #fff, var(--gold2)); -webkit-background-clip: text;
+    background-clip: text; -webkit-text-fill-color: transparent;
+}
+
+/* ---------- RESPONSIF ---------- */
+@media (max-width: 1100px) {
+    .profile-card { grid-template-columns: 340px minmax(0, 1fr); }
+    .info-pane { padding: 32px 32px 32px 40px; }
+    .info-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 820px) {
+    .profile-card { grid-template-columns: 1fr; min-height: 0; }
+    .photo-pane { min-height: 0; height: 440px; border-right: 0; border-bottom: 1px solid var(--line); }
+    .info-pane { padding: 26px 22px; }
+    .info-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .quote-grid { grid-template-columns: 1fr; }
+    .section-head { flex-direction: column; align-items: flex-start; }
+}
+
+/* Sidebar */
+[data-testid="stSidebar"], [data-testid="stSidebar"] > div {
+    background: #0a1838 !important;
+    border-right: 1px solid #1f3e82;
+}
+[data-testid="stSidebar"] * { color: #cad8f2 !important; }
+[data-testid="stSidebarNavLink"] { border-radius: 12px !important; }
+[data-testid="stSidebarNavLink"]:hover { background: #15357a !important; }
+[data-testid="stSidebarNavLink"][aria-current="page"] { background: #1769e8 !important; }
+[data-testid="stSidebarNavLink"][aria-current="page"] * { color: #fff !important; font-weight: 700; }
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown(
+    "<div class='hero'>"
+    "<div class='hero-eyebrow'>Himpunan Mahasiswa Sains Data</div>"
+    "<h1 class='hero-title'>BUKU KATING</h1>"
+    "<p class='hero-sub'>Kenali lebih dekat keluarga besar HMSD</p>"
+    "</div>",
+    unsafe_allow_html=True
+)
+
+# ==================================================
+# MENU NAVIGASI
+# ==================================================
 def streamlit_menu():
-    selected = option_menu(
+    return option_menu(
         menu_title=None,
         options=[
             "Kesekjenan",
@@ -21,83 +493,366 @@ def streamlit_menu():
             "Departemen Internal",
             "Departemen SSD",
             "Departemen Medkraf",
-            "Departemen Minbak"
+            "Departemen Minbak",
+            "Kreasi 2",
         ],
         icons=[
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",
+            "bank", "journal-text", "award-fill", "people-fill", "lightning-fill",
+            "globe2", "house-heart-fill", "cpu-fill", "camera-fill", "star-fill",
+            "controller",
         ],
         default_index=0,
         orientation="horizontal",
         styles={
-            "container": {"padding": "0!important", "background-color": "#fafafa"},
-            "icon": {"color": "black", "font-size": "19px"},
-            "nav-link": {
-                "font-size": "15px",
-                "text-align": "left",
-                "margin": "0px",
-                "--hover-color": "#eee",
+            "container": {
+                "padding": "8px",
+                "background-color": "#0a1838",
+                "border-radius": "18px",
+                "box-shadow": "0 5px 20px rgba(0,0,0,0.3)",
+                "border": "1px solid #1f3e82",
             },
-            "nav-link-selected": {"background-color": "#3FBAD8"},
+            "icon": {
+                "color": "#a3c4f3",
+                "font-size": "15px",
+            },
+            "nav-link": {
+                "font-size": "12px",
+                "font-weight": "600",
+                "text-align": "center",
+                "margin": "3px",
+                "padding": "10px",
+                "border-radius": "12px",
+                "color": "#cad8f2",
+                "--hover-color": "#15357a",
+            },
+            "nav-link-selected": {
+                "background-color": "#1769e8",
+                "color": "#ffffff",
+                "font-weight": "700",
+            },
         },
     )
-    return selected
 
-@st.cache_data
-def load_image(url):
-    response = requests.get(url)
-    if response.status_code != 200:
-        st.error(
-            f"Failed to fetch image from {url}, status code: {response.status_code}"
+# ==================================================
+# FUNGSI MEMUAT GAMBAR
+# ==================================================
+def _candidate_urls(url):
+    match = re.search(r"(?:id=|/d/)([\w-]{10,})", url)
+    if "drive.google.com" in url and match:
+        fid = match.group(1)
+        return [
+            f"https://lh3.googleusercontent.com/d/{fid}=w800",
+            f"https://drive.google.com/thumbnail?id={fid}&sz=w800",
+            f"https://drive.google.com/uc?export=view&id={fid}",
+        ]
+    return [url]
+
+def _fetch_b64(url):
+    for candidate in _candidate_urls(url):
+        try:
+            response = requests.get(
+                candidate,
+                timeout=15,
+                headers={"User-Agent": "Mozilla/5.0"},
+            )
+            content_type = response.headers.get("content-type", "")
+            if response.status_code != 200 or not content_type.startswith("image/"):
+                continue
+
+            img = Image.open(BytesIO(response.content))
+            img = ImageOps.exif_transpose(img)
+            img = img.convert("RGB")
+            img.thumbnail((800, 1000))
+
+            buffered = BytesIO()
+            img.save(buffered, format="JPEG", quality=82)
+            return base64.b64encode(buffered.getvalue()).decode()
+        except Exception:
+            continue
+    return None
+
+@st.cache_data(show_spinner=False, ttl=3600)
+def load_images_b64(urls):
+    urls = list(urls)
+    if not urls:
+        return []
+    unique = list(dict.fromkeys(urls))
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        results = dict(zip(unique, pool.map(_fetch_b64, unique)))
+    return [results[u] for u in urls]
+
+# ==================================================
+# FUNGSI BANTU TAMPILAN
+# ==================================================
+def esc(value):
+    return html.escape(str(value))
+
+def clean(value, default="-"):
+    text = str(value if value is not None else "").strip()
+    if not text or not text.strip(" .@-_"):
+        return default
+    return text
+
+def initials(nama):
+    parts = [p for p in re.split(r"\s+", nama.strip()) if p]
+    return "".join(p[0].upper() for p in parts[:2]) or "?"
+
+def _flatten_html(s):
+    return "".join(line.strip() for line in s.splitlines() if line.strip())
+
+def _tile(icon, label, value_html):
+    return (
+        f"<div class='info-tile'>"
+        f"<div class='info-label'><span>{icon}</span>{label}</div>"
+        f"<div class='info-value'>{value_html}</div>"
+        f"</div>"
+    )
+
+QUOTE_LIMIT = 110
+
+def _quote(label, text):
+    head = f"<div class='quote-label'>{label}</div>"
+    if not text:
+        return (
+            f"<div class='quote-box'>{head}"
+            f"<div class='quote-text'><span class='muted'>Belum diisi</span></div></div>"
         )
-        return None
-    try:
-        img = Image.open(BytesIO(response.content))
-        img = ImageOps.exif_transpose(img)
-        img = img.resize((300, 400))
-        return img
-    except Exception as e:
-        st.error(f"Error loading image: {e}")
-        return None
-    
-@st.cache_data
-def display_images_with_data(gambar_urls, data_list):
-    images = []
-    for i, url in enumerate(gambar_urls):
-        with st.spinner(f"Memuat gambar {i + 1} dari {len(gambar_urls)}"):
-            img = load_image(url)
-            if img is not None:
-                images.append(img)
+    if len(text) <= QUOTE_LIMIT:
+        return (
+            f"<div class='quote-box'>{head}"
+            f"<div class='quote-text'>{esc(text)}</div></div>"
+        )
+    preview = esc(text[:QUOTE_LIMIT].rsplit(" ", 1)[0]) + "…"
+    return (
+        f"<details class='quote-box quote-long'>"
+        f"<summary>{head}"
+        f"<div class='quote-text quote-preview'>{preview}</div>"
+        f"<span class='quote-more'>Baca selengkapnya ▾</span>"
+        f"<span class='quote-less'>Tutup ▴</span>"
+        f"</summary>"
+        f"<div class='quote-text quote-full'>{esc(text)}</div>"
+        f"</details>"
+    )
 
-    for i, img in enumerate(images):
-        # Menggunakan Streamlit untuk menampilkan gambar di tengah kolom
-        col1, col2, col3 = st.columns([1, 2, 1])
-        with col2:
-            st.image(img, use_container_width=True)
+# ==================================================
+# FUNGSI MENAMPILKAN PROFIL
+# ==================================================
+def display_images_with_data(gambar_urls, data_list, jabatan):
+    images = load_images_b64(tuple(gambar_urls))
 
-        if i < len(data_list):
-            st.write(f"Nama: {data_list[i]['Nama']}")
-            st.write(f"NIM: {data_list[i]['NIM']}")
-            st.write(f"Umur: {data_list[i]['Umur']}")
-            st.write(f"Asal: {data_list[i]['Asal']}")
-            st.write(f"Alamat: {data_list[i]['Alamat']}")
-            st.write(f"Hobbi: {data_list[i]['Hobi']}")
-            st.write(f"Sosial Media: {data_list[i]['Sosmed']}")
-            st.write(f"Kesan: {data_list[i]['Kesan']}")
-            st.write(f"Pesan: {data_list[i]['Pesan']}")
-            st.write("  ")
-    st.write("Semua gambar telah dimuat!")
+    st.markdown(
+        f"<div class='section-head'><h2>{esc(jabatan)}</h2>"
+        f"<span class='count-chip'>{len(data_list)} anggota</span></div>",
+        unsafe_allow_html=True,
+    )
+
+    query = st.text_input(
+        "Cari",
+        placeholder="🔍  Cari nama, asal, atau hobi...",
+        label_visibility="collapsed",
+        key=f"cari_{jabatan}",
+    )
+    q = query.strip().lower()
+    st.write("")
+
+    shown = 0
+    for i, data in enumerate(data_list):
+        nama = clean(data.get("Nama"), "Tanpa Nama")
+        if q:
+            haystack = " ".join(
+                str(data.get(k, "")) for k in ("Nama", "NIM", "Asal", "Alamat", "Hobi", "Sosmed", "Kesan", "Pesan")
+            ).lower()
+            if q not in haystack:
+                continue
+
+        img_b64 = images[i] if i < len(images) else None
+        if img_b64:
+            photo = f"<img src='data:image/jpeg;base64,{img_b64}' alt='Foto {esc(nama)}' loading='lazy'/>"
+        else:
+            photo = (
+                f"<div class='avatar-fallback'><span>{esc(initials(nama))}</span>"
+                f"<small>Foto belum tersedia</small></div>"
+            )
+
+        umur = clean(data.get("Umur"))
+        umur_text = f"{umur} Tahun" if umur.isdigit() else umur
+        sosmed = clean(data.get("Sosmed"))
+        sosmed_html = f"<span class='social-chip'>{esc(sosmed)}</span>" if sosmed != "-" else "-"
+
+        # Mengambil data spesifik (nama kolom di Butingbaru.txt menggunakan 'Nama', 'NIM', dst)
+        tiles = "".join([
+            _tile("🪪", "NIM", esc(clean(data.get("NIM")))),
+            _tile("🎂", "Umur", esc(umur_text)),
+            _tile("📍", "Asal", esc(clean(data.get("Asal")))),
+            _tile("🏠", "Alamat", esc(clean(data.get("Alamat")))),
+            _tile("🎯", "Hobi", esc(clean(data.get("Hobi")))),
+            _tile("📸", "Sosial Media", sosmed_html),
+        ])
+        quotes = (
+            _quote("💬 Kesan", clean(data.get("Kesan"), ""))
+            + _quote("✉️ Pesan", clean(data.get("Pesan"), ""))
+        )
+
+        card_html = _flatten_html(f"""
+        <div class='profile-card'>
+            <div class='photo-pane'>
+                <div class='card-index'>{i + 1:02d}</div>
+                {photo}
+            </div>
+            <div class='info-pane'>
+                <div class='jabatan-badge'><span class='jabatan-star'>⭐</span> {esc(jabatan)} <span class='jabatan-star'>⭐</span></div>
+                <div class='profile-name'>{esc(nama)}</div>
+                <div class='info-grid'>{tiles}</div>
+                <div class='quote-grid'>{quotes}</div>
+            </div>
+        </div>
+        """)
+        st.markdown(card_html, unsafe_allow_html=True)
+        shown += 1
+
+    if shown == 0:
+        st.info("Tidak ada anggota yang cocok dengan pencarian.")
+
+
+# ==================================================
+# LOGIKA MINIGAME KREASI 2
+# ==================================================
+JUMLAH_RONDE = 5
+
+def persen(a, b):
+    return round(100 * a / (a + b))
+
+def buat_ronde():
+    pasangan = [(x, y) for x in (1, 2, 3) for y in (1, 2, 3) if x != y]
+    ronde = []
+    for x, y in random.sample(pasangan, JUMLAH_RONDE):
+        benar = persen(x, y)
+        salah = []
+        for v in [50, x * 25, persen(y, x), 25, 33, 40, 60, 67, 75, 80]:
+            if v != benar and v not in salah:
+                salah.append(v)
+            if len(salah) == 3:
+                break
+        nilai = salah + [benar]
+        random.shuffle(nilai)
+        ronde.append({
+            "x": x, "y": y, "benar": benar,
+            "opsi": [f"{v}%" for v in nilai],
+            "jawaban": f"{benar}%",
+        })
+    return ronde
+
+def reset_game():
+    st.session_state.k2_ronde_list = buat_ronde()
+    st.session_state.k2_i = 0
+    st.session_state.k2_skor = 0
+    st.session_state.k2_sudah = False
+    st.session_state.k2_ronde = st.session_state.get("k2_ronde", 0) + 1
+
+def bola(biru):
+    return "🔵" * biru + "🔴" * (4 - biru)
+
+def game_page():
+    if "k2_ronde_list" not in st.session_state:
+        reset_game()
+
+    daftar = st.session_state.k2_ronde_list
+    total = len(daftar)
+    i = st.session_state.k2_i
+    skor = st.session_state.k2_skor
+    sudah = st.session_state.k2_sudah
+
+    st.markdown(
+        '<div class="section-head"><h2>Kreasi 2 — Tebak Kotak Bayes</h2>'
+        f'<span class="count-chip">Skor {skor}</span></div>',
+        unsafe_allow_html=True,
+    )
+    st.markdown(
+        '<div class="glass-card" style="padding:22px 28px;">'
+        '<b>Apa itu Teorema Bayes?</b><br>'
+        'Kita mulai dari tebakan awal, lalu <b>memperbarui</b> tebakan itu setelah melihat bukti baru. '
+        'Di game ini: dua kotak (A dan B) dipilih secara acak (peluang awal 50 : 50), lalu diambil satu bola 🔵. '
+        'Berapa peluang bola itu berasal dari <b>Kotak A</b>?'
+        '</div>',
+        unsafe_allow_html=True,
+    )
+    st.write("")
+
+    if i >= total:
+        if skor == total:
+            pesan = "Luar biasa! Kamu sudah paham cara kerja Bayes 🎉"
+        elif skor >= 3:
+            pesan = "Bagus! Tinggal sedikit lagi jadi master Bayesian."
+        else:
+            pesan = "Tenang, coba lagi. Ingat: hitung semua bola biru dulu!"
+        st.markdown(
+            '<div class="quiz-card score-card">'
+            '<div class="quiz-badge">Hasil Akhir</div>'
+            f'<div class="score-big">{skor} / {total}</div>'
+            f'<p class="quiz-q" style="margin-top:14px;">{html.escape(pesan)}</p>'
+            '</div>',
+            unsafe_allow_html=True,
+        )
+        if st.button("🔄 Main lagi", key="k2_ulang"):
+            reset_game()
+            st.rerun()
+        return
+
+    r = daftar[i]
+    st.progress(i / total)
+    st.markdown(
+        '<div class="quiz-card">'
+        f'<div class="quiz-badge">Ronde {i + 1} dari {total}</div>'
+        '<p class="quiz-q">Kamu mengambil 1 bola 🔵. Berapa peluang bola itu dari Kotak A?</p>'
+        '<div class="box-grid">'
+        f'<div class="box-card"><div class="box-name">Kotak A</div><div class="balls">{bola(r["x"])}</div></div>'
+        f'<div class="box-card"><div class="box-name">Kotak B</div><div class="balls">{bola(r["y"])}</div></div>'
+        '</div></div>',
+        unsafe_allow_html=True,
+    )
+
+    with st.expander("💡 Petunjuk"):
+        st.write("Hitung dulu ada berapa bola biru di kedua kotak. Peluang = bola biru di Kotak A ÷ total bola biru.")
+
+    pilihan = st.radio(
+        "Pilih jawaban",
+        r["opsi"],
+        index=None,
+        key=f"k2_radio_{st.session_state.k2_ronde}_{i}",
+        label_visibility="collapsed",
+        disabled=sudah,
+        horizontal=True,
+    )
+
+    if not sudah:
+        if st.button("Jawab", key=f"k2_jawab_{st.session_state.k2_ronde}_{i}", disabled=pilihan is None):
+            st.session_state.k2_sudah = True
+            if pilihan == r["jawaban"]:
+                st.session_state.k2_skor += 1
+            st.rerun()
+        return
+
+    penjelasan = (
+        f'Total bola 🔵 = {r["x"]} + {r["y"]} = <b>{r["x"] + r["y"]}</b>. '
+        f'Yang dari Kotak A = <b>{r["x"]}</b>. '
+        f'Jadi peluangnya = {r["x"]}/{r["x"] + r["y"]} ≈ <b>{r["benar"]}%</b>.'
+    )
+    if pilihan == r["jawaban"]:
+        st.markdown(f'<div class="fb-ok"><b>✅ Benar!</b><br>{penjelasan}</div>', unsafe_allow_html=True)
+    else:
+        st.markdown(f'<div class="fb-no"><b>❌ Belum tepat.</b><br>{penjelasan}</div>', unsafe_allow_html=True)
+
+    label = "Lihat Hasil ➜" if i == total - 1 else "Ronde berikutnya ➜"
+    if st.button(label, key=f"k2_lanjut_{st.session_state.k2_ronde}_{i}"):
+        st.session_state.k2_i += 1
+        st.session_state.k2_sudah = False
+        st.rerun()
+
 menu = streamlit_menu()
 
-# BAGIAN SINI YANG HANYA BOLEH DIUABAH
+# ==================================================
+# BAGIAN DATA ASLI (BUTINGBARU.TXT)
+# ==================================================
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
@@ -176,7 +931,7 @@ if menu == "Kesekjenan":
                 "Pesan":"semangat terus dalam kuliah dan organisasi, jangan lupa jaga kesehatan"# 1
             },
         ]
-        display_images_with_data(gambar_urls, data_list)
+        display_images_with_data(gambar_urls, data_list, menu)
     kesekjenan()
 
 if menu == "Badan Legislatif":
@@ -341,7 +1096,7 @@ if menu == "Badan Legislatif":
                 "Pesan":"Semangat terus kak, semoga sukses kuliahnya, sehat selalu, dan ya semangat terus kakk"# 1   
             },
         ]
-        display_images_with_data(gambar_urls, data_list)
+        display_images_with_data(gambar_urls, data_list, menu)
     Baleg()
 
 if menu == "Badan Kesenatoran":
@@ -470,7 +1225,7 @@ if menu == "Badan Kesenatoran":
                 "Pesan": "Sehat selalu dan semangat terus kak"
             },
         ]
-        display_images_with_data(gambar_urls, data_list)
+        display_images_with_data(gambar_urls, data_list, menu)
     senator()
 
 if menu == "Departemen PSDA":
@@ -683,7 +1438,7 @@ if menu == "Departemen PSDA":
                 "Pesan":"Semoga kak salavi selalu sehat, sukses, dan lancar terus segala urusannya"
             }
         ]
-        display_images_with_data(gambar_urls, data_list)
+        display_images_with_data(gambar_urls, data_list, menu)
     psda()
 
 if menu == "Departemen MIKFES":
@@ -792,12 +1547,12 @@ if menu == "Departemen MIKFES":
             },
             {
                 "Nama": "Yulia Cristine Malau",
-                "NIM" : "Belum Tahu",
-                "Asal" : "Belum Tahu",
-                "Alamat" : "Belum Tahu",
-                "Hobi": "Belum Tahu",
-                "Umur" : "Belum Tahu",
-                "Sosmed" : "Belum Tahu",
+                "NIM" : "124450119",
+                "Asal" : "Jambi",
+                "Alamat" : "Sabah Balau",
+                "Hobi": "Belajar",
+                "Umur" : "20",
+                "Sosmed" : "@krnylee",
                 "Kesan" : "Kakak orangnya baik, ramah, dan asik banget.",
                 "Pesan" : "Semangat terus kakak, semoga sukses kuliahnya dan lancar dalam segala hal."
             },
@@ -956,7 +1711,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Semoga sehat selalu bang, sukses dalam"
             },
         ]
-        display_images_with_data(gambar_urls, data_list)
+        display_images_with_data(gambar_urls, data_list, menu)
     mikfes()
 
 if menu == "Departemen Eksternal":
@@ -1110,7 +1865,7 @@ if menu == "Departemen Eksternal":
             {
                 "Nama": "Yollanda Agustina",
                 "NIM": "124450024",
-                "Umur": "-",
+                "Umur": "20",
                 "Asal": "Kerangka Bawang Sebelah Barat",
                 "Alamat": "Kayu Mulya",
                 "Hobi": "Tanya bang Henry",
@@ -1202,7 +1957,7 @@ if menu == "Departemen Eksternal":
                 "Umur": "Masih muda lah",
                 "Asal": "Rahim Ibu",
                 "Alamat": "Pasar lantai 3.5",
-                "Hobi": "-",
+                "Hobi": "Makan yang manis biar manis",
                 "Sosmed": "@jaldii._",
                 "Kesan": "Abangnya keren banget, sering jadi mc juga",  
                 "Pesan":"semangat terus kuliahnya bang"# 1
@@ -1230,7 +1985,7 @@ if menu == "Departemen Eksternal":
                 "Pesan":"Tetap tersenyum dan sehat selalu"# 1
             } 
         ]
-        display_images_with_data(gambar_urls, data_list)
+        display_images_with_data(gambar_urls, data_list, menu)
     eksternal()
 
 if menu == "Departemen Internal":
@@ -1312,11 +2067,11 @@ if menu == "Departemen Internal":
             {
                 "Nama": "Cerine Sihotang",
                 "NIM": "124450049",
-                "Umur": "....",
-                "Asal":"....",
-                "Alamat": "....",
-                "Hobi": "....",
-                "Sosmed": "@...",
+                "Umur": "19",
+                "Asal":"Medan",
+                "Alamat": "Pesisir Belwis",
+                "Hobi": "Begadang",
+                "Sosmed": "@cerine.ipynb",
                 "Kesan": "Kak Cerine orangnya sangat asikk, humble, dan juga baikk banget",  
                 "Pesan":"Semoga kak cerine selalu dikelilingi orang orang baikk"# 1
             },
@@ -1334,11 +2089,11 @@ if menu == "Departemen Internal":
             {
                 "Nama": "Najla Nursyifa",
                 "NIM": "124450051",
-                "Umur": "...",
-                "Asal":"...",
-                "Alamat": "...",
-                "Hobi": "...",
-                "Sosmed": "@...",
+                "Umur": "20",
+                "Asal":"Sumatera Barat",
+                "Alamat": "Belwis",
+                "Hobi": "Main ML",
+                "Sosmed": "@njlanursyifa",
                 "Kesan": "Kakak orangnya asik banget",  
                 "Pesan":"Semoga kakaknya sukses selalu"# 1
             },
@@ -1400,11 +2155,11 @@ if menu == "Departemen Internal":
             {
                 "Nama": "Gustin H. Tampubolon",
                 "NIM": "124450068",
-                "Umur": "...",
-                "Asal": "...",
-                "Alamat": "...",
-                "Hobi": "...",
-                "Sosmed": "@...",
+                "Umur": "21",
+                "Asal": "Sumatera Utara",
+                "Alamat": "Airan",
+                "Hobi": "Nonton",
+                "Sosmed": "@gustinhaleluya",
                 "Kesan": "Kak Gustin orangnya lucuu dan baik banget",  
                 "Pesan":"Semoga kak gustin selalu sehat dan lancar segala kegiatannya"# 1
             },
@@ -1431,7 +2186,7 @@ if menu == "Departemen Internal":
                 "Pesan":"Semoga kak sabina mendapatkan hal-hal baik selalu dalam banayak hal"# 1
             }
         ]
-        display_images_with_data(gambar_urls, data_list)
+        display_images_with_data(gambar_urls, data_list, menu)
     internal()
 
 if menu == "Departemen SSD":
@@ -1584,7 +2339,7 @@ if menu == "Departemen SSD":
                 "Pesan":"Semangat terus kak"# 1
             },
         ]
-        display_images_with_data(gambar_urls, data_list)
+        display_images_with_data(gambar_urls, data_list, menu)
     ssd()
 
 if menu == "Departemen Medkraf":
@@ -1810,7 +2565,7 @@ if menu == "Departemen Medkraf":
             },
             
         ]
-        display_images_with_data(gambar_urls, data_list)
+        display_images_with_data(gambar_urls, data_list, menu)
     medkraf()
 
 if menu == "Departemen Minbak":
@@ -1999,7 +2754,8 @@ if menu == "Departemen Minbak":
                 "Pesan": "Sukses selalu buat perkuliahannya kak dan semangat terus"
             },
         ]
-        display_images_with_data(gambar_urls, data_list)
+        display_images_with_data(gambar_urls, data_list, menu)
     minbak()
 
-    
+if menu == "Kreasi 2":
+    game_page()
