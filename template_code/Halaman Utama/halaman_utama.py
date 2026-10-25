@@ -6,6 +6,19 @@ import html
 # ─── Import dari utils.py ───
 from utils import load_image, image_data_uri
 
+# ============================================================
+# 🎨 CSS HACK: MENGHANCURKAN BATAS LEBAR STREAMLIT
+# ============================================================
+st.markdown("""
+<style>
+    /* Paksa kontainer Streamlit agar tidak memotong teks */
+    [data-testid="stAppViewBlockContainer"], .block-container {
+        max-width: 100% !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+</style>
+""", unsafe_allow_html=True)
 
 # ============================================================
 # 🎨 CUSTOM CSS HALAMAN UTAMA (UTUH 100% ASLI + TAMBAHAN MENTOR)
@@ -65,7 +78,7 @@ html, body, [class*="css"] {
     margin-top: 6px;
 }
 
-/* 💥 FIX: Judul Section Tetap Utuh dan di Tengah 💥 */
+/* 💥 FIX MUTLAK: Judul Section Benar-benar di Tengah 💥 */
 .section-title {
     text-align: center !important;
     font-family: 'Playfair Display', serif;
@@ -76,13 +89,14 @@ html, body, [class*="css"] {
     margin-bottom: 30px;
     position: relative;
     display: block;
-    /* Jangan pakai width: 100% agar tidak turun ke bawah */
+    width: 100% !important;
+    line-height: 1.4 !important;
 }
 .section-title::before,
 .section-title::after {
     content: '✦';
     color: #d9c3a3;
-    margin: 0 18px;
+    margin: 0 10px;
     font-size: 0.7em;
     vertical-align: middle;
 }
@@ -311,7 +325,7 @@ html, body, [class*="css"] {
     filter: saturate(1.02) contrast(1.03);
 }
 
-/* 💥 FIX: Nama di dalam card benar-benar di tengah 💥 */
+/* 💥 FIX MUTLAK: Nama di dalam card benar-benar di tengah dan tidak terpotong */
 .flip-card-front h4 {
     margin: 2px 0 6px 0;
     font-family: 'Playfair Display', serif;
@@ -321,8 +335,10 @@ html, body, [class*="css"] {
     letter-spacing: 0.3px;
     line-height: 1.25;
     text-align: center !important;
-    width: 100%;
-    padding: 0 10px;
+    word-wrap: break-word !important;
+    white-space: normal !important;
+    width: 100% !important;
+    padding: 0 5px;
 }
 
 .flip-card-front .role-badge {
