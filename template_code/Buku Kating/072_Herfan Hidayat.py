@@ -822,6 +822,138 @@ elif menu == "Departemen Internal":
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!",
             },
+            {
+                "nama": "Aisyah Khairun Nisa",
+                "nim": "124450096",
+                "umur": "18",
+                "asal": "Riau",
+                "alamat": "Belwis",
+                "hobbi": "Ngeliatin orang",
+                "sosmed": "@aisyahkhair._",
+                "kesan": "Kak Aisyah orangnya baik, asik, dan ramah. Pembawaannya juga nyaman.",
+                "pesan": "Semoga selalu dikelilingi orang-orang baik dan ketemu banyak hal seru ke depannya !!!"
+            },
+            {
+                "nama": "Cerine Sihotang",
+                "nim": "124450049",
+                "umur": "19",
+                "asal": "Medan",
+                "alamat": "Belwis",
+                "hobbi": "Balap liar",
+                "sosmed": "@cerine_ipynb",
+                "kesan": "Kak Cerine , kakakku tersayang. Baik banget, cantik, pengertian, dan selalu bikin nyaman. Pokoknya lopyouu buat Kak Cerine",
+                "pesan": "Tetap jadi Kak Cerine yang baik dan pengertian ya. Semoga semua yang lagi diperjuangin berjalan lancar dan selalu bahagi!"
+            },
+            {
+                "nama": "Jaya Saputra Tamba",
+                "nim": "124450094",
+                "umur": "19",
+                "asal": "Medan",
+                "alamat": "Pemda",
+                "hobbi": "Berkebun dan membuat lagu",
+                "sosmed": "@jay.saputratmb",
+                "kesan": "Awal ketemu Bang Jaya kirain cuek dan bodo amat, ternyata aslinya baik banget, ramah, dan asik. Suka bercanda juga ternyata",
+                "pesan": "Tetap jadi Bang Jaya yang seru dan ramah ya. Semoga semua urusan ke depannya lancar !!!"
+            },
+            {
+                "nama": "Najla Nur Syifa",
+                "nim": "124450051",
+                "umur": "20",
+                "asal": "Aceh",
+                "alamat": "Belwis",
+                "hobbi": "Gangguin cika",
+                "sosmed": "@njlanursyifa",
+                "kesan": "Kak Najla tuh imut, lucu, cantik, dan baik bangeta",
+                "pesan": "Semoga selalu ketemu hal-hal baik dan orang-orang baik juga.!"
+            },
+            {
+                "nama": "Rozaq Ramdani",
+                "nim": "124450100",
+                "umur": "18",
+                "asal": "Lampung Selatan",
+                "alamat": "Korpri Raya",
+                "hobbi": "Isengin harvin di kelas",
+                "sosmed": "@rozaqramdani__",
+                "kesan": "Bang Rozaq orangnya baik dan ramah.",
+                "pesan": "Semoga kuliah dan semua kesibukannya dilancarkan. Sukses terus ya, Bang!"
+            },
+            {
+                "nama": "Teresa Christiani Purba",
+                "nim": "124450046",
+                "umur": "19",
+                "asal": "Riau",
+                "alamat": "Belwis",
+                "hobbi": "Masak",
+                "sosmed": "@christiani8872",
+                "kesan": "Kak Teresa orangnya asik dan baik banget. Pokoknya salah satu kakak yang seru buat diajak ngobrol",
+                "pesan": "Semoga lancar dan sukses terus perkuliahan serta kegiatannya!"
+            },
+            {
+                "nama": "Muhammad Hanif Dzaky",
+                "nim": "124450064",
+                "umur": "21",
+                "asal": "Padang Sumbar",
+                "alamat": "Perumnas Way Kandis",
+                "hobbi": "Ngedistro",
+                "sosmed": "@hnfdzky_",
+                "kesan": "bang Hanif orangnya baik banget dan gemoy. Pembawaannya juga asik",
+                "pesan": " Semoga selalu diberi kelancaran dalam kuliah dan semua kegiatannya.!"
+            },
+            {
+                "nama": "Audina Fitria",
+                "nim": "124450038",
+                "umur": "20",
+                "asal": "Sumatera Barat",
+                "alamat": "Sukarame",
+                "hobbi": "Main ke air terjun",
+                "sosmed": "@audinaf_03",
+                "kesan": " Kak Audina, imut, lucu, tapi ternyata keren juga. Pembawaannya juga asik kalau diajak ngobrol",
+                "pesan": "Semoga kuliahnya lancar dan makin banyak hal keren yang bisa dicapai. Sukses terus ya, Kak!"
+            },
+            {
+                "nama": "Cika Adelia Br Marbun",
+                "nim": "124450107",
+                "umur": "20",
+                "asal": "Riau",
+                "alamat": "Belwis",
+                "hobbi": "Terlambat",
+                "sosmed": "@cikamrbn",
+                "kesan": "Kak Cika orangnya baik banget, walaupun awalnya keliatan agak introvert. Tapi kalau udah kenal ternyata asik jugaa",
+                "pesan": "Tetap jadi Kak Cika yang baik dan apa adanya ya. Semoga semua urusannya dipermudah dan kuliahnya lanca!"
+            },
+            {
+                "nama": "Gustin Haleluya Tampubolon",
+                "nim": "124450068",
+                "umur": "21",
+                "asal": "Toba Sumatera Utara",
+                "alamat": "Airan",
+                "hobbi": "Nonton",
+                "sosmed": "@gustinhaleluya",
+                "kesan": "Kak Gustin cakep banget dan orangnya juga baik.",
+                "pesan": "Semoga selalu dikelilingi hal-hal baik dan orang-orang yang sayang sama Kakak.!"
+            },
+            {
+                "nama": "Muhammad Arvinsyah",
+                "nim": "124450128",
+                "umur": "20",
+                "asal": "Sumatera Selatan",
+                "alamat": "Belwis",
+                "hobbi": "Nembak Burung",
+                "sosmed": "@muhvinz_",
+                "kesan": "Bang Arvin orangnya lucu, asik, dan baik banget",
+                "pesan": "Semoga kuliah dan semua kesibukannya lancar terus!"
+            },
+            {
+                "nama": "Rafa Sabina Fahimah",
+                "nim": "124450036",
+                "umur": "20",
+                "asal": "Natar",
+                "alamat": "Natar",
+                "hobbi": "Cari duit",
+                "sosmed": "@snasaa._",
+                "kesan": "Kak Rafa orangnya baik, ramah, dan asik.",
+                "pesan": "Semoga kuliahnya lancar dan semua yang lagi dikejar bisa tercapai. Sukses terus ya, Ka!"
+            },
         ]
         display_images_with_data(gambar_urls, data_list)
 
