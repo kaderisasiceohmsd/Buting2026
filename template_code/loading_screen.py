@@ -31,15 +31,15 @@ FOTO_ANGGOTA = {
     "Najwa":   "https://drive.google.com/uc?export=view&id=1TWNgccBsATeQyTnJdCx30lPXOk-lF0JP",
     "Rafli":   "https://drive.google.com/uc?export=view&id=1eRqS2Dm2UYeKTpmixAU5WmjmWMqqW1co",
     "Abyan":   "https://drive.google.com/uc?export=view&id=1i9oSkeFZT1sL0SJmMWmZb4l_qPCxAV-4",
-    "Bayu":    "",
+    "Bayu":    "https://drive.google.com/uc?export=view&id=1AeNI3iwCdGOXgrjncpYatIqfuv4qvZ3W",
     "Mojes":   "https://drive.google.com/uc?export=view&id=114wxxW8dyiUPBz87C3IyQJOyyl2M29kw",
     "Iva":     "https://drive.google.com/uc?export=view&id=1Kz0h3yq36ZDbBLIovx6MtEHTXlD_Nj5r",
     "Astrit":  "https://drive.google.com/uc?export=view&id=1D-_sGW7jHoUpCms068h97XYi4fdLxHMc",
-    "Septi":   "",
-    "Fildzah": "",
+    "Septi":   "https://drive.google.com/uc?export=view&id=15eNIKvQctlDzyoHUjK5GI55pAKK8F3g2",
+    "Fildzah": "https://drive.google.com/uc?export=view&id=13yOwhEQH_zVkrbuGiohD--90zVLc_zQK",
     "Lintar":  "",
     "Biwa":    "",
-    "Bening":  "",
+    "Bening":  "https://drive.google.com/uc?export=view&id=1wqq9-YkpFJ7D6_WQyKqKsg6UWvXzku-4",
 }
 
 # Daftar URL aset Halaman Utama yang ikut di-preload selama loading screen berjalan
