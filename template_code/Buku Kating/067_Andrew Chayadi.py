@@ -1298,7 +1298,7 @@ elif menu == "Departemen Eksternal":
 
         with tab1:
             gambar_urls_Kadep_eksternal = [
-            "https://drive.google.com/uc?export=view&id=1N4dIHHdB5CeVz8OygZn-hNOX1MjASRk1",
+            "https://drive.google.com/uc?export=view&id=1g-JXO76tjEz67NFg8eKFjEKBQlPncP6v",
             ]
             data_list_Kadep_eksternal = [
             {
