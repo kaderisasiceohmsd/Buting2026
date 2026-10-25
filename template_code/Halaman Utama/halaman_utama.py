@@ -764,17 +764,17 @@ elif menu == "About Us":
     ]
 
     data_list = [
-        {"nama": "Yobel Imanuel Pasaribu", "sebagai": "Pak Lurah", "nim": "125450116", "fun_fact": "Bawa bantal guling dari kecil sampe sekaran", "motto_hidup": "New semester new me"},
-        {"nama": "Rena Aprilia", "sebagai": "Bu Lurah", "nim": "125450109", "fun_fact": "Suka nyemilin es batu saat santai", "motto_hidup": "Konsisten adalah kunci sukses"},
+        {"nama": "Yobel Imanuel Pasaribu", "sebagai": "Pak Lurah", "nim": "125450116", "fun_fact": "Masih bawa bantal guling masa kecil sampe kuliah", "motto_hidup": "Masalah sehari cukup untuk sehari, hari lain memiliki masalahnya sendiri"},
+        {"nama": "Rena Aprilia", "sebagai": "Bu Lurah", "nim": "125450109", "fun_fact": "selalu bawa jhonson baby oil yg pink di tas", "motto_hidup": "still wanna try, still believe in good days"},
         {"nama": "Samuel Kristian", "sebagai": "Anggota", "nim": "125450084", "fun_fact": "Anak ke-9 dari 9 BERSAUDARA!!!", "motto_hidup": "Trying to be better"},
-        {"nama": "Nailatun Inayah", "sebagai": "Anggota", "nim": "125450037", "fun_fact": "Bisa tidur di segala jenis kendaraan", "motto_hidup": "Jalanin dulu aja dengan ikhlas"},
-        {"nama": "Alfajri Anwar", "sebagai": "Anggota", "nim": "125450074", "fun_fact": "Suka begadang demi nonton bola", "motto_hidup": "Usaha tidak mengkhianati hasil"},
-        {"nama": "Inness Eymard Gultom", "sebagai": "Anggota", "nim": "125460075", "fun_fact": "Pecinta kucing garis keras", "motto_hidup": "Jadilah versi terbaik dirimu"},
-        {"nama": "Kayyisah Mazaya", "sebagai": "Anggota", "nim": "125450033", "fun_fact": "Selalu membawa tumbler sendiri", "motto_hidup": "Fokus pada prosesnya"},
-        {"nama": "Fadhilah Adelyia Putri", "sebagai": "Anggota", "nim": "125450020", "fun_fact": "Sering salah panggil nama dosen", "motto_hidup": "Senyum adalah ibadah"},
-        {"nama": "Dzahra Adila Fatma", "sebagai": "Anggota", "nim": "125450028", "fun_fact": "Hobi koleksi sepatu sneakers", "motto_hidup": "Hari ini harus lebih baik"},
-        {"nama": "Egia Ninta Pepayosa Ketaren", "sebagai": "Anggota", "nim": "125450008", "fun_fact": "Suka minum es teh manis jumbo", "motto_hidup": "Selalu bersyukur setiap hari"},
-        {"nama": "Achmad Fardhan Al Basri Bandarudin", "sebagai": "Anggota", "nim": "125450018", "fun_fact": "Main game online sampai pagi", "motto_hidup": "Pantang pulang sebelum selesai"}
+        {"nama": "Nailatun Inayah", "sebagai": "Anggota", "nim": "125450037", "fun_fact": "Sangat sangat pelupa tapi gampang inget muka + nama orang ", "motto_hidup": "life with positive vibes"},
+        {"nama": "Alfajri Anwar", "sebagai": "Anggota", "nim": "125450074", "fun_fact": "Selagi tidak disuruh, akan saya selesaikan ", "motto_hidup": "Make it happen and shock every one"},
+        {"nama": "Inness Eymard Gultom", "sebagai": "Anggota", "nim": "125460075", "fun_fact": "Nama ku double n dan s jadi kalau panggil inness ada penekanan di n dan s, tapi panggil Eymard saja", "motto_hidup": "make your life count, stay humble, stay gentle"},
+        {"nama": "Kayyisah Mazaya", "sebagai": "Anggota", "nim": "125450033", "fun_fact": "Aku dan guling busukku adalah paket bundling dari kecil. No one can separate us, not even the washing machine.", "motto_hidup": "when you feel like quitting think about why you started"},
+        {"nama": "Fadhilah Adelyia Putri", "sebagai": "Anggota", "nim": "125450020", "fun_fact": "Suka ngemilin es batu", "motto_hidup": "Take a lesson in every journey"},
+        {"nama": "Dzahra Adila Fatma", "sebagai": "Anggota", "nim": "125450028", "fun_fact": "Tidak pernah di marah oleh ayah", "motto_hidup": "Terus berjalan tapi jalan yg benar"},
+        {"nama": "Egia Ninta Pepayosa Ketaren", "sebagai": "Anggota", "nim": "125450008", "fun_fact": "Gabisa bawa motor jangankan motor naik sepeda aja sering jatuh", "motto_hidup": " Langkah kecil yang akan di ambil hari ini menentukan masa depan."},
+        {"nama": "Achmad Fardhan Al Basri Bandarudin", "sebagai": "Anggota", "nim": "125450018", "fun_fact": "Suka dengerin musik dimana aja apa aja musiknya yang enak ", "motto_hidup": "jalanin aja apa halangan saat ini karena pasti akan selesai"}
     ]
 
     for i in range(0, len(data_list), 3):
