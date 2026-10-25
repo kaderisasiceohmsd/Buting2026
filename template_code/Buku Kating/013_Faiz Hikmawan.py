@@ -215,12 +215,12 @@ if menu == "Kesekjenan":
     st.markdown("<h3 style='text-align: center;'>Kesekjenan</h3>", unsafe_allow_html=True)
     def Kesekjenan():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1XVrHSuj9MdWm4xDvo1qHlRBo_iuzF6q6",
-            "https://drive.google.com/uc?export=view&id=1_BgX-fzh2eRSelqbbPqCMqtY8agyYu-v",
-            "https://drive.google.com/uc?export=view&id=18hajA2n1YVYJ6kTfN-kYOfLo-5DIxJ7m",
-            "https://drive.google.com/uc?export=view&id=1IdQ2MQ2XWhdvnXQbaY1txbJnIvCTuMVy",
-            "https://drive.google.com/uc?export=view&id=1yOTPHtGBYnlTDqwngS39rAWLjBO4ZJTR",
-            "https://drive.google.com/uc?export=view&id=1vjM1xKeYCPd5JWLnNXdQqlyy0UcomTtU",
+            "https://drive.google.com/uc?export=view&id=1D_UN3rLMm5nypuPXsONCRF05bv_oQ8Fm",
+            "https://drive.google.com/uc?export=view&id=1ywQxWrwv8jkFvqaGY08V3Ru2tm3zn8-v",
+            "https://drive.google.com/uc?export=view&id=1dlQZffhSfdPGtTHjs_XJVDdfJCvG5lGr",
+            "https://drive.google.com/uc?export=view&id=1SMjGrKj3JfE3Yj0vgvNvRuSxXFJP-xRu",
+            "https://drive.google.com/uc?export=view&id=1_Jliw9dcizXRHBm5ubluQa9BiJWN1UvO",
+            "https://drive.google.com/uc?export=view&id=1giS93lfc_6oODMGozbAS8Fg1Rj2AOBus",
         ]
         data_list = [
             {
@@ -231,8 +231,8 @@ if menu == "Kesekjenan":
                 "alamat": "Sekretariat HMSD",
                 "hobbi": "Push Rank sampe IMO",
                 "sosmed": "@jars_mrp",
-                "kesan": "Abangnya baek banget sumpah",  
-                "pesan": "Semangat bang semoga bisa lulus dengan memuaskan"
+                "kesan": "Bang Ginda kesannya baik, seru, asik juga dan ternyata sesuai sama kesannya, terus pas wawancara juga jawaban abangnya keren",  
+                "pesan": "Semangat abang kahim, semoga cepat selesai TA nyaa"
             },
             {
                 "nama": "Muhammad Aqil Ramadhan",
@@ -242,8 +242,8 @@ if menu == "Kesekjenan":
                 "alamat": "Sekretariat HMSD",
                 "hobbi": "Dzikir",
                 "sosmed": "@muhammadaqil1111",
-                "kesan": "Abangnya asik, suka ngelawak juga wkwk",  
-                "pesan": "Semangat terus bang"
+                "kesan": "Abangnya baik, terus kalo ngajar materi juga seru, keren juga kalo ngasih petuah bijak banget jujur",  
+                "pesan": "Semangat abang sekjen kita semester 7 nyaa, semoga TA cepet selesaii ketemu di riuh wisudah nanti kitaa abang"
             },
             {
                 "nama": "Efi Defiyati",
@@ -253,8 +253,8 @@ if menu == "Kesekjenan":
                 "alamat": "Airan",
                 "hobbi": "Membaca",
                 "sosmed": "@eeffiidefi",
-                "kesan": "Kakak nya seruuu heheh",  
-                "pesan": "Semangat terus ya kaaa"
+                "kesan": "Kakak cantik sekali, baik jugaa, ramah, cantik pokoknya",  
+                "pesan": "Semangat kakak sekre kita yang paling cantik, semoga TA nya cepat selesaii"
             },
             {
                 "nama": "Qois Olifio",
@@ -264,8 +264,8 @@ if menu == "Kesekjenan":
                 "alamat": "Kota Baru",
                 "hobbi": "Mainin Surat",
                 "sosmed": "@qoisolifio_",
-                "kesan": "Abangnya keliatan pendiem wkwk, tapi seru koo",  
-                "pesan": "Semangat bang, ajarin jadi sekre sih bang wkkw"
+                "kesan": "Abangnya keren, baik banget saat wawancara, seruu banget jugaa",  
+                "pesan": "Semangat abang menjalankan tupoksinya dan semangat juga untuk TA nya abangg"
             },
             {
                 "nama": "Hafsa Fazila Arradhi",
@@ -275,8 +275,8 @@ if menu == "Kesekjenan":
                 "alamat": "Bandar Lampung",
                 "hobbi": "Berenang",
                 "sosmed": "@hafsafazilaa",
-                "kesan": "Kakaknya asik bener hehe",  
-                "pesan": "Semangat ya kaaaaa"
+                "kesan": "Kakaknya cantik terus seru jugaa pas wawancara, kerenn kakaknyaa",  
+                "pesan": "Semangat kakak bendaharaa, semoga TA nya cepat selesai kakak"
             },
             {
                 "nama": "Luthfia Laila Ramadhani",
@@ -286,8 +286,8 @@ if menu == "Kesekjenan":
                 "alamat": "Airan",
                 "hobbi": "Bertemu Pak Tirta",
                 "sosmed": "@luthfiaarmdhni",
-                "kesan": "Kakanya keliatan pendiem heheh",  
-                "pesan": "Semangat terus kaaaa"
+                "kesan": "Kakaknya cantik terus lucuu banget hobi ketemu pak tirtaa",  
+                "pesan": "Semangat kakak bendahara mengerjakan TA, meet sama pak tirta + menjalankan tupoksinya"
             }
         ]
         display_images_with_data(gambar_urls, data_list)
@@ -301,7 +301,7 @@ elif menu == "Badan Legislatif":
 
         with tab1:
             gambar_urls_kabaleg= [
-            "https://drive.google.com/uc?export=view&id=15dX_z7PpNBeroFJl9GFrSgFPn91fWpK8",
+            "https://drive.google.com/uc?export=view&id=1APvCEouNDZGGvrMM9KSMU-H8XaPyYisv",
             ]
             data_list_kabaleg = [
             {
@@ -312,15 +312,15 @@ elif menu == "Badan Legislatif":
             "alamat": "GH",
             "hobbi": "Wawancara",
             "sosmed": "@iamridhomanik",
-            "kesan": "...",  
-            "pesan": "..."
+            "kesan": "Kesan pertama kali liat bang ridho kek serem abangnya (karena aku nabrak abangnya), ternyata baik banget, seru, asik, sangat masyallah tabarakallah",  
+            "pesan": "Semangat abangg TA. like dan komen, kabaleg keren."
             },
             ]
             display_images_with_data(gambar_urls_kabaleg, data_list_kabaleg)
 
         with tab2:
             # Pindahkan URL dan Data anggota Sekretaris ke dalam list ini
-            gambar_urls_sekretaris = ["https://drive.google.com/uc?export=view&id=1Gg--iHbQNTGLlW1i03jUvxIWJrPTTmPy",]
+            gambar_urls_sekretaris = ["https://drive.google.com/uc?export=view&id=1CtYQfkn-7oQ9ayNJ2mU3nccTtHJXj3Vi",]
             data_list_sekretaris = [ 
             {
             "nama": "Juesi Apridelia Saragih",
@@ -330,8 +330,8 @@ elif menu == "Badan Legislatif":
             "alamat": "Pelangi",
             "hobbi": "Dengerin lagu semusim dari marsel",
             "sosmed": "@j__eesie",
-            "kesan": "...",  
-            "pesan": "..."
+            "kesan": "Kakaknya cantikk banget, suka kalo ngobrol sama kak jue banyak obrolannya terus kakaknya seru banget jugaa",  
+            "pesan": "Semangat kakak cantik TA dan penyiarannyaa, aku fans berat kakak, ditunggu cerita-cerita seru lainnyaa"
             },
             ]
             display_images_with_data(gambar_urls_sekretaris, data_list_sekretaris)
@@ -339,9 +339,9 @@ elif menu == "Badan Legislatif":
         with tab3:
             # Pindahkan URL dan Data anggota Komisi I ke dalam list ini
             gambar_urls_komisi1 = [
-            "https://drive.google.com/uc?export=view&id=1J1Ow3mPnTv1NZuoc5vtWmcrPZNIVovs5",
-            "https://drive.google.com/uc?export=view&id=1lVb_DRDLKg3v-K0vaCGfGCuvy8H8Aywe",
-            "https://drive.google.com/uc?export=view&id=1e9mbPMxdAnuLs80AjDceH0kKP1ubYpQV",
+            "https://drive.google.com/uc?export=view&id=1uYeDDORJD34qReI1atwBKh5IeDnZ6cSp",
+            "https://drive.google.com/uc?export=view&id=1-G0fbypU7EwqTJXIg7-bKCCC-F970qG1",
+            "https://drive.google.com/uc?export=view&id=1x84aGEakbajzbQpgA30ME-jZ2mXB6hWV",
             ]
             data_list_komisi1 = [
             {
@@ -352,8 +352,8 @@ elif menu == "Badan Legislatif":
             "alamat": "Bandar Lampung",
             "hobbi": "Ngidupin api baleg di tiktok",
             "sosmed": "@exvoltas",
-            "kesan": "...",  
-            "pesan": "..."
+            "kesan": "Abang ini keren banget pas KDP, aku ngefans bang, terus pintarnya pintar banget (wajar ozt ini)",  
+            "pesan": "Infokan tutor mapress nya dong abangdaa"
             },
             {
             "nama": "Gh. Mikael Niko Antoni Setiadi",
@@ -363,8 +363,8 @@ elif menu == "Badan Legislatif":
             "alamat": "Jati Agung",
             "hobbi": "COD Musang",
             "sosmed": "@me._kael",
-            "kesan": "...",  
-            "pesan": "..."
+            "kesan": "Bang niko baik banget, sangat chill, sangat baik, sangat keren",  
+            "pesan": "Semangat abangg kuliahnyaa, infokan tutor jadi pimsit"
             },
             {
             "nama": "Siti Sarifah Sumamah",
@@ -374,8 +374,8 @@ elif menu == "Badan Legislatif":
             "alamat": "Kedaton",
             "hobbi": "Mancing",
             "sosmed": "@syt.rifa",
-            "kesan": "...",  
-            "pesan": "..."
+            "kesan": "Kakaknya cantik, terus kaget karena nama kami mirip, kakaknya sarifah aku zharifa, sama sama dipanggil rifa lagi",  
+            "pesan": "Semangat kakak rifa kuliahnya - dari adik rifa"
             },
             ]
             display_images_with_data(gambar_urls_komisi1, data_list_komisi1)
@@ -383,10 +383,10 @@ elif menu == "Badan Legislatif":
         with tab4:
             # Pindahkan URL dan Data anggota Komisi II ke dalam list ini
             gambar_urls_komisi2 = [
-                "https://drive.google.com/uc?export=view&id=1A717g1m6Pl_yQkREeN-fy6GNGwZgTpea",
-                "https://drive.google.com/uc?export=view&id=1DMPCpnCFfHAsAgXe9gsOLPghm24ppRWA",
-                "https://drive.google.com/uc?export=view&id=1l3IEEGrYFXfW9-ZrXDk3DUxOjejU7Jr_",
-                "https://drive.google.com/uc?export=view&id=1swlWLuvnhYIuncA3X_jmga-WUrSCDm2e",
+                "https://drive.google.com/uc?export=view&id=1DBqY2wITFCuPFf0Zo5bRJFl5GwTgHrT0",
+                "https://drive.google.com/uc?export=view&id=1c_ChPYs00RaFwOZLP5mASnR0PWXqH0vK",
+                "https://drive.google.com/uc?export=view&id=1Gi6uBYlKKSJ4FN8G-Wr7mvBF6SL0DYD7",
+                "https://drive.google.com/uc?export=view&id=1BKTO1WrhQtslcHr9ACsnJrI40XNYuXv0",
             ]
             data_list_komisi2 = [
             {
@@ -397,8 +397,8 @@ elif menu == "Badan Legislatif":
             "alamat": "Sukabumi",
             "hobbi": "Minum Kopi",
             "sosmed": "@givarooo",
-            "kesan": "...",  
-            "pesan": "..."
+            "kesan": "Bang gip seru banget orangnya, asik, baik bangett juga, penjelasan studi kasusnya masuk akal",  
+            "pesan": "Tutorkan kiat jadi kepala komisi II banggg"
             },
             {
             "nama": "Afghanis Nursholehatunnisa",
@@ -408,8 +408,8 @@ elif menu == "Badan Legislatif":
             "alamat": "Owen Kost",
             "hobbi": "Ngoding",
             "sosmed": "@afghanisnt_",
-            "kesan": "...",  
-            "pesan": "..."
+            "kesan": "Kakaknya cantik dan baik bangett pas ngewawancarai aku, seru jugaa, terus kakaknya pas ngejawab pertanyaan di kelas masuk akal banget",  
+            "pesan": "Kakak pj kami semangat yaa ngejalanin tupoksinyaa, semangat juga menghadapi huru hara semester 5 nyaa"
             },
             {
             "nama": "Hani Qurrota Aini",
@@ -419,8 +419,8 @@ elif menu == "Badan Legislatif":
             "alamat": "Sukarame",
             "hobbi": "Baca AU",
             "sosmed": "@haniquratuain_",
-            "kesan": "...",  
-            "pesan": "..."
+            "kesan": "Kakak ini cantik bangett, suka kalo ngeliat kakak ini karena cantik banget pas aku di semester 1",  
+            "pesan": "Semangat kak hani kuliahnyaa, semangat juga di baleg nya, kelompok greedy cinta kakak kokk"
             },
             {
             "nama": "Jeremia Halim",
@@ -430,8 +430,8 @@ elif menu == "Badan Legislatif":
             "alamat": "Teluk",
             "hobbi": "Nyanyi, olahraga",
             "sosmed": "@jeremia_hm",
-            "kesan": "...",  
-            "pesan": "..."
+            "kesan": "Abang ini keren banget kalo nyanyii udah kek lagi di Orkestra Sydney",  
+            "pesan": "Abang semangat kuliahnya, semangat ketok ketok palunyaa, semangat abangg"
             },
             ]
             display_images_with_data(gambar_urls_komisi2, data_list_komisi2)
@@ -439,10 +439,10 @@ elif menu == "Badan Legislatif":
         with tab5:
             # Pindahkan URL dan Data anggota Komisi III ke dalam list ini
             gambar_urls_komisi3 = [
-                "https://drive.google.com/uc?export=view&id=11bYc1s3Hdc7SXsymoVoO5xp_fJbWbswa",
-                "https://drive.google.com/uc?export=view&id=1U5rFZZlnPF_rL5luJ9Thw-uOT2b62c0J",
-                "https://drive.google.com/uc?export=view&id=1Cic7JXesS0nSp855SaBGZ9GtBENJKAOC",
-                "https://drive.google.com/uc?export=view&id=1bL_a8gWYvrND2p3KYrqGeW6sslbV5cvU",
+                "https://drive.google.com/uc?export=view&id=1ft829_eDMqlODPKF2868sZSnjJQUj-R4",
+                "https://drive.google.com/uc?export=view&id=1o-GpRsP94mFu9NcbH9GHW6WOSFzrfqbr",
+                "https://drive.google.com/uc?export=view&id=1vEPO1hA2U-cA0MmROIuGiDo1uZMao7Qd",
+                "https://drive.google.com/uc?export=view&id=11AS58EsEH6Q7831c4bRe1kuBTnMloXKP",
             ]
             data_list_komisi3 = [
             {
@@ -453,8 +453,8 @@ elif menu == "Badan Legislatif":
             "alamat": "Kotabaru",
             "hobbi": "Lari",
             "sosmed": "@monica_tjg",
-            "kesan": "...",  
-            "pesan": "..."
+            "kesan": "Kak monica keren banget pas ngejawab kalo dikasih pertanyaan, sukaa kerenn, cantik banget kakaknya jugaa",  
+            "pesan": "Kak monica semangat kuliahnyaa, semangat jugaa di baleg, kamu keren kak cantik bangett"
             },
             {
             "nama": "Jona Timothy Ogatse Panjaitan",
@@ -464,8 +464,8 @@ elif menu == "Badan Legislatif":
             "alamat": "Pemda Raya",
             "hobbi": "Gym sama Koleksi figure, nafas manual",
             "sosmed": "@nagatseee",
-            "kesan": "...",  
-            "pesan": "..."
+            "kesan": "Abangnya asik banget, baik banget, keren banget, palu nya juga keren banget",  
+            "pesan": "Abang semangat kuliahnyaa, semangat ngebalegnyaa, infokan tutor ketok-ketok palunya bang"
             },
             {
             "nama": "Sekar Dini Widya Putri",
@@ -475,8 +475,8 @@ elif menu == "Badan Legislatif":
             "alamat": "Pemda",
             "hobbi": "Jajan sama nisa, putri, suci",
             "sosmed": "@sekardnwp",
-            "kesan": "...",  
-            "pesan": "..."
+            "kesan": "Kakaknya baik bangett, seru ngobrol sama kakaknya, terus ternyata kakaknya di baleg keren bangettt",  
+            "pesan": "Semangat kak sekar kuliahnyaa, balegnyaa, ngawasnyaa, semuanya kakak"
             },
             {
             "nama": "Wan Nashwa Alhasni Yuska",
@@ -486,8 +486,8 @@ elif menu == "Badan Legislatif":
             "alamat": "Belwis",
             "hobbi": "Nyapa angin",
             "sosmed": "@nshaysk",
-            "kesan": "...",  
-            "pesan": "..."
+            "kesan": "Kakaknya cantik banget, ceria banget, suka kalo ngobrol sama kakak soalnya kakaknya seru banget pas diajak ngobrol",  
+            "pesan": "Kak Nashwa semangat yaa TA nyaa, sehat sehat kakak semester 7 dan kakak baleg"
             },
             ]
             display_images_with_data(gambar_urls_komisi3, data_list_komisi3)
@@ -502,7 +502,7 @@ elif menu == "Badan Kesenatoran":
 
         with tab1:
             gambar_urls_senator= [
-               "https://drive.google.com/uc?export=view&id=1w3bLa62k0kGRg7zGRGNe09Q2Szp_4SsS",
+               "https://drive.google.com/uc?export=view&id=1JBoXUzygfyJQi8br3gTEO2-vt6GIoA9i",
             ]
             data_list_senator = [
                {
@@ -513,13 +513,13 @@ elif menu == "Badan Kesenatoran":
                 "alamat": "Airan",
                 "hobbi": "Nulis Medium",
                 "sosmed": "@fathinahnaazh",
-                "kesan": "Kakanya keren banget jujurrr",  
-                "pesan": "Semangat terus kuliahnya kaaaa"
+                "kesan": "Kakaknya keren banget jujur, hebat banget bisa jadi senator terus kakaknya cantik banget",  
+                "pesan": "Semangat kakak cantikk kuliahnyaa, semangat juga menyampaikan aspirasi kami kakak dan terimakasih"
                 },
             ]
             display_images_with_data(gambar_urls_senator, data_list_senator)
         with tab2:
-            gambar_urls_biro_aspirasi= [
+            gambar_urls_biro_aspirasi= [ #belum ganti gambar
                 "https://drive.google.com/uc?export=view&id=1ba18uljAh_SmDH5rCQuDfpoNk_CNJW-8",
                 "https://drive.google.com/uc?export=view&id=1f2WiomJkzKMRYpp14oc3Gx-wsI4ti-vr",
                 "https://drive.google.com/uc?export=view&id=1RTgfa6zxJnqhqS7R3wLXwW_-2r1rumb0",
@@ -535,8 +535,8 @@ elif menu == "Badan Kesenatoran":
                 "alamat": "Kedamaian",
                 "hobbi": "Ngesen kiri",
                 "sosmed": "@helmy_ist",
-                "kesan": "abangnya kalo diajak foto maunya melet wkwk",  
-                "pesan": "Semangat terus ya baaang"
+                "kesan": "Abang ini lucu bangett pas wawancaraa #dutamelet, baik banget jujur, asik banget juga",  
+                "pesan": "Semangat abang baik kuliahnyaa, kamu keren bangg"
                 },
                 {
                 "nama": "Fernando Dimetrius Barus",
@@ -546,8 +546,8 @@ elif menu == "Badan Kesenatoran":
                 "alamat": "Sebelah kamar biwa",
                 "hobbi": "Badminton",
                 "sosmed": "@barus.fernando",
-                "kesan": "Asik bener abangnya wkwk",  
-                "pesan": "Semangat terus baaaang"
+                "kesan": "Bang nando baik orangnya, seru jugaa, keren juga, masyallah sekali",  
+                "pesan": "Semangatt abang kuliahnyaaa"
                 },
                 {
                 "nama": "Suci Aulia",
@@ -557,8 +557,8 @@ elif menu == "Badan Kesenatoran":
                 "alamat": "Kota Baru",
                 "hobbi": "Bikin video random dan upload di second",
                 "sosmed": "@sciia_staff",
-                "kesan": "Kakaknya asik sih jujur",  
-                "pesan": "Semangat terus ya kaa kuliahnyaaa"
+                "kesan": "Kakaknya cantik bangett, pertama kali ketemu kakaknya aku kaget karena cantik nya cantik banget",  
+                "pesan": "Semangat kak sucii kuliah dan mendampingi cosvalnyaa, jangan lupa senyum kakak cantik"
                 },
                 {
                 "nama": "Wielman Itolo Halawa",
@@ -568,8 +568,8 @@ elif menu == "Badan Kesenatoran":
                 "alamat": "Asrama TB3",
                 "hobbi": "Mancing",
                 "sosmed": "@wielhawny",
-                "kesan": "Abangnya chill sih ini wkwk",  
-                "pesan": "Pokonya semangat terus baaang"
+                "kesan": "Abangnya asik bangettt seruuuuuu, baik banget banget jugaa, seru ngobrol sama abangnya",  
+                "pesan": "Semangat bang wielman kuliahnyaa, semangat juga agenda mancingnyaa"
                 },
             ]
             display_images_with_data(gambar_urls_biro_aspirasi, data_list_biro_aspirasi)
@@ -589,8 +589,8 @@ elif menu == "Badan Kesenatoran":
                 "alamat": "Belwis",
                 "hobbi": "Nyari jurnal",
                 "sosmed": "@lia.h_264",
-                "kesan": "Pengen belajar sama kakanyaaa wkwk",  
-                "pesan": "Semangat terus kaaaaa"
+                "kesan": "Kak lia itu keren bangett pas nyampaikan materi, keren banget, aku kagumm",  
+                "pesan": "Semangat kak lia kuliahnyaa, semangat juga ngerjain TA nyaa semoga cepat selesai"
                 },
                 {
                 "nama": "Aqila Zayyan Salsabil",
@@ -600,8 +600,8 @@ elif menu == "Badan Kesenatoran":
                 "alamat": "Sukarame",
                 "hobbi": "Mendokumentasikan bayyesian",
                 "sosmed": "@aqilazayyaan",
-                "kesan": "Kakanya jujur asik banget, apa aja diketawain wkwkw",  
-                "pesan": "Semangat terus kaaaaa"
+                "kesan": "Kak qila itu cantik banget gemasss, lucu juga kakaknyaa",  
+                "pesan": "Semangat kuliahnyaa kakak cantik secantik bunga matahari"
                 },
                 {
                 "nama": "Hazel Mahesa Handhaka",
@@ -611,8 +611,8 @@ elif menu == "Badan Kesenatoran":
                 "alamat": "Ujung Terang",
                 "hobbi": "Bulu Tangkis",
                 "sosmed": "@hazelhandhaka",
-                "kesan": "Abangnya keren sih jujur",  
-                "pesan": "Semangat terus bang kuliahnya"
+                "kesan": "Bang hazel keren bangett, baik jugaa, ngefans aku bang",  
+                "pesan": "Semangat abangg kuliahnyaa, semangat basonnyaa, semangatt"
                 },
                 ]
             display_images_with_data(gambar_urls_biro_kajian, data_list_biro_kajian)
@@ -631,8 +631,8 @@ elif menu == "Badan Kesenatoran":
                 "alamat": "Sukarame",
                 "hobbi": "Denger Lagu",
                 "sosmed": "@nadyaanjaani",
-                "kesan": "Kakanya baek bangeeet heheh",  
-                "pesan": "Semangat terus kaaa"
+                "kesan": "Kak nadya cantik banget, keren bangett pas materii",  
+                "pesan": "Kakak semangat yaaa kuliahnyaa kamu keren bangett"
             },
             {
                 "nama": "Dwi Rahma Fitriani",
@@ -642,8 +642,8 @@ elif menu == "Badan Kesenatoran":
                 "alamat": "Jl. Lapas Belwis",
                 "hobbi": "Dengerin musik",
                 "sosmed": "@dwi_rahmftrnii",
-                "kesan": "Kakaknya lucuuu hehe",  
-                "pesan": "Semangat terus ya kaaaa"
+                "kesan": "Ibu mentor yang cantik, baik, imup nan lucu sekaliii",  
+                "pesan": "Semangat kak dwiiii kuliahnyaaa, greedy cinta kamu kakakk"
             }
             ]
             display_images_with_data(gambar_urls_biro_kesekretariatan, data_list_kesekretariatan)
