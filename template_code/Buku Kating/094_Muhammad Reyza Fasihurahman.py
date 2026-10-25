@@ -844,7 +844,7 @@ elif menu == "Departemen PSDA":
                 "kesan": "Kak bila orangnya baik, murah senyum, ramah, dan sangat interaktif, intinya baik dan berhati hello kitty",
                 "pesan":"Semangat terus yaaa kak, semoga dimudahkan segala urusannya."# 1
             },
-             {
+            {
                 "nama": "Desman Velius Halawa",
                 "nim": "123450114",
                 "umur": "25",
@@ -1032,7 +1032,7 @@ elif menu == "Departemen Senator":
             },
             {
                 "nama": "Nadya Ratu Anjani",
-                 "nim": "123450083",
+                "nim": "123450083",
                 "umur": "21",
                 "asal": "Bandar Lampung",
                 "alamat": "Sukarame",
@@ -1130,7 +1130,7 @@ elif menu == "Departemen Eksternal":
             },
             {
                 "nama": "Tarisya Hidayatul Rahmi",
-                 "nim": "123450052",
+                "nim": "123450052",
                 "umur": "-",
                 "asal": "Luhak tanah data",
                 "alamat": "Gerbang Barat",
@@ -1230,7 +1230,7 @@ elif menu == "Departemen Eksternal":
             {
                 "nama": "Ahmad Rizky",
                 "nim": "123450050",
-                 "umur": "21",
+                "umur": "21",
                 "asal": "Tangerang Selatan",
                 "alamat": "GH",
                 "hobbi": "ga ngapa ngapain",
@@ -1296,7 +1296,7 @@ elif menu == "Departemen Eksternal":
             {
                 "nama": "Riska Erlis Dayu Tiara",
                 "nim": "124450022",
-                 "umur": "20",
+                "umur": "20",
                 "asal": "palembang",
                 "alamat": "bebas",
                 "hobbi": "ngefollow up chat",
@@ -1427,7 +1427,7 @@ elif menu == "Departemen MIKFES":
             {
                 "nama": "Vannisa Ramadhani",
                 "nim": "1244500078",
-                "umur": "19"
+                "umur": "19",
                 "asal": "kepulauan riau",
                 "alamat": "teluk betung",
                 "hobbi": "nonton khw",
@@ -1448,7 +1448,7 @@ elif menu == "Departemen MIKFES":
             },
             {
                 "nama": "Akeyla Fairuz Shafi",
-                 "nim": "123450119",
+                "nim": "123450119",
                 "umur": "21",
                 "asal": "Depok",
                 "alamat": "Bandar Lampung",
@@ -1515,7 +1515,7 @@ elif menu == "Departemen MIKFES":
             {
                 "nama": "Razin Hafid Hamdi",
                 "nim": "123450096",
-                 "umur": "21",
+                "umur": "21",
                 "asal":"Padang",
                 "alamat": "Jl. Lapas",
                 "hobbi": "Futsal",
@@ -1570,7 +1570,7 @@ elif menu == "Departemen MIKFES":
             {
                 "nama": "Melva Shaprina Febrianti",
                 "nim": "124450087",
-                 "umur": "19",
+                "umur": "19",
                 "asal":"Sumatera Selatan ",
                 "alamat": "Sukarame ",
                 "hobbi": "Memasak",
@@ -1875,7 +1875,7 @@ elif menu == "Departemen Medkraf":
             },
             {
                 "nama": "Alya Ramadhanti",
-                 "nim": "124450091",
+                "nim": "124450091",
                 "umur": "19",
                 "asal": "Jambi",
                 "alamat": "Airan",
