@@ -14,7 +14,6 @@ from tools.ui_helper import (
     load_image,
     render_kating_cards,
     get_menu_styles,
-    dept_menu,
 )
 
 # Injeksi tema estetis global
@@ -34,8 +33,9 @@ st.markdown(
 
 
 def streamlit_menu():
-    return dept_menu(
-        [
+    selected = option_menu(
+        menu_title=None,
+        options=[
             "Kesekjenan",
             "Baleg",
             "Senator",
@@ -46,8 +46,24 @@ def streamlit_menu():
             "Departemen SSD",
             "Departemen Medkraf",
             "Departemen Minbak",
-        ]
+        ],
+        icons=[
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+        ],
+        default_index=0,
+        orientation="horizontal",
+        styles=get_menu_styles(),
     )
+    return selected
 
 
 def display_images_with_data(gambar_urls, data_list):
@@ -56,6 +72,7 @@ def display_images_with_data(gambar_urls, data_list):
 
 
 menu = streamlit_menu()
+
 
 # BAGIAN SINI YANG HANYA BOLEH DIUABAH
 if menu == "Kesekjenan":
@@ -918,7 +935,7 @@ elif menu == "Senator":
             "https://drive.google.com/uc?export=view&id=1568Y-2vFCZ7B4JqStbA_Q_h2mm3BaLn5",
             "https://drive.google.com/uc?export=view&id=1bQ3F_-3C7J-FJxEPlAWI560RnqfkaM0i",
             "https://drive.google.com/uc?export=view&id=1g2CSnwE4uMopBpRDVPP1-WqYFnjTqOqu",
-            "https://drive.google.com/uc?export=view&id=1bQ3F_-3C7J-FJxEPlAWI560RnqfkaM0i",
+            "https://drive.google.com/uc?export=view&id=1mWP_GSJdbXldrIcztKQ61vUAADsNK7sA",
             "https://drive.google.com/uc?export=view&id=1J3NZPNiwvtONp-jeZoxaqk_VU_Ze9tUu",
             "https://drive.google.com/uc?export=view&id=1RuVycp-3l9Tu95UzS1uKGhtZSHed5jaN",
             "https://drive.google.com/thumbnail?id=1L0EehavONuNd07vhvv2ezQTZt7CZ5KLY&sz=w1000",
@@ -932,8 +949,8 @@ elif menu == "Senator":
                 "alamat": "Belakang PB",
                 "hobbi": "Nulis di medium",
                 "sosmed": "@fathinahnazzh",
-                "kesan": "Kak Fathinah, orangnya .",  
-                "pesan":"Semoga kedepannya bang haikal diberi kelancaran dalam segala hal."# 1
+                "kesan": "Kak Fathinah, orangnya seru dan baik banget.",  
+                "pesan":"Semoga kak Fathinah selalu diberi kelancaran dalam mengemban tugas menjadi Senat KM-ITERA, Semangat terus kak."# 1
             },
             {
                 "nama": "Nadya Ratu Anjani",
@@ -943,8 +960,8 @@ elif menu == "Senator":
                 "alamat": "Sukarame",
                 "hobbi": "Dengerin Lagu",
                 "sosmed": "@nadyaanjaani",
-                "kesan": "Kak Kharisma lucuu, baikk, dan juga ramah paraaah",  
-                "pesan":"Semoga kak kharisma selalu dikelilingi dengan orang baik"# 1
+                "kesan": "Kak Nadya orangnya baik bangeet, soft spoken dan seneng aja kalau berinteraksi dengan kakak",  
+                "pesan":"Semoga kak Nadya selalu diberi kelancaran dalam segala hal, dan selalu diberi kesehatan."# 1
             },
             {
                 "nama": "Dwi Rahma Fitriani",
@@ -954,8 +971,8 @@ elif menu == "Senator":
                 "alamat": "Jl.Lapas",
                 "hobbi": "Baca buku, nonton film, dengerin musik",
                 "sosmed": "@dwi_rahmftrnii",
-                "kesan": "Kak Hanna seru, baikk, lucu ",  
-                "pesan":"Semoga semua yang kak hanna inginkan semuanyaa tercapaii, aamiin"# 1
+                "kesan": "Kak Dwi orangnya seru dan baik banget.",  
+                "pesan":"Semoga apa yang kakak impikan dan kakak harapkan bisa segera tercapai. Terimakasih kak"# 1
             },
             {
                 "nama": "Helmy Surya Pratama",
@@ -965,8 +982,8 @@ elif menu == "Senator":
                 "alamat": "Kedamaian",
                 "hobbi": "Ngesen Kiri",
                 "sosmed": "@helmy_inst",
-                "kesan": "Bang Farhan orangnya keren, selalu keren pas damaskus",  
-                "pesan":"Semoga bang farhan selalu diberi kelancaran dan kesehatan"
+                "kesan": "Bang Helmy orangnya lucu bangett, dan seruu abis. #salammelet",  
+                "pesan":"Semoga bang helmy selalu diberi kelancaran dalam segala hal , Terimakasih ya bang"
             },
             {
                 "nama": "Fernando Dimetrius Barus",
@@ -976,8 +993,8 @@ elif menu == "Senator":
                 "alamat": "Sebelah Kamar Biwa",
                 "hobbi": "Badminton",
                 "sosmed": "@barus.fernando",
-                "kesan": "Kak Aisyah orangnya lucuuu, dan juga asikkk sekali",  
-                "pesan":"Semoga semua apa yang kakak lakuin sekarang dan nanti diberi kelancaran"# 1
+                "kesan": "Bang Nando orangnya baik dan humble banget.",  
+                "pesan":"Semoga bang nando selalu dikasih kesehatan dan kelancaran dalam segala hal. Terimakasih ya bang."# 1
             },
             {
                 "nama": "Suci Aulia",
@@ -987,8 +1004,8 @@ elif menu == "Senator":
                 "alamat": "Kota Baru",
                 "hobbi": "Mancing",
                 "sosmed": "@sciia__",
-                "kesan": "Kak Cerine orangnya sangat asikk, humble, dan juga baikk banget",  
-                "pesan":"Semoga kak cerine selalu dikelilingi orang orang baikk"# 1
+                "kesan": "Kak Suci orangnya seruu, dan lucuuu.",  
+                "pesan":"Semoga kakak selalu diberi kelancaran dalam segala hal yang kakak laluin, semangat teruuus ya kak."# 1
             },
             {
                 "nama": "Wielman Itolo Halawa",
@@ -998,8 +1015,8 @@ elif menu == "Senator":
                 "alamat": "Asrama TB 3",
                 "hobbi": "Dibonceng",
                 "sosmed": "@wielhawn",
-                "kesan": "Bang Jaya orangnya keren, baikk, dan seru",  
-                "pesan":"Semoga bang jaya diberi kesehatan dan kelancaran dalam segala hal!"
+                "kesan": "Bang Wielman orangnya baik bangeeet, dan humblee paraaah.",  
+                "pesan":"Semoga bang wielman selalu diberi kesehatan dan kemudahan dalam segala kondisi, semangat terus ya bangg."
             },
             {
                 "nama": "Lia Hana Ichisasmita",
@@ -1009,8 +1026,8 @@ elif menu == "Senator":
                 "alamat": "Belwis",
                 "hobbi": "Nonton",
                 "sosmed": "@lia.h_264",
-                "kesan": "Kak Najla orangnya baikk, dan juga ramah sekalii",  
-                "pesan":"Semoga semua keinginan kak najla tercapi secepatnya"# 1
+                "kesan": "Kak Hana orangnya baik bangett, dan murah senyuum.",  
+                "pesan":"Semangat teruss ya kak, dan semoga kakak selalu diberi kemudahan disetiap hal yang kakak lakuin"# 1
             },
             {
                 "nama": "Aqila Zayyan Salsabil",
@@ -1020,8 +1037,8 @@ elif menu == "Senator":
                 "alamat": "Sukarame",
                 "hobbi": "Mendokumentasikan Bayes",
                 "sosmed": "@aqilazayyaan",
-                "kesan": "Bang Rozak orangnya asik sihh, dan juga murah senyuum",  
-                "pesan":"Semoga bang rozak didekatkan dengan hal-hal baik"# 1
+                "kesan": "Kak Aqila orangnyaa aktif paraah, lucu, dan seruu abiss",  
+                "pesan":"Semoga kak qila selalu diberi kemudahan dan kelancaran dalam segala hal. Semangat teruuus yaa kak."# 1
             },
             {
                 "nama": "Hazel Mahesa Handhaka",
@@ -1031,8 +1048,8 @@ elif menu == "Senator":
                 "alamat": "Gunung Terang",
                 "hobbi": "Giring Ayam",
                 "sosmed": "@hazelhandhaka",
-                "kesan": "Kak Teresa orangnya lucuu, baikk, dan juga ramahh",  
-                "pesan":"Semoga kak teresa segera mendapatkan semua keinginannya"# 1
+                "kesan": "Bang Hazel orangnya kereen banget, dengan rambutnya yang badai ituu, jujur saya pengen punya style kek abang, cuman keknya ga cocok deh sama saya.",  
+                "pesan":"Semoga abang selalu diberi kesehatan dan kemudahan dalam segala hal. Semangat terus dan selalu beri dampak kepada orang sekitar yaa bang."# 1
             }
         ]
         display_images_with_data(gambar_urls, data_list)
