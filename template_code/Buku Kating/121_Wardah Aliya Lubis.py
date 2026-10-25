@@ -106,6 +106,7 @@ if menu == "Kesekjenan":
             "https://drive.google.com/uc?export=view&id=1oI-tT7AdEqI1YOlPBf4vookLQPQvnZ6K",
             "https://drive.google.com/uc?export=view&id=17HrIBmIQ4HNvBWrX2sRAqIkiFLwbnVhT",
             "https://drive.google.com/uc?export=view&id=1-G9OLCTeEkZJT4D_4wEoi8theUGrLRj_",
+			"https://drive.google.com/uc?export=view&id=1Kq9LFbKNgmgMMjhaFoaPTnsE7UaxAmlZ",
         ]
         data_list = [
             {
@@ -348,16 +349,19 @@ if menu == "Badan Legislatif":
 if menu == "Badan Kesenatoran":
     def Bason():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1aZHCXplW5SpgmlWsgEJ9CMz-Cc63zP72",
-            "https://drive.google.com/uc?export=view&id=1s4Y_J-WUNOKKX-T3d-K_4JN9xKSiD9PP",
-            "https://drive.google.com/uc?export=view&id=15WmvhPmC_uVDyMKeLCGKgMu__ebyVphl",
-            "https://drive.google.com/uc?export=view&id=1ckA1gO2M6n0FrBpBNCD-fWzO-0N1kH2L",
-            "https://drive.google.com/uc?export=view&id=1uiN1uIUJVliOkeWtqFj8Mw_zMoZV4r27",    
-            "https://drive.google.com/uc?export=view&id=1OHlSd2BkSICOJiXU_jnPX75Ro7FW63m9",
-            "https://drive.google.com/uc?export=view&id=1Dwm4V6jDHF3WKWUxLk7jDcPMgsvzPpo_",
-            "https://drive.google.com/uc?export=view&id=15MiDZ0sw9gk5bvcEhJspcOwbzYKvtxoz",
-            "https://drive.google.com/uc?export=view&id=1ffC4TPfM-HOkmrWTgc6Bag9v_QJ5QKzK",
-            "https://drive.google.com/uc?export=view&id=1yCJoXNgAfsawHBucCZa9_l90LxcIV76n",
+           "https://drive.google.com/uc?export=view&id=1s_w0hubRnMu90OKKfRz_Tz4EpKcLmreU",
+            "https://drive.google.com/uc?export=view&id=1P4ruEk7NETFmFwSpA5IasehjcCj_sTyC",
+            "https://drive.google.com/uc?export=view&id=15isF6NFx2_fp9zXGRDcHM0HEGulMmCdM",
+            "https://drive.google.com/uc?export=view&id=1s5GvbYr-xmxzzzr7nDjm63DSaSYOQq7y",
+            "https://drive.google.com/uc?export=view&id=1bSOCPQwxcSPGQ_JXWL-4Zwm1OCuweCu4",
+            "https://drive.google.com/uc?export=view&id=1bphBvECJmybGOcAzcVyxL4_gzMWo3ANg",
+            "https://drive.google.com/uc?export=view&id=15YH0V3v18gLUxLPvYazTOvqzIDN1r7fT",
+            "https://drive.google.com/uc?export=view&id=1oMnwYJapXVrMkpQ2psowMlFNltWy4kH2",
+            "https://drive.google.com/uc?export=view&id=1fq9orydmm-d4Tc6RRS8OLl4CuyoZLDkS",
+            "https://drive.google.com/uc?export=view&id=1LX00iLQB690SPQW2hoJ1kOriump8LWJB",
+            "https://drive.google.com/uc?export=view&id=1sECCXB4H_nPKyJX9riNihBRwmSb0imxx",
+            "https://drive.google.com/uc?export=view&id=1H926uCv7ZYVnnb3-rL7HJgxDg4ryehiP",
+        ]
         ]
         data_list = [
             {
