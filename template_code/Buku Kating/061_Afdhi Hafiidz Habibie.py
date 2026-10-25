@@ -117,8 +117,8 @@ if menu == "Kesekjenan":
                 "Alamat": "Kesektariatan HMSD",
                 "Hobi": "Push IMO",
                 "Sosmed": "@jars_mrp",
-                "Kesan": "Bang Fajar orangnya sangat humble, baik, dan juga sangat menginspirasi bagi saya.",  
-                "Pesan":"Semoga kedepannya fadyl bisa tumbuh seperti bang fajar, terimakasih bang"# 1
+                "Kesan": "Bang Fajar orangnya berwibawa, keren bisa jadi ketua himpunan.",  
+                "Pesan":"Semangat selalu bang dalam mengerjakan tugas akhrinya"# 1
             },
             {
                 "Nama": "Muhammmad Aqil Ramadhan",
@@ -128,8 +128,8 @@ if menu == "Kesekjenan":
                 "Alamat": "Sekretariatan HMSD",
                 "Hobi": "Dzikie",
                 "Sosmed": "@muhammadaqil1111",
-                "Kesan": "Bang Aqil orangnya asik dan ramah, penjelasannya juga mudah dipahami, jadi saya bisa lebih mengenal apa itu Kesekjenan.",  
-                "Pesan":"Semoga ke depannya selalu dilancarkan segala urusannya dan sukses terus, Bang!"# 1
+                "Kesan": "Bang Aqil orangnya ramah dan baik, saat menjawab pertanyaan kemarin pun sangat mudah dipahami.",  
+                "Pesan":"Terima kasih bang atas penjelasan mengenai kesekjenan saat wwc kemarin, semoga Bang Aqil selalu diberikan kelancaran dalam mengerjakan tugas akhirnya"# 1
             },
             {
                 "Nama": "Efi Defiyati",
@@ -139,8 +139,8 @@ if menu == "Kesekjenan":
                 "Alamat": "Airan",
                 "Hobi": "Membaca",
                 "Sosmed": "@eeffiidefi",
-                "Kesan": "Kak Efi orangnya ramah dan baik, penjelasannya juga menambah wawasan saya tentang apa itu peran dan tugas dari Sekretaris.",  
-                "Pesan":"Semoga ke depannya selalu diberikan kelancaran dan bisa terus menjadi inspirasi bagi orang-orang di sekitarnya, Kak!"# 1
+                "Kesan": "Seru ngedengerin penjelasan mengenai tugas dan peran dari sekretaris.",  
+                "Pesan":"Semangat terus Kak Efi dalam menjalani perkuliahan dan mengerjakan tugas akhrinya"# 1
             },
             {
                 "Nama": "Qois Olifio",
@@ -150,8 +150,8 @@ if menu == "Kesekjenan":
                 "Alamat": "Kota Baru",
                 "Hobi": "Mainin Surat",
                 "Sosmed": "@qoisolifio",
-                "Kesan": "Bang Qois orangnya soft gituu, keknya memang suka banget jadi sekre, dari bang qois saya jadi mengenal apa aja tugas dan peran dari sekretaris.",  
-                "Pesan":"Semoga kedepannya selalu diberikan kesehatan, kebahagiaan, dan kesuksesan. Semangat terus, ya baang!"
+                "Kesan": "Bang Qois orangnya ramah banget jadi pas ngedengerin penjelasan mengenai sekretaris mudah dipahami.",  
+                "Pesan":"Semoga Bang Qois kedepannya selalu diberikan kemudahan dan kesuksesan. Semangat terus Bang Qois buat mengerjakan tugas akhirnya!"
             },
             {
                 "Nama": "Hafsa Fazila Arradhi",
@@ -161,19 +161,19 @@ if menu == "Kesekjenan":
                 "Alamat": "Bandar Lampung",
                 "Hobi": "Berkuda",
                 "Sosmed": "@Hafsafazilaa",
-                "Kesan": "Kak Hafsa orangnya humble, dan seru banget , setiap penjelasan yang kakak berikan itu mudah di pahami",  
-                "Pesan":"Semoga kedepannya kak Hafsa selalu diberi kelancaran dalam segala hal, dan kesehatan ,terimakasih Kak!!"# 1
+                "Kesan": "Kak Hafsa orangnya humble, penjelasan yang diberikan mudah dipahami",  
+                "Pesan":"Semoga selalu diberi kelancaran dalam mengerjakan tugas akhirnya, semangat kakk!"# 1
             },
             {
-                "Nama": "Luthfia Laila RAmadhani",
+                "Nama": "Luthfia Laila Ramadhani",
                 "NIM": "123450004",
                 "Umur": "21",
                 "Asal":"Bengkulu",
                 "Alamat": "Airan",
-                "Hobi": "Bermain ke kost Efi",
+                "Hobi": "main ke kost Efi",
                 "Sosmed": "@luthfiaarmdhni",
-                "Kesan": "Kak Luthfia orangnya lucu banget, aktif, dan seruu, jadi yang disampaikan oleh kak lutfhia mudah dipahami.",  
-                "Pesan":"Semoga kedepannya kakak diberikan kelancaran dalam menjalankan amanahnya. Semangat terus, Kak"# 1
+                "Kesan": "Kak Luthfia orangnya seru dan aktif. Dari penjelasannya, saya jadi lebih tahu tentang tugas dan tanggung jawab bendahara dalam himpunan.",
+                "Pesan": "Semangat terus Kak Luthfia buat ngerjain tugas akhirnya, semoga dilancarkan sampai selesai dan cepat wisuda!"
             }
         ]
         display_images_with_data(gambar_urls, data_list)
@@ -216,7 +216,7 @@ if menu == "Badan Legislatif":
                 "Asal": "Singkawang",
                 "Alamat": "Pelangi",
                 "Hobi": "Dengerin lagu duhai sayang",
-                "Sosmed": "j__eesie",
+                "Sosmed": "@j__eesie",
                 "Kesan": "Bang Aqil orangnya baik, asik dan memberikan kesan yang positif selama saya berinteraksi dengan bang Aqil.",
                 "Pesan": "Semoga bang Aqil selalu diberikan kelancaran dalam menjalani perkuliahan dan tetap semangat dalam mengerjakan Tugas Akhirnya!"
             },
@@ -693,28 +693,28 @@ if menu == "Departemen PSDA":
 if menu == "Departemen MIKFES":
     def mikfes():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1cPCW894G5bbpmmNtB3--wZJMJE94AHFs", #fabio
-            "https://drive.google.com/uc?export=view&id=1Q6_9SaCCNu68T7txIMPHEwoCk58EPEK0", #tanty
-            "https://drive.google.com/uc?export=view&id=1sejXGjqSOzajQpI_ax0UAn5LMMgU6Lia", #fadyl
-            "https://drive.google.com/uc?export=view&id=1O6sVgJ6D1VD5RLty2UwoNjNZf-SQ2tDP", #nuel
-            "https://drive.google.com/uc?export=view&id=1iiAn3yefi1s5wA-OKxGM4alU11MdgCaS", #viola
-            "https://drive.google.com/uc?export=view&id=12Rvc3EJ4FLKd_O3DUGTsAHeYGDY13IMC", #risa
-            "https://drive.google.com/uc?export=view&id=1tHZJWNC9pGABN_wgCIdVNbarGHGDV63B", #vanisa
-            "https://drive.google.com/uc?export=view&id=1Q8IihY68dunX-vtYST9ZDZ0HeBzgnXlB", #yulia
-            "https://drive.google.com/uc?export=view&id=19nIwMobYNb4dx9Leoehnkpz0jD9G2-aQ", #akeyla
-            "https://drive.google.com/uc?export=view&id=1OjUaTOlcipLL8eZnkK8H-vm0yTSrAphR", #elsa
-            "https://drive.google.com/uc?export=view&id=154RfaTTcgOIitgugm42S4Xmwe7Fp2h2p", # fadya
-            "https://drive.google.com/uc?export=view&id=1OUyGstrQvgVZhMHz1yAhAACyK5jwHE0-", #lovi
-            "https://drive.google.com/uc?export=view&id=1YoS5cfkG1dNFRYjVWoR0hOkttEO9PX4E", # asli
-            "https://drive.google.com/uc?export=view&id=1YBBKb8V2eNw0yTzCBrQ25O7QEo0WACcn", #sherena
-            "https://drive.google.com/uc?export=view&id=1UIr6yc3WFqCBHgqoCHnY2BtRK8wA-Wyj", #razin
-            "https://drive.google.com/uc?export=view&id=1Gtkz8gsfACMo4sZ7OCPWEsbnc5D0m78K", #faiza
-            "https://drive.google.com/uc?export=view&id=1seX3ZXFKTnBBrD1aAtwO26kXo9h8aK40", #gathan
-            "https://drive.google.com/uc?export=view&id=1FchSeApf0IrIFCXOXqOoq0n3tknDHMP2", #pidzy
-            "https://drive.google.com/uc?export=view&id=15bRtOQhXN0OFNGUDi3usPnOEhBVfKj9a", #kaleb
-            "https://drive.google.com/uc?export=view&id=1quPXZLaVpPU92hiCB9g5X7-lwwl5HWxV", #melva
-            "https://drive.google.com/uc?export=view&id=1G5n2J1AThSCikA4G0NJu54w4zgeN_9or", #falakh
-            "https://drive.google.com/uc?export=view&id=1eWCDBWGUb8s_rfRtSxHHXeEzutUJCuJw", #henry
+            "https://drive.google.com/uc?export=view&id=1cPCW894G5bbpmmNtB3--wZJMJE94AHFs", #fabio1
+            "https://drive.google.com/uc?export=view&id=1Q6_9SaCCNu68T7txIMPHEwoCk58EPEK0", #tanty2
+            "https://drive.google.com/uc?export=view&id=1sejXGjqSOzajQpI_ax0UAn5LMMgU6Lia", #fadyl3
+            "https://drive.google.com/uc?export=view&id=1O6sVgJ6D1VD5RLty2UwoNjNZf-SQ2tDP", #nuel4
+            "https://drive.google.com/uc?export=view&id=1iiAn3yefi1s5wA-OKxGM4alU11MdgCaS", #viola5
+            "https://drive.google.com/uc?export=view&id=12Rvc3EJ4FLKd_O3DUGTsAHeYGDY13IMC", #risa6
+            "https://drive.google.com/uc?export=view&id=1tHZJWNC9pGABN_wgCIdVNbarGHGDV63B", #vanis7a
+            "https://drive.google.com/uc?export=view&id=1Q8IihY68dunX-vtYST9ZDZ0HeBzgnXlB", #yulia8
+            "https://drive.google.com/uc?export=view&id=19nIwMobYNb4dx9Leoehnkpz0jD9G2-aQ", #akeyla9
+            "https://drive.google.com/uc?export=view&id=1OjUaTOlcipLL8eZnkK8H-vm0yTSrAphR", #elsa10
+            "https://drive.google.com/uc?export=view&id=154RfaTTcgOIitgugm42S4Xmwe7Fp2h2p", # fadya11
+            "https://drive.google.com/uc?export=view&id=1OUyGstrQvgVZhMHz1yAhAACyK5jwHE0-", #lovi12
+            "https://drive.google.com/uc?export=view&id=1YoS5cfkG1dNFRYjVWoR0hOkttEO9PX4E", # asli131
+            "https://drive.google.com/uc?export=view&id=1YBBKb8V2eNw0yTzCBrQ25O7QEo0WACcn", #sherena14
+            "https://drive.google.com/uc?export=view&id=1UIr6yc3WFqCBHgqoCHnY2BtRK8wA-Wyj", #razin15
+            "https://drive.google.com/uc?export=view&id=1Gtkz8gsfACMo4sZ7OCPWEsbnc5D0m78K", #faiza16
+            "https://drive.google.com/uc?export=view&id=1seX3ZXFKTnBBrD1aAtwO26kXo9h8aK40", #gathan17
+            "https://drive.google.com/uc?export=view&id=1FchSeApf0IrIFCXOXqOoq0n3tknDHMP2", #pidzy18
+            "https://drive.google.com/uc?export=view&id=15bRtOQhXN0OFNGUDi3usPnOEhBVfKj9a", #kaleb19
+            "https://drive.google.com/uc?export=view&id=1quPXZLaVpPU92hiCB9g5X7-lwwl5HWxV", #melva20
+            "https://drive.google.com/uc?export=view&id=1G5n2J1AThSCikA4G0NJu54w4zgeN_9or", #falakh21
+            "https://drive.google.com/uc?export=view&id=1eWCDBWGUb8s_rfRtSxHHXeEzutUJCuJw", #henry22
         ]
         data_list = [
             {
