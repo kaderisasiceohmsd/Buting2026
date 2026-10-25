@@ -1315,7 +1315,7 @@ if menu == "Departemen Eksternal":
                 "alamat": "Balam",
                 "hobbi": "berlaku humoris dan manis",
                 "sosmed": "@bimayasa_",
-                "kesan": "Bang Bima aslinya baik banget. Diajak ngobrol juga nyambung dan seru, jadi enak aja kalau ngobrol dan sharing"  sm bang abim.",
+                "kesan": "Bang Bima aslinya baik banget. Diajak ngobrol juga nyambung dan seru, jadi enak aja kalau ngobrol dan sharing sama bang abim.",
                 "pesan": " Semoga Bang Bima makin sukses dan semua yang lagi .dikejar bisa dapet!"
             },
             {
