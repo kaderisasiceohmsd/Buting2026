@@ -877,18 +877,18 @@ if menu == "Departemen MIKFES":
 if menu == "Departemen SSD":
     def departemen_ssd():
         gambar_urls = [
-                "https://drive.google.com/file/d/1hPF4sBBBo2NT6BiPoW61UKMB2-V_9Y4X/view?usp=drive_link",
-                "https://drive.google.com/file/d/1IJlMnVTFsnav6X-YbTqOxdGr2PbtR7j2/view?usp=drive_link",
-                "https://drive.google.com/file/d/1b-tVBH7WJSaf_utxLlGnCLuwp7Y7hPFG/view?usp=drive_link",
-                "https://drive.google.com/file/d/1tll3Kv1m4QPArsu0z73pNKO9m54J4zKi/view?usp=drive_link",
-                "https://drive.google.com/file/d/1BV7cdcjDG3FcqPxZD72GEvwoOYhES2V7/view?usp=drive_link",
-                "https://drive.google.com/file/d/1uixfalAHL0VhDTxjhH7Z7XCuXEGi9L9U/view?usp=drive_link",
-                "https://drive.google.com/file/d/1mwvg1jEvTIfIbYvW3eE5bufkziQ9rfdG/view?usp=drive_link",
-                "https://drive.google.com/file/d/1wJgqwZiv5w_4NVZsUAoKCl4O61UiFq8z/view?usp=drive_link",
-                "https://drive.google.com/file/d/1pm6vWnXieBbrMPmUUdCO9fHeydQ0vRNP/view?usp=drive_link",
-                "https://drive.google.com/file/d/1ulqa7-kxVgW5xiM88nA1RnrYwPBXFPi_/view?usp=drive_link",
-                "https://drive.google.com/file/d/1BzGfQs6QFK7VtihZ7p7YA6tFLY49crMv/view?usp=drive_link",
-                "https://drive.google.com/file/d/11gwoxZeXHEktovTCb98R6L2XUQNRMSSs/view?usp=drive_link"
+                "https://drive.google.com/thumbnail?id=1hPF4sBBBo2NT6BiPoW61UKMB2-V_9Y4X&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1IJlMnVTFsnav6X-YbTqOxdGr2PbtR7j2&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1b-tVBH7WJSaf_utxLlGnCLuwp7Y7hPFG&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1tll3Kv1m4QPArsu0z73pNKO9m54J4zKi&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1BV7cdcjDG3FcqPxZD72GEvwoOYhES2V7&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1uixfalAHL0VhDTxjhH7Z7XCuXEGi9L9U&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1mwvg1jEvTIfIbYvW3eE5bufkziQ9rfdG&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1wJgqwZiv5w_4NVZsUAoKCl4O61UiFq8z&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1pm6vWnXieBbrMPmUUdCO9fHeydQ0vRNP&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1ulqa7-kxVgW5xiM88nA1RnrYwPBXFPi_&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1BzGfQs6QFK7VtihZ7p7YA6tFLY49crMv&sz=w1000",
+                "https://drive.google.com/thumbnail?id=11gwoxZeXHEktovTCb98R6L2XUQNRMSSs&sz=w1000",
         ]
 
         data_list = [
