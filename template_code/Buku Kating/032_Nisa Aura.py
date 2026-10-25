@@ -3,28 +3,27 @@ from streamlit_option_menu import option_menu
 import requests
 from PIL import Image, ImageOps
 from io import BytesIO
+import html
 
-@st.cache_data
-def load_image(url):
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
+st.markdown("""
+    <style>
+    .centered-title {
+        text-align: center;
+        color: #2F3E36; !important
     }
-    try:
-        response = requests.get(url, headers=headers, timeout=10)
-        if response.status_code != 200:
-            st.error(f"Failed to fetch image from {url}, status code: {response.status_code}")
-            return None
-        img = Image.open(BytesIO(response.content))
-        img = ImageOps.exif_transpose(img)
-        img = img.resize((300, 400))
-        return img
-    except Exception as e:
-        st.error(f"Error loading image: {e}")
-        return None
-
-st.markdown("""<style>.centered-title {text-align: center;}</style>""", unsafe_allow_html=True)
+    .stApp {
+            background: linear-gradient(160deg, #DCE8D2 0%, #E9F0DE 50%, #F1F2E3 100%) !important;
+            background-attachment: fixed;
+            color: #2F3E36");
+    }
+    [data-testid="stHeader"] {
+        background: linear-gradient(160deg, #DCE8D2 0%, #E9F0DE 50%, #F1F2E3 100%) !important;
+        background-attachment: fixed !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
 st.markdown("<h1 class='centered-title'>BUKU KATING</h1>", unsafe_allow_html=True)
-
+ 
 # bagian sini jangan diubah
 def streamlit_menu():
     selected = option_menu(
@@ -56,50 +55,92 @@ def streamlit_menu():
         default_index=0,
         orientation="horizontal",
         styles={
-            "container": {"padding": "0!important", "background-color": "#fafafa"},
-            "icon": {"color": "black", "font-size": "16px"},
+            "container": {"padding": "0!important", "background-color": "#FBF8F0"},
+            "icon": {"color": "#C08552", "font-size": "16px"},
             "nav-link": {
                 "font-size": "13px",
                 "text-align": "left",
                 "margin": "0px",
-                "--hover-color": "#eee",
+                "color": "#2F3E36",
+                "--hover-color": "#E3EDD9",
             },
-            "nav-link-selected": {"background-color": "#3FBAD8"},
+            "nav-link-selected": {"background-color": "#6B8F5E",
+                                  "color": "#FFFFFF"},
         },
     )
     return selected
 
+CSS_BIODATA = """
+<style>
+.bio-nama {font-size: 1.2rem; font-weight: 700; margin: 0.4rem 0 0.6rem 0; color: #2F3E36; !important}
+.bio-row {display: flex; gap: 0.6rem; font-size: 0.92rem; line-height: 1.5; padding: 3px 0;}
+.bio-lbl {min-width: 80px; color: #6b7280; font-weight: 600;}
+.bio-val {flex: 1; word-break: break-word; color: #2F3E36; !important}
+</style>
+"""
+
+FIELD_BIODATA = ["NIM", "Umur", "Asal", "Alamat", "Hobi", "Sosmed", "Kesan", "Pesan"]
+
+
 @st.cache_data
-def display_images_with_data(gambar_urls, data_list):
-    images = []
-    for i, url in enumerate(gambar_urls):
-        with st.spinner(f"Memuat gambar {i + 1} dari {len(gambar_urls)}"):
-            img = load_image(url)
-            if img is not None:
-                images.append(img)
+def load_image(url):
+    try:
+        if "drive.google.com" in url:
+            if "id=" in url:
+                file_id = url.split("id=")[1].split("&")[0]
+            elif "/d/" in url:
+                file_id = url.split("/d/")[1].split("/")[0]
+            else:
+                file_id = None
+            
+            if file_id:
+                url = f"https://drive.google.com/uc?export=view&id={file_id}"
 
-    for i, img in enumerate(images):
-        # Menggunakan Streamlit untuk menampilkan gambar di tengah kolom
-        col1, col2, col3 = st.columns([1, 2, 1])
-        with col2:
+        headers = {'User-Agent': 'Mozilla/5.0'}
+        response = requests.get(url, headers=headers, timeout=15)
+        response.raise_for_status()
+        img = Image.open(BytesIO(response.content))
+        img = ImageOps.exif_transpose(img).convert("RGB")
+        return ImageOps.fit(img, (400, 500), Image.LANCZOS)
+    except Exception:
+        return None
+
+
+def tampilkan_kartu(img, data):
+    with st.container(border=True):
+        if img is not None:
             st.image(img, use_container_width=True)
+        else:
+            st.info("Foto tidak tersedia")
 
-        if i < len(data_list):
-            st.write(f"Nama: {data_list[i]['Nama']}")
-            st.write(f"NIM: {data_list[i]['NIM']}")
-            st.write(f"Umur: {data_list[i]['Umur']}")
-            st.write(f"Asal: {data_list[i]['Asal']}")
-            st.write(f"Alamat: {data_list[i]['Alamat']}")
-            st.write(f"Hobbi: {data_list[i]['Hobi']}")
-            st.write(f"Sosial Media: {data_list[i]['Sosmed']}")
-            st.write(f"Kesan: {data_list[i]['Kesan']}")
-            st.write(f"Pesan: {data_list[i]['Pesan']}")
-            st.write("  ")
-    st.write("Semua gambar telah dimuat!")
+        baris = f'<div class="bio-nama">{html.escape(data["Nama"])}</div>'
+        for field in FIELD_BIODATA:
+            baris += (
+                f'<div class="bio-row">'
+                f'<span class="bio-lbl">{field}</span>'
+                f'<span class="bio-val">: {html.escape(str(data[field]))}</span>'
+                f'</div>'
+            )
+        st.markdown(baris, unsafe_allow_html=True)
 
+
+def display_images_with_data(gambar_urls, data_list):
+    st.markdown(CSS_BIODATA, unsafe_allow_html=True)
+
+    with st.spinner("Memuat foto..."):
+        images = [load_image(url) for url in gambar_urls]
+
+    pasangan = list(zip(images, data_list))
+
+    for i in range(0, len(pasangan), 2):
+        cols = st.columns(2, gap="medium")
+        for col, (img, data) in zip(cols, pasangan[i:i + 2]):
+            with col:
+                tampilkan_kartu(img, data)
+                
+# KESEKJENAN                
 menu = streamlit_menu()
-# KESEKJENAN
- # KESEKJENAN
+
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
