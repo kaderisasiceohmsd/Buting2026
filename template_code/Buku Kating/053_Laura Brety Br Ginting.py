@@ -187,7 +187,7 @@ elif menu == "Senator":
             {
                 "nama": "Wielman Itolo Halawa",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1CZERyVIBD64haO-6GdMeZiQxlSMonih1",
-                "kesan": "Kakaknya asik, tinngi, kelihatan lemah lembut dan matanya cantik.",
+                "kesan": "Abangnya asik, tinngi, kelihatan lemah lembut dan matanya cantik.",
                 "pesan": "Semangat kuliahnya kak, jangan lupa jaga kesehatan bang, semoga apa yang dicitakan terwujud.",
             },
             {
@@ -219,7 +219,7 @@ elif menu == "Departemen PSDA":
                 "nama": "Arienta Khusnul Ananda",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=19YAhwbTC4qyBcgQYvn4yjbXfMF2f2Znq",
                 "kesan": "Kakaknya cantik, gemash dan berwibawa banget.",
-                "pesan": "Semangat kuliahnya kak, tips biar baca jurnal bisa jadi hobi dong.",
+                "pesan": "Semangat kuliahnya kak, tips biar baca bisa jadi hobi dong.",
             },
             {
                 "nama": "Vany Salsabila Putri",
@@ -249,7 +249,7 @@ elif menu == "Departemen PSDA":
                 "nama": "Ayake Alfatih Ramadan",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=13zRJnn9zjlxu6gqkBoH6ma8HZnG7jsaU",
                 "kesan": "Abangnya keren dan menginspirasi.",
-                "pesan": "Semangat kuliahnya bang, jangan lupa jaga kesehata.",
+                "pesan": "Semangat kuliahnya bang, jangan lupa jaga kesehatan dan minum air yang cukup bang.",
             },
             {
                 "nama": "Caesar Ozora Alrando",
@@ -327,7 +327,7 @@ elif menu == "Departemen MIKFES":
             {
                 "nama": "Fabio Banyu Cyto",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1kFxu85T9TCvTVK1l90gshFeBIXyRLCIu",
-                "kesan": "Abangnya ramah, kelihatan pintarnya dan agak mirip sama bang Ahmad Rizky.",
+                "kesan": "Abangnya ramah, kelihatan pintarnya dan kemarin agak susah badainnya sama bang Ahmad Rizky.",
                 "pesan": "Semangat kuliahnya bang. semoga tidurmu selalu cukup.",
             },
             {
@@ -352,7 +352,7 @@ elif menu == "Departemen MIKFES":
                 "nama": "Razin Hafid Hamdi",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1BMEjO9ieMXLciQiB2-QSiKqYMdan2rA4",
                 "kesan": "Abangnya baik, pendiem dan keliatan banget sih pinternya.",
-                "pesan": "Semangat kuliahnya bang, btw datax piala dunia kemarin kere banget.",
+                "pesan": "Semangat kuliahnya bang, btw datax piala dunia kemarin keren banget.",
             },
             {
                 "nama": "Manuel Frederika",
@@ -738,44 +738,44 @@ elif menu == "Departemen SSD":
             {
                 "nama": "Layina Ropiqo",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1IhSr-w5g2wIM-qTe_s77gDdS-XxeI2bM",
-                "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
-                "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
+                "kesan": "Kakaknya sangat ramah, baik dan lucu.",
+                "pesan": "Semangatkulihnya kak, jangan lupa minum air putih yang cukup.",
             },
             {
                 "nama": "Mochammad Iqbal Az-Zahir",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1g9yrTkxyn0Gvfzk1TtvGv0GL8d3V1PUt",
-                "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
-                "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
+                "kesan": "Abangnya keren, cool dan pendiam.",
+                "pesan": "Semangat kuliahnya bang, apa yang diharapkan dapat tercapai.",
             },
             {
                 "nama": "Talitha Justine",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1r09qJzI-c-hzP8_saz_pnVRhtpiPNOeO",
-                "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
-                "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
+                "kesan": "Kakaknya baik, cantiik, dan gemash dan pendiam.",
+                "pesan": "Semangat kuliahnya kak, lancar ya pendidikannya.",
             },
             {
                 "nama": "Abdillah Fikri Al Pome",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1d5_DgyJ-EHZp2TBQqwWU4UJEGT5LwZur",
-                "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
-                "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
+                "kesan": "Abangnya asik, seru dan ramah.",
+                "pesan": "Semangat kuliahnya bang, jangan lupa istirahat.",
             },
             {
                 "nama": "Afdhal Rahmad Setiawan",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1GFW7w7ZzlreZ2Y1NXEWV_uayJQvExRYC",
-                "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
-                "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
+                "kesan": "Abangnya asik dan seru.",
+                "pesan": "Semangat kuliahnya bang, semoga sehat selalu.",
             },
             {
                 "nama": "Anggun Nita",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1uyu2rmeoT0oXK4L59py5GKmNw54rGDg8",
-                "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
-                "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
+                "kesan": "Kakaknya baik, ramah dan kayaknya anak ambis ya.",
+                "pesan": "Semangat kuliahnya kak, jangan lupa bahagia.",
             },
             {
                 "nama": "Della Anisa Fitri",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1cQ7-iE035L93CQ1FEP4NswqnOQ1yIzN2",
-                "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
-                "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
+                "kesan": "Kakaknya cantik, asik, baik dan ramah.",
+                "pesan": "Semangat kuliahnya kak, jangan bosan jadi orang baik ya kak.",
             },
         ]
         display_kating(kating_data, departemen=menu)
