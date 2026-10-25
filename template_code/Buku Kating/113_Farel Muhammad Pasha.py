@@ -246,8 +246,8 @@ if menu == "Kesekjenan":
                 "alamat": "Sekretariat HMSD ",
                 "hobbi": "Push Rank",
                 "sosmed": "@jars_mrp",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Abang ini keren daqn kalem",  
+                "pesan":"semangat yaa bang buat kuliahnya"# 1
             },
             {
                 "nama": "Muhammad Aqil Ramadhan ",
@@ -257,8 +257,8 @@ if menu == "Kesekjenan":
                 "alamat": "Sekretariat HMSD ",
                 "hobbi": "Zikir",
                 "sosmed": "@muhammadaqil1111",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Abangnya asik, tinggi, dan nyantuy",  
+                "pesan":"Zikirnya semoga lebih rajin lagi ya bangg"# 1
             },
             {
                 "nama": "Efi Defiyati",
@@ -268,8 +268,8 @@ if menu == "Kesekjenan":
                 "alamat": "Airan",
                 "hobbi": "Membaca",
                 "sosmed": "@eefidefiyati",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Aura kakanya kalem tapi tegas",  
+                "pesan":"semoga lebih semangat lagi ka jadi aspraknyaa"# 1
             },
             {
                 "nama": "Qois Olifio",
@@ -279,8 +279,8 @@ if menu == "Kesekjenan":
                 "alamat": "Kotabaru",
                 "hobbi": "Mainin surat",
                 "sosmed": "@qoisolifio_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Abang ini kalem sama pendiem tapi asikk juga",  
+                "pesan":"semangat terus ya bang kuliahnyaaa"# 1
             },
             {
                 "nama": "Hafsa Fazila Arradhi",
@@ -290,8 +290,8 @@ if menu == "Kesekjenan":
                 "alamat": "Bandar Lampung ",
                 "hobbi": "Melukis",
                 "sosmed": "@hafsafazilaa",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Kakaknya positif vibesss",  
+                "pesan":"stay positif vibes terus ya kaa"# 1
             },
             {
                 "nama": "Luthfia Laila Ramadhani ",
@@ -301,8 +301,8 @@ if menu == "Kesekjenan":
                 "alamat": "Airan",
                 "hobbi": "Nyari motor Pak Tirta ",
                 "sosmed": "@luthfiaarmdhni",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Ka Luthfia orangnya asik terus gampang seyum jugaa",  
+                "pesan":"tetep jadi orang yang asik dan gampang senyum ya kaa"# 1
             },
         ]
         display_images_with_data(gambar_urls, data_list)
@@ -334,8 +334,8 @@ if menu == "Baleg":
         "alamat": "GH",
         "hobbi": "Wawancara",
         "sosmed": "@iamridhomanik",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
+        "kesan": "Bang ridho orangnya asik tapi bisa kalem juga",
+        "pesan": "semoga lebih sering ngewawancara ya bang kaya hobbi abang"
     },
     {
         "nama": "Juesi Apridelia Saragih",
@@ -345,8 +345,8 @@ if menu == "Baleg":
         "alamat": "Singkawang",
         "hobbi": "Dengerin lagu zona merah dari Kunto Aji",
         "sosmed": "@j__eesie",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
+        "kesan": "kakanya positif vibes banget terus ramah jugaa",
+        "pesan": "semangat terus kuliahnya kakkk, dan semoga terus ramah"
     },
     {
         "nama": "Dharu Cahyoaji Sasongko",
@@ -356,8 +356,8 @@ if menu == "Baleg":
         "alamat": "Bandar Lampung",
         "hobbi": "Makan mie gomak",
         "sosmed": "@exvoltas & @ddharu",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
+        "kesan": "Abangnya asik, terus kadang tingkahnya lucu",
+        "pesan": "semoga tingkahnya selalu lucu ya bangg"
     },
     {
         "nama": "GH Mikael Niko A S",
@@ -367,8 +367,8 @@ if menu == "Baleg":
         "alamat": "Jati Agung",
         "hobbi": "Tidur",
         "sosmed": "@me._kael",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
+        "kesan": "Awal ngeliat kirain pendiem, taunya asik abangnya",
+        "pesan": "semoga tidurnya lebih nyenyak dari tidur biasanya banggg"
     },
     {
         "nama": "Siti Sarifah Sumamah",
@@ -378,8 +378,8 @@ if menu == "Baleg":
         "alamat": "Kedaton",
         "hobbi": "Mancing",
         "sosmed": "@syt.rifa",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
+        "kesan": "Kakaknya murah senyum",
+        "pesan": "semangat terus ya kaa buat kuliahnyaa"
     },
     {
         "nama": "Givaro Ananta",
@@ -389,8 +389,8 @@ if menu == "Baleg":
         "alamat": "Sukabumi",
         "hobbi": "Minum Kopi",
         "sosmed": "@givarooo",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
+        "kesan": "Abangnya kalem terus keliatan cool abiess",
+        "pesan": "semoga bisa nyobain kopi di seluruh dunia ya banggg"
     },
     {
         "nama": "Afghanis Nursholehatunisa",
@@ -400,8 +400,8 @@ if menu == "Baleg":
         "alamat": "Kadang di kost putri kadang di kost sekar",
         "hobbi": "Memanjat",
         "sosmed": "@afghanisnt_",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
+        "kesan": "Kakak ini kirain jutek, tapi ternyata ramah bangettss",
+        "pesan": "semoga selalu dilancarin kuliahnya ya kaaa"
     },
     {
         "nama": "Hani Qurrota Aini",
@@ -411,8 +411,8 @@ if menu == "Baleg":
         "alamat": "Sukarame",
         "hobbi": "Baca AU",
         "sosmed": "@haniqurratuain_",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
+        "kesan": "Kakanya lucu plus murah senyum jugaaa",
+        "pesan": "semoga vibes kakanya selalu positif ya kaa"
     },
     {
         "nama": "Jeremia Halim",
@@ -422,8 +422,8 @@ if menu == "Baleg":
         "alamat": "Teluk Betung",
         "hobbi": "Nyanyi, olahraga",
         "sosmed": "jeremia_hm",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
+        "kesan": "Bang Jeremia orangnya kalem dan berwibawa juga, tapi asikk",
+        "pesan": "stay cool terus yaa bangg"
     },
     {
         "nama": "Monica Patricia Tanjung",
@@ -433,7 +433,7 @@ if menu == "Baleg":
         "alamat": "Kotabaru",
         "hobbi": "Lari",
         "sosmed": "@monica_tjg",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "kesan": "Kakaknya baik banget",
         "pesan": "semangat terus kuliahnya kakak !!!"
     },
     {
@@ -1501,9 +1501,9 @@ if menu == "Departemen Minbak":
                 "nama": "Kevin Antonio Junior",
                 "nim": "123450109",
                 "umur": "21 tahun",
-                "asal": "Bandar Lampung",
-                "alamat": "Panjang, Bandar Lampung",
-                "hobbi": "Balap",
+                "asal": "Sulawesi Tengah ",
+                "alamat": "Panjang",
+                "hobbi": "Mancing",
                 "sosmed": "@kevinaj__",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1512,15 +1512,15 @@ if menu == "Departemen Minbak":
                 "nama": "Gusti Putu Ferazka Dhiyamika",
                 "nim": "123450046",
                 "umur": "21 tahun",
-                "asal": "Lampung Utara",
-                "alamat": "Way Halim",
-                "hobbi": "Baca",
+                "asal": "Bekasi",
+                "alamat": "Way Dadi",
+                "hobbi": "Mendaki",
                 "sosmed": "@ferazkaa",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
             },
             {
-                "nama": "Ari Aristo Muthahari Parisi",
+                "nama": "Ali Aristo Muthahari Parisi",
                 "nim": "123450088",
                 "umur": "21 tahun",
                 "asal": "Lampung Timur",
@@ -1536,7 +1536,7 @@ if menu == "Departemen Minbak":
                 "umur": "20 tahun",
                 "asal": "Lampung Barat",
                 "alamat": "Airan",
-                "hobbi": "Belajar",
+                "hobbi": "Belajar + menghitung uang",
                 "sosmed": "@aayuandrianni_",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1547,7 +1547,7 @@ if menu == "Departemen Minbak":
                 "umur": "21 tahun",
                 "asal": "Bekasi",
                 "alamat": "Way Kandis",
-                "hobbi": "Nemenin Bryan live TikTok",
+                "hobbi": "Jogging ",
                 "sosmed": "@dafaelpriza_",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1569,7 +1569,7 @@ if menu == "Departemen Minbak":
                 "umur": "19 tahun",
                 "asal": "Lampung Tengah",
                 "alamat": "JI Pulau Damar",
-                "hobbi": "Taptap layar kalo Bryan live",
+                "hobbi": "Memantau dl tugas",
                 "sosmed": "@afdall.03",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1591,10 +1591,10 @@ if menu == "Departemen Minbak":
                 "umur": "21 tahun",
                 "asal": "Lampung Tengah",
                 "alamat": "Belwis",
-                "hobbi": "Nganterin Datasena ke gedung F",
+                "hobbi": "Badminton ",
                 "sosmed": "@mridwaan_22",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Abangnya asik",
+                "pesan": "semangat terus ya bang kuliahnya kuliahnya !!!"
             },
             {
                 "nama": "Andra Ilham Bintang",
@@ -1602,10 +1602,10 @@ if menu == "Departemen Minbak":
                 "umur": "18 tahun",
                 "asal": "Sumatera Selatan",
                 "alamat": "Kota Baru",
-                "hobbi": "Ngitungin kelopak bunga di kebun",
+                "hobbi": "Main rubik",
                 "sosmed": "@andra.lhm",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Bang Andra asik banget orangnya terus seru kalo ngobrol",
+                "pesan": "semoga semngat terus kuliahnya dan sehat selalu ya bang"
             },
             {
                 "nama": "Bryan Paskah Telaumbanua",
@@ -1615,19 +1615,19 @@ if menu == "Departemen Minbak":
                 "alamat": "Belwis",
                 "hobbi": "Live TikTok",
                 "sosmed": "@bryantel_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Abangnya baik tapi kalem",
+                "pesan": "semangat terus ya bang live tiktoknyaa"
             },
             {
                 "nama": "Ghiyats Thabularasa Meardhy",
                 "nim": "124450067",
                 "umur": "17 tahun",
-                "asal": "Bekasi",
-                "alamat": "Korpri",
-                "hobbi": "Ngegift live Bryan",
+                "asal": "Surabaya ",
+                "alamat": "Kemiling ",
+                "hobbi": "Nanem Sawit ",
                 "sosmed": "@meardhy_ghiyats",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Abannya tingg plus kalem",
+                "pesan": "sering sering ya bangg nanem sawitnya"
             },
             {
                 "nama": "Indah Julia Mawar Pratiwi",
@@ -1637,8 +1637,8 @@ if menu == "Departemen Minbak":
                 "alamat": "Airan",
                 "hobbi": "Bengong",
                 "sosmed": "@indahjuliaa",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Kakanya ramah terus baik",
+                "pesan": "semoga jangan kebanyakan bengong kaa"
             },
             {
                 "nama": "Jacinda Kesya Alvara",
@@ -1648,8 +1648,8 @@ if menu == "Departemen Minbak":
                 "alamat": "Korpri",
                 "hobbi": "Nyapu depan gacoan",
                 "sosmed": "@cacalvra",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Kakak asik dan positif vibess",
+                "pesan": "semoga tetep ramah terus ya kaaa"
             },
             {
                 "nama": "Muhammad Rafka Fatih Al Ghathfaan",
@@ -1659,8 +1659,8 @@ if menu == "Departemen Minbak":
                 "alamat": "Kota Baru",
                 "hobbi": "Bangun pagi",
                 "sosmed": "@muhammdrafka_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Abangnya kalem",
+                "pesan": "semoga abanganya diberi nilai yang bagus soalnya bangun pagi mulu"
             },
         ]
         display_images_with_data(gambar_urls, data_list)
