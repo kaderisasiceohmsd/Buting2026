@@ -489,116 +489,116 @@ if menu == "Senator":
             "https://drive.google.com/uc?export=view&id=1xeEYGqj4AZfWSPyKx-EL7agDtjGxCqsx",
         ]
         data_list = [
-            {
-                "nama": "Fathinah Nur Azizah",
-                "nim": "123450072",
-                "umur": "21",
-                "asal": "Jakarta",
-                "alamat": "Belakang PB",
-                "hobbi": "Nulis di medium",
-                "sosmed": "@fathinahnazzh",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
-            {
-                "nama": "Helmy Surya Pratama",
-                "nim": "124450033",
-                "umur": "20",
-                "asal": "Jakarta ",
-                "alamat": "Kedamaian",
-                "hobbi": "Ngesen kiri",
-                "sosmed": "@helmy_inst",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
-            {
-                "nama": "Fernando Diemtrius Barus",
-                "nim": "124450063",
-                "umur": "21",
-                "asal": "Tangerang Kota",
-                "alamat": "Sebelah kamar biwa",
-                "hobbi": "Badminton",
-                "sosmed": "@barus.fernando",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
-            {
-                "nama": "Suci Aulia",
-                "nim": "124450034",
-                "umur": "19",
-                "asal": "Jakarta",
-                "alamat": "Kotabaru",
-                "hobbi": "Mancing",
-                "sosmed": "@sciia__",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
-            {
-                "nama": "Wielman Itolo Halawa",
-                "nim": "124450072",
-                "umur": "20",
-                "asal": "Nias Selatan",
-                "alamat": "Asrama TB3",
-                "hobbi": "Dibonceng",
-                "sosmed": "@wielhawn",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
-            {
-                "nama": "Lia Hana Ichisasmita",
-                "nim": "123450089",
-                "umur": "21",
-                "asal": "Jakarta",
-                "alamat": "Belwis",
-                "hobbi": "Nonton",
-                "sosmed": "@lia.h_264",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
-            {
-                "nama": "Aqila Zayyan SalsabiL",
-                "nim": "124450014",
-                "umur": "19",
-                "asal": "Lampung Utara",
-                "alamat": "Sukarame",
-                "hobbi": "Mendokumentasikan bayes",
-                "sosmed": "@aqilazayyaan",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
-            {
-                "nama": "Hazel Mahesa Handhaka",
-                "nim": "124450114",
-                "umur": "20",
-                "asal": "Lamtim Timur",
-                "alamat": "Gunung Terang",
-                "hobbi": "Giring ayam",
-                "sosmed": "@hazelhandhaka",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
-            {
-                "nama": "Nadya Ratu Anjani",
-                "nim": "123450083",
-                "umur": "21",
-                "asal": "Bandar Lampung",
-                "alamat": "Sukarame",
-                "hobbi": "Denger lagu",
-                "sosmed": "@nadyaanjaani",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
-            {
-                "nama": "Dwi Rahma Fitriani",
-                "nim": "124450084",
-                "umur": "19",
-                "asal": "Tulang Bawang",
-                "alamat": "Jl. Lapas",
-                "hobbi": "Baca buku, nonton film, dengerin musik",
-                "sosmed": "@dwi_rahmftrnii",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
+    {
+        "nama": "Fathinah Nur Azizah",
+        "nim": "123450072",
+        "umur": "21",
+        "asal": "Jakarta",
+        "alamat": "Belakang PB",
+        "hobbi": "Nulis di medium",
+        "sosmed": "@fathinahnazzh",
+        "kesan": "Kak Ziza fix alpha woman banget sih, no debat! Gacor, aktif, keren parah. Pokoknya panutan bangett.",
+        "pesan": "Semangat teruss Kak Ziza buat kuliah dan kesibukan lainnya. Bismillah makin banyak achievement keren ke depannya."
+    },
+    {
+        "nama": "Helmy Surya Pratama",
+        "nim": "124450033",
+        "umur": "20",
+        "asal": "Jakarta ",
+        "alamat": "Kedamaian",
+        "hobbi": "Ngesen kiri",
+        "sosmed": "@helmy_inst",
+        "kesan": "Awalnya ngira Bang Helmy jaim atau sombong wkwk, eh ternyata pas ngobrol asli seru dan asyik banget woy.",
+        "pesan": "Semangat kuliahnya Bang! Moga jalan menuju kelulusan mulus tancap gas tanpa hambatan, amin."
+    },
+    {
+        "nama": "Fernando Diemtrius Barus",
+        "nim": "124450063",
+        "umur": "21",
+        "asal": "Tangerang Kota",
+        "alamat": "Sebelah kamar biwa",
+        "hobbi": "Badminton",
+        "sosmed": "@barus.fernando",
+        "kesan": "Bang Fer asyik parah sih, mau ngomongin topik random apa aja tetep nyambung dan gak garing.",
+        "pesan": "Gass terus Bang Fer sampe garis finish! Moga skripsi aman, no drama, dan bisa graduated sesuai target wkwk."
+    },
+    {
+        "nama": "Suci Aulia",
+        "nim": "124450034",
+        "umur": "19",
+        "asal": "Jakarta",
+        "alamat": "Kotabaru",
+        "hobbi": "Mancing",
+        "sosmed": "@sciia__",
+        "kesan": "Maminya Cosval nih! Mentor terbaik yang beneran tulus banget. Walau lagi capek tetep mau dengerin keluh kesah kami.",
+        "pesan": "Moga kebaikan Kak Suci dibalas berlipat-lipat. Semangat TA-nya, stay healthy, dan jangan terlalu diporsir yaa Kak!"
+    },
+    {
+        "nama": "Wielman Itolo Halawa",
+        "nim": "124450072",
+        "umur": "20",
+        "asal": "Nias Selatan",
+        "alamat": "Asrama TB3",
+        "hobbi": "Dibonceng",
+        "sosmed": "@wielhawn",
+        "kesan": "Bang Wielman santai tapi public speaking-nya gokil abis! Tiap kali didapuk jadi MC pasti langsung gacor.",
+        "pesan": "Semangat terus kuliahnya Bang! Semoga lancar sampe lulus dan impian nge-MC sampe masuk TV kesampaian, amin."
+    },
+    {
+        "nama": "Lia Hana Ichisasmita",
+        "nim": "123450089",
+        "umur": "21",
+        "asal": "Jakarta",
+        "alamat": "Belwis",
+        "hobbi": "Nonton",
+        "sosmed": "@lia.h_264",
+        "kesan": "Kak Lia tuh tipe yang kalem dan pembawaannya bikin adem bangett. Diajak ngobrol serasa nyaman aja gitu.",
+        "pesan": "Semoga semua hal yang lagi Kakak usahain sekarang hasilnya beneran manis dan bikin bangga ya Kak!"
+    },
+    {
+        "nama": "Aqila Zayyan SalsabiL",
+        "nim": "124450014",
+        "umur": "19",
+        "asal": "Lampung Utara",
+        "alamat": "Sukarame",
+        "hobbi": "Mendokumentasikan bayes",
+        "sosmed": "@aqilazayyaan",
+        "kesan": "Kating tergokil dan terasik! Udah cantik imut, bikin suasana sekitarnya dapet energi positif. Yaa walau agak bawel sih hehee",
+        "pesan": "Tetap jadi versi terbaik Kak Aqila ya! Semangat ngejar cita-cita, plus kurangi dikit bawelnya wkwk."
+    },
+    {
+        "nama": "Hazel Mahesa Handhaka",
+        "nim": "124450114",
+        "umur": "20",
+        "asal": "Lamtim Timur",
+        "alamat": "Gunung Terang",
+        "hobbi": "Giring ayam",
+        "sosmed": "@hazelhandhaka",
+        "kesan": "Lucu emang, beda potongan rambut beda vibes wkwk! Tapi aslinya baik bangett dan pas jadi Ketuplak Scienfest kemarin sabar parah.",
+        "pesan": "Tetap jadi orang baik dan humble ya Bang. Semangat terus ngejalanin dinamika perkuliahan ini!"
+    },
+    {
+        "nama": "Nadya Ratu Anjani",
+        "nim": "123450083",
+        "umur": "21",
+        "asal": "Bandar Lampung",
+        "alamat": "Sukarame",
+        "hobbi": "Denger lagu",
+        "sosmed": "@nadyaanjaani",
+        "kesan": "Kak Nadya cakep manis bangett, imut jugaa! Terus orangnya seru dan positive vibes parah.",
+        "pesan": "Moga semua kerja keras Kak Nadya belakangan ini berbuah hasil yang makin mantap yaa, semangat!"
+    },
+    {
+        "nama": "Dwi Rahma Fitriani",
+        "nim": "124450084",
+        "umur": "19",
+        "asal": "Tulang Bawang",
+        "alamat": "Jl. Lapas",
+        "hobbi": "Baca buku, nonton film, dengerin musik",
+        "sosmed": "@dwi_rahmftrnii",
+        "kesan": "Kirain awal-awal Kak Dwi anak yang super introvert atau kalem, ternyata pas diusik asyik jugaa diajak obrol.",
+        "pesan": "Semangat kuliahnya Kak! Jangan lupa luangin waktu me time buat hobinya di tengah gempuran tugas!"
+    }
         ]
         display_images_with_data(gambar_urls, data_list)
     Senator()
