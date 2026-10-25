@@ -1,6 +1,5 @@
 import base64
 import html
-import random
 from io import BytesIO
 
 import requests
@@ -16,7 +15,6 @@ st.set_page_config(
     page_title="Buku Kating Bayesian",
     page_icon="💙",
     layout="wide",
-    initial_sidebar_state="expanded",
 )
 
 
@@ -433,126 +431,6 @@ div[data-testid="stImage"] img {
     .glass-card { padding: 24px 20px; }
     .section-head { flex-direction: column; align-items: flex-start; }
 }
-/* ---------- SIDEBAR ---------- */
-[data-testid="stSidebar"], [data-testid="stSidebar"] > div {
-    background: #0a1838 !important;
-    border-right: 1px solid #1f3e82;
-}
-[data-testid="stSidebar"] * { color: #cad8f2 !important; }
-[data-testid="stSidebarNavLink"] { border-radius: 12px !important; }
-[data-testid="stSidebarNavLink"]:hover { background: #15357a !important; }
-[data-testid="stSidebarNavLink"][aria-current="page"] { background: #1769e8 !important; }
-[data-testid="stSidebarNavLink"][aria-current="page"] * { color: #fff !important; font-weight: 700; }
-
-/* ---------- KUIS & MINIGAME ---------- */
-.quiz-card {
-    border-radius: 24px;
-    padding: 26px 30px;
-    margin-bottom: 16px;
-    background:
-        radial-gradient(520px 260px at 100% 0%, rgba(94, 162, 255, 0.26), transparent 62%),
-        linear-gradient(135deg, #1b52c9 0%, #133f99 32%, #0d2c70 68%, #081c50 100%);
-    box-shadow: inset 0 0 0 1px rgba(120, 175, 255, 0.30), 0 16px 34px rgba(0, 0, 0, 0.40);
-}
-.quiz-badge {
-    display: inline-block;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1.6px;
-    text-transform: uppercase;
-    color: #dbe8ff;
-    padding: 5px 13px;
-    border-radius: 999px;
-    background: rgba(8, 20, 49, 0.6);
-    border: 1px solid rgba(94, 162, 255, 0.5);
-    margin-bottom: 12px;
-}
-.quiz-q {
-    font-family: 'Unbounded', sans-serif;
-    font-size: 1.05rem;
-    font-weight: 700;
-    line-height: 1.5;
-    color: #fff;
-    margin: 0;
-}
-.quiz-quote {
-    font-family: 'Instrument Serif', serif;
-    font-style: italic;
-    font-size: 1.6rem;
-    line-height: 1.35;
-    color: #fff;
-    margin-top: 12px;
-}
-.fb-ok, .fb-no {
-    border-radius: 16px;
-    padding: 14px 18px;
-    margin: 10px 0 14px 0;
-    font-size: 14.5px;
-    line-height: 1.6;
-}
-.fb-ok { background: rgba(46, 204, 113, 0.16); border: 1px solid rgba(46, 204, 113, 0.55); color: #d8ffe8; }
-.fb-no { background: rgba(255, 99, 99, 0.14); border: 1px solid rgba(255, 99, 99, 0.5); color: #ffe0e0; }
-.fb-ok b, .fb-no b { color: #fff; }
-.score-card { text-align: center; padding: 40px 30px; }
-.score-big {
-    font-family: 'Unbounded', sans-serif;
-    font-size: 3.4rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, #fff0b3, #f6c744 45%, #d8960f);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.box-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 16px; }
-.box-card {
-    text-align: center;
-    border-radius: 18px;
-    padding: 16px 10px;
-    background: linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.03));
-    border: 1px solid rgba(163, 196, 243, 0.25);
-}
-.box-card .box-name {
-    font-family: 'Unbounded', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 700;
-    margin-bottom: 8px;
-}
-.box-card .balls { font-size: 1.9rem; letter-spacing: 4px; }
-
-div[data-testid="stRadio"] div[role="radiogroup"] > label {
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(163, 196, 243, 0.22);
-    border-radius: 14px;
-    padding: 11px 16px;
-    margin-bottom: 8px;
-    transition: background .2s ease, border-color .2s ease;
-}
-div[data-testid="stRadio"] div[role="radiogroup"] > label:hover {
-    background: #15357a;
-    border-color: rgba(94, 162, 255, 0.7);
-}
-div[data-testid="stRadio"] label p, div[data-testid="stRadio"] label div { color: #ffffff !important; }
-
-.stButton > button {
-    background: linear-gradient(135deg, #2a7bff, #1244a8);
-    color: #ffffff;
-    border: 1px solid rgba(94, 162, 255, 0.55);
-    border-radius: 12px;
-    font-weight: 700;
-    padding: 0.55rem 1.6rem;
-}
-.stButton > button:hover:not(:disabled) { border-color: #a3c4f3; color: #fff; filter: brightness(1.12); }
-.stButton > button:disabled { opacity: .4; }
-.stButton > button p { color: #ffffff !important; }
-
-[data-testid="stExpander"] {
-    border: 1px solid rgba(163, 196, 243, 0.25);
-    border-radius: 14px;
-    background: rgba(255, 255, 255, 0.04);
-}
-[data-testid="stExpander"] * { color: #cad8f2 !important; }
-div[data-testid="stProgress"] > div > div > div { background-color: #1769e8; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -588,139 +466,40 @@ layout(url1)
 
 
 # ==================================================
-# DATA ANGGOTA (dipakai About Us & Kuis)
-# ==================================================
-# 10 URL gambar sesuai jumlah 10 anggota di data_list
-GAMBAR_ANGGOTA = [
-    "https://drive.google.com/uc?export=view&id=19KrR82_PA5lsmyDn-8iBcBBVxWqctEp9",  # 1. Thomas Yustio
-    "https://drive.google.com/uc?export=view&id=1dJjZYs0KsEw7ZoCHbWdDiISC76R4v816",  # 2. Syalom Nauli Jubilate
-    "https://drive.google.com/uc?export=view&id=1DTxHOcPBjfuSVVSqKGDci-uJrnCOOLC1",  # 3. Chavia Chairunissa
-    "https://drive.google.com/uc?export=view&id=1wxNSkkaIKX_4-vJ_7LWzmYYDVWFTxpTk",  # 4. Aqila Chika Aurelia
-    "https://drive.google.com/uc?export=view&id=1GA41lqBpGNPrqKXEfLP_q_VrGu7vOm3W",  # 5. Sefina Amanda Putri
-    "https://drive.google.com/uc?export=view&id=1l6PIbnmNnpBLEgUwfXNnS7eEPKt-GB0q",  # 6. Aura Putri Ghefira
-    "https://drive.google.com/uc?export=view&id=1SaqIKBazfbklZ87SPixrd5eO0PfvydN3",  # 7. Ezra Hamizan
-    "https://drive.google.com/uc?export=view&id=1OPEq99LUbLHfdDUTj95ueH52KCoFkKXo",  # 8. Afdhi Hafiidz Habibie
-    "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 9. Rizqy Ramadhan
-    "https://drive.google.com/uc?export=view&id=1ipO3EE275QolqqFAspAAVcfBo1r7Xroy",  # 10. Alan Garcia Sinaga
-]
-
-# Data lengkap 10 anggota Bayesian
-DATA_ANGGOTA = [
-    {
-        "nama": "Thomas Yustio",
-        "sebagai": "Pak Lurah",
-        "nim": "125450085",
-        "fun_fact": "Saya pernah patah gigi 4x dan saya karbitan",
-        "motto_hidup": "Hidup cuma sekali, maka lakukan apa yang kamu mau, misal mancing",
-    },
-    {
-        "nama": "Syalom Nauli Jubilate Simanjuntak",
-        "sebagai": "Bu Lurah",
-        "nim": "125450050",
-        "fun_fact": "Kemana-mana harus pakai eyeliner",
-        "motto_hidup": "Tuhan akan berperang dalam hidupmu dan kau akan diam saja",
-    },
-    {
-        "nama": "Chavia Chairunissa",
-        "sebagai": "Anggota 01",
-        "nim": "125450026",
-        "fun_fact": "gabisa pake maskara, gampang bintitan",
-        "motto_hidup": "Do good feel good",
-    },
-    {
-        "nama": "Aqila Chika Aurelia",
-        "sebagai": "Anggota 02",
-        "nim": "125450038",
-        "fun_fact": "gabisa tidur kalo lampu kamar dimatiin",
-        "motto_hidup": "do process to progress",
-    },
-    {
-        "nama": "Sefina Amanda Putri",
-        "sebagai": "Anggota 03",
-        "nim": "125450042",
-        "fun_fact": "di tanggal 25/10/26 datavora sibuk semua",
-        "motto_hidup": "selesaikan apa yang sudah di mulai",
-    },
-    {
-        "nama": "Aura Putri Ghefira",
-        "sebagai": "Anggota 04",
-        "nim": "125450047",
-        "fun_fact": "setiap malem pasti nonton asmr",
-        "motto_hidup": "just do what you want to do",
-    },
-    {
-        "nama": "Ezra Hamizan",
-        "sebagai": "Anggota 05",
-        "nim": "125450052",
-        "fun_fact": "Sangat Konyol & Selalu Konyol",
-        "motto_hidup": "Cacing-Cacing, Naga-Naga, Go Big Or Go Home",
-    },
-    {
-        "nama": "Afdhi Hafiidz Habibie",
-        "sebagai": "Anggota 06",
-        "nim": "125450061",
-        "fun_fact": "Waktu belajar sepeda pernah nyemplung ke bekas adukan semen",
-        "motto_hidup": "Hidup di dunia ini kayak plat Jakarta B aja",
-    },
-    {
-        "nama": "Rizqy Ramadhan",
-        "sebagai": "Anggota 07",
-        "nim": "125450066",
-        "fun_fact": "Selalu dikira orang Kristen Aslinya Islam Alhamdulillah",
-        "motto_hidup": "Tetap lah bernafas",
-    },
-    {
-        "nama": "Alan Garcia Sinaga",
-        "sebagai": "Anggota 08",
-        "nim": "125450091",
-        "fun_fact": "Jangan tertipu ukuran, nafsu makan di luar dugaan",
-        "motto_hidup": "pelan-pelan aja, yang penting sampai",
-    },
-]
-
-
-# ==================================================
 # NAVIGASI MENU
 # ==================================================
 def streamlit_menu():
-    with st.sidebar:
-        st.markdown(
-            "<div style='font-family:Sora,sans-serif;font-weight:800;font-size:1.1rem;"
-            "color:#ffffff;padding:6px 4px 12px 4px;'>💙 Menu Bayesian</div>",
-            unsafe_allow_html=True,
-        )
-        return option_menu(
-            menu_title=None,
-            options=["Home", "About Us", "Kreasi 1", "Kreasi 2"],
-            icons=["house-door", "people", "question-circle", "controller"],
-            default_index=0,
-            orientation="vertical",
-            styles={
-                "container": {
-                    "padding": "8px",
-                    "background-color": "#0a1838",
-                    "border-radius": "18px",
-                    "box-shadow": "0 5px 20px rgba(0,0,0,0.3)",
-                    "border": "1px solid #1f3e82",
-                },
-                "icon": {"color": "#a3c4f3", "font-size": "15px"},
-                "nav-link": {
-                    "font-size": "14px",
-                    "font-weight": "600",
-                    "text-align": "left",
-                    "margin": "3px",
-                    "padding": "11px 12px",
-                    "border-radius": "12px",
-                    "color": "#cad8f2",
-                    "--hover-color": "#15357a",
-                },
-                "nav-link-selected": {
-                    "background-color": "#1769e8",
-                    "color": "#ffffff",
-                    "font-weight": "700",
-                },
+    selected = option_menu(
+        menu_title=None,
+        options=["Home", "About Us"],
+        icons=["house-door", "people"],
+        default_index=0,
+        orientation="horizontal",
+        styles={
+            "container": {
+                "padding": "6px!important",
+                "background": "linear-gradient(135deg, #0c1d4a, #081431)",
+                "border-radius": "16px",
+                "border": "1px solid #1f3e82",
             },
-        )
+            "icon": {"color": "#5ea2ff", "font-size": "18px"},
+            "nav-link": {
+                "font-size": "15px",
+                "font-weight": "600",
+                "color": "#a3c4f3",
+                "text-align": "center",
+                "margin": "0px 4px",
+                "border-radius": "12px",
+                "--hover-color": "#133f99",
+            },
+            "nav-link-selected": {
+                "background": "linear-gradient(135deg, #2a7bff, #1244a8)",
+                "color": "#FFFFFF",
+                "font-weight": "700",
+            },
+        },
+    )
+    return selected
 
 
 menu = streamlit_menu()
@@ -1142,9 +921,93 @@ elif menu == "About Us":
             unsafe_allow_html=True,
         )
 
-        gambar_urls = GAMBAR_ANGGOTA
+        # 10 URL gambar sesuai jumlah 10 anggota di data_list
+        gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=19KrR82_PA5lsmyDn-8iBcBBVxWqctEp9",  # 1. Thomas Yustio
+            "https://drive.google.com/uc?export=view&id=1dJjZYs0KsEw7ZoCHbWdDiISC76R4v816",  # 2. Syalom Nauli Jubilate
+            "https://drive.google.com/uc?export=view&id=1DTxHOcPBjfuSVVSqKGDci-uJrnCOOLC1",  # 3. Chavia Chairunissa
+            "https://drive.google.com/uc?export=view&id=1wxNSkkaIKX_4-vJ_7LWzmYYDVWFTxpTk",  # 4. Aqila Chika Aurelia
+            "https://drive.google.com/uc?export=view&id=1GA41lqBpGNPrqKXEfLP_q_VrGu7vOm3W",  # 5. Sefina Amanda Putri
+            "https://drive.google.com/uc?export=view&id=1l6PIbnmNnpBLEgUwfXNnS7eEPKt-GB0q",  # 6. Aura Putri Ghefira
+            "https://drive.google.com/uc?export=view&id=1SaqIKBazfbklZ87SPixrd5eO0PfvydN3",  # 7. Ezra Hamizan
+            "https://drive.google.com/uc?export=view&id=1OPEq99LUbLHfdDUTj95ueH52KCoFkKXo",  # 8. Afdhi Hafiidz Habibie
+            "https://drive.google.com/uc?export=view&id=1SKBh8OuBiB2OKT4M_sBlXcxT9fqwMaZz",  # 9. Rizqy Ramadhan
+            "https://drive.google.com/uc?export=view&id=1ipO3EE275QolqqFAspAAVcfBo1r7Xroy",  # 10. Alan Garcia Sinaga
+        ]
 
-        data_list = DATA_ANGGOTA
+        # Data lengkap 10 anggota Bayesian
+        data_list = [
+            {
+                "nama": "Thomas Yustio",
+                "sebagai": "Pak Lurah",
+                "nim": "125450085",
+                "fun_fact": "Saya pernah patah gigi 4x dan saya karbitan",
+                "motto_hidup": "Hidup cuma sekali, maka lakukan apa yang kamu mau, misal mancing",
+            },
+            {
+                "nama": "Syalom Nauli Jubilate Simanjuntak",
+                "sebagai": "Bu Lurah",
+                "nim": "125450050",
+                "fun_fact": "Kemana-mana harus pakai eyeliner",
+                "motto_hidup": "Tuhan akan berperang dalam hidupmu dan kau akan diam saja",
+            },
+            {
+                "nama": "Chavia Chairunissa",
+                "sebagai": "Anggota 01",
+                "nim": "125450026",
+                "fun_fact": "gabisa pake maskara, gampang bintitan",
+                "motto_hidup": "Do good feel good",
+            },
+            {
+                "nama": "Aqila Chika Aurelia",
+                "sebagai": "Anggota 02",
+                "nim": "125450038",
+                "fun_fact": "gabisa tidur kalo lampu kamar dimatiin",
+                "motto_hidup": "do process to progress",
+            },
+            {
+                "nama": "Sefina Amanda Putri",
+                "sebagai": "Anggota 03",
+                "nim": "125450042",
+                "fun_fact": "di tanggal 25/10/26 datavora sibuk semua",
+                "motto_hidup": "selesaikan apa yang sudah di mulai",
+            },
+            {
+                "nama": "Aura Putri Ghefira",
+                "sebagai": "Anggota 04",
+                "nim": "125450047",
+                "fun_fact": "setiap malem pasti nonton asmr",
+                "motto_hidup": "just do what you want to do",
+            },
+            {
+                "nama": "Ezra Hamizan",
+                "sebagai": "Anggota 05",
+                "nim": "125450052",
+                "fun_fact": "Sangat Konyol & Selalu Konyol",
+                "motto_hidup": "Cacing-Cacing, Naga-Naga, Go Big Or Go Home",
+            },
+            {
+                "nama": "Afdhi Hafiidz Habibie",
+                "sebagai": "Anggota 06",
+                "nim": "125450061",
+                "fun_fact": "Waktu belajar sepeda pernah nyemplung ke bekas adukan semen",
+                "motto_hidup": "Hidup di dunia ini kayak plat Jakarta B aja",
+            },
+            {
+                "nama": "Rizqy Ramadhan",
+                "sebagai": "Anggota 07",
+                "nim": "125450066",
+                "fun_fact": "Selalu dikira orang Kristen Aslinya Islam Alhamdulillah",
+                "motto_hidup": "Tetap lah bernafas",
+            },
+            {
+                "nama": "Alan Garcia Sinaga",
+                "sebagai": "Anggota 08",
+                "nim": "125450091",
+                "fun_fact": "Jangan tertipu ukuran, nafsu makan di luar dugaan",
+                "motto_hidup": "pelan-pelan aja, yang penting sampai",
+            },
+        ]
 
         with st.spinner("Memuat foto anggota..."):
             uris = [to_data_uri(u, 640, 800) for u in gambar_urls]
@@ -1170,294 +1033,3 @@ elif menu == "About Us":
         )
 
     about_page()
-
-
-# ==================================================
-# KREASI 1 — KUIS KENALI ANGGOTA BAYESIAN
-# ==================================================
-elif menu == "Kreasi 1":
-
-    JUMLAH_SOAL = 8
-
-    def nama_pendek(nama):
-        return " ".join(nama.split()[:2])
-
-    def buat_soal():
-        n = len(DATA_ANGGOTA)
-        urutan = random.sample(range(n), min(JUMLAH_SOAL, n))
-        tipe_list = ["fun_fact", "motto_hidup", "peran", "nim"]
-        soal = []
-        for k, i in enumerate(urutan):
-            d = DATA_ANGGOTA[i]
-            tipe = tipe_list[k % len(tipe_list)]
-            if tipe == "fun_fact":
-                judul, kutipan = "Fun fact ini milik siapa?", d["fun_fact"]
-            elif tipe == "motto_hidup":
-                judul, kutipan = "Motto hidup ini milik siapa?", d["motto_hidup"]
-            elif tipe == "peran":
-                judul, kutipan = f"Siapa yang menjabat sebagai {d['sebagai']}?", ""
-            else:
-                judul, kutipan = "NIM ini milik siapa?", d["nim"]
-
-            lain = random.sample([j for j in range(n) if j != i], 3)
-            kandidat = lain + [i]
-            random.shuffle(kandidat)
-            soal.append({
-                "judul": judul,
-                "kutipan": kutipan,
-                "opsi": [nama_pendek(DATA_ANGGOTA[j]["nama"]) for j in kandidat],
-                "benar": kandidat.index(i),
-                "idx": i,
-            })
-        return soal
-
-    def reset_kuis():
-        st.session_state.k1_soal = buat_soal()
-        st.session_state.k1_i = 0
-        st.session_state.k1_skor = 0
-        st.session_state.k1_sudah = False
-        st.session_state.k1_ronde = st.session_state.get("k1_ronde", 0) + 1
-
-    def kuis_page():
-        if "k1_soal" not in st.session_state:
-            reset_kuis()
-
-        soal = st.session_state.k1_soal
-        total = len(soal)
-        i = st.session_state.k1_i
-        skor = st.session_state.k1_skor
-        sudah = st.session_state.k1_sudah
-
-        st.markdown(
-            '<div class="section-head"><h2>Kreasi 1 — Kuis Anggota Bayesian</h2>'
-            f'<span class="count-chip">Skor {skor}</span></div>',
-            unsafe_allow_html=True,
-        )
-
-        # ---------- hasil akhir ----------
-        if i >= total:
-            if skor == total:
-                pesan = "Sempurna! Kamu hafal semua anggota Bayesian 💙"
-            elif skor >= total * 0.6:
-                pesan = "Keren! Kamu sudah cukup kenal keluarga Bayesian."
-            else:
-                pesan = "Yuk kenalan lagi sama anggota Bayesian di menu About Us!"
-            st.markdown(
-                '<div class="quiz-card score-card">'
-                '<div class="quiz-badge">Hasil Akhir</div>'
-                f'<div class="score-big">{skor} / {total}</div>'
-                f'<p class="quiz-q" style="margin-top:14px;">{html.escape(pesan)}</p>'
-                '</div>',
-                unsafe_allow_html=True,
-            )
-            if st.button("🔄 Main lagi", key="k1_ulang"):
-                reset_kuis()
-                st.rerun()
-            return
-
-        s = soal[i]
-        st.progress(i / total)
-        kutipan = (
-            f'<div class="quiz-quote">&ldquo;{html.escape(s["kutipan"])}&rdquo;</div>'
-            if s["kutipan"] else ""
-        )
-        st.markdown(
-            '<div class="quiz-card">'
-            f'<div class="quiz-badge">Soal {i + 1} dari {total}</div>'
-            f'<p class="quiz-q">{html.escape(s["judul"])}</p>{kutipan}'
-            '</div>',
-            unsafe_allow_html=True,
-        )
-
-        pilihan = st.radio(
-            "Pilih jawaban",
-            s["opsi"],
-            index=None,
-            key=f"k1_radio_{st.session_state.k1_ronde}_{i}",
-            label_visibility="collapsed",
-            disabled=sudah,
-        )
-
-        if not sudah:
-            if st.button("Jawab", key=f"k1_jawab_{st.session_state.k1_ronde}_{i}", disabled=pilihan is None):
-                st.session_state.k1_sudah = True
-                if pilihan == s["opsi"][s["benar"]]:
-                    st.session_state.k1_skor += 1
-                st.rerun()
-            return
-
-        # ---------- umpan balik ----------
-        d = DATA_ANGGOTA[s["idx"]]
-        benar = pilihan == s["opsi"][s["benar"]]
-        if benar:
-            st.markdown('<div class="fb-ok"><b>✅ Benar!</b> Mantap, kamu kenal dia.</div>', unsafe_allow_html=True)
-        else:
-            st.markdown(
-                f'<div class="fb-no"><b>❌ Belum tepat.</b> Jawaban yang benar: <b>{html.escape(s["opsi"][s["benar"]])}</b></div>',
-                unsafe_allow_html=True,
-            )
-
-        c1, c2 = st.columns([1, 3])
-        with c1:
-            try:
-                st.image(load_image(GAMBAR_ANGGOTA[s["idx"]]), use_container_width=True)
-            except Exception:
-                pass
-        with c2:
-            st.markdown(
-                f'<div class="quiz-q">{html.escape(d["nama"])}</div>'
-                f'<div class="quiz-badge" style="margin-top:10px;">{html.escape(d["sebagai"])}</div>'
-                f'<div style="color:#cad8f2;line-height:1.7;">NIM {html.escape(d["nim"])}<br>'
-                f'Motto: <i>{html.escape(d["motto_hidup"])}</i></div>',
-                unsafe_allow_html=True,
-            )
-
-        label = "Lihat Hasil ➜" if i == total - 1 else "Lanjut ➜"
-        if st.button(label, key=f"k1_lanjut_{st.session_state.k1_ronde}_{i}"):
-            st.session_state.k1_i += 1
-            st.session_state.k1_sudah = False
-            st.rerun()
-
-    kuis_page()
-
-
-# ==================================================
-# KREASI 2 — MINIGAME TEBAK KOTAK BAYES
-# ==================================================
-elif menu == "Kreasi 2":
-
-    JUMLAH_RONDE = 5
-
-    def persen(a, b):
-        return round(100 * a / (a + b))
-
-    def buat_ronde():
-        # x = bola biru di Kotak A, y = bola biru di Kotak B (tiap kotak berisi 4 bola)
-        pasangan = [(x, y) for x in (1, 2, 3) for y in (1, 2, 3) if x != y]
-        ronde = []
-        for x, y in random.sample(pasangan, JUMLAH_RONDE):
-            benar = persen(x, y)
-            salah = []
-            for v in [50, x * 25, persen(y, x), 25, 33, 40, 60, 67, 75, 80]:
-                if v != benar and v not in salah:
-                    salah.append(v)
-                if len(salah) == 3:
-                    break
-            nilai = salah + [benar]
-            random.shuffle(nilai)
-            ronde.append({
-                "x": x, "y": y, "benar": benar,
-                "opsi": [f"{v}%" for v in nilai],
-                "jawaban": f"{benar}%",
-            })
-        return ronde
-
-    def reset_game():
-        st.session_state.k2_ronde_list = buat_ronde()
-        st.session_state.k2_i = 0
-        st.session_state.k2_skor = 0
-        st.session_state.k2_sudah = False
-        st.session_state.k2_ronde = st.session_state.get("k2_ronde", 0) + 1
-
-    def bola(biru):
-        return "🔵" * biru + "🔴" * (4 - biru)
-
-    def game_page():
-        if "k2_ronde_list" not in st.session_state:
-            reset_game()
-
-        daftar = st.session_state.k2_ronde_list
-        total = len(daftar)
-        i = st.session_state.k2_i
-        skor = st.session_state.k2_skor
-        sudah = st.session_state.k2_sudah
-
-        st.markdown(
-            '<div class="section-head"><h2>Kreasi 2 — Tebak Kotak Bayes</h2>'
-            f'<span class="count-chip">Skor {skor}</span></div>',
-            unsafe_allow_html=True,
-        )
-        st.markdown(
-            '<div class="glass-card" style="padding:22px 28px;">'
-            '<b>Apa itu Teorema Bayes?</b><br>'
-            'Kita mulai dari tebakan awal, lalu <b>memperbarui</b> tebakan itu setelah melihat bukti baru. '
-            'Di game ini: dua kotak (A dan B) dipilih secara acak (peluang awal 50 : 50), lalu diambil satu bola 🔵. '
-            'Berapa peluang bola itu berasal dari <b>Kotak A</b>?'
-            '</div>',
-            unsafe_allow_html=True,
-        )
-        st.write("")
-
-        # ---------- hasil akhir ----------
-        if i >= total:
-            if skor == total:
-                pesan = "Luar biasa! Kamu sudah paham cara kerja Bayes 🎉"
-            elif skor >= 3:
-                pesan = "Bagus! Tinggal sedikit lagi jadi master Bayesian."
-            else:
-                pesan = "Tenang, coba lagi. Ingat: hitung semua bola biru dulu!"
-            st.markdown(
-                '<div class="quiz-card score-card">'
-                '<div class="quiz-badge">Hasil Akhir</div>'
-                f'<div class="score-big">{skor} / {total}</div>'
-                f'<p class="quiz-q" style="margin-top:14px;">{html.escape(pesan)}</p>'
-                '</div>',
-                unsafe_allow_html=True,
-            )
-            if st.button("🔄 Main lagi", key="k2_ulang"):
-                reset_game()
-                st.rerun()
-            return
-
-        r = daftar[i]
-        st.progress(i / total)
-        st.markdown(
-            '<div class="quiz-card">'
-            f'<div class="quiz-badge">Ronde {i + 1} dari {total}</div>'
-            '<p class="quiz-q">Kamu mengambil 1 bola 🔵. Berapa peluang bola itu dari Kotak A?</p>'
-            '<div class="box-grid">'
-            f'<div class="box-card"><div class="box-name">Kotak A</div><div class="balls">{bola(r["x"])}</div></div>'
-            f'<div class="box-card"><div class="box-name">Kotak B</div><div class="balls">{bola(r["y"])}</div></div>'
-            '</div></div>',
-            unsafe_allow_html=True,
-        )
-
-        with st.expander("💡 Petunjuk"):
-            st.write("Hitung dulu ada berapa bola biru di kedua kotak. Peluang = bola biru di Kotak A ÷ total bola biru.")
-
-        pilihan = st.radio(
-            "Pilih jawaban",
-            r["opsi"],
-            index=None,
-            key=f"k2_radio_{st.session_state.k2_ronde}_{i}",
-            label_visibility="collapsed",
-            disabled=sudah,
-            horizontal=True,
-        )
-
-        if not sudah:
-            if st.button("Jawab", key=f"k2_jawab_{st.session_state.k2_ronde}_{i}", disabled=pilihan is None):
-                st.session_state.k2_sudah = True
-                if pilihan == r["jawaban"]:
-                    st.session_state.k2_skor += 1
-                st.rerun()
-            return
-
-        # ---------- umpan balik + penjelasan ----------
-        penjelasan = (
-            f'Total bola 🔵 = {r["x"]} + {r["y"]} = <b>{r["x"] + r["y"]}</b>. '
-            f'Yang dari Kotak A = <b>{r["x"]}</b>. '
-            f'Jadi peluangnya = {r["x"]}/{r["x"] + r["y"]} ≈ <b>{r["benar"]}%</b>.'
-        )
-        if pilihan == r["jawaban"]:
-            st.markdown(f'<div class="fb-ok"><b>✅ Benar!</b><br>{penjelasan}</div>', unsafe_allow_html=True)
-        else:
-            st.markdown(f'<div class="fb-no"><b>❌ Belum tepat.</b><br>{penjelasan}</div>', unsafe_allow_html=True)
-
-        label = "Lihat Hasil ➜" if i == total - 1 else "Ronde berikutnya ➜"
-        if st.button(label, key=f"k2_lanjut_{st.session_state.k2_ronde}_{i}"):
-            st.session_state.k2_i += 1
-            st.session_state.k2_sudah = False
-            st.rerun()
-
-    game_page()
