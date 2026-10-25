@@ -38,7 +38,7 @@ FOTO_ANGGOTA = {
     "Septi":   "https://drive.google.com/uc?export=view&id=15eNIKvQctlDzyoHUjK5GI55pAKK8F3g2",
     "Fildzah": "https://drive.google.com/uc?export=view&id=13yOwhEQH_zVkrbuGiohD--90zVLc_zQK",
     "Lintar":  "https://drive.google.com/uc?export=view&id=1fkdAu5a7UGyEBMMcIcysaN3f04fM2PVd",
-    "Biwa":    "",
+    "Biwa":    "https://drive.google.com/uc?export=view&id=16JerAO1bW_lVSKEYSVi8qSo3qeWCqfzO",
     "Bening":  "https://drive.google.com/uc?export=view&id=1wqq9-YkpFJ7D6_WQyKqKsg6UWvXzku-4",
 }
 
