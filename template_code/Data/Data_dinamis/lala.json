@@ -3,6 +3,18 @@
     "pemilik": "Lala",
     "data": [
       {
+        "nama_kating": "Wan Nashwa Alhasni Yuska",
+        "foto_massal_gdrive_id": "1CGFSF6Wtc5r0IRzT5ihJ81Vhi_wSgItF",
+        "kesan": "kakanya baik dan ramah",
+        "pesan": "semoga kuliahnya lancar dan makin keren kakk"
+      },
+      {
+        "nama_kating": "Jeremia Halim",
+        "foto_massal_gdrive_id": "10nPzb2xL7Y15EK4YDHlovhiHBDfPM7hS",
+        "kesan": "abangnya baikk dan ramah",
+        "pesan": "semoga kuliahnya lancar dan makin keren bangg"
+      },
+      {
         "nama_kating": "Monica Patricia Tanjung",
         "foto_massal_gdrive_id": "10GQAS3M3v5iQH_R20uq9crjHpqdFS0qS",
         "kesan": "kakanya baik dan ramah",
@@ -87,10 +99,22 @@
         "pesan": "semoga makin keren lagi kakk kedepannya dan segala urusannya dipermudah"
       },
       {
+        "nama_kating": "Nobel Nizam Fathirizki",
+        "foto_massal_gdrive_id": "1UpmJEk81vS5LPQuuwWuVBGFd_aWry0Q4",
+        "kesan": "bang nobel keren dan tegas",
+        "pesan": "semoga lancar terus ya bang kuliahnyaa"
+      },
+      {
+        "nama_kating": "Jeremi Marolop Partogi Situmorang",
+        "foto_massal_gdrive_id": "1mLVKvGQvYWz1cAjVOOKVOJ-eRtNmma2F",
+        "kesan": "abangnya baik dan suaranya gedee",
+        "pesan": "semangat terus bangg kuliahnyaa"
+      },
+      {
         "nama_kating": "Salavi Naharani",
         "foto_massal_gdrive_id": "1yANiT6Ke1IFIMaonIXryCUD6h3fLh8kx",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kak avii baikk lucuww",
+        "pesan": "semangat terus kakk kuliahnyaa"
       },
       {
         "nama_kating": "Rafli Al Mansyah Tambunan",
@@ -103,12 +127,6 @@
         "foto_massal_gdrive_id": "1Q2AVwP-LNxBcNmUz1Wonf49Yq6BT-Hjm",
         "kesan": "kakanya baik dan cantikk bgtt",
         "pesan": "semangat terus kakk kuliahnyaa"
-      },
-      {
-        "nama_kating": "Jeremi Marolop P",
-        "foto_massal_gdrive_id": "1mLVKvGQvYWz1cAjVOOKVOJ-eRtNmma2F",
-        "kesan": "",
-        "pesan": ""
       },
       {
         "nama_kating": "Charrlindah",
@@ -171,12 +189,6 @@
         "pesan": "lancar terus bangg kuliahnyaa"
       },
       {
-        "nama_kating": "Nobel Nizam F",
-        "foto_massal_gdrive_id": "1UpmJEk81vS5LPQuuwWuVBGFd_aWry0Q4",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
         "nama_kating": "Vany Salsabila Putri",
         "foto_massal_gdrive_id": "1MwDR8Kc7Nwe2DacSPVIQm8UvbOAAy0Jt",
         "kesan": "kakanya baik dan tegass",
@@ -189,316 +201,322 @@
         "pesan": "sehat dan bahagia selalu kakk semoga semuanya dipermudah"
       },
       {
+        "nama_kating": "Muhammad Alsi Syahrulloh",
+        "foto_massal_gdrive_id": "15pWo36Lu0FJ2Z8kBHtPn6S_U05fxyAkW",
+        "kesan": "abangnya baikk dan ramahh",
+        "pesan": "semangat bang kuliahnyaa bahagia selalu"
+      },
+      {
         "nama_kating": "Sherena Florencia",
         "foto_massal_gdrive_id": "17knWIUdWwDtw2dlZNk6_w-SzfYCpYCIB",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakanya baikk dan ramahh",
+        "pesan": "semangat kak kuliahnyaa bahagia selalu"
       },
       {
         "nama_kating": "Faiza Try Anjani",
         "foto_massal_gdrive_id": "10yJEHzZ-jIdgt_bongFlSIOyl5GmML-f",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakanya baikk dan ramahh",
+        "pesan": "semangat kak kuliahnyaa bahagia selalu"
       },
       {
         "nama_kating": "Rifky Henry Ferdianto",
         "foto_massal_gdrive_id": "1J5KMMkIerRbzf8HRiu22FGIA7d8WoE8p",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "abangnya baikk dan ramahh",
+        "pesan": "semangat bang kuliahnyaa bahagia selalu"
       },
       {
         "nama_kating": "Muhammad Syafiqul Falakh",
         "foto_massal_gdrive_id": "1MerdYv8wAWcgIOGS0gzErDQAc3cnIoKJ",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "bang syafiq baikk bangett dan ramahh",
+        "pesan": "semangat bang kuliahnyaa bahagia selalu"
       },
       {
         "nama_kating": "Kaleb Filbert Istel",
         "foto_massal_gdrive_id": "1y9bdHiGPd152DgoBFZ6jDWwcIq9TV7cC",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "abangnya pinterr bgt baikk dan berotot",
+        "pesan": "semangat bang kuliahnyaa bahagia selalu"
       },
       {
         "nama_kating": "Gathfan Nadif Ali",
         "foto_massal_gdrive_id": "1vz4foZdQThq_kvF1eQimyOp_vpNtJnyx",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "abangnya baikk dan ramahh",
+        "pesan": "semangat bang kuliahnyaa bahagia selalu"
       },
       {
         "nama_kating": "Hafidz Wahdiansyah",
         "foto_massal_gdrive_id": "14P6ChezxMYb4u0oTbQhRJtxLJ7HRO3Q2",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "abangnya baikk dan ramahh",
+        "pesan": "semangat bang kuliahnyaa bahagia selalu"
       },
       {
         "nama_kating": "Razin Hafid Hamdi",
         "foto_massal_gdrive_id": "1xalgW1vembDj69-E8-toCIK1tf_4cxJ1",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "M",
-        "foto_massal_gdrive_id": "15pWo36Lu0FJ2Z8kBHtPn6S_U05fxyAkW",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "abangnya baikk dan ramahh",
+        "pesan": "semangat bang kuliahnyaa bahagia selalu"
       },
       {
         "nama_kating": "Fadya Izzatul 'Aini",
         "foto_massal_gdrive_id": "1sqvrN52qqS6TZlE3IQLdmrOhCsALt5jw",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakanya baikk dan ramahh",
+        "pesan": "semangat kak kuliahnyaa bahagia selalu"
       },
       {
         "nama_kating": "Akeyla Fairuz Shafi",
         "foto_massal_gdrive_id": "1pHbm1LdqLzEgqoJfMWQkIrT9-KyUzSS2",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "abangnya baikk dan ramahh",
+        "pesan": "semangat bang kuliahnyaa bahagia selalu"
       },
       {
         "nama_kating": "Vannisa Ramadhani",
         "foto_massal_gdrive_id": "1C0O0qNvMN6v42lCyNelBlTXUik6WHG7q",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakanya baikk dan ramahh",
+        "pesan": "semangat kak kuliahnya makin kerenn"
       },
       {
         "nama_kating": "Fabio Banyu Cyto",
         "foto_massal_gdrive_id": "1btnt1ZcXcXp0MsB7c_IjMcBEooih1y-b",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "abangnya keren dan pinter bangettt",
+        "pesan": "semangatt bang kuliahnyaa semoga makin keren kedepannya sukses bangg!!"
       },
       {
         "nama_kating": "Risa Romadona",
         "foto_massal_gdrive_id": "1C4YV82CW1s3rOWbBTQbIqaQNkAqPSfYU",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakanya baikk cantik dan ramahh",
+        "pesan": "semangat kak kuliahnya makin kerenn"
       },
       {
         "nama_kating": "Ni Made Okta Viola Darma Putri",
         "foto_massal_gdrive_id": "1IXN4IfWIfoG860FYmgtoxgRBtWRhCy50",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakanya cantikk dan ramah banget",
+        "pesan": "semangat kak kuliahnya makin kerenn"
       },
       {
         "nama_kating": "Manuel Frederika",
         "foto_massal_gdrive_id": "1DnrsgGCtpzZx2MpbDtAzB5abO9rIbhlA",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "abangnya keren dan ramahh",
+        "pesan": "semangat bang kuliahnyaa makin keren kedepannya"
       },
       {
         "nama_kating": "Tanty Widiyastuti",
         "foto_massal_gdrive_id": "1P8_oae1jWsZgos0za4YStfE7S1-5wK1E",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakanya lucuu dan ramahh",
+        "pesan": "semangatt kak kuliahnyaa semoga makin keren kedepannya sukses kakk!!"
       },
       {
         "nama_kating": "Lovianora Saragih",
         "foto_massal_gdrive_id": "1TMX9EwKf7MfLj52DuzM7eVSPO8ePVyeB",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakanya baikk dan ramahh",
+        "pesan": "semangat kak kuliahnyaa bahagia selalu"
       },
       {
         "nama_kating": "Elsa Sitorus",
         "foto_massal_gdrive_id": "1Oa3BUczpf25TuCAAPtSuia4cLBNXRPU-",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakanya baikk dan ramahh",
+        "pesan": "semangat kak kuliahnyaa bahagia selalu"
       },
       {
-        "nama_kating": "Danil N Fadillah",
+        "nama_kating": "Ahmad Rizky",
+        "foto_massal_gdrive_id": "1kB36wtk6QqZIHeQCN0tAFdA3jI3BxKru",
+        "kesan": "bang rizky keren bangett bang, setiap ngejelasin sesuatu enak nerimnya",
+        "pesan": "semangat terus bang kuliahnyaa semoga abang makin keren lagi kedepannyaa"
+      },
+      {
+        "nama_kating": "Danil Nur Fadillah",
         "foto_massal_gdrive_id": "1nXMbk3nFbSv5WiYa4EVZ3PGT0dAOUj6p",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "abangnya baikk ramah dan tampan",
+        "pesan": "semangat terus bangg kuliahnyaa"
       },
       {
         "nama_kating": "Yollanda Agustina",
         "foto_massal_gdrive_id": "19yEQm_SbWNcFFUNZ75BxbtprcRN7119s",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kak yollan baikk bangett, sibuk bangett keren banget kak yollan bisa membagi waktunya HEBAT",
+        "pesan": "makasihh banyak yaa kak udh jadi mentor jordan yang sangat okee, semoga kakak bahagia selalu dan segalanya dipermudahh. maaf ya kak klo kadang aku ada bandelnya, ada yg bikin kakak sakit tanpa sengaja maupun disengaja"
       },
       {
         "nama_kating": "Asri Meilani",
         "foto_massal_gdrive_id": "1ues9Wj1tMcO0-5tYbvKV0uAMdmAL3IOf",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakaknya baikk dan ramah",
+        "pesan": "semangat terus kak kuliahnyaa bahagia selalu"
       },
       {
         "nama_kating": "Aditya Taufiqurrohman",
         "foto_massal_gdrive_id": "1crqvqnP39f0i18Pzlov8Xvzi_V7qiuXq",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "abangnya lucuu asik dan baikk banget",
+        "pesan": "semangat terus bangg kuliahnyaa"
       },
       {
         "nama_kating": "Fathya Intami Gusda",
         "foto_massal_gdrive_id": "1WHAgHDOQj-x_jWg-FDQSImLJPDpVFYo7",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakanya baikk dan ramahh",
+        "pesan": "semangat terus kak kuliahnyaa"
       },
       {
         "nama_kating": "Ashila Islamisahfa Vanisha",
         "foto_massal_gdrive_id": "1vQ6FpBunyxeP8mT4K-SRMHg_EF3zV3iI",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakaknya baikk dan ramahh",
+        "pesan": "semngat terus kak kuliahnya"
       },
       {
         "nama_kating": "Selma Siti Aisyah",
         "foto_massal_gdrive_id": "1uCMvBWAK1bChtGVUbvBosXEZUiBKnVqe",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakaknya baikk dan ramahh",
+        "pesan": "semangat terus kak kuliahnyaa"
       },
       {
         "nama_kating": "Saskia Nova Magdalena",
         "foto_massal_gdrive_id": "1K_V2fPq_nbkaaIFOZ6ta8hFBc9hD3jV4",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakaknya baikk dan ramahh",
+        "pesan": "semangat terus kak kuliahnyaa"
       },
       {
         "nama_kating": "Muhammad Rizaldi",
         "foto_massal_gdrive_id": "1GeyZyR-4cEWIKp_U_-A3UZGpKVFi21Gn",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "abangnya baikk dan ramahh asik juga",
+        "pesan": "semangat terus bangg kuliahnyaa"
       },
       {
         "nama_kating": "Muhammad Fathiy Zumar Yazid",
         "foto_massal_gdrive_id": "1Tw9hqMkOohXNXyn1F19HSegiqdlJAjjW",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "abangnya baikk dan ramahh",
+        "pesan": "semangat terus bangg kuliahnyaa"
       },
       {
         "nama_kating": "Tarisya Hidayatul Rahmi",
         "foto_massal_gdrive_id": "1Ys9cC4C-B7TVqf_njlVQhrzEjdhGsY6M",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakaknya baikk dan ramahh",
+        "pesan": "semangat terus kak kuliahnyaa"
       },
       {
         "nama_kating": "Riska Erlis Dayu Tiara",
         "foto_massal_gdrive_id": "1Wv7PuaRGf2vAkmlKXSrdmFlfHuVHrzt0",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakanya baik dan ramahh",
+        "pesan": "semangat terus kak kuliahnyaa"
       },
       {
         "nama_kating": "Indah Khairunnisa",
         "foto_massal_gdrive_id": "1tFurUjVjLu4x7EhOb9Y-zPv6u4zsKboR",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakanya baik dan ramahh",
+        "pesan": "semangat terus kak kuliahnyaa bahagia selalu"
       },
       {
         "nama_kating": "Nabyla Sharfina",
         "foto_massal_gdrive_id": "1Z0kNHJSrdws9F66_P9koUec119dARniv",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakanya ramahh cantik dan terlihat pendiam",
+        "pesan": "semangat terus kak kuliahnyaa bahagia selalu"
       },
       {
         "nama_kating": "Alfaya Rafif Abiyyi",
         "foto_massal_gdrive_id": "1v1vCiKMSw-L7B9DZyGa7jtB2tjw5aqRk",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "bang alfaya daplok thalorion baikk bangettt",
+        "pesan": "semangat terus bang kuliahnyaa semoga abang makin keren lagi kedepannyaa"
       },
       {
         "nama_kating": "Ahmad Bimo Akbar Arkana putra",
         "foto_massal_gdrive_id": "1Deq6N-WHW7BE4xwxFfy74zoOpK--YU8H",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "abangnya baikk dan ramahh",
+        "pesan": "semangat terus bang kuliahnyaa semoga abang makin keren lagi kedepannyaa"
       },
       {
         "nama_kating": "Adinda Deswita Maharani",
         "foto_massal_gdrive_id": "1CVm_I6_dFl-F36WJvlB92yAJlBdojN6c",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakanya baik dan cantikk",
+        "pesan": "semangat terus kak kuliahnyaa bahagia selalu"
       },
       {
         "nama_kating": "Arini Puteri Elandra",
         "foto_massal_gdrive_id": "1yJ-OsLp6P3je7ieA0IqsfVLraJkRADaj",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakanya seruu ramah dan menyenangkan",
+        "pesan": "semangat terus kak kuliahnyaa bahagia selalu"
       },
       {
         "nama_kating": "Khoirul Muttoharoh",
         "foto_massal_gdrive_id": "1BLz7OKI7vqNuRMrne8kPWwoM5A6oIl5V",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kak mutt baik bangett jago basketnyaa",
+        "pesan": "semangat terus kak kuliahnyaa semoga makin keren dan makin jago basketnya"
       },
       {
         "nama_kating": "Favian Arkaanda",
         "foto_massal_gdrive_id": "1smnP0z7pVYhgvGSC1hWBP3jRkzLD-al5",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "bang vian baikk dan lucuww",
+        "pesan": "semangat terus bangg kuliahnyaa"
+      },
+      {
+        "nama_kating": "Ahmad Farhan Ghani",
+        "foto_massal_gdrive_id": "11ypuIPSfIEgn30-_aFgPyg7hVrZ5EuKP",
+        "kesan": "Abangnya baik dan ramahh",
+        "pesan": "Semangat terus bang kuliahnya, semoga makin keren"
       },
       {
         "nama_kating": "Muhammad Harvinsyah",
         "foto_massal_gdrive_id": "1zlAq9dCRD1vTCc854MwXEBYPqY_28qaH",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Abangnya baik dan ramahh",
+        "pesan": "Semangat bang kuliahnyaa lancar lancar"
       },
       {
         "nama_kating": "Rafa Sabina Fahimah",
         "foto_massal_gdrive_id": "1ydhBagkqdsMpPxEvNBiIzXXurkjhsKH3",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Kakanya manis, baik, dan ramahh",
+        "pesan": "Semoga kuliahnya lancar ya kak semangatt"
       },
       {
         "nama_kating": "Cika Adelia Br Marbun",
         "foto_massal_gdrive_id": "1NFlrqE-ftJdfUeVd29LV5r1yiVJn_d4e",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Kakanya lucu dan baikk",
+        "pesan": "Sehat selalu dan bahagia selalu kakk"
       },
       {
         "nama_kating": "Audina Fitria",
         "foto_massal_gdrive_id": "16BImI2czCk-9q4P-LDOe8N5h0urkmTdb",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Kakanya imut, baik dan ramah bangett",
+        "pesan": "Semangat kak kuliahnya semoga makin keren"
       },
       {
         "nama_kating": "Muhammad Hanif Dzaky Arifin",
         "foto_massal_gdrive_id": "1C6r4DwKEa0ibSeWldOnTru8RW-OjhAIa",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Abangnya baik dan ramahh",
+        "pesan": "Semoga lancar kuliahnya sampe lulus bangg"
       },
       {
         "nama_kating": "Rozak Ramdani",
         "foto_massal_gdrive_id": "1BIoTSZk8eiSQY82bPO07zcNFkXlWs4_U",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Abangnya baik dan ramahh",
+        "pesan": "Lancar lancar bang kuliahnyaa"
       },
       {
         "nama_kating": "Najla Nursyifa",
         "foto_massal_gdrive_id": "18-4M6gJTJ7nxOyNttTzcFOG9NkWb5MHE",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Kakanya imut, baik, dan ramahh",
+        "pesan": "Semangat kuliahnya kakk"
       },
       {
         "nama_kating": "Jaya Saputra Tamba",
         "foto_massal_gdrive_id": "1366BazzuBWqteZoIqEPUtzfHrninmn6I",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Abangnya baik, seruu, dan asikk",
+        "pesan": "Semangat bang kuliahnyaa bahagia selaluu"
       },
       {
         "nama_kating": "Aisyah Khairun Nisa",
         "foto_massal_gdrive_id": "1XR0b7mm4wfNL4ajq9JrZHD-c3BhNKzSu",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "A Farhan Ghani",
-        "foto_massal_gdrive_id": "11ypuIPSfIEgn30-_aFgPyg7hVrZ5EuKP",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Kakanya lucuu, cantik, dan baikk",
+        "pesan": "Semangat dan sehat selalu kakk"
       },
       {
         "nama_kating": "Hanna Gresia Sinaga",
         "foto_massal_gdrive_id": "1BYgG5WLanL6UeXdAUvuLEitPsnbJhzTU",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Kakanya seruu, cantik, baikk",
+        "pesan": "Lancar lancar ya kak kuliahnya, sukses selaluu"
       },
       {
         "nama_kating": "Kharisma Mustika Sari",
         "foto_massal_gdrive_id": "1rs_Lz-IFiN_hlNGYB_bzwt0GIRaXCsDJ",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Kakanya ramah dan cantikk",
+        "pesan": "Semangat terus kak kuliahnya, sehat sehatt"
       },
       {
         "nama_kating": "Haikal Fransisko Simbolon",
         "foto_massal_gdrive_id": "1_CbnCR7eKjybDo_R6b3T1BJCZ4CPSwyh",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Abangnya baik banget, seruu, asik jugaa",
+        "pesan": "Sukses selalu bang untuk kedepannya, semoga lancar lancar"
       },
       {
         "nama_kating": "Alya Ramadhanti",
@@ -591,6 +609,12 @@
         "pesan": ""
       },
       {
+        "nama_kating": "Mochammad Iqbal Az-Zahir",
+        "foto_massal_gdrive_id": "1USpKS3ZDLNApZNvQ_XOJAnGc3AskI_ID",
+        "kesan": "abangnya baikk",
+        "pesan": "semangat terus bang kuliahnya"
+      },
+      {
         "nama_kating": "Anggun Nita",
         "foto_massal_gdrive_id": "154D_cpNOB0pUSbBG8ydtTy2_wQ_BKtxR",
         "kesan": "kakanya baikk",
@@ -621,12 +645,6 @@
         "pesan": "semangat terus kakk kuliahnya"
       },
       {
-        "nama_kating": "Moch",
-        "foto_massal_gdrive_id": "1USpKS3ZDLNApZNvQ_XOJAnGc3AskI_ID",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
         "nama_kating": "Layina Ropiqo",
         "foto_massal_gdrive_id": "1YSS_cyd4fSbNslQxYDkjOfurQZnrORAE",
         "kesan": "kakanya baikkk",
@@ -655,6 +673,12 @@
         "foto_massal_gdrive_id": "1-hg-p4wvHMzRKzGvzPWVMKlHjckW-6U-",
         "kesan": "abangnya baik dan lucuu",
         "pesan": "semangat teruss bang kuliahnyaa"
+      },
+      {
+        "nama_kating": "Gusti Putu Ferazka Dhiyamika",
+        "foto_massal_gdrive_id": "1k-YJwW9q2KayszXvBasg6fNAzRm5PPlB",
+        "kesan": "kak gusti cantikkk bangett, baik dan ramah jugaa",
+        "pesan": "bahagia dan sehat selalu kak, semoga sukses kedepannya"
       },
       {
         "nama_kating": "Jacinda Kesya Alvara",
@@ -735,12 +759,6 @@
         "pesan": ""
       },
       {
-        "nama_kating": "Gusti Putu Ferazka D.",
-        "foto_massal_gdrive_id": "1k-YJwW9q2KayszXvBasg6fNAzRm5PPlB",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
         "nama_kating": "Kevin Antonio Junior",
         "foto_massal_gdrive_id": "1PEngRWvfxPJEXo6KTNf_z7mIpQf1ed00",
         "kesan": "bang kevin baikk banget dan seruuu",
@@ -785,74 +803,50 @@
       {
         "nama_kating": "Fadil Prasetyo Alfarizzi",
         "foto_massal_gdrive_id": "",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "bang fadil keren bangettt orang hebat",
+        "pesan": "semoga di tempatkan ditempat yang paling indah ya bang, allah sayang banget sama abang. alfatihah"
       },
       {
         "nama_kating": "Yulia Kristine Malau",
         "foto_massal_gdrive_id": "",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "M. Alsi Syahrulloh",
-        "foto_massal_gdrive_id": "",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakanya baikk dan ramahh",
+        "pesan": "semangat kak kuliahnya makin kerenn"
       },
       {
         "nama_kating": "Melva Shaprina Febrianti",
         "foto_massal_gdrive_id": "",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Ahmad Rizky",
-        "foto_massal_gdrive_id": "",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Ahmad Bimo Akbar Arkan Putra",
-        "foto_massal_gdrive_id": "",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "kakanya baikk dan ramahh",
+        "pesan": "semangat kak kuliahnyaa bahagia selalu"
       },
       {
         "nama_kating": "Bima Ekayasa",
         "foto_massal_gdrive_id": "",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Ahmad Farhan Ghani",
-        "foto_massal_gdrive_id": "",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "abangnya baikk dan ramahh",
+        "pesan": "semangat terus bang kuliahnyaa semoga abang makin keren lagi kedepannyaa"
       },
       {
         "nama_kating": "Cerine Sihotang",
         "foto_massal_gdrive_id": "",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Kakanya baik dan ramahhh",
+        "pesan": "Sukses terus kedepannya kakk"
       },
       {
         "nama_kating": "Teresa Christiani Purba",
         "foto_massal_gdrive_id": "",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Muhammad Hanid Dzaky Arifin",
-        "foto_massal_gdrive_id": "",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Kakanya manis, baik, dan ramahh",
+        "pesan": "Semangat terus kak kuliahnyaa"
       },
       {
         "nama_kating": "Gustin Haleluya Tampubolon",
         "foto_massal_gdrive_id": "",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Kakanya cantik dan ramahh",
+        "pesan": "Sukses terus untuk kedepannya kakk"
+      },
+      {
+        "nama_kating": "Ali Aristo Muthahari Parisi",
+        "foto_massal_gdrive_id": "",
+        "kesan": "abang nya baikk banget",
+        "pesan": "semangat terus bang kulaihnyaa, sehat dan bahagia selalu"
       },
       {
         "nama_kating": "Sania Dwi Ayu Lestari",
@@ -877,42 +871,6 @@
         "foto_massal_gdrive_id": "",
         "kesan": "kakanya baikk ramah dan cantik",
         "pesan": "semoga kuliahnya lancar dan makin kerenn"
-      },
-      {
-        "nama_kating": "Gusti Putu Ferazka Dhiyamika",
-        "foto_massal_gdrive_id": "",
-        "kesan": "kak gusti cantikkk bangett, baik dan ramah jugaa",
-        "pesan": "bahagia dan sehat selalu kak, semoga sukses kedepannya"
-      },
-      {
-        "nama_kating": "Ari Aristo Muthahari Parisi",
-        "foto_massal_gdrive_id": "",
-        "kesan": "abang nya baikk banget",
-        "pesan": "semangat terus bang kulaihnyaa, sehat dan bahagia selalu"
-      },
-      {
-        "nama_kating": "Nobel Nizam Fathirizki",
-        "foto_massal_gdrive_id": "",
-        "kesan": "bang nobel keren dan tegas",
-        "pesan": "semoga lancar terus ya bang kuliahnyaa"
-      },
-      {
-        "nama_kating": "Jeremi Marolop P. Situmorang",
-        "foto_massal_gdrive_id": "",
-        "kesan": "abangnya baik dan suaranya gedee",
-        "pesan": "semangat terus bangg kuliahnyaa"
-      },
-      {
-        "nama_kating": "Salavia Naharani",
-        "foto_massal_gdrive_id": "",
-        "kesan": "kak avii baikk lucuww",
-        "pesan": "semangat terus kakk kuliahnyaa"
-      },
-      {
-        "nama_kating": "Mochammad Iqbal Az-Zahir",
-        "foto_massal_gdrive_id": "",
-        "kesan": "abangnya baikk",
-        "pesan": "semangat terus bang kuliahnya"
       },
       {
         "nama_kating": "Della Anisa Fitri",
@@ -957,19 +915,7 @@
         "pesan": "semoga kuliahnya lancar dan makin keren kakk"
       },
       {
-        "nama_kating": "Jeremia Halim",
-        "foto_massal_gdrive_id": "",
-        "kesan": "abangnya baikk dan ramah",
-        "pesan": "semoga kuliahnya lancar dan makin keren bangg"
-      },
-      {
         "nama_kating": "Sekar Dini Widya Putri",
-        "foto_massal_gdrive_id": "",
-        "kesan": "kakanya baik dan ramah",
-        "pesan": "semoga kuliahnya lancar dan makin keren kakk"
-      },
-      {
-        "nama_kating": "Wan Nashwa Alhasni Yuska",
         "foto_massal_gdrive_id": "",
         "kesan": "kakanya baik dan ramah",
         "pesan": "semoga kuliahnya lancar dan makin keren kakk"
