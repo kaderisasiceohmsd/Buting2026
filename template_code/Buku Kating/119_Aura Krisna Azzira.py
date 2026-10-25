@@ -54,7 +54,7 @@ if menu == "Kesekjenan":
                 "nama": "Luthfia Laila Ramadhani",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1Z1VIi2sd9fW0bptDTn7Jn_wXZipAsgeZ",
                 "kesan": "keliatan paling gemesss, humble sekalii, seru",
-                "pesan": "suksess selalu yaa kak luthfiaa, semangatt semester ini dan selanjut selanjutnya",
+                "pesan": "suksess selalu yaa kak luthfiaa, semangatt semester ini dan selanjut selanjutnya ",
             },
         ]
         display_kating(kating_data, departemen=menu)
