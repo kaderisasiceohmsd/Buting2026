@@ -363,7 +363,7 @@ elif menu == "Departemen MIKFES":
             {
                 "nama": "Ni Made Okta Viola Darma Putri",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1MC8B0pruQ-krm34JSKRBBp37bkafqaPY",
-                "kesan": "Kakaknya cantik banget, rambutnya juga badai banget, pas awal liat mikir" Artis dari mana ini"",
+                "kesan": "Kakaknya cantik banget, rambutnya juga badai banget, pas awal liat mikir Artis dari mana ini",
                 "pesan": "Semangat terus kuliahnya kak, tips rambut badainya dong.",
             },
             {
