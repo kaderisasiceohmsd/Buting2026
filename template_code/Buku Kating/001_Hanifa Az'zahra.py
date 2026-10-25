@@ -536,8 +536,8 @@ elif menu == "Departemen Internal":
         ]
         data_list = [
             {
-                "nama": "Haikal Fransiskus Simbolon",
-                "nim": "123450123",
+                "nama": "Haikal Fransisk0 Simbolon",
+                "nim": "123450106",
                 "umur": "23",
                 "asal": "Bengkulu",
                 "alamat": "Belwis",
@@ -628,7 +628,7 @@ elif menu == "Departemen Internal":
                 "nim": "124450100",
                 "umur": "18",
                 "asal": "Lampung Selatan",
-                "alamat": "Korpro Raya",
+                "alamat": "Korpri Raya",
                 "hobbi": "Isengin harvin di kelas",
                 "sosmed": "@rozaqramdani__",
                 "kesan": "nama abang mirip banget sama abang aku yang nyebelin",  
@@ -1168,7 +1168,7 @@ elif menu == "Departemen Eksternal":
                 "pesan": "Tetap semangat untuk Kakak dalam menyelesaikan tugas-tugas kuliahnyaaa"# 1
             },
             {
-                "nama": "Danil N Fadillah",
+                "nama": "Danil Nur Fadillah",
                 "nim": "124450103",
                 "umur": "20",
                 "asal": "Karawang",
@@ -1183,7 +1183,7 @@ elif menu == "Departemen Eksternal":
                 "nim": "124450021",
                 "umur": "20",
                 "asal": "Swiss",
-                "alamat": "Tanya bapas",
+                "alamat": "Tanya bapas: Way Halim",
                 "hobbi": "ngesen kanan",
                 "sosmed": "@fvnnn05",
                 "kesan": "makasih bang yang selalu gercep kalo ada yang sakit selama rangkaian",  
@@ -1206,7 +1206,7 @@ elif menu == "Departemen Eksternal":
                 "umur": "Masih muda lah ",
                 "asal": "Rahim Ibu",
                 "alamat": "Pasar lantai 3.5",
-                "hobbi": "tanyain sama yuder",
+                "hobbi": "ga balesin chat",
                 "sosmed": "@jaldii._",
                 "kesan": "orangnya asikk banget dan ada aja yang dibuat lelucon",  
                 "pesan": "semangat mc nya banggg, always be happy"# 1
@@ -1439,7 +1439,7 @@ elif menu == "Departemen MIKFES":
                 "hobbi": "nonton khw",
                 "sosmed": "@vunnycaa",
                 "kesan": "kakaknya cantik, baik dan ramah",  
-                "pesan": "Semoga ilmu dan kebaikan yang Kakak bagikan ke kami menjadi berkah untuk perjalanan Kakak"# 1
+                "pesan": "Semoga ilmu yang Kakak bagikan ke kami menjadi berkah untuk perjalanan Kakak"# 1
             },
             {
                 "nama": "Yulia Kristine Malau",
@@ -1450,7 +1450,7 @@ elif menu == "Departemen MIKFES":
                 "hobbi": "Belajar",
                 "sosmed": "@krnylee",
                 "kesan": "kakaknya cantik, baik dan ramah",  
-                "pesan": "Semoga ilmu dan kebaikan yang Kakak bagikan ke kami menjadi berkah untuk perjalanan Kakak"# 1
+                "pesan": "Semoga ilmu dan kebaikan yang Kakak bagikan ke kami menjadi berkah untuk perjalanan Kakak. Semangta kuliahnya kakkkk"# 1
             },
             {
                 "nama": "Akeyla Fairuz Shafi",
@@ -1460,7 +1460,7 @@ elif menu == "Departemen MIKFES":
                 "alamat": "Bandar Lampung",
                 "hobbi": "Berenang ",
                 "sosmed": "@keyashafi_",
-                "kesan": "bang akeyla orangnya baik dan ramah",
+                "kesan": "bang akeyla orangnya baik waktu pas wwc memastikan kita semua mendapatkan pesanan makanannya ",
                 "pesan": "Tetap semangat menginspirasi banyak orang ya bang, semoga sukses selalu menyertai abang."# 1
             },
             {
@@ -1511,7 +1511,7 @@ elif menu == "Departemen MIKFES":
                 "nama": "Sherena Florencia",
                 "nim": "124450027",
                 "umur": "19",
-                "asal":"Bengkulu Selatan ",
+                "asal": "Bengkulu Selatan ",
                 "alamat": "Belwis",
                 "hobbi": "Make up",
                 "sosmed": "@sher_renna",
@@ -1548,10 +1548,10 @@ elif menu == "Departemen MIKFES":
                 "alamat": "Rajabasa Raya",
                 "hobbi": "Main game",
                 "sosmed": "@gathfannadif",
-                "kesan": "baru ketemu abang nim pas wwc",  
+                "kesan": "baru ketemu abang nim pas wwc, keren banget di RND",  
                 "pesan": "Tetap semangat menginspirasi banyak orang ya bang, semoga sukses selalu menyertai abang."
             },
-{
+            {
                 "nama": "Hafidz Wahdiansyah",
                 "nim": "124450064",
                 "umur": "20",
@@ -1571,7 +1571,7 @@ elif menu == "Departemen MIKFES":
                 "hobbi": "Gym, membaca, dan bermain",
                 "sosmed": "@kelelep_comberan",
                 "kesan": "bang kaleb orangnya baik dan keren banget dengan prestasinya",  
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi dilancarkan sampai lulus"
+                "pesan": "Semoga segala urusan akademis, dan skripsi dilancarkan sampai lulus, SEmangat kuliahnya bang"
             },
             {
                 "nama": "Melva Shaprina Febrianti",
@@ -1661,7 +1661,7 @@ elif menu == "Departemen SSD":
                 "hobbi": "Nonton marvel",
                 "sosmed": "@fifah.zy",
                 "kesan": "kakaknya cantik, baik dan ramah",  
-                "pesan": "Semangat buat kuliahnya, sampai lulus"# 1
+                "pesan": "Semangat buat kuliahnya, sampai lulus, terbang setinggi mungkin"# 1
             },
             {
                 "nama": "Hasan Nur Ramadhan",
@@ -1786,7 +1786,7 @@ elif menu == "Departemen Medkraf":
             "https://drive.google.com/uc?export=view&id=1CpUbSAR0_DHqFYrmZh1aCqDhjurWVpDs",
             "https://drive.google.com/uc?export=view&id=1kvRv2HV15KS7eaTj_jSALQeYDjAVWtLj",
             "https://drive.google.com/uc?export=view&id=1ZPpr9l_ivx99iDYgr-1upCayYJQ7Bfwx",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",#shafa
+            "https://drive.google.com/uc?export=view&id=1dXpOsOrxuaP4IUEO-H1JsgYByR5klQqo",#shafa
             "https://drive.google.com/uc?export=view&id=1EfXP25mLhdh1-b5ZIT4ONJz6tjQ0XUnN",
 
         ]
@@ -1833,7 +1833,7 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Nonton",
                 "sosmed": "@anshtsyaaql",
                 "kesan": "kakanya cantik dan cute",  
-                "pesan": "Selamat melanjutkan aktivitas kuliah, Kak! Semoga IPK semester ini memuaskan dan sesuai harapan."
+                "pesan": "Semoga IPK semester ini memuaskan dan sesuai harapan."
             },
             {
                 "nama": "Felisya Nabila Nugroho",
@@ -1910,7 +1910,7 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Membaca Alquran",
                 "sosmed": "@difanyhsa_",
                 "kesan": "kakaknya cantik, baik dan ramah, suka banget ngeliat vibesnyaa",  
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi Kakak dilancarkan sampai lulus."# 1
+                "pesan": "Semoga segala urusan akademis, dilancarkan sampai lulus."# 1
             },
             {
                 "nama": "Nazlah Auliya",
@@ -1932,7 +1932,7 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Menulis, membaca",
                 "sosmed": "@n1tg._",
                 "kesan": "kakanya cantik,ramhhh dan cute",  
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi Kakak dilancarkan sampai lulus."# 1
+                "pesan": "Semoga segala urusan akademis, dan skripsi Kakak dilancarkan sampai lulus."# 1
             },
             {
                 "nama": "Daffa Kharisma Adzana",
@@ -1965,7 +1965,7 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Tidur",
                 "sosmed": "@luciarachel_",
                 "kesan": "cute, gemass banget waktu liatnya karna  cantik bgt",  
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi Kakak dilancarkan sampai lulus."
+                "pesan": "Semoga segala urusan akademis, organisasi Kakak dilancarkan sampai lulus."
             },
             {
                 "nama": "Shafa Delaila Azzahra",
@@ -1986,15 +1986,14 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Rajabasa",
                 "hobbi": "Bengong",
                 "sosmed": "@xifasky",
-                "kesan": "kakanya cantik,ramahh dan baikk",  
-                "pesan": "Semoga segala urusan akademis, dan skripsi Kakak dilancarkan sampai lulus, lancar selalu kakkkk."
+                "kesan": "kakanya cantik,ramahh dan baikk senyumnya manis banget",  
+                "pesan": "Semoga segala urusan akademis Kakak dilancarkan sampai lulus."
             }
 
         ]
         display_images_with_data(gambar_urls, data_list)
     DepartemenMedkraf()
 # Tambahkan menu lainnya sesuai kebutuhan
-
-
+#
 
 
