@@ -278,7 +278,7 @@ if menu == "Kesekjenan":
                 "hobbi": "Mainin surat",
                 "sosmed": "@qoisolifio_",
                 "kesan": "Bang Qois baik mantap",  
-                "pesan":"Semangat kuliahnya ya bang Qois, semoga surat"nya gampang terselesaikan !"
+                "pesan":"Semangat kuliahnya ya bang Qois, semoga suratnya gampang terselesaikan !"
             },
             {
                 "nama": "Hafsa Fazila Arradhi",
@@ -353,7 +353,7 @@ if menu == "Senator":
                 "hobbi": "Ngesen kiri",
                 "sosmed": "@helmy_inst",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"Lancar lancarrr perkuliahannya kakkk, semangat teruss nugas"nyaa sambil dengerin lagu itu"
+                "pesan":"Lancar lancarrr perkuliahannya kakkk, semangat teruss nugasnyaa sambil dengerin lagu itu"
             },
             {
                 "nama": "Lia Hana Ichisasmita",
