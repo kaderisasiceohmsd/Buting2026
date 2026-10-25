@@ -651,8 +651,8 @@ if menu == "Departemen MIKFES":
             },
             {
                 "nama": "Fadil Prasetyo Alfaritzi",
-                "nim" : "Belum Tahu",
-                "asal" : "Bandar Lampungku",
+                "nim" : "123450048",
+                "asal" : "Bandar Lampung",
                 "alamat" : "Bandar Lampung",
                 "hobbi": "Gitar",
                 "umur" : "21",
@@ -684,12 +684,12 @@ if menu == "Departemen MIKFES":
             },
             {
                 "nama": "Yulia Cristine Malau",
-                "nim" : "Belum Tahu",
-                "asal" : "Belum Tahu",
-                "alamat" : "Belum Tahu",
-                "hobbi": "Belum Tahu",
-                "umur" : "Belum Tahu",
-                "sosmed" : "Belum Tahu",
+                "nim" : "124450119",
+                "asal" : "Jambi",
+                "alamat" : "Sabah Balau",
+                "hobbi": "Belajar",
+                "umur" : "20",
+                "sosmed" : "@krnylee",
                 "kesan" : "Sopan dan menghargai orang lain.",
                 "pesan" : "Semoga selalu sukses dalam setiap kegiatan, Kak."
             },
@@ -724,18 +724,18 @@ if menu == "Departemen MIKFES":
                 "umur" : "20",
                 "sosmed" : "@kelelep_comberan",
                 "kesan" : "Konsisten menjaga kebiasaan hidup sehat.",
-                "pesan" : "Tularkan semangat hidup sehatmu ke kami, Kak."
+                "pesan" : "Tularkan semangat hidup sehatmu ke kami, bang"
             },
             {
                 "nama": "Muhammad Syafiqul Falakh",
                 "nim" : "124450099",
-                "asal" : "Belum Tahu",
-                "alamat" : "Belum Tahu",
-                "hobbi": "Belum Tahu",
-                "umur" : "Belum Tahu",
+                "asal" : "Lampung Utara",
+                "alamat" : "asrama",
+                "hobbi": "membaca",
+                "umur" : "20",
                 "sosmed" : "@syaafiqui",
                 "kesan" : "Pendiam tapi diam-diam bisa diandalkan.",
-                "pesan" : "Jangan sungkan berbagi pendapat ke kami, Kak."
+                "pesan" : "Jangan sungkan berbagi pendapat ke kami, bang."
             },
             {
                 "nama": "Rifky Henry Ferdianto",
@@ -746,7 +746,7 @@ if menu == "Departemen MIKFES":
                 "umur" : "28",
                 "sosmed" : "henryferdianto",
                 "kesan" : "Humornya unik dan bikin suasana cair.",
-                "pesan" : "Semoga kenyataan selalu ramah padamu, Kak."
+                "pesan" : "Semoga kenyataan selalu ramah padamu, bang."
             },
 
 
