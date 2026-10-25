@@ -1200,14 +1200,14 @@ if menu == "Departemen Eksternal":
             "https://drive.google.com/uc?export=view&id=1_3E5Lvy9D0C9A4ywbFLONaXm-rvZf7Yv",
             "https://drive.google.com/uc?export=view&id=1ZPHkBdJorDm2JNxsrv7TlfedP1biIdps",
             "https://drive.google.com/uc?export=view&id=1M_vPpRCzeCt-BoQyiQP2kt7VlClmmih3",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=12w88PDvXH2gacwEQnOdFbF-jVyg6Dzkc",
+            "https://drive.google.com/uc?export=view&id=1J3DYWIlEpD6b04ts6WnvW7rd9eJCAOf1",
+            "https://drive.google.com/uc?export=view&id=1CRnbO4_BGjwS73rd84ajX_A1ACySRFCx",
+            "https://drive.google.com/uc?export=view&id=12JG6RT1yMueGrIdYOP01CWQ-xGdW5601",
+            "https://drive.google.com/uc?export=view&id=1MRkhNjfDjdbNluYgCtvoLXeGHzN8Qce3",
+            "https://drive.google.com/uc?export=view&id=1V_cXzGOYQBAVfZA2v2mJGSeRW49IhVOb",
+            "https://drive.google.com/uc?export=view&id=1FPLMqD5KwGKTQ5yIEJhhJjLdS35fR4_m",
+            "https://drive.google.com/uc?export=view&id=1XgZH_AsL9xgZmt1hzNfsTMWPsAVNRlJ3",
         ]
         data_list = [   
             {
@@ -1219,8 +1219,8 @@ if menu == "Departemen Eksternal":
                 "alamat": "Teluk Betung Selatan",
                 "asal": "LAMPUNG!!!",
                 "sosmed": "@elandraa_",
-                "kesan": "",
-                "pesan": ""
+                "kesan": "Kak Arini orangnya asik dan tegas",
+                "pesan": "Sehat selalu kak, semoga segala urusannya lancar"
             },
             {
                 "nama": "Nabyla Sharfina",
@@ -1231,8 +1231,8 @@ if menu == "Departemen Eksternal":
                 "alamat": "Jalan Lapas",
                 "asal": "Bengkulu",
                 "sosmed": "@bylaash",
-                "kesan": "",
-                "pesan": ""
+                "kesan": "Kak Nabyla orangnya asik dan baik, dan sama-sama dari Bengkulu kayak saya",
+                "pesan": "Doa terbaik kak, semoga yang kakak usahakan selalu berbuah kebaikan nantinya"
             },
             {
                 "nama": "Khoirul Muttoharoh",
@@ -1243,8 +1243,8 @@ if menu == "Departemen Eksternal":
                 "alamat": "Airan",
                 "asal": "Lambar",
                 "sosmed": "@khoirul_muttoharoh",
-                "kesan": "",
-                "pesan": ""
+                "kesan": "Kak Moonlight nama ini dapat dari tiktoknya, orangnya asik dan baik",
+                "pesan": "Sehat selalu kak, semoga segala urusan, terutama kuliahnya berjalan dengan baik dan lancar "
             },
             {
                 "nama": "Ahmad Rizky",
@@ -1255,8 +1255,8 @@ if menu == "Departemen Eksternal":
                 "alamat": "GH",
                 "asal": "Tangerang Selatan",
                 "sosmed": "@ahmad.rizky___",
-                "kesan": "",
-                "pesan": ""
+                "kesan": "Bang Ahmad orangnya keren jujur, dri masa saya TPB saya tau bang ahmad pada saat beliau naik jadi capresma keren banget sih asli",
+                "pesan": "Sehat selalu dan menyala selalu ya bang, tebarkan kebaikan dimanapun berada"
             },
             {
                 "nama": "Adinda Deswita Maharani",
@@ -1267,8 +1267,8 @@ if menu == "Departemen Eksternal":
                 "alamat": "love earth",
                 "asal": "ikut kadep",
                 "sosmed": "@adindaadma",
-                "kesan": "",
-                "pesan": ""
+                "kesan": "Kak Adinda orangnya baik, cantik, ramah juga",
+                "pesan": "Semoga apa yang kakak usahakan nantinya bisa kakak capai"
             },
             {
                 "nama": "Ahmad Bimo Akbar Arkana",
@@ -1279,8 +1279,8 @@ if menu == "Departemen Eksternal":
                 "alamat": "Balam",
                 "asal": "Tanggamus",
                 "sosmed": "@bimo_arkana",
-                "kesan": "",
-                "pesan": ""
+                "kesan": "Bang Bimo orangnya keren kelihatan dari tampilannya, gacor bang",
+                "pesan": "Semoga selalu sehat dan semangat dalam menjalani semuanya bang"
             },
             {
                 "nama": "Alfaya Abiyyi",
@@ -1291,8 +1291,8 @@ if menu == "Departemen Eksternal":
                 "alamat": "balam",
                 "asal": "balam",
                 "sosmed": "@alfabiyi",
-                "kesan": "",
-                "pesan": ""
+                "kesan": "Bang Alfayya orangnya asik, baik, keren juga",
+                "pesan": "Sehat selalu dan lancar luncur kuliah serta karirnya bang"
             },
             {
                 "nama": "Asri Meilani",
@@ -1303,8 +1303,8 @@ if menu == "Departemen Eksternal":
                 "alamat": "Korpri Raya",
                 "asal": "Lampung Barat",
                 "sosmed": "@asrmeilani",
-                "kesan": "",
-                "pesan": ""
+                "kesan": "Kak Asri Meilani orangnya baik dan ramah",
+                "pesan": "Sehat selalu, semangat dan menyala selalu kak"
             },
             {
                 "nama": "Bima Ekayasa",
@@ -1315,8 +1315,8 @@ if menu == "Departemen Eksternal":
                 "alamat": "Balam",
                 "asal": "Lampung",
                 "sosmed": "@bimayasa_",
-                "kesan": "",
-                "pesan": ""
+                "kesan": "Bang Bima keren dan baik",
+                "pesan": "Menyalalah tanpa membuat redup yang lain"
             },
             {
                 "nama": "Indah Khairunnisa",
@@ -1327,8 +1327,8 @@ if menu == "Departemen Eksternal":
                 "alamat": "Disini aja",
                 "asal": "Ampera",
                 "sosmed": "@khaindaa_",
-                "kesan": "",
-                "pesan": ""
+                "kesan": "Kak Indah orangnya baik, ramah, dan keliatannya asik orangnya",
+                "pesan": "Semangat selalu ya kak, lancar untuk semuanya"
             },
             {
                 "nama": "Riska Erlis Dayu Tiara",
@@ -1339,8 +1339,8 @@ if menu == "Departemen Eksternal":
                 "alamat": "bebas",
                 "asal": "palembang",
                 "sosmed": "@erlsriska",
-                "kesan": "",
-                "pesan": ""
+                "kesan": "Kak Riska orangnya pastinya baik, ramah juga",
+                "pesan": "Sehat selalu kak gapai semua yang kakak impikan"
             },
             {
                 "nama": "Yollanda Agustina",
@@ -1351,8 +1351,8 @@ if menu == "Departemen Eksternal":
                 "alamat": "Jati Agung",
                 "asal": "Kerangka Bawang Sebelah Barat",
                 "sosmed": "@yollanda_agustina16",
-                "kesan": "",
-                "pesan": ""
+                "kesan": "Kak Yollanda orangnya asik, baik, dan ramah dan enak di ajak ngobrol",
+                "pesan": "Lakukan lah yang terbaik dan capailah semua dengan penuh keyakinan"
             },
             {
                 "nama": "Aditya Taufiqurrohman",
@@ -1363,8 +1363,8 @@ if menu == "Departemen Eksternal":
                 "alamat": "belwis",
                 "asal": "tetangga kadep",
                 "sosmed": "@adityatfq",
-                "kesan": "",
-                "pesan": ""
+                "kesan": "Bang Adit orangnya super ramah dan asik sih",
+                "pesan": "Sehat selalu ya bang, semoga semua jalan di permudah untuk menggapai kesuksesan"
             },
             {
                 "nama": "Fathya Intami Gusda",
@@ -1375,8 +1375,8 @@ if menu == "Departemen Eksternal":
                 "alamat": "Sukarame",
                 "asal": "Tangsel",
                 "sosmed": "@fatthyaa_",
-                "kesan": "",
-                "pesan": ""
+                "kesan": "Kakak ini baik, ramah, dan soft spoken sepertinya",
+                "pesan": "Sehat selalu kak, semoga sukses!!"
             },
             {
                 "nama": "Tarisya Hidayatul Rahmi",
@@ -1387,8 +1387,8 @@ if menu == "Departemen Eksternal":
                 "alamat": "Gerbar",
                 "asal": "Luhak tanah data",
                 "sosmed": "-",
-                "kesan": "",
-                "pesan": ""
+                "kesan": "Kakak ini keren, asprak ADS saya juga, baik dan ramah orangnya",
+                "pesan": "Sehat selalu kak, semoga lancar luncur kuliahnya dan lulus sesuai target serta jadi orang sukses"
             },
             {
                 "nama": "Ashila Islamisahfa Vanisha",
@@ -1411,8 +1411,8 @@ if menu == "Departemen Eksternal":
                 "alamat": "Belakang Polda",
                 "asal": "Karawang",
                 "sosmed": "@d4niel_fdlh",
-                "kesan": "",
-                "pesan": ""
+                "kesan": "Bang Daniel keren sihh, Duta Genre lagi, gacor bang!",
+                "pesan": "Semoga Impian dan cita-cita bang Danil dapat tercapai"
             },
             {
                 "nama": "Favian Arkaanda",
@@ -1423,8 +1423,8 @@ if menu == "Departemen Eksternal":
                 "alamat": "Way Halim",
                 "asal": "Swiss",
                 "sosmed": "@fvnnn05",
-                "kesan": "",
-                "pesan": ""
+                "kesan": "Bang Favian orangnya baik dan ramah",
+                "pesan": "Lancar luncur semua urusannya bang"
             },
             {
                 "nama": "Muhammad Fathiy Zumar Yazid",
@@ -1435,8 +1435,8 @@ if menu == "Departemen Eksternal":
                 "alamat": "Jati Agung",
                 "asal": "situlah",
                 "sosmed": "@zydddddd_",
-                "kesan": "",
-                "pesan": ""
+                "kesan": "Bang Yazid orangnya baik, keren juga",
+                "pesan": "Semoga apa yang abang usahakan berbuah hasil yang terbaik ya bang"
             },
             {
                 "nama": "Muhammad Rizaldi",
@@ -1447,8 +1447,8 @@ if menu == "Departemen Eksternal":
                 "alamat": "Pasar lantai 3.5",
                 "asal": "Rahim Ibu",
                 "sosmed": "@jaldii._",
-                "kesan": "",
-                "pesan": ""
+                "kesan": "Bang Jaldi orangnya ramah dan asik banget",
+                "pesan": "Sehat selalu dan Menyala selalu ya bang Jaldi1"
             },
             {
                 "nama": "Saskia Nova Magdalena",
@@ -1459,10 +1459,10 @@ if menu == "Departemen Eksternal":
                 "alamat": "Pinggir Jalan",
                 "asal": "Banyak Begal",
                 "sosmed": "@snova.19",
-                "kesan": "",
-                "pesan": ""
-            },
-            {
+                "kesan": "Baik hati, ramah banget kalau disapa, dan orangnya selalu kelihatan ceria.",
+                "pesan": "Jaga kesehatan selalu, tetep semangat belajarnya, dan jangan lupa istirahat ya!"
+              },
+              {
                 "nama": "Selma Siti Aisyah",
                 "nim": "123450044",
                 "hobbi": "jalan-jalan",
@@ -1471,12 +1471,13 @@ if menu == "Departemen Eksternal":
                 "alamat": "balam",
                 "asal": "lampung",
                 "sosmed": "@selmasiti_aisyah",
-                "kesan": "",
-                "pesan": ""
-            }
-        ]
-        display_images_with_data(gambar_urls, data_list)
-    Departemen_Eksternal()
+                "kesan": "Orangnya asik, seru kalau diajak ngobrol, dan pembawaannya santai.",
+                "pesan": "Semoga semua harapan serta rencana kuliahnya berjalan lancar, sukses terus!"
+              },
+            ]
+            display_images_with_data(gambar_urls, data_list)
+        Departemen_Eksternal()
+    
 if menu == "Departemen Minbak":
     def Departemen_Minbak():
         gambar_urls = [
