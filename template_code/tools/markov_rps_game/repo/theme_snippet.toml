@@ -1,0 +1,6 @@
+# Gabungkan ke .streamlit/config.toml (jika sudah ada [theme], samakan nilainya)
+[theme]
+primaryColor="#7CB99A"
+backgroundColor="#F6F1F1"
+secondaryBackgroundColor="#DCEBDD"
+textColor="#2F3E36"

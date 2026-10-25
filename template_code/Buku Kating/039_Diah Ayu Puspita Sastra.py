@@ -3,8 +3,24 @@ from streamlit_option_menu import option_menu
 import requests
 from PIL import Image, ImageOps
 from io import BytesIO
- 
-st.markdown("""<style>.centered-title {text-align: center;}</style>""",unsafe_allow_html=True)
+import html
+
+st.markdown("""
+    <style>
+    .centered-title {
+        text-align: center;
+    }
+    .stApp {
+            background: linear-gradient(160deg, #DCE8D2 0%, #E9F0DE 50%, #F1F2E3 100%);
+            background-attachment: fixed;
+            color: var(--bark);
+    }
+    [data-testid="stHeader"] {
+        background: linear-gradient(160deg, #DCE8D2 0%, #E9F0DE 50%, #F1F2E3 100%) !important;
+        background-attachment: fixed !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
 st.markdown("<h1 class='centered-title'>BUKU KATING</h1>", unsafe_allow_html=True)
  
 # bagian sini jangan diubah
@@ -38,63 +54,75 @@ def streamlit_menu():
         default_index=0,
         orientation="horizontal",
         styles={
-            "container": {"padding": "0!important", "background-color": "#fafafa"},
-            "icon": {"color": "black", "font-size": "16px"},
+            "container": {"padding": "0!important", "background-color": "#FBF8F0"},
+            "icon": {"color": "#C08552", "font-size": "16px"},
             "nav-link": {
                 "font-size": "13px",
                 "text-align": "left",
                 "margin": "0px",
-                "--hover-color": "#eee",
+                "--hover-color": "#E3EDD9",
             },
-            "nav-link-selected": {"background-color": "#3FBAD8"},
+            "nav-link-selected": {"background-color": "#6B8F5E"},
         },
     )
     return selected
- 
+
+CSS_BIODATA = """
+<style>
+.bio-nama {font-size: 1.2rem; font-weight: 700; margin: 0.4rem 0 0.6rem 0;}
+.bio-row {display: flex; gap: 0.6rem; font-size: 0.92rem; line-height: 1.5; padding: 3px 0;}
+.bio-lbl {min-width: 80px; color: #6b7280; font-weight: 600;}
+.bio-val {flex: 1; word-break: break-word;}
+</style>
+"""
+
+FIELD_BIODATA = ["NIM", "Umur", "Asal", "Alamat", "Hobi", "Sosmed", "Kesan", "Pesan"]
+
+
 @st.cache_data
 def load_image(url):
-    response = requests.get(url)
-    if response.status_code != 200:
-        st.error(
-            f"Failed to fetch image from {url}, status code: {response.status_code}"
-        )
-        return None
     try:
+        response = requests.get(url, timeout=15)
+        response.raise_for_status()
         img = Image.open(BytesIO(response.content))
-        img = ImageOps.exif_transpose(img)
-        img = img.resize((300, 400))
-        return img
-    except Exception as e:
-        st.error(f"Error loading image: {e}")
+        img = ImageOps.exif_transpose(img).convert("RGB")
+        return ImageOps.fit(img, (400, 500), Image.LANCZOS)
+    except Exception:
         return None
-    
-@st.cache_data
-def display_images_with_data(gambar_urls, data_list):
-    images = []
-    for i, url in enumerate(gambar_urls):
-        with st.spinner(f"Memuat gambar {i + 1} dari {len(gambar_urls)}"):
-            img = load_image(url)
-            if img is not None:
-                images.append(img)
- 
-    for i, img in enumerate(images):
-        # Menggunakan Streamlit untuk menampilkan gambar di tengah kolom
-        col1, col2, col3 = st.columns([1, 2, 1])
-        with col2:
+
+
+def tampilkan_kartu(img, data):
+    with st.container(border=True):
+        if img is not None:
             st.image(img, use_container_width=True)
- 
-        if i < len(data_list):
-            st.write(f"Nama: {data_list[i]['Nama']}")
-            st.write(f"NIM: {data_list[i]['NIM']}")
-            st.write(f"Umur: {data_list[i]['Umur']}")
-            st.write(f"Asal: {data_list[i]['Asal']}")
-            st.write(f"Alamat: {data_list[i]['Alamat']}")
-            st.write(f"Hobbi: {data_list[i]['Hobi']}")
-            st.write(f"Sosial Media: {data_list[i]['Sosmed']}")
-            st.write(f"Kesan: {data_list[i]['Kesan']}")
-            st.write(f"Pesan: {data_list[i]['Pesan']}")
-            st.write("  ")
-    st.write("Semua gambar telah dimuat!")
+        else:
+            st.info("Foto tidak tersedia")
+
+        baris = f'<div class="bio-nama">{html.escape(data["Nama"])}</div>'
+        for field in FIELD_BIODATA:
+            baris += (
+                f'<div class="bio-row">'
+                f'<span class="bio-lbl">{field}</span>'
+                f'<span class="bio-val">: {html.escape(str(data[field]))}</span>'
+                f'</div>'
+            )
+        st.markdown(baris, unsafe_allow_html=True)
+
+
+def display_images_with_data(gambar_urls, data_list):
+    st.markdown(CSS_BIODATA, unsafe_allow_html=True)
+
+    with st.spinner("Memuat foto..."):
+        images = [load_image(url) for url in gambar_urls]
+
+    pasangan = list(zip(images, data_list))
+
+    for i in range(0, len(pasangan), 2):
+        cols = st.columns(2, gap="medium")
+        for col, (img, data) in zip(cols, pasangan[i:i + 2]):
+            with col:
+                tampilkan_kartu(img, data)
+
 menu = streamlit_menu()
 
 if menu == "Kesekjenan":
@@ -111,7 +139,7 @@ if menu == "Kesekjenan":
         data_list = [
             {
                 "Nama": "Ginda Fajar Riadi Marpaung", 
-                "NIM" : "123450066",
+                "NIM" : "123450103",
                 "Asal" : "Bakinang",
                 "Alamat" : "Sekretariat HMSD", 
                 "Hobi": "Push Rank",
@@ -581,7 +609,7 @@ if menu == "Departemen MIKFES":
                 "https://drive.google.com/thumbnail?id=1wIHGtfTAEE1w3YW9WeJGG5OO6aiyNQZG&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1aC6kFPI702BixsmV1nbWNuJcWQ9M8mSf&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1lMjvIjuHuwxWwz7YOw_7tN6za1ukLy-w&sz=w1000",
-                "https://drive.google.com/thumbnail?id=1qgnpFHACCBAlmUkDIWMt0Zdj0pG2k9U1&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_&sz=w1000",
                 "https://drive.google.com/thumbnail?id=14_vTVQXYcSRv3Aj33OV6OeTHMmqaiv-U&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1Va2FO6AqYmorvBEz6QeqNfFitpDS-GhP&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1PSAhbM_pPO8UX01y0trU-4Sj424-WFZ4&sz=w1000",
@@ -863,7 +891,7 @@ if menu == "Departemen Medkraf":
                 "https://drive.google.com/thumbnail?id=1hcyQoW2AcSNQ8L1CCtvyeC8r5qdtw4Cl&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1E_eFzy4gGV_vMbRyhKCsyRFCl4Srv5Se&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1EhDvjtozX4UCuvwQvmOCArjji8y2nHeK&sz=w1000",
-                "https://drive.google.com/thumbnail?id=1aqW5i7oS32FAH3j_VgkA77y5_H9j5Gwj&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1xTxf3xwq2Cqg0JgWr-byy256KZWtrPML&sz=w1000",
                 "https://drive.google.com/thumbnail?id=13RHyvO5yI8kLj7zmXedDFMuH3VPBNxij&sz=w1000"
         ]
@@ -1248,8 +1276,8 @@ if menu == "Departemen Eksternal":
                 "https://drive.google.com/thumbnail?id=1EyW5Gg3AGDMow0S8rPbwcGF4ehqdE_GM&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1lNTHI2SX9WJWEQeoRRf62PRjTkNYcR7E&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1SvldPyhtHv9Y7KP1xEHSqkm9k0YMAhIv&sz=w1000",
-                "https://drive.google.com/thumbnail?id=1MU7BPYE_gRVxjWktkKFnDoMhe15pojY4&sz=w1000",
-                "https://drive.google.com/thumbnail?id=16UquP5PLxVclvc2q7oFSlkX1vEu4ZXOd&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_&sz=w1000",
         ]
         
         data_list = [
@@ -1512,7 +1540,7 @@ if menu == "Baleg":
                 "https://drive.google.com/thumbnail?id=1K7UcrPbHoob5bWEFsQe45txOskLzvhdD&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1c3pzfxQnPIpuBojItiTuCMf6oAb6j4X7&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1S0NnrEsRvpR6U5uoFIpoxjtl7arA8mQ0&sz=w1000",
-                "https://drive.google.com/thumbnail?id=1PFnsO5HsxLCd9ahSudhE3B_xnkysKjE6&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1gVvbGxgD3lgfcnl1ipRuXQKN-E8OPHLK&sz=w1000",
                 "https://drive.google.com/thumbnail?id=10LtRI2-vOslchx_Ijim2p69CRTgQjFmZ&sz=w1000",
         ]
@@ -1800,7 +1828,7 @@ if menu == "Departemen PSDA":
     def departemen_psda():
         gambar_urls = [
                 "https://drive.google.com/thumbnail?id=1hxFz5iv83Gsm6h1ZZvQGcejdcWHyDiQC&sz=w1000",
-                "https://drive.google.com/thumbnail?id=1zkqTMbQ-RrKY1504WA6HLkLe6fDLTJVV&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1SySdWPx2RPLp-4NoHAObEooJNnf38VEH&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1-BZtHLZrmr7tRCiDV2uyGviG1LZI0Ebs&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1y9cH-ybzk8omqQELJnd5Hr17Ky-CSwQP&sz=w1000",
@@ -1811,7 +1839,7 @@ if menu == "Departemen PSDA":
                 "https://drive.google.com/thumbnail?id=1znO18sa83ryTAxfQD72bYjXsCqKwJKHv&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1jHje08g47gfOwHXkKPkRdYmptFPw4hJQ&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1IfHvPbKTusIKTUPptlFRboC_P1faIaj-&sz=w1000",
-                "https://drive.google.com/thumbnail?id=1YiOUxcIRyHcZPW_ydB7ZAXGm39HURSU_&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1yUQ7xKTe0Kzw_6RUjLmqiJwIsvWHsiXZ&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1Jf6KSShO2tZajWkBoX-hK2h3PXRTFx0t&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1Pl3mRMdA5IN6xHL2jlkpvpBjx-wy4PhQ&sz=w1000",
