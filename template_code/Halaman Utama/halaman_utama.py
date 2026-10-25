@@ -6,19 +6,6 @@ import html
 # ─── Import dari utils.py ───
 from utils import load_image, image_data_uri
 
-# ============================================================
-# 🎨 CSS HACK: MENGHANCURKAN BATAS LEBAR STREAMLIT
-# ============================================================
-st.markdown("""
-<style>
-    /* Paksa kontainer Streamlit agar tidak memotong teks */
-    [data-testid="stAppViewBlockContainer"], .block-container {
-        max-width: 100% !important;
-        padding-left: 1rem !important;
-        padding-right: 1rem !important;
-    }
-</style>
-""", unsafe_allow_html=True)
 
 # ============================================================
 # 🎨 CUSTOM CSS HALAMAN UTAMA (UTUH 100% ASLI + TAMBAHAN MENTOR)
@@ -78,9 +65,8 @@ html, body, [class*="css"] {
     margin-top: 6px;
 }
 
-/* 💥 FIX MUTLAK: Judul Section Benar-benar di Tengah 💥 */
 .section-title {
-    text-align: center !important;
+    text-align: center;
     font-family: 'Playfair Display', serif;
     color: #701c23;
     font-weight: 700;
@@ -89,14 +75,12 @@ html, body, [class*="css"] {
     margin-bottom: 30px;
     position: relative;
     display: block;
-    width: 100% !important;
-    line-height: 1.4 !important;
 }
 .section-title::before,
 .section-title::after {
     content: '✦';
     color: #d9c3a3;
-    margin: 0 10px;
+    margin: 0 18px;
     font-size: 0.7em;
     vertical-align: middle;
 }
@@ -325,7 +309,6 @@ html, body, [class*="css"] {
     filter: saturate(1.02) contrast(1.03);
 }
 
-/* 💥 FIX MUTLAK: Nama di dalam card benar-benar di tengah dan tidak terpotong */
 .flip-card-front h4 {
     margin: 2px 0 6px 0;
     font-family: 'Playfair Display', serif;
@@ -334,11 +317,7 @@ html, body, [class*="css"] {
     font-size: 15.5px;
     letter-spacing: 0.3px;
     line-height: 1.25;
-    text-align: center !important;
-    word-wrap: break-word !important;
-    white-space: normal !important;
-    width: 100% !important;
-    padding: 0 5px;
+    max-width: 92%;
 }
 
 .flip-card-front .role-badge {
@@ -432,7 +411,6 @@ html, body, [class*="css"] {
     letter-spacing: 0.3px;
     line-height: 1.2;
     z-index: 1;
-    text-align: center !important;
 }
 .flip-card-back .back-role {
     position: relative;
@@ -444,7 +422,6 @@ html, body, [class*="css"] {
     opacity: 0.85;
     margin-bottom: 12px;
     z-index: 1;
-    text-align: center !important;
 }
 
 .flip-card-back .divider {
@@ -729,11 +706,12 @@ if menu == "Home":
 
 
 # ============================================================
-# ABOUT US PAGE
+# ABOUT US PAGE (Mentor Ditaruh di Atas)
 # ============================================================
 elif menu == "About Us":
     st.markdown("<h2 class='section-title'>Our Mentor</h2>", unsafe_allow_html=True)
 
+    # ─── DATA MENTOR ───
     mentor = {
         "nama": "Hafidz Wahdiansyah",
         "sebagai": "Mentor",
@@ -741,9 +719,10 @@ elif menu == "About Us":
         "fun_fact": "Pernah ngoding sampai 12 jam",
         "motto_hidup": "Motivasi hari ini adalah motivasi untuk esok"
     }
-    mentor_img_url = "https://drive.google.com/uc?export=view&id=1UJWhabFk6lWj7fylxUR6apqPbZHvoCoz" 
+    mentor_img_url = "https://drive.google.com/uc?export=view&id=1UJWhabFk6lWj7fylxUR6apqPbZHvoCoz" # Ganti URL ini
 
-    col_mid1, col_mid2, col_mid3 = st.columns([1, 1.5, 1])
+    # Tampilkan Mentor (Full width kolom tengah)
+    col_mid1, col_mid2, col_mid3 = st.columns([1, 2, 1])
     with col_mid2:
         img_src = image_data_uri(mentor_img_url, max_dim=1200, quality=85)
         if img_src:
@@ -760,8 +739,6 @@ elif menu == "About Us":
                         </div>
                         <div class="flip-card-back">
                             <h4>{mentor['nama']}</h4>
-                            <div class="back-role">{mentor['sebagai']}</div>
-                            <div class="divider"></div>
                             <p><span class="label">NIM</span>{mentor['nim']}</p>
                             <p><span class="label">Fun Fact</span>{mentor['fun_fact']}</p>
                             <p><span class="label">Motto Hidup</span>{mentor['motto_hidup']}</p>
