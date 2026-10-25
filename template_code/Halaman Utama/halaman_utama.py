@@ -211,7 +211,7 @@ elif menu == "About Us":
                 "nama": "Aura Krisna Azzira",
                 "sebagai": "Anggota",
                 "nim": "125450119",
-                "fun_fact": "Semester 2 kecelakaan 3x",
+                "fun_fact": "Pernah hilang di masjid Istiqlal",
                 "motto_hidup": "Biarlah langkahku membentur batu, daripada mati rasa karena ragu",
             },
             {
