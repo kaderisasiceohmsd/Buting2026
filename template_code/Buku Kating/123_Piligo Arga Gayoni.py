@@ -715,7 +715,7 @@ elif menu == "Departemen PSDA":
             "https://drive.google.com/uc?export=view&id=1usOIXqXuvgwImLT71NvCULHHP0GRX8ge",
             "https://drive.google.com/uc?export=view&id=121J109uHW7YX8W4NdU_GCIiFDBx_PPN-",
         ]
-data_list = [
+    data_list = [
             {
                 "nama": "Arienta Khusnul Ananda",
                 "nim": "123450097",
@@ -903,8 +903,8 @@ data_list = [
                 "kesan": "Kakak lucu dan suka senyum",
                 "pesan":"lancar selalu kakaaa kuliahnya yaa^"
             }
-            ]
-        display_images_with_data(gambar_urls, data_list)
+        ]
+    display_images_with_data(gambar_urls, data_list)
     DepartemenPSDA()
 
 elif menu == "Senator":
@@ -920,9 +920,7 @@ elif menu == "Senator":
             "https://drive.google.com/uc?export=view&id=1dngVWPupgADnBwdie8h1kKyJHlys5_sd",
             "https://drive.google.com/uc?export=view&id=1Bp7SEJTe1KX9IJrKeVG0IjFt7rCu_DVC",
             "https://drive.google.com/uc?export=view&id=1V-wuNMSyuA_L_MenxzMrdi_SBMUZwW3o",
-
-
-        ]
+            ]
         data_list = [
             {
                 "nama": "Fathinah Nur Azizah",
@@ -1014,7 +1012,7 @@ elif menu == "Senator":
             },
             {
                 "nama": "Nadya Ratu Anjani",
-                 "nim": "123450083",
+                "nim": "123450083",
                 "umur": "21",
                 "asal": "Bandar Lampung",
                 "alamat": "Sukarame",
@@ -1112,7 +1110,7 @@ elif menu == "Departemen Eksternal":
             },
             {
                 "nama": "Tarisya Hidayatul Rahmi",
-                 "nim": "123450052",
+                "nim": "123450052",
                 "umur": "-",
                 "asal": "Luhak tanah data",
                 "alamat": "Gerbang Barat",
@@ -1212,7 +1210,7 @@ elif menu == "Departemen Eksternal":
             {
                 "nama": "Ahmad Rizky",
                 "nim": "123450050",
-                 "umur": "21",
+                "umur": "21",
                 "asal": "Tangerang Selatan",
                 "alamat": "GH",
                 "hobbi": "ga ngapa ngapain",
@@ -1278,7 +1276,7 @@ elif menu == "Departemen Eksternal":
             {
                 "nama": "Riska Erlis Dayu Tiara",
                 "nim": "124450022",
-                 "umur": "20",
+                "umur": "20",
                 "asal": "palembang",
                 "alamat": "bebas",
                 "hobbi": "ngefollow up chat",
@@ -1430,7 +1428,7 @@ elif menu == "Departemen MIKFES":
             },
             {
                 "nama": "Akeyla Fairuz Shafi",
-                 "nim": "123450119",
+                "nim": "123450119",
                 "umur": "21",
                 "asal": "Depok",
                 "alamat": "Bandar Lampung",
@@ -1497,7 +1495,7 @@ elif menu == "Departemen MIKFES":
             {
                 "nama": "Razin Hafid Hamdi",
                 "nim": "123450096",
-                 "umur": "21",
+                "umur": "21",
                 "asal": "Padang",
                 "alamat": "Jl. Lapas",
                 "hobbi": "Futsal",
@@ -1552,7 +1550,7 @@ elif menu == "Departemen MIKFES":
             {
                 "nama": "Melva Shaprina Febrianti",
                 "nim": "124450087",
-                 "umur": "19",
+                "umur": "19",
                 "asal":"Sumatera Selatan ",
                 "alamat": "Sukarame ",
                 "hobbi": "Memasak",
@@ -1696,7 +1694,7 @@ elif menu == "Departemen SSD":
             },
             {
                 "nama": "Abdilah Fikri Alpome",
-                 "nim": "123450062",
+                "nim": "123450062",
                 "umur": "21",
                 "asal": "Baturaja, Sumatera Selatan ",
                 "alamat": "Airan ",
@@ -1857,7 +1855,7 @@ elif menu == "Departemen Medkraf":
             },
             {
                 "nama": "Alya Ramadhanti",
-                 "nim": "124450091",
+                "nim": "124450091",
                 "umur": "19",
                 "asal": "Jambi",
                 "alamat": "Airan",
