@@ -410,7 +410,7 @@ elif menu == "Departemen MIKFES":
             },
             {
                 "nama": "Sherena Florencia",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=16OPdKexabsl7dEIzxRHKQMld0zXPzSnQ
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=16OPdKexabsl7dEIzxRHKQMld0zXPzSnQ",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -506,7 +506,7 @@ elif menu == "Departemen Eksternal":
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
             {
-                "nama": "Adinda Deswita Maharani",=
+                "nama": "Adinda Deswita Maharani",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1033nA4AEHivY-PQTDs77VEMlDOdTXVbY",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
