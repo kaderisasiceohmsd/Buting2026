@@ -114,7 +114,9 @@ if menu == "Home":
         )
 
         # --- FOTO UTAMA KELOMPOK DENGAN EFEK KACA SAAT DISENTUH ---
-        foto_kelompok = "https://drive.google.com/uc?export=view&id=1BFaWjCYfj0HFeGBBDB8SmUYsZkxcEvM7"
+        foto_kelompok = "https://drive.google.com/uc?export=view&id=1BFaWjCYfj0HFeGBBDB8SmUYsZkxcEvM7",
+        foto_kelompok = "https://drive.google.com/uc?export=view&id=1shCe20B7mM0gWlBoqdIXkgB5Y3P51k03",
+        foto_kelompok = "https://drive.google.com/uc?export=view&id=1mQYgg7IBYjZ3WxgGxW_3EyN2qK_NSo0c"
         st.markdown(
             """
             <div style="text-align: center; margin: 24px 0 12px 0;">
@@ -213,7 +215,18 @@ elif menu == "About Us":
         )
 
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1rJzgdR7_6woOOUN1rxC_kR5RDAex8rYC"
+            "https://drive.google.com/uc?export=view&id=1U9qL_kV5pRVGxwjX5vY9Ye60zewUyis1",
+            "https://drive.google.com/uc?export=view&id=1VDxX_RUW42qOiFcx2ZzNQIOC5EVmBt9p",#wawa
+            "https://drive.google.com/uc?export=view&id=1JyZqi_gGn-Z0U7rbn6wm6yCff3iBAXUY",#anoy
+            "https://drive.google.com/uc?export=view&id=1qn7DTt5dewAf4lrewAOw1wdGqarl4Gjy",#juju
+            "https://drive.google.com/uc?export=view&id=1pE1AmXiK-KOvxQgsWiw8LOIJFmSC4qBt",#anya
+            "https://drive.google.com/uc?export=view&id=1t-jcrs_NnloNmQS9C1Yx6x79HpRA3PyC",#tingting
+            "https://drive.google.com/uc?export=view&id=1Q9BG3ckhXSkR241w6WQKUgks1NOisDVR",#lui
+            "https://drive.google.com/uc?export=view&id=1wYkTJHX0mhBy9UVW_9XoDMAvXd56xI2r",#cella
+            "https://drive.google.com/uc?export=view&id=1BZHhEBU0fE6kbtvuc67sUinlTB8yeKmq",#esha
+            "https://drive.google.com/uc?export=view&id=1WDDcHs08ui8kpk4ZgElSmS9LqSPwa3NB",#alip
+            "https://drive.google.com/uc?export=view&id=",#ia
+            "https://drive.google.com/uc?export=view&id=13nJeccLKDvlcb9X08Vbo2ZKEjyXf0TuR"#oni
         ]
 
         data_list = [
@@ -222,69 +235,69 @@ elif menu == "About Us":
                 "sebagai": "Pak lurah",
                 "nim": "125450103",
                 "fun_fact": "Suka ngeliatin Sunset",
-                "motto_hidup": "Nothing is impossible",
+                "motto_hidup": "Dalam setiap Interaksi pasti ada Komunikasi, Didalam komunikasi adakalanya terjadi Miskomunikasi, Maka dari itu butuh Evaluasi agar dalam komunikasi, tak terjadi lagi miskomunikasi",
             },
             {
                 "nama": "Laikha Salwa Balqis",
                 "sebagai": "Bu Lurah",
                 "nim": "125450112",
-                "fun_fact": "[Isi Fun Fact]",
-                "motto_hidup": "[Isi Motto]",
+                "fun_fact": "strict parents, suka hewan, suka jadi penjelajah",
+                "motto_hidup": "Tenang, gausah dibikin pusing gausah dibikin ribet. Everything's gonna be ok!",
             },
             {
                 "nama": "Hanifa Az'zahra",
                 "sebagai": "Anggota",
                 "nim": "125450001",
-                "fun_fact": "[Isi Fun Fact]",
-                "motto_hidup": "[Isi Motto]",
+                "fun_fact": "Pindah kost 3 kali dlm satu semester, suka tidur dimotor",
+                "motto_hidup": "Melangkah ke arah yang asing, membaca apa yang tak terucap dan yang terlihat",
             },
             {
                 "nama": "Jauza Virna Radyta",
                 "sebagai": "Anggota",
                 "nim": "125450009",
-                "fun_fact": "[Isi Fun Fact]",
-                "motto_hidup": "[Isi Motto]",
+                "fun_fact": "banyak cowo, ga punya pacar",
+                "motto_hidup": "semua hal itu butuh proses bukan protes",
             },
             {
                 "nama": "Lusia Zefanya Sihotang",
                 "sebagai": "Anggota",
                 "nim": "125450010",
-                "fun_fact": "[Isi Fun Fact]",
-                "motto_hidup": "[Isi Motto]",
+                "fun_fact": "cinta piscok uin",
+                "motto_hidup": "Ad Maiorem Dei Gloriam",
             },
             {
                 "nama": "Enzo Hamman Albarru",
                 "sebagai": "Anggota",
                 "nim": "125450022",
-                "fun_fact": "[Isi Fun Fact]",
-                "motto_hidup": "[Isi Motto]",
+                "fun_fact": "sarapan nasi uduk setiap hari",
+                "motto_hidup": "hidup tenang, bebas nafas, nasi padang, kopi panas",
             },
             {
                 "nama": "Mario Figo Dito",
                 "sebagai": "Anggota",
                 "nim": "125450048",
-                "fun_fact": "[Isi Fun Fact]",
-                "motto_hidup": "[Isi Motto]",
+                "fun_fact": "mirip bang zaldy kata kak tanty",
+                "motto_hidup": "Coba aja dulu bkakakak",
             },
             {
                 "nama": "Kasih Martha Reichella",
                 "sebagai": "Anggota",
                 "nim": "125450060",
-                "fun_fact": "[Isi Fun Fact]",
-                "motto_hidup": "[Isi Motto]",
+                "fun_fact": "Lebih suka baca novel sedih dibandingkan novel happy ending",
+                "motto_hidup": "Apapun masalahnya jangan lupa buat selalu mengandalkan Tuhan",
             },
             {
                 "nama": "Muhammad Reyza Fasihurahman",
                 "sebagai": "Anggota",
                 "nim": "125450094",
-                "fun_fact": "[Isi Fun Fact]",
-                "motto_hidup": "[Isi Motto]",
+                "fun_fact": "suka belajar fisika mesin",
+                "motto_hidup": "Hidup itu mudah, yang susah itu cuma ADS",
             },
             {
                 "nama": "Nadira Alifa Arifin",
                 "sebagai": "Anggota",
                 "nim": "125450101",
-                "fun_fact": "[Isi Fun Fact]",
+                "fun_fact": " cinta kopi walau aslam",
                 "motto_hidup": "[Isi Motto]",
             },
             {
@@ -298,8 +311,8 @@ elif menu == "About Us":
                 "nama": "Piligo Arga Gayoni",
                 "sebagai": "Anggota",
                 "nim": "125450123",
-                "fun_fact": "[Isi Fun Fact]",
-                "motto_hidup": "[Isi Motto]",
+                "fun_fact": "suka kesandung kalau jalan",
+                "motto_hidup": "susah senang jalani saja, tapi hati hati jalan bolong, nanti kesandung",
             },
         ]
 
