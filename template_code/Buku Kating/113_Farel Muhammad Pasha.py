@@ -1489,12 +1489,12 @@ if menu == "Departemen Minbak":
             "https://drive.google.com/uc?export=view&id=16QmUrjSmd6g-08BwxnNfsW5Yp6_C73tj",
             "https://drive.google.com/uc?export=view&id=1coKySCpQM3reaOJnsbyRuZ9wpaSr9Yzy",
             "https://drive.google.com/uc?export=view&id=149G_n5OH8djAG5xuphPbIAmlPkmaZMVn",
-            "https://drive.google.com/uc?export=view&id=/1Ti-32pekfIk0mjD7h1jsL32AyeQ_keLk",
+            "https://drive.google.com/uc?export=view&id=1Ti-32pekfIk0mjD7h1jsL32AyeQ_keLk",
             "https://drive.google.com/uc?export=view&id=1ASWhbTt-vFowNbRltJQF6oU3YGN6Bhac",
             "https://drive.google.com/uc?export=view&id=1FcGZANQBYVm93F-ZztHUv2ji9O3RrEI9",
             "https://drive.google.com/uc?export=view&id=1b98CcQoa4WfuweB9r_GSQPAU9a_PXdcb",
-            "https://drive.google.com/uc?export=view&id=/1l6vTy5rzK4j6tv6_mvF5dw4ihO57U4oM",
-            "https://drive.google.com/uc?export=view&id=1MM-ic0kiMIVaseRvpb39e0Fi5NyzREH",
+            "https://drive.google.com/uc?export=view&id=1l6vTy5rzK4j6tv6_mvF5dw4ihO57U4oM",
+            "https://drive.google.com/uc?export=view&id=1IZH_LrCuJEEVXusENiuF6KpZcYw6LjcH",
         ]
         data_list = [
             {
