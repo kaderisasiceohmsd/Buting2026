@@ -259,9 +259,9 @@ if menu == "Kesekjenan":
 if menu == "Senator":
     def Senator():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1Nm2vnOo1v9fqcdD0yZtKGPghp9okypWx",
-            "https://drive.google.com/uc?export=view&id=1ITE5ACHWnCn3c2T2BsKrwziB1cMe9n1k",
-            "https://drive.google.com/uc?export=view&id=1hql9HuVrybkFHQz7bx-9JZVPumwqIXio",
+            "https://drive.google.com/uc?export=view&id=1NYXRhoIhkQIWjTClYLAVyfjveYS8Cae",
+            "https://drive.google.com/uc?export=view&id=1ITwF0v0XJryZnmK2yvGxq5UIUH2Ob-DY",
+            "https://drive.google.com/uc?export=view&id=17tCPMKzi-ao9eylDgqFqfyYmD8g6St5S",
             "https://drive.google.com/uc?export=view&id=1mEaTuk6PjtOp5DUMp6GyxLa8ZLGL9Oz_",
             "https://drive.google.com/uc?export=view&id=1cK8zeMxgDwjvNUcuDV84IOvYNeAS6Vxq",
             "https://drive.google.com/uc?export=view&id=1Vr0dKVQk3_T-nT37KwEw41vQj7x0z_Jt",
