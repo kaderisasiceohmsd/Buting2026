@@ -479,7 +479,7 @@ if menu == "Badan Kesenatoran":
 elif menu == "Departemen Minbak":
     def Departemen_Minbak():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1qJRwzD08676Djt3ZV2UqPS2dovnOT8oG",
+            "https://drive.google.com/uc?export=view&id=1oUCS2tUHoQcpYaGCqxYVyvyE5_3AgQ1L",
             "https://drive.google.com/uc?export=view&id=1GdBBgsyjIvSDtfb8pzn8IwkOImLD07dC",
             "https://drive.google.com/uc?export=view&id=1927jQfW7yeV28jMyGY4iOyVSb6cRSEIC",
             "https://drive.google.com/uc?export=view&id=1EHcJPQvp7pYCjY84_rT7n-0FGzPHGgX3",
