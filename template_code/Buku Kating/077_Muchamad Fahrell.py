@@ -965,7 +965,7 @@ elif menu == "Departemen SSD":
         # ==========================================
         with tab2:
             gambar_urls_sekdep_ssd = [
-                "https://drive.google.com/uc?export=view&id=1ofji2_iq8G4OYsOSs-x2YyQwDp8yOo0A"
+                "https://cdn-icons-png.flaticon.com/512/149/149071.png"
             ]
 
             data_list_sekdep_ssd = [
@@ -1382,7 +1382,7 @@ elif menu == "Departemen Internal":
             data_list_Kadep_Internal = [
                 {
                     "nama": "Haikal Fransisko Simbolon",
-                    "nim": "106",
+                    "nim": "123400106",
                     "umur": "23",
                     "asal": "Jambi",
                     "alamat": "Jatimulyo",
@@ -1391,7 +1391,7 @@ elif menu == "Departemen Internal":
                     "divisi": "Departemen Internal",
                     "jabatan": "Kepala Departemen",
                     "kesan": "Bang Haikal orangnya asik.",
-                    "pesan": "Kegagalan berawal dari ketakutan sebelum mencoba"
+                    "pesan": "Semangatt banng kuliahnyaa"
                 }
             ]
 
@@ -1420,7 +1420,7 @@ elif menu == "Departemen Internal":
                     "divisi": "Sekretariat Departemen",
                     "jabatan": "Sekretaris",
                     "kesan": "Kak Kharisma orangnya ramah.",
-                    "pesan": "Keep going, no matter what"
+                    "pesan": "Semangatt banng kuliahnyaa"
                 }
             ]
 
@@ -1456,20 +1456,20 @@ elif menu == "Departemen Internal":
                     "divisi": "Keharmonisasian",
                     "jabatan": "Kepala Divisi",
                     "kesan": "Kak Hanna orangnya asik.",
-                    "pesan": "Senantiasa bertanggung jawab"
+                    "pesan": "semangatt terus kak"
                 },
                 {
-                    "nama": "Ahmad Farhan Ghani",
-                    "nim": "123450121",
-                    "umur": "",
-                    "asal": "",
-                    "alamat": "",
-                    "hobbi": "",
-                    "sosmed": "",
+                   "nama": "Ahmad Farhan Ghani",
+                "nim": "123450121",
+                "umur": "20",
+                "asal":"Kemiling",
+                "alamat": "Kemiling",
+                "hobbi": "Olahraga menembak",
+                "sosmed": "@farhnghnii",
                     "divisi": "Keharmonisasian",
                     "jabatan": "Staf Ahli",
                     "kesan": "Bang Farhan orangnya keren.",
-                    "pesan": "Gatau pen beli truck"
+                    "pesan": "semoga lancar kuliahnya"
                 },
                 {
                     "nama": "Aisyah Khairun Nisa",
@@ -1482,47 +1482,41 @@ elif menu == "Departemen Internal":
                     "divisi": "Keharmonisasian",
                     "jabatan": "Anggota",
                     "kesan": "Kak Aisyah orangnya ramah.",
-                    "pesan": "Jalani aja, yang penting semangat"
+                    "pesan": "Semoga apa yang di iinginkan tercapai"
                 },
-                {
-                    "nama": "Cerine Sihotang",
-                    "nim": "",
-                    "umur": "",
-                    "asal": "",
-                    "alamat": "",
-                    "hobbi": "",
-                    "sosmed": "",
-                    "divisi": "Keharmonisasian",
-                    "jabatan": "Anggota",
-                    "kesan": "Kak Cerine orangnya baik.",
-                    "pesan": "Hidup untuk menjadi berkat"
-                },
-                {
-                    "nama": "Jaya Saputra Tamba",
-                    "nim": "94",
-                    "umur": "22",
-                    "asal": "Kisaran CV",
-                    "alamat": "Pemda",
-                    "hobbi": "Tim boxing",
-                    "sosmed": "Jay_saputra_tmb",
-                    "divisi": "Keharmonisasian",
-                    "jabatan": "Anggota",
-                    "kesan": "Bang Jaya orangnya asik.",
-                    "pesan": "Kalau tidak Sekarang Kapan Lagi"
-                },
-                {
-                    "nama": "Najla Nursyifa",
-                    "nim": "",
-                    "umur": "",
-                    "asal": "",
-                    "alamat": "",
-                    "hobbi": "",
-                    "sosmed": "",
-                    "divisi": "Keharmonisasian",
-                    "jabatan": "Anggota",
-                    "kesan": "Kak Najla orangnya ramah.",
-                    "pesan": "Quote so fire I'm gate keeping"
-                },
+            {
+                "nama": "Cerine Sihotang",
+                "nim": "124450049",
+                "umur": "19",
+                "asal": "Medan",
+                "alamat": "Belwis",
+                "hobbi": "Balap Liar",
+                "sosmed": "@cerine_ipynb",
+                "kesan": "Lucuuu",  
+                "pesan":"Sehat selalu kaa, dan semangat kuliahnyaa!"# 1
+            },
+            {
+                "nama": "Jaya Saputra Tamba",
+                "nim": "124450094",
+                "umur": "22",
+                "asal": "Kisaran City",
+                "alamat": "Pemda",
+                "hobbi": "Kick Boxing",
+                "sosmed": "@jay.saputratmb",
+                "kesan": "Asik dan ramah",  
+                "pesan": "Semangatt kuliahnya bangg, semoga plan abang bisa tercapai satu-persatu"# 1
+            },
+                            {
+                "nama": "Najla Nursyifa",
+                "nim": "124450051",
+                "umur": "20",
+                "asal": "Aceh",
+                "alamat": "Belwis",
+                "hobbi": "Nonton ASMR",
+                "sosmed": "@njlanursyifa",
+                "kesan": "Kakanya gemass bangett",  
+                "pesan":"Semangatt terus ka kuliahnyaa"# 1
+            },
                 {
                     "nama": "Rozak Ramdani",
                     "nim": "124450100",
@@ -1534,7 +1528,7 @@ elif menu == "Departemen Internal":
                     "divisi": "Keharmonisasian",
                     "jabatan": "Anggota",
                     "kesan": "Bang Rozak orangnya seru.",
-                    "pesan": "Motto tanpa kerja nyata hanyalah hiasan retorika."
+                    "pesan": "semangatt terus bang kuliahnya."
                 },
                 {
                     "nama": "Teresa Christiani Purba",
@@ -1547,7 +1541,7 @@ elif menu == "Departemen Internal":
                     "divisi": "Keharmonisasian",
                     "jabatan": "Anggota",
                     "kesan": "Kak Teresa orangnya baik.",
-                    "pesan": "Ciptakan peluang, jangan tunggu peluang datang"
+                    "pesan": "Semangatt ngajar tutornya kak"
                 }
             ]
 
@@ -1581,7 +1575,7 @@ elif menu == "Departemen Internal":
                     "divisi": "Kerohanian",
                     "jabatan": "Kepala Divisi",
                     "kesan": "Bang Hanif orangnya asik.",
-                    "pesan": "Senja adalah hadiah pejalan kaki menjemput maghribnya"
+                    "pesan": "Semangatt banng kuliahnyaa"
                 },
                 {
                     "nama": "Audina Fitria",
@@ -1594,7 +1588,7 @@ elif menu == "Departemen Internal":
                     "divisi": "Kerohanian",
                     "jabatan": "Anggota",
                     "kesan": "Kak Audina orangnya ramah.",
-                    "pesan": "Trust the process, embrace the journey."
+                    "pesan": "Semangatt banng kuliahnyaa."
                 },
                 {
                     "nama": "Cika Adelia Br Marbun",
@@ -1607,7 +1601,7 @@ elif menu == "Departemen Internal":
                     "divisi": "Kerohanian",
                     "jabatan": "Anggota",
                     "kesan": "Kak Cika orangnya seru.",
-                    "pesan": "Amor fati"
+                    "pesan": "Semangatt banng kuliahnyaa"
                 },
                 {
                     "nama": "Gustin H. Tampubolon",
@@ -1620,7 +1614,7 @@ elif menu == "Departemen Internal":
                     "divisi": "Kerohanian",
                     "jabatan": "Anggota",
                     "kesan": "Kak Gustin orangnya baik.",
-                    "pesan": "Kamu adalah apa yang kamu pikirkan"
+                    "pesan": "KSemangatt banng kuliahnyaa"
                 },
                 {
                     "nama": "Muhammad Harvinsyah",
@@ -1633,7 +1627,7 @@ elif menu == "Departemen Internal":
                     "divisi": "Kerohanian",
                     "jabatan": "Anggota",
                     "kesan": "Bang Harvin orangnya keren.",
-                    "pesan": "Tindakan adalah bahasa paling jujur."
+                    "pesan": "Semangatt banng kuliahnyaa"
                 },
                 {
                     "nama": "Rafa Sabina Fahimah",
@@ -1646,7 +1640,7 @@ elif menu == "Departemen Internal":
                     "divisi": "Kerohanian",
                     "jabatan": "Anggota",
                     "kesan": "Kak Rafa orangnya ramah.",
-                    "pesan": "Never let anyone including yourself, belittle your dreams"
+                    "pesan": "Semangatt banng kuliahnyaa"
                 }
             ]
 
@@ -1746,16 +1740,16 @@ if menu == "Departemen MIKFES":
 
             data_list_PSD = [
                                 {
-                    "nama": "Fadil Prasetyo Alfarizzi",
-                    "nim": "123450...",
-                    "umur": "...",
-                    "asal": "...",
-                    "alamat": "...",
-                    "hobbi": "...",
-                    "sosmed": "...",
-                    "jabatan": "Kepala Divisi",
-                    "kesan": "Bang Fadil orangnya keren.",
-                    "pesan": "Semangat terus bang, semoga makin sukses."
+                     "nama": "Fadil Prasetyo Alfarizzi",
+                "nim": "123450048",
+                "umur": "21",
+                "asal": "Bandar Lampung",
+                "alamat": "Bandar Lampung",
+                "hobbi": "Gitar",
+                "sosmed": "@fadilalfarizzii",
+                "kesan": "Inspiratif bangett",
+                "pesan": "Masih ga nyangka secepat itu abang kembali ke pangkuan-Nya, tapi sekarang abang udah ga sakit lagi ya.. Doa terbaik untuk mu bang Fadil, fly high and rest in peace a good soul"
+            
                 },
                 {
                     "nama": "Manuel Frederika",
@@ -1806,13 +1800,13 @@ if menu == "Departemen MIKFES":
                     "pesan": "Semangat terus kak, semoga semua targetnya tercapai."
                 },
 {
-                    "nama": "Yulia Kristine Malau",
-                    "nim": "",
-                    "umur": "...",
-                    "asal": "...",
-                    "alamat": "...",
-                    "hobbi": "...",
-                    "sosmed": "...",
+                "nama": "Yulia Kristine Malau",
+                "nim": "124450119",
+                "umur": "20",
+                "asal": "Jambi",
+                "alamat": "Sabah Balau",
+                "hobbi": "Belajar",
+                "sosmed": "@krnylee",
                     "jabatan": "Anggota",
                     "kesan": "Kak Yulia orangnya asik.",
                     "pesan": "Semangat terus kak, semoga sukses selalu."
