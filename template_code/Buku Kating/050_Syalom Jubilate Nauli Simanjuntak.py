@@ -1,15 +1,446 @@
-import streamlit as st
-from streamlit_option_menu import option_menu
-import requests
-from PIL import Image, ImageOps
+import re
+import base64
+import html
 from io import BytesIO
+from concurrent.futures import ThreadPoolExecutor
 
-st.markdown("""<style>.centered-title {text-align: center;}</style>""",unsafe_allow_html=True)
-st.markdown("<h1 class='centered-title'>BUKU KATING</h1>", unsafe_allow_html=True)
+import requests
+import streamlit as st
+from PIL import Image, ImageOps
+from streamlit_option_menu import option_menu
 
-# bagian sini jangan diubah
+# ==================================================
+# KONFIGURASI HALAMAN
+# ==================================================
+st.set_page_config(
+    page_title="Buku Kating HMSD",
+    page_icon="💙",
+    layout="wide"
+)
+
+# ==================================================
+# CSS
+# ==================================================
+st.markdown("""
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap');
+
+:root {
+    --bg: #0d214d;
+    --accent: #1769e8;
+    --sky: #5ea2ff;
+    --light: #a3c4f3;
+    --dim: #cad8f2;
+    --line: rgba(163, 196, 243, 0.18);
+    --gold1: #fff0b3;
+    --gold2: #f6c744;
+    --gold3: #d8960f;
+}
+
+.stApp {
+    background:
+        radial-gradient(900px 480px at 10% -10%, rgba(23, 105, 232, 0.34), transparent 60%),
+        radial-gradient(800px 460px at 100% 0%, rgba(36, 88, 200, 0.28), transparent 58%),
+        linear-gradient(180deg, #0d214d 0%, #0a1a42 100%);
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+header[data-testid="stHeader"] { background: transparent; }
+footer, #MainMenu { visibility: hidden; }
+
+.block-container {
+    max-width: 1220px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* ---------- HERO ---------- */
+.hero { text-align: center; margin-bottom: 26px; }
+
+.hero-eyebrow {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--light);
+    padding: 6px 16px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.09), rgba(255,255,255,0.02));
+    margin-bottom: 14px;
+}
+
+.hero-title {
+    font-family: 'Sora', sans-serif;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin: 0 0 6px 0;
+    background: linear-gradient(180deg, #ffffff 30%, #a9cbff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 4px 20px rgba(23, 105, 232, 0.5));
+}
+
+.hero-sub { color: var(--light); font-size: 15px; margin: 0; }
+
+/* ---------- JUDUL BAGIAN ---------- */
+.section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 26px 0 14px 0;
+}
+
+.section-head h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+}
+
+.count-chip {
+    font-size: 12px;
+    font-weight: 700;
+    color: #dbe8ff;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(23,105,232,0.38), rgba(23,105,232,0.12));
+    border: 1px solid rgba(94, 162, 255, 0.45);
+}
+
+/* ---------- INPUT CARI ---------- */
+.stTextInput input {
+    background: linear-gradient(135deg, #0c1d4a, #081431) !important;
+    color: #fff !important;
+    border: 1px solid #1f3e82 !important;
+    border-radius: 14px !important;
+    padding: 12px 16px !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+.stTextInput input:focus {
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 0 3px rgba(23, 105, 232, 0.28) !important;
+}
+
+/* ---------- KARTU PROFIL (GRADASI) ---------- */
+.profile-card {
+    display: grid;
+    grid-template-columns: 400px minmax(0, 1fr);
+    min-height: 520px;
+    border-radius: 28px;
+    overflow: hidden;
+    background:
+        radial-gradient(620px 320px at 100% 0%, rgba(94, 162, 255, 0.30), transparent 62%),
+        radial-gradient(520px 320px at 35% 115%, rgba(23, 105, 232, 0.38), transparent 62%),
+        linear-gradient(135deg, #1b52c9 0%, #133f99 32%, #0d2c70 68%, #081c50 100%);
+    box-shadow:
+        inset 0 0 0 1px rgba(120, 175, 255, 0.30),
+        inset 0 1px 0 rgba(255, 255, 255, 0.14),
+        0 18px 40px rgba(0, 0, 0, 0.42);
+    margin-bottom: 32px;
+    transition: transform .25s ease, box-shadow .25s ease;
+    animation: rise .5s ease both;
+}
+
+.profile-card:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        inset 0 0 0 1px rgba(140, 190, 255, 0.55),
+        inset 0 1px 0 rgba(255, 255, 255, 0.18),
+        0 26px 55px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes rise {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- SISI FOTO ---------- */
+.photo-pane {
+    position: relative;
+    min-height: 520px;
+    background: linear-gradient(160deg, #2a7bff 0%, #1244a8 55%, #0a2a6e 100%);
+    border-right: 1px solid var(--line);
+}
+
+.photo-pane img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 18%;
+}
+
+.photo-pane::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(8, 28, 80, 0.25) 0%, transparent 25%, transparent 62%, rgba(8, 28, 80, 0.7) 100%);
+    pointer-events: none;
+}
+
+.card-index {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 2;
+    font-family: 'Sora', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    background: rgba(8, 20, 49, 0.72);
+    color: #fff;
+    border: 1px solid var(--line);
+    backdrop-filter: blur(6px);
+}
+
+.avatar-fallback {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.avatar-fallback span {
+    font-family: 'Sora', sans-serif;
+    font-size: 5.5rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: rgba(255, 255, 255, 0.92);
+    text-shadow: 0 6px 24px rgba(5, 20, 70, 0.5);
+}
+
+.avatar-fallback small { color: var(--dim); font-size: 12px; letter-spacing: 1px; }
+
+/* ---------- SISI BIODATA ---------- */
+.info-pane {
+    min-width: 0;
+    padding: 40px 48px 40px 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 26px;
+}
+
+.profile-name {
+    font-family: 'Sora', sans-serif;
+    font-size: clamp(1.5rem, 2.6vw, 2.2rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 14px 0;
+    word-break: break-word;
+    background: linear-gradient(180deg, #ffffff 40%, #c4dcff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ---------- LENCANA JABATAN ---------- */
+.jabatan-badge {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 9px 20px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #3a2a00;
+    background: linear-gradient(135deg, var(--gold1), var(--gold2) 45%, var(--gold3));
+    box-shadow: 0 6px 20px rgba(246, 199, 68, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+.jabatan-badge::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.65), transparent);
+    transform: skewX(-20deg);
+    animation: shine 3.6s ease-in-out infinite;
+}
+
+@keyframes shine {
+    0%   { left: -60%; }
+    55%  { left: 130%; }
+    100% { left: 130%; }
+}
+
+.jabatan-star { font-size: 13px; }
+
+/* ---------- GRID INFO ---------- */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+}
+
+.info-tile {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.03));
+    border: 1px solid rgba(163, 196, 243, 0.16);
+    border-radius: 14px;
+    padding: 13px 15px;
+}
+
+.info-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--light);
+    margin-bottom: 5px;
+}
+
+.info-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.45;
+    word-break: break-word;
+}
+
+.social-chip {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(23, 105, 232, 0.5), rgba(23, 105, 232, 0.2));
+    border: 1px solid rgba(94, 162, 255, 0.6);
+    color: #e3eeff;
+}
+
+/* ---------- KESAN & PESAN ---------- */
+.quote-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    align-items: start;
+}
+
+.quote-box {
+    border-radius: 16px;
+    padding: 14px 16px 14px 18px;
+    background: linear-gradient(135deg, rgba(8, 20, 49, 0.72), rgba(19, 63, 153, 0.28));
+    border: 1px solid rgba(163, 196, 243, 0.10);
+    border-left: 3px solid var(--sky);
+}
+
+.quote-label {
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--light);
+    margin-bottom: 6px;
+}
+
+.quote-text {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--dim);
+    word-break: break-word;
+}
+
+.muted { opacity: .55; font-style: italic; }
+
+/* kesan/pesan panjang: klik untuk memperpanjang */
+.quote-long summary {
+    list-style: none;
+    cursor: pointer;
+    outline: none;
+}
+.quote-long summary::-webkit-details-marker { display: none; }
+
+.quote-more, .quote-less {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--sky);
+}
+.quote-long summary:hover .quote-more,
+.quote-long summary:hover .quote-less { color: #ffffff; }
+
+.quote-less { display: none; }
+.quote-long[open] .quote-more,
+.quote-long[open] .quote-preview { display: none; }
+.quote-long[open] .quote-less { display: inline-block; margin-top: 0; margin-bottom: 8px; }
+
+.quote-full {
+    max-height: 220px;
+    overflow-y: auto;
+    padding-right: 8px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(94, 162, 255, 0.6) transparent;
+}
+.quote-full::-webkit-scrollbar { width: 6px; }
+.quote-full::-webkit-scrollbar-thumb { background: rgba(94, 162, 255, 0.6); border-radius: 6px; }
+
+/* ---------- RESPONSIF ---------- */
+@media (max-width: 1100px) {
+    .profile-card { grid-template-columns: 340px minmax(0, 1fr); }
+    .info-pane { padding: 32px 32px 32px 40px; }
+    .info-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 820px) {
+    .profile-card { grid-template-columns: 1fr; min-height: 0; }
+    .photo-pane { min-height: 0; height: 440px; border-right: 0; border-bottom: 1px solid var(--line); }
+    .info-pane { padding: 26px 22px; }
+    .info-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .quote-grid { grid-template-columns: 1fr; }
+    .section-head { flex-direction: column; align-items: flex-start; }
+}
+[data-testid="stSidebar"], [data-testid="stSidebar"] > div {
+    background: #0a1838 !important;
+    border-right: 1px solid #1f3e82;
+}
+[data-testid="stSidebar"] * { color: #cad8f2 !important; }
+[data-testid="stSidebarNavLink"] { border-radius: 12px !important; }
+[data-testid="stSidebarNavLink"]:hover { background: #15357a !important; }
+[data-testid="stSidebarNavLink"][aria-current="page"] { background: #1769e8 !important; }
+[data-testid="stSidebarNavLink"][aria-current="page"] * { color: #fff !important; font-weight: 700; }
+
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown(
+    "<div class='hero'>"
+    "<div class='hero-eyebrow'>Himpunan Mahasiswa Sains Data</div>"
+    "<h1 class='hero-title'>BUKU KATING</h1>"
+    "<p class='hero-sub'>Kenali lebih dekat keluarga besar HMSD</p>"
+    "</div>",
+    unsafe_allow_html=True
+)
+
+# ==================================================
+# MENU NAVIGASI
+# ==================================================
 def streamlit_menu():
-    selected = option_menu(
+    return option_menu(
         menu_title=None,
         options=[
             "Kesekjenan",
@@ -24,77 +455,405 @@ def streamlit_menu():
             "Departemen Minbak",
         ],
         icons=[
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",            
+            "bank", "journal-text", "award-fill", "people-fill", "lightning-fill",
+            "globe2", "house-heart-fill", "cpu-fill", "camera-fill", "star-fill",
         ],
         default_index=0,
         orientation="horizontal",
         styles={
-            "container": {"padding": "0!important", "background-color": "#fafafa"},
-            "icon": {"color": "black", "font-size": "19px"},
-            "nav-link": {
-                "font-size": "15px",
-                "text-align": "left",
-                "margin": "0px",
-                "--hover-color": "#eee",
+            "container": {
+                "padding": "8px",
+                "background-color": "#0a1838",
+                "border-radius": "18px",
+                "box-shadow": "0 5px 20px rgba(0,0,0,0.3)",
+                "border": "1px solid #1f3e82",
             },
-            "nav-link-selected": {"background-color": "#3FBAD8"},
+            "icon": {
+                "color": "#a3c4f3",
+                "font-size": "15px",
+            },
+            "nav-link": {
+                "font-size": "12.5px",
+                "font-weight": "600",
+                "text-align": "center",
+                "margin": "3px",
+                "padding": "11px 12px",
+                "border-radius": "12px",
+                "color": "#cad8f2",
+                "--hover-color": "#15357a",
+            },
+            "nav-link-selected": {
+                "background-color": "#1769e8",
+                "color": "#ffffff",
+                "font-weight": "700",
+            },
         },
     )
-    return selected
 
-@st.cache_data
-def load_image(url):
-    response = requests.get(url)
-    if response.status_code != 200:
-        st.error(
-            f"Failed to fetch image from {url}, status code: {response.status_code}"
+# ==================================================
+# FUNGSI MEMUAT GAMBAR
+# ==================================================
+def _candidate_urls(url):
+    """Untuk link Google Drive, coba beberapa format URL sampai ada yang berhasil."""
+    match = re.search(r"(?:id=|/d/)([\w-]{10,})", url)
+    if "drive.google.com" in url and match:
+        fid = match.group(1)
+        return [
+            f"https://lh3.googleusercontent.com/d/{fid}=w800",
+            f"https://drive.google.com/thumbnail?id={fid}&sz=w800",
+            f"https://drive.google.com/uc?export=view&id={fid}",
+        ]
+    return [url]
+
+
+def _fetch_b64(url):
+    for candidate in _candidate_urls(url):
+        try:
+            response = requests.get(
+                candidate,
+                timeout=15,
+                headers={"User-Agent": "Mozilla/5.0"},
+            )
+            content_type = response.headers.get("content-type", "")
+            if response.status_code != 200 or not content_type.startswith("image/"):
+                continue
+
+            img = Image.open(BytesIO(response.content))
+            img = ImageOps.exif_transpose(img)
+            img = img.convert("RGB")
+            img.thumbnail((800, 1000))
+
+            buffered = BytesIO()
+            img.save(buffered, format="JPEG", quality=82)
+            return base64.b64encode(buffered.getvalue()).decode()
+        except Exception:
+            continue
+    return None
+
+
+@st.cache_data(show_spinner=False, ttl=3600)
+def load_images_b64(urls):
+    """Unduh semua gambar secara paralel dan simpan di cache."""
+    urls = list(urls)
+    if not urls:
+        return []
+    unique = list(dict.fromkeys(urls))
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        results = dict(zip(unique, pool.map(_fetch_b64, unique)))
+    return [results[u] for u in urls]
+
+
+# ==================================================
+# FUNGSI BANTU TAMPILAN
+# ==================================================
+def esc(value):
+    return html.escape(str(value))
+
+
+def clean(value, default="-"):
+    """Ubah nilai kosong / placeholder ('...', '@....', '-') menjadi default."""
+    text = str(value if value is not None else "").strip()
+    if not text or not text.strip(" .@-_"):
+        return default
+    return text
+
+
+def initials(nama):
+    parts = [p for p in re.split(r"\s+", nama.strip()) if p]
+    return "".join(p[0].upper() for p in parts[:2]) or "?"
+
+
+def _flatten_html(s):
+    """Hapus indentasi & baris kosong agar Markdown tidak menganggapnya code block."""
+    return "".join(line.strip() for line in s.splitlines() if line.strip())
+
+
+def _tile(icon, label, value_html):
+    return (
+        f"<div class='info-tile'>"
+        f"<div class='info-label'><span>{icon}</span>{label}</div>"
+        f"<div class='info-value'>{value_html}</div>"
+        f"</div>"
+    )
+
+
+QUOTE_LIMIT = 110  # lebih dari ini, teks dipotong dan muncul tombol "Baca selengkapnya"
+
+
+def _quote(label, text):
+    head = f"<div class='quote-label'>{label}</div>"
+
+    if not text:
+        return (
+            f"<div class='quote-box'>{head}"
+            f"<div class='quote-text'><span class='muted'>Belum diisi</span></div></div>"
         )
-        return None
-    try:
-        img = Image.open(BytesIO(response.content))
-        img = ImageOps.exif_transpose(img)
-        img = img.resize((300, 400))
-        return img
-    except Exception as e:
-        st.error(f"Error loading image: {e}")
-        return None
-    
-@st.cache_data
+
+    if len(text) <= QUOTE_LIMIT:
+        return (
+            f"<div class='quote-box'>{head}"
+            f"<div class='quote-text'>{esc(text)}</div></div>"
+        )
+
+    preview = esc(text[:QUOTE_LIMIT].rsplit(" ", 1)[0]) + "…"
+    return (
+        f"<details class='quote-box quote-long'>"
+        f"<summary>{head}"
+        f"<div class='quote-text quote-preview'>{preview}</div>"
+        f"<span class='quote-more'>Baca selengkapnya ▾</span>"
+        f"<span class='quote-less'>Tutup ▴</span>"
+        f"</summary>"
+        f"<div class='quote-text quote-full'>{esc(text)}</div>"
+        f"</details>"
+    )
+
+
+# ==================================================
+# JABATAN TAMBAHAN (TERPISAH DARI BIODATA ASLI)
+# ==================================================
+# Label jabatan diambil dari data kepengurusan; daftar foto dan biodata asli tidak disentuh.
+JABATAN_BY_NAMA = {
+    "Ginda Fajar Riadi Marpaung": "Ketua Himpunan",
+    "Muhammmad Aqil Ramadhan": "Sekretaris Jenderal",
+    "Efi Defiyati": "Sekretaris 1",
+    "Qois Olifio": "Sekretaris 2",
+    "Hafsa Fazila Arradhi": "Bendahara 1",
+    "Luthfia Laila Ramadhani": "Bendahara 2",
+    "Ridho Benedictus Togi Manik": "Ketua Badan Legislatif",
+    "Juesi Apridelia Saragih": "Sekretaris Badan Legislatif",
+    "Dharu Cahyoaji Sasongko": "Kepala Komisi I Legislasi",
+    "Gh Mikael Niko A S": "Staf Komisi I Legislasi",
+    "Siti Sarifah Sumamah": "Staf Komisi I Legislasi",
+    "Givaro Ananta": "Kepala Komisi II Pengawasan",
+    "Afghanis Nursholehatunnisa": "Staf Komisi II Pengawasan",
+    "Hani Qurrota Aini": "Staf Komisi II Pengawasan",
+    "Jeremia Halim": "Staf Komisi II Pengawasan",
+    "Monica Patricia Tanjung": "Kepala Komisi III Aspirasi dan Media Informasi",
+    "Sekar Dini Widya Putri": "Staf Komisi III Aspirasi dan Media Informasi",
+    "Jona Timothy Ogatse Panjaitan": "Staf Komisi III Aspirasi dan Media Informasi",
+    "Wan Nashwa Alhasni Yuska": "Staf Komisi III Aspirasi dan Media Informasi",
+    "Fathinah Nur Azizah": "Senator",
+    "Nadya Ratu Anjani": "Kepala Biro Kesekretariatan",
+    "Dwi Rahma Fitriani": "Staff Biro Kesekretariatan",
+    "Helmy Surya Pratama": "Kepala Biro Aspirasi dan Media Komunikasi",
+    "Fernando Dimetrius Barus": "Staff Biro Aspirasi dan Media Komunikasi",
+    "Suci Aulia": "Staff Biro Aspirasi dan Media Komunikasi",
+    "Wielman Itolo Halawa": "Staff Biro Aspirasi dan Media Komunikasi",
+    "Lia Hana Ichisasmita": "Kepala Biro Kajian Strategis dan Propaganda",
+    "Aqila Zayyan Salsabil": "Staff Biro Kajian Strategis dan Propaganda",
+    "Hazel Mahesa Handhaka": "Staff Biro Kajian Strategis dan Propaganda",
+    "Arienta Khusnul Ananda": "Kepala Departemen PSDA",
+    "Vany Salsabila Putri": "Sekretaris Departemen PSDA",
+    "Nobel Nizam Fathirizki": "Kepala Divisi Kaderisasi",
+    "Afriza Azmi": "Staf Kaderisasi",
+    "Ayake Alfatih Ramadan": "Staf Kaderisasi",
+    "Caesar Ozora Alrando": "Staf Kaderisasi",
+    "Euodia Meiliana Fredita": "Staf Kaderisasi",
+    "Haikal Seventino Tamba": "Staf Kaderisasi",
+    "Putri Manna Anantama Simbolon": "Staf Kaderisasi",
+    "Queenta Thifaal Nabila": "Staf Kaderisasi",
+    "Desman Velius Halawa": "Kepala Divisi Peningkatan Mutu Anggota",
+    "Azzelya Thianandry": "Staf Peningkatan Mutu Anggota",
+    "Charrlindah": "Staf Peningkatan Mutu Anggota",
+    "Jeremi Marolop P. Situmorang": "Staf Peningkatan Mutu Anggota",
+    "Nabila Nur Azizah": "Staf Peningkatan Mutu Anggota",
+    "Rafli Al Mansyah Tambunan": "Staf Peningkatan Mutu Anggota",
+    "Salavi Naharani": "Staf Peningkatan Mutu Anggota",
+    "Fabio Banyu Cyto": "Kepala Departemen Mikfes",
+    "Tanty Widiyastuti": "Sekretaris Departemen Mikfes",
+    "Fadil Prasetyo Alfaritzi": "Kepala Divisi Professional Skill Development",
+    "Manuel Frederika": "Anggota Professional Skill Development",
+    "Ni Made Okta Viola Darma Putri": "Anggota Professional Skill Development",
+    "Risa Romadona": "Anggota Professional Skill Development",
+    "Vannisa Ramadhani": "Anggota Professional Skill Development",
+    "Yulia Cristine Malau": "Anggota Professional Skill Development",
+    "Akeyla Fairuz Shafi": "Kepala Divisi Pusat Inovasi dan Kajian Akademik",
+    "Elsa Sitorus": "Anggota Pusat Inovasi dan Kajian Akademik",
+    "Fadya Izzatul ‘Aini": "Anggota Pusat Inovasi dan Kajian Akademik",
+    "Lovianora Saragih": "Anggota Pusat Inovasi dan Kajian Akademik",
+    "M. Alsi Syahrulloh": "Anggota Pusat Inovasi dan Kajian Akademik",
+    "Sherena Florencia": "Anggota Pusat Inovasi dan Kajian Akademik",
+    "Razin Hafid Hamdi": "Kepala Divisi Research & Development",
+    "Faiza Try Anjani": "Anggota Research & Development",
+    "Gathfan Nadif Ali": "Anggota Research & Development",
+    "Hafidz Wahdiansyah": "Anggota Research & Development",
+    "Kaleb Filbert Istel": "Anggota Research & Development",
+    "Melva Shaprina Febrianti": "Anggota Research & Development",
+    "Muhammad Syafiqul Falakh": "Anggota Research & Development",
+    "Rifky Henry Ferdianto": "Anggota Research & Development",
+    "Arini Puteri Elandra": "Kepala Departemen Eksternal",
+    "Nabyla Sharfina": "Sekretaris Departemen Eksternal",
+    "Khoirul Muttoharoh": "Kepala Departemen Hubungan Luar",
+    "Ahmad Rizky": "Staff Ahli Hubungan Luar",
+    "Adinda Deswita Maharani": "Anggota Hubungan Luar",
+    "Ahmad Bimo Akbar Arkana": "Anggota Hubungan Luar",
+    "Alfaya Abiyyi": "Anggota Hubungan Luar",
+    "Asri Meilani": "Anggota Hubungan Luar",
+    "Bima Ekayasa": "Anggota Hubungan Luar",
+    "Indah Khairunnisa": "Anggota Hubungan Luar",
+    "Riska Erlis Dayu Tiara": "Anggota Hubungan Luar",
+    "Yollanda Agustina": "Anggota Hubungan Luar",
+    "Aditya Taufiqurrohman": "Kepala Divisi Pengabdian Masyarakat",
+    "Fathya Intami Gusda": "Staff Ahli Pengabdian Masyarakat",
+    "Tarisya Hidayatul Rahmi": "Staff Ahli Pengabdian Masyarakat",
+    "Ashila Islamisahfa Vanisha": "Anggota Pengabdian Masyarakat",
+    "Danil N Fadillah": "Anggota Pengabdian Masyarakat",
+    "Favian Arkaanda": "Anggota Pengabdian Masyarakat",
+    "Muhammad Fathiy Zumar Yazid": "Anggota Pengabdian Masyarakat",
+    "Muhammad Rizaldi": "Anggota Pengabdian Masyarakat",
+    "Saskia Nova Magdalena": "Anggota Pengabdian Masyarakat",
+    "Selma Siti Aisyah": "Anggota Pengabdian Masyarakat",
+    "Haikal Fransiskus Simbolon": "Kepala Departemen Internal",
+    "Kharisma Mustika Sari": "Sekretaris Departemen Internal",
+    "Hanna Gresia Sinaga": "Kepala Departemen Keharmonisasian",
+    "Ahmad Farhan Ghani": "Staff Ahli Keharmonisasian",
+    "Aisyah Khairun Nisa": "Anggota Keharmonisasian",
+    "Cerine Sihotang": "Anggota Keharmonisasian",
+    "Jaya Saputra Tamba": "Anggota Keharmonisasian",
+    "Najla Nursyifa": "Anggota Keharmonisasian",
+    "Rozak Ramdani": "Anggota Keharmonisasian",
+    "Teresa Christiani Purba": "Anggota Keharmonisasian",
+    "Muhammad Hanif Dzaky Arifin": "Kepala Divisi Kerohanian",
+    "Audina Fitria": "Anggota Kerohanian",
+    "Cika Adelia Br Marbun": "Anggota Kerohanian",
+    "Gustin H. Tampubolon": "Anggota Kerohanian",
+    "Muhammad Harvinsyah": "Anggota Kerohanian",
+    "Rafa Sabina Fahimah": "Anggota Kerohanian",
+    "Ihsan Maulana Yusuf": "Kepala Departemen SSD",
+    "Hanifah Inaya Sari": "Sekretaris Departemen SSD",
+    "Afifah Fauziah": "Kepala Divisi Kemitraan",
+    "Hasan Nur Ramadhan": "Anggota Kemitraan",
+    "Layina Ropiqo": "Anggota Kemitraan",
+    "Moch. Iqbal Az-Zahir": "Anggota Kemitraan",
+    "Talitha Justine": "Anggota Kemitraan",
+    "Anadia Carana": "Kepala Divisi Kewirausahaan",
+    "Abdillah Fikri Al pome": "Staf Ahli Kewirausahaan",
+    "Afdhal Rahmad Setiawan": "Anggota Kewirausahaan",
+    "Anggun Nita": "Anggota Kewirausahaan",
+    "Della Anisa Fitri": "Anggota Kewirausahaan",
+    "Nayla Salsabila Fathianisa": "Kepala Departemen Medraf",
+    "Donna Maya Puspita": "Sekretaris Departemen Medkraf",
+    "Labo John Noel Napitupulu": "Kepala Divisi Dokumentasi",
+    "Anash Tasya Ausyaqila": "Anggota Dokumentasi",
+    "Felisya Nabila Putri Nugroho": "Anggota Dokumentasi",
+    "Muhammad Razan Maulana Pratama": "Anggota Dokumentasi",
+    "Sania Dwi Ayu Lestari": "Kepala Divisi Media dan Konten Spesialis",
+    "Allisha": "Anggota Media dan Konten Spesialis",
+    "Alya Ramadhanti": "Anggota Media dan Konten Spesialis",
+    "Bunga Clarisa Sefa": "Anggota Media dan Konten Spesialis",
+    "Raihana Adelia Putri": "Kepala Divisi Visual Design",
+    "Nazlah Aulia": "Anggota Media dan Konten Spesialis",
+    "Difanya Husakina": "Anggota Media dan Konten Spesialis",
+    "Daffa Kharisma Adzana": "Anggota Visual Design",
+    "Edsel Adya Pradipta": "Anggota Visual Design",
+    "Lucia Advencia Rachel Nainggolan": "Anggota Visual Design",
+    "Shafa Delaila Azzahra": "Anggota Visual Design",
+    "Zannuba Arifah Ilman": "Anggota Visual Design",
+    "Kevin Antonio Junior": "Kepala Departemen Minat & Bakat",
+    "Gusti Putu Ferazka Dhiyamika": "Sekretaris Departemen Minat & Bakat",
+    "Ali Aristo Muthahhari Parisi": "Kepala Divisi Manajemen Aktivitas dan Kompetisi",
+    "Ayu Andriani Parlina Wati": "Anggota Manajemen Aktivitas dan Kompetisi",
+    "Dafa Elpriza": "Anggota Manajemen Aktivitas dan Kompetisi",
+    "Juwita Sari": "Anggota Manajemen Aktivitas dan Kompetisi",
+    "Muhammad Afdal Luthfi": "Anggota Manajemen Aktivitas dan Kompetisi",
+    "Salsabila Nazwa Putri": "Anggota Manajemen Aktivitas dan Kompetisi",
+    "Muhammad Ridwan": "Kepala Divisi Manajemen Minat dan Bakat",
+    "Andra Ilham Bintang": "Anggota Manajemen Minat dan Bakat",
+    "Bryan Paskah Telaumbanua": "Anggota Manajemen Minat dan Bakat",
+    "Ghiyats Thabularasa Meardhy": "Anggota Manajemen Minat dan Bakat",
+    "Indah Julia Mawar Pratiwi": "Anggota Manajemen Minat dan Bakat",
+    "Jacinda Kesya Alvara": "Anggota Manajemen Minat dan Bakat",
+    "Muhammad Rafka Fatih Al Ghathfaan": "Anggota Manajemen Minat dan Bakat",
+}
+
+
+# ==================================================
+# FUNGSI MENAMPILKAN PROFIL (DESAIN BARU, DATA ASLI)
+# ==================================================
 def display_images_with_data(gambar_urls, data_list):
-    images = []
-    for i, url in enumerate(gambar_urls):
-        with st.spinner(f"Memuat gambar {i + 1} dari {len(gambar_urls)}"):
-            img = load_image(url)
-            if img is not None:
-                images.append(img)
+    # URL dan urutan foto tidak diubah; setiap foto tetap berpasangan dengan biodata pada indeks yang sama.
+    images = load_images_b64(tuple(gambar_urls))
 
-    for i, img in enumerate(images):
-        # Menggunakan Streamlit untuk menampilkan gambar di tengah kolom
-        col1, col2, col3 = st.columns([1, 2, 1])
-        with col2:
-            st.image(img, use_container_width=True)
+    st.markdown(
+        f"<div class='section-head'><h2>{esc(menu)}</h2>"
+        f"<span class='count-chip'>{len(data_list)} anggota</span></div>",
+        unsafe_allow_html=True,
+    )
 
-        if i < len(data_list):
-            st.write(f"Nama: {data_list[i]['nama']}")
-            st.write(f"NIM: {data_list[i]['nim']}")
-            st.write(f"Umur: {data_list[i]['umur']}")
-            st.write(f"Asal: {data_list[i]['asal']}")
-            st.write(f"Alamat: {data_list[i]['alamat']}")
-            st.write(f"Hobbi: {data_list[i]['hobbi']}")
-            st.write(f"Sosial Media: {data_list[i]['sosmed']}")
-            st.write(f"Kesan: {data_list[i]['kesan']}")
-            st.write(f"Pesan: {data_list[i]['pesan']}")
-            st.write("  ")
-    st.write("Semua gambar telah dimuat!")
+    query = st.text_input(
+        "Cari",
+        placeholder="🔍  Cari nama, asal, atau hobi...",
+        label_visibility="collapsed",
+        key=f"cari_{menu}",
+    )
+    q = query.strip().lower()
+    st.write("")
+
+    shown = 0
+    for i, data in enumerate(data_list):
+        nama = clean(data.get("Nama"), "Tanpa Nama")
+        if q:
+            haystack = " ".join(
+                str(data.get(k, "")) for k in ("Nama", "NIM", "Asal", "Alamat", "Hobi", "Sosmed", "Kesan", "Pesan")
+            ).lower()
+            if q not in haystack:
+                continue
+
+        img_b64 = images[i] if i < len(images) else None
+        if img_b64:
+            photo = f"<img src='data:image/jpeg;base64,{img_b64}' alt='Foto {esc(nama)}' loading='lazy'/>"
+        else:
+            photo = (
+                f"<div class='avatar-fallback'><span>{esc(initials(nama))}</span>"
+                f"<small>Foto belum tersedia</small></div>"
+            )
+
+        umur = clean(data.get("Umur"))
+        umur_text = f"{umur} Tahun" if umur.isdigit() else umur
+        sosmed = clean(data.get("Sosmed"))
+        sosmed_html = f"<span class='social-chip'>{esc(sosmed)}</span>" if sosmed != "-" else "-"
+
+        tiles = "".join([
+            _tile("🪪", "NIM", esc(clean(data.get("NIM")))),
+            _tile("🎂", "Umur", esc(umur_text)),
+            _tile("📍", "Asal", esc(clean(data.get("Asal")))),
+            _tile("🏠", "Alamat", esc(clean(data.get("Alamat")))),
+            _tile("🎯", "Hobi", esc(clean(data.get("Hobi")))),
+            _tile("📸", "Sosial Media", sosmed_html),
+        ])
+        quotes = (
+            _quote("💬 Kesan", clean(data.get("Kesan"), ""))
+            + _quote("✉️ Pesan", clean(data.get("Pesan"), ""))
+        )
+
+        jabatan = clean(JABATAN_BY_NAMA.get(nama), "Jabatan belum tersedia")
+        jabatan_badge = (
+            f"<div class='jabatan-badge'><span class='jabatan-star'>✦</span>{esc(jabatan)}</div>"
+        )
+
+        card_html = _flatten_html(f"""
+        <div class='profile-card'>
+            <div class='photo-pane'>
+                <div class='card-index'>{i + 1:02d}</div>
+                {photo}
+            </div>
+            <div class='info-pane'>
+                <div>
+                    <div class='profile-name'>{esc(nama)}</div>
+                    {jabatan_badge}
+                </div>
+                <div class='info-grid'>{tiles}</div>
+                <div class='quote-grid'>{quotes}</div>
+            </div>
+        </div>
+        """)
+        st.markdown(card_html, unsafe_allow_html=True)
+        shown += 1
+
+    if shown == 0:
+        st.info("Tidak ada anggota yang cocok dengan pencarian.")
+
+
 menu = streamlit_menu()
 
 # BAGIAN SINI YANG HANYA BOLEH DIUABAH
