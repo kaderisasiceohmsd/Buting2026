@@ -792,7 +792,7 @@ if menu == "Kesekjenan":
         display_images_with_data(gambar_urls, data_list)
     kesekjenan()
 
-if menu == "Badan Legislatif":
+if menu == "Baleg":
     def Baleg():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1kL92wnsyEoYz2qy1Le0deAwXrv3gbffG",
@@ -960,7 +960,7 @@ if menu == "Badan Legislatif":
     Baleg()
     
 
-if menu == "Badan Kesenatoran":
+if menu == "Senator":
     def senator():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1NNyH3s5-ZgN1MtU5W_DPqlPwYrJK6gGr",
