@@ -798,7 +798,7 @@ elif menu == "Departemen Medkraf":
             },
             {
                 "nama": "Labo John Noel Napitupulu",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=12Z4ZKj5klKBf12Vf2uE6xtbEzpEuTRSR",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -828,7 +828,7 @@ elif menu == "Departemen Medkraf":
             },
             {
                 "nama": "Muhammad Razan Maulana Pratama",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1TsLnuaUgEXOHVoAoTxdQN0dbiNjxb5BC",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -864,13 +864,13 @@ elif menu == "Departemen Medkraf":
             },
             {
                 "nama": "Daffa Kharisma Adzana",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1ruehl3ohOBAapyjGs42DIKBIlhhk3Ui6",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
             {
                 "nama": "Edsel Adya Pradipta",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1fnEDd00jM5D6bUQw8H4AbTkPS7g7r8k4",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
