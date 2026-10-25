@@ -609,6 +609,165 @@ def _quote(label, text):
 
 
 # ==================================================
+# JABATAN TAMBAHAN (TERPISAH DARI BIODATA ASLI)
+# ==================================================
+# Label jabatan diambil dari data kepengurusan; daftar foto dan biodata asli tidak disentuh.
+JABATAN_BY_NAMA = {
+    "Ginda Fajar Riadi Marpaung": "Ketua Himpunan",
+    "Muhammmad Aqil Ramadhan": "Sekretaris Jenderal",
+    "Efi Defiyati": "Sekretaris 1",
+    "Qois Olifio": "Sekretaris 2",
+    "Hafsa Fazila Arradhi": "Bendahara 1",
+    "Luthfia Laila Ramadhani": "Bendahara 2",
+    "Ridho Benedictus Togi Manik": "Ketua Badan Legislatif",
+    "Juesi Apridelia Saragih": "Sekretaris Badan Legislatif",
+    "Dharu Cahyoaji Sasongko": "Kepala Komisi I Legislasi",
+    "Gh Mikael Niko A S": "Staf Komisi I Legislasi",
+    "Siti Sarifah Sumamah": "Staf Komisi I Legislasi",
+    "Givaro Ananta": "Kepala Komisi II Pengawasan",
+    "Afghanis Nursholehatunnisa": "Staf Komisi II Pengawasan",
+    "Hani Qurrota Aini": "Staf Komisi II Pengawasan",
+    "Jeremia Halim": "Staf Komisi II Pengawasan",
+    "Monica Patricia Tanjung": "Kepala Komisi III Aspirasi dan Media Informasi",
+    "Sekar Dini Widya Putri": "Staf Komisi III Aspirasi dan Media Informasi",
+    "Jona Timothy Ogatse Panjaitan": "Staf Komisi III Aspirasi dan Media Informasi",
+    "Wan Nashwa Alhasni Yuska": "Staf Komisi III Aspirasi dan Media Informasi",
+    "Fathinah Nur Azizah": "Senator",
+    "Nadya Ratu Anjani": "Kepala Biro Kesekretariatan",
+    "Dwi Rahma Fitriani": "Staff Biro Kesekretariatan",
+    "Helmy Surya Pratama": "Kepala Biro Aspirasi dan Media Komunikasi",
+    "Fernando Dimetrius Barus": "Staff Biro Aspirasi dan Media Komunikasi",
+    "Suci Aulia": "Staff Biro Aspirasi dan Media Komunikasi",
+    "Wielman Itolo Halawa": "Staff Biro Aspirasi dan Media Komunikasi",
+    "Lia Hana Ichisasmita": "Kepala Biro Kajian Strategis dan Propaganda",
+    "Aqila Zayyan Salsabil": "Staff Biro Kajian Strategis dan Propaganda",
+    "Hazel Mahesa Handhaka": "Staff Biro Kajian Strategis dan Propaganda",
+    "Arienta Khusnul Ananda": "Kepala Departemen PSDA",
+    "Vany Salsabila Putri": "Sekretaris Departemen PSDA",
+    "Nobel Nizam Fathirizki": "Kepala Divisi Kaderisasi",
+    "Afriza Azmi": "Staf Kaderisasi",
+    "Ayake Alfatih Ramadan": "Staf Kaderisasi",
+    "Caesar Ozora Alrando": "Staf Kaderisasi",
+    "Euodia Meiliana Fredita": "Staf Kaderisasi",
+    "Haikal Seventino Tamba": "Staf Kaderisasi",
+    "Putri Manna Anantama Simbolon": "Staf Kaderisasi",
+    "Queenta Thifaal Nabila": "Staf Kaderisasi",
+    "Desman Velius Halawa": "Kepala Divisi Peningkatan Mutu Anggota",
+    "Azzelya Thianandry": "Staf Peningkatan Mutu Anggota",
+    "Charrlindah": "Staf Peningkatan Mutu Anggota",
+    "Jeremi Marolop P. Situmorang": "Staf Peningkatan Mutu Anggota",
+    "Nabila Nur Azizah": "Staf Peningkatan Mutu Anggota",
+    "Rafli Al Mansyah Tambunan": "Staf Peningkatan Mutu Anggota",
+    "Salavi Naharani": "Staf Peningkatan Mutu Anggota",
+    "Fabio Banyu Cyto": "Kepala Departemen Mikfes",
+    "Tanty Widiyastuti": "Sekretaris Departemen Mikfes",
+    "Fadil Prasetyo Alfaritzi": "Kepala Divisi Professional Skill Development",
+    "Manuel Frederika": "Anggota Professional Skill Development",
+    "Ni Made Okta Viola Darma Putri": "Anggota Professional Skill Development",
+    "Risa Romadona": "Anggota Professional Skill Development",
+    "Vannisa Ramadhani": "Anggota Professional Skill Development",
+    "Yulia Cristine Malau": "Anggota Professional Skill Development",
+    "Akeyla Fairuz Shafi": "Kepala Divisi Pusat Inovasi dan Kajian Akademik",
+    "Elsa Sitorus": "Anggota Pusat Inovasi dan Kajian Akademik",
+    "Fadya Izzatul ‘Aini": "Anggota Pusat Inovasi dan Kajian Akademik",
+    "Lovianora Saragih": "Anggota Pusat Inovasi dan Kajian Akademik",
+    "M. Alsi Syahrulloh": "Anggota Pusat Inovasi dan Kajian Akademik",
+    "Sherena Florencia": "Anggota Pusat Inovasi dan Kajian Akademik",
+    "Razin Hafid Hamdi": "Kepala Divisi Research & Development",
+    "Faiza Try Anjani": "Anggota Research & Development",
+    "Gathfan Nadif Ali": "Anggota Research & Development",
+    "Hafidz Wahdiansyah": "Anggota Research & Development",
+    "Kaleb Filbert Istel": "Anggota Research & Development",
+    "Melva Shaprina Febrianti": "Anggota Research & Development",
+    "Muhammad Syafiqul Falakh": "Anggota Research & Development",
+    "Rifky Henry Ferdianto": "Anggota Research & Development",
+    "Arini Puteri Elandra": "Kepala Departemen Eksternal",
+    "Nabyla Sharfina": "Sekretaris Departemen Eksternal",
+    "Khoirul Muttoharoh": "Kepala Departemen Hubungan Luar",
+    "Ahmad Rizky": "Staff Ahli Hubungan Luar",
+    "Adinda Deswita Maharani": "Anggota Hubungan Luar",
+    "Ahmad Bimo Akbar Arkana": "Anggota Hubungan Luar",
+    "Alfaya Abiyyi": "Anggota Hubungan Luar",
+    "Asri Meilani": "Anggota Hubungan Luar",
+    "Bima Ekayasa": "Anggota Hubungan Luar",
+    "Indah Khairunnisa": "Anggota Hubungan Luar",
+    "Riska Erlis Dayu Tiara": "Anggota Hubungan Luar",
+    "Yollanda Agustina": "Anggota Hubungan Luar",
+    "Aditya Taufiqurrohman": "Kepala Divisi Pengabdian Masyarakat",
+    "Fathya Intami Gusda": "Staff Ahli Pengabdian Masyarakat",
+    "Tarisya Hidayatul Rahmi": "Staff Ahli Pengabdian Masyarakat",
+    "Ashila Islamisahfa Vanisha": "Anggota Pengabdian Masyarakat",
+    "Danil N Fadillah": "Anggota Pengabdian Masyarakat",
+    "Favian Arkaanda": "Anggota Pengabdian Masyarakat",
+    "Muhammad Fathiy Zumar Yazid": "Anggota Pengabdian Masyarakat",
+    "Muhammad Rizaldi": "Anggota Pengabdian Masyarakat",
+    "Saskia Nova Magdalena": "Anggota Pengabdian Masyarakat",
+    "Selma Siti Aisyah": "Anggota Pengabdian Masyarakat",
+    "Haikal Fransiskus Simbolon": "Kepala Departemen Internal",
+    "Kharisma Mustika Sari": "Sekretaris Departemen Internal",
+    "Hanna Gresia Sinaga": "Kepala Departemen Keharmonisasian",
+    "Ahmad Farhan Ghani": "Staff Ahli Keharmonisasian",
+    "Aisyah Khairun Nisa": "Anggota Keharmonisasian",
+    "Cerine Sihotang": "Anggota Keharmonisasian",
+    "Jaya Saputra Tamba": "Anggota Keharmonisasian",
+    "Najla Nursyifa": "Anggota Keharmonisasian",
+    "Rozak Ramdani": "Anggota Keharmonisasian",
+    "Teresa Christiani Purba": "Anggota Keharmonisasian",
+    "Muhammad Hanif Dzaky Arifin": "Kepala Divisi Kerohanian",
+    "Audina Fitria": "Anggota Kerohanian",
+    "Cika Adelia Br Marbun": "Anggota Kerohanian",
+    "Gustin H. Tampubolon": "Anggota Kerohanian",
+    "Muhammad Harvinsyah": "Anggota Kerohanian",
+    "Rafa Sabina Fahimah": "Anggota Kerohanian",
+    "Ihsan Maulana Yusuf": "Kepala Departemen SSD",
+    "Hanifah Inaya Sari": "Sekretaris Departemen SSD",
+    "Afifah Fauziah": "Kepala Divisi Kemitraan",
+    "Hasan Nur Ramadhan": "Anggota Kemitraan",
+    "Layina Ropiqo": "Anggota Kemitraan",
+    "Moch. Iqbal Az-Zahir": "Anggota Kemitraan",
+    "Talitha Justine": "Anggota Kemitraan",
+    "Anadia Carana": "Kepala Divisi Kewirausahaan",
+    "Abdillah Fikri Al pome": "Staf Ahli Kewirausahaan",
+    "Afdhal Rahmad Setiawan": "Anggota Kewirausahaan",
+    "Anggun Nita": "Anggota Kewirausahaan",
+    "Della Anisa Fitri": "Anggota Kewirausahaan",
+    "Nayla Salsabila Fathianisa": "Kepala Departemen Medraf",
+    "Donna Maya Puspita": "Sekretaris Departemen Medkraf",
+    "Labo John Noel Napitupulu": "Kepala Divisi Dokumentasi",
+    "Anash Tasya Ausyaqila": "Anggota Dokumentasi",
+    "Felisya Nabila Putri Nugroho": "Anggota Dokumentasi",
+    "Muhammad Razan Maulana Pratama": "Anggota Dokumentasi",
+    "Sania Dwi Ayu Lestari": "Kepala Divisi Media dan Konten Spesialis",
+    "Allisha": "Anggota Media dan Konten Spesialis",
+    "Alya Ramadhanti": "Anggota Media dan Konten Spesialis",
+    "Bunga Clarisa Sefa": "Anggota Media dan Konten Spesialis",
+    "Raihana Adelia Putri": "Kepala Divisi Visual Design",
+    "Nazlah Aulia": "Anggota Media dan Konten Spesialis",
+    "Difanya Husakina": "Anggota Media dan Konten Spesialis",
+    "Daffa Kharisma Adzana": "Anggota Visual Design",
+    "Edsel Adya Pradipta": "Anggota Visual Design",
+    "Lucia Advencia Rachel Nainggolan": "Anggota Visual Design",
+    "Shafa Delaila Azzahra": "Anggota Visual Design",
+    "Zannuba Arifah Ilman": "Anggota Visual Design",
+    "Kevin Antonio Junior": "Kepala Departemen Minat & Bakat",
+    "Gusti Putu Ferazka Dhiyamika": "Sekretaris Departemen Minat & Bakat",
+    "Ali Aristo Muthahhari Parisi": "Kepala Divisi Manajemen Aktivitas dan Kompetisi",
+    "Ayu Andriani Parlina Wati": "Anggota Manajemen Aktivitas dan Kompetisi",
+    "Dafa Elpriza": "Anggota Manajemen Aktivitas dan Kompetisi",
+    "Juwita Sari": "Anggota Manajemen Aktivitas dan Kompetisi",
+    "Muhammad Afdal Luthfi": "Anggota Manajemen Aktivitas dan Kompetisi",
+    "Salsabila Nazwa Putri": "Anggota Manajemen Aktivitas dan Kompetisi",
+    "Muhammad Ridwan": "Kepala Divisi Manajemen Minat dan Bakat",
+    "Andra Ilham Bintang": "Anggota Manajemen Minat dan Bakat",
+    "Bryan Paskah Telaumbanua": "Anggota Manajemen Minat dan Bakat",
+    "Ghiyats Thabularasa Meardhy": "Anggota Manajemen Minat dan Bakat",
+    "Indah Julia Mawar Pratiwi": "Anggota Manajemen Minat dan Bakat",
+    "Jacinda Kesya Alvara": "Anggota Manajemen Minat dan Bakat",
+    "Muhammad Rafka Fatih Al Ghathfaan": "Anggota Manajemen Minat dan Bakat",
+}
+
+
+# ==================================================
 # FUNGSI MENAMPILKAN PROFIL (DESAIN BARU, DATA ASLI)
 # ==================================================
 def display_images_with_data(gambar_urls, data_list):
@@ -667,6 +826,11 @@ def display_images_with_data(gambar_urls, data_list):
             + _quote("✉️ Pesan", clean(data.get("Pesan"), ""))
         )
 
+        jabatan = clean(JABATAN_BY_NAMA.get(nama), "Jabatan belum tersedia")
+        jabatan_badge = (
+            f"<div class='jabatan-badge'><span class='jabatan-star'>✦</span>{esc(jabatan)}</div>"
+        )
+
         card_html = _flatten_html(f"""
         <div class='profile-card'>
             <div class='photo-pane'>
@@ -674,7 +838,10 @@ def display_images_with_data(gambar_urls, data_list):
                 {photo}
             </div>
             <div class='info-pane'>
-                <div class='profile-name'>{esc(nama)}</div>
+                <div>
+                    <div class='profile-name'>{esc(nama)}</div>
+                    {jabatan_badge}
+                </div>
                 <div class='info-grid'>{tiles}</div>
                 <div class='quote-grid'>{quotes}</div>
             </div>
