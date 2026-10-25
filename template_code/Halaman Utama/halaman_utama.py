@@ -858,8 +858,8 @@ Terinspirasi dari <b>Teorema Bayes</b> dalam Sains Data dan Statistika, kelompok
              "judul": "Kegiatan 3", "ket": "POH prakader doneee"},
             {"url": "https://drive.google.com/uc?export=view&id=11Z_Htx_jpe0YU1hXB7TrXgLZPmCmxBBV",
              "judul": "Kegiatan 4", "ket": "bayesian nonton konser bandalm"},
-            {"url": "https://drive.google.com/uc?export=view&id=13s54Bfs-gZy6G8ygDakdbzEfHqsM_zYk",
-             "judul": "Kegiatan 5", "ket": "first meet bayesian"},
+            {"url": "https://drive.google.com/uc?export=view&id=1_cyqDyS1mAn2QjGF4yhBli6H4vthcROb",
+             "judul": "Kegiatan 5", "ket": "keluarga besar bayesian"},
             {"url": "https://drive.google.com/uc?export=view&id=1oCcj4bs6I0TT6FEmC5tdCI8yafqFuAAS",
              "judul": "Kegiatan 6", "ket": "bayesian di data pudi"},
         ]
@@ -927,7 +927,7 @@ elif menu == "About Us":
             "https://drive.google.com/uc?export=view&id=1dJjZYs0KsEw7ZoCHbWdDiISC76R4v816",  # 2. Syalom Nauli Jubilate
             "https://drive.google.com/uc?export=view&id=1DTxHOcPBjfuSVVSqKGDci-uJrnCOOLC1",  # 3. Chavia Chairunissa
             "https://drive.google.com/uc?export=view&id=1wxNSkkaIKX_4-vJ_7LWzmYYDVWFTxpTk",  # 4. Aqila Chika Aurelia
-            "https://drive.google.com/uc?export=view&id=1vH6wQPfSP7I1JxvjaOtnnWvOOtMNJ3-3",  # 5. Sefina Amanda Putri
+            "https://drive.google.com/uc?export=view&id=1GA41lqBpGNPrqKXEfLP_q_VrGu7vOm3W",  # 5. Sefina Amanda Putri
             "https://drive.google.com/uc?export=view&id=1l6PIbnmNnpBLEgUwfXNnS7eEPKt-GB0q",  # 6. Aura Putri Ghefira
             "https://drive.google.com/uc?export=view&id=1SaqIKBazfbklZ87SPixrd5eO0PfvydN3",  # 7. Ezra Hamizan
             "https://drive.google.com/uc?export=view&id=1OPEq99LUbLHfdDUTj95ueH52KCoFkKXo",  # 8. Afdhi Hafiidz Habibie
