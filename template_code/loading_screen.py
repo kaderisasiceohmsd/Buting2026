@@ -39,7 +39,7 @@ FOTO_ANGGOTA = {
     "Fildzah": "",
     "Lintar":  "",
     "Biwa":    "",
-    "Bening":  "",
+    "Bening":  "https://drive.google.com/uc?export=view&id=1wqq9-YkpFJ7D6_WQyKqKsg6UWvXzku-4",
 }
 
 # Daftar URL aset Halaman Utama yang ikut di-preload selama loading screen berjalan
