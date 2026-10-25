@@ -1779,7 +1779,7 @@ elif menu == "Departemen Medkraf":
             "https://drive.google.com/uc?export=view&id=18x2jW-F2YTcIID1c9zKfKSNZbFOxkw2D",
             "https://drive.google.com/uc?export=view&id=1pShgwuTD_T301O2NvmsTfOIh26CmpAZO",
             "https://drive.google.com/uc?export=view&id=1RjAGINjoOxu54vKGlUSOHNZa4qTDr3EY",
-            "https://drive.google.com/uc?export=view&id=1RjAGINjoOxu54vKGlUSOHNZa4qTDr3EY",#shafa
+            "https://drive.google.com/uc?export=view&id=1mlbn1sQ4OsSrDATyHX7irOX7Qaq2zk0i",#shafa
             "https://drive.google.com/uc?export=view&id=1yVaSGq1NN3cnqVATv4a4iDEw6OLndQod",
 
         ]
