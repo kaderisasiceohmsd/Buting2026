@@ -355,14 +355,14 @@ elif menu == "About Us":
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1OLYzTHsfElGfjBXvzUUoMg24zf8W7QD9",
             "https://drive.google.com/uc?export=view&id=1C6pkVy5sjsffTqdeOSv1M5zff_1zZL8f",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1YOHI0fkOElF7yFK7Y-LyGsfR7IPmOSBF",
             "https://drive.google.com/uc?export=view&id=1jflu-Tr_51LeSApGIa6cLeiSVWIrpQ6d",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1rJgFY2x3IdAR-Ps-qmX_hyi2exeAHOi8",
             "https://drive.google.com/uc?export=view&id=1TeIvYb5pBbI8m4rFIAlKZ7ZZwZT4nZ8Q",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1PanGd7b-D4gFarLkXLh1PY8aDKs9sZY8",
         ]
         
         data_list = [
@@ -410,8 +410,8 @@ elif menu == "About Us":
                 "nama": "Zharifa Azizah Yudistira",
                 "sebagai": "Anggotaa",
                 "nim": "12545044",
-                "fun_fact": "nyemilin es bata, kiko",
-                "motto_hidup": "jalanin dulu keles",
+                "fun_fact": "Bisa menyimpan rahasia orang, tapi nggak bisa menyimpan uang.",
+                "motto_hidup": "Jalani aja dulu, paniknya belakangan.",
                 "ig": "https://www.instagram.com/zhrfazia/"
             },
             {
@@ -466,8 +466,8 @@ elif menu == "About Us":
                 "nama": "Muhammad Alifatih Freedom Haq",
                 "sebagai": "Anggotaa",
                 "nim": "125450120",
-                "fun_fact": "nyemilin es bata, kiko",
-                "motto_hidup": "jalanin dulu kele",
+                "fun_fact": "Lebih suka belajar di atas jam 12 malam 🥸",
+                "motto_hidup": "apapun yang terjadi tetaplah bernafas👊🏿",
                 "ig": "https://www.instagram.com/thefreedomhaq/"
             },
         ]
