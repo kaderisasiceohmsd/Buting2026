@@ -29,7 +29,7 @@ DURASI_MAKSIMUM = 5.0 # detik (batas maksimal preload agar transisi ke web tetap
 FOTO_ANGGOTA = {
     "Bintang": "https://drive.google.com/uc?export=view&id=1KPiPBu6qnc-7uAcvTlfVxfvw3P3ojjPY",
     "Najwa":   "https://drive.google.com/uc?export=view&id=1TWNgccBsATeQyTnJdCx30lPXOk-lF0JP",
-    "Rafli":   "https://drive.google.com/uc?export=view&id=1eRqS2Dm2UYeKTpmixAU5WmjmWMqqW1co",
+    "Rafli":   ""https://drive.google.com/uc?export=view&id=1CUqKHr8nql3b9ifOLu0-cvcwrUxVe0L5",
     "Abyan":   "https://drive.google.com/uc?export=view&id=1i9oSkeFZT1sL0SJmMWmZb4l_qPCxAV-4",
     "Bayu":    "https://drive.google.com/uc?export=view&id=1AeNI3iwCdGOXgrjncpYatIqfuv4qvZ3W",
     "Mojes":   "https://drive.google.com/uc?export=view&id=114wxxW8dyiUPBz87C3IyQJOyyl2M29kw",
@@ -37,7 +37,7 @@ FOTO_ANGGOTA = {
     "Astrit":  "https://drive.google.com/uc?export=view&id=1D-_sGW7jHoUpCms068h97XYi4fdLxHMc",
     "Septi":   "https://drive.google.com/uc?export=view&id=15eNIKvQctlDzyoHUjK5GI55pAKK8F3g2",
     "Fildzah": "https://drive.google.com/uc?export=view&id=13yOwhEQH_zVkrbuGiohD--90zVLc_zQK",
-    "Lintar":  "",
+    "Lintar":  "https://drive.google.com/uc?export=view&id=1fkdAu5a7UGyEBMMcIcysaN3f04fM2PVd",
     "Biwa":    "",
     "Bening":  "https://drive.google.com/uc?export=view&id=1wqq9-YkpFJ7D6_WQyKqKsg6UWvXzku-4",
 }
