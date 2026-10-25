@@ -14,12 +14,11 @@ import io
 import sys
 import traceback
 import types
-import typing
 import unittest
 
 import tornado
-from tornado import web, gen, httpclient
-from tornado.test.util import skipNotCPython
+from tornado import gen, httpclient, web
+from tornado.test.util import TestCase, skipNotCPython
 
 try:
     import pycurl
@@ -59,7 +58,7 @@ def find_circular_references(garbage):
             stack_ids.remove(item_id)
             visited_ids.add(item_id)
 
-    found: typing.List[object] = []
+    found: list[object] = []
     stack = []
     stack_ids = set()
     garbage_ids = set(map(id, garbage))
@@ -115,15 +114,15 @@ class OkHandler(web.RequestHandler):
 
 # GC behavior is cpython-specific
 @skipNotCPython
-class CircleRefsTest(unittest.TestCase):
+class CircleRefsTest(TestCase):
     def test_known_leak(self):
         # Construct a known leak scenario to make sure the test harness works.
         class C:
             def __init__(self, name):
                 self.name = name
-                self.a: typing.Optional[C] = None
-                self.b: typing.Optional[C] = None
-                self.c: typing.Optional[C] = None
+                self.a: C | None = None
+                self.b: C | None = None
+                self.c: C | None = None
 
             def __repr__(self):
                 return f"name={self.name}"

@@ -29,23 +29,45 @@ __all__ = [
 if sys.platform == "win32":
     __all__.append("to_native_path_windows")
 
-from abc import abstractmethod
 import contextlib
-from functools import wraps
 import getpass
 import logging
 import ntpath
 import os
 import os.path as osp
-from pathlib import Path
 import platform
 import re
 import shutil
 import stat
 import subprocess
 import time
-from urllib.parse import urlsplit, urlunsplit
 import warnings
+from abc import abstractmethod
+from functools import wraps
+from pathlib import Path
+
+# typing ---------------------------------------------------------
+from typing import (
+    IO,
+    TYPE_CHECKING,
+    Any,
+    AnyStr,
+    Callable,
+    Dict,
+    Generator,
+    Iterator,
+    List,
+    Optional,
+    Pattern,
+    Sequence,
+    Tuple,
+    Type,
+    TypeVar,
+    Union,
+    cast,
+    overload,
+)
+from urllib.parse import urlsplit, urlunsplit
 
 # NOTE: Unused imports can be improved now that CI testing has fully resumed. Some of
 # these be used indirectly through other GitPython modules, which avoids having to write
@@ -64,29 +86,6 @@ from gitdb.util import (
     to_hex_sha,  # noqa: F401
 )
 
-# typing ---------------------------------------------------------
-
-from typing import (
-    Any,
-    AnyStr,
-    Callable,
-    Dict,
-    Generator,
-    IO,
-    Iterator,
-    List,
-    Optional,
-    Pattern,
-    Sequence,
-    Tuple,
-    TYPE_CHECKING,
-    Type,
-    TypeVar,
-    Union,
-    cast,
-    overload,
-)
-
 if TYPE_CHECKING:
     from git.cmd import Git
     from git.config import GitConfigParser, SectionConstraint
@@ -94,9 +93,9 @@ if TYPE_CHECKING:
     from git.repo.base import Repo
 
 from git.types import (
+    HSH_TD,
     Files_TD,
     Has_id_attribute,
-    HSH_TD,
     Literal,
     PathLike,
     Protocol,
@@ -385,12 +384,27 @@ _HFS_IGNORABLES = str.maketrans(
     "", "", "\u200c\u200d\u200e\u200f\u202a\u202b\u202c\u202d\u202e\u206a\u206b\u206c\u206d\u206e\u206f\ufeff"
 )
 
+# Match Git's is_ntfs_dotgitmodules in path.c on a lowercased, trimmed name.
+# Besides gitmod~1..4, fallback aliases have exactly eight ASCII characters:
+# a shrinking prefix of "gi7eba", "~", and digits with no leading zero.
+# Explicit digit counts avoid accepting shorter/longer names or Unicode digits.
+_NTFS_DOTGITMODULES_SHORT_NAME = re.compile(
+    r"(?:gitmod~[1-4]|gi7eba~[1-9]|gi7eb~[1-9][0-9]|gi7e~[1-9][0-9]{2}|"
+    r"gi7~[1-9][0-9]{3}|gi~[1-9][0-9]{4}|g~[1-9][0-9]{5}|~[1-9][0-9]{6})"
+)
 
-def _validate_repo_path(path: PathLike) -> None:
+
+def _validate_repo_path(path: PathLike, mode: Union[int, None] = None) -> None:
     """Reject unsafe tree/index paths without normalizing away their components.
 
     Protect Git metadata aliases on NTFS and HFS even when writing on another
     platform. Other POSIX filename characters, including newlines, remain valid.
+
+    :param mode:
+        Mode of the index or tree entry the path belongs to, where one is known.
+        Git refuses a symbolic link that aliases ``.gitmodules``, since the
+        submodule configuration would then be read through the link, so that
+        name is only rejected once the mode says the entry is a link.
     """
     name = os.fspath(path)
     if not name or "\0" in name or ntpath.splitdrive(name)[0] or name.startswith("/"):
@@ -406,6 +420,13 @@ def _validate_repo_path(path: PathLike) -> None:
             hfs_name = part.translate(_HFS_IGNORABLES).lower()
             if ntfs_name in (".git", "git~1") or hfs_name == ".git":
                 raise ValueError("Repository path aliases Git metadata: %r" % name)
+            if mode is not None and stat.S_ISLNK(mode):
+                if (
+                    ntfs_name == ".gitmodules"
+                    or hfs_name == ".gitmodules"
+                    or _NTFS_DOTGITMODULES_SHORT_NAME.fullmatch(ntfs_name) is not None
+                ):
+                    raise ValueError("Symbolic link aliases the submodule configuration: %r" % name)
 
 
 def assure_directory_exists(path: PathLike, is_file: bool = False) -> bool:
@@ -658,10 +679,11 @@ def remove_password_if_present(cmdline: Sequence[str]) -> List[str]:
             if url.password is None and url.username is None:
                 continue
 
-            if url.password is not None:
-                url = url._replace(netloc=url.netloc.replace(url.password, "*****"))
-            if url.username is not None:
-                url = url._replace(netloc=url.netloc.replace(url.username, "*****"))
+            # Match urllib.parse's userinfo boundary. Keeping the raw hostinfo
+            # preserves hostname case, IPv6 brackets, and port formatting.
+            _, _, hostinfo = url.netloc.rpartition("@")
+            redacted = "*****:*****" if url.password is not None else "*****"
+            url = url._replace(netloc=f"{redacted}@{hostinfo}")
             new_cmdline[index] = urlunsplit(url)
         except ValueError:
             # This is not a valid URL.
@@ -1085,7 +1107,7 @@ class Stats:
                 "lines": insertions + deletions,
                 "change_type": change_type,
             }
-            hsh["files"][filename.strip()] = files_dict
+            hsh["files"][filename] = files_dict
         return Stats(hsh["total"], hsh["files"])
 
 
@@ -1166,15 +1188,56 @@ class LockFile:
         if self._has_lock():
             return
         lock_file = self._lock_file_path()
-        if osp.isfile(lock_file):
+        # Create the lock in one step. Checking for it first would allow another
+        # holder to create it between the check and the open.
+        try:
+            if sys.platform == "win32":
+                if "\0" in lock_file:
+                    raise ValueError("embedded null character")
+
+                import ctypes
+                from ctypes import wintypes
+
+                # Unlike POSIX, Windows follows dangling symlinks even with O_EXCL.
+                # Open the reparse point itself so an existing link is rejected.
+                # Call the Unicode API directly: older _winapi.CreateFile wrappers
+                # use the ANSI API and can create a lock under the wrong filename.
+                kernel32 = ctypes.WinDLL("kernel32", use_last_error=True)
+                create_file = kernel32.CreateFileW
+                create_file.argtypes = (
+                    wintypes.LPCWSTR,
+                    wintypes.DWORD,
+                    wintypes.DWORD,
+                    wintypes.LPVOID,
+                    wintypes.DWORD,
+                    wintypes.DWORD,
+                    wintypes.HANDLE,
+                )
+                create_file.restype = wintypes.HANDLE
+                close_handle = kernel32.CloseHandle
+                close_handle.argtypes = (wintypes.HANDLE,)
+                close_handle.restype = wintypes.BOOL
+                handle = create_file(
+                    lock_file,
+                    0x40000000,  # GENERIC_WRITE
+                    0,
+                    None,
+                    1,  # CREATE_NEW
+                    0x00200000,  # FILE_FLAG_OPEN_REPARSE_POINT
+                    None,
+                )
+                if handle == wintypes.HANDLE(-1).value:
+                    raise ctypes.WinError(ctypes.get_last_error())
+                if not close_handle(handle):
+                    raise ctypes.WinError(ctypes.get_last_error())
+            else:
+                fd = os.open(lock_file, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
+                os.close(fd)
+        except FileExistsError as e:
             raise OSError(
                 "Lock for file %r did already exist, delete %r in case the lock is illegal"
                 % (self._file_path, lock_file)
-            )
-
-        try:
-            with open(lock_file, mode="w"):
-                pass
+            ) from e
         except OSError as e:
             raise OSError(str(e)) from e
 
@@ -1207,8 +1270,8 @@ class BlockingLockFile(LockFile):
     specified timeout.
 
     :note:
-        If the directory containing the lock was removed, an exception will be raised
-        during the blocking period, preventing hangs as the lock can never be obtained.
+        Only an existing lock causes retries. Other errors, including a removed or
+        unwritable parent directory, are raised immediately.
     """
 
     __slots__ = ("_check_interval", "_max_block_time")
@@ -1234,7 +1297,7 @@ class BlockingLockFile(LockFile):
 
     def _obtain_lock(self) -> None:
         """This method blocks until it obtained the lock, or raises :exc:`IOError` if it
-        ran out of time or if the parent directory was not available anymore.
+        ran out of time or lock creation failed for a reason other than an existing lock.
 
         If this method returns, you are guaranteed to own the lock.
         """
@@ -1244,10 +1307,14 @@ class BlockingLockFile(LockFile):
             try:
                 super()._obtain_lock()
             except OSError as e:
-                # synity check: if the directory leading to the lockfile is not
-                # readable anymore, raise an exception
+                # LockFile retains the creation error as the cause of its OSError.
+                # Only an existing lock is contention; other errors must not be retried.
+                if not isinstance(e.__cause__, FileExistsError):
+                    raise
+
+                # Abort if the directory containing the existing lock has disappeared.
                 curtime = time.time()
-                if not osp.isdir(osp.dirname(self._lock_file_path())):
+                if not osp.isdir(osp.dirname(self._lock_file_path()) or osp.curdir):
                     msg = "Directory containing the lockfile %r was not readable anymore after waiting %g seconds" % (
                         self._lock_file_path(),
                         curtime - starttime,
@@ -1319,7 +1386,7 @@ class IterableList(List[T_IterableObj]):  # type: ignore[type-var]
 
         # Otherwise make a full name search.
         try:
-            getattr(self, cast(str, attr))  # Use cast to silence mypy.
+            self.__getattr__(cast(str, attr))  # Use cast to silence mypy.
             return True
         except (AttributeError, TypeError):
             return False
@@ -1331,7 +1398,7 @@ class IterableList(List[T_IterableObj]):  # type: ignore[type-var]
             if getattr(item, self._id_attr) == attr:
                 return item
         # END for each item
-        return list.__getattribute__(self, attr)
+        raise AttributeError(f"No item found with id {attr}")
 
     def __getitem__(  # type: ignore[override]  # pyright: ignore[reportIncompatibleMethodOverride]
         self, index: Union[SupportsIndex, int, slice, str]
@@ -1342,7 +1409,7 @@ class IterableList(List[T_IterableObj]):  # type: ignore[type-var]
             raise ValueError("Index should be an int or str")
         else:
             try:
-                return getattr(self, cast(str, index))
+                return self.__getattr__(cast(str, index))
             except AttributeError as e:
                 raise IndexError(f"No item found with id {self._prefix}{index}") from e
         # END handle getattr

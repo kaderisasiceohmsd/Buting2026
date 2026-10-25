@@ -4,6 +4,7 @@ from collections.abc import Callable
 from typing import Any, Final, Literal, TypedDict, Unpack, type_check_only
 from typing_extensions import CapsuleType
 
+import numpy as np
 from numpy import (
     absolute,
     add,
@@ -230,3 +231,6 @@ _extobj_contextvar: Final[contextvars.ContextVar[CapsuleType]] = ...
 
 def _get_extobj_dict() -> _ExtOjbDict: ...
 def _make_extobj(*, all: _ErrKind = ..., **kwargs: Unpack[_ExtOjbDict]) -> CapsuleType: ...
+
+# semi-public
+_ones_like: Final[np.ufunc] = ...

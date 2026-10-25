@@ -1,40 +1,56 @@
+# Test cases for Tornado HTTPClients.
+#
+# Most tests in this file are methods on HTTPClientCommonTestCase. Tests in this class run more
+# than once: once with each HTTP client implementation, plus one more time with the default
+# HTTP client (which is normally redundant, unless this feature is being used to inject a
+# third-party HTTP implementation, as in the tornado_http2 package). Most tests should be
+# added as methods on HTTPClientCommonTestCase. Tests that are not a part of that class
+# will not be automatically run on all client implementations.
+#
+# Test cases that are for specific implementation details of one of the client implementations
+# should go into the respective test file (simple_httpclient_test.py, curl_httpclient_test.py).
 import base64
 import binascii
 import contextlib
-from contextlib import closing
 import copy
+import datetime
 import functools
 import gzip
 import logging
-import threading
-import datetime
-from io import BytesIO
 import subprocess
 import sys
+import threading
 import time
 import typing  # noqa: F401
 import unicodedata
 import unittest
 import zlib
+from contextlib import closing
+from io import BytesIO
 
 from tornado.escape import utf8, native_str, to_unicode, json_encode, json_decode
-from tornado import gen
+from tornado import gen, netutil
+from tornado.locks import Event
 from tornado.httpclient import (
+    HTTPClient,
+    HTTPError,
     HTTPRequest,
     HTTPResponse,
     _RequestProxy,
-    HTTPError,
-    HTTPClient,
 )
 from tornado.httpserver import HTTPServer
+from tornado.httputil import HTTPHeaders, format_timestamp
 from tornado.ioloop import IOLoop
 from tornado.iostream import IOStream
-from tornado.log import gen_log, app_log
-from tornado import netutil
-from tornado.testing import AsyncHTTPTestCase, bind_unused_port, gen_test, ExpectLog
-from tornado.test.util import abstract_base_test, ignore_deprecation
+from tornado.log import app_log, gen_log
+from tornado.test.util import (
+    AsyncHTTPTestCase,
+    TestCase,
+    abstract_base_test,
+    ignore_deprecation,
+)
+from tornado.testing import ExpectLog, bind_unused_port, gen_test
 from tornado.web import Application, RequestHandler, url
-from tornado.httputil import format_timestamp, HTTPHeaders
 
 try:
     import tracemalloc
@@ -84,12 +100,18 @@ class RedirectWithoutLocationHandler(RequestHandler):
 
 
 class ChunkHandler(RequestHandler):
+    def initialize(self, first_chunk_received: Event | None = None) -> None:
+        self.first_chunk_received = first_chunk_received
+
     @gen.coroutine
     def get(self):
         self.write("asdf")
         self.flush()
-        # Wait a bit to ensure the chunks are sent and received separately.
-        yield gen.sleep(0.01)
+        if self.first_chunk_received is not None and self.get_argument("wait", None):
+            # Don't send the second chunk until the client has received the
+            # first, so they can't be coalesced and the test can verify that
+            # chunks are delivered as they arrive.
+            yield self.first_chunk_received.wait()
         self.write("qwer")
 
 
@@ -278,6 +300,7 @@ class HTTPClientCommonTestCase(AsyncHTTPTestCase):
     decompresses_brotli = False
 
     def get_app(self):
+        self.first_chunk_received = Event()
         return Application(
             [
                 url("/hello", HelloWorldHandler),
@@ -285,7 +308,11 @@ class HTTPClientCommonTestCase(AsyncHTTPTestCase):
                 url("/put", PutHandler),
                 url("/redirect", RedirectHandler),
                 url("/redirect_without_location", RedirectWithoutLocationHandler),
-                url("/chunk", ChunkHandler),
+                url(
+                    "/chunk",
+                    ChunkHandler,
+                    dict(first_chunk_received=self.first_chunk_received),
+                ),
                 url("/auth", AuthHandler),
                 url("/countdown/([0-9]+)", CountdownHandler, name="countdown"),
                 url("/echopost", EchoPostHandler),
@@ -335,7 +362,7 @@ class HTTPClientCommonTestCase(AsyncHTTPTestCase):
 
     def test_streaming_callback(self):
         # streaming_callback is also tested in test_chunked
-        chunks = []  # type: typing.List[bytes]
+        chunks: list[bytes] = []
         response = self.fetch("/hello", streaming_callback=chunks.append)
         # with streaming_callback, data goes to the callback and not response.body
         self.assertEqual(chunks, [b"Hello world!"])
@@ -441,8 +468,13 @@ class HTTPClientCommonTestCase(AsyncHTTPTestCase):
         response = self.fetch("/chunk")
         self.assertEqual(response.body, b"asdfqwer")
 
-        chunks = []  # type: typing.List[bytes]
-        response = self.fetch("/chunk", streaming_callback=chunks.append)
+        chunks: list[bytes] = []
+
+        def streaming_callback(chunk):
+            chunks.append(chunk)
+            self.first_chunk_received.set()
+
+        response = self.fetch("/chunk?wait=1", streaming_callback=streaming_callback)
         self.assertEqual(chunks, [b"asdf", b"qwer"])
         self.assertFalse(response.body)
 
@@ -460,8 +492,7 @@ class HTTPClientCommonTestCase(AsyncHTTPTestCase):
                 request_data = yield stream.read_until(b"\r\n\r\n")
                 if b"HTTP/1." not in request_data:
                     self.skipTest("requires HTTP/1.x")
-                yield stream.write(
-                    b"""\
+                yield stream.write(b"""\
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 
@@ -471,10 +502,7 @@ Transfer-Encoding: chunked
 2
 0
 
-""".replace(
-                        b"\n", b"\r\n"
-                    )
-                )
+""".replace(b"\n", b"\r\n"))
                 stream.close()
 
             netutil.add_accept_handler(sock, accept_callback)  # type: ignore
@@ -664,7 +692,7 @@ Transfer-Encoding: chunked
         # test if client hangs on tricky invalid gzip
         # curl/simple httpclient have different behavior (exception, logging)
         with ExpectLog(
-            gen_log, ".*Malformed HTTP message.*unconsumed gzip data", required=False
+            gen_log, ".*Malformed HTTP message.*invalid gzip data", required=False
         ):
             try:
                 response = self.fetch("/invalid_gzip")
@@ -694,9 +722,10 @@ Transfer-Encoding: chunked
             # comes in.
             self.assertEqual(headers["content-type"], "text/html; charset=UTF-8")
             chunks.append(chunk)
+            self.first_chunk_received.set()
 
         self.fetch(
-            "/chunk",
+            "/chunk?wait=1",
             header_callback=header_callback,
             streaming_callback=streaming_callback,
         )
@@ -750,8 +779,13 @@ Transfer-Encoding: chunked
                 )
 
     def test_multi_line_headers(self):
-        # Multi-line http headers are rare but rfc-allowed
-        # http://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html#sec4.2
+        # Line folding is an obsolete way of representing headers split across multiple lines.
+        # https://www.rfc-editor.org/info/rfc9112/#section-5.2
+        #
+        # The spec requires user agents to unfold them, but simple_httpclient
+        # rejects them as of Tornado 6.6 while libcurl still accepts them. Either
+        # outcome is acceptable here; what matters is that the client doesn't hang
+        # and doesn't misparse the header.
         sock, port = bind_unused_port()
         with closing(sock):
 
@@ -761,23 +795,31 @@ Transfer-Encoding: chunked
                 request_data = yield stream.read_until(b"\r\n\r\n")
                 if b"HTTP/1." not in request_data:
                     self.skipTest("requires HTTP/1.x")
-                yield stream.write(
-                    b"""\
+                yield stream.write(b"""\
 HTTP/1.1 200 OK
 X-XSS-Protection: 1;
 \tmode=block
 
-""".replace(
-                        b"\n", b"\r\n"
-                    )
-                )
+""".replace(b"\n", b"\r\n"))
                 stream.close()
 
             netutil.add_accept_handler(sock, accept_callback)  # type: ignore
             try:
-                resp = self.fetch("http://127.0.0.1:%d/" % port)
-                resp.rethrow()
-                self.assertEqual(resp.headers["X-XSS-Protection"], "1; mode=block")
+                with ExpectLog(
+                    gen_log,
+                    "Malformed HTTP message.*folding",
+                    level=logging.INFO,
+                    required=False,
+                ):
+                    try:
+                        resp = self.fetch("http://127.0.0.1:%d/" % port)
+                    except HTTPError as e:
+                        self.assertEqual(e.code, 599)
+                    else:
+                        resp.rethrow()
+                        self.assertEqual(
+                            resp.headers["X-XSS-Protection"], "1; mode=block"
+                        )
             finally:
                 self.io_loop.remove_handler(sock.fileno())
 
@@ -845,8 +887,8 @@ X-XSS-Protection: 1;
             request = HTTPRequest(url, network_interface="not-interface-or-ip")
             yield self.http_client.fetch(request)
         self.assertTrue(
-            "not-interface-or-ip" in str(context.exception)
-            or "Failed binding local connection end" in str(context.exception)
+            "Failed binding local connection end" in str(context.exception)
+            or "not-interface-or-ip" in str(context.exception)
         )
 
     def test_all_methods(self):
@@ -1041,7 +1083,7 @@ X-XSS-Protection: 1;
                     )
 
 
-class RequestProxyTest(unittest.TestCase):
+class RequestProxyTest(TestCase):
     def test_request_set(self):
         proxy = _RequestProxy(
             HTTPRequest("http://example.com/", user_agent="foo"), dict()
@@ -1074,7 +1116,7 @@ class RequestProxyTest(unittest.TestCase):
         self.assertIsNone(proxy.auth_username)
 
 
-class HTTPResponseTestCase(unittest.TestCase):
+class HTTPResponseTestCase(TestCase):
     def test_str(self):
         response = HTTPResponse(  # type: ignore
             HTTPRequest("http://example.com"), 200, buffer=BytesIO()
@@ -1084,7 +1126,7 @@ class HTTPResponseTestCase(unittest.TestCase):
         self.assertIn("code=200", s)
 
 
-class SyncHTTPClientTest(unittest.TestCase):
+class SyncHTTPClientTest(TestCase):
     def setUp(self):
         self.server_ioloop = IOLoop(make_current=False)
         event = threading.Event()
@@ -1147,7 +1189,7 @@ class SyncHTTPClientTest(unittest.TestCase):
         self.assertEqual(assertion.exception.code, 404)
 
 
-class SyncHTTPClientSubprocessTest(unittest.TestCase):
+class SyncHTTPClientSubprocessTest(TestCase):
     def test_destructor_log(self):
         # Regression test for
         # https://github.com/tornadoweb/tornado/issues/2539
@@ -1177,7 +1219,7 @@ class SyncHTTPClientSubprocessTest(unittest.TestCase):
             self.fail("subprocess produced unexpected output")
 
 
-class HTTPRequestTestCase(unittest.TestCase):
+class HTTPRequestTestCase(TestCase):
     def test_headers(self):
         request = HTTPRequest("http://example.com", headers={"foo": "bar"})
         self.assertEqual(request.headers, {"foo": "bar"})
@@ -1202,7 +1244,7 @@ class HTTPRequestTestCase(unittest.TestCase):
         self.assertEqual(request.body, utf8("foo"))
 
     def test_if_modified_since(self):
-        http_date = datetime.datetime.now(datetime.timezone.utc)
+        http_date = datetime.datetime.now(datetime.UTC)
         request = HTTPRequest("http://example.com", if_modified_since=http_date)
         self.assertEqual(
             request.headers, {"If-Modified-Since": format_timestamp(http_date)}
@@ -1217,7 +1259,7 @@ class HTTPRequestTestCase(unittest.TestCase):
         )
 
 
-class HTTPErrorTestCase(unittest.TestCase):
+class HTTPErrorTestCase(TestCase):
     def test_copy(self):
         e = HTTPError(403)
         e2 = copy.copy(e)
@@ -1282,7 +1324,7 @@ class HTTPClientMaxBodySizeTestCase(AsyncHTTPTestCase):
     # Format of the message the implementation logs to `.gen_log` when it
     # refuses a body, or None if it does not log one. ``{reason}`` is filled
     # in with why the body was refused.
-    refusal_log_format = None  # type: typing.Optional[str]
+    refusal_log_format: str | None = None
 
     def get_app(self):
         return Application(
