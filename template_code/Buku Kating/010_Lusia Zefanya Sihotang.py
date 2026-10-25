@@ -14,6 +14,7 @@ from tools.ui_helper import (
     load_image,
     render_kating_cards,
     get_menu_styles,
+    dept_menu,
 )
 
 # Injeksi tema estetis global
@@ -33,9 +34,8 @@ st.markdown(
 
 
 def streamlit_menu():
-    selected = option_menu(
-        menu_title=None,
-        options=[
+    return dept_menu(
+        [
             "Kesekjenan",
             "Baleg",
             "Senator",
@@ -46,24 +46,8 @@ def streamlit_menu():
             "Departemen SSD",
             "Departemen Medkraf",
             "Departemen Minbak",
-        ],
-        icons=[
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",
-            "people-fill",
-        ],
-        default_index=0,
-        orientation="horizontal",
-        styles=get_menu_styles(),
+        ]
     )
-    return selected
 
 
 def display_images_with_data(gambar_urls, data_list):
