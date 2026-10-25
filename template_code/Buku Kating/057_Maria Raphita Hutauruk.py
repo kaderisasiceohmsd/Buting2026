@@ -246,8 +246,8 @@ if menu == "Kesekjenan":
                 "alamat": "Sekretariat HMSD ",
                 "hobbi": "Push Rank",
                 "sosmed": "@jars_mrp",
-                "kesan": "Bang Fajar orangnya ramah, baik, dan keren juga, the best lah pokoknya",  
-                "pesan":"Semoga ke depannya dapat terus berkembang menjadi lebih baik dan membawa HMSD ke arah yang lebih maju dan jadi orang yang sukses."
+                "kesan": "Abangnya asik , ramah , dan aura pemimpin nya menyala heheh",  
+                "pesan":" Stay humble ya bangg , semoga lancar luncur untuk kedepannyaa."
             },
             {
                 "nama": "Muhammad Aqil Ramadhan ",
@@ -257,8 +257,8 @@ if menu == "Kesekjenan":
                 "alamat": "Sekretariat HMSD ",
                 "hobbi": "Zikir",
                 "sosmed": "@muhammadaqil1111",
-                "kesan": "Bang Aqil keren, baik, dan the best juga tentunya.",  
-                "pesan":"semangat terus bang, sukses dimanapun berada!"
+                "kesan": "Abangnya ada aura aura ustad nya heheh.",  
+                "pesan":"Semangat terus bang dan jangan menyerah heheh!"
             },
             {
                 "nama": "Efi Defiyati",
@@ -268,8 +268,8 @@ if menu == "Kesekjenan":
                 "alamat": "Airan",
                 "hobbi": "Membaca",
                 "sosmed": "@eefidefiyati",
-                "kesan": "Kagum dengan kerja Kakak yang selalu rapi, teratur, dan sangat cekatan dalam mengurus administrasi.",  
-                "pesan":"Terima kasih sudah membagikan contoh kerja yang baik buat kami, Kak. Semoga dilancarkan urusan magang dan skripsinya"
+                "kesan": "Kakak nya humble dan cantik.",  
+                "pesan":"Semoga hal - hal baik selalu datang pada kakak yaa "
             },
             {
                 "nama": "Qois Olifio",
@@ -279,8 +279,8 @@ if menu == "Kesekjenan":
                 "alamat": "Kotabaru",
                 "hobbi": "Mainin surat",
                 "sosmed": "@qoisolifio_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"
+                "kesan": "Abangnya ramah trus keliatan dewasa hehe",  
+                "pesan":"Sukses terus ya bang, semoga semua yang diusahain lancar"
             },
             {
                 "nama": "Hafsa Fazila Arradhi",
@@ -290,8 +290,8 @@ if menu == "Kesekjenan":
                 "alamat": "Bandar Lampung ",
                 "hobbi": "Melukis",
                 "sosmed": "@hafsafazilaa",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"
+                "kesan": "Kakak nya cantik , trus baik juga",  
+                "pesan":"Semangatt dan tetap tersenyum kak"
             },
             {
                 "nama": "Luthfia Laila Ramadhani ",
@@ -301,8 +301,8 @@ if menu == "Kesekjenan":
                 "alamat": "Airan",
                 "hobbi": "Nyari motor Pak Tirta ",
                 "sosmed": "@luthfiaarmdhni",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"
+                "kesan": "Kakak ini asik, cakepp juga ",  
+                "pesan":"Be happy ya kaa heheh"
             },
         ]
         display_images_with_data(gambar_urls, data_list)
