@@ -699,7 +699,7 @@ elif menu == "Departemen Internal":
 elif menu == "Departemen PSDA":
     def DepartemenPSDA():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1K28aOhn06n1sOp1qiDGVibD-P0fkwjLL",
             "https://drive.google.com/uc?export=view&id=1H5gMz9Nh5cnlDhhV5m1D47oHsc8XtGp4",
             "https://drive.google.com/uc?export=view&id=1CNUx3P7Tfnm-kPFW9PR1b8kd6ueV2NeB",
             "https://drive.google.com/uc?export=view&id=1XAPqAswqDDMJ56ezH3ohjGYrNiYy904E",
@@ -715,7 +715,7 @@ elif menu == "Departemen PSDA":
             "https://drive.google.com/uc?export=view&id=1mb9cnG59FhtyO52O5OAv2IfUHrtck16f",
             "https://drive.google.com/uc?export=view&id=1GZPivq-khQeF-9SgZUILhPm-gwTGjpRo",
             "https://drive.google.com/uc?export=view&id=1uBahgweg7JXHbvvTogL5GB0_54a0U2gu",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1u_Qzm4Ku_8XYlnLBLCd5dtlcs6UQBC0h",
 
         ]
         data_list = [
