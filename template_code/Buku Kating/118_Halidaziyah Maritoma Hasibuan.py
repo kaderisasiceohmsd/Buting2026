@@ -71,7 +71,7 @@ elif menu == "Baleg":
             },
             {
                 "nama": "Juesi Apridelia Saragih",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1N1AV11j8X7a1ssUrcnxxMSnr8-65oMNs",
                 "kesan": "first meet bareng kak jue oarangnya ramahhhh bangett",  
                 "pesan":"sukses terus kak jue :)",
             },
