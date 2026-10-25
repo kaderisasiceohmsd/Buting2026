@@ -3,16 +3,22 @@
     "pemilik": "Bayu",
     "data": [
       {
+        "nama_kating": "Ahmad Farhan Ghani",
+        "foto_massal_gdrive_id": "1IL97kI2RexpUjA8B0OtzublWs4INXZqj",
+        "kesan": "Sikap Abang yang pantang menyerah, optimis, dan selalu berjiwa muda bener-bener nularin semangat positif ke semua orang di sekitar abang",
+        "pesan": "Tetap kocak ya bang, semoga kuliah dan karirnya lancar."
+      },
+      {
+        "nama_kating": "Gustin Haleluya Tampubolon",
+        "foto_massal_gdrive_id": "1G-_02LDlWvG5w7y5uA2aeKrIBM7gOmXo",
+        "kesan": "Kak Gustin tenang dan bijak. Pas aku jawab pelan karena grogi, dia sabar nunggu tanpa nyela.",
+        "pesan": "Tuhan memberkati kakak selalu, semoga sukses ya."
+      },
+      {
         "nama_kating": "Teresa Christiani Purba",
         "foto_massal_gdrive_id": "1-gzzVDPP6BUYGS2BAFgu_ojiZJvx713a",
         "kesan": "Kak Teresa nyapa duluan waktu aku nunggu giliran wawancara, jadi nggak kerasa sendirian. Murah senyum banget orangnya",
         "pesan": "Tuhan memberkati kakak selalu, sukses ya."
-      },
-      {
-        "nama_kating": "A Farhan Ghani",
-        "foto_massal_gdrive_id": "1IL97kI2RexpUjA8B0OtzublWs4INXZqj",
-        "kesan": "",
-        "pesan": ""
       },
       {
         "nama_kating": "Rozak Ramdani",
@@ -41,14 +47,14 @@
       {
         "nama_kating": "Haikal Fransisko Simbolon",
         "foto_massal_gdrive_id": "1LGlYAG6hhjLsaI-1D527_jbXYt-qrAZH",
-        "kesan": "Humor Abang tuh selalu bisa mecahin suasana tegang. Kebersamaan bareng Abang bikin masa-masa maba kita jadi seru dan penuh tawa yang bakal dikangenin.",
-        "pesan": "Tetep jadi abang yang seru dan menyenangkan! Moga-moga tugas akhir Abang lancar jaya tanpa kendala, dan dapet tempat kerja impian sesegera mungkin!"
+        "kesan": "Bangga banget bisa kenal sama Abang yang tegas, disiplin, tapi tetep humoris. Suasana rapat yang tegang selalu bisa cair kalau ada Abang.",
+        "pesan": "Tetep jadi abang yang seru dan menyenangkan! Moga-moga tugas akhir Abang lancar jaya tanpa kendala, dan dapet tempat kerja impian sesegera mungkin, semnagat bang"
       },
       {
         "nama_kating": "Muhammad Hanif Dzaky Arifin",
         "foto_massal_gdrive_id": "16nmNrg1_AkAnk8SG4LS2iDEh958P6i5l",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Abang tuh tipe yang pengayom, komunikatif, dan fleksibel. Ngobrol atau diskusi hal berat pun rasanya jadi makin enteng kalau bareng Abang",
+        "pesan": "Semoga Allah selalu menjaga abang dan melancarkan semua urusan."
       },
       {
         "nama_kating": "Jaya Saputra Tamba",
@@ -59,7 +65,7 @@
       {
         "nama_kating": "Hanna Gresia Sinaga",
         "foto_massal_gdrive_id": "1bqqzoc8Z2d4tmRPHEV3Fsxbq4yxfJnsC",
-        "kesan": "Makasih banyak Kak, kepribadianmu yang ramah, sabar, dan selalu tenang pas ngadepin krisis bener-bener ngebantu banget selama kita berproses bareng di organisasi nanti nya",
+        "kesan": "Makasih banyak Kak, kepribadianmu yang ramah, sabar, dan selalu tenang pas ngadepin krisis bener-bener ngebantu banget selama kami  berproses di organisasi nanti nya",
         "pesan": "Terus jaga keakraban ini ya kak, semoga sukses selalu."
       },
       {
@@ -71,7 +77,7 @@
       {
         "nama_kating": "Kharisma Mustika Sari",
         "foto_massal_gdrive_id": "1WNRdMABZxNr9ExGXHC9YY0inZ4DDmLig",
-        "kesan": "Jangan pernah bosen nyebarin energi positif kalian ya! Semoga cita-cita kalian segera tercapai dan makin suksessaat erjun ke dunia kerja nanti nya kak",
+        "kesan": "Jangan pernah bosen nyebarin energi positif kalian ya! Semoga cita-cita kalian segera tercapai dan makin sukses saat terjun ke dunia kerja nanti nya kak",
         "pesan": "Semoga sukses dan sehat selalu ya kak"
       },
       {
@@ -87,46 +93,46 @@
         "pesan": "Tetap jadi pribadi yang hangat ya kak, sukses selalu."
       },
       {
-        "nama_kating": "Gustin H",
-        "foto_massal_gdrive_id": "1G-_02LDlWvG5w7y5uA2aeKrIBM7gOmXo",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
         "nama_kating": "Cerine Sihotang",
         "foto_massal_gdrive_id": "1YUkBxPfrwbMSp6GLmxqc_6saN4Mq2lNC",
         "kesan": "Energi Kak Cerine tinggi banget pas wawancara, ketawanya bikin ruangan jadi hidup. Gugupku ilang gitu aja.",
         "pesan": "Terus semangat ya kak, semoga cita-citanya tercapai."
       },
       {
+        "nama_kating": "Danil Nur Fadillah",
+        "foto_massal_gdrive_id": "1xzTrhdhCe-nBunGT8F_c3HN952p2ho8v",
+        "kesan": "Kak Danil santai dan suka bercanda, ganteng dan mau berabur ddengan kami, humble dan rendah hati, tapi soal tanggung jawab dia gak main-main. Belajar jadi relawan bareng abang itu pengalaman yang gak bakal kulupa.",
+        "pesan": "Semoga lancar kuliah dan kerjanya ya bang ."
+      },
+      {
         "nama_kating": "Asri Meilani",
         "foto_massal_gdrive_id": "14MqiiZmaixyrJslBBwGF0Zw96okandXr",
-        "kesan": "Kak Asri baik dan perhatian, sering nanyain kabar kami di luar urusan divisi. Jadi merasa punya kakak sendiri di kampus, bukan cuma senior biasa.",
-        "pesan": "Terima kasih banyak kak, semoga bahagia dan sehat selalu. Semoga selalu dikelilingi orang-orang baik."
+        "kesan": "Kak Asri baik, rendah hati, dan humble",
+        "pesan": "Terima kasih banyak kak, semoga bahagia dan sehat selalu. Semoga selalu dikelilingi orang-orang baik kak."
       },
       {
         "nama_kating": "Muhammad Rizaldi",
         "foto_massal_gdrive_id": "1mcYZj3wulzVMBWs9A4lWWOiMIGne-ZHP",
-        "kesan": "Kak Rizaldi gesit dan rajin, kalau ada kegiatan pasti sudah siap duluan. Dari kakak aku belajar kalau disiplin itu kebiasaan kecil yang diulang terus.",
-        "pesan": "Semangat terus kak, semoga hasil kerja kerasnya terbayar. Kebaikan kakak gak akan kami lupakan."
+        "kesan": "Kak Rizaldi gesit, jago banget public speaking nya  dan rajin, kalau ada kegiatan pasti sudah siap duluan. Dari abang  aku belajar kalau disiplin itu kebiasaan kecil yang diulang terus. keep smile abang nim 93",
+        "pesan": "Semangat terus kak, semoga hasil kerja kerasnya terbayar. Kebaikan abang gak akan saya lupakan kan sebagai adek NIM."
       },
       {
         "nama_kating": "Riska Erlis Dayu Tiara",
         "foto_massal_gdrive_id": "1oSYl5dauscAqIHrjOJi6qdXGDcc1YycA",
-        "kesan": "Kak Riska itu ramah dan pendengar yang baik. Tiap kali aku minder soal ngomong di depan orang, kakak yang pertama ngasih semangat dan tips.",
+        "kesan": "Kak Riska itu ramah dan pendengar yang baik dan humble juga",
         "pesan": "Semoga sukses dan bahagia selalu ya kak. Semoga selalu ada hal baik yang datang ke kakak."
       },
       {
         "nama_kating": "Khoirul Muttoharoh",
         "foto_massal_gdrive_id": "16CE9Jr0ACnVTnNSU7Ji8au-VLKbihVYQ",
-        "kesan": "Kak Khoirul luwes banget  dan mudah di ajak ngobrol kalau ngobrol sama orang baru dan humble . Dari kakak aku belajar kalau relasi itu dibangun dari sopan santun dan kemauan mendengar.",
-        "pesan": "Sukses terus ya kak, semoga jaringan kakak makin luas dan bermanfaat. Sampai ketemu di kegiatan-kegiatan selanjutnya."
+        "kesan": "Kak Khoirul luwes banget  dan mudah di ajak ngobrol kalau ngobrol sama orang baru dan humble dana murah senyum lagi . Dari abang  aku belajar kalau relasi itu dibangun dari sopan santun dan kemauan mendengar.",
+        "pesan": "Sukses terus ya bang, semoga relasi makin luas dan bermanfaat. Sampai ketemu di kegiatan-kegiatan selanjutnya."
       },
       {
         "nama_kating": "Adinda Deswita Maharani",
         "foto_massal_gdrive_id": "1ks_9EehBRUnc34iRR9U8dSFCUgDjSioU",
-        "kesan": "Kak Adinda sabar banget ngajarin cara nulis proposal kerja sama yang baik. Kalau salah, gak dimarahin, malah dikasih contoh biar kami ngerti sendiri.",
-        "pesan": "Semoga kakak selalu dimudahkan dan sukses di mana pun nanti. Makasih udah jadi bagian dari perjalanan kami."
+        "kesan": "Kak Adinda Makasih udah mau luangin waktu ngajarin kita di tengah sibuknya kuliah. Kebaikan  Kakak gak bakalan kita lupain",
+        "pesan": "Semoga kakak selalu dimudahkan dan sukses di mana pun nanti."
       },
       {
         "nama_kating": "Nabyla Sharfina",
@@ -137,116 +143,116 @@
       {
         "nama_kating": "Saskia Nova Magdalena",
         "foto_massal_gdrive_id": "11wVAGuuY1epaBnJ6zCjfRCxe_bdjr4Zv",
-        "kesan": "Kak Saskia ceria banget dan gampang dekat sama siapa saja, bikin warga yang kami kunjungi juga nyaman. Aku sering diam-diam niru cara kakak menyapa orang.",
+        "kesan": "Kak Saskia ceria banget dan gampang dekat sama siapa saja, bikin kiata oarang yang pertama kali jumpa bisa berbaur lebih inklusif dan asik lagi",
         "pesan": "Semoga selalu bahagia dan sukses ya kak. Doa kami menyertai setiap langkah kakak."
       },
       {
         "nama_kating": "Tarisya Hidayatul Rahmi",
         "foto_massal_gdrive_id": "1iPEsoIWJwZwZSBYrpsI6FgjmeSOt-RqZ",
-        "kesan": "Kak Tarisya selalu punya ide kreatif buat kegiatan sosial, dan semangatnya gak pernah turun walau lagi capek. Bikin kami ikut semangat tiap kali kumpul.",
+        "kesan": "Kak Tarisya humble, ceria, mudah kalau di ajak ngobrol",
         "pesan": "Makasih kak, semoga impian-impiannya satu per satu tercapai. Semoga selalu ada hal baik yang datang ke kakak."
       },
       {
         "nama_kating": "Fathya Intami Gusda",
         "foto_massal_gdrive_id": "1iQBVI8U7wNwzCykL_keB4Mn-7r9XN3E6",
-        "kesan": "Kak Fathya lembut dan sabar waktu ngajarin kami cara berinteraksi sama masyarakat. Dari kakak aku sadar kalau pengabdian itu soal ketulusan, bukan formalitas.",
+        "kesan": "Kak Fathya lembut dan sabar waktu ngajarin kami cara berinteraksi sama masyarakat. Dari kakak aku sadar kalau pengabdian itu soal ketulusan, bukan formalitas",
         "pesan": "Semoga kebaikan kakak dibalas berlipat ganda ya. Jangan sungkan main ke sekret kalau lagi senggang."
       },
       {
         "nama_kating": "Ashila Islamisahfa Vanisha",
         "foto_massal_gdrive_id": "17WbZPKFpruy2FK9RI6YPN6X9pK1Gbm4k",
-        "kesan": "Kak Ashila itu gabungan tegas dan hangat. Kalau ada anggota yang kewalahan, kakak langsung turun tangan bantu, bukan cuma nyuruh. Itu yang bikin kami hormat.",
-        "pesan": "Tetap jadi kepala divisi yang peduli ya kak, semoga sukses selalu. Semoga kuliahnya dimudahkan sampai garis akhir."
+        "kesan": "Kak Ashila itu gabungan tegas dan bijaksana. pas diajak poto si suruh gaya yang paling keren",
+        "pesan": "Tetap jadi kepribadian yang bisa menginspirasi oarang lain kak , semoga sukses selalu. Semoga kuliahnya dimudahkan sampai garis akhir."
       },
       {
         "nama_kating": "Selma Siti Aisyah",
         "foto_massal_gdrive_id": "1odHSwJNS2Im3vZbyfG5OshxLpnXbbDiS",
-        "kesan": "Kak Selma sabar dan telaten, apalagi pas ngajarin kami nyiapin acara dari nol. Kalau ada yang salah, kakak ajak benerin bareng, gak pernah menyalahkan.",
-        "pesan": "Makasih kak, semoga ilmunya terus bermanfaat dan sukses menyertai. Kami bakal kangen kebersamaan ini."
+        "kesan": "Kak Selma rendah hati, baik, idealis, dan mudah di ajak ngobrol",
+        "pesan": "Makasih kak, semoga ilmunya terus bermanfaat dan sukses menyertai. semoga lancar kuliah nya kak"
       },
       {
         "nama_kating": "Ahmad Bimo Akbar Arkana putra",
         "foto_massal_gdrive_id": "1p--_c94fp39qNDo9qv4gbrSBf0U9oyO3",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Danil Nur Fadillah",
-        "foto_massal_gdrive_id": "1xzTrhdhCe-nBunGT8F_c3HN952p2ho8v",
-        "kesan": "Kak Danil santai dan suka bercanda, tapi soal tanggung jawab dia gak main-main. Belajar jadi relawan bareng kakak itu pengalaman yang gak bakal kulupa.",
-        "pesan": "Semoga lancar kuliah dan kerjanya ya kak. Jangan sungkan main ke sekret kalau lagi senggang."
+        "kesan": "Awalnya kami segan karena bang  Bimo kelihatan serius, tapi ternyata orangnya asik dan royal sama ilmu. Banyak tips networking yang kami dapat dari obrolan santai.",
+        "pesan": "Makasih suadah berbagi pengalaman dan ilmu nya bang, semoga cita-citanya cepat tercapai"
       },
       {
         "nama_kating": "Favian Arkaanda",
         "foto_massal_gdrive_id": "1A_VpYLyib-VqV-LBj5hAN5NT86mSNHQR",
         "kesan": "Awalnya aku pikir Kak Favian dingin, ternyata baik banget dan sering bantuin kami kalau ada kendala di lapangan. Pembawaannya tenang dan menenangkan.",
-        "pesan": "Terima kasih kak, semoga sukses dan selalu sehat. Jangan lupain kami ya kalau udah sukses nanti."
+        "pesan": "Terima kasih kak, semoga sukses dan selalu sehat. Jangan lupain kami ya kalau udah sukses nanti bang ."
       },
       {
         "nama_kating": "Arini Puteri Elandra",
         "foto_massal_gdrive_id": "1Ocp6S5Jf0g0nRdU05bSYDq5vuaZAdG_f",
-        "kesan": "Kak Arini punya aura pemimpin yang kalem, kritis, idealis. Waktu kami kami bingung perihal devisi dalam departemen kakak, tapi cara kak menyampaikan nya itu pelan tapi tersampaikan dengan baik dan jelas",
+        "kesan": "Kak Arini punya aura pemimpin yang kalem, kritis, idealis dan bijaksana banget. Waktu kami kami bingung perihal devisi dalam departemen kakak, tapi cara kak menyampaikan nya itu pelan tapi tersampaikan dengan baik dan jelas",
         "pesan": "Terus jadi pemimpin yang inspiratif ya kak, semoga kak menjadi orang yang selalu menyebarkan hal positif bagi orang sekitar kak.  Kami bakal kangen kebersamaan ini."
       },
       {
         "nama_kating": "Indah Khairunnisa",
         "foto_massal_gdrive_id": "1XWJib7fP6odxlc8ILkGLz6S1wpitv4tX",
-        "kesan": "Kak Indah tegas dalam kerja tapi lembut kalau ngomong, jadi kami nurut tanpa merasa ditekan. Dari kakak aku belajar kalau profesional itu gak harus galak.",
-        "pesan": "Terus bersinar ya kak, semoga semua usahanya berbuah manis. Kami bakal kangen kebersamaan ini."
+        "kesan": "Kak Indah asik, humoris, pinter, di ajka poto malah di kasih pertanyaan tapi jujur asik sih kak jadi suasana makin cair tanpa ada kata segan",
+        "pesan": "Terus bersinar untuk memberikan hal positif bagi orang sekitar ya kak, semoga semua usahanya berbuah manis. Kami bakal kangen kebersamaan ini."
       },
       {
         "nama_kating": "Alfaya Rafif Abiyyi",
         "foto_massal_gdrive_id": "1Dlh8y6nt7IjKWH1PCozVWQmxLVbs7agn",
-        "kesan": "Kak Alfaya tuh tenang dan jarang panik, bahkan waktu acara hampir berantakan. Sikap kakak itu yang bikin kami ikut tenang dan akhirnya semuanya beres.",
-        "pesan": "Tetap jadi pribadi yang kalem ya kak, semoga sukses selalu. Makasih udah jadi bagian dari perjalanan kami."
+        "kesan": "bang  Alfaya tuh tenang dan jarang panik, trus humble kalau di lihat dari muka nya",
+        "pesan": "Tetap jadi pribadi yang kalem ya bang, semoga sukses selalu."
       },
       {
         "nama_kating": "Aditya Taufiqurrohman",
         "foto_massal_gdrive_id": "1_drLWF_4Lp9w0LE3BHwg_dG406WNZMbc",
-        "kesan": "Kak Aditya punya kepedulian sosial yang tinggi, dan itu menular ke kami. Pas turun ke lapangan, kakak yang paling dulu bantu angkat barang tanpa disuruh.",
-        "pesan": "Teruslah jadi pemimpin yang membumi ya kak, semoga sukses selalu. Jangan lupain kami ya kalau udah sukses nanti."
+        "kesan": "Kak Aditya punya kepedulian sosial yang tinggi, dan itu menular ke kami, trus abnag itu paling bisa banget membuat suasana forum menjadi cair dengan hal yang lelucon . tapi ketika acara formal gitu abang paling berwibawa banget dan abnag muarh senyum, dan humble.",
+        "pesan": "Teruslah jadi pemimpin yang membumi ya kbang, semoga sukses selalu. Jangan lupain kami ya kalau udah sukses nanti."
       },
       {
         "nama_kating": "Muhammad Fathiy Zumar Yazid",
         "foto_massal_gdrive_id": "1v8PBIBmzpnoVK2slOGqlOlEjiO8rI58q",
-        "kesan": "Kak Fathiy itu rendah hati, padahal pengalamannya banyak. Kakak mau mendengar ide kami yang masih mentah dan malah bantu memolesnya jadi lebih matang.",
+        "kesan": "Kak Fathiy itu rendah hati, padahal pengalamannya banyak. abang  mau mendengar ide kami yang masih mentah dan malah bantu memolesnya jadi lebih matang. jujur abang baik, humble, mau berbaur dengan kami dan rendah hati banget",
         "pesan": "Tetap jadi sosok yang bersahaja ya kak, semoga cita-citanya tercapai. Jangan sungkan main ke sekret kalau lagi senggang."
       },
       {
         "nama_kating": "Bima Ekayasa",
         "foto_massal_gdrive_id": "1hmcFnWNI9z_cQC4Jz3ZMDHjDzwlDHRBB",
-        "kesan": "Cara Kak Bima memimpin diskusi bikin semua orang kebagian bicara, termasuk yang pemalu. Aku sendiri jadi lebih berani ngasih pendapat sejak ikut divisi ini.",
-        "pesan": "Semoga kuliah dan karir kakak lancar, jangan lupa sama kami. Sampai ketemu di kegiatan-kegiatan selanjutnya."
+        "kesan": "Dedikasi dan loyalitas yang abang  tunjukin patut dicontoh kami karena walaupun terlambat tapi abang masih nyempetin untuk hadir.",
+        "pesan": "Semoga kuliah dan karir abnag  lancar, jangan lupa sama kami. Sampai ketemu di kegiatan-kegiatan selanjutnya."
       },
       {
         "nama_kating": "Ahmad Rizky",
         "foto_massal_gdrive_id": "19MpQ9_FTm7eA4DKXckN1lP78UJG5jHp7",
-        "kesan": "Kak Rizky kocak dan gampang bikin suasana cair, apalagi pas kami lagi tegang nyiapin surat audiensi. Kerja bareng kakak jadi gak terasa melelahkan, kritis, idealis banget bang semoga abang bisa menjadi pemimpin di masa depan bang",
-        "pesan": "Tetap humoris ya kak, semoga kuliahnya lancar dan cepat lulus. Sampai ketemu di kegiatan-kegiatan selanjutnya."
+        "kesan": "Kak Rizky kocak dan gampang bikin suasana cair, apalagi pas kami lagi tegang nyiapin surat audiensi, saya paling suka abang itu peduli banget orang nya dan mau bersuara untuk melakukan perubahan. Kerja bareng kakak jadi gak terasa melelahkan, kritis, idealis banget bang semoga abang bisa menjadi pemimpin di masa depan bang",
+        "pesan": "Tetap humoris dan bijaksana bang, semoga kuliahnya lancar dan cepat lulus. Sampai ketemu di kegiatan-kegiatan selanjutnya."
       },
       {
         "nama_kating": "Yollanda Agustina",
         "foto_massal_gdrive_id": "1gTF-aadKzQTTjaziTJm3-B5KFWJmVew5",
-        "kesan": "Seru banget bareng Kak Yolla, ada aja bahan obrolan dan candaannya. Kerjaan divisi yang lumayan menumpuk jadi terasa ringan karena kakak selalu semangat.",
-        "pesan": "Tetap ceria ya kak, semoga cepat lulus dan dapat pekerjaan impian. Jangan sungkan main ke sekret kalau lagi senggang."
+        "kesan": "Seru banget bareng Kak Yolla, kakak nya asik juga, cocok sebagai motivator, dan orang yang pali aktif salut sih kak setiap agenda pasti ada kakak menjadi kepanitiaannya, jujur sih saya bersyukur banget bisa dapat mentor seperti kakak sabar banget, trus mau mengayomi kami.",
+        "pesan": "Tetap ceria ya kak, semoga cepat lulus dan dapat pekerjaan impian. semoga sehat selalu kak dan selalu menjadi orang yang menyebarkan energi positif ke orang lain. Terus lah menjadi kepribadian  yang bisa bermanfaat bagi orang lain kak"
+      },
+      {
+        "nama_kating": "Mochammad Iqbal Az-Zahir",
+        "foto_massal_gdrive_id": "1b-WNfw9jgxv3-MKL8ZsnBoaWgpzXXScL",
+        "kesan": "Abang berhasil menciptakan suasana  divisi Kemitraan yang sangat hangat, seru, produktif, dan jauh dari kaku",
+        "pesan": "Jangan pernah melupakan kami ya. Semoga tali silaturahmi kita tetap terjaga dan kesuksesan selalu menyertai setiap langkah abang  ke depannya."
       },
       {
         "nama_kating": "Hanifah Inaya Sani",
         "foto_massal_gdrive_id": "1pcOflI664sJm9nyZz9pjFFb0pDOrQ5aN",
-        "kesan": "Pengalaman belajar bersama kakak dan abang sangat berharga. Bimbingan kalian membuka wawasan baru tentang dunia kampus dan bisnis",
-        "pesan": "Tetaplah menjadi panutan yang rendah hati. Semoga segala impian serta cita-cita kalian segera tercapai."
+        "kesan": "Pengalaman belajar bersama kakak sangat berharga. Bimbingan kakak membuka wawasan baru tentang dunia kampus dan bisnis",
+        "pesan": "Tetaplah menjadi panutan yang rendah hati. Semoga segala impian serta cita-cita kakak segera tercapai."
       },
       {
         "nama_kating": "Afifah Fauziah",
         "foto_massal_gdrive_id": "1hvHDsN_EyCFyIPBRxkyQ7QdcBV-lVIbx",
-        "kesan": "Kebersamaan ini memberikan banyak ilmu baru dan ilmu tentan bisnis dan bagaomana cara bernegosiasi dalam mendapatkan sponsor dalam sebuah acara.  Abang selalu sabar menjawab setiap pertanyaan kami.",
-        "pesan": "Teruslah berkarya dan menginspirasi. Semoga sukses menyertai setiap langkah serta perjuangan kalian ke depan."
+        "kesan": "Kebersamaan ini memberikan banyak ilmu baru dan ilmu tentan bisnis dan bagaomana cara bernegosiasi dalam mendapatkan sponsor dalam sebuah acara.  kakak selalu sabar menjawab setiap pertanyaan kami.",
+        "pesan": "Teruslah berkarya dan menginspirasi. Semoga sukses menyertai setiap langkah serta perjuangan kakak ke depan."
       },
       {
         "nama_kating": "Anadia Carana",
         "foto_massal_gdrive_id": "10Wrt02HvL5eq2rjgNeXbFgFfBziibW7x",
-        "kesan": "Cara kakak dan  menyampaikan materi sangat mudah dipahami baik itu materi mengenai bagamana cara kiata mendapatkan insight tentan departemen dan divisi kak . Kami merasa sangat terbantu sejak hari pertama serta membuka wawasan kami terkiat dengan departemen tersebut yang awalnya  nya hanya menganggap dep ini hanya jual danussan tapi rupanya lebih dari itu yang di dalam nya ada hal yang dapat mendapatkan cuan.",
-        "pesan": "Semoga sukses dalam akademik dan organisasi. Tetaplah menjadi pribadi yang ramah serta menginspirasi banyak orang."
+        "kesan": "Cara kakak  menyampaikan materi sangat mudah dipahami baik itu materi mengenai bagamana cara kiata mendapatkan insight tentang departemen dan divisi kak . Kami merasa sangat terbantu sejak hari pertama serta membuka wawasan kami terkiat dengan departemen tersebut yang awalnya  nya hanya menganggap dep ini hanya jual danussan tapi rupanya lebih dari itu yang di dalam nya ada hal yang dapat mendapatkan cuan.",
+        "pesan": "Semoga sukses dalam akademik dan organisasi. Tetaplah menjadi pribadi yang ramah serta menginspirasi banyak orang kakak."
       },
       {
         "nama_kating": "Ihsan Maulana Yusuf",
@@ -267,16 +273,10 @@
         "pesan": "Teruslah bersinar di luar sana. Semoga kalian bisa menaklukkan dunia industri nyata dengan semua potensi hebat yang abang miliki."
       },
       {
-        "nama_kating": "Moch",
-        "foto_massal_gdrive_id": "1b-WNfw9jgxv3-MKL8ZsnBoaWgpzXXScL",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
         "nama_kating": "Della Anisa Fitri",
         "foto_massal_gdrive_id": "1zDir7tteotsXImUuYIaBujyZY2k_SjK-",
         "kesan": "Dari pertama jumpa, senyuman dan keramahannya udah bikin suasana adem. Benar-benar tipe orang yang gampang bikin nyaman dan terbuka sejak detik pertama kenal.",
-        "pesan": "erima kasih sudah menyambut kami dengan hangat. Jangan pernah hilang energi positifnya ya, semoga kebaikan dan sukses selalu mengiringi langkahmu!"
+        "pesan": "terima kasih sudah menyambut kami dengan hangat. Jangan pernah hilang energi positifnya ya kakak, semoga kebaikan dan sukses selalu mengiringi langkahnya kak!"
       },
       {
         "nama_kating": "Abdillah Fikri Al pome",
@@ -299,56 +299,56 @@
       {
         "nama_kating": "Layina Ropiqo",
         "foto_massal_gdrive_id": "1bVpSB-v2_cSyWlR1dkfUUP15KvWB2tqn",
-        "kesan": "Bersama Kakak dan Abang, proses mencari pencarian dana dan membangun jejaring yang ribet malah berubah menjadi petualangan yang menyenangkan.",
+        "kesan": "Bersama Kakak  proses mencari pencarian dana dan membangun jejaring yang ribet malah berubah menjadi petualangan yang menyenangkan.",
         "pesan": "Tetaplah menjadi pembuka peluang kebaikan. Semoga keberuntungan dan kemudahan selalu memeluk setiap usaha keras yang kalian lakukan selama ini"
       },
       {
-        "nama_kating": "M",
+        "nama_kating": "Muhammad Alsi Syahrulloh",
         "foto_massal_gdrive_id": "1Ct_gAA-7ts-nxni2A4fNFe_oPQLXdozd",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Abangnya keren, baik, terlihat pendiam",
+        "pesan": "Semoga kelancaran selalu nemenin tiap langkah kakak menuju masa depan yang cerah"
       },
       {
         "nama_kating": "Akeyla Fairuz Shafi",
         "foto_massal_gdrive_id": "1B84xNJRxIIcVDcfF_ujqtcgTZiha2XZE",
         "kesan": "Abangnya keren, pinter, bijaksana dan rendah hati banget nampak nya",
-        "pesan": "Semangat kuliahnya bangg"
+        "pesan": "Tetep jadi sosok yang ramah dan hangat ya. semoga perjalanan karier kalian lancar dan  jaya"
       },
       {
         "nama_kating": "Faiza Try Anjani",
         "foto_massal_gdrive_id": "1D9JFV8eheLVy5AXoRh6X157ZXV3nPB_k",
-        "kesan": "Kakanya manis, lucu, baik, dan ramah banget",
-        "pesan": "Sehat selalu kakakkk, semoga happy teruss"
+        "kesan": "Kakanya nya baik, rendah hati, kalau di chat fast respon banget",
+        "pesan": "Terus berkarya dan bawa dampak baik ya. Moga sukses selalu di masa depan kak"
       },
       {
         "nama_kating": "Sherena Florencia",
         "foto_massal_gdrive_id": "1OAxuQLuIFiIn-RiNofvzNBa0Yngg3pLE",
-        "kesan": "Kakanya cantik, imut, dan profesionalisme banget",
-        "pesan": "Semangat terus ya kak kuliahnya, sehat selaluu"
+        "kesan": "Kakanya baik, humble, dan profesionalisme banget",
+        "pesan": "Tetep jadi pribadi yang berdampak ya. Sukses selalu buat perjalanan hidup kakak"
       },
       {
         "nama_kating": "Fadya Izzatul 'Aini",
         "foto_massal_gdrive_id": "1FYzMAE1otpQYUsjE9CtgtfiruDUC2JMq",
-        "kesan": "Kakanya manis, imut, dan ramah",
-        "pesan": "Sukses selalu kak, jangan lupa jaga kesehatan"
+        "kesan": "Makasih udah ngajarin cara nyelesaiin masalah dengan kepala dingin. Pembelajaran dari kakak  sekalian bakalan terus kita pegang sampai nanti",
+        "pesan": "Semoga pencapaian  Kakak di masa depan makin mantap"
       },
       {
         "nama_kating": "Lovianora Saragih",
         "foto_massal_gdrive_id": "10Ta0VMK22gK8mNxBuyOgx02FI56IgHUi",
         "kesan": "Kakanya lucu, baik, manis dan jago banget public speaking nya",
-        "pesan": "Semangat terus kak sampai menamatkan segala bentuk mc"
+        "pesan": "Semoga kepribadian asik ini ngebawa kakak ke puncak kesuksesan di luar sana"
       },
       {
         "nama_kating": "Elsa Sitorus",
         "foto_massal_gdrive_id": "1dLvNZWCK0dyke6BXRO3c1oLqlzan6zKu",
-        "kesan": "Kakanya manis, lucu, idealis dan humble",
-        "pesan": "Semangat kuliahnya kak, sehat-sehat yaa"
+        "kesan": "Kakanya baik, humble, trus kakak nya kalau kasih argumen sih jelas banget sehingga kami yang menjadi audiens bisa paham",
+        "pesan": "Semoga urusan akademis dan rencana masa depan  sama Kakak diberi kemudahan"
       },
       {
         "nama_kating": "Fabio Banyu Cyto",
         "foto_massal_gdrive_id": "1H3-A1DoYCe1_aO84lq9rzOklxpeAeJhL",
-        "kesan": "Wibawa dan kepemimpinan kakak membuat kami sangat segan namun merasa terlindungi. Bimbingan kakak  yang tegas namun beretika telah mendidik kami menjadi junior yang disiplin dan bertanggung jawab.",
-        "pesan": "Wibawa dan kepemimpinan kakak membuat kami sangat segan namun merasa terlindungi. Bimbingan kakak  yang tegas namun beretika telah mendidik kami menjadi junior yang disiplin dan bertanggung jawab."
+        "kesan": "Wibawa dan kepemimpinan kakak membuat kami sangat segan namun merasa terlindungi. Bimbingan abang tyang tegas namun beretika telah mendidik kami  yang disiplin dan bertanggung jawab, dan abang itu profesionalisme banget dan pinter.",
+        "pesan": "Wibawa dan kepemimpinan abnag  membuat kami sangat segan namun merasa terlindungi. Bimbingan abnag   yang tegas namun beretika telah mendidik kami r yang disiplin dan bertanggung jawab."
       },
       {
         "nama_kating": "Tanty Widiyastuti",
@@ -359,74 +359,74 @@
       {
         "nama_kating": "Manuel Frederika",
         "foto_massal_gdrive_id": "1BUglJmTpEO82Ltt8wuKNErI2ucK9eye0",
-        "kesan": "Abangnya baik, humble dan keren",
-        "pesan": "Semangat kuliahnya bang, semoaga sehat selalu"
+        "kesan": "abnag itu sosok orang yang baik, humble, dan",
+        "pesan": "terima kasih atas knowlagde yang telah abang berikan kepada kami pass wwc nya, semoga sehat selalu bang"
       },
       {
         "nama_kating": "Vannisa Ramadhani",
         "foto_massal_gdrive_id": "1ZhesGyldTKftG9i8fWnce6tJ9kh71Jhz",
-        "kesan": "Gak nyangka masa orientasi bisa seseru ini. Kakak pinter banget nyesuaiin diri sama kita, bikin suasana jadi hidup dan gak kerasa kaku sama sekali.",
+        "kesan": "Kakaknya manis, baik, keren, dan pelajaran yang di sampaikan pas wwc itu jujur berkesan banget sih kak bahwa setiap kiata ingin berkembang dalam hal akademik itu kita tidak sendiri, tapi kiata bisa meminta arahan drai dosen atau kating untuk memberikan bimbingan",
         "pesan": "Jangan lupa jaga kesehatan kak, dan tetap hal menjadi oarang yang menyebarkan hal positif kak"
       },
       {
         "nama_kating": "Risa Romadona",
         "foto_massal_gdrive_id": "1t_Re_iO3_Jq6EKriVnCeCshX-un6wac-",
-        "kesan": "Kakaknya cantik, manis, dan baik betul",
-        "pesan": "Semangat dan sukses terus kak"
+        "kesan": "Kakaknya humble, rendah hati, idealis , dan baik betul",
+        "pesan": "Semangat dan semoga lancar terus kuliah nya kak"
       },
       {
         "nama_kating": "Yulia Kristine Malau",
         "foto_massal_gdrive_id": "1YQgTcH068q5y3FMJe8xOCRM4U9ptMlkL",
-        "kesan": "Kakakunya baik dan humble",
+        "kesan": "Kakaknya baik, trus pas wwc yang di sampaikan dengan bahasa yang jelas tapi tersampaikan",
         "pesan": "Sukses selalu kuliahnya kakk, terima kasih dan semoga sehat selalu kak"
       },
       {
         "nama_kating": "Hafidz Wahdiansyah",
         "foto_massal_gdrive_id": "1ejrpA66YrAuhsXlBjfMWNBUqmKshS7b_",
         "kesan": "Abangnya baik, ramah, Profesionalisme, mau berbaur dengan kami yang memberikan arahan dan pembelajaran",
-        "pesan": "Sehat selalu bang, semangat berkuliah"
+        "pesan": "Semoga kesuksesan karier selalu ada di genggaman abang"
       },
       {
         "nama_kating": "Razin Hafid Hamdi",
         "foto_massal_gdrive_id": "126q3Kb7uKhyDEXps21GLUsRldliTO6MW",
-        "kesan": "Abangnya Idealis, baik, dan ramah",
-        "pesan": "Sehat selalu bang, semangat menjalani hari-hari"
+        "kesan": "Abangnya Idealis, pinter, trus pas di jelaskan masalah web kemarin jelas banget sehingga saya sebagai orang awam bisa paham",
+        "pesan": "Semoga lelahnya berorganisasi terbayar tuntas sama suksesnya karier abang nanti"
       },
       {
         "nama_kating": "Kaleb Filbert Istel",
         "foto_massal_gdrive_id": "1udiLktR2We3U53P89wu8IBAVDfFblR2Z",
         "kesan": "Bang Kaleb manis, ganteng, bijaksana, dan kritis banget trus bisa banyak bahasa pemrograman",
-        "pesan": "Semangat terus bangg, lancar-lancar sampai lulus kuliah"
+        "pesan": "Semoga langkah abang  ke depan selalu dinaungi keberhasilan"
       },
       {
         "nama_kating": "Gathfan Nadif Ali",
         "foto_massal_gdrive_id": "1cfAJUONnA_KzDj23CRmFFmBTf9qi520h",
         "kesan": "Abangnya baik, pinter, Bijaksana",
-        "pesan": "Semangat kuliahnya bangg"
+        "pesan": "Semoga kebaikan hati  abang  dibalas sama jalan hidup yang makin dimudahkan"
       },
       {
         "nama_kating": "Muhammad Syafiqul Falakh",
         "foto_massal_gdrive_id": "1XGndtyRVPIW6dv9dN7YCVl1Zwk9ZMkqL",
         "kesan": "Abangnya cerdas, public speaking nya bagus banget, cara abang menyampaikan argumen itu padat jelas tersampaikan, good banget bang",
-        "pesan": "Sukses selalu bang untuk kedepannya"
+        "pesan": "Sukses selalu bang untuk kedepannya dan semoga di lanacar segala urusan perkualihan nya bang"
       },
       {
         "nama_kating": "Rifky Henry Ferdianto",
         "foto_massal_gdrive_id": "11SXtt17gzQFmeBmRCCZeoejqUFr4upQ5",
         "kesan": "Abangnya keren, pinter, trus bijaksana banget karena abang nya bisa manage waktu apalahi menjadi ketang itu harus mengurus angkatan tapi halangan untuk trus memberikan hal positif bagi oarang di sekitar kita",
-        "pesan": "Sehat selalu bang, semoga apa yang menjadi cita cita dan keinginan abang  bisa tercapai"
+        "pesan": "Terus melangkah dan jadilah pemimpin yang hebat di mana pun berada bang semoaga sehat selalu bang"
       },
       {
         "nama_kating": "Ni Made Okta Viola Darma Putri",
         "foto_massal_gdrive_id": "1Jqp1P1Q38_PoJV6rXOkZiK6KDMx6u2MC",
-        "kesan": "Kakaknya ramah, baik dan kritis",
+        "kesan": "Kakaknya ramah, ceria, idealis dan pinter",
         "pesan": "Terima kasih kak atas informasi departemen nya kak, trus lah menjadi orang yang selalu menyebarkan hal positif kak"
       },
       {
         "nama_kating": "Melva Shaprina Febrianti",
         "foto_massal_gdrive_id": "1CJpSNwr2aj9tgjcc_4hrYBx5lea_ZY-V",
-        "kesan": "Kakanya cantik, manis dan humble juga",
-        "pesan": "Sehat selalu kak, jangan lupa bahagiaa"
+        "kesan": "Kakanya baik, pinter, murah senyum",
+        "pesan": "Sehat selalu bang, semoga apa yang menjadi cita cita dan keinginan abang  bisa tercapai"
       },
       {
         "nama_kating": "Raihana Adelia Putri",
@@ -437,13 +437,13 @@
       {
         "nama_kating": "Felisya Nabila Putri Nugroho",
         "foto_massal_gdrive_id": "1ePbHwFgQfoibAmsPkqCURP3bq05f1gAt",
-        "kesan": "Kakaknya imut, manis, baik pula",
+        "kesan": "kak felisya real real sangat PDD banget karena aku sering liat kaka jadi pdd, kayanya kaka tuh udah nyatu banget sama PDD, kak tutor pake kamera dong kak",
         "pesan": "Semoga Kakak sukses terus ke depannya, dilancarkan semua urusannya"
       },
       {
         "nama_kating": "Bunga Clarisa Sefa",
         "foto_massal_gdrive_id": "16mxO_T7qb9MvSn-inu7sg_BvQLFNE1b8",
-        "kesan": "Seneng banget kenal kakak yang ekspresif, ceria, dan penuh empati",
+        "kesan": "kak bunga tuh wangi banget kaya namanya, spill parfume dong kak. kak bunga juga cantik banget kaya namanya cihuyyyyy. kaka tau beda bunga dan kaka ga? ga ada beda nya sih kak soalnya sama sama cantik EAAAAAA",
         "pesan": "Sukses terus kak dan selalu di kelilingi hal yang baik"
       },
       {
@@ -455,37 +455,37 @@
       {
         "nama_kating": "Difanya Husakina",
         "foto_massal_gdrive_id": "1Tso5EuDLCThtXYMdzk0fp5s50isfibwO",
-        "kesan": "Kakaknya baik dan ramah",
+        "kesan": "kak difanya tuh cantik banget, trus imut jugaaaaaa. pertama kali lihat kak difanya aku kagum banget soalnya kakanya keliatan pintar gitu, kak spill skincare nya dong kak, aku ngefansss bgt sama kaka",
         "pesan": "Semoga ke depannya makin banyak hal baik yang datang dan selalu semangat menjalani hari-harinya."
       },
       {
         "nama_kating": "Donna Maya Puspita",
         "foto_massal_gdrive_id": "1rf36YZQ0vwkjDYFF0lmvWgdUTlOhzRmC",
-        "kesan": "kakaknya baik, pinter, lucu, dan humble",
+        "kesan": "kakaknya baik, pinter, dan humble trus kalau di ajak ngobrol juga gak sombong",
         "pesan": "Tetap jadi Kakak yang santai, asik, dan gampang bikin orang nyaman ya"
       },
       {
         "nama_kating": "Nayla Salsabila Fathianisa",
         "foto_massal_gdrive_id": "1YPgRhl3E8lRXFO5v40liumNCx1vpZgeG",
-        "kesan": "Kakaknya baik, bisa  mengayomi, dan humble",
+        "kesan": "Berbagi pengalaman  bersama kami adalah hal  yang sangat berharga. Cara  Kakak menyelesaikan masalah organisasi selalu memberikan contoh yang baik bagi kami kedepan nya apalagi di departemen yang sibuk seperti media kreatif ini kak yang harus stay setiap ada acara",
         "pesan": "Semoga Kakak selalu sehat, bahagia, dan sukses terus ke depannya. Tetap jadi orang yang seru dan penuh energi ya, Kak."
       },
       {
         "nama_kating": "Labo John Noel Napitupulu",
         "foto_massal_gdrive_id": "1ljn3aIgWQBrOIG8J57nILI97ENSkatzm",
         "kesan": "Abangnya terlihat cool, mudah di ajak ngobrol gak sombong trus cara menyampaikan argumen nya itu jelas banget",
-        "pesan": "Sukses terus bang dan selalu datang hal hal baik"
+        "pesan": "Semoga skripsi dan  tugas akhir abang di permudah,  Tetap jalin komunikasi dan silaturahmi dengan kami"
       },
       {
         "nama_kating": "Alya Ramadhanti",
         "foto_massal_gdrive_id": "1MTe00_Kjg5Pyn732FdkxtMt7Jgx78hyd",
-        "kesan": "Kakaknya baik dan juga ramah",
+        "kesan": "kak alyaa humble banget, trs selama wawancara kak alya yang sering bikin aku senyum senyum sendiri soalnya kaka nya rill bikin suasana nyaman gituu lohhhhh",
         "pesan": "Semoga sukses terus ya, Kak! Tetap jadi orang yang ceria dan penuh energi."
       },
       {
         "nama_kating": "Zannuba Arifah Ilman",
         "foto_massal_gdrive_id": "1r4Y7V17kqi8_toRci6479SiLH6kWh1Gq",
-        "kesan": "Kakaknya asik dan juga baik",
+        "kesan": "kak zannuba tuh rill baik bangetttt, trusss cantik juga, pas pertama ketemu kakanya aku gabisa bedain kaka dan matahari soalnya sama sama versinar di mata akuuu EAAAAA",
         "pesan": "Semangat terus ya kak dan sukses terus kedepannya"
       },
       {
@@ -503,19 +503,19 @@
       {
         "nama_kating": "Muhammad Razan Maulana Pratama",
         "foto_massal_gdrive_id": "1T5Bb7XKbn6RfiLQ-HjflwhmORKykbkv2",
-        "kesan": "Abangnya baik, pinter, pendiam dan idealis",
+        "kesan": "bang razan vibes nya udah kamera benget sih, kek udah nyatu banget gitu sama kamera, ga heran abangnya masuk divisi dokumentasi soalnya udah PDD BANGETTTTT.",
         "pesan": "Semoga semua urusannya dilancarkan dan apa yang dicita-citakan bisa tercapai."
       },
       {
         "nama_kating": "Allisha",
         "foto_massal_gdrive_id": "13I50gvvl214qmscIh4HfLykZNryrw22-",
-        "kesan": "Kakaknya ceria dan humoris",
+        "kesan": "kak alisha baik bangettt, trs soft spoken juga, saking soft spokennya pas waktu minta foto tuh aku agak gugup gitu karena maluu banget AGIFAIGFAJKGAIUAFIUA ngetik ini sambil malu hehehe",
         "pesan": "Semoga semua urusannya dilancarkan dan apa yang dicita-citakan bisa tercapai"
       },
       {
         "nama_kating": "Sania Dwi Ayu Lestari",
         "foto_massal_gdrive_id": "1A95hVZKaATDzE_pXa_lX7IE1R1fXRWri",
-        "kesan": "Kakaknya baik, ramah, humoris",
+        "kesan": "omegot ini kaka yg seleb itu ga sih, aku sering list tiktok kakak lewat di fyp aku, sekarang aku tau knp kaka jadi kadiv nya, soalnya selebb banget loh, gak nyangka bisa foto sama seleb hehe.",
         "pesan": "semangat terus kak dalam menjlani apapun dan selalu di kelilingi hal hal baik"
       },
       {
@@ -527,7 +527,7 @@
       {
         "nama_kating": "Shafa Delaila Azzahra",
         "foto_massal_gdrive_id": "1rvCrR-xGT3jTSFha_wU9k4bgck_Bz_Rw",
-        "kesan": "Kakaknya terlihat lembut dan baik",
+        "kesan": "kak shafa tuh cantik banget, trusss putih banget jugaaaa. kakanya kok bisa putih banget sih kak? kaka pake lulur apa sih kak? aku pake lulur kopi tapi ga putih putih",
         "pesan": "Sehat selalu ya kak dan di limpahkan hal hal baik"
       },
       {
@@ -537,16 +537,16 @@
         "pesan": ""
       },
       {
+        "nama_kating": "Gusti Putu Ferazka Dhiyamika",
+        "foto_massal_gdrive_id": "14xYUF7BUJY2XVx7p-NEUS-kxmXs_e92G",
+        "kesan": "Kakak razka selalu ceria, humble dan tidak sombong, keep smile kak",
+        "pesan": "Semoga kakak nya selalu bahagia walaupun banyak tugas yang harus di selesaikan semoga tugas akhir  nya di mudah nya kak"
+      },
+      {
         "nama_kating": "Bryan Paskah Telaumbanua",
         "foto_massal_gdrive_id": "1RCXqQh69NiCXX8wY1D0YTZAUulJsESkY",
         "kesan": "Bang Bryan ramah dan murah senyum , bahkan ke orang baru kayak aku. Pas jawabanku masih kaku dia sabar dan nggak pernah ngetawain.",
         "pesan": "Semoga live abang selalu rame dan banyak yang sawer"
-      },
-      {
-        "nama_kating": "Gusti Putu Ferazka D.",
-        "foto_massal_gdrive_id": "14xYUF7BUJY2XVx7p-NEUS-kxmXs_e92G",
-        "kesan": "",
-        "pesan": ""
       },
       {
         "nama_kating": "Indah Julia Mawar Pratiwi",
@@ -611,8 +611,8 @@
       {
         "nama_kating": "Ali Aristo Muthahhari Parisi",
         "foto_massal_gdrive_id": "170Ta5ctTEh-Dr3MB0cFuXuxEwP8JM0HX",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Abang ali itu profesionalisme banget, terlihat pendiam tapi kalau di sapa gak pernah sombong",
+        "pesan": "Jaga terus semangat persaudaraannya ya bang."
       },
       {
         "nama_kating": "Muhammad Afdal Lutfi",
@@ -623,20 +623,32 @@
       {
         "nama_kating": "Kevin Antonio Junior",
         "foto_massal_gdrive_id": "1kOaMJradxhVtsXbik8DMPf-hTRDWW7dx",
-        "kesan": "Abang nya seru banget dan ceria dan gak sombong",
+        "kesan": "Abang kevin itu orang asik kalau di ajak ngobrol ngalir trus sehingga apa yang di sampaikan bisa paham",
         "pesan": "Semangat trus bang untuk memberikan arahan kepada kami yang maish berproses ini, semoga kebaikan aban akan di balas di kemudian hari"
+      },
+      {
+        "nama_kating": "Salavia Naharani",
+        "foto_massal_gdrive_id": "1yqSv3wvOgyHkJOYDJbckV458Ft3l7mAy",
+        "kesan": "Meskipun waktu first meet kita gak sempat ngobrol sepatah kata pun, senyuman dan kontak mata hangat dari Kak udah cukup bikin suasana canggung jadi kerasa adem",
+        "pesan": "Makasih ya Kak udah menyambut lewat gestur dan senyuman yang ramah banget. Energi positifnya berasa"
+      },
+      {
+        "nama_kating": "Jeremi Marolop Partogi Situmorang",
+        "foto_massal_gdrive_id": "1het3RSgqT8rGTp1WvSrJnkALZt1jaELh",
+        "kesan": "Abang nya kalau lihat dari tampang nya itu agak garang dan gak mudah bersosialisasi tapi pas ketemu orang nya asik kok",
+        "pesan": "Teruslah melangkah dengan penuh optimisme. Semoga kejayaan dan kebahagiaan selalu menyertai langkah abang"
+      },
+      {
+        "nama_kating": "Nobel Nizam Fathirizki",
+        "foto_massal_gdrive_id": "1MRcX_ggwPJfhO3sLLFnmW-rSjigYjeCj",
+        "kesan": "Ketegasan Abang dalam mengoreksi kesalahan kami adalah bentuk kasih sayang yang nyata. Kami menyadari bahwa setiap teguran Abang bertujuan membentuk mental kami agar siap menghadapi dunia nyata.",
+        "pesan": "Terima kasih atas pembelajaran dan pendidikan  berharganya, Bang. Semoga lelah Abang berbuah manis, membawa Abang pada kelulusan terbaik dan karir cemerlang yang dapat membanggakan seluruh orang terdekat Abang."
       },
       {
         "nama_kating": "Desman Velius Halawa",
         "foto_massal_gdrive_id": "17u8G3VtsSFAk7Gj0If1M0T9ub2Ks1zeP",
         "kesan": "Awalnya keliatan garang banget, eh pas udah ngobrol ternyata Abang orangnya kocak dan asyik diajak diskusi. Pembelajaran pas wwc nya sampek sekarang belum mengerti kenapa di tanya pernah naik gajah",
         "pesan": "Makasih udah ngebuka wawasan kita, Bang. Semoga urusan kuliah Abang makin lancar, gak dipersulit dosen, dan cepet dapet gelar sarjana yang membanggakan!"
-      },
-      {
-        "nama_kating": "Jeremi Marolop P",
-        "foto_massal_gdrive_id": "1het3RSgqT8rGTp1WvSrJnkALZt1jaELh",
-        "kesan": "",
-        "pesan": ""
       },
       {
         "nama_kating": "Nabila Nur Azizah",
@@ -659,7 +671,7 @@
       {
         "nama_kating": "Putri Manna Anantama Simbolon",
         "foto_massal_gdrive_id": "1objCOTiSSNOygnexNl2InwGu-9dKKJhW",
-        "kesan": "Gak nyangka masa orientasi bisa seseru ini. Kakak  pinter banget nyesuaiin diri sama kita, bikin suasana jadi hidup dan gak kerasa kaku sama sekali.",
+        "kesan": "Gak nyangka masa rangkaian  bisa seseru ini. Kakak  pinter banget nyesuaiin diri sama kita, bikin suasana jadi hidup dan gak kerasa kaku sama sekali. kakak juga pas pertama jumpa kayak sombong gitu tapi pas udah di ajak ngobrol di luar ekspektasi kakak nya ceria dan peduli banget",
         "pesan": "Stay awesome, Kak! Semoga segala impian besar yang lagi Kakak perjuangkan bisa terwujud secepatnya"
       },
       {
@@ -669,22 +681,10 @@
         "pesan": "moga sukses selalu dalam perkuliahan dan karirnya. Jangan pernah lelah menyebarkan kebaikan dan menginspirasi kami kak."
       },
       {
-        "nama_kating": "Nobel Nizam F",
-        "foto_massal_gdrive_id": "1MRcX_ggwPJfhO3sLLFnmW-rSjigYjeCj",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Salavi Naharani",
-        "foto_massal_gdrive_id": "1yqSv3wvOgyHkJOYDJbckV458Ft3l7mAy",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
         "nama_kating": "Vany Salsabila Putri",
         "foto_massal_gdrive_id": "1qumo0mLhrY_rTVStKRBL3cJWdB8bh7SY",
-        "kesan": "Kakak itu sosok kating cewek yang keren banget! Pinter, mandiri, tapi tetep mau ngerangkul kita yang masih polos ini dengan penuh kehangatan dan kesabaran.",
-        "pesan": "Stay awesome, Kak! Semoga segala impian besar yang lagi Kakak perjuangkan bisa terwujud secepatnya."
+        "kesan": "Kakak itu sosok kating cewek yang keren,pinter, mandiri, tapi tetep mau ngerangkul kita yang masih polos ini dengan penuh kehangatan dan kesabaran.",
+        "pesan": "Stay awesome, Kak Semoga segala impian besar yang lagi Kakak perjuangkan bisa terwujud secepatnya."
       },
       {
         "nama_kating": "Euodia Meiliana Friedita",
@@ -695,7 +695,7 @@
       {
         "nama_kating": "Caesar Ozora Alrando",
         "foto_massal_gdrive_id": "1QHNbfdoQJaQp81NFQo3Lz_dEGVC_dJNJ",
-        "kesan": "Kesetiakawanan dan rasa kebersamaan yang Abang ajarkan sungguh melekat di hati. Abang berhasil menyatukan kami dan menghilangkan batas ketakutan antara junior dan senior dengan sangat elegan.",
+        "kesan": "Kesetiakawanan dan rasa kebersamaan yang Abang ajarkan sungguh melekat di hati. Abang berhasil menyatukan kami dan menghilangkan batas ketakutan antar saya dan abang sebagai kating   dengan sangat elegan.",
         "pesan": "Jaga terus semangat persaudaraan ini, Bang. Semoga kelak saat Abang melangkah ke dunia kerja, kemudahan dan keberuntungan selalu memihak pada setiap usaha keras yang Abang lakukan."
       },
       {
@@ -707,8 +707,8 @@
       {
         "nama_kating": "Arienta Khusnul Ananda",
         "foto_massal_gdrive_id": "1ZydVZs0QeeNqI5EuHxySg1Sy3dxaJJ1J",
-        "kesan": "Wibawa dan kepemimpinan kakak membuat kami sangat segan namun merasa terlindungi. Bimbingan kakak  yang tegas namun beretika telah mendidik kami menjadi junior yang disiplin dan bertanggung jawab.",
-        "pesan": "Wibawa dan kepemimpinan kakak membuat kami sangat segan namun merasa terlindungi. Bimbingan kakak  yang tegas namun beretika telah mendidik kami menjadi junior yang disiplin dan bertanggung jawab."
+        "kesan": "Wibawa dan kepemimpinan kakak membuat kami sangat segan namun merasa terlindungi. Bimbingan kakak  yang tegas namun beretika telah mendidik kami menjadi junior yang disiplin dan bertanggung jawab. jujur pas saya jadi maba kak melihat kader itu hal yang kurang bermanfaat, tapi ketika saya sudah masuk kedalam rangkaiannya saya sadar hal tersebut sepepenuh nya bermanfaat menjadi fondasi saya untuk berani berorganisasi",
+        "pesan": "Terima kasih kak. telah mmeberikan kami wadah untuk bisa berkembang sejauh ini kak, semoaga dedikasi dan hal yang kak berikan kepada kami bisa bermanfaat bagi kami, semoga segala urusan kakak dalam perkuliahan di permudah hingga wisuda."
       },
       {
         "nama_kating": "Ayake Alfatih Ramadan",
@@ -719,8 +719,8 @@
       {
         "nama_kating": "Afriza Azmi",
         "foto_massal_gdrive_id": "1wdrGgkb9UiqwspMJcO1eTV-1kn21NDIK",
-        "kesan": "Gue bersyukur banget dapet bimbingan dari Abang. Kesabaran kalian ngejawab pertanyaan konyol kita tuh bener-bener patut diacungi jempol. Makasih banyak ya!",
-        "pesan": ""
+        "kesan": "Aku  bersyukur banget dapet bimbingan dari Abang. Kesabaran abang  ngejawab pertanyaan konyol kita tuh bener-bener patut diacungi jempol. Makasih banyak ya bang",
+        "pesan": "Makasih bang atas dedikasi mau untuk merangkul dan mengajarkan kami tentang kebersamaan selama dalam rangkaian ini bang"
       },
       {
         "nama_kating": "Queenta Thifaal Nabila",
@@ -732,7 +732,7 @@
         "nama_kating": "Sekar Dini Widya Putri",
         "foto_massal_gdrive_id": "15r4rq493wUAqX3vqOKu1j8FMZm_Karrx",
         "kesan": "Awal jumpa, pembawaan Kakak tenang banget dan bikin segan. Ada rasa aman dan nyaman tersendiri saat mendengarkan cara bicaranya yang dewasa, tertata, dan sangat bijaksana.",
-        "pesan": "Makasih atas ketenangan dan masukan berharganya sejak awal kenal. Semoga jalan Kakakmenuju kelulusan dan karir masa depan selalu diberi kemudahan serta keberkahan"
+        "pesan": "Makasih atas ketenangan dan masukan berharganya sejak awal kenal kakak . Semoga jalan Kakak menuju kesuksesan  dan karir masa depan selalu diberi kemudahan serta keberkahan"
       },
       {
         "nama_kating": "Juesi Apridelia Saragih",
@@ -750,12 +750,12 @@
         "nama_kating": "Siti Sarifah Sumamah",
         "foto_massal_gdrive_id": "175vqlQeCjKiQEL2NAb1Ld7EYiZRUcbHH",
         "kesan": "Cara Kakak menyampaikan fungsi perancangan aturan hingga pengawasan lembaga bikin kami makin mantap untuk berproses di sini. Keteladanan dan gaya komunikasi kalian bener-bener memberikan inspirasi besar bagi kami",
-        "pesan": "Jangan pernah bosan mengajari dan mengarahkan kami ya. Semoga kesuksesan, kesehatan, serta keberuntungan selalu menyertai setiap langkah perjuangan Kakak dan Abang dalam meraih cita-cita tertinggi"
+        "pesan": "Jangan pernah bosan mengajari dan mengarahkan kami ya. Semoga kesuksesan, kesehatan, serta keberuntungan selalu menyertai setiap langkah perjuangan Kakak  dalam meraih cita-cita tertinggi"
       },
       {
         "nama_kating": "Gh Mikael Niko A S",
         "foto_massal_gdrive_id": "1QIm-bGBmzcJis03UTASjCOZL-rZUplqP",
-        "kesan": "Awalnya sempat canggung dan takut sebelum masuk ruangan, tapi kehangatan Abang di pertemuan pertama ini langsung bikin suasana terasa cair, aman, serta penuh rasa kekeluargaan yang sangat tinggi.",
+        "kesan": "Awalnya sempat canggung dan takut sebelum mulai forum wwc, tapi kehangatan Abang di pertemuan pertama ini langsung bikin suasana terasa cair, aman, serta penuh rasa kekeluargaan yang sangat tinggi.",
         "pesan": "Respect berat buat Abang! Semoga di mudah setiap urusan dan tugas berjalan sangat lancar, dan Abang kelak sukses menjadi pemimpin hebat yang berdampak luas bagi banyak orang di dunia profesional luar sana!"
       },
       {
@@ -767,7 +767,7 @@
       {
         "nama_kating": "Ridho Benedictus Togi Manik",
         "foto_massal_gdrive_id": "1wWLytEoNepaPBEX2VsYz0Vqa2iGoUzIt",
-        "kesan": "Cara Abang membagikan pengalaman hidup membakar semangat berjuang kami. Abang mengajarkan kami untuk tidak menjadi mahasiswa yang lemah, melainkan sosok yang berani mengambil risiko demi masa depan.",
+        "kesan": "Cara Abang membagikan pengalaman hidup membakar semangat berjuang kami. Abang mengajarkan kami untuk tidak menjadi mahasiswa yang lemah, melainkan sosok yang berani mengambil risiko demi masa depan. abnag juga orang nya humble, bisa mnacair kan suasana, rendah hari dan profesionalisme banget",
         "pesan": "Tetaplah menjadi abang tingkat yang membanggakan. Semoga segala cita-cita Abang tercapai tuntas, dan jalan menuju kesuksesan terbuka lebar tanpa ada halangan yang mampu menghentikan langkah Abang."
       },
       {
@@ -779,7 +779,7 @@
       {
         "nama_kating": "Jona Timothy Ogatse Panjaitan",
         "foto_massal_gdrive_id": "1mdbBiUE1rF2YyWO55TfO2zYcZOJDfkR6",
-        "kesan": "Pas pertama ketemu, gaya bicara dan candaan Abang langsung bikin suasana yang tadinya tegang jadi pecah dan seru. Bener-bener tipe orang yang kehadiran pertamanya selalu bawa kebahagiaan.",
+        "kesan": "Pas pertama ketemu, gaya bicara dan candaan Abang langsung bikin suasana yang tadinya tegang jadi pecah dan seru. Bener-bener tipe orang yang kehadiran pertamanya selalu bawa kebahagiaan. dan say belum tau bang tujuan dari abnag menanyakan ke kami perihal kalau kamu jadi hewan mau jadi hewan apa ?",
         "pesan": "Makasih udah bikin momen pertemuan awal yang tadinya bikin deg-degan jadi seru banget. Tetap jadi sosok yang humoris ya Kak/Bang, sukses selalu buat skripsi serta masa depanmu"
       },
       {
@@ -809,14 +809,14 @@
       {
         "nama_kating": "Helmy Surya Pratama",
         "foto_massal_gdrive_id": "1SX31YXmvLlCzrst_-chvD5cxz5gImPJ2",
-        "kesan": "Aura ketegasan dan wibawa Kakak dan Abang saat menjelaskan peran senator beneran bikin kagum. Kalian ngebuktiin kalau parlemen mahasiswa prodi bisa tampil sangat keren, kritis, profesional, tanpa perlu terkesan senioritas kaku.",
-        "pesan": "Bimbing kami terus di Kesenatoran ya! Semoga organisasi ini makin solid di bawah kepemimpinan kalian, seluruh urusan perkuliahan dimudahkan, dan mimpi besar kalian bisa segera terwujud nyata!"
+        "kesan": "Aura ketegasan dan wibawa Abang saat menjelaskan peran senator beneran bikin kagum. Kalian ngebuktiin kalau badan kesenatoran  mahasiswa prodi bisa tampil sangat keren, kritis, profesional, tanpa perlu terkesan senioritas kaku.",
+        "pesan": "Bimbing kami terus di Kesenatoran ya! Semoga organisasi ini makin solid di bawah kepemimpinan abang, walaupun bnayak propaganda yang terjadi seluruh urusan perkuliahan dimudahkan, dan mimpi besar kalian bisa segera terwujud nyata!"
       },
       {
         "nama_kating": "Nadya Ratu Anjani",
         "foto_massal_gdrive_id": "1ZYl70Vom6H5dLzuOYoAJxq1dZkv9lQ45",
         "kesan": "First impression di Badan Kesenatoran bener-bener luar biasa: rapi, terarah, dan punya iklim kekeluargaan yang begitu kental. Cara Kakak  merangkul kami di first meet sungguh sangat berkesan.",
-        "pesan": "Makasih banyak sudah menyambut kami dengan tangan terbuka. Semoga dedikasi kalian dibalas dengan kemudahan hidup, hasil skripsi yang sangat memuaskan, serta kebahagiaan sejati di masa depan nanti!"
+        "pesan": "Makasih banyak sudah menyambut kami dengan tangan terbuka. Semoga dedikasi kalian dibalas dengan kemudahan hidup, hasil skripsi yang sangat memuaskan, serta kebahagiaan sejati di masa depan nanti kak"
       },
       {
         "nama_kating": "Aqila Zayyan Salsabil",
@@ -828,7 +828,7 @@
         "nama_kating": "Suci Aulia",
         "foto_massal_gdrive_id": "1z2sdx8tc_PtuAqDyPsmC69MaELPCTfwf",
         "kesan": "Awalnya kelihatan garang dan menakutkan dari luar, eh pas diajak ngobrol di first meet ternyata kakak orangnya super baik, asyik, dan kocak banget. Perhatian kakak ke kami beneran bikin kaget.",
-        "pesan": "Makasih sudah menghancurkan rasa canggung kami dari awal kenal, Bang. Sukses terus buat studi, organisasi, dan semoga Abang bisa menyelesaikan pengerjaan tugas akhir dengan nilai IPK yang sangat memuaskan!"
+        "pesan": "Makasih sudah menghancurkan rasa canggung kami dari awal kenal kak . Sukses terus buat studi, organisasi, dan semoga kakak bisa menyelesaikan pengerjaantugas di perkualiahn dengan nilai IPK yang sangat memuaskan!"
       },
       {
         "nama_kating": "Fernando Dimetrius Barus",
@@ -840,31 +840,31 @@
         "nama_kating": "Hazel Mahesa Handhaka",
         "foto_massal_gdrive_id": "1WBeSyCyKNJDSSU27_jBApncgSz2C2cbU",
         "kesan": "Wibawa Abang saat menjelaskan peran penting senator di first meet beneran bikin kami segan sekaligus kagum. Abang menunjukkan karakter pimpinan yang tegas, lugas, namun tetap sangat menghargai posisi juniornya (kami yang 2025)",
-        "pesan": "Respect berat buat Abang! Semoga penyusunan skripsi berjalan sangat lancar, dan Abang kelak sukses menjadi pemimpin hebat yang berdampak luas bagi banyak orang di dunia profesional luar sana!"
+        "pesan": "Respect berat buat Abang! Semoga segala tugas di perkuliahan berjalan sangat lancar, dan Abang kelak sukses menjadi pemimpin hebat yang berdampak luas bagi banyak orang di dunia profesional luar sana!"
       },
       {
         "nama_kating": "Dwi Rahma Fitriani",
         "foto_massal_gdrive_id": "1_UbYC79n2LPkEeMxsLTUfqJlTuPqUMEP",
-        "kesan": "Antusiasme dan semangat Abang saat menyambut kami di Badan Kesenatoran membuat kami semakin mantap untuk belajar dunia legislatif. Energi positif dari abang bener-bener menular ke kami semua yang hadir di ruangan.",
-        "pesan": "Tetap menyebarkan positive vibes ya, bang! Semoga sidang skripsinya dapet nilai terbaik yang memuaskan nantinya kedepannya , dan karier profesional abang melesat cepat setelah resmi menyandang gelar sarjana nanti di kampus!"
+        "kesan": "Antusiasme dan semangat Abang saat menyambut kami di Badan Kesenatoran membuat kami semakin mantap untuk belajar dunia legislatif. Energi positif dari kakak bener-bener menular ke kami semua yang hadir di ruangan.",
+        "pesan": "Tetap menyebarkan positive vibes ya, kakak! Semoga bentuk usaha dapet nilai terbaik  dan hasil yang memuaskan nantinya kedepannya"
       },
       {
         "nama_kating": "Lia Hana Ichisasmita",
         "foto_massal_gdrive_id": "1ikdjapyBgS-Y3wC6R1qwKYqyIvTe9ETK",
-        "kesan": "Awalnya sempat canggung dan takut sebelum masuk ruangan, tapi kehangatan  Abang di pertemuan pertama ini langsung bikin suasana terasa cair, aman, serta penuh rasa kekeluargaan yang sangat tinggi.",
-        "pesan": "Senang sekali bisa kenal dan dirangkul kalian. Semoga seluruh agenda Kesenatoran berjalan sukses, pengerjaan skripsi kalian tidak menemui kendala, serta kejayaan selalu menyertai setiap langkah kalian!"
+        "kesan": "Awalnya sempat canggung dan takut sebelum masuk diskusi dengan aura badan kesenatorang yang dimana badan yang paling tau perihal kampus , tapi kehangatan  Abang di pertemuan pertama ini langsung bikin suasana terasa cair, aman, serta penuh rasa kekeluargaan yang sangat tinggi.",
+        "pesan": "Senang sekali bisa kenal dan dirangkul kakak. Semoga seluruh agenda Kesenatoran berjalan sukses, pengerjaan skripsi kalian tidak menemui kendala, serta kejayaan selalu menyertai setiap langkah kakak !"
       },
       {
         "nama_kating": "Fathinah Nur Azizah",
         "foto_massal_gdrive_id": "1AFz2jh79FmUdRiKzWtff5UZpfnvgUwbz",
         "kesan": "First meet di Badan Kesenatoran ini beneran membuka mata kami betapa krusialnya fungsi pengawasan dan legislasi di di KM  - ITERA. Kehadiran Kakak  yang lugas, terstruktur, tapi tetap hangat langsung menghilangkan rasa tegang kami sejak awal.",
-        "pesan": "Terima kasih atas sambutan hangat dan ilmunya. Semoga perjuangan kalian mengawal aspirasi selalu dilancarkan, pengerjaan tugas akhir berjalan sangat mulus, dan karir masa depan kalian melesat tinggi!"
+        "pesan": "Terima kasih atas sambutan hangat dan ilmunya kak. Semoga perjuangan kalian mengawal aspirasi selalu dilancarkan, pengerjaan tugas akhir berjalan sangat mulus, dan karir masa depan kalian melesat tinggi!"
       },
       {
         "nama_kating": "Wielman Itolo Halawa",
         "foto_massal_gdrive_id": "1Qj-7181rMzudvvT4i3OAftOL2zg7qHTi",
         "kesan": "Abang menyampaikan fungsi legislatif dan advokasi bikin kami makin mantap untuk berproses di sini. Keteladanan dan gaya komunikasi kalian bener-bener memberikan inspirasi besar bagi kami para junior. kami juga kagum dengan ada nya keahlian publik speaking abang dan humble",
-        "pesan": ""
+        "pesan": "Semoga  setiap langkah abang ke depan selalu dinaungi keberhasilan"
       },
       {
         "nama_kating": "Luthfia Laila Ramadhani",
@@ -875,20 +875,20 @@
       {
         "nama_kating": "Hafsa Fazila Arradhi",
         "foto_massal_gdrive_id": "1LFSFB5RELg8J3BMeB9zTaIGdfp3GPsop",
-        "kesan": "Jujur,kakak  itu senior paling keren yang pernah gue temui! Cara ngemongnya santai tapi tetep bikin kita paham dan hormat sama kakak.",
-        "pesan": "Tetep jadi senior yang humble dan asyik ya. Semoga semua impian abang  dipermudah Tuhan. Jangan kapok kalau nanti kita sering ganggu buat nanya!"
+        "kesan": "Jujur,kakak  itu kaitng keren yang pernah gue temui! Cara ngemongnya santai tapi tetep bikin kita paham dan hormat sama kakak.",
+        "pesan": "Tetep jadi kating  yang humble dan asyik ya. Semoga semua impian abang  dipermudah Tuhan."
       },
       {
         "nama_kating": "Qois Olifio",
         "foto_massal_gdrive_id": "1hY8ibxUDZRBBnLfKCSd6T9nH_d95YXIZ",
-        "kesan": "Kesan pertama ketemu emang keliatan galak, eh ternyata pas udah kenal malah asik di ajak bicara dan perhatian! Pembelajaran yang Abang berikan tentang sekretaris kemarin  beneran bikinnambah knowledge kami tentang gambaran sebgaia sekretaris di sebuah himpunan itu bagaimana",
+        "kesan": "Kesan pertama ketemu emang keliatan galak, eh ternyata pas udah kenal malah asik di ajak bicara dan perhatian!,Pembelajaran yang Abang berikan tentang sekretaris kemarin  beneran bikinnambah knowledge kami tentang gambaran sebgaia sekretaris di sebuah himpunan itu bagaimana",
         "pesan": "Tetep jadi senior yang bikin menginspirasi  ya bang ! Semoga jalan abang menuju masa depan selalu mulus dan sukses besar menyertai tiap langkah abang ."
       },
       {
         "nama_kating": "Efi Defiyati",
         "foto_massal_gdrive_id": "1Ee0-SYRZFHDISsKXOA3v3sdw6EhVpFbE",
         "kesan": "Gak nyangka masa orientasi bisa seseru ini. Kakak pinter banget nyesuaiin diri sama kita, bikin suasana jadi hidup dan gak kerasa kaku sama sekali.",
-        "pesan": "Jangan pernah bosen nyebarin energi positif kalian ya! Semoga cita-cita kalian segera tercapai dan makin suksessaat erjun ke dunia kerja nanti nya kak"
+        "pesan": "Jangan pernah bosen nyebarin energi positif kalian ya! Semoga cita-cita kalian segera tercapai dan makin sukses saat terjun ke dunia kerja nanti nya kak"
       },
       {
         "nama_kating": "Muhammad Aqil Ramadhan",
@@ -899,86 +899,20 @@
       {
         "nama_kating": "Ginda Fajar Riadi Marpaung",
         "foto_massal_gdrive_id": "1RjjX8W3egHQ3pK6-FwnXWg3Bgchn3JPF",
-        "kesan": "Abang tuh kating paling santai tapi tetep wibawa! Cara Abang ngajarin disiplin gak pake bentak-bentak, tapi pakenya contoh nyata yang bikin kita hormat.",
+        "kesan": "Abang tuh kating paling santai tapi tetep wibawa Cara Abang ngajarin disiplin gak pake bentak-bentak, tapi pakenya contoh nyata yang bikin kita hormat.",
         "pesan": "Respect banget sama Abang! Semoga skripsi dan karirnya melesat cepat. Tetep jadi abang tingkat yang solid dan selalu bisa diandalkan ya, Bang!"
       },
       {
         "nama_kating": "Fadil Prasetyo Alfarizzi",
         "foto_massal_gdrive_id": "",
-        "kesan": "Abangnya keren,produktif dan public speaking  nya luar biasa bannget",
-        "pesan": "Sehat selalu ya bang, semoga kuliahnya dilancarkan sampai lulus"
-      },
-      {
-        "nama_kating": "M. Alsi Syahrulloh",
-        "foto_massal_gdrive_id": "",
-        "kesan": "Abangnya keren, baik, lucu juga keliatannya",
-        "pesan": "Semangat terus bang kuliahnyaa"
-      },
-      {
-        "nama_kating": "Ahmad Bimo Akbar Arkan Putra",
-        "foto_massal_gdrive_id": "",
-        "kesan": "Awalnya kami segan karena Kak Bimo kelihatan serius, tapi ternyata orangnya asik dan royal sama ilmu. Banyak tips networking yang kami dapat dari obrolan santai.",
-        "pesan": "Makasih ilmunya kak, semoga cita-citanya cepat tercapai. Pokoknya kakak the best, jangan berubah ya."
-      },
-      {
-        "nama_kating": "Ahmad Farhan Ghani",
-        "foto_massal_gdrive_id": "",
-        "kesan": "Sikap Abang yang pantang menyerah, optimis, dan selalu berjiwa muda bener-bener nularin semangat positif ke semua orang di sekitar abang",
-        "pesan": "Tetap kocak ya bang, semoga kuliah dan karirnya lancar."
-      },
-      {
-        "nama_kating": "Muhammad Hanid Dzaky Arifin",
-        "foto_massal_gdrive_id": "",
-        "kesan": "Abang tuh tipe yang pengayom, komunikatif, dan fleksibel. Ngobrol atau diskusi hal berat pun rasanya jadi makin enteng kalau bareng Abang",
-        "pesan": "Semoga Allah selalu menjaga abang dan melancarkan semua urusan."
-      },
-      {
-        "nama_kating": "Gustin Haleluya Tampubolon",
-        "foto_massal_gdrive_id": "",
-        "kesan": "Kak Gustin tenang dan bijak. Pas aku jawab pelan karena grogi, dia sabar nunggu tanpa nyela.",
-        "pesan": "Tuhan memberkati kakak selalu, semoga sukses ya."
+        "kesan": "",
+        "pesan": ""
       },
       {
         "nama_kating": "Nazlah Auliya",
         "foto_massal_gdrive_id": "",
-        "kesan": "Kakaknya lembut dan baik",
+        "kesan": "Kak nazla tuh orangnya update sosial media banget, trus kaka nya juga seleb banget, cantik juga. first time ketemu kak nazla aku kagum banget soalnya kakanya cakep banget nget nget.",
         "pesan": "Semoga selalu punya energi positif buat diri sendiri dan orang-orang di sekitar. Sukses terus ya, Kak!"
-      },
-      {
-        "nama_kating": "Gusti Putu Ferazka Dhiyamika",
-        "foto_massal_gdrive_id": "",
-        "kesan": "Kakak razka selalu ceria, humble dan tidak sombong, keep smile kak",
-        "pesan": "Semoga kakak nya selalu bahagia walaupun banyak tugas yang harus di selesaikan semoga tugas akhir  nya di mudah nya kak"
-      },
-      {
-        "nama_kating": "Ari Aristo Muthahari Parisi",
-        "foto_massal_gdrive_id": "",
-        "kesan": "Abang ali itu profesionalisme banget, terlihat pendiam tapi kalau di sapa gak pernah sombong",
-        "pesan": "Jaga terus semangat persaudaraannya ya bang."
-      },
-      {
-        "nama_kating": "Nobel Nizam Fathirizki",
-        "foto_massal_gdrive_id": "",
-        "kesan": "Ketegasan Abang dalam mengoreksi kesalahan kami adalah bentuk kasih sayang yang nyata. Kami menyadari bahwa setiap teguran Abang bertujuan membentuk mental kami agar siap menghadapi dunia nyata.",
-        "pesan": "Terima kasih atas pembelajaran dan pendidikan  berharganya, Bang. Semoga lelah Abang berbuah manis, membawa Abang pada kelulusan terbaik dan karir cemerlang yang dapat membanggakan seluruh orang terdekat Abang."
-      },
-      {
-        "nama_kating": "Jeremi Marolop P. Situmorang",
-        "foto_massal_gdrive_id": "",
-        "kesan": "Abang nya kalau lihat dari tampang nya itu agak garang dan gak mudah bersosialisasi tapi pas ketemu orang nya asik kok",
-        "pesan": "Teruslah melangkah dengan penuh optimisme. Semoga kejayaan dan kebahagiaan selalu menyertai langkah abang"
-      },
-      {
-        "nama_kating": "Salavia Naharani",
-        "foto_massal_gdrive_id": "",
-        "kesan": "Meskipun waktu first meet kita gak sempat ngobrol sepatah kata pun, senyuman dan kontak mata hangat dari Kak udah cukup bikin suasana canggung jadi kerasa adem",
-        "pesan": "Makasih ya Kak udah menyambut lewat gestur dan senyuman yang ramah banget. Energi positifnya berasa"
-      },
-      {
-        "nama_kating": "Mochammad Iqbal Az-Zahir",
-        "foto_massal_gdrive_id": "",
-        "kesan": "Kakak dan Abang berhasil menciptakan suasana Departemen Bisnis dan Kemitraan yang sangat hangat, seru, produktif, dan jauh dari kaku",
-        "pesan": "Jangan pernah melupakan kami ya. Semoga tali silaturahmi kita tetap terjaga dan kesuksesan selalu menyertai setiap langkah kalian ke depannya."
       }
     ]
   }
