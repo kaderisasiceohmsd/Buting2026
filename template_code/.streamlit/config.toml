@@ -1,5 +1,15 @@
 [theme]
-primaryColor="#8D4C06A6"
-backgroundColor="#f6f1f1"
-secondaryBackgroundColor="#a97237a6"
-textColor="#000000"
+base = "light"
+primaryColor = "#8A5A44"
+backgroundColor = "#F4E7DB"
+secondaryBackgroundColor = "#E0B08B"
+textColor = "#5A3A2E"
+showWidgetBorder = true
+showSidebarBorder = false
+
+[theme.sidebar]
+primaryColor = "#8A5A44"
+backgroundColor = "#5A3A2E"
+secondaryBackgroundColor = "#8A5A44"
+textColor = "#F4E7DB"
+showWidgetBorder = true
