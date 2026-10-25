@@ -442,13 +442,13 @@ if menu == "Baleg":
             "https://drive.google.com/uc?export=view&id=1b4ihvQVkilptoBYxJxn6cN87N22CxZGz",
             "https://drive.google.com/uc?export=view&id=1XLfqqySUI1GZwfvXdimy4xZuXsZ_NPGF",
             "https://drive.google.com/uc?export=view&id=13o553ifaxwZOT4Bl76ivvMw_VIyGeQr1",
+            "https://drive.google.com/uc?export=view&id=1FBgogrZafPMTM_tQXKyCMyGCYFTVMYnX",
+            "https://drive.google.com/uc?export=view&id=1cnqOzyCER-SLkBKjnJaHHWGqZWyL3Mc3",
             "https://drive.google.com/uc?export=view&id=1qxS9MFBV4or6cxUk2CRrFX3MZejXxjFc",
             "https://drive.google.com/uc?export=view&id=1NmLHZDrNs7zO8JZDW4O_y03ue64YnemN",
-            "https://drive.google.com/uc?export=view&id=1FBgogrZafPMTM_tQXKyCMyGCYFTVMYnX",
             "https://drive.google.com/uc?export=view&id=19dMf3o3wFpvtlhymYKRSMdH6xVJ9HJxF",
             "https://drive.google.com/uc?export=view&id=1NM6rxMGbsSgXQ0OYW7bt77PFWKsEIP3J",
-            "https://drive.google.com/uc?export=view&id=1QKeSYxGrfddwvNEJAOx5BY8n2EDVjVn-",
-            "https://drive.google.com/uc?export=view&id=1cnqOzyCER-SLkBKjnJaHHWGqZWyL3Mc3", 
+            "https://drive.google.com/uc?export=view&id=1QKeSYxGrfddwvNEJAOx5BY8n2EDVjVn-", 
             "https://drive.google.com/uc?export=view&id=1Kx-bOjd57Sn06TDamVHjEOx6AznhRQPO",
             "https://drive.google.com/uc?export=view&id=1cZV39p1vwSZLVI4XMqZCy6YNG_PF8Pyl",
             "https://drive.google.com/uc?export=view&id=1kzqiJkJobraGw7xSQRl0RIzyb0OY6nwi",
@@ -521,6 +521,17 @@ if menu == "Baleg":
                 "pesan": "Makasih bangg udah share ilmu ke kitaa"
             },
             {
+                "nama": "Monica Patricia Tanjung",
+                "nim": "123450073",
+                "umur": "21",
+                "asal": "Jakarta Barat",
+                "alamat": "Kotabaru",
+                "hobbi": "Lari",
+                "sosmed": "@monica_tjg",
+                "kesan": "Kakaknya baikk cantikk dan ramahh:DD",
+                "pesan": "Makasih buat ilmu yang udah kakak kasih saat wwc"
+            },
+            {
                 "nama": "Afghanis Nursholehatunisa",
                 "nim": "124450042",
                 "umur": "20",
@@ -552,17 +563,6 @@ if menu == "Baleg":
                 "sosmed": "jeremia_hm",
                 "kesan": "Abannya kerenn dan suaranya bagus pas nyanyi, aku suka liat abang ngelike postingan kucing bontotss",
                 "pesan": "Makin kerenn yaa bangg, sehatt selalu dan dimudahkan segala urusan abangg"
-            },
-            {
-                "nama": "Monica Patricia Tanjung",
-                "nim": "123450073",
-                "umur": "21",
-                "asal": "Jakarta Barat",
-                "alamat": "Kotabaru",
-                "hobbi": "Lari",
-                "sosmed": "@monica_tjg",
-                "kesan": "Kakaknya baikk cantikk dan ramahh:DD",
-                "pesan": "Makasih buat ilmu yang udah kakak kasih saat wwc"
             },
             {
                 "nama": "Jona Timothy Ogatse Panjaitan",
