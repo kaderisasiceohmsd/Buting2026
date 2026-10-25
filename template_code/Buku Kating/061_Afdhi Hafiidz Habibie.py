@@ -571,8 +571,8 @@ if menu == "Departemen PSDA":
                 "Umur": "18",
                 "Asal":"Adam dan Hawa",
                 "Alamat": "Depan Kontrakan Yazids",
-                "Hobi": "Nonjokin orang
-                "Sosmed": "@yudiameilianaa_",
+                "Hobi": "Nonjokin orang",
+                "Sosmed": "@yudiameilianaa_", 
                 "Kesan": "Kak Euodia orangnya seru, Tegas , dan juga baik",  
                 "Pesan":"Semoga kak Euodia selalu dikelilingi oleh orang baik-baik "
             },
