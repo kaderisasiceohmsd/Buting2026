@@ -17,12 +17,12 @@ if menu == "Kesekjenan":
         "https://drive.google.com/uc?export=view&id=18oFNquLlj00f1LcRm3-axyFNfdtr-T3u"
     ]
     data_list = [
-        {"nama": "Ginda Fajar Riadi Marpaung", "jabatan": "Ketua Himpunan", "nim": "123450103", "umur": "22", "asal": "Batam", "alamat": "Kesekretariat HMSD", "hobbi": "Push IMO", "sosmed": "@jars_mrp", "kesan": "Abangnya seruu, dlu pernah jadi kadiv op pas natal SD25 bisa diajak serius dan bercanda.", "pesan": "Semangat dan sukses selalu bangg!!"},
-        {"nama": "Muhammad Aqil Ramadhan", "jabatan": "Sekretaris Jendral", "nim": "123450066", "umur": "22", "asal": "Riau", "alamat": "Kesekretariat HMSD", "hobbi": "Dzkir", "sosmed": "@muhammadaqil1111", "kesan": "Abangnya seru bisa diajak bercanda dan bisa diajak bicara serius.", "pesan": "Sukses selalu serta semangat dalam melaksanakan tugas!"},
-        {"nama": "Efi Defiyati", "jabatan": "Sekretaris 1", "nim": "123450005", "umur": "21", "asal": "Lampung Timur", "alamat": "Airan", "hobbi": "Membaca", "sosmed": "@eeffiidefi", "kesan": "Kakaknya murah senyum.", "pesan": "Sukses selalu kak dan semangat!"},
-        {"nama": "Qois Olifio", "jabatan": "Sekretaris 2", "nim": "123450067", "umur": "22", "asal": "Batam", "alamat": "Kota Baru", "hobbi": "Mainin surat", "sosmed": "@qoisolifio_", "kesan": "Abangnya soft spoken, lucuu.", "pesan": "Sukses selalu dan semangat bang!!"},
-        {"nama": "Hafsa Fazila Arradhi", "jabatan": "Bendahara 1", "nim": "123450079", "umur": "21", "asal": "Bandar Lampung", "alamat": "Bandar Lampung", "hobbi": "Bertemu Luluk", "sosmed": "@hafsafazilahh", "kesan": "Kakaknya baik, murah senyum, dan suka duit.", "pesan": "Sukses selalu dan semangat kakk!!"},
-        {"nama": "Luthfia Laila Ramadhani", "jabatan": "Bendahara 2", "nim": "123450004", "umur": "20", "asal": "Bengkulu", "alamat": "Airan", "hobbi": "Keliling Balam", "sosmed": "@luthhifiarmdhni", "kesan": "Kakaknya seru, lucuu, baikk.", "pesan": "Sukses selalu dan semangat kakkk!!"}
+        {"nama": "Ginda Fajar Riadi Marpaung", "jabatan": "Ketua Himpunan", "nim": "123450103", "umur": "22", "asal": "Batam", "alamat": "Kesekretariat HMSD", "hobbi": "Push IMO", "sosmed": "@jars_mrp", "kesan": "Abang kahim kaciww, keren banget bang", "pesan": "Semangat TA nya banggg, semoga lancar dan sukses selaluu"},
+        {"nama": "Muhammad Aqil Ramadhan", "jabatan": "Sekretaris Jendral", "nim": "123450066", "umur": "22", "asal": "Riau", "alamat": "Kesekretariat HMSD", "hobbi": "Dzkir", "sosmed": "@muhammadaqil1111", "kesan": "Bang aqil vibesnya religius banget, lucuu, humoris", "pesan": "Semangat TA nya bangg, semoga lancar dan sukses selaluu"},
+        {"nama": "Efi Defiyati", "jabatan": "Sekretaris 1", "nim": "123450005", "umur": "21", "asal": "Lampung Timur", "alamat": "Airan", "hobbi": "Membaca", "sosmed": "@eeffiidefi", "kesan": "Kakk efi cantikk nan baik hatii makasii banyak bimbingannyaa kakk, selalu sabar ngajarin adik adik magang yg amatir ini.", "pesan": "Semangat TA nya kakk, semoga lancar dan sukses selaluu"},
+        {"nama": "Qois Olifio", "jabatan": "Sekretaris 2", "nim": "123450067", "umur": "22", "asal": "Batam", "alamat": "Kota Baru", "hobbi": "Mainin surat", "sosmed": "@qoisolifio_", "kesan": "Bang qois soft spoken bangett, makasii banyak bimbinganyaa bangg", "pesan": "Semangat TA nya bangg, semoga lancar dan sukses selaluu"},
+        {"nama": "Hafsa Fazila Arradhi", "jabatan": "Bendahara 1", "nim": "123450079", "umur": "21", "asal": "Bandar Lampung", "alamat": "Bandar Lampung", "hobbi": "Bertemu Luluk", "sosmed": "@hafsafazilahh", "kesan": "Kak hafsa cantikk nan baik hatii, asik deh sharing session bareng kak hafsa ", "pesan": "Sukses selalu dan semangat kakk!!"},
+        {"nama": "Luthfia Laila Ramadhani", "jabatan": "Bendahara 2", "nim": "123450004", "umur": "20", "asal": "Bengkulu", "alamat": "Airan", "hobbi": "Keliling Balam", "sosmed": "@luthhifiarmdhni", "kesan": "Kak lulu cantikk nan baik hatii, penyabarr, makasii banyakk bimbingan ads nya kakk", "pesan": "Sukses selalu dan semangat kakkk!!"}
     ]
     display_images_with_data(gambar_urls, data_list, key="kesekjenan")
 
@@ -47,13 +47,13 @@ elif menu == "Baleg":
         {"nama": "Ridho Benedictus Togi Manik ", "jabatan": "Ketua Badan Legislatif", "nim": "123450060", "umur": "20", "asal": "Manchester", "alamat": "GH", "hobbi": "Wawancara", "sosmed": "@rmridhomanik", "kesan": "Bang ridho keren, asik banget", "pesan": "Semangat TA nya bangg, semoga lancar dansukses selalu bangg"},
         {"nama": "Juesi Apridelia Saragih", "jabatan": "Sekretaris Badan Legislatif", "nim": "123450085", "umur": "19", "asal": "Singkawang", "alamat": "Pelangi", "hobbi": "Dengerin lagu semusim", "sosmed": "@j__eesie", "kesan": "Kak Juee baik banget, suka kasi kata kata affirmasi buat semangatin adik asuh tpb <3333", "pesan": "Kak Juee semangat TA nya, semoga lancar dan sukses selalu kak <3"},
         {"nama": "Dharu Cahyoaji Sasongko", "jabatan": "Kepala Komisi I", "nim": "12245001", "umur": "20", "asal": "B. Lampung", "alamat": "Way Halim", "hobbi": "Organisasi", "sosmed": "@ddharu_", "kesan": "Bang dharu mapress kereennn,, aduhh when yahh", "pesan": "Semangat TA nya bangg, semoga lancar dan sukses selalu bangg"},
-        {"nama": "Gh Mikael Niko Anthoni Setiadi", "jabatan": "Staff Komisi I", "nim": "124450022", "umur": "20", "asal": "B. Lampung", "alamat": "Way Halim", "hobbi": "Organisasi", "sosmed": "@me._kael", "kesan": "bang niko keren, asikk, ramah", "pesan": "Semangat kuliahnya bangg, semoga lancar dan sukses selalu bangg"},
+       {"nama": "Gh Mikael Nico Antoni Setiadi", "jabatan": "Staf Eksternal", "nim": "124450025", "umur": "20", "asal": "Lamtim", "alamat": "Jati agung", "hobbi": "Main mcgg", "sosmed": "@me._kael", "kesan": "Santai dan seru, asyik diajak main bareng.", "pesan": "Tetap semangat, dan semoga rank-nya naik terus tanpa lupa kuliah."},
         {"nama": "Siti Sarifah", "jabatan": "Staff Komisi I", "nim": "124450015", "umur": "19", "asal": "Bekasi", "alamat": "Kedaton", "hobbi": "Mancing", "sosmed": "@syt.rifa", "kesan": "Kak Syarifa baikk, ramah, murah senyumm", "pesan": "Semangat kuliahnya kakk, semoga lancar dan sukses selalu kakk"},
         {"nama": "Givaro Ananta", "jabatan": "Kepala Komisi II", "nim": "124450078", "umur": "19", "asal": "Lampung Barat", "alamat": "Sukabumi", "hobbi": "Minum kopi", "sosmed": "@givarooo", "kesan": "Bang Givaro keren, seruuu, baik", "pesan": "Semangat TA nya bangg, semoga lancar dan sukses selalu bangg"},
         {"nama": "Afghanis Nursholehatunnisa", "jabatan": "Staff Komisi II", "nim": "124450042", "umur": "19", "asal": "Mentawai", "alamat": "Oen kost", "hobbi": "Ngoding", "sosmed": "@afghanisnt_", "kesan": "Kak nisa baikk, ramah, murah senyum", "pesan": "Semangat kuliahnya kakk, semoga lancar dan sukses selalu kakk"},
         {"nama": "Hani Qurrota Aini", "jabatan": "Staff Komisi II", "nim": "124450020", "umur": "20", "asal": "city earth", "alamat": "Sukarame", "hobbi": "Baca au", "sosmed": "@haniquratuain_", "kesan": "Kak Hani baikk, ramah, sama sama coer dengan bias yg sama^^", "pesan": "Kak Hani semangat kuliahnya, semoga lancar dan sukses selalu kakk"},
-        {"nama": "Jeremia Halim", "jabatan": "Staff Komisi II", "nim": "124450101", "umur": "20", "asal": "B. Lampung", "alamat": "Way Halim", "hobbi": "Organisasi", "sosmed": "@jeremia_hm", "kesan": "Bang Jeremia keren, asikk, ramah", "pesan": "Semangat kuliah nya bangg, semoga lancar dan sukses selalu bangg"},
-        {"nama": "Monica Patricia Tanjung", "jabatan": "Kepala Komisi III", "nim": "12245001", "umur": "20", "asal": "B. Lampung", "alamat": "Way Halim", "hobbi": "Organisasi", "sosmed": "@monica_tjg", "kesan": "Mantap", "pesan": "Jaya selalu!"},
+        {"nama": "Jeremia Halim", "jabatan": "Staf Eksternal", "nim": "124450101", "umur": "20", "asal": "Tangerang", "alamat": "Teluk Betung", "hobbi": "Nyanyi, olahraga", "sosmed": "@jeremia_hm", "kesan": "Ramah dan seru, enak diajak ngobrol.", "pesan": "Tetap semangat, dan semoga suaranya makin merdu serta badannya selalu sehat."},
+        {"nama": "Monica Patricia Tanjung", "jabatan": "Kepala Departemen Eksternal", "nim": "123450073", "umur": "21", "asal": "Sumut", "alamat": "Kota baru", "hobbi": "Merajut", "sosmed": "@monica_tjg", "kesan": "Sabar dan telaten, orangnya menyenangkan.", "pesan": "Tetap semangat dan semoga rajutannya makin bagus."},
         {"nama": "Jona Timothy Ogatse Panjaitan", "jabatan": "Staff Komisi III", "nim": "123450121", "umur": "20", "asal": "Depok", "alamat": "Pemda", "hobbi": "gym / koleksi figur", "sosmed": "@nagatsee", "kesan": "Bang Jona keren, asikk, ramah", "pesan": "Semangat kuliah nya bangg, semoga lancar dan sukses selalu bangg"},
         {"nama": "Sekardini Widya Putri", "jabatan": "Staff Komisi III", "nim": "124450082", "umur": "20", "asal": "Metro", "alamat": "Pemda", "hobbi": "Jajan sama nisa, putri, suci", "sosmed": "@sekardnwp", "kesan": "Kak Sekar baikk, ternyata setelah kenal asikk, ramah, murah senyum", "pesan": "Semangat kuliahnya kakk, semoga lancar dan sukses selalu kakk"},
         {"nama": "Wan Nashwa Al Hasni", "jabatan": "Staff Komisi III", "nim": "123450077", "umur": "20", "asal": "Pasay", "alamat": "Belwis", "hobbi": "Nyapa angin", "sosmed": "@nahaysh", "kesan": "Kak wan baikk, ramah, murah senyum", "pesan": "Semangat TA nya kakk, semoga lancar dan sukses selalu kakk"}
@@ -64,12 +64,12 @@ elif menu == "Baleg":
 elif menu == "Senator":
     gambar_urls = [
         "https://drive.google.com/uc?export=view&id=11VzVt8f9Qx4fFk1skcRHAOywZRWCXlAM",
-        "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-        "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+        "https://drive.google.com/uc?export=view&id=1pz2q8IMx_DkVHCrt48A_8R2ZKDaVTs04",
+        "https://drive.google.com/uc?export=view&id=1ifwRBz_hKORHzsfGGIwIPNjmI4vEs0S6",
         "https://drive.google.com/uc?export=view&id=17VznsQr9AORlXVIRaCIZ2wmlDl9ZL8Y5",
         "https://drive.google.com/uc?export=view&id=1uOYFvMB5TWhmw7_Fj7YuPz3tnVvh4ogP",
         "https://drive.google.com/uc?export=view&id=1DQJecL12ZqLClrXPhBhPj_uEHDxO4dSM",
-        "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+        "https://drive.google.com/uc?export=view&id=1A2_ewNtso7qwtbE8ffNisYMTlWAGDJbv",
         "https://drive.google.com/uc?export=view&id=1pcCONjNIecw6rIWKf4tyuuvM-OipZ70_",
         "https://drive.google.com/uc?export=view&id=1PEn0CzWfyMbTY7wdAdXPKN37-ScAZsxn",
         "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"
@@ -111,7 +111,7 @@ elif menu == "Departemen PSDA":
     ]
     data_list = [
         {"nama": "Arienta Khusnul Ananda", "jabatan": "Kepala Departemen PSDA", "nim": "123450097", "umur": "21", "asal": "Kalianda", "alamat": "Samping kost Haikal", "hobbi": "Naksir cowo cakep", "sosmed": "@arientakhsnl_", "kesan": "Ramah dan mudah akrab dengan siapa saja.", "pesan": "Tetap semangat kuliahnya dan jaga kesehatan ya."},
-        {"nama": "Vany Salsabila", "jabatan": "Sekretaris Departemen PSDA", "nim": "124450022", "umur": "21", "asal": "Sibolga", "alamat": "Cenderawasih 1", "hobbi": "Ngurus peternakan", "sosmed": "@charrlnn", "kesan": "Tenang dan enak diajak bicara.", "pesan": "Semoga selalu dimudahan dalam setiap urusan."},
+        {"nama": "Vany Salsabila Putri", "jabatan": "Sekretaris Departemen Kaderisasi", "nim": "123450022", "umur": "20", "asal": "Palembang", "alamat": "Pudan Kost", "hobbi": "Pacaran", "sosmed": "@vany.salsabilaa", "kesan": "Kak vany baikkk, walaupun keliatan judes", "pesan": "Semangat terus ya kak, lancar terus kuliahnya."},
         {"nama": "Nobel Nizam Fathirizki", "jabatan": "Kepala Divisi Kaderisasi", "nim": "123450117", "umur": "21", "asal": "Bandar Lampung", "alamat": "Urip", "hobbi": "-", "sosmed": "@nobelnizam", "kesan": "Kalem dan sopan, nyaman diajak ngobrol.", "pesan": "Terus semangat dan tetap konsisten dalam belajar."},
         {"nama": "Afriza Azmi", "jabatan": "Staf Kaderisasi", "nim": "124450110", "umur": "20", "asal": "Lamteng", "alamat": "Sebelah kost Haikal", "hobbi": "Nyebar beras", "sosmed": "@friezazmi", "kesan": "Santai dan menyenangkan.", "pesan": "Tetap jadi diri sendiri dan semangat terus."},
         {"nama": "Ayake Alfatih Ramadan", "jabatan": "Staf Kaderisasi", "nim": "124450108", "umur": "20", "asal": "Solo", "alamat": "Blok D No 57, Jln Manggis, Pemda Way Huwi, Lamsel, Jatiagung", "hobbi": "Goreng ayam", "sosmed": "@ykeall", "kesan": "Supel dan gampang bergaul.", "pesan": "Semangat terus kuliahnya, semoga lancar ke depannya."},
@@ -135,7 +135,7 @@ elif menu == "Departemen MIKFES":
     gambar_urls = [
     "https://drive.google.com/uc?export=view&id=1KhXBVqcWPg0oi9XOKiIk_06rzeEL7roZ",
     "https://drive.google.com/uc?export=view&id=1u64R9N6uSAls5jk1XHu0innG_Ja17jkd",
-    "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+    "https://drive.google.com/uc?export=view&id=11TBExLg2AaV9euzaGGOnH4-wST6jeusr",
     "https://drive.google.com/uc?export=view&id=1mIvC2NA0AcygBbVSlHqH4bYca_L6a2yT",
     "https://drive.google.com/uc?export=view&id=1n5xRq2jpENB0l2nYfqm4JcNJUmfqQGRo",
     "https://drive.google.com/uc?export=view&id=1ID4_KBx8SFYBuyVoqBSHCDj4fNodIfLi",
@@ -250,8 +250,8 @@ elif menu == "Departemen Internal":
     "https://drive.google.com/uc?export=view&id=1xeu6xkzOjF4DKavAFDYdo_HuIZvPJma0",
     "https://drive.google.com/uc?export=view&id=154zl57zyHyjpKr54OLkZixOy5KtVY7RD",
     "https://drive.google.com/uc?export=view&id=1TodYRWREUOItYngES2BPVw4LFVc1WLiU",
-    "https://drive.google.com/uc?export=view&id=12ZMxjaBB3FD2u5VWeDMAmv6KyK-skHaS",
-    "https://drive.google.com/uc?export=view&id=1pGcFcW9ZNQVqs8f5Uo0hc3xXQGDoo96p",
+    "https://drive.google.com/uc?export=view&id=1bhCExK_oiXwhYQm7vZha0rvkRJFBezce",
+    "https://drive.google.com/uc?export=view&id=1U4wuhey2aWD7ujBsOoZvKLtc83oxfbN7",
     "https://drive.google.com/uc?export=view&id=1Hh778yI2J1-9JuJzZldRqLtl02FtNh5O",
     "https://drive.google.com/uc?export=view&id=1MF1UB56pv6Wwn9Sii2pzwsAn0qLQ84If"
 
