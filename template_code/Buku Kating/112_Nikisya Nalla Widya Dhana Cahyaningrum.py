@@ -446,12 +446,12 @@ if menu == "Baleg":
             "https://drive.google.com/uc?export=view&id=1duKv4sDruG9FzRvPrJTLp6A8amlDji6P",
             "https://drive.google.com/uc?export=view&id=1YIrqeF6AT5eUyf6WQHEdTEzhfBvri49f",
             "https://drive.google.com/uc?export=view&id=1Ncgk03ihjW8VoeuTH8A1CpwGRLvkyNcL",
-            "https://drive.google.com/uc?export=view&id=1Am2gC9P5YfRfnzeSXTYJp_rQ5YsAyhTv",
-            "https://drive.google.com/uc?export=view&id=1I7ZdPxvHsq5IgLwNYxNZzU02lnwEJn4l",
-            "https://drive.google.com/uc?export=view&id=1j-v_gftDEu_7X2UMu5t71YzZo-jL64dJ",
+            "https://drive.google.com/uc?export=view&id=1ijVpICnikBVBqA_hnUspMAeZIj2mE6Ti",
+            "https://drive.google.com/uc?export=view&id=1yORYYlTErNH1rmUQ28ohopQqF6rydUBc",
+            "https://drive.google.com/uc?export=view&id=1BxK7u0HOhkJK4oArnYhG-s66Maioamb0",
             "https://drive.google.com/uc?export=view&id=1N1C5VHnzSpbmuzFNQojRPssw3aYTE8Le",
-            "https://drive.google.com/uc?export=view&id=1XTrYsdAD0vO7gBThwmDDg-8SsghKAtxH",
-            "https://drive.google.com/uc?export=view&id=1wkCdgbwX40N3AUKfsS8TKl_hcb8tqJXQ",
+            "https://drive.google.com/uc?export=view&id=1aT8YrlK5_R-UaQjKnYNOdg8BLGUE_fSf",
+            "https://drive.google.com/uc?export=view&id=1eobstx0IYrT6MNrGh__fnVu6KpMHZgPJ",
             "https://drive.google.com/uc?export=view&id=1y3e7OBYruSITz_HYmIF_WVEO_2OubIb-",
             "https://drive.google.com/uc?export=view&id=1FsKcpnZPsYUE3sbcqBabJooz9arxMtBf"
         ]
