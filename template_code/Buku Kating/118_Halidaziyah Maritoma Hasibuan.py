@@ -495,7 +495,7 @@ elif menu == "Departemen Eksternal":
             },
             {
                 "nama": "Bima Ekayasa",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=17riIyzzr6f1P78bxv5WSJxyw9JaYdXDW",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1VSLAxbSRrNf3prJZAEOqbtnzZtKo-vbM",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -537,7 +537,7 @@ elif menu == "Departemen Eksternal":
             },
             {
                 "nama": "Ahmad Rizky",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1Tt93UXrs5jV93R5yLyhODLp6UiqwE6vg",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1otnreGPnkmABUjLxxl-neWSZtq3HNkzL",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
