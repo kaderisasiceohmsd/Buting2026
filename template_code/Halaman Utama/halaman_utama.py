@@ -14,15 +14,222 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ==========================================
-# FUNGSI LOAD DATA & GAMBAR
-# ==========================================
+
+# JANGAN DIUBAH
 @st.cache_data
 def load_image(url):
     response = requests.get(url)
     img = Image.open(BytesIO(response.content))
     img = ImageOps.exif_transpose(img)
     return img
+
+
+def display_images_with_data(gambar_urls, data_list):
+    images = []
+    for i, url in enumerate(gambar_urls):
+        with st.spinner(f"Memuat gambar {i + 1} dari {len(gambar_urls)}"):
+            img = load_image(url)
+            if img is not None:
+                images.append(img)
+
+    for i, img in enumerate(images):
+        # menampilkan gambar di tengah
+        col1, col2, col3 = st.columns([1, 2, 1])
+        with col2:
+            st.image(img, use_container_width=True)
+
+        if i < len(data_list):
+            st.write(f"Nama: {data_list[i]['Nama']}")
+            st.write(f"Sebagai: {data_list[i]['Sebagai']}")
+            st.write(f"NIM: {data_list[i]['NIM']}")
+            st.write(f"Fun Fact: {data_list[i]['Fun Fact']}")
+            st.write(f"Motto Hidup: {data_list[i]['Motto Hidup']}")
+
+
+# JANGAN DIUBAH
+
+st.markdown(
+    """
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap');
+    :root {
+        --sage: #A8C3A0;
+        --olive: #6B8F5E;
+        --moss: #4F6B45;
+        --cream: #FBF8F0;
+        --clay: #C08552;
+        --bark: #4A3F35;
+    }
+    .stApp {
+        background: linear-gradient(160deg, #DCE8D2 0%, #E9F0DE 50%, #F1F2E3 100%);
+        background-attachment: fixed;
+        color: var(--bark);
+        font-family: 'Nunito', sans-serif;
+    }
+    #MainMenu, footer, [data-testid="stToolbar"], [data-testid="stDecoration"] {visibility: hidden;}
+    header {background: transparent !important;}
+    section[data-testid="stSidebar"] {background: #D3E3C8; border-right: 1px solid rgba(107, 143, 94, 0.25);}
+    .block-container {padding-top: 2rem; padding-bottom: 4rem; max-width: 960px;}
+    h1, h2, h3 {font-family: 'Fredoka', sans-serif; color: var(--moss);}
+    @keyframes rise {from {opacity: 0; transform: translateY(24px);} to {opacity: 1; transform: translateY(0);}}
+    @keyframes sway {0%, 100% {transform: rotate(-6deg);} 50% {transform: rotate(6deg);}}
+    .hero {text-align: center; margin-bottom: 1.5rem; animation: rise 0.9s ease both;}
+    .hero .leaf {display: inline-block; font-size: 2.6rem; animation: sway 3s ease-in-out infinite; transform-origin: bottom center;}
+    .hero h1 {
+        font-size: clamp(2.5rem, 8vw, 5rem);
+        font-weight: 700;
+        line-height: 1.1;
+        margin: 0;
+        background: linear-gradient(90deg, #4F6B45, #C08552);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+        font-family: 'Fredoka', sans-serif;
+        font-size: clamp(1rem, 3vw, 1.5rem);
+        color: var(--olive);
+        margin-top: 0.4rem;
+        letter-spacing: 0.08em;
+    }
+    .centered-title {text-align: center; margin: 1.5rem 0 1rem; animation: rise 0.7s ease both;}
+    .panel {
+        background: var(--cream);
+        border-radius: 22px;
+        padding: 1.4rem 1.6rem;
+        box-shadow: 0 8px 22px rgba(79, 107, 69, 0.15);
+        border: 1px solid rgba(107, 143, 94, 0.25);
+        text-align: justify;
+        line-height: 1.75;
+        animation: rise 0.8s ease both;
+    }
+    .stat {
+        background: var(--cream);
+        border-radius: 20px;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 0 6px 16px rgba(79, 107, 69, 0.12);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        animation: rise 0.9s ease both;
+    }
+    .stat:hover {transform: translateY(-6px) rotate(-1deg); box-shadow: 0 14px 26px rgba(79, 107, 69, 0.22);}
+    .stat b {display: block; font-family: 'Fredoka', sans-serif; font-size: 2rem; color: var(--clay);}
+    .stat span {font-size: 0.9rem; color: var(--moss);}
+    div[data-testid="stImage"] img {
+        border-radius: 20px;
+        box-shadow: 0 8px 22px rgba(74, 63, 53, 0.18);
+        transition: transform 0.35s ease;
+    }
+    div[data-testid="stImage"] img:hover {transform: scale(1.03);}
+    .fact {background: #EFE6D2; border-left: 6px solid var(--clay); border-radius: 14px; padding: 1rem 1.2rem; animation: rise 0.6s ease both;}
+    div.stButton > button {
+        background: var(--olive); color: white; border: none; border-radius: 999px;
+        padding: 0.6rem 1.6rem; font-family: 'Fredoka', sans-serif; font-size: 1rem;
+        transition: transform 0.2s ease, background 0.2s ease;
+    }
+    div.stButton > button:hover {background: var(--clay); color: white; transform: scale(1.06) rotate(-1deg);}
+    div[data-testid="stTextInput"] input {border-radius: 999px;}
+
+    .grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 1.6rem; margin-top: 1rem;}
+    .flip {perspective: 1100px; aspect-ratio: 3 / 4; outline: none; cursor: pointer; animation: rise 0.7s ease both;}
+    .flip-inner {
+        position: relative; width: 100%; height: 100%;
+        transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1);
+        transform-style: preserve-3d;
+    }
+    .flip:hover .flip-inner, .flip:focus .flip-inner {transform: rotateY(180deg);}
+    .face {
+        position: absolute; inset: 0;
+        backface-visibility: hidden; -webkit-backface-visibility: hidden;
+        border-radius: 22px; overflow: hidden;
+        box-shadow: 0 10px 24px rgba(79, 107, 69, 0.22);
+        border: 1px solid rgba(107, 143, 94, 0.3);
+    }
+    .front img {width: 100%; height: 100%; object-fit: cover; display: block;}
+    .cap {
+        position: absolute; left: 0; right: 0; bottom: 0;
+        padding: 2.6rem 0.8rem 0.9rem;
+        background: linear-gradient(transparent, rgba(47, 66, 40, 0.88));
+        text-align: center;
+    }
+    .cap .name {color: #fff; font-size: 1.05rem; margin: 0;}
+    .back {
+        transform: rotateY(180deg);
+        background: linear-gradient(160deg, #FBF8F0, #E3EDD9);
+        padding: 1rem; display: flex; flex-direction: column; justify-content: center;
+        text-align: center; gap: 0.5rem;
+    }
+    .back .bname {font-family: 'Fredoka', sans-serif; font-size: 1.1rem; font-weight: 600; color: var(--moss);}
+    .back .row {font-size: 0.85rem; line-height: 1.4;}
+    .back .row b {display: block; color: var(--clay); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;}
+    .name {font-family: 'Fredoka', sans-serif; font-size: 1.15rem; font-weight: 600; text-align: center; color: var(--moss);}
+    .badge {
+        display: block; width: fit-content; margin: 0.3rem auto 0;
+        background: var(--sage); color: #2F4228; padding: 2px 14px; border-radius: 999px;
+        font-size: 0.78rem; font-weight: 700;
+    }
+    .badge.lead {background: var(--clay); color: white;}
+
+    .intro {
+        position: fixed; inset: 0; z-index: 99999; pointer-events: none;
+        display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.6rem;
+        background: linear-gradient(160deg, #DCE8D2, #F1F2E3);
+        animation: introOut 0.8s ease 4.2s forwards;
+    }
+    @keyframes introOut {to {opacity: 0; visibility: hidden;}}
+    .intro h2 {font-family: 'Fredoka', sans-serif; color: var(--moss); margin: 0; text-align: center; font-size: clamp(1.1rem, 4vw, 1.7rem);}
+    .intro small {color: var(--olive); font-family: 'Fredoka', sans-serif; letter-spacing: 0.05em;}
+    .track {position: relative; width: min(340px, 78vw); height: 64px; margin: 0 28px;}
+    .track::before {
+        content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 3px;
+        background: repeating-linear-gradient(90deg, var(--sage) 0 10px, transparent 10px 18px);
+    }
+    .node {
+        position: absolute; top: 4px; width: 56px; height: 56px; border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+        font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 1.1rem;
+        border: 3px solid var(--olive); background: var(--cream); color: var(--moss);
+        transform: translateX(-50%);
+    }
+    .node:nth-child(1) {left: 0%; animation: g1 4s ease both;}
+    .node:nth-child(2) {left: 33.33%; animation: g2 4s ease both;}
+    .node:nth-child(3) {left: 66.66%; animation: g3 4s ease both;}
+    .node:nth-child(4) {left: 100%; animation: g4 4s ease both;}
+    @keyframes g1 {0%, 15% {background: var(--clay); color: #fff; transform: translateX(-50%) scale(1.18);} 18%, 100% {background: var(--cream); color: var(--moss); transform: translateX(-50%) scale(1);}}
+    @keyframes g2 {0%, 28% {background: var(--cream); color: var(--moss); transform: translateX(-50%) scale(1);} 30%, 42% {background: var(--clay); color: #fff; transform: translateX(-50%) scale(1.18);} 46%, 58% {background: var(--cream); color: var(--moss); transform: translateX(-50%) scale(1);} 60%, 72% {background: var(--clay); color: #fff; transform: translateX(-50%) scale(1.18);} 76%, 100% {background: var(--cream); color: var(--moss); transform: translateX(-50%) scale(1);}}
+    @keyframes g3 {0%, 43% {background: var(--cream); color: var(--moss); transform: translateX(-50%) scale(1);} 45%, 56% {background: var(--clay); color: #fff; transform: translateX(-50%) scale(1.18);} 60%, 90% {background: var(--cream); color: var(--moss); transform: translateX(-50%) scale(1);} 92%, 100% {background: var(--clay); color: #fff; transform: translateX(-50%) scale(1.18);}}
+    @keyframes g4 {0%, 76% {background: var(--cream); color: var(--moss); transform: translateX(-50%) scale(1);} 78%, 90% {background: var(--clay); color: #fff; transform: translateX(-50%) scale(1.18);} 94%, 100% {background: var(--cream); color: var(--moss); transform: translateX(-50%) scale(1);}}
+    .token {
+        position: absolute; top: -14px; width: 18px; height: 18px; border-radius: 50%;
+        background: var(--bark); box-shadow: 0 0 0 5px rgba(192, 133, 82, 0.35);
+        transform: translateX(-50%); animation: hop 4s ease-in-out both;
+    }
+    @keyframes hop {0%, 15% {left: 0%;} 30% {left: 33.33%;} 45% {left: 66.66%;} 60% {left: 33.33%;} 78% {left: 100%;} 92%, 100% {left: 66.66%;}}
+    .probs {display: flex; gap: 1.4rem; font-family: 'Fredoka', sans-serif; color: var(--clay); font-size: 0.95rem;}
+    </style>
+    <div class='hero'>
+        <div class='leaf'>🌿</div>
+        <h1>WEBSITE Markov</h1>
+        <p>CEO HMSD Adyatama ITERA 2026</p>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+if "welcomed" not in st.session_state:
+    st.session_state.welcomed = True
+    st.markdown(
+        "<div class='intro'>"
+        "<h2>Menyusun rantai Markov…</h2>"
+        "<div class='track'>"
+        "<div class='node'>S₁</div><div class='node'>S₂</div><div class='node'>S₃</div><div class='node'>S₄</div>"
+        "<div class='token'></div>"
+        "</div>"
+        "<div class='probs'><span>P₁₂ = 0.6</span><span>P₂₃ = 0.5</span><span>P₃₄ = 0.4</span></div>"
+        "<small>P(Xₙ₊₁ | Xₙ) — masa depan hanya bergantung pada saat ini</small>"
+        "</div>",
+        unsafe_allow_html=True,
+    )
+    st.toast("Selamat datang di rumah Markov! 🌱", icon="🌿")
 
 url = "https://drive.google.com/uc?export=view&id=12cQ4T8NkVvVPVNX6zBQC4sviFcc4cDWx"
 url1 = "https://drive.google.com/uc?export=view&id=12RBvQdMiqqqph-Q1QqLb0zvvIPnBjCYb"
@@ -43,222 +250,98 @@ gambar_urls = [
 ]
 
 data_list = [
-    {"Nama": "Sapta Daffa Mulya", "Sebagai": "Pak Lurah", "NIM": "125450056", "Fun Fact": "Nama saya sesuai tanggal lahir", "Motto Hidup": "Enjoy the flow"},
-    {"Nama": "Ade Putri Kurnia Pratiwi", "Sebagai": "Bu Lurah", "NIM": "125450073", "Fun Fact": "Suka nyapa satpam ITERA sambil teriak", "Motto Hidup": "Boleh ngeluh asal jangan nyerah"},
-    {"Nama": "Indah Lestari", "Sebagai": "Anggota", "NIM": "125450007", "Fun Fact": "Gabisa bonceng orang tapi bisa bawa motor", "Motto Hidup": "Hari ini berjuang, hari esok kita ber-uang"},
-    {"Nama": "Sakinah Farhana Al Qisthi", "Sebagai": "Anggota", "NIM": "125450016", "Fun Fact": "Suka daging kambing karna bau nya", "Motto Hidup": "Kita punya keinginan tapi semesta punya kenyataan"},
-    {"Nama": "Muhammad Helmi Fahma", "Sebagai": "Anggota", "NIM": "125450023", "Fun Fact": "Selain manis aku juga humoris", "Motto Hidup": "Jalani saja"},
-    {"Nama": "Armeyza Varian", "Sebagai": "Anggota", "NIM": "125450024", "Fun Fact": "Suka ngerjain tugas pas deket deadline", "Motto Hidup": "Tetap tersenyum"},
-    {"Nama": "Lian Ilham Nurthoriq", "Sebagai": "Anggota", "NIM": "125450025", "Fun Fact": "Suka yang manis, padahal aku udah manis", "Motto Hidup": "Belajar untuk hari ini, hidup untuk besok"},
-    {"Nama": "Nisa Aura", "Sebagai": "Anggota", "NIM": "125450032", "Fun Fact": "Gasuka makan kecap", "Motto Hidup": "Tetap jalanin walaupun sambil ngeluh"},
-    {"Nama": "Diah Ayu Puspita Sastra", "Sebagai": "Anggota", "NIM": "125450039", "Fun Fact": "Excited sama hal-hal baru", "Motto Hidup": "Sebaik-baiknya manusia adalah mereka yang bermanfaat bagi sesamanya"},
-    {"Nama": "Maryam Zahra Rahmadani", "Sebagai": "Anggota", "NIM": "125450090", "Fun Fact": "Makan sei Indonesia tiap hari", "Motto Hidup": "Orang lain boleh gila, asal bukan saya"},
-    {"Nama": "Lidya Tirza Hanum", "Sebagai": "Anggota", "NIM": "125450096", "Fun Fact": "Suka menghayal", "Motto Hidup": "Tetap percaya pada diri sendiri, bukan dengan orang lain"},
-    {"Nama": "Fadel Hilal Askari", "Sebagai": "Anggota", "NIM": "125450099", "Fun Fact": "Gasuka minyak kayu putih", "Motto Hidup": "Sukses berawal dari mimpi. Karena itu, kita perbanyak tidur"},
+    {
+        "Nama": "Sapta Daffa Mulya",
+        "Sebagai": "Pak Lurah",
+        "NIM": "125450056",
+        "Fun Fact": "Nama saya sesuai tanggal lahir",
+        "Motto Hidup": "Enjoy the flow",
+    },
+    {
+        "Nama": "Ade Putri Kurnia Pratiwi",
+        "Sebagai": "Bu Lurah",
+        "NIM": "125450073",
+        "Fun Fact": "Suka nyapa satpam ITERA sambil teriak",
+        "Motto Hidup": "Boleh ngeluh asal jangan nyerah",
+    },
+    {
+        "Nama": "Indah Lestari",
+        "Sebagai": "Anggota",
+        "NIM": "125450007",
+        "Fun Fact": "Gabisa bonceng orang tapi bisa bawa motor",
+        "Motto Hidup": "Hari ini berjuang, hari esok kita ber-uang",
+    },
+    {
+        "Nama": "Sakinah Farhana Al Qisthi",
+        "Sebagai": "Anggota",
+        "NIM": "125450016",
+        "Fun Fact": "Suka daging kambing karna bau nya",
+        "Motto Hidup": "Kita punya keinginan tapi semesta punya kenyataan",
+    },
+    {
+        "Nama": "Muhammad Helmi Fahma",
+        "Sebagai": "Anggota",
+        "NIM": "125450023",
+        "Fun Fact": "Selain manis aku juga humoris",
+        "Motto Hidup": "Jalani saja",
+    },
+    {
+        "Nama": "Armeyza Varian",
+        "Sebagai": "Anggota",
+        "NIM": "125450024",
+        "Fun Fact": "Suka ngerjain tugas pas deket deadline",
+        "Motto Hidup": "Tetap tersenyum",
+    },
+    {
+        "Nama": "Lian Ilham Nurthoriq",
+        "Sebagai": "Anggota",
+        "NIM": "125450025",
+        "Fun Fact": "Suka yang manis, padahal aku udah manis",
+        "Motto Hidup": "Belajar untuk hari ini, hidup untuk besok",
+    },
+    {
+        "Nama": "Nisa Aura",
+        "Sebagai": "Anggota",
+        "NIM": "125450032",
+        "Fun Fact": "Gasuka makan kecap",
+        "Motto Hidup": "Tetap jalanin walaupun sambil ngeluh",
+    },
+    {
+        "Nama": "Diah Ayu Puspita Sastra",
+        "Sebagai": "Anggota",
+        "NIM": "125450039",
+        "Fun Fact": "Excited sama hal-hal baru",
+        "Motto Hidup": "Sebaik-baiknya manusia adalah mereka yang bermanfaat bagi sesamanya",
+    },
+    {
+        "Nama": "Maryam Zahra Rahmadani",
+        "Sebagai": "Anggota",
+        "NIM": "125450090",
+        "Fun Fact": "Makan sei Indonesia tiap hari",
+        "Motto Hidup": "Orang lain boleh gila, asal bukan saya",
+    },
+    {
+        "Nama": "Lidya Tirza Hanum",
+        "Sebagai": "Anggota",
+        "NIM": "125450096",
+        "Fun Fact": "Suka menghayal",
+        "Motto Hidup": "Tetap percaya pada diri sendiri, bukan dengan orang lain",
+    },
+    {
+        "Nama": "Fadel Hilal Askari",
+        "Sebagai": "Anggota",
+        "NIM": "125450099",
+        "Fun Fact": "Gasuka minyak kayu putih",
+        "Motto Hidup": "Sukses berawal dari mimpi. Karena itu, kita perbanyak tidur",
+    },
 ]
 
-# ==========================================
-# CSS & HTML VISUAL (DIGABUNG RAPAT AGAR TIDAK ERROR DI STREAMLIT)
-# ==========================================
-st.markdown(
-    """
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap');
-    :root {
-        --sage: #A8C3A0; --olive: #6B8F5E; --moss: #4F6B45;
-        --cream: #FBF8F0; --clay: #C08552; --bark: #4A3F35;
-    }
-    .stApp {
-        background: linear-gradient(160deg, #DCE8D2 0%, #E9F0DE 50%, #F1F2E3 100%);
-        background-attachment: fixed; color: var(--bark); font-family: 'Nunito', sans-serif;
-    }
-    section[data-testid="stSidebar"] {
-        background: #D3E3C8 !important; border-right: 1px solid rgba(107, 143, 94, 0.25) !important;
-    }
-    /* Menghilangkan icon link di Header */
-    a.header-anchor, a[href^="#"] { display: none !important; }
-    .stMarkdown a { text-decoration: none !important; pointer-events: none; }
-    
-    #MainMenu, footer, [data-testid="stToolbar"], [data-testid="stDecoration"] {visibility: hidden;}
-    header {background: transparent !important;}
-    .block-container {padding-top: 2rem; padding-bottom: 4rem; max-width: 960px; z-index: 1;}
-    h1, h2, h3 {font-family: 'Fredoka', sans-serif; color: var(--moss);}
-    @keyframes rise {from {opacity: 0; transform: translateY(24px);} to {opacity: 1; transform: translateY(0);}}
-    @keyframes sway {0%, 100% {transform: rotate(-6deg);} 50% {transform: rotate(6deg);}}
-    .hero {text-align: center; margin-bottom: 1.5rem; animation: rise 0.9s ease both;}
-    .hero .leaf {display: inline-block; font-size: 2.6rem; animation: sway 3s ease-in-out infinite; transform-origin: bottom center;}
-    .hero-title {
-        font-size: clamp(2.5rem, 8vw, 5rem); font-weight: 700; line-height: 1.1; margin: 0;
-        background: linear-gradient(90deg, #4F6B45, #C08552);
-        -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-        font-family: 'Fredoka', sans-serif;
-    }
-    .hero p { font-family: 'Fredoka', sans-serif; font-size: clamp(1rem, 3vw, 1.5rem); color: var(--olive); margin-top: 0.4rem; letter-spacing: 0.08em; }
-    .centered-title {text-align: center; margin: 1.5rem 0 1rem; animation: rise 0.7s ease both;}
-    .panel {
-        background: var(--cream); border-radius: 22px; padding: 1.4rem 1.6rem;
-        box-shadow: 0 8px 22px rgba(79, 107, 69, 0.15); border: 1px solid rgba(107, 143, 94, 0.25);
-        text-align: justify; line-height: 1.75; animation: rise 0.8s ease both;
-    }
-    .stat {
-        background: var(--cream); border-radius: 20px; padding: 1rem; text-align: center;
-        box-shadow: 0 6px 16px rgba(79, 107, 69, 0.12); transition: transform 0.25s ease, box-shadow 0.25s ease;
-        animation: rise 0.9s ease both;
-    }
-    .stat:hover {transform: translateY(-6px) rotate(-1deg); box-shadow: 0 14px 26px rgba(79, 107, 69, 0.22);}
-    .stat b {display: block; font-family: 'Fredoka', sans-serif; font-size: 2rem; color: var(--clay);}
-    .stat span {font-size: 0.9rem; color: var(--moss);}
-    div[data-testid="stImage"] img { border-radius: 20px; box-shadow: 0 8px 22px rgba(74, 63, 53, 0.18); transition: transform 0.35s ease; }
-    div[data-testid="stImage"] img:hover {transform: scale(1.03);}
-    .fact { background: #EFE6D2; border-left: 6px solid var(--clay); border-radius: 14px; padding: 1rem 1.2rem; animation: rise 0.6s ease both; }
-    div.stButton > button {
-        background: var(--olive); color: white; border: none; border-radius: 999px;
-        padding: 0.6rem 1.6rem; font-family: 'Fredoka', sans-serif; font-size: 1rem;
-        transition: transform 0.2s ease, background 0.2s ease;
-    }
-    div.stButton > button:hover {background: var(--clay); color: white; transform: scale(1.06) rotate(-1deg);}
-    div[data-testid="stTextInput"] input {border-radius: 999px;}
-    .grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 1.6rem; margin-top: 1rem;}
-    .flip {perspective: 1100px; aspect-ratio: 3 / 4; outline: none; cursor: pointer; animation: rise 0.7s ease both;}
-    .flip-inner { position: relative; width: 100%; height: 100%; transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1); transform-style: preserve-3d; }
-    .flip:hover .flip-inner, .flip:focus .flip-inner {transform: rotateY(180deg);}
-    .face {
-        position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden;
-        border-radius: 22px; overflow: hidden; box-shadow: 0 10px 24px rgba(79, 107, 69, 0.22); border: 1px solid rgba(107, 143, 94, 0.3);
-    }
-    .front img {width: 100%; height: 100%; object-fit: cover; display: block;}
-    .cap {
-        position: absolute; left: 0; right: 0; bottom: 0; padding: 2.6rem 0.8rem 0.9rem;
-        background: linear-gradient(transparent, rgba(47, 66, 40, 0.88)); text-align: center;
-    }
-    .cap .name {color: #fff; font-size: 1.05rem; margin: 0;}
-    .back {
-        transform: rotateY(180deg); background: linear-gradient(160deg, #FBF8F0, #E3EDD9);
-        padding: 1rem; display: flex; flex-direction: column; justify-content: center;
-        text-align: center; gap: 0.5rem;
-    }
-    .back .bname {font-family: 'Fredoka', sans-serif; font-size: 1.1rem; font-weight: 600; color: var(--moss);}
-    .back .row {font-size: 0.85rem; line-height: 1.4;}
-    .back .row b {display: block; color: var(--clay); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;}
-    .badge {
-        display: block; width: fit-content; margin: 0.3rem auto 0;
-        background: var(--sage); color: #2F4228; padding: 2px 14px; border-radius: 999px; font-size: 0.78rem; font-weight: 700;
-    }
-    .badge.lead {background: var(--clay); color: white;}
-    
-    /* ANIMASI TAMAN BACKGROUND */
-    .forest-live-bg {
-        position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; overflow: hidden; pointer-events: none;
-    }
-    .firefly {
-        position: absolute; width: 6px; height: 6px; background: rgba(192, 133, 82, 0.7);
-        border-radius: 50%; box-shadow: 0 0 12px 3px rgba(192, 133, 82, 0.5);
-        animation: floatUp infinite ease-in-out alternate;
-    }
-    .f1 { left: 10%; bottom: 10%; animation-duration: 4s; }
-    .f2 { left: 30%; bottom: 40%; animation-duration: 6s; }
-    .f3 { left: 70%; bottom: 20%; animation-duration: 5s; animation-delay: 1s;}
-    .f4 { left: 85%; bottom: 60%; animation-duration: 7s; animation-delay: 2s;}
-    .f5 { left: 50%; bottom: 5%; animation-duration: 4.5s; }
-    @keyframes floatUp {
-        0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.3; }
-        100% { transform: translateY(-120px) translateX(30px) scale(1.5); opacity: 0.8; }
-    }
-    .leaf-fall { position: absolute; font-size: 1.2rem; animation: fallDown linear infinite; }
-    .l1 { left: 20%; animation-duration: 15s; }
-    .l2 { left: 60%; animation-duration: 20s; animation-delay: 3s; font-size: 1.5rem; }
-    .l3 { left: 80%; animation-duration: 18s; animation-delay: 7s; }
-    @keyframes fallDown {
-        0% { top: -10%; transform: rotate(0deg) translateX(0); opacity: 1; }
-        100% { top: 110%; transform: rotate(360deg) translateX(50px); opacity: 0; }
-    }
-    
-    /* ANIMASI GIF KUCING & KUPU-KUPU 3D DI HEADER */
-    .header-chase {
-        position: fixed; top: 0; left: 0; width: 100vw; height: 80px; z-index: 99999; pointer-events: none; overflow: hidden;
-    }
-    .chase-wrapper {
-        position: absolute; top: 15px; left: -200px; display: flex; gap: 40px; align-items: center;
-        animation: chaseAcross 14s linear infinite;
-    }
-    .chasing-cat {
-        width: 60px; height: auto; filter: drop-shadow(2px 3px 4px rgba(0,0,0,0.15));
-    }
-    .chased-butterfly {
-        width: 45px; height: auto; filter: drop-shadow(1px 2px 3px rgba(0,0,0,0.2));
-        animation: bobUpDown 1.2s ease-in-out infinite alternate;
-    }
-    @keyframes chaseAcross { 0% { transform: translateX(0); } 100% { transform: translateX(120vw); } }
-    @keyframes bobUpDown { 0% { transform: translateY(0px); } 100% { transform: translateY(-12px); } }
-    </style>
-    <div class="forest-live-bg"><div class="firefly f1"></div><div class="firefly f2"></div><div class="firefly f3"></div><div class="firefly f4"></div><div class="firefly f5"></div><div class="leaf-fall l1">🍃</div><div class="leaf-fall l2">🍂</div><div class="leaf-fall l3">🍃</div></div>
-    <div class="header-chase"><div class="chase-wrapper"><img class="chasing-cat" src="https://media.tenor.com/bZeX6qWqQ6QAAAAi/cat-run.gif" alt="Cat"><img class="chased-butterfly" src="https://media.tenor.com/39l2C-821lMAAAAi/butterfly-blue.gif" alt="Butterfly"></div></div>
-    <div class="hero"><div class="leaf">🌿</div><div class="hero-title">WEBSITE Markov</div><p>CEO HMSD Adyatama ITERA 2026</p></div>
-    """,
-    unsafe_allow_html=True,
-)
-
-# ==========================================
-# INTRO & HALAMAN
-# ==========================================
-if "welcomed" not in st.session_state:
-    st.session_state.welcomed = True
-    html_intro = """
-    <style>
-    .intro {
-        position: fixed; inset: 0; z-index: 99999; pointer-events: none;
-        display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.6rem;
-        background: linear-gradient(160deg, #DCE8D2, #F1F2E3);
-        animation: introOut 0.8s ease 4.2s forwards;
-    }
-    @keyframes introOut {to {opacity: 0; visibility: hidden;}}
-    .intro h2 {font-family: 'Fredoka', sans-serif; color: #4F6B45; margin: 0; text-align: center; font-size: clamp(1.1rem, 4vw, 1.7rem);}
-    .intro small {color: #6B8F5E; font-family: 'Fredoka', sans-serif; letter-spacing: 0.05em;}
-    .track {position: relative; width: min(340px, 78vw); height: 64px; margin: 0 28px;}
-    .track::before {
-        content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 3px;
-        background: repeating-linear-gradient(90deg, #A8C3A0 0 10px, transparent 10px 18px);
-    }
-    .node {
-        position: absolute; top: 4px; width: 56px; height: 56px; border-radius: 50%;
-        display: flex; align-items: center; justify-content: center;
-        font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 1.1rem;
-        border: 3px solid #6B8F5E; background: #FBF8F0; color: #4F6B45;
-        transform: translateX(-50%);
-    }
-    .node:nth-child(1) {left: 0%; animation: g1 4s ease both;}
-    .node:nth-child(2) {left: 33.33%; animation: g2 4s ease both;}
-    .node:nth-child(3) {left: 66.66%; animation: g3 4s ease both;}
-    .node:nth-child(4) {left: 100%; animation: g4 4s ease both;}
-    @keyframes g1 {0%, 15% {background: #C08552; color: #fff; transform: translateX(-50%) scale(1.18);} 18%, 100% {background: #FBF8F0; color: #4F6B45; transform: translateX(-50%) scale(1);}}
-    @keyframes g2 {0%, 28% {background: #FBF8F0; color: #4F6B45; transform: translateX(-50%) scale(1);} 30%, 42% {background: #C08552; color: #fff; transform: translateX(-50%) scale(1.18);} 46%, 58% {background: #FBF8F0; color: #4F6B45; transform: translateX(-50%) scale(1);} 60%, 72% {background: #C08552; color: #fff; transform: translateX(-50%) scale(1.18);} 76%, 100% {background: #FBF8F0; color: #4F6B45; transform: translateX(-50%) scale(1);}}
-    @keyframes g3 {0%, 43% {background: #FBF8F0; color: #4F6B45; transform: translateX(-50%) scale(1);} 45%, 56% {background: #C08552; color: #fff; transform: translateX(-50%) scale(1.18);} 60%, 90% {background: #FBF8F0; color: #4F6B45; transform: translateX(-50%) scale(1);} 92%, 100% {background: #C08552; color: #fff; transform: translateX(-50%) scale(1.18);}}
-    @keyframes g4 {0%, 76% {background: #FBF8F0; color: #4F6B45; transform: translateX(-50%) scale(1);} 78%, 90% {background: #C08552; color: #fff; transform: translateX(-50%) scale(1.18);} 94%, 100% {background: #FBF8F0; color: #4F6B45; transform: translateX(-50%) scale(1);}}
-    .token {
-        position: absolute; top: -14px; width: 18px; height: 18px; border-radius: 50%;
-        background: #4A3F35; box-shadow: 0 0 0 5px rgba(192, 133, 82, 0.35);
-        transform: translateX(-50%); animation: hop 4s ease-in-out both;
-    }
-    @keyframes hop {0%, 15% {left: 0%;} 30% {left: 33.33%;} 45% {left: 66.66%;} 60% {left: 33.33%;} 78% {left: 100%;} 92%, 100% {left: 66.66%;}}
-    .probs {display: flex; gap: 1.4rem; font-family: 'Fredoka', sans-serif; color: #C08552; font-size: 0.95rem;}
-    </style>
-    <div class='intro'>
-        <h2>Menyusun rantai Markov…</h2>
-        <div class='track'>
-            <div class='node'>S₁</div><div class='node'>S₂</div><div class='node'>S₃</div><div class='node'>S₄</div>
-            <div class='token'></div>
-        </div>
-        <div class='probs'><span>P₁₂ = 0.6</span><span>P₂₃ = 0.5</span><span>P₃₄ = 0.4</span></div>
-        <small>P(Xₙ₊₁ | Xₙ) — masa depan hanya bergantung pada saat ini</small>
-    </div>
-    """
-    st.markdown(html_intro, unsafe_allow_html=True)
-    st.toast("Selamat datang di rumah Markov! 🌱", icon="🌿")
 
 def layout(url):
     _, col, _ = st.columns([1, 2, 1])
     with col:
         st.image(load_image(url), use_container_width=True)
+
 
 @st.cache_data
 def to_data_uri(url):
@@ -268,21 +351,23 @@ def to_data_uri(url):
     img.save(buf, "JPEG", quality=85)
     return "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode()
 
+
 def flip_card(url, d):
     e = {k: html.escape(v) for k, v in d.items()}
     css = "badge lead" if d["Sebagai"] in ("Pak Lurah", "Bu Lurah") else "badge"
     return (
-        f"<div class='flip' tabindex='0'><div class='flip-inner'>"
+        "<div class='flip' tabindex='0'><div class='flip-inner'>"
         f"<div class='face front'><img src='{to_data_uri(url)}'>"
         f"<div class='cap'><div class='name'>{e['Nama']}</div><span class='{css}'>{e['Sebagai']}</span></div></div>"
-        f"<div class='face back'>"
+        "<div class='face back'>"
         f"<div class='bname'>{e['Nama']}</div>"
         f"<span class='{css}'>{e['Sebagai']}</span>"
         f"<div class='row'><b>NIM</b>{e['NIM']}</div>"
         f"<div class='row'><b>Fun Fact</b>{e['Fun Fact']}</div>"
         f"<div class='row'><b>Motto Hidup</b>“{e['Motto Hidup']}”</div>"
-        f"</div></div></div>"
+        "</div></div></div>"
     )
+
 
 def streamlit_menu():
     return option_menu(
@@ -314,7 +399,7 @@ def streamlit_menu():
 def home_page():
     layout(url)
     layout(url1)
-    st.markdown("<div class='centered-title'><h2>Deskripsi Kelompok</h2></div>", unsafe_allow_html=True)
+    st.markdown("<h1 class='centered-title'>Deskripsi Kelompok</h1>", unsafe_allow_html=True)
     st.markdown(
         """<div class="panel">Kami Markov, dua belas mahasiswa Sains Data ITERA 2025.
         Seperti rantai Markov, setiap langkah kami dipengaruhi langkah sebelumnya:
@@ -351,8 +436,9 @@ def home_page():
             unsafe_allow_html=True,
         )
 
+
 def about_page():
-    st.markdown("<div class='centered-title'><h2>About Us</h2></div>", unsafe_allow_html=True)
+    st.markdown("<h1 class='centered-title'>About Us</h1>", unsafe_allow_html=True)
     search = st.text_input("Cari anggota", placeholder="🔍 Ketik nama atau NIM...")
     role = st.radio(
         "Peran",
@@ -373,6 +459,7 @@ def about_page():
         "<div class='grid'>" + "".join(flip_card(u, d) for u, d in items) + "</div>",
         unsafe_allow_html=True,
     )
+
 
 menu = streamlit_menu()
 
