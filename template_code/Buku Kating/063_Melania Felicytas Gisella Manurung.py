@@ -764,7 +764,8 @@ if menu == "Departemen Internal":
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1BDuiB5YvBu6OgXg_XQzU4eHG0UK6ygw_",
             "https://drive.google.com/uc?export=view&id=1jGMR62SKflBRiQZFnPNaGBk6BoAORjQx",
-            "https://drive.google.com/uc?export=view&id=130LUFynlccGREvSxYSD6XA00Nt_gdSke", 
+            "https://drive.google.com/uc?export=view&id=130LUFynlccGREvSxYSD6XA00Nt_gdSke",
+            "https://drive.google.com/uc?export=view&id=1QI9Ny0OpAmIdZsdxGUO62aemoCPHz_Uc",
             "https://drive.google.com/uc?export=view&id=1jO6Axy3ayKsXtUwLzxWzWzf9hZhDRBQU",
             "https://drive.google.com/uc?export=view&id=1eh8QUK46ueEtHx4-WDcoxK6BV3lVna0L",
             "https://drive.google.com/uc?export=view&id=1LlT45e7lVFGqLF8DWKjs2JNlsOciUsrP", 
@@ -772,7 +773,6 @@ if menu == "Departemen Internal":
             "https://drive.google.com/uc?export=view&id=11nIipvPBVpjVTdzsJAWPLwv1wvLw9Mv2",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", 
             "https://drive.google.com/uc?export=view&id=1p4OSAWIz4k6TMC2QvPMKibUwmqnWSXjI",
-            "https://drive.google.com/uc?export=view&id=1QI9Ny0OpAmIdZsdxGUO62aemoCPHz_Uc",
             "https://drive.google.com/uc?export=view&id=1LcHlzt7_8yDJBfHy1WO9q84ByT17pTi0",
             "https://drive.google.com/uc?export=view&id=1_nCFVugOTz3qKh4xruQbIXiTyqHrmVgq",
             "https://drive.google.com/uc?export=view&id=1TnZWQC-pNX0-SEFLE-6YygNOli6qfmw4", 
@@ -786,7 +786,7 @@ if menu == "Departemen Internal":
                 "umur": "20",
                 "asal": "Jambi",
                 "alamat": "Way Halim",
-                "hobbi": "Ngeledek orang",
+                "hobbi": "Ngeroasting orang",
                 "sosmed": "@haikalsbln",
                 "kesan": "Bang Haikal adalah sosok yang hangat, merangkul, dan peduli dalam menjaga keharmonisan serta hubungan di internal Himpunan",  
                 "pesan": "Semoga sukses selalu, baik dalam akademik maupun organisasinya."
@@ -803,7 +803,7 @@ if menu == "Departemen Internal":
                 "pesan": "semangat terus kuliahnya kakak !!!"
             },
             {
-                "nama": "Hanna Grecia Sinaga",
+                "nama": "Hanna Gresia Sinaga",
                 "nim": "123450038",
                 "umur": "21",
                 "asal": "Sumatra Utara, Kisaran City",
@@ -812,6 +812,17 @@ if menu == "Departemen Internal":
                 "sosmed": "@hanna_g_sinaga",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
                 "pesan": "semangat terus kuliahnya kakak !!!"
+            },
+            {
+                "nama": "Muhammad Hanif Dzaky Arifin",
+                "nim": "124450064",
+                "umur": "21",
+                "asal": "Padang Sumbar",
+                "alamat": "Perumnas Way Kandis",
+                "hobbi": "Ngedistro",
+                "sosmed": "@hnfdzky_",
+                "kesan": "Orangnya sangat seru dan gampang berbaur",
+                "pesan": "Sukses terus untuk kuliah dan impian-impiannya!"
             },
             {
                 "nama": "A Farhan Ghani",
@@ -858,7 +869,7 @@ if menu == "Departemen Internal":
                 "pesan": "semangat terus kuliahnya kakak !!!"
             },
             {
-                "nama": "Najla Nur Syifa",
+                "nama": "Najla Nursyifa",
                 "nim": "124450051",
                 "umur": "20",
                 "asal": "Aceh",
@@ -869,7 +880,7 @@ if menu == "Departemen Internal":
                 "pesan": "semangat terus kuliahnya kakak !!!"
             },
             {
-                "nama": "Rozaq Ramdani",
+                "nama": "Rozak Ramdani",
                 "nim": "124450100",
                 "umur": "18",
                 "asal": "Lampung Selatan",
@@ -889,17 +900,6 @@ if menu == "Departemen Internal":
                 "sosmed": "@christiani8872",
                 "kesan": "Kakak ini sangat baik dan menyenangkan diajak diskusi",
                 "pesan": "Semoga lancar dan sukses terus perkuliahan serta kegiatannya!"
-            },
-            {
-                "nama": "Muhammad Hanif Dzaky",
-                "nim": "124450064",
-                "umur": "21",
-                "asal": "Padang Sumbar",
-                "alamat": "Perumnas Way Kandis",
-                "hobbi": "Ngedistro",
-                "sosmed": "@hnfdzky_",
-                "kesan": "Orangnya sangat seru dan gampang berbaur",
-                "pesan": "Sukses terus untuk kuliah dan impian-impiannya!"
             },
             {
                 "nama": "Audina Fitria",
@@ -935,7 +935,7 @@ if menu == "Departemen Internal":
                 "pesan": "Sukses terus untuk akademik dan aktivitas lainnya!"
             },
             {
-                "nama": "Muhammad Arvinsyah",
+                "nama": "Muhammad Harvinsyah",
                 "nim": "124450128",
                 "umur": "20",
                 "asal": "Sumatera Selatan",
