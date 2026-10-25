@@ -308,7 +308,7 @@ elif menu == "Baleg":
 elif menu == "Departemen Minbak":
     def DepartemenMinbak():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1K28aOhn06n1sOp1qiDGVibD-P0fkwjLL",
+            "https://drive.google.com/uc?export=view&id=1ycOMykVCpFeyupvi_LtzsrEEl3x_BPmP",
             "https://drive.google.com/uc?export=view&id=1GudBW4sElvNx8H4B1et-_C6g0F4AkKOx",
             "https://drive.google.com/uc?export=view&id=19yU1LJV_62a6wk7IRMJnDtB45dwP-Uap",
             "https://drive.google.com/uc?export=view&id=1YuQzPAMbSQqWKrZ3cjKrsM3bwbghlHn-",
