@@ -1374,7 +1374,7 @@ if menu == "Departemen Eksternal":
                 "alamat": "Sukarame",
                 "hobbi": "baca wattpad",
                 "sosmed": "@fathyya.__",
-                "kesan": "Baik hati dan cantikk,
+                "kesan": "Baik hati dan cantikk",
                 "pesan": "Semangat dan sehat selalu kak"
             },
             {
@@ -1702,7 +1702,7 @@ if menu == "Departemen MIKFES":
                 "hobbi": "Tidur",
                 "sosmed": "@biyokcb",
                 "kesan": "Orangnya asik banget, seru diajak ngobrol",
-                "pesan": Semangat terus kuliahnya, jangan lupa istirahat juga."
+                "pesan": "Semangat terus kuliahnya, jangan lupa istirahat juga."
             },
             {
                 "nama": "Tanty Widiyastuti",
