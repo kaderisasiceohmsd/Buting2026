@@ -117,10 +117,8 @@ if menu == "Kesekjenan":
                 "alamat": "Kesekretariatan HMSD",
                 "hobbi": "Push IMO",
                 "sosmed": "@jars_mrp",
-                "kesan": "pertama kali liat abangnya agak takut gitu dan waktu tau abangnya jadi asprak ADS makin takut gitu.
-                Tapi ternyata selama praktikum, abangnya baik banget ngejelasin dan bantu ngerjain tugas-tugas praktikum aku.",  
-                "pesan":"terimakasih atas bantuannya ya bang, mungkin kalo waktu itu aku ga nanya abang, tugas praktikum aku ga selesai.
-                Dan semangat dalam memimpin Himpunan Mahasiswa Sains Data ADYATAMA ITERA"# 1
+                "kesan": "pertama kali liat abangnya agak takut gitu dan waktu tau abangnya jadi asprak ADS makin takut gitu. Tapi ternyata selama praktikum, abangnya baik banget ngejelasin dan bantu ngerjain tugas-tugas praktikum aku.",  
+                "pesan":"terimakasih atas bantuannya ya bang, mungkin kalo waktu itu aku ga nanya abang, tugas praktikum aku ga selesai. Dan semangat dalam memimpin Himpunan Mahasiswa Sains Data ADYATAMA ITERA"# 1
             },
             {
                 "nama": "Muhammad Aqil Ramadhan",
@@ -130,8 +128,7 @@ if menu == "Kesekjenan":
                 "alamat": "Sekretariatan HMSD",
                 "hobbi": "Dzikir",
                 "sosmed": "@Muhammadaqil1111",
-                "kesan": "Awal kenal bg aqil waktu latihan basket, waktu itu mainnya jago banget.
-                Udah beberapa kali ngobrol sama abangnya dan orangnya santai banget!",  
+                "kesan": "Awal kenal bg aqil waktu latihan basket, waktu itu mainnya jago banget. Udah beberapa kali ngobrol sama abangnya dan orangnya santai banget!",  
                 "pesan":"semangat terus kuliahnya bang! semoga nanti pas IO menang yaa!"# 1
             },
             {
@@ -425,15 +422,8 @@ if menu == "Badan Kesenatoran":
                 "alamat": "Sukarame",
                 "hobbi": "Mendokumentasikan Bayes",
                 "sosmed": "@aqilazayyaan",
-                "kesan": "Awal kenal kak aqila waktu jadi mentor bayes disitu kak aqila pembawaanya selalu happy gitu.
-                Aku langsung seneng dapet mentor yang pembawaannya ceria, kak aqila juga sabar banget ngarahin aku yang selalu linglung ini,
-                dan juga ternyata kak aqila word of affirmation, soalnya aku sempat cerita-cerita ke kak aqila dan kata-kata dari dia jadi penyemangat,
-                aku terharu banget sih waktu itu, jadi nangis dulu baru bales chat dari kak aqila. Tapi kak aqila juga sangat tegas orangnya,
-                bener-bener ada waktu dimana dia tegas ke kami, tapi ga lama langsung ketawa-ketawa lagi, heran juga transisinya cepat gitu.",  
-                "pesan":"terimakasih banyak ya kak aqila sudah sabar menghadapi kelompok bayes ini. Ga kerasa kak aqila sudah membersamai kami selama kurang lebih 5 bulan
-                dan masanya sebentar lagi habis, tapi kak aqila akan selalu jadi mentor yang terbaik. Semoga setelah masa kaderisasi selesai kita tetap berkomunikasi ya kak,
-                semoga ada waktu dimana kita bisa kumpul untuk bertukar cerita dan bercanda lagi. Terimakasih juga atas ilmu yang udah kakak berikan, semoga dapat diterapkan sebagaimana mestinya.
-                Sayang kak aqila banyak-banyak."# 6
+                "kesan": "Awal kenal kak aqila waktu jadi mentor bayes disitu kak aqila pembawaanya selalu happy gitu. Aku langsung seneng dapet mentor yang pembawaannya ceria, kak aqila juga sabar banget ngarahin aku yang selalu linglung ini, dan juga ternyata kak aqila word of affirmation, soalnya aku sempat cerita-cerita ke kak aqila dan kata-kata dari dia jadi penyemangat, aku terharu banget sih waktu itu, jadi nangis dulu baru bales chat dari kak aqila. Tapi kak aqila juga sangat tegas orangnya, bener-bener ada waktu dimana dia tegas ke kami, tapi ga lama langsung ketawa-ketawa lagi, heran juga transisinya cepat gitu.",  
+                "pesan":"terimakasih banyak ya kak aqila sudah sabar menghadapi kelompok bayes ini. Ga kerasa kak aqila sudah membersamai kami selama kurang lebih 5 bulan dan masanya sebentar lagi habis, tapi kak aqila akan selalu jadi mentor yang terbaik. Semoga setelah masa kaderisasi selesai kita tetap berkomunikasi ya kak, semoga ada waktu dimana kita bisa kumpul untuk bertukar cerita dan bercanda lagi. Terimakasih juga atas ilmu yang udah kakak berikan, semoga dapat diterapkan sebagaimana mestinya. Sayang kak aqila banyak-banyak."# 6
             },                      
             {
                 "nama": "Wielman Itolo Halawa",
