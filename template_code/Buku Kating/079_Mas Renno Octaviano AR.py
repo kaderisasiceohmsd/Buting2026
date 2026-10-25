@@ -514,7 +514,7 @@ elif menu == "Departemen PSDA":
         
         data_list = [
             {
-                "Nama": "Arienta Khusnul Ananda",
+               "Nama": "Arienta Khusnul Ananda",
                 "Nim": "",
                 "Umur": "",
                 "Asal": "",
@@ -699,7 +699,6 @@ elif menu == "Departemen PSDA":
                 "Sosmed": "avi.nhr",
                 "Kesan": " kakaknya cantik, imut juga",
                 "Pesan": "Semangat kuliahnya kak"
-          
             },                                                  
         ]
         display_images_with_data(gambar_urls, data_list)
