@@ -367,7 +367,7 @@ elif menu == "Departemen MIKFES":
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
             {
-                "nama": "Risa Romadona"
+                "nama": "Risa Romadona",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1ItwhJKb3Sj-Frlt2p-DZ21oUHu6I-zV_",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
