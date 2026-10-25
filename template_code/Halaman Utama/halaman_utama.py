@@ -130,7 +130,7 @@ elif menu == "About Us":
         )
         st.markdown("<h1 class='centered-title'>About Us</h1>", unsafe_allow_html=True)
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1c34B75VBJMbELN5H_l0sVb58xCE47OHp",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
@@ -138,11 +138,11 @@ elif menu == "About Us":
         ]
         data_list = [
             {
-                "nama": "x",
+                "nama": "Muhammad Haikal Farros",
                 "sebagai": "Pak Lurah",
-                "nim": "122450016",
-                "fun_fact": "suka makan pedes, tapi ga suka efeknya",
-                "motto_hidup": "new semester new me",
+                "nim": "122450004",
+                "fun_fact": "Minum esspresso 6 shoot (muntah dikit), waktu kecil pernah nyebur di septitank",
+                "motto_hidup": "ya begitulah",
             },
             {
                 "nama": "x",
