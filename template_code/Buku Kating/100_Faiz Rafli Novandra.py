@@ -1065,10 +1065,10 @@ if menu == "Departemen Medkraf":
                 "nama": "Allisha",
                 "nim": "124450019",
                 "umur": "16",
-                "asal":"Bekasi",
-                "alamat": "Gg.sakum",
-                "hobbi": "Mainn Bola, Belajar",
-                "sosmed": "@i",
+                "asal":"Kayangan",
+                "alamat": "Heaven",
+                "hobbi": "Mancing",
+                "sosmed": "@aallishaa.a",
                 "kesan": "Kakak ini baik dan cantik juga",  
                 "pesan":"Semangat kuliah nya kak"# 1
             },
@@ -1504,11 +1504,11 @@ if menu == "Departemen Minbak":
             {
                 "nama": "Kevin Antonio Junior",
                 "nim": "123450109",
-                "umur": "21 tahun",
-                "asal": "Bandar Lampung",
+                "umur": "23 tahun",
+                "asal": "Sulawesi Tengah",
                 "alamat": "Panjang, Bandar Lampung",
-                "hobbi": "Balap",
-                "sosmed": "@kevinaj__",
+                "hobbi": "Mancing",
+                "sosmed": "@kevinaja__",
                 "kesan": "Abang ini jago banget main basket",
                 "pesan": "Ajarin biar jago basket dong bang"
             },
@@ -1516,15 +1516,15 @@ if menu == "Departemen Minbak":
                 "nama": "Gusti Putu Ferazka Dhiyamika",
                 "nim": "123450046",
                 "umur": "21 tahun",
-                "asal": "Lampung Utara",
-                "alamat": "Way Halim",
-                "hobbi": "Baca",
+                "asal": "Bekasi",
+                "alamat": "Way Dadi",
+                "hobbi": "Mendaki",
                 "sosmed": "@ferazkaa",
                 "kesan": "Kakak ini asik banget",
                 "pesan": "Semangat terus kuliah nya kak"
             },
             {
-                "nama": "Ari Aristo Muthahari Parisi",
+                "nama": "Ali Aristo Muthahhari Parisi",
                 "nim": "123450088",
                 "umur": "21 tahun",
                 "asal": "Lampung Timur",
@@ -1540,7 +1540,7 @@ if menu == "Departemen Minbak":
                 "umur": "20 tahun",
                 "asal": "Lampung Barat",
                 "alamat": "Airan",
-                "hobbi": "Belajar",
+                "hobbi": "Belajar + menghitung uang",
                 "sosmed": "@aayuandrianni_",
                 "kesan": "Kakak ini selalu happy",
                 "pesan": "Jangna lupa makan nasi kak"
@@ -1551,7 +1551,7 @@ if menu == "Departemen Minbak":
                 "umur": "21 tahun",
                 "asal": "Bekasi",
                 "alamat": "Way Kandis",
-                "hobbi": "Nemenin Bryan live TikTok",
+                "hobbi": "Jogging",
                 "sosmed": "@dafaelpriza_",
                 "kesan": "Abang ini keren banget",
                 "pesan": "Semangat terus bang kuliah nya"
@@ -1562,7 +1562,7 @@ if menu == "Departemen Minbak":
                 "umur": "19 tahun",
                 "asal": "Lampung Barat",
                 "alamat": "Pemda",
-                "hobbi": "Lihat bulan",
+                "hobbi": "Mancing",
                 "sosmed": "@ju.juwitaaa_",
                 "kesan": "Kakak ini asik banget dan selalu ceria",
                 "pesan": "Jaga kesehatan nya kak"
@@ -1573,7 +1573,7 @@ if menu == "Departemen Minbak":
                 "umur": "19 tahun",
                 "asal": "Lampung Tengah",
                 "alamat": "JI Pulau Damar",
-                "hobbi": "Taptap layar kalo Bryan live",
+                "hobbi": "Memantau DL Tugas",
                 "sosmed": "@afdall.03",
                 "kesan": "Abang ini asik banget dan suka merangkul",
                 "pesan": "Semoga kuliah nya gada hambatan bang"
@@ -1595,7 +1595,7 @@ if menu == "Departemen Minbak":
                 "umur": "21 tahun",
                 "asal": "Lampung Tengah",
                 "alamat": "Belwis",
-                "hobbi": "Nganterin Datasena ke gedung F",
+                "hobbi": "Badminton",
                 "sosmed": "@mridwaan_22",
                 "kesan": "Abang ini asik dan kul",
                 "pesan": "Suskes terus kedepannya bang"
@@ -1606,7 +1606,7 @@ if menu == "Departemen Minbak":
                 "umur": "18 tahun",
                 "asal": "Sumatera Selatan",
                 "alamat": "Kota Baru",
-                "hobbi": "Ngitungin kelopak bunga di kebun",
+                "hobbi": "Main Rubik",
                 "sosmed": "@andra.lhm",
                 "kesan": "Abang ini orang nya asik dan suka ketawa",
                 "pesan": "Jangan padam semangat nya bang"
@@ -1614,7 +1614,7 @@ if menu == "Departemen Minbak":
             {
                 "nama": "Bryan Paskah Telaumbanua",
                 "nim": "124450003",
-                "umur": "22 tahun",
+                "umur": "20 tahun",
                 "asal": "Nias",
                 "alamat": "Belwis",
                 "hobbi": "Live TikTok",
@@ -1626,9 +1626,9 @@ if menu == "Departemen Minbak":
                 "nama": "Ghiyats Thabularasa Meardhy",
                 "nim": "124450067",
                 "umur": "17 tahun",
-                "asal": "Bekasi",
-                "alamat": "Korpri",
-                "hobbi": "Ngegift live Bryan",
+                "asal": "Surabaya",
+                "alamat": "Kemiling",
+                "hobbi": "Nanem Sawit",
                 "sosmed": "@meardhy_ghiyats",
                 "kesan": "Abang ini orang nya happy dan asik",
                 "pesan": "Jaga kesehatannya bang"
@@ -1703,7 +1703,7 @@ if menu == "Departemen MIKFES":
                 "umur": "21 tahun",
                 "asal": "Bandar Lampung",
                 "alamat": "Kedaton",
-                "hobbi": "Tidur",
+                "hobbi": "Gangguin bang keya",
                 "sosmed": "@biyokcb",
                 "kesan": "Abang ini pinter dan tampan",
                 "pesan": "Semangat terus bang semoga kuliah nya dilancar kan"
@@ -1712,9 +1712,9 @@ if menu == "Departemen MIKFES":
                 "nama": "Tanty Widiyastuti",
                 "nim": "123450094",
                 "umur": "21 tahun",
-                "asal": "Lampung",
+                "asal": "Lampung Tengah",
                 "alamat": "Airan Raya",
-                "hobbi": "Membaca",
+                "hobbi": "Nonton film",
                 "sosmed": "@tvnty_",
                 "kesan": "Kakak ini lucu dan suka bercanda",
                 "pesan": "Jangan lupa makan nasi kak"
@@ -1728,7 +1728,7 @@ if menu == "Departemen MIKFES":
                 "hobbi": "Gitar",
                 "sosmed": "@fadilalfarizzii",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "pesan": "..."
             },
             {
                 "nama": "Manuel Frederika",
@@ -1736,7 +1736,7 @@ if menu == "Departemen MIKFES":
                 "umur": "20 tahun",
                 "asal": "Batam",
                 "alamat": "Way Kandis",
-                "hobbi": "Tenis meja",
+                "hobbi": "Gitar",
                 "sosmed": "@manuelfdk_",
                 "kesan": "Abang ini lucu juga",
                 "pesan": "Semangat terus bang walaupun hidup itu berat"
@@ -1768,8 +1768,8 @@ if menu == "Departemen MIKFES":
                 "nim": "124450078",
                 "umur": "19 tahun",
                 "asal": "Kepulauan Riau",
-                "alamat": "Teluk Betung",
-                "hobbi": "Nonton KHW",
+                "alamat": "Jatimulyo",
+                "hobbi": "Mantengin KHW",
                 "sosmed": "@vunnycaa",
                 "kesan": "Kakak ini ramah dan hangat",
                 "pesan": "Semangat terus kuliah nya kak"
@@ -1802,7 +1802,7 @@ if menu == "Departemen MIKFES":
                 "umur": "21 tahun",
                 "asal": "Sumatera Utara",
                 "alamat": "Pemda",
-                "hobbi": "Rebahan",
+                "hobbi": "Sibuk",
                 "sosmed": "@_els.a",
                 "kesan": "Kakak ini lucu, happy dan ceria",
                 "pesan": "Semoga dihilangkan hambatan kuliah nya kak"
@@ -1813,7 +1813,7 @@ if menu == "Departemen MIKFES":
                 "umur": "20 tahun",
                 "asal": "Pringsewu",
                 "alamat": "Airan",
-                "hobbi": "Mancing",
+                "hobbi": "Main game",
                 "sosmed": "@fadyaizzatul_",
                 "kesan": "banyak yang aku pelajari dari kakak ini",
                 "pesan": "Jangan lupa makan ya kak"
@@ -1824,7 +1824,7 @@ if menu == "Departemen MIKFES":
                 "umur": "19 tahun",
                 "asal": "Sumatera Utara",
                 "alamat": "Way Huwi",
-                "hobbi": "Dengerin musik",
+                "hobbi": "Lari",
                 "sosmed": "@_loviaa",
                 "kesan": "Kakak ini asik dan suka bercanda",
                 "pesan": "Jangan lupa mkaan nasi kak"
@@ -1832,10 +1832,10 @@ if menu == "Departemen MIKFES":
             {
                 "nama": "M. Alsi Syahrulloh",
                 "nim": "124450092",
-                "umur": "20 tahun",
+                "umur": "18 tahun",
                 "asal": "Kalianda",
                 "alamat": "Kota Baru",
-                "hobbi": "Main game, tidur",
+                "hobbi": "Main game",
                 "sosmed": "@aruccy_",
                 "kesan": "Abang ini orang nya humble dan asik",
                 "pesan": "Semangat jangan sampai pudar bang"
@@ -1901,7 +1901,7 @@ if menu == "Departemen MIKFES":
                 "umur": "20 tahun",
                 "asal": "Bandar Lampung",
                 "alamat": "Campang Raya",
-                "hobbi": "Ngegym, baca novel",
+                "hobbi": "Gym, membaca, dan bermain",
                 "sosmed": "@kelelep_comberan",
                 "kesan": "Abang ini terlalu jenius sih",
                 "pesan": "Jangan lupa jaga kesehatan bang"
@@ -1912,7 +1912,7 @@ if menu == "Departemen MIKFES":
                 "umur": "19 tahun",
                 "asal": "Sumatera Selatan",
                 "alamat": "Sukarame",
-                "hobbi": "Scroll",
+                "hobbi": "Memasak",
                 "sosmed": "@melva_fbrt",
                 "kesan": "banyak yang saya pelajari dari kakak ini",
                 "pesan": "Jaga kesehatan ya kak"
@@ -1931,10 +1931,10 @@ if menu == "Departemen MIKFES":
             {
                 "nama": "Rifky Henry Ferdianto",
                 "nim": "124450115",
-                "umur": "28 tahun",
+                "umur": "-",
                 "asal": "Kota bumi",
                 "alamat": "Rajabasa",
-                "hobbi": "Lari dari kenyataan",
+                "hobbi": "Ngerecokin nuel",
                 "sosmed": "@henryferdianto",
                 "kesan": "Abang ini terlalu keren sih",
                 "pesan": "Jangan lupa makan bang 3x sehari"
