@@ -19,9 +19,10 @@ st.set_page_config(
 )
 
 # ==================================================
-# CSS (Desain dari Afdhi)
+# CSS
 # ==================================================
 st.markdown("""
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap');
 
@@ -248,6 +249,44 @@ footer, #MainMenu { visibility: hidden; }
     -webkit-text-fill-color: transparent;
 }
 
+/* ---------- LENCANA JABATAN ---------- */
+.jabatan-badge {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 9px 20px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #3a2a00;
+    background: linear-gradient(135deg, var(--gold1), var(--gold2) 45%, var(--gold3));
+    box-shadow: 0 6px 20px rgba(246, 199, 68, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+.jabatan-badge::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.65), transparent);
+    transform: skewX(-20deg);
+    animation: shine 3.6s ease-in-out infinite;
+}
+
+@keyframes shine {
+    0%   { left: -60%; }
+    55%  { left: 130%; }
+    100% { left: 130%; }
+}
+
+.jabatan-star { font-size: 13px; }
+
 /* ---------- GRID INFO ---------- */
 .info-grid {
     display: grid;
@@ -327,6 +366,7 @@ footer, #MainMenu { visibility: hidden; }
 
 .muted { opacity: .55; font-style: italic; }
 
+/* kesan/pesan panjang: klik untuk memperpanjang */
 .quote-long summary {
     list-style: none;
     cursor: pointer;
@@ -404,8 +444,8 @@ def streamlit_menu():
         menu_title=None,
         options=[
             "Kesekjenan",
-            "Badan Legislatif",
-            "Badan Kesenatoran",
+            "Baleg",
+            "Senator",
             "Departemen PSDA",
             "Departemen MIKFES",
             "Departemen Eksternal",
@@ -539,6 +579,7 @@ def _tile(icon, label, value_html):
 
 QUOTE_LIMIT = 110  # lebih dari ini, teks dipotong dan muncul tombol "Baca selengkapnya"
 
+
 def _quote(label, text):
     head = f"<div class='quote-label'>{label}</div>"
 
@@ -568,10 +609,9 @@ def _quote(label, text):
 
 
 # ==================================================
-# FUNGSI MENAMPILKAN PROFIL (DESAIN BARU, DATA ASLI)
+# FUNGSI MENAMPILKAN PROFIL
 # ==================================================
 def display_images_with_data(gambar_urls, data_list):
-    # URL dan urutan foto tidak diubah; setiap foto tetap berpasangan dengan biodata pada indeks yang sama.
     images = load_images_b64(tuple(gambar_urls))
 
     st.markdown(
@@ -582,7 +622,7 @@ def display_images_with_data(gambar_urls, data_list):
 
     query = st.text_input(
         "Cari",
-        placeholder="🔍  Cari nama, asal, atau hobi...",
+        placeholder="🔍  Cari nama, jabatan, asal, atau hobi...",
         label_visibility="collapsed",
         key=f"cari_{menu}",
     )
@@ -591,14 +631,17 @@ def display_images_with_data(gambar_urls, data_list):
 
     shown = 0
     for i, data in enumerate(data_list):
-        nama = clean(data.get("Nama"), "Tanpa Nama")
         if q:
             haystack = " ".join(
-                str(data.get(k, "")) for k in ("Nama", "NIM", "Asal", "Alamat", "Hobi", "Sosmed", "Kesan", "Pesan")
+                str(data.get(k, "")) for k in ("nama", "jabatan", "asal", "alamat", "hobbi", "sosmed")
             ).lower()
             if q not in haystack:
                 continue
 
+        nama = clean(data.get("nama"), "Tanpa Nama")
+        jabatan = clean(data.get("jabatan"), "")
+
+        # Foto atau avatar inisial
         img_b64 = images[i] if i < len(images) else None
         if img_b64:
             photo = f"<img src='data:image/jpeg;base64,{img_b64}' alt='Foto {esc(nama)}' loading='lazy'/>"
@@ -608,22 +651,34 @@ def display_images_with_data(gambar_urls, data_list):
                 f"<small>Foto belum tersedia</small></div>"
             )
 
-        umur = clean(data.get("Umur"))
+        # Lencana jabatan (disembunyikan kalau kosong)
+        badge = (
+            f"<div class='jabatan-badge'><span class='jabatan-star'>★</span>{esc(jabatan)}</div>"
+            if jabatan else ""
+        )
+
+        # Umur: tambah "Tahun" hanya kalau berupa angka
+        umur = clean(data.get("umur"))
         umur_text = f"{umur} Tahun" if umur.isdigit() else umur
-        sosmed = clean(data.get("Sosmed"))
-        sosmed_html = f"<span class='social-chip'>{esc(sosmed)}</span>" if sosmed != "-" else "-"
+
+        # Sosial media
+        sosmed = clean(data.get("sosmed"))
+        sosmed_html = (
+            f"<span class='social-chip'>{esc(sosmed)}</span>" if sosmed != "-" else "-"
+        )
 
         tiles = "".join([
-            _tile("🪪", "NIM", esc(clean(data.get("NIM")))),
+            _tile("🪪", "NIM", esc(clean(data.get("nim")))),
             _tile("🎂", "Umur", esc(umur_text)),
-            _tile("📍", "Asal", esc(clean(data.get("Asal")))),
-            _tile("🏠", "Alamat", esc(clean(data.get("Alamat")))),
-            _tile("🎯", "Hobi", esc(clean(data.get("Hobi")))),
+            _tile("📍", "Asal", esc(clean(data.get("asal")))),
+            _tile("🏠", "Alamat", esc(clean(data.get("alamat")))),
+            _tile("🎯", "Hobi", esc(clean(data.get("hobbi")))),
             _tile("📸", "Sosial Media", sosmed_html),
         ])
+
         quotes = (
-            _quote("💬 Kesan", clean(data.get("Kesan"), ""))
-            + _quote("✉️ Pesan", clean(data.get("Pesan"), ""))
+            _quote("💬 Kesan", clean(data.get("kesan"), ""))
+            + _quote("✉️ Pesan", clean(data.get("pesan"), ""))
         )
 
         card_html = _flatten_html(f"""
@@ -633,12 +688,16 @@ def display_images_with_data(gambar_urls, data_list):
                 {photo}
             </div>
             <div class='info-pane'>
-                <div class='profile-name'>{esc(nama)}</div>
+                <div>
+                    <div class='profile-name'>{esc(nama)}</div>
+                    {badge}
+                </div>
                 <div class='info-grid'>{tiles}</div>
                 <div class='quote-grid'>{quotes}</div>
             </div>
         </div>
         """)
+
         st.markdown(card_html, unsafe_allow_html=True)
         shown += 1
 
@@ -646,9 +705,11 @@ def display_images_with_data(gambar_urls, data_list):
         st.info("Tidak ada anggota yang cocok dengan pencarian.")
 
 
+# ==================================================
+# PILIH MENU
+# ==================================================
 menu = streamlit_menu()
 
-# BAGIAN SINI YANG HANYA BOLEH DIUABAH
 
 if menu == "Kesekjenan":
     def Kesekjenan():
@@ -2555,3 +2616,4 @@ if menu == "Departemen MIKFES":
         ]
         display_images_with_data(gambar_urls, data_list)
     mikfes()
+
