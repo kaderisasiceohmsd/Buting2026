@@ -1784,7 +1784,7 @@ elif menu == "Departemen Medkraf":
             "https://drive.google.com/uc?export=view&id=1-3vnmbA4tyKB0aHlhWlEWMLpfM9UiOZj",#dafa
             "https://drive.google.com/uc?export=view&id=1MYUg2LP1R-G-qrIOYOYxWLqyhFxGlX_A",#edsel
             "https://drive.google.com/uc?export=view&id=1tjUkd2RWJupqCbEZIuWNs8yrcirwVSJ2",#lucia
-            "https://drive.google.com/uc?export=view&id=",#shafa
+            "https://drive.google.com/uc?export=view&id=1mW9y9ia1ZLvtIcHbnk9tMqMFbqZAiLlB",#shafa
             "https://drive.google.com/uc?export=view&id=1vfMhoP7eek4EQ06bITZ_AEcPv8nKvp0V",#zanuba
 
         ]

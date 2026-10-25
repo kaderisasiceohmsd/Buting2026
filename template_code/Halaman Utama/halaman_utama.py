@@ -11,7 +11,6 @@ if parent_dir not in sys.path:
 
 from tools.ui_helper import (
     inject_custom_css,
-    load_image,
     clean_text,
     get_menu_styles,
 )
@@ -34,23 +33,23 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# URLs Logo
-url = "https://drive.google.com/uc?export=view&id=12cQ4T8NkVvVPVNX6zBQC4sviFcc4cDWx"   # Logo Himpunan HMSD (DI ATAS)
-url1 = "https://drive.google.com/uc?export=view&id=12RBvQdMiqqqph-Q1QqLb0zvvIPnBjCYb"  # Logo Departemen / Kegiatan (DI BAWAH)
+# URLs Logo (Sudah diubah ke format thumbnail)
+url = "https://drive.google.com/thumbnail?id=12cQ4T8NkVvVPVNX6zBQC4sviFcc4cDWx&sz=w1000"   # Logo Himpunan HMSD (DI ATAS)
+url1 = "https://drive.google.com/thumbnail?id=12RBvQdMiqqqph-Q1QqLb0zvvIPnBjCYb&sz=w1000"  # Logo Departemen / Kegiatan (DI BAWAH)
 
 # 1. Logo Himpunan di Atas (Ukuran normal, tidak terpotong, proporsional)
 col1, col2, col3 = st.columns([1.5, 2, 1.5])
 with col2:
-    img_himpunan = load_image(url, fallback_name="Logo Himpunan HMSD", keep_ratio=True)
-    st.image(img_himpunan, use_container_width=True)
+    # Memanggil st.image secara langsung (bypass load_image)
+    st.image(url, use_container_width=True)
 
 st.write("")
 
 # 2. Logo Departemen/Kegiatan di Bawah Logo Himpunan (Ukuran normal, tidak terpotong)
 col1, col2, col3 = st.columns([1.5, 2, 1.5])
 with col2:
-    img_kegiatan = load_image(url1, fallback_name="Logo Departemen CEO HMSD", keep_ratio=True)
-    st.image(img_kegiatan, use_container_width=True)
+    # Memanggil st.image secara langsung (bypass load_image)
+    st.image(url1, use_container_width=True)
 
 st.write("")
 
@@ -114,7 +113,7 @@ if menu == "Home":
         )
 
         # --- FOTO UTAMA KELOMPOK DENGAN EFEK KACA SAAT DISENTUH ---
-        foto_kelompok = "https://drive.google.com/uc?export=view&id=1BFaWjCYfj0HFeGBBDB8SmUYsZkxcEvM7"
+        foto_kelompok = "https://drive.google.com/thumbnail?id=1BFaWjCYfj0HFeGBBDB8SmUYsZkxcEvM7&sz=w1000"
         st.markdown(
             """
             <div style="text-align: center; margin: 24px 0 12px 0;">
@@ -128,8 +127,7 @@ if menu == "Home":
         col1, col2, col3 = st.columns([0.8, 3.4, 0.8])
         with col2:
             with st.container(key="shine-photo-team"):
-                img_kelompok = load_image(foto_kelompok, fallback_name="Foto Kelompok Tensor", keep_ratio=True)
-                st.image(img_kelompok, use_container_width=True)
+                st.image(foto_kelompok, use_container_width=True)
 
         st.write("")
 
@@ -144,25 +142,24 @@ if menu == "Home":
             unsafe_allow_html=True,
         )
 
-        # --- DATA GALERI: untuk menambah kartu baru, cukup tambah satu blok {...} di list ini ---
         GALERI = [
             {
                 "emoji": "💻",
                 "judul": "Kerja Kelompok & Coding",
                 "deskripsi": "Momen diskusi seru di selasar gedung kampus dan kafe. Debat logika kode, revisi layout bareng, hingga sharing cemilan saat mata mulai mengantuk.",
-                "foto": "https://drive.google.com/uc?export=view&id=19fo5WQL02HB7IzvRUwhNoKySjy6uJ_Lv",
+                "foto": "https://drive.google.com/thumbnail?id=1LlKGfllyj2v536zpkPKSzsJ4tPjRcjwC&sz=w1000",
             },
             {
                 "emoji": "🚩",
                 "judul": "Rangkaian Acara CEO",
                 "deskripsi": "Keseruan saat mengikuti dinamika materi, yel-yel kelompok, dan simulasi organisasi. Melatih kekompakan, kepemimpinan, dan mental pantang menyerah.",
-                "foto": "https://drive.google.com/uc?export=view&id=11UyAE4hUKZ8dG0JG3OxqZCLOrAGGDGJ_",
+                "foto": "https://drive.google.com/thumbnail?id=11UyAE4hUKZ8dG0JG3OxqZCLOrAGGDGJ_&sz=w1000",
             },
             {
                 "emoji": "☕",
                 "judul": "Main & Refreshing",
                 "deskripsi": "Karena hidup mahasiswa bukan cuma soal deadline! Momen makan bareng, nongkrong santai, dan bercanda lepas yang bikin kami makin akrab seperti keluarga.",
-                "foto": "https://drive.google.com/uc?export=view&id=1tWFKgAL9u58RnOrhMx-IexoK8y_FJLXb",
+                "foto": "https://drive.google.com/thumbnail?id=1tWFKgAL9u58RnOrhMx-IexoK8y_FJLXb&sz=w1000",
             },
         ]
 
@@ -173,10 +170,8 @@ if menu == "Home":
             cols_galeri = st.columns(KARTU_PER_BARIS, gap="medium")
             for ci, item in enumerate(GALERI[start:start + KARTU_PER_BARIS]):
                 with cols_galeri[ci]:
-                    # depan: foto, belakang: teks (kartu berputar saat disentuh)
                     with st.container(key=f"flip-card-{start + ci}"):
-                        img_galeri = load_image(item["foto"], fallback_name=item["judul"], keep_ratio=True)
-                        st.image(img_galeri, use_container_width=True)
+                        st.image(item["foto"], use_container_width=True)
                         st.markdown(
                             f'<div class="flip-back">'
                             f'<div class="flip-emoji">{item["emoji"]}</div>'
@@ -212,8 +207,20 @@ elif menu == "About Us":
             unsafe_allow_html=True,
         )
 
+        # Menggunakan format thumbnail Google Drive
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1rJzgdR7_6woOOUN1rxC_kR5RDAex8rYC"
+            "https://drive.google.com/thumbnail?id=1U9qL_kV5pRVGxwjX5vY9Ye60zewUyis1&sz=w1000",
+            "https://drive.google.com/thumbnail?id=1VDxX_RUW42qOiFcx2ZzNQIOC5EVmBt9p&sz=w1000",  # wawa
+            "https://drive.google.com/thumbnail?id=1JyZqi_gGn-Z0U7rbn6wm6yCff3iBAXUY&sz=w1000",  # anoy
+            "https://drive.google.com/thumbnail?id=1qn7DTt5dewAf4lrewAOw1wdGqarl4Gjy&sz=w1000",  # juju
+            "https://drive.google.com/thumbnail?id=1pE1AmXiK-KOvxQgsWiw8LOIJFmSC4qBt&sz=w1000",  # anya
+            "https://drive.google.com/thumbnail?id=1t-jcrs_NnloNmQS9C1Yx6x79HpRA3PyC&sz=w1000",  # tingting
+            "https://drive.google.com/thumbnail?id=1Q9BG3ckhXSkR241w6WQKUgks1NOisDVR&sz=w1000",  # lui
+            "https://drive.google.com/thumbnail?id=1wYkTJHX0mhBy9UVW_9XoDMAvXd56xI2r&sz=w1000",  # cella
+            "https://drive.google.com/thumbnail?id=1BZHhEBU0fE6kbtvuc67sUinlTB8yeKmq&sz=w1000",  # esha
+            "https://drive.google.com/thumbnail?id=1WDDcHs08ui8kpk4ZgElSmS9LqSPwa3NB&sz=w1000",  # alip
+            "",  # ia (ID masih kosong, sengaja dibiarkan kosong agar tidak error)
+            "https://drive.google.com/thumbnail?id=13nJeccLKDvlcb9X08Vbo2ZKEjyXf0TuR&sz=w1000",  # oni
         ]
 
         data_list = [
@@ -222,69 +229,69 @@ elif menu == "About Us":
                 "sebagai": "Pak lurah",
                 "nim": "125450103",
                 "fun_fact": "Suka ngeliatin Sunset",
-                "motto_hidup": "Nothing is impossible",
+                "motto_hidup": "Dalam setiap Interaksi pasti ada Komunikasi, Didalam komunikasi adakalanya terjadi Miskomunikasi, Maka dari itu butuh Evaluasi agar dalam komunikasi, tak terjadi lagi miskomunikasi",
             },
             {
                 "nama": "Laikha Salwa Balqis",
                 "sebagai": "Bu Lurah",
                 "nim": "125450112",
-                "fun_fact": "[Isi Fun Fact]",
-                "motto_hidup": "[Isi Motto]",
+                "fun_fact": "strict parents, suka hewan, suka jadi penjelajah",
+                "motto_hidup": "Tenang, gausah dibikin pusing gausah dibikin ribet. Everything's gonna be ok!",
             },
             {
                 "nama": "Hanifa Az'zahra",
                 "sebagai": "Anggota",
                 "nim": "125450001",
-                "fun_fact": "[Isi Fun Fact]",
-                "motto_hidup": "[Isi Motto]",
+                "fun_fact": "Pindah kost 3 kali dlm satu semester, suka tidur dimotor",
+                "motto_hidup": "Melangkah ke arah yang asing, membaca apa yang tak terucap dan yang terlihat",
             },
             {
                 "nama": "Jauza Virna Radyta",
                 "sebagai": "Anggota",
                 "nim": "125450009",
-                "fun_fact": "[Isi Fun Fact]",
-                "motto_hidup": "[Isi Motto]",
+                "fun_fact": "banyak cowo, ga punya pacar",
+                "motto_hidup": "semua hal itu butuh proses bukan protes",
             },
             {
                 "nama": "Lusia Zefanya Sihotang",
                 "sebagai": "Anggota",
                 "nim": "125450010",
-                "fun_fact": "[Isi Fun Fact]",
-                "motto_hidup": "[Isi Motto]",
+                "fun_fact": "cinta piscok uin",
+                "motto_hidup": "Ad Maiorem Dei Gloriam",
             },
             {
                 "nama": "Enzo Hamman Albarru",
                 "sebagai": "Anggota",
                 "nim": "125450022",
-                "fun_fact": "[Isi Fun Fact]",
-                "motto_hidup": "[Isi Motto]",
+                "fun_fact": "sarapan nasi uduk setiap hari",
+                "motto_hidup": "hidup tenang, bebas nafas, nasi padang, kopi panas",
             },
             {
                 "nama": "Mario Figo Dito",
                 "sebagai": "Anggota",
                 "nim": "125450048",
-                "fun_fact": "[Isi Fun Fact]",
-                "motto_hidup": "[Isi Motto]",
+                "fun_fact": "mirip bang zaldy kata kak tanty",
+                "motto_hidup": "Coba aja dulu bkakakak",
             },
             {
                 "nama": "Kasih Martha Reichella",
                 "sebagai": "Anggota",
                 "nim": "125450060",
-                "fun_fact": "[Isi Fun Fact]",
-                "motto_hidup": "[Isi Motto]",
+                "fun_fact": "Lebih suka baca novel sedih dibandingkan novel happy ending",
+                "motto_hidup": "Apapun masalahnya jangan lupa buat selalu mengandalkan Tuhan",
             },
             {
                 "nama": "Muhammad Reyza Fasihurahman",
                 "sebagai": "Anggota",
                 "nim": "125450094",
-                "fun_fact": "[Isi Fun Fact]",
-                "motto_hidup": "[Isi Motto]",
+                "fun_fact": "suka belajar fisika mesin",
+                "motto_hidup": "Hidup itu mudah, yang susah itu cuma ADS",
             },
             {
                 "nama": "Nadira Alifa Arifin",
                 "sebagai": "Anggota",
                 "nim": "125450101",
-                "fun_fact": "[Isi Fun Fact]",
+                "fun_fact": " cinta kopi walau aslam",
                 "motto_hidup": "[Isi Motto]",
             },
             {
@@ -298,14 +305,13 @@ elif menu == "About Us":
                 "nama": "Piligo Arga Gayoni",
                 "sebagai": "Anggota",
                 "nim": "125450123",
-                "fun_fact": "[Isi Fun Fact]",
-                "motto_hidup": "[Isi Motto]",
+                "fun_fact": "suka kesandung kalau jalan",
+                "motto_hidup": "susah senang jalani saja, tapi hati hati jalan bolong, nanti kesandung",
             },
         ]
 
         # Tampilkan anggota secara vertikal proporsional (2 kolom) dengan efek kaca saat disentuh
         for row in range(0, len(data_list), 2):
-            # empty side columns shrink the two cards while keeping 2 per row
             _pad_l, col_a, col_b, _pad_r = st.columns([1.2, 3, 3, 1.2], gap="medium")
             cols = [col_a, col_b]
             for ci in range(2):
@@ -326,8 +332,11 @@ elif menu == "About Us":
                 with cols[ci]:
                     with st.container(key=f"glass-card-{idx}"):
                         with st.container(key=f"glass-photo-{idx}"):
-                            img = load_image(url_img, fallback_name=nama)
-                            st.image(img, use_container_width=True)
+                            # MEMANGGIL GAMBAR LANGSUNG (Bypass load_image)
+                            if url_img:
+                                st.image(url_img, use_container_width=True)
+                            else:
+                                st.write("Gambar belum dimasukkan")
 
                             st.markdown(
                                 f"""
