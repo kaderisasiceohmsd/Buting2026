@@ -1009,7 +1009,7 @@ elif menu == "Departemen MIKFES":
 
         with tab2:
             # Pindahkan URL dan Data anggota Sekretaris ke dalam list ini
-            gambar_urls_sekretaris_mikfes = ["https://drive.google.com/uc?export=view&id=1Gg--iHbQNTGLlW1i03jUvxIWJrPTTmPy",]
+            gambar_urls_sekretaris_mikfes = ["https://drive.google.com/uc?export=view&id=1K9487O-Qgrl_z9ggJHdLeBNAeKAJ-UyQ",]
             data_list_sekretaris_mikfes = [ 
             {
             "nama": "Tanty Widiyastuti",
@@ -1029,11 +1029,11 @@ elif menu == "Departemen MIKFES":
             # Pindahkan URL dan Data anggota Komisi I ke dalam list ini
             gambar_urls_Divisi_Professional_Skill_and_Development = [
             "https://drive.google.com/uc?export=view&id=1J1Ow3mPnTv1NZuoc5vtWmcrPZNIVovs5",
-            "https://drive.google.com/uc?export=view&id=1lVb_DRDLKg3v-K0vaCGfGCuvy8H8Aywe",
-            "https://drive.google.com/uc?export=view&id=1e9mbPMxdAnuLs80AjDceH0kKP1ubYpQV",
-            "https://drive.google.com/uc?export=view&id=1e9mbPMxdAnuLs80AjDceH0kKP1ubYpQV",
-            "https://drive.google.com/uc?export=view&id=1e9mbPMxdAnuLs80AjDceH0kKP1ubYpQV",
-            "https://drive.google.com/uc?export=view&id=1e9mbPMxdAnuLs80AjDceH0kKP1ubYpQV",
+            "https://drive.google.com/uc?export=view&id=1K9487O-Qgrl_z9ggJHdLeBNAeKAJ-UyQ",
+            "https://drive.google.com/uc?export=view&id=18AtZtf7ahz0ge0UVieOGv_k2TK3BFTUE",
+            "https://drive.google.com/uc?export=view&id=1G4Qok6YiafAWpW1A0GTjfUMC9kqwkNHd",
+            "https://drive.google.com/uc?export=view&id=1KaoL1ruuGH9jT_6SGEWEGpo7cfaLXLJS",
+            "https://drive.google.com/uc?export=view&id=1DG8shlDjNnxji-kryZNSNwvJAL-b_hAP",
             ]
             data_list_Divisi_Professional_Skill_and_Development = [
             {
@@ -1108,12 +1108,12 @@ elif menu == "Departemen MIKFES":
         with tab4:
             # Pindahkan URL dan Data anggota Komisi II ke dalam list ini
             gambar_urls_Divisi_Pusat_Inovasi_dan_Kajian_Akademik = [
-                "https://drive.google.com/uc?export=view&id=1A717g1m6Pl_yQkREeN-fy6GNGwZgTpea",
-                "https://drive.google.com/uc?export=view&id=1DMPCpnCFfHAsAgXe9gsOLPghm24ppRWA",
-                "https://drive.google.com/uc?export=view&id=1l3IEEGrYFXfW9-ZrXDk3DUxOjejU7Jr_",
+                "https://drive.google.com/uc?export=view&id=1Za-at_KwA9nu02sfpTMC_SC6KlxX3P7X",
+                "https://drive.google.com/uc?export=view&id=1ptzssY_Gkkt-73H1C34jMHD3l7MEnKNJ",
+                "https://drive.google.com/uc?export=view&id=15XBon1oWrw8tv3fDf7Kz1nmGuK-YkD0p",
+                "https://drive.google.com/uc?export=view&id=1yhyTdnnsAsYG9r8i_sWkRBSHeniLvfpo",
                 "https://drive.google.com/uc?export=view&id=1swlWLuvnhYIuncA3X_jmga-WUrSCDm2e",
-                "https://drive.google.com/uc?export=view&id=1swlWLuvnhYIuncA3X_jmga-WUrSCDm2e",
-                "https://drive.google.com/uc?export=view&id=1swlWLuvnhYIuncA3X_jmga-WUrSCDm2e",
+                "https://drive.google.com/uc?export=view&id=1sNQ4_O9pcBOJfuQ1HM7V8cg7uBghZL-4",
             ]
             data_list_Divisi_Pusat_Inovasi_dan_Kajian_Akademik = [
             {
@@ -1188,10 +1188,14 @@ elif menu == "Departemen MIKFES":
         with tab5:
             # Pindahkan URL dan Data anggota Komisi III ke dalam list ini
             gambar_urls_Divisi_Research_Development = [
-                "https://drive.google.com/uc?export=view&id=11bYc1s3Hdc7SXsymoVoO5xp_fJbWbswa",
-                "https://drive.google.com/uc?export=view&id=1U5rFZZlnPF_rL5luJ9Thw-uOT2b62c0J",
-                "https://drive.google.com/uc?export=view&id=1Cic7JXesS0nSp855SaBGZ9GtBENJKAOC",
-                "https://drive.google.com/uc?export=view&id=1bL_a8gWYvrND2p3KYrqGeW6sslbV5cvU",
+                "https://drive.google.com/uc?export=view&id=1ftOW6KLI4wZUDtTiBROw6sJJO_oRmBsF",
+                "https://drive.google.com/uc?export=view&id=1FY0YsNf1YdIcCYnGsnxrimz2XSzKzTMq",
+                "https://drive.google.com/uc?export=view&id=1ZHYYz6UzqAiLMQzE_ARGjZKzRbz1A0tr",
+                "https://drive.google.com/uc?export=view&id=1lfOt31ozH1FxRHcupWxHKWJMIb5Gfj1N",
+                "https://drive.google.com/uc?export=view&id=12q0SFvIBYJR-7E-OMI_BonrgBo7_JHc_",
+                "https://drive.google.com/uc?export=view&id=1V1_MdlCw0c6e50dpeQEGEEEZ8rnEtPI9",
+                "https://drive.google.com/uc?export=view&id=1QL9rfgS3wQmfxRzDfMDK18isZd8o4akI",
+                "https://drive.google.com/uc?export=view&id=1NzD8hmdVj_ZSqM2JcRcYJTpqL9gLpkew",
             ]
             data_list_Divisi_Research_Development = [
             {
