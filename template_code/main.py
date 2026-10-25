@@ -1,81 +1,50 @@
 import streamlit as st
 
-st.set_page_config(page_title="Buku Kating | Poisson", layout="wide")
+st.set_page_config(page_title="Buku Kating", layout="wide")
 
-# ============================================================
-# 🍷 CSS GLOBAL — VINTAGE WINE THEME (MAROON & CREAM)
-# ============================================================
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap');
-
-/* 1. Background Utama: Kertas Tua (Cream) */
-.stApp {
-    background-color: #f4f0eb;
-    background-image: 
-        linear-gradient(rgba(244, 240, 235, 0.95), rgba(244, 240, 235, 0.95)),
-        url('https://www.transparenttextures.com/patterns/cream-paper.png');
-    background-attachment: fixed;
-    font-family: 'Inter', sans-serif;
-    color: #222222;
-}
-
-/* 2. Sidebar: Maroon Mewah */
-[data-testid="stSidebar"] {
-    background: linear-gradient(180deg, #701c23 0%, #4e1318 100%) !important;
-    border-right: 1px solid rgba(217, 195, 163, 0.3);
-    box-shadow: 4px 0 15px rgba(0,0,0,0.1);
-}
-[data-testid="stSidebar"] *,
-[data-testid="stSidebar"] span,
-[data-testid="stSidebar"] p,
-[data-testid="stSidebar"] div,
-[data-testid="stSidebar"] svg {
-    color: #f4f0eb !important;
-    fill: #f4f0eb !important;
-    font-family: 'Inter', sans-serif !important;
-}
-[data-testid="stSidebar"] [data-testid="stSidebarNav"] strong {
-    font-family: 'Playfair Display', serif !important;
-    letter-spacing: 0.5px;
-}
-
-/* 3. Efek Hover di Menu Sidebar */
-[data-testid="stSidebar"] [data-testid="stSidebarNav"] a {
-    transition: all 0.3s ease;
-    border-radius: 8px;
-    margin: 2px 8px;
-}
-[data-testid="stSidebar"] [data-testid="stSidebarNav"] a:hover {
-    background: rgba(217, 195, 163, 0.15) !important;
-    transform: translateX(4px);
-}
-[data-testid="stSidebar"] [data-testid="stSidebarNav"] a[aria-current="page"] {
-    background: rgba(217, 195, 163, 0.25) !important;
-    border-left: 3px solid #d9c3a3;
-}
-
-/* 4. Sembunyikan Menu Bawaan */
-#MainMenu { visibility: hidden; }
-header { visibility: hidden; }
-
-/* 5. Scrollbar Elegan (Maroon) */
-::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: #f4f0eb; }
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #701c23, #a8323d);
-    border-radius: 10px;
-}
+    [data-testid="stSidebar"] {
+        background-color: #701c23 !important;
+    }
+    [data-testid="stSidebar"] *,
+    [data-testid="stSidebar"] span,
+    [data-testid="stSidebar"] p,
+    [data-testid="stSidebar"] div,
+    [data-testid="stSidebar"] svg {
+        color: #ffffff !important;
+        fill: #ffffff !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
-# ============================================================
-# 🧭 NAVIGASI HALAMAN (LENGKAP)
-# ============================================================
+st.session_state.pindah = True
+
 Homepage = st.Page("Halaman Utama/halaman_utama.py", title="07 - POISSON", default=True)
 
 Mahasiswa1  = st.Page("Buku Kating/116_Yobel Imanuel Pasaribu.py", title="116 - Yobel Imanuel Pasaribu", icon=":material/person:")
 Mahasiswa2  = st.Page("Buku Kating/109_Rena Aprilia.py", title="109 - Rena Aprilia", icon=":material/person:")
 Mahasiswa3  = st.Page("Buku Kating/020_Fadhilah Adelyia Putri.py", title="020 - Fadhilah Adelyia Putri", icon=":material/person:")
 Mahasiswa4  = st.Page("Buku Kating/075_Inness Eymard Gultom.py", title="075 - Inness Eymard Gultom", icon=":material/person:")
-Mahasiswa5  = st.Page("Buku K
+Mahasiswa5  = st.Page("Buku Kating/084_Samuel Kristian.py", title="084 - Samuel Kristian", icon=":material/person:")
+Mahasiswa6  = st.Page("Buku Kating/008_Egia Ninta Pepayosa Ketaren.py", title="008 - Egia Ninta Pepayosa Ketaren", icon=":material/person:")
+Mahasiswa7  = st.Page("Buku Kating/028_Dzahra Adila Fatma.py", title="028 - Dzahra Adila Fatma", icon=":material/person:")
+Mahasiswa8  = st.Page("Buku Kating/018_Achmad Fardhan Al Basri Bandarudin.py", title="018 - Achmad Fardhan Al Basri Bandarudin", icon=":material/person:")
+Mahasiswa9  = st.Page("Buku Kating/033_Kayyisah Mazaya.py", title="033 - Kayyisah Mazaya", icon=":material/person:")
+Mahasiswa10 = st.Page("Buku Kating/074_Alfajri Anwar.py", title="074 - Alfajri Anwar", icon=":material/person:")
+Mahasiswa11 = st.Page("Buku Kating/037_Nailatun Inayah.py", title="037 - Nailatun Inayah", icon=":material/person:")
+
+KREASI  = st.Page("tools/KREASI.py", title="KREASI", icon=":material/search:")
+KREASII = st.Page("tools/KREASII.py", title="KREASII", icon=":material/search:")
+
+if st.session_state.pindah:
+    pg = st.navigation({
+        "Halaman Utama": [Homepage],
+        "Buku Kating": [Mahasiswa1, Mahasiswa2, Mahasiswa3, Mahasiswa4, Mahasiswa5,
+                        Mahasiswa6, Mahasiswa7, Mahasiswa8, Mahasiswa9, Mahasiswa10, Mahasiswa11],
+        "Try Me !!": [KREASI, KREASII],
+    })
+else:
+    st.write("Maaf Anda kurang beruntung :(")
+
+pg.run()
