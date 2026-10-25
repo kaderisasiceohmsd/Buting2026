@@ -441,7 +441,7 @@ if menu == "Senator":
 if menu == "Baleg":
     def Baleg():
         gambar_urls = [
-           "https://drive.google.com/uc?export=view&id=1l9KHesCzFjYMSg3o1s7213Wkr5D_jT2w",
+            "https://drive.google.com/uc?export=view&id=1l9KHesCzFjYMSg3o1s7213Wkr5D_jT2w",
             "https://drive.google.com/uc?export=view&id=12IU0cTAzqKgzFIn4mr_vyi6PgPKC8jag",
             "https://drive.google.com/uc?export=view&id=1duKv4sDruG9FzRvPrJTLp6A8amlDji6P",
             "https://drive.google.com/uc?export=view&id=1YIrqeF6AT5eUyf6WQHEdTEzhfBvri49f",
@@ -453,7 +453,7 @@ if menu == "Baleg":
             "https://drive.google.com/uc?export=view&id=1XTrYsdAD0vO7gBThwmDDg-8SsghKAtxH",
             "https://drive.google.com/uc?export=view&id=1wkCdgbwX40N3AUKfsS8TKl_hcb8tqJXQ",
             "https://drive.google.com/uc?export=view&id=1y3e7OBYruSITz_HYmIF_WVEO_2OubIb-",
-            "https://drive.google.com/uc?export=view&id=1FsKcpnZPsYUE3sbcqBabJooz9arxMtBf",
+            "https://drive.google.com/uc?export=view&id=1FsKcpnZPsYUE3sbcqBabJooz9arxMtBf"
         ]
         data_list = [
             {
@@ -760,22 +760,22 @@ if menu == "Departemen SSD":
 if menu == "Departemen Internal":
     def Departemen_Internal():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1ZkRsDbQwE9DNRAN5vG91yaO0mtbg7c3m",
-            "https://drive.google.com/uc?export=view&id=1c7LsFgjFi51ct59DszXYQPLeeP5CMxYg",
-            "https://drive.google.com/uc?export=view&id=1CqBKbMIuS2wPXlcv8sFwTs5tOpZLEXjF",
-            "https://drive.google.com/uc?export=view&id=1LE77DAUGYIA00Wy4TDYHliN0WsS5k8G4",
-            "https://drive.google.com/uc?export=view&id=1_eDzqbK9n4UOEJpR9MvUSYugRzoPi__t",
-            "https://drive.google.com/uc?export=view&id=1i66tHNtkWaNCbrQomwmArKQX8-dtL0ws",
-            "https://drive.google.com/uc?export=view&id=1Gp-5HKdml6J8zaPNlDBRr7dUxeZAdcna",
-            "https://drive.google.com/uc?export=view&id=1R2jTsDxRPkV2C_R3J_GCMLhcGoLNLO5e",
-            "https://drive.google.com/uc?export=view&id=1PtJSQn6fDx9vGQo7jA6HMsb-iV7uzTJJ",
+            "https://drive.google.com/uc?export=view&id=1-JJgW_xZyIG9lGBvF_epAU4DWIjmJVID",
+            "https://drive.google.com/uc?export=view&id=1Grx6bxTCKK2GgTKzqjGYpcFfFPX07cwy",
+            "https://drive.google.com/uc?export=view&id=1UbPuBI1oh3zbcm7vWuP-ALrIppFOQSUF",
+            "https://drive.google.com/uc?export=view&id=1p0eDMEFnOGQN6ImKuehxC9Aa8nATQNzb",
+            "https://drive.google.com/uc?export=view&id=1YWI_STRg3V6JC43vOAxSrd2CzRTXcUvJ",
+            "https://drive.google.com/uc?export=view&id=1zK99b5z5myFU_I4TZvt8tfcm88yT75-S",
+            "https://drive.google.com/uc?export=view&id=1rNrWGfiDyd-4dh5aNrOtfhfsrkTuR49W",
+            "https://drive.google.com/uc?export=view&id=1LXpScEUjL4x2CkMCpnCY5PmOj3_gRr4W",
+            "https://drive.google.com/uc?export=view&id=16vnZPHnH-goGCzwZ-DJcflLCPByBJy3J",
             "https://drive.google.com/uc?export=view&id=1sdisAGngbHayAP8NS6qVx3LUYEGU7YS0",
-            "https://drive.google.com/uc?export=view&id=1AWaA1r_5p-OWYxrZXrw6Zot-HEEct_jH",
-            "https://drive.google.com/uc?export=view&id=16BJAcXroQcKdSvgRzM9OQUmcLPpPcRNF",
-            "https://drive.google.com/uc?export=view&id=1s8tirZs4_AwvRjTuGKWI7konQcSZeMqm",
+            "https://drive.google.com/uc?export=view&id=1gfC8heoj_9llWA0ZRvENejMZCnBqMMvT",
+            "https://drive.google.com/uc?export=view&id=1RYEe2P1joSTu2C3rU8po8RsG8FmxcsXj",
+            "https://drive.google.com/uc?export=view&id=1Yi9eL1An-kX6gB2Qs4RK5BEycEC7zJF0",
             "https://drive.google.com/uc?export=view&id=1_6kWPN3x_uNmQ7FNe_dtjcPqha0-5yWQ",
-            "https://drive.google.com/uc?export=view&id=1ohcWnsHK7yTGOJjF4uST_H-h1O1qEGHP",
-            "https://drive.google.com/uc?export=view&id=1xn7vCzwb7o5qvu8yoZNJRdVIre0J-k2J",
+            "https://drive.google.com/uc?export=view&id=1e-HpMqJQ9tPIR-utZTdfvfFKBMrvLztQ",
+            "https://drive.google.com/uc?export=view&id=1NWlzUD11anIKJy6brtEBbAukSS7j7adm",
         ]
         data_list = [
             {
