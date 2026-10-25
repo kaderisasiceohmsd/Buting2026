@@ -284,7 +284,6 @@ elif menu == "Departemen SSD":
         "https://drive.google.com/uc?export=view&id=1qAtFg84Mbmj_ZJNVLt-400ggYtD1fln-",
     ] 
     data_list = [
-        data_list = [
         {"nama": "Ihsan Maulana Yusuf", "jabatan": "Kepala Departemen SSD", "nim": "123450110", "umur": "21", "asal": "Sumatera Barat", "alamat": "Belwis", "hobbi": "Cari dan baca jurnal, cari pak lucky, jualan", "sosmed": "@ihsan.myusuf", "kesan": "Abangnya ramah banget dan jugaa santai banget jadii bawaannya asik", "pesan": "Semangat TAnya bang, lancar terus!"},
         {"nama": "Hanifah Inaya Sani", "jabatan": "Sekretaris SSD", "nim": "123450123", "umur": "20", "asal": "Bandar Lampung", "alamat": "Bandar Lampung", "hobbi": "Masak", "sosmed": "@_inayasani", "kesan": "Kakaknya super cantik, ramah, dan informatiff bangett", "pesan": "SemangatTA-nya kakk, moga cepat dapat gelar!"},
         {"nama": "Afifah Fauziah", "jabatan": "Kepala Divisi Kemitraan", "nim": "12345002", "umur": "19", "asal": "Sumatera Barat", "alamat": "Airan", "hobbi": "Nonton Marvel", "sosmed": "@fifah.zy", "kesan": "Kakaknya tersweet, selalu senyum dan nyapa pas ketemu di kampus", "pesan": "Semangat TAnya kakkk, stay happy!"},
