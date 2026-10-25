@@ -966,19 +966,19 @@ if menu == "Departemen Medkraf":
             "https://drive.google.com/uc?export=view&id=1_7qUg1BZmYcbOMvhAVbkupG0pcP2Va-X", #Kadiv Dokumentasi
             "https://drive.google.com/uc?export=view&id=1vTbvqW-YUOlQKGoG48ibnim2V52Qc17_",
             "https://drive.google.com/uc?export=view&id=1jOKJcw8a0uFzNaHUJC9mEIBNA0THoYcf",
+            "https://drive.google.com/uc?export=view&id=1h9U4Q_NP3LV0kZQieP_Y0Fgv25MFQnQE",
+            "https://drive.google.com/uc?export=view&id=1qpSTZwXut6eyqN6_RuSyGYZcSAmMreg6", #Kadiv Media dan konten sepasialis
             "https://drive.google.com/uc?export=view&id=1XNc6WCcCz43Kfc-PBu0FtqfUgGMc_YUZ",
-            "https://drive.google.com/uc?export=view&id=1QhWaD-w38piIk4qJs9CfTUNQMsnUcMht", #Kadiv Media dan konten sepasialis
-            "https://drive.google.com/uc?export=view&id=1q_lyBRM3H4AsNFAJdocrcdNAND2zWXaU",
+            "https://drive.google.com/uc?export=view&id=1QhWaD-w38piIk4qJs9CfTUNQMsnUcMht",
+            "https://drive.google.com/uc?export=view&id=17b3kWEV-bWXcsgpRn8jPoIA5-A9-TAgz",
             "https://drive.google.com/uc?export=view&id=1T4a1vIbzbW2DmeWWagYc6CCFVbKJzPk0",
             "https://drive.google.com/uc?export=view&id=1HJ30nQSvTkQatbQXJfyU44floDNPOdQF",
-            "https://drive.google.com/uc?export=view&id=1D5MVcshXNyjb6hxp8f3FwN6RMnIqnTgW",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1mvH_h8_Wpm3kIHPsnCwoHZTNbshzzFkb",
+            "https://drive.google.com/uc?export=view&id=1WGIar8vH9kVa5SlkQbuOUEI5yqHkiyI2",
+            "https://drive.google.com/uc?export=view&id=1qjfUfcFPranvKFHcfIP6WkXwWx9gATKS",
+            "https://drive.google.com/uc?export=view&id=1iTXClCqLfHpJHYcIDFZkdA_Mvm6A726u",
+            "https://drive.google.com/uc?export=view&id=1gviUgunFGSkTbOZzLzBI5oqf3YveHBCx",
+            "https://drive.google.com/uc?export=view&id=1phXsotDUFBlF8FLParX3ifRwn2z_Dd5o",
         ]
         data_list = [
             {
@@ -989,8 +989,8 @@ if menu == "Departemen Medkraf":
                 "alamat": "Way Huwi, Jati Agung, Lampung Selatan",
                 "hobbi": "Mendengarkan Musik",
                 "sosmed": "@naylasalsabilaa._",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Kak Nayla orangnya asik, baik, dan ramah",  
+                "pesan":"Semangat terus kuliahnya dan lancar luncur semuanya!!!"# 1
             },
             {
                 "nama": "Donna Maya Puspita",
