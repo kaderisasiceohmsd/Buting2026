@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; user-select: none; }
+  html, body { width: 100%; background: transparent; color: #e2e8f0; font-family: 'Poppins', sans-serif; padding: 4px; overflow-x: hidden; overflow-y: auto; }
+  .shell { width: 100%; background: linear-gradient(160deg, #111328 0%, #080914 100%); border: 1px solid rgba(255,215,64,.32); border-radius: 18px; padding: 18px; box-shadow: 0 12px 36px rgba(0,0,0,.65); }
+  .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .bar { justify-content: space-between; padding-bottom: 12px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,215,64,.2); }
+  label.lb { font-size: 11px; color: #90a4ae; font-weight: 600; letter-spacing: .5px; text-transform: uppercase; }
+  select, button { font-family: 'Poppins', sans-serif; font-size: 12.5px; font-weight: 600; border-radius: 9px; padding: 7px 11px; border: 1px solid rgba(255,215,64,.35); background: #161a36; color: #ffe082; cursor: pointer; max-width: 100%; }
+  button.main { background: linear-gradient(135deg,#ffb300,#ff6f00); color: #120c00; border: none; font-weight: 800; }
+  button:hover { filter: brightness(1.15); }
+  input[type=range] { accent-color: #ffb300; width: 120px; }
+  .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .pane { background: #0b0d1d; border: 1px solid rgba(128,216,255,.18); border-radius: 14px; padding: 10px; }
+  .pane h4 { font-size: 13.5px; margin-bottom: 6px; display: flex; justify-content: space-between; align-items: center; }
+  .tag { font-size: 10.5px; padding: 2px 8px; border-radius: 99px; background: rgba(255,215,64,.12); color: #ffd740; font-weight: 700; }
+  canvas { width: 100%; display: block; border-radius: 10px; background: #070814; }
+  .stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 6px; margin-top: 8px; }
+  .st { background: #12152b; border-radius: 8px; padding: 6px 8px; text-align: center; }
+  .st b { display: block; font-family: 'JetBrains Mono', monospace; color: #ffd740; font-size: 15px; }
+  .st span { font-size: 10px; color: #90a4ae; }
+  .info { margin-top: 12px; display: grid; grid-template-columns: 1.3fr 1fr; gap: 14px; }
+  .box { background: #0d1024; border-left: 3px solid #ffb300; border-radius: 10px; padding: 10px 14px; font-size: 12.3px; line-height: 1.6; color: #cfd8dc; }
+  .box b { color: #ffe082; }
+  .legend { display: flex; flex-wrap: wrap; gap: 10px; font-size: 11px; color: #b0bec5; margin-top: 6px; }
+  .legend i { display: inline-block; width: 11px; height: 11px; border-radius: 3px; margin-right: 4px; vertical-align: -1px; }
+  .verdict { margin-top: 10px; padding: 10px 14px; border-radius: 10px; background: rgba(105,240,174,.08); border: 1px solid rgba(105,240,174,.3); font-size: 12.5px; display: none; }
+  @media (max-width: 760px) {
+    .shell { padding: 12px; }
+    .duo, .info { grid-template-columns: 1fr; }
+    .bar .row { width: 100%; }
+    .bar .row > div { flex: 1 1 140px; }
+    select { width: 100%; font-size: 11.5px; }
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="row bar">
+    <div class="row">
+      <div><label class="lb">Peta</label><br>
+        <select id="mapSel">
+          <option value="campus">🗺️ Rasi Bintang Kampus (Graf Berbobot)</option>
+          <option value="terrain">🌫️ Medan Fog of History (Rumput, Lumpur, Air)</option>
+          <option value="trap">🧲 Skenario Jebakan U (Ruang Terbuka)</option>
+          <option value="maze">🏛️ Labirin Sefirah Castle</option>
+        </select></div>
+      <div><label class="lb">Algoritma A</label><br><select id="algA"></select></div>
+      <div><label class="lb">Algoritma B</label><br><select id="algB"></select></div>
+    </div>
+    <div class="row">
+      <div><label class="lb">Kecepatan: <span id="spdTxt">6</span> langkah/detik</label><br><input type="range" id="spd" min="1" max="40" value="6"></div>
+      <button id="btnNew">🎲 Peta Baru</button>
+      <button id="btnStep">⏭️ Step</button>
+      <button id="btnPlay" class="main">▶️ Mulai Balapan</button>
+    </div>
+  </div>
+
+  <div class="duo">
+    <div class="pane"><h4><span id="nameA">A</span><span class="tag" id="statusA">SIAP</span></h4>
+      <canvas id="cvA" width="560" height="380"></canvas>
+      <div class="stats"><div class="st"><b id="expA">0</b><span>Node Dieksplorasi</span></div><div class="st"><b id="lenA">-</b><span>Langkah Jalur</span></div><div class="st"><b id="costA">-</b><span>Total Biaya</span></div></div>
+    </div>
+    <div class="pane"><h4><span id="nameB">B</span><span class="tag" id="statusB">SIAP</span></h4>
+      <canvas id="cvB" width="560" height="380"></canvas>
+      <div class="stats"><div class="st"><b id="expB">0</b><span>Node Dieksplorasi</span></div><div class="st"><b id="lenB">-</b><span>Langkah Jalur</span></div><div class="st"><b id="costB">-</b><span>Total Biaya</span></div></div>
+    </div>
+  </div>
+  <div class="verdict" id="verdict"></div>
+
+  <div class="info">
+    <div class="box" id="algoInfo"></div>
+    <div class="box" style="border-left-color:#40c4ff">
+      <b id="mapTitle">Peta</b><br><span id="mapInfo"></span>
+      <div class="legend" id="legend"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+function syncFrame(){
+  try {
+    const f = window.frameElement;
+    if (!f) return;
+    f.style.width = '100%';
+    if (f.parentElement) f.parentElement.style.width = '100%';
+    const sh = document.querySelector('.shell');
+    const h = (sh ? sh.offsetHeight : document.body.scrollHeight) + 20;
+    if (h > 200) {
+      f.style.height = h + 'px';
+      f.height = h;
+      if (f.parentElement) f.parentElement.style.minHeight = h + 'px';
+    }
+  } catch(e){}
+}
+syncFrame();
+window.addEventListener('load', syncFrame);
+window.addEventListener('resize', syncFrame);
+if (typeof ResizeObserver !== 'undefined') {
+  new ResizeObserver(syncFrame).observe(document.body);
+}
+
+const ALGOS = {
+  bfs:    { name: "BFS (Breadth-First)", kind: "Blind Search", info: "<b>BFS</b> menjelajah melebar lapis demi lapis memakai antrean (FIFO). Menjamin jalur dengan <b>jumlah langkah paling sedikit</b>, tapi <b>mengabaikan bobot</b> jalan. Di peta berbobot, BFS bisa memilih jalan pendek yang mahal." },
+  dfs:    { name: "DFS (Depth-First)", kind: "Blind Search", info: "<b>DFS</b> menyelam sedalam mungkin memakai tumpukan (LIFO) lalu mundur jika buntu. Hemat memori, tapi <b>tidak optimal</b>: jalurnya sering berkelok jauh. Lihat bagaimana ia nyasar di ruang terbuka." },
+  ucs:    { name: "UCS (Uniform Cost / Dijkstra)", kind: "Blind Search", info: "<b>UCS</b> selalu memperluas node dengan <b>biaya kumulatif g(n) terkecil</b> (priority queue). Menjamin <b>biaya total paling murah</b>, tapi menyebar ke segala arah karena tidak tahu letak tujuan." },
+  greedy: { name: "Greedy Best-First", kind: "Informed Search", info: "<b>Greedy</b> hanya melihat heuristik <b>h(n)</b>, yaitu perkiraan jarak ke tujuan. Sangat cepat menuju target, tapi <b>mudah tertipu</b>: menerobos lumpur mahal atau masuk jebakan U." },
+  astar:  { name: "A* (A-Star)", kind: "Informed Search", info: "<b>A*</b> menggabungkan keduanya: <b>f(n) = g(n) + h(n)</b>. Dengan heuristik yang tidak melebih-lebihkan jarak (admissible), A* <b>tetap optimal</b> sekaligus jauh lebih hemat eksplorasi daripada UCS." }
+};
+const MAPINFO = {
+  campus:  ["Rasi Bintang Kampus (Graf Berbobot)", "Gedung adalah <b>node</b> rasi bintang, jalur penghubung adalah <b>edge</b> dengan bobot jarak (angka di garis). Beberapa jalan pintas terlihat pendek tapi berbobot besar (jalur retakan dimensi). Di sini terlihat jelas BFS menghitung <b>jumlah lompatan</b>, sedangkan UCS dan A* menghitung <b>biaya jarak sebenarnya</b>."],
+  terrain: ["Medan Fog of History (Berbobot)", "Setiap zona punya beban waktu berbeda. Greedy cenderung lurus menembus lumpur dan perairan kabut, sedangkan UCS dan A* memutar lewat jalur bintang yang murah."],
+  trap:    ["Skenario Jebakan U (Ruang Terbuka)", "Dinding penghalang berbentuk U menghadap titik awal. Algoritma yang hanya mengejar arah tujuan (Greedy) akan terjebak masuk ke dalam U dulu sebelum sadar harus memutar."],
+  maze:    ["Labirin Sefirah Castle", "Labirin sempurna: hanya ada satu jalur dari titik awal ke tujuan. Semua algoritma menemukan jalur yang sama, perbedaannya adalah <b>berapa banyak node yang harus dibuka</b>."]
+};
+const TERRAIN = { 0:{c:1,col:"#1b2140",n:"Aspal (1)"}, 1:{c:3,col:"#1f4d2b",n:"Rumput (3)"}, 2:{c:6,col:"#5a3d1e",n:"Lumpur (6)"}, 3:{c:12,col:"#123a63",n:"Air (12)"}, 9:{c:Infinity,col:"#3a3f5c",n:"Tembok"} };
+
+const $ = id => document.getElementById(id);
+const algSelA = $("algA"), algSelB = $("algB");
+for (const k in ALGOS) { algSelA.add(new Option(ALGOS[k].name, k)); algSelB.add(new Option(ALGOS[k].name, k)); }
+algSelA.value = "bfs"; algSelB.value = "astar";
+
+let world = null, runners = [], playing = false, timer = null, acc = 0, lastT = 0;
+
+// ---------------- WORLD BUILDERS ----------------
+const COLS = 28, ROWS = 19;
+function rnd(a,b){ return a + Math.random()*(b-a); }
+function makeGrid(type) {
+  const g = []; for (let r=0;r<ROWS;r++){ g.push(new Array(COLS).fill(0)); }
+  let start = {r: Math.floor(ROWS/2), c: 1}, goal = {r: Math.floor(ROWS/2), c: COLS-2};
+  if (type === "terrain") {
+    // patches of terrain, cheap roads around the edges
+    for (let k=0;k<9;k++){ const cr=Math.floor(rnd(2,ROWS-2)), cc=Math.floor(rnd(5,COLS-5)), rad=rnd(2,4.5), t=[1,2,2,3][Math.floor(Math.random()*4)];
+      for(let r=0;r<ROWS;r++)for(let c=0;c<COLS;c++){ if(Math.hypot(r-cr,c-cc)<rad) g[r][c]=Math.max(g[r][c],t); } }
+    for(let c=3;c<COLS-3;c++){ if(Math.random()<.9){ g[Math.floor(ROWS/2)][c] = Math.max(g[Math.floor(ROWS/2)][c],2); } }
+    for(let c=0;c<COLS;c++){ g[1][c]=0; g[ROWS-2][c]=0; }
+    start={r:Math.floor(ROWS/2),c:1}; goal={r:Math.floor(ROWS/2),c:COLS-2};
+  } else if (type === "trap") {
+    const top=4, bot=ROWS-5, x=COLS-9;
+    for(let r=top;r<=bot;r++) g[r][x]=9;
+    for(let c=x-8;c<=x;c++){ g[top][c]=9; g[bot][c]=9; }
+    for (let k=0;k<14;k++){ const r=Math.floor(rnd(0,ROWS)), c=Math.floor(rnd(2,COLS-2)); if(g[r][c]===0 && !(r>top&&r<bot&&c>x-8&&c<x)) g[r][c]=9; }
+    start={r:Math.floor(ROWS/2),c:x-6}; goal={r:Math.floor(ROWS/2),c:COLS-2};
+  } else if (type === "maze") {
+    for(let r=0;r<ROWS;r++)for(let c=0;c<COLS;c++) g[r][c]=9;
+    const R=Math.floor((ROWS-1)/2), C=Math.floor((COLS-1)/2), seen=new Set(), st=[[0,0]]; seen.add("0,0"); g[1][1]=0;
+    while(st.length){ const [cr,cc]=st[st.length-1]; const nb=[[0,1],[1,0],[0,-1],[-1,0]].map(d=>[cr+d[0],cc+d[1]]).filter(p=>p[0]>=0&&p[1]>=0&&p[0]<R&&p[1]<C&&!seen.has(p+""));
+      if(!nb.length){ st.pop(); continue; } const n=nb[Math.floor(Math.random()*nb.length)]; seen.add(n+"");
+      g[2*n[0]+1][2*n[1]+1]=0; g[cr+n[0]+1][cc+n[1]+1]=0; st.push(n); }
+    start={r:1,c:1}; goal={r:2*R-1,c:2*C-1};
+  }
+  g[start.r][start.c]=0; g[goal.r][goal.c]=0;
+  const id=(r,c)=>r*COLS+c;
+  return {
+    type:"grid", grid:g, start:id(start.r,start.c), goal:id(goal.r,goal.c),
+    neighbors(n){ const r=Math.floor(n/COLS), c=n%COLS, out=[];
+      for(const [dr,dc] of [[0,1],[1,0],[0,-1],[-1,0]]){ const nr=r+dr, nc=c+dc; if(nr<0||nc<0||nr>=ROWS||nc>=COLS) continue; const t=g[nr][nc]; if(t===9) continue; out.push([id(nr,nc), TERRAIN[t].c]); }
+      return out; },
+    h(n){ const r=Math.floor(n/COLS), c=n%COLS, gr=Math.floor(this.goal/COLS), gc=this.goal%COLS; return Math.abs(r-gr)+Math.abs(c-gc); }
+  };
+}
+function makeCampus() {
+  const N = [
+    ["Gerbang",40,190],["Masjid",120,80],["GKU 1",140,190],["Embung",130,310],["Rektorat",240,120],["Kantin",250,250],
+    ["Labtek 1",330,60],["GKU 2",340,190],["Asrama",320,330],["Perpus",430,110],["GSG",430,260],["Lapangan",450,350],["Labtek 3",520,190]
+  ];
+  const E = [[0,1],[0,2],[0,3],[1,2],[1,4],[2,4],[2,5],[3,5],[3,8],[4,6],[4,7],[5,7],[5,8],[6,9],[7,9],[7,10],[8,10],[8,11],[9,12],[10,12],[10,11],[11,12],[2,7]];
+  const nodes = N.map(([name,x,y])=>({name,x:x+rnd(-8,8),y:y+rnd(-8,8)}));
+  const edges = E.map(([a,b])=>{ const d=Math.hypot(nodes[a].x-nodes[b].x,nodes[a].y-nodes[b].y)/10; const bad=Math.random()<.28; return {a,b,w:Math.round(d*(bad?rnd(2.2,3.2):1)),bad}; });
+  // jalan pintas GKU1 -> GKU2 dibuat mahal agar BFS != UCS
+  const sc = edges.find(e=>e.a===2&&e.b===7); sc.w = Math.round(sc.w*3.4); sc.bad = true;
+  const adj = nodes.map(()=>[]); edges.forEach(e=>{ adj[e.a].push([e.b,e.w]); adj[e.b].push([e.a,e.w]); });
+  return { type:"graph", nodes, edges, start:0, goal:12, neighbors(n){ return adj[n]; },
+    h(n){ return Math.hypot(nodes[n].x-nodes[this.goal].x, nodes[n].y-nodes[this.goal].y)/10; } };
+}
+
+// ---------------- SEARCH (event generator) ----------------
+function search(w, algo) {
+  const ev = []; const g = new Map([[w.start,0]]), parent = new Map(), closed = new Set();
+  let frontier = [{n:w.start, g:0, f: prio(algo,0,w.h(w.start)), t:0}], tick = 1;
+  const inF = new Set([w.start]);
+  function prio(a,gv,hv){ return a==="ucs"?gv : a==="greedy"?hv : a==="astar"?gv+hv : 0; }
+  while (frontier.length) {
+    let idx = 0;
+    if (algo==="bfs") idx = 0;
+    else if (algo==="dfs") idx = frontier.length-1;
+    else { for (let i=1;i<frontier.length;i++){ const a=frontier[i], b=frontier[idx]; if (a.f<b.f-1e-9 || (Math.abs(a.f-b.f)<1e-9 && a.t>b.t)) idx=i; } }
+    const cur = frontier.splice(idx,1)[0]; inF.delete(cur.n);
+    if (closed.has(cur.n)) continue;
+    if (algo!=="bfs" && algo!=="dfs" && cur.g > (g.get(cur.n) ?? Infinity) + 1e-9) continue;
+    closed.add(cur.n);
+    const added = [];
+    if (cur.n === w.goal) { ev.push({cur:cur.n, added}); break; }
+    for (const [m, cost] of w.neighbors(cur.n)) {
+      if (closed.has(m)) continue;
+      const ng = cur.g + cost;
+      if (algo==="bfs" || algo==="dfs") { if (inF.has(m) && algo==="bfs") continue; parent.set(m,cur.n); g.set(m,ng); frontier.push({n:m,g:ng,f:0,t:tick++}); inF.add(m); added.push(m); }
+      else if (ng < (g.get(m) ?? Infinity)) { g.set(m,ng); parent.set(m,cur.n); frontier.push({n:m,g:ng,f:prio(algo,ng,w.h(m)),t:tick++}); inF.add(m); added.push(m); }
+    }
+    ev.push({cur:cur.n, added});
+  }
+  const path = [];
+  if (closed.has(w.goal)) { let p = w.goal; while (p !== undefined) { path.unshift(p); p = parent.get(p); } }
+  let cost = 0; for (let i=1;i<path.length;i++){ cost += w.neighbors(path[i-1]).find(x=>x[0]===path[i])[1]; }
+  return {ev, path, cost};
+}
+
+// ---------------- RUNNER + RENDER ----------------
+function makeRunner(algo, cv, ids) {
+  const res = search(world, algo);
+  return { algo, cv, ctx: cv.getContext("2d"), ids, res, i: 0, explored: new Set(), frontier: new Set(), cur: null, done: false, pathShown: 0 };
+}
+function stepRunner(R) {
+  if (R.done) return;
+  if (R.i < R.res.ev.length) { const e = R.res.ev[R.i++]; R.cur = e.cur; R.frontier.delete(e.cur); R.explored.add(e.cur); e.added.forEach(a=>R.frontier.add(a)); }
+  else if (R.pathShown < R.res.path.length) { R.pathShown = Math.min(R.res.path.length, R.pathShown + Math.max(1, Math.ceil(R.res.path.length/25))); }
+  else R.done = true;
+}
+function drawRunner(R) {
+  const {ctx, cv} = R; ctx.clearRect(0,0,cv.width,cv.height);
+  const pathSet = new Set(R.res.path.slice(0, R.pathShown));
+  if (world.type === "grid") {
+    const cw = cv.width/COLS, ch = cv.height/ROWS;
+    for (let r=0;r<ROWS;r++) for (let c=0;c<COLS;c++) {
+      const n=r*COLS+c, t=world.grid[r][c]; ctx.fillStyle = TERRAIN[t].col; ctx.fillRect(c*cw+.5, r*ch+.5, cw-1, ch-1);
+      if (R.explored.has(n)) { ctx.fillStyle="rgba(255,179,0,.38)"; ctx.fillRect(c*cw+.5,r*ch+.5,cw-1,ch-1); }
+      else if (R.frontier.has(n)) { ctx.fillStyle="rgba(64,196,255,.45)"; ctx.fillRect(c*cw+.5,r*ch+.5,cw-1,ch-1); }
+      if (pathSet.has(n)) { ctx.fillStyle="#69f0ae"; ctx.beginPath(); ctx.arc(c*cw+cw/2, r*ch+ch/2, Math.min(cw,ch)*.32, 0, 7); ctx.fill(); }
+    }
+    const mark=(n,txt,col)=>{ const r=Math.floor(n/COLS), c=n%COLS; ctx.fillStyle=col; ctx.fillRect(c*cw+1,r*ch+1,cw-2,ch-2); ctx.fillStyle="#000"; ctx.font=`bold ${Math.floor(ch*.6)}px Poppins`; ctx.textAlign="center"; ctx.textBaseline="middle"; ctx.fillText(txt,c*cw+cw/2,r*ch+ch/2+1); };
+    mark(world.start,"S","#ffd740"); mark(world.goal,"F","#ff5252");
+    if (R.cur !== null && !R.done) { const r=Math.floor(R.cur/COLS), c=R.cur%COLS; ctx.strokeStyle="#fff"; ctx.lineWidth=2; ctx.strokeRect(c*cw+1,r*ch+1,cw-2,ch-2); }
+  } else {
+    const sx = cv.width/570, sy = cv.height/400; const P = n => [world.nodes[n].x*sx, world.nodes[n].y*sy+8];
+    ctx.lineWidth = 2; ctx.font = "bold 11px JetBrains Mono"; ctx.textAlign="center"; ctx.textBaseline="middle";
+    for (const e of world.edges) {
+      const [x1,y1]=P(e.a), [x2,y2]=P(e.b);
+      const onPath = pathSet.has(e.a)&&pathSet.has(e.b)&&Math.abs(R.res.path.indexOf(e.a)-R.res.path.indexOf(e.b))===1;
+      ctx.strokeStyle = onPath ? "#69f0ae" : e.bad ? "rgba(255,82,82,.55)" : "rgba(144,164,174,.45)"; ctx.lineWidth = onPath?5:2;
+      ctx.setLineDash(e.bad&&!onPath?[6,5]:[]); ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke(); ctx.setLineDash([]);
+      const mx=(x1+x2)/2, my=(y1+y2)/2; ctx.fillStyle="#0b0d1d"; ctx.fillRect(mx-12,my-8,24,16); ctx.fillStyle=e.bad?"#ff8a80":"#cfd8dc"; ctx.fillText(e.w,mx,my);
+    }
+    world.nodes.forEach((nd,n)=>{
+      const [x,y]=P(n); let col="#2a2f55";
+      if (R.explored.has(n)) col="#ffb300"; else if (R.frontier.has(n)) col="#40c4ff";
+      if (n===world.start) col="#ffd740"; if (n===world.goal) col="#ff5252"; if (pathSet.has(n)) col="#69f0ae";
+      ctx.beginPath(); ctx.arc(x,y,13,0,7); ctx.fillStyle=col; ctx.fill(); ctx.lineWidth = (n===R.cur&&!R.done)?3:1.5; ctx.strokeStyle=(n===R.cur&&!R.done)?"#fff":"rgba(255,255,255,.4)"; ctx.stroke();
+      ctx.fillStyle="#e2e8f0"; ctx.font="600 10.5px Poppins"; ctx.fillText(nd.name, x, y-22);
+    });
+  }
+  const id = R.ids;
+  $(id.exp).textContent = R.explored.size;
+  $(id.len).textContent = R.done || R.pathShown ? (R.res.path.length ? R.res.path.length-1 : "X") : "-";
+  $(id.cost).textContent = R.done || R.pathShown ? (R.res.path.length ? Math.round(R.res.cost*10)/10 : "X") : "-";
+  $(id.status).textContent = R.done ? (R.res.path.length ? "SELESAI ✓" : "TIDAK KETEMU") : (R.i>0 ? "MENCARI..." : "SIAP");
+}
+function drawLegend() {
+  const L = $("legend"); let h = "";
+  if (world.type==="grid") { const used=new Set(world.grid.flat()); [0,1,2,3,9].filter(t=>used.has(t)).forEach(t=>h+=`<span><i style="background:${TERRAIN[t].col}"></i>${TERRAIN[t].n}</span>`); }
+  else h += `<span><i style="background:rgba(255,82,82,.7)"></i>Jalan rusak (mahal)</span>`;
+  h += `<span><i style="background:#40c4ff"></i>Frontier</span><span><i style="background:#ffb300"></i>Sudah dieksplorasi</span><span><i style="background:#69f0ae"></i>Jalur akhir</span>`;
+  L.innerHTML = h;
+}
+function updateInfo() {
+  const a = ALGOS[algSelA.value], b = ALGOS[algSelB.value];
+  $("nameA").textContent = "A: " + a.name; $("nameB").textContent = "B: " + b.name;
+  $("algoInfo").innerHTML = `<span class="tag">${a.kind}</span> ${a.info}<br><br><span class="tag">${b.kind}</span> ${b.info}`;
+  const mi = MAPINFO[$("mapSel").value]; $("mapTitle").textContent = mi[0]; $("mapInfo").innerHTML = mi[1];
+}
+function reset(newWorld) {
+  stop();
+  if (newWorld || !world) { const t=$("mapSel").value; world = t==="campus" ? makeCampus() : makeGrid(t); }
+  runners = [ makeRunner(algSelA.value, $("cvA"), {exp:"expA",len:"lenA",cost:"costA",status:"statusA"}),
+              makeRunner(algSelB.value, $("cvB"), {exp:"expB",len:"lenB",cost:"costB",status:"statusB"}) ];
+  $("verdict").style.display = "none"; $("btnPlay").textContent = "▶️ Mulai Balapan";
+  updateInfo(); drawLegend(); runners.forEach(drawRunner); syncFrame();
+}
+function verdict() {
+  const [A,B] = runners; const na=ALGOS[A.algo].name, nb=ALGOS[B.algo].name;
+  const ca=A.res.cost, cb=B.res.cost, ea=A.explored.size, eb=B.explored.size;
+  let msg = "🏁 <b>Hasil:</b> ";
+  if (Math.abs(ca-cb)<1e-6) msg += `Biaya jalur sama (${Math.round(ca*10)/10}). `; else msg += `Jalur termurah ditemukan <b>${ca<cb?na:nb}</b> (${Math.round(Math.min(ca,cb)*10)/10} vs ${Math.round(Math.max(ca,cb)*10)/10}). `;
+  if (ea!==eb) msg += `Paling hemat eksplorasi: <b>${ea<eb?na:nb}</b> (${Math.min(ea,eb)} vs ${Math.max(ea,eb)} node).`;
+  $("verdict").innerHTML = msg; $("verdict").style.display = "block"; syncFrame();
+}
+function tick() { runners.forEach(stepRunner); runners.forEach(drawRunner); if (runners.every(r=>r.done)) { stop(); verdict(); $("btnPlay").textContent = "🔁 Ulangi"; } }
+function loop(t) { if (!playing) return; const dt = (t - lastT)/1000; lastT = t; acc += dt * +$("spd").value; while (acc >= 1 && playing) { acc -= 1; tick(); } timer = requestAnimationFrame(loop); }
+function play() { if (runners.every(r=>r.done)) reset(false); playing = true; acc = 1; lastT = performance.now(); $("btnPlay").textContent = "⏸️ Jeda"; timer = requestAnimationFrame(loop); }
+function stop() { playing = false; if (timer) cancelAnimationFrame(timer); if (runners.length && !runners.every(r=>r.done)) $("btnPlay").textContent = "▶️ Lanjutkan"; }
+
+$("btnPlay").onclick = () => playing ? stop() : play();
+$("btnStep").onclick = () => { stop(); if (runners.every(r=>r.done)) reset(false); tick(); };
+$("btnNew").onclick = () => reset(true);
+$("mapSel").onchange = () => reset(true);
+algSelA.onchange = algSelB.onchange = () => reset(false);
+$("spd").oninput = () => $("spdTxt").textContent = $("spd").value;
+reset(true);
+</script>
+</body>
+</html>
