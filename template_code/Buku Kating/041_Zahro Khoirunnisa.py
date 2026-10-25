@@ -127,7 +127,7 @@ elif menu == "Baleg":
                 "nama": "Jona Timothy Ogatse Panjaitan",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1LaRz6GACWm3DPOtgKFK6MRqPQ0P93VSo",
                 "kesan": "Jujur kaget ternyata bang Jona follow ig aku duluan.",
-                "pesan": "Maaf kan aku yang baru follback ini bang."",
+                "pesan": "Maaf kan aku yang baru follback ini bang.",
             },
             {
                 "nama": "Sekar Dini Widya Putri",
@@ -587,7 +587,7 @@ elif menu == "Departemen Eksternal":
                 "nama": "Muhammad Rizaldi",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1hKFsLiCnqymwFabEfWDB6ARPSo3Gszho",
                 "kesan": "Bang Jaldi ramah bangett, terus energinya bikin nyaman gitu.",
-                "pesan": "Bang Jaldi paswordnya "Bestie bestie: WELL""",
+                "pesan": "Bang Jaldi paswordnya 'Bestie bestie: WELL'",
             },
             {
                 "nama": "Saskia Nova Magdalena",
@@ -915,7 +915,7 @@ elif menu == "Departemen MINBAK":
                 "nama": "Ali Aristo Muthahhari Parisi",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1S5ednhk9VXeZWqjEX8dKYMfWmEnp48d_",
                 "kesan": "Salfok juga sama nama abangnya di nama Parisi.",
-                "pesan": ""Bang lampung timurnya mana?",
+                "pesan": "Bang lampung timurnya mana?",
             },
             {
                 "nama": "Muhammad Ridwan",
