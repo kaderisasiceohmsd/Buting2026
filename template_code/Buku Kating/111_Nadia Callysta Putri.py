@@ -1804,7 +1804,7 @@ elif menu == "Departemen MIKFES":
                 "hobbi": "Tennis Meja",
                 "sosmed": "@henryferdianto",
                 "kesan": "Orang serius yang tidak serius",
-                "pesan": "Kocak bangett dah, semoga hal hal baik selalu melingkupi hidup abang yaaa, aamiin!"
+                "pesan": "Kocak bangett dah, semoga hal hal baik selalu melingkupi hidup abang yaaa"
             },
             ]
             display_images_with_data(gambar_urls_Divisi_Research_Development, data_list_Divisi_Research_Development)
