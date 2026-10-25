@@ -194,7 +194,7 @@ if menu == "Kesekjenan":
                 "hobbi": "Push Rank",
                 "sosmed": "@jars_mrp",
                 "kesan": "Bang Fajar orangnya baik, ramah, murah senyum jugaa",  
-                "pesan":"Semoga ke depannya dapat terus berkembang menjadi lebih baik dan semangat skripsiannya."
+                "pesan":"Semoga ke depannya dapat terus berkembang menjadi lebih baik dan semangat skripsiannya bang."
             },
             {
                 "nama": "Muhammad Aqil Ramadhan ",
