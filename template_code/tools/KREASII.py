@@ -6,10 +6,10 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-# ======================================================================
-# STATE MANAGEMENT
-# ======================================================================
+
 class _State:
+
+
     def setdefault(self, k, v):
         return st.session_state.setdefault("dq_" + k, v)
 
@@ -19,10 +19,12 @@ class _State:
     def __setattr__(self, k, v):
         st.session_state["dq_" + k] = v
 
+
 ss = _State()
 
 # ======================================================================
-# KONTEN
+# KONTEN (mata kuliah: kurikulum Prodi Sains Data ITERA, itera.ac.id)
+# mk = (kode, nama, semester)
 # ======================================================================
 ROLES = {
     "eng": dict(
@@ -60,14 +62,12 @@ ROLES = {
             ("SD2204", "Metode Numerik", 4), ("SD2101", "Aljabar Linier", 3), ("SD3104", "Teori Optimasi", 5)],
         concept="Model dilatih di **train**, diuji di **test**. Terlalu sederhana = *underfitting*, terlalu rumit = *overfitting*."),
 }
-
 MISSIONS = {
     "eng_clean": ("eng", "Data Cleaning", "🧹 Data Cleaner"),
     "eng_pipe": ("eng", "ETL Pipeline", "🔧 Pipeline Master"),
     "analyst": ("ana", "Analisis Eksploratif & Storytelling", "🕵️ Detektif Data"),
     "sci": ("sci", "Evaluasi Model (Train vs Test)", "🔮 Model Whisperer"),
 }
-
 REMEDIAL = {
     "eng_clean": "Perbaiki dulu yang bisa diperbaiki: rapikan teks (strip/title), hapus duplikat, isi null dengan median. "
                  "Hapus baris hanya bila memang tidak valid (harga ≤ 0). Jangan `dropna` sembarangan: itu membuang data bagus.",
@@ -106,8 +106,7 @@ div[data-baseweb="tab-highlight"]{background-color:var(--dq)!important}
 # KOMPONEN BERSAMA
 # ======================================================================
 def chips(items):
-    # PERBAIKAN: list comprehension menggunakan []
-    return "".join([f'<span class="dq-chip">{x}</span>' for x in items])
+    return "".join(f'<span class="dq-chip">{x}</span>' for x in items)
 
 
 def hero(title, sub):
@@ -115,7 +114,7 @@ def hero(title, sub):
 
 
 def conveyor(names, states):
-    body = "<span>➜</span>".join([f'<span class="dq-step {s}">{n}</span>' for n, s in zip(names, states)])
+    body = "<span>➜</span>".join(f'<span class="dq-step {s}">{n}</span>' for n, s in zip(names, states))
     return f'<div class="dq-pipe">{body}</div>'
 
 
@@ -129,11 +128,10 @@ def game_shell(r, *labels):
         with a.container(border=True):
             st.markdown(f"#### 🎯 Kenapa main misi ini?\n{R['why']}")
         with b.container(border=True):
-            st.markdown("#### 🌍 Gunanya di dunia nyata\n" + "\n".join([f"- {x}" for x in R["real"]]))
+            st.markdown("#### 🌍 Gunanya di dunia nyata\n" + "\n".join(f"- {x}" for x in R["real"]))
         with st.container(border=True):
             st.markdown("#### 🎓 Nyambung ke mata kuliah Sains Data ITERA")
-            # PERBAIKAN: list comprehension menggunakan []
-            st.markdown(chips([f"{c} · {n} · Smt {s}" + (" (pilihan)" if s >= 6 else "") for c, n, s in R["mk"]]),
+            st.markdown(chips(f"{c} · {n} · Smt {s}" + (" (pilihan)" if s >= 6 else "") for c, n, s in R["mk"]),
                         unsafe_allow_html=True)
             st.markdown(f"**Konsep inti:** {R['concept']}")
         st.caption("👉 Sudah paham? Buka tab misi di sebelah kanan. Kamu punya 3 nyawa per misi!")
@@ -210,7 +208,7 @@ def home():
         name = f"{R['icon']} {R['name']}"
         with col.container(border=True):
             st.markdown(f"### {name}\n*{R['analogi']}*\n\n{R['tag']}\n\n**Tools:** {R['tools']}")
-            st.caption("  ·  ".join([("✅ " if k in ss.done else "🔒 ") + m[2] for k, m in MISSIONS.items() if m[0] == r]))
+            st.caption("  ·  ".join(("✅ " if k in ss.done else "🔒 ") + m[2] for k, m in MISSIONS.items() if m[0] == r))
             st.button("Mulai misi ➜", key=f"dq_go_{r}", type="primary", use_container_width=True, on_click=go, args=(name,))
     with st.container(border=True):
         st.markdown("#### 🎮 Aturan main\n"
@@ -286,7 +284,7 @@ def mission_clean():
         if score == 100:
             award("eng_clean", 50)
         else:
-            bad = ", ".join([k for k, ok in checks.items() if not ok]) or "-"
+            bad = ", ".join(k for k, ok in checks.items() if not ok) or "-"
             miss("eng_clean", f"Data Quality Score {score}/100. Belum terpenuhi: {bad}."
                               + (f" Kamu membuang {lost} baris yang sebenarnya bisa diselamatkan." if lost else ""))
 
@@ -381,7 +379,7 @@ def mission_case():
         met = c[1].selectbox("Metrik (SUM)", ["revenue", "order"])
         fk = c[2].multiselect("WHERE kota", CITIES, default=CITIES) or CITIES
         fc = c[3].multiselect("WHERE kategori", CATS, default=CATS) or CATS
-        q = lambda xs: ", ".join([f"'{x}'" for x in xs])
+        q = lambda xs: ", ".join(f"'{x}'" for x in xs)
         st.code(f"SELECT {dim}, SUM({met})\nFROM penjualan\nWHERE kota IN ({q(fk)})\n  AND kategori IN ({q(fc)})\n"
                 f"GROUP BY {dim};", "sql")
         if st.button("▶️ Jalankan query (-1 poin)", disabled=ss.a_pts <= 0):
@@ -490,10 +488,6 @@ def game_scientist():
     with t1:
         mission_model()
 
-
-# ======================================================================
-# RENDER APLIKASI
-# ======================================================================
 PAGES = {"🏠 Beranda": home, **{f"{R['icon']} {R['name']}": fn for R, fn in
                                zip(ROLES.values(), (game_engineer, game_analyst, game_scientist))}}
 
@@ -511,8 +505,7 @@ def render():
     PAGES[page or "🏠 Beranda"]()
     with status.container():
         st.progress((ss.xp % 100) / 100, text=f"⚡ Level {ss.xp // 100 + 1} · {ss.xp} XP")
-        # PERBAIKAN: list comprehension menggunakan []
-        st.caption("  ·  ".join([("✅ " if k in ss.done else "🔒 ") + m[2] for k, m in MISSIONS.items()]))
+        st.caption("  ·  ".join(("✅ " if k in ss.done else "🔒 ") + m[2] for k, m in MISSIONS.items()))
 
 
 if __name__ == "__main__":
