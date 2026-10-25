@@ -707,15 +707,15 @@ elif menu == "Departemen SSD":
         kating_data = [
             {
                 "nama": "Ihsan Maulana Yusuf",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-                "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
-                "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1uILCqoLYcFZCr9kKv8vPyP9glJ7zieZw",
+                "kesan": "Bang Ihsan terima kasih banyak sudah mau di wawancara, padahal sedang hectic keadaannya",
+                "pesan": "Semangat terus kuliahnya bang Ihsan, doa yang terbaik buat abang",
             },
             {
                 "nama": "Hanifah Inaya Sani",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-                "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
-                "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1y-3SSQQFrXkCiJ03jSpGNAFluVGzr-oY",
+                "kesan": "Kak Hanifah baik, cantik, imut, dan menyenangkan",
+                "pesan": "Semangat terus kuliahnya kak Hanifah, semoga harimu selalu menyenangkan dan indah",
             },
             {
                 "nama": "Afifah Fauziah",
@@ -786,15 +786,15 @@ elif menu == "Departemen Medkraf":
         kating_data = [
             {
                 "nama": "Nayla Salsabila Fathianisa",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-                "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
-                "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1sheqRnG2AZADCTh0m4Ir6WscNLi_l9pX",
+                "kesan": "Kak Nayla baik, cantik, ramah, dan menyenangkan",
+                "pesan": "Semangat terus kuliahnya kak Nayla, semoga harinya selalu menyenangkan dan indah seperti karya seni",
             },
             {
                 "nama": "Donna Maya Puspita",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-                "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
-                "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1Bwi8OgcM02o-wTrvSL5TjjVWW_6sf6gk",
+                "kesan": "Kak Donna terimakasih banyak sudah menerima aku magang di departemen Medkraf",
+                "pesan": "Semangat terus kuliahnya kak Donna, semoga harinya selalu indah bagaikan karya seni terindah di dunia",
             },
             {
                 "nama": "Labo John Noel Napitupulu",
@@ -901,15 +901,15 @@ elif menu == "Departemen MINBAK":
         kating_data = [
             {
                 "nama": "Kevin Antonio Junior",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=11ZPFbEZT-_znYmtoFvllkzDmtjZZqdT6",
-                "kesan": "-",
-                "pesan": "-",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1My2vynJD-MXL9jsoFTwVKuYUuAoLHKEC",
+                "kesan": "Bang Kevin berkharisma banget, cool, dan menyenangkan",
+                "pesan": "Semangat terus kuliahnya bang Kevin, semoga harinya selalu menyenangkan dan indah",
             },
             {
                 "nama": "Gusti Putu Ferazka Dhiyamika",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1A3A7pyD9waaN66tz8MjOk7CNjkmQcm9j",
-                "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
-                "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tgcJDkK0vQSwZOdgx_UZgOs_6AwCa5UV",
+                "kesan": "Kak Gusti cantik, imut, menggemaskan, dan menyenangkan",
+                "pesan": "Semangat terus kuliahnya kak Gusti semoga harinya selalu seindah dan menyenangkan",
             },
             {
                 "nama": "Ali Aristo Muthahhari Parisi",
