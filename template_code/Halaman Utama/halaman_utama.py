@@ -352,16 +352,16 @@ elif menu == "About Us":
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1rbivE1TuHa3baKFVMcQ2MV0AVto2Or-a",
             "https://drive.google.com/uc?export=view&id=1VHIRvPCdaDsop3n_T_J7gVKBQbhSKt5O",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1p-iMrc0Y08La7LL_JrY7G3llyyrlD63n",
             "https://drive.google.com/uc?export=view&id=1OLYzTHsfElGfjBXvzUUoMg24zf8W7QD9",
             "https://drive.google.com/uc?export=view&id=1C6pkVy5sjsffTqdeOSv1M5zff_1zZL8f",
             "https://drive.google.com/uc?export=view&id=1YOHI0fkOElF7yFK7Y-LyGsfR7IPmOSBF",
             "https://drive.google.com/uc?export=view&id=1jflu-Tr_51LeSApGIa6cLeiSVWIrpQ6d",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1Zlab3TJKsGqT4AoiXxRtENfSpBL1r_DR",
+            "https://drive.google.com/uc?export=view&id=1g2z1AjNscFlTCHVc7ptOpF36BfSbjD2E",
             "https://drive.google.com/uc?export=view&id=1rJgFY2x3IdAR-Ps-qmX_hyi2exeAHOi8",
             "https://drive.google.com/uc?export=view&id=1TeIvYb5pBbI8m4rFIAlKZ7ZZwZT4nZ8Q",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1uLdFXSeGPgJVT7GjLc9YaifcGL1uIZ1M",
             "https://drive.google.com/uc?export=view&id=1PanGd7b-D4gFarLkXLh1PY8aDKs9sZY8",
         ]
         
@@ -379,14 +379,14 @@ elif menu == "About Us":
                 "sebagai": "Pak Lurah",
                 "nim": "125450067",
                 "fun_fact": "Kalo cape suka ngehalu",
-                "motto_hidup": "...",
+                "motto_hidup": "Kegagalan hanya terjadi bila kita menyerah",
                 "ig": "https://www.instagram.com/drewwszz?utm_source=ig_web_button_share_sheet&dlrf=ZDNlZDc0MzIxNw=="
             },
             {
                 "nama": "Wardah Aliya Lubis",
                 "sebagai": "Bu Lurah",
                 "nim": "1254500121",
-                "fun_fact": "Ska ngajak ngobrol benda mati",
+                "fun_fact": "Suka ngajak, benda mati ngomong",
                 "motto_hidup": "Tetap jadikan dunia di tanganmu, akhirat di tangan mu",
                 "ig": "https://www.instagram.com/aliyaaalbs?utm_source=ig_web_button_share_sheet&psln=ZDNlZDc0MzIxNw=="
             },
@@ -402,7 +402,7 @@ elif menu == "About Us":
                 "nama": "Valen Uswatun Fauziyah Putri",
                 "sebagai": "Anggotaa",
                 "nim": "125450014",
-                "fun_fact": "",
+                "fun_fact": "Jarang minum air putih",
                 "motto_hidup": "Majulah dengan persiapan agar turun dengan penghormatan",
                 "ig": "https://www.instagram.com/_vlntz02_?utm_source=ig_web_button_share_sheet&dlrf=ZDNlZDc0MzIxNw=="
             },
@@ -418,48 +418,48 @@ elif menu == "About Us":
                 "nama": "Theofani Saragih",
                 "sebagai": "Anggotaa",
                 "nim": "125450046",
-                "fun_fact": "nyemilin es bata, kiko",
-                "motto_hidup": "jalanin dulu keles",
+                "fun_fact": "Nama aku Fani, tapi aslinya sih masih kurang funny",
+                "motto_hidup": "Small progress, is still progress",
                 "ig": "https://www.instagram.com/fanii.ly_?utm_source=ig_web_button_share_sheet&dlrf=ZDNlZDc0MzIxNw=="
             },
             {
                 "nama": "Muchamad Fahrell",
                 "sebagai": "Anggotaa",
                 "nim": "125450077",
-                "fun_fact": "nyemilin es bata, kiko",
-                "motto_hidup": "jalanin dulu keles",
+                "fun_fact": "Pengelihatan buram kalo kacamatanya dilepas",
+                "motto_hidup": "Nikmati setiap momennya",
                 "ig": "https://www.instagram.com/mmuchaell/"
             },
             {
                 "nama": "Nickolas Filbert Kartika",
                 "sebagai": "Anggotaa",
                 "nim": "125450081",
-                "fun_fact": "nyemilin es bata, kiko",
-                "motto_hidup": "jalanin dulu keles",
+                "fun_fact": "Penjelajah situs",
+                "motto_hidup": "Maju Kesatria kegelapan",
                 "ig": "https://www.instagram.com/nickolas_303/"
             },
             {
                 "nama": "Muhammad Ayyas Haidar Farros",
                 "sebagai": "Anggotaa",
                 "nim": "125450105",
-                "fun_fact": "nyemilin es bata, kiko",
-                "motto_hidup": "jalanin dulu keles",
+                "fun_fact": "Jarang makan ikan, bahkan hampir gk pernah",
+                "motto_hidup": "Waktu tidak memberikan kesempatan untuk mengulangi apa yang sudah terjadi, tapi waktu memberikan kita kesempatan untuk menjadi lebih baik dari sebelumnya",
                 "ig": "https://www.instagram.com/yyassst/"
             },
             {
                 "nama": "Rasya Zahira Umardi",
                 "sebagai": "Anggotaa",
                 "nim": "125450110",
-                "fun_fact": "nyemilin es bata, kiko",
-                "motto_hidup": "jalanin dulu keles",
+                "fun_fact": "Sebelum merantau gk suka makan sayur, tapi sekarang karna apa aja harus bisa makan jadi sayur pun dimakan",
+                "motto_hidup": "jangan menyerah sebelum mencoba",
                 "ig": "https://www.instagram.com/citydoyxl?utm_source=ig_web_button_share_sheet&exln=ZDNlZDc0MzIxNw=="
             },
             {
                 "nama": "Nadia Callysta Putri",
                 "sebagai": "Anggotaa",
                 "nim": "125450111",
-                "fun_fact": "nyemilin es bata, kiko",
-                "motto_hidup": "jalanin dulu keles",
+                "fun_fact": "Suka bikin podcast sendiri di atas motor, bahasannya random banget sampai nggak sadar udah nyampe rumah",
+                "motto_hidup": "Hidup bukan tentang siapa yang paling cepat, tetapi siapa yang tetap melangkah",
                 "ig": "https://www.instagram.com/nadiaclyst/"
             },
             {
