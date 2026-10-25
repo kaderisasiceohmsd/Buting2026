@@ -65,7 +65,7 @@ html, body, [class*="css"] {
     margin-top: 6px;
 }
 
-/* 💥 MEMAKSA JUDUL SECTION SELALU DI TENGAH 💥 */
+/* 💥 FIX: Judul Section Tetap Utuh dan di Tengah 💥 */
 .section-title {
     text-align: center !important;
     font-family: 'Playfair Display', serif;
@@ -76,7 +76,7 @@ html, body, [class*="css"] {
     margin-bottom: 30px;
     position: relative;
     display: block;
-    width: 100%;
+    /* Jangan pakai width: 100% agar tidak turun ke bawah */
 }
 .section-title::before,
 .section-title::after {
@@ -311,7 +311,7 @@ html, body, [class*="css"] {
     filter: saturate(1.02) contrast(1.03);
 }
 
-/* 💥 MEMAKSA NAMA DI DALAM CARD SELALU DI TENGAH 💥 */
+/* 💥 FIX: Nama di dalam card benar-benar di tengah 💥 */
 .flip-card-front h4 {
     margin: 2px 0 6px 0;
     font-family: 'Playfair Display', serif;
@@ -320,9 +320,9 @@ html, body, [class*="css"] {
     font-size: 15.5px;
     letter-spacing: 0.3px;
     line-height: 1.25;
-    max-width: 100%;
-    text-align: center !important; 
+    text-align: center !important;
     width: 100%;
+    padding: 0 10px;
 }
 
 .flip-card-front .role-badge {
