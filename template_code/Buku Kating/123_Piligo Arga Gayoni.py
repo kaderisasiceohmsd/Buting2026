@@ -732,7 +732,7 @@ elif menu == "Departemen PSDA":
             "https://drive.google.com/uc?export=view&id=1usOIXqXuvgwImLT71NvCULHHP0GRX8ge",
             "https://drive.google.com/uc?export=view&id=121J109uHW7YX8W4NdU_GCIiFDBx_PPN-",
         ]
-    data_list = [
+        data_list = [
             {
                 "nama": "Arienta Khusnul Ananda",
                 "nim": "123450097",
@@ -921,7 +921,7 @@ elif menu == "Departemen PSDA":
                 "pesan":"lancar selalu kakaaa kuliahnya yaa^"
             }
         ]
-    display_images_with_data(gambar_urls, data_list)
+        display_images_with_data(gambar_urls, data_list)
     DepartemenPSDA()
 
 elif menu == "Senator":
