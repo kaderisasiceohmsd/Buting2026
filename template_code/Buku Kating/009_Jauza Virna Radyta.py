@@ -912,8 +912,8 @@ elif menu == "Departemen PSDA":
         display_images_with_data(gambar_urls, data_list)
     DepartemenPSDA()
 
-elif menu == "Departemen Senator":
-    def DepartemenSenator():
+elif menu == "Senator":
+    def Senator():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1ljbNOGEtWybfbmUyvn-1YRhkObjszF64",#kak fathinah
             "https://drive.google.com/uc?export=view&id=1ZxXRd1pCp693lgl5qrcMfR1mn-FdaSRk",#bang helmy
@@ -1040,7 +1040,7 @@ elif menu == "Departemen Senator":
             },
         ]
         display_images_with_data(gambar_urls, data_list)
-    DepartemenSenator()
+    Senator()
 
 elif menu == "Departemen Eksternal":
     def DepartemenEksternal():
@@ -1172,7 +1172,7 @@ elif menu == "Departemen Eksternal":
             {
                 "nama": "Muhammad Fathiy Zumar Yazid",
                 "nim": "124450081",
-                "umur": "((15≪1) & 31) ⊕ 10",
+                "umur": "20",
                 "asal": "situlah",
                 "alamat": "pohon mulia",
                 "hobbi": "nyari hobi",
@@ -1186,7 +1186,7 @@ elif menu == "Departemen Eksternal":
                 "umur": "Masih muda lah ",
                 "asal": "Rahim Ibu",
                 "alamat": "Pasar lantai 3.5",
-                "hobbi": "tanyain sama yuder",
+                "hobbi": "ga bales chat",
                 "sosmed": "@jaldii._",
                 "kesan": "Bang jaldi baikk sih, dan asikk jugaa",
                 "pesan": "Semoga semua yang bang jaldi inginkan segera tercapai"# 1
@@ -1271,10 +1271,10 @@ elif menu == "Departemen Eksternal":
             {
                 "nama": "Yollanda Agustina",
                 "nim": "124450024",
-                "umur": "-",
+                "umur": "21",
                 "asal": "Kerangka Bawang Sebelah Barat",
                 "alamat": "Kayu Mulya",
-                "hobbi": "Tanya bang Henry",
+                "hobbi": "nyari duit",
                 "sosmed": "@yollanda_agustina16",
                 "kesan": "Kak Yolanda asikk, baikk jugaa, dan juga sangat happy vibes",
                 "pesan": "Semoga kak yolanda mencapai segera semua keinginan kak yolandaa"
