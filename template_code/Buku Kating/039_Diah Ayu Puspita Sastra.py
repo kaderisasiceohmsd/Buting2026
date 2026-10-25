@@ -609,7 +609,7 @@ if menu == "Departemen MIKFES":
                 "https://drive.google.com/thumbnail?id=1wIHGtfTAEE1w3YW9WeJGG5OO6aiyNQZG&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1aC6kFPI702BixsmV1nbWNuJcWQ9M8mSf&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1lMjvIjuHuwxWwz7YOw_7tN6za1ukLy-w&sz=w1000",
-                "https://drive.google.com/thumbnail?id=1qgnpFHACCBAlmUkDIWMt0Zdj0pG2k9U1&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_&sz=w1000",
                 "https://drive.google.com/thumbnail?id=14_vTVQXYcSRv3Aj33OV6OeTHMmqaiv-U&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1Va2FO6AqYmorvBEz6QeqNfFitpDS-GhP&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1PSAhbM_pPO8UX01y0trU-4Sj424-WFZ4&sz=w1000",
@@ -891,7 +891,7 @@ if menu == "Departemen Medkraf":
                 "https://drive.google.com/thumbnail?id=1hcyQoW2AcSNQ8L1CCtvyeC8r5qdtw4Cl&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1E_eFzy4gGV_vMbRyhKCsyRFCl4Srv5Se&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1EhDvjtozX4UCuvwQvmOCArjji8y2nHeK&sz=w1000",
-                "https://drive.google.com/thumbnail?id=1aqW5i7oS32FAH3j_VgkA77y5_H9j5Gwj&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1xTxf3xwq2Cqg0JgWr-byy256KZWtrPML&sz=w1000",
                 "https://drive.google.com/thumbnail?id=13RHyvO5yI8kLj7zmXedDFMuH3VPBNxij&sz=w1000"
         ]
@@ -1276,8 +1276,8 @@ if menu == "Departemen Eksternal":
                 "https://drive.google.com/thumbnail?id=1EyW5Gg3AGDMow0S8rPbwcGF4ehqdE_GM&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1lNTHI2SX9WJWEQeoRRf62PRjTkNYcR7E&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1SvldPyhtHv9Y7KP1xEHSqkm9k0YMAhIv&sz=w1000",
-                "https://drive.google.com/thumbnail?id=1MU7BPYE_gRVxjWktkKFnDoMhe15pojY4&sz=w1000",
-                "https://drive.google.com/thumbnail?id=16UquP5PLxVclvc2q7oFSlkX1vEu4ZXOd&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_&sz=w1000",
         ]
         
         data_list = [
@@ -1540,7 +1540,7 @@ if menu == "Baleg":
                 "https://drive.google.com/thumbnail?id=1K7UcrPbHoob5bWEFsQe45txOskLzvhdD&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1c3pzfxQnPIpuBojItiTuCMf6oAb6j4X7&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1S0NnrEsRvpR6U5uoFIpoxjtl7arA8mQ0&sz=w1000",
-                "https://drive.google.com/thumbnail?id=1PFnsO5HsxLCd9ahSudhE3B_xnkysKjE6&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1gVvbGxgD3lgfcnl1ipRuXQKN-E8OPHLK&sz=w1000",
                 "https://drive.google.com/thumbnail?id=10LtRI2-vOslchx_Ijim2p69CRTgQjFmZ&sz=w1000",
         ]
@@ -1828,7 +1828,7 @@ if menu == "Departemen PSDA":
     def departemen_psda():
         gambar_urls = [
                 "https://drive.google.com/thumbnail?id=1hxFz5iv83Gsm6h1ZZvQGcejdcWHyDiQC&sz=w1000",
-                "https://drive.google.com/thumbnail?id=1zkqTMbQ-RrKY1504WA6HLkLe6fDLTJVV&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1SySdWPx2RPLp-4NoHAObEooJNnf38VEH&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1-BZtHLZrmr7tRCiDV2uyGviG1LZI0Ebs&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1y9cH-ybzk8omqQELJnd5Hr17Ky-CSwQP&sz=w1000",
@@ -1839,7 +1839,7 @@ if menu == "Departemen PSDA":
                 "https://drive.google.com/thumbnail?id=1znO18sa83ryTAxfQD72bYjXsCqKwJKHv&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1jHje08g47gfOwHXkKPkRdYmptFPw4hJQ&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1IfHvPbKTusIKTUPptlFRboC_P1faIaj-&sz=w1000",
-                "https://drive.google.com/thumbnail?id=1YiOUxcIRyHcZPW_ydB7ZAXGm39HURSU_&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1yUQ7xKTe0Kzw_6RUjLmqiJwIsvWHsiXZ&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1Jf6KSShO2tZajWkBoX-hK2h3PXRTFx0t&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1Pl3mRMdA5IN6xHL2jlkpvpBjx-wy4PhQ&sz=w1000",
