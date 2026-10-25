@@ -1292,7 +1292,7 @@ elif menu == "Departemen Eksternal":
                 "umur": "-",
                 "asal": "Kerangka Bawang Sebelah Barat",
                 "alamat": "Kayu Mulya",
-                "hobbi": "Tanya bang Henry",
+                "hobbi": "Nyari duit",
                 "sosmed": "@yollanda_agustina16",
                 "kesan": "Awal ketemu juga pas kakak ini jadi asprak alpro dan kakaknya sabar buat ngajarin kami",
                 "pesan": "Tetap jaga kesehatan ya kak."
@@ -1392,8 +1392,8 @@ elif menu == "Departemen MIKFES":
                 "alamat": "Bandar Lampung",
                 "hobbi": "Gitar",
                 "sosmed": "@fadilalfarizzii",
-                "kesan": "...",
-                "pesan": "Tetap semangat menjalani pengobatannya yang bang semoga lekas sembuh, semoga sukses selalu menyertai abang."# 1
+                "kesan": "Abangnya baik sekalii",
+                "pesan": "Semoga amal dan ibadahnya di terima disisi Allah Swt."# 1
             },
             {
                 "nama": "Manuel Frederika",
@@ -1426,7 +1426,7 @@ elif menu == "Departemen MIKFES":
                 "hobbi": "rolling skate",
                 "sosmed": "@risarmdna",
                 "kesan": "Kakaknya punya pembawaan yang bikin suasana jadi nyaman. ",
-                "pesan": "Semoga setiap langkah Kakak ke depannya selalu dipermudah yaa".# 1
+                "pesan": "Semoga setiap langkah Kakak ke depannya selalu dipermudah yaa"# 1
             },
             {
                 "nama": "Vannisa Ramadhani",
