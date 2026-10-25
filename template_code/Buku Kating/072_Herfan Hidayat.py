@@ -792,8 +792,8 @@ elif menu == "Departemen Internal":
                 "alamat": "Untung Senopati",
                 "hobbi": "Suka nolong orang",
                 "sosmed": "@rismaa.mustika_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!",
+                "kesan": "Kakak ini asik, ramah juga",
+                "pesan": "semangat terus dan sehat selalu kak!!!",
             },
             {
                 "nama": "Hanna Grecia Sinaga",
@@ -1512,8 +1512,8 @@ if menu == "Departemen Minbak":
 if menu == "Departemen MIKFES":
     def Departemen_MIKFES():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1A-lkY5LQ_7wVCmtOqlZu_7Gah4Y4Dgvk",
+            "https://drive.google.com/uc?export=view&id=1ErcMHuA7YkkjZ-mv5xUyvJE6TxEO5iBd",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
