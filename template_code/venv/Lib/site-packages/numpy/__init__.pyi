@@ -1084,7 +1084,6 @@ class _DTypeMeta(type):
 
 @final
 class dtype(Generic[_ScalarT_co], metaclass=_DTypeMeta):
-    names: tuple[py_str, ...] | None
     def __hash__(self) -> int: ...
 
     # `None` results in the default dtype
@@ -1605,6 +1604,13 @@ class dtype(Generic[_ScalarT_co], metaclass=_DTypeMeta):
     def __eq__(self, other: Any, /) -> py_bool: ...
     def __ne__(self, other: Any, /) -> py_bool: ...
 
+    #
+    @property
+    def names(self) -> tuple[py_str, ...] | None: ...
+    @names.setter
+    def names(self: dtype[void], names: Sequence[py_str], /) -> None: ...
+
+    #
     @property
     def alignment(self) -> int: ...
     @property
@@ -2221,9 +2227,14 @@ class ndarray(_ArrayOrScalarCommon, Generic[_ShapeT_co, _DTypeT_co]):
 
     #
     def byteswap(self, inplace: py_bool = ...) -> Self: ...
+
+    #
     @property
     def flat(self) -> flatiter[Self]: ...
+    @flat.setter
+    def flat(self, flat: ArrayLike, /) -> None: ...
 
+    #
     @overload  # use the same output type as that of the underlying `generic`
     def item[T](self: NDArray[generic[T]], i0: SupportsIndex | tuple[SupportsIndex, ...] = ..., /, *args: SupportsIndex) -> T: ...
     @overload  # special casing for `StringDType`, which has no scalar type
@@ -6886,6 +6897,8 @@ class timedelta64(_IntegralMixin, generic[_TD64ItemT_co], Generic[_TD64ItemT_co]
     @overload
     def __new__(cls, value: timedelta64[_TD64ItemT_co], /) -> Self: ...
     @overload
+    def __new__(cls, value: dt.timedelta, /) -> timedelta64[dt.timedelta]: ...
+    @overload
     @deprecated(
         "Using 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. "
         "Please use a specific units instead."
@@ -6917,12 +6930,6 @@ class timedelta64(_IntegralMixin, generic[_TD64ItemT_co], Generic[_TD64ItemT_co]
     def __new__(cls, value: _IntLike_co, format: _TimeUnitSpec[_IntTD64Unit], /) -> timedelta64[int]: ...
     @overload
     def __new__(cls, value: dt.timedelta, format: _TimeUnitSpec[_IntTimeUnit], /) -> timedelta64[int]: ...
-    @overload
-    @deprecated(
-        "Using 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. "
-        "Please use a specific units instead."
-    )
-    def __new__(cls, value: dt.timedelta | _IntLike_co, /) -> timedelta64[dt.timedelta]: ...
     @overload
     def __new__(
         cls,
@@ -7388,7 +7395,7 @@ class void(flexible[bytes | tuple[Any, ...]]):  # type: ignore[misc]
     @overload
     def __new__(cls, length_or_data: _IntLike_co | bytes, /, dtype: None = None) -> Self: ...
     @overload
-    def __new__(cls, length_or_data: object, /, dtype: _DTypeLikeVoid) -> Self: ...
+    def __new__(cls, length_or_data: object, /, dtype: _DTypeLikeVoid | str) -> Self: ...
 
     #
     @overload
