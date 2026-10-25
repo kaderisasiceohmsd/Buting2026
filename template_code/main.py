@@ -8,6 +8,11 @@ import streamlit as st
 import streamlit.components.v1 as components
 from loading_screen import show_loading_screen
 
+st.set_page_config(
+    page_title="Konstelasi Jordan",
+    page_icon="⭐", # <-- Menggunakan emoji bintang sebagai logo/favicon tab browser
+    layout="wide"
+)
 # ==============================================================================
 # KONFIGURASI UTAMA & DAFTAR BINTANG KONSTELASI 10 KELOMPOK
 # ==============================================================================
