@@ -344,7 +344,7 @@ elif menu == "Departemen MINBAK":
         "https://drive.google.com/uc?export=view&id=1fPtsYqF_0DOMxPylUfP8tHJb-4I8bclk",
         "https://drive.google.com/uc?export=view&id=1PllMuoTERH-2sD8P20iTxbJxTQm7x10d",
         "https://drive.google.com/uc?export=view&id=16YgKZ9rrGnISfnT1z5GmABdQaBPRiM0j",
-        "https://drive.google.com/uc?export=view&id=1A7DCCFoX0uVRapmTROWRJ7RKB3jvSB5w",
+        "https://drive.google.com/uc?export=view&id=1dLjS0W18uGqhg3r_tdkSeeZVorHOHTOt",
         "https://drive.google.com/uc?export=view&id=1LmPX6jybPVwqYMwN7Avk5WeaL4O7hRLH",
         "https://drive.google.com/uc?export=view&id=1DRDiySSqt5X-ZTr2qRMKTtpvc_gyh-Hw",
         "https://drive.google.com/uc?export=view&id=1zRNtU-cFIBjdM3K9A2BYML4fnfrpz5wj",
