@@ -8,7 +8,7 @@ from utils import load_image, image_data_uri
 
 
 # ============================================================
-# 🎨 CUSTOM CSS HALAMAN UTAMA (UTUH 100% ASLI + TAMBAHAN MENTOR)
+# 🎨 CUSTOM CSS HALAMAN UTAMA (PREMIUM TEXTURE EDITION)
 # ============================================================
 HALAMAN_UTAMA_CSS = """
 <style>
@@ -19,12 +19,17 @@ html, body, [class*="css"] {
     color: #222222;
 }
 
+/* 💥 BACKGROUND SUPER PREMIUM: Mesh Gradient + Noise Texture */
 .stApp {
-    background:
-        radial-gradient(circle at 15% 10%, rgba(112,28,35,0.06) 0%, transparent 45%),
-        radial-gradient(circle at 85% 90%, rgba(217,195,163,0.18) 0%, transparent 50%),
-        linear-gradient(180deg, #f4f0eb 0%, #efe8df 100%);
+    background-color: #f4f0eb;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(112,28,35,0.12) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(217,195,163,0.3) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(112,28,35,0.08) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, rgba(217,195,163,0.2) 0px, transparent 50%),
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .main-title {
@@ -34,7 +39,7 @@ html, body, [class*="css"] {
     font-size: 3.6em !important;
     letter-spacing: 1px;
     margin-bottom: 6px;
-    background: linear-gradient(135deg, #701c23 0%, #a8323d 45%, #701c23 100%);
+    background: linear-gradient(135deg, #4e1318 0%, #a8323d 45%, #4e1318 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -57,7 +62,7 @@ html, body, [class*="css"] {
     text-align: center;
     font-family: 'Inter', sans-serif;
     color: #6b5a52;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.15em !important;
     letter-spacing: 2.5px;
     text-transform: uppercase;
@@ -68,7 +73,7 @@ html, body, [class*="css"] {
 .section-title {
     text-align: center;
     font-family: 'Playfair Display', serif;
-    color: #701c23;
+    color: #4e1318;
     font-weight: 700;
     font-size: 1.9em;
     margin-top: 45px;
@@ -79,21 +84,24 @@ html, body, [class*="css"] {
 .section-title::before,
 .section-title::after {
     content: '✦';
-    color: #d9c3a3;
+    color: #b8912e;
     margin: 0 18px;
     font-size: 0.7em;
     vertical-align: middle;
 }
 
+/* 💥 KOTAK KONTEN PREMIUM (Glassmorphism & Soft Shadow) */
 .content-box {
-    background: linear-gradient(135deg, #ffffff 0%, #fdfbf8 100%);
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     padding: 38px 42px;
     border-radius: 20px;
     box-shadow:
         0 1px 0 rgba(255,255,255,0.9) inset,
-        0 10px 30px rgba(112,28,35,0.07),
+        0 20px 40px -10px rgba(112,28,35,0.12),
         0 2px 8px rgba(112,28,35,0.04);
-    border: 1px solid rgba(217,195,163,0.55);
+    border: 1px solid rgba(255,255,255,0.8);
     margin-bottom: 38px;
     text-align: justify;
     line-height: 1.95;
@@ -101,6 +109,14 @@ html, body, [class*="css"] {
     color: #3a2f2b;
     position: relative;
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.content-box:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 1px 0 rgba(255,255,255,0.9) inset,
+        0 25px 50px -12px rgba(112,28,35,0.18),
+        0 2px 8px rgba(112,28,35,0.04);
 }
 .content-box::before {
     content: '';
@@ -110,19 +126,20 @@ html, body, [class*="css"] {
     background: linear-gradient(180deg, #701c23, #d9c3a3, #701c23);
 }
 .content-box b {
-    color: #701c23;
+    color: #4e1318;
     font-weight: 700;
     letter-spacing: 0.2px;
 }
 
+/* Card Foto dengan efek premium */
 .photo-card {
     position: relative;
     overflow: hidden;
     border-radius: 16px;
     box-shadow:
-        0 4px 14px rgba(112,28,35,0.10),
-        0 1px 3px rgba(0,0,0,0.05);
-    border: 1px solid rgba(217,195,163,0.7);
+        0 10px 25px -5px rgba(112,28,35,0.15),
+        0 8px 10px -6px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255,255,255,0.6);
     margin-bottom: 22px;
     height: 210px;
     background-color: #ffffff;
@@ -132,8 +149,8 @@ html, body, [class*="css"] {
 .photo-card:hover {
     transform: translateY(-6px);
     box-shadow:
-        0 18px 40px rgba(112,28,35,0.22),
-        0 4px 12px rgba(112,28,35,0.12);
+        0 20px 40px -10px rgba(112,28,35,0.3),
+        0 8px 16px -8px rgba(112,28,35,0.15);
 }
 .photo-card img {
     width: 100%;
@@ -170,7 +187,7 @@ html, body, [class*="css"] {
     bottom: 0; left: 0; right: 0;
     background: linear-gradient(
         to top,
-        rgba(112,28,35,0.97) 0%,
+        rgba(78,19,24,0.97) 0%,
         rgba(112,28,35,0.85) 55%,
         transparent 100%
     );
@@ -200,6 +217,7 @@ html, body, [class*="css"] {
     font-weight: 400;
 }
 
+/* Flip Card Premium */
 .flip-card {
     background-color: transparent;
     width: 100%;
@@ -217,8 +235,8 @@ html, body, [class*="css"] {
     transform-style: preserve-3d;
     border-radius: 18px;
     box-shadow:
-        0 10px 28px rgba(112,28,35,0.10),
-        0 2px 8px rgba(112,28,35,0.06);
+        0 15px 35px -5px rgba(112,28,35,0.15),
+        0 5px 15px -5px rgba(112,28,35,0.08);
 }
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
@@ -236,8 +254,8 @@ html, body, [class*="css"] {
 
 .flip-card-front {
     background:
-        radial-gradient(circle at 50% 0%, rgba(217,195,163,0.35) 0%, transparent 55%),
-        linear-gradient(165deg, #ffffff 0%, #fdf9f3 60%, #f6efe4 100%);
+        radial-gradient(circle at 50% 0%, rgba(217,195,163,0.4) 0%, transparent 60%),
+        linear-gradient(165deg, #ffffff 0%, #fdf9f3 60%, #f0e8db 100%);
     color: #701c23;
     display: flex;
     flex-direction: column;
@@ -245,10 +263,10 @@ html, body, [class*="css"] {
     align-items: center;
     padding: 20px 16px 16px 16px;
     box-sizing: border-box;
-    border: 1px solid rgba(217,195,163,0.75);
+    border: 1px solid rgba(255,255,255,0.8);
     box-shadow:
-        0 0 0 1px rgba(255,255,255,0.9) inset,
-        0 0 40px rgba(217,195,163,0.20) inset;
+        0 0 0 1px rgba(217,195,163,0.2) inset,
+        0 0 40px rgba(217,195,163,0.2) inset;
 }
 
 .flip-card-front::before,
@@ -290,15 +308,15 @@ html, body, [class*="css"] {
     padding: 4px;
     background: linear-gradient(135deg, #701c23 0%, #d9c3a3 50%, #701c23 100%);
     box-shadow:
-        0 8px 22px rgba(112,28,35,0.26),
-        0 3px 8px rgba(112,28,35,0.15);
+        0 10px 25px -5px rgba(112,28,35,0.3),
+        0 4px 10px -4px rgba(112,28,35,0.2);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 .flip-card:hover .flip-card-front .photo-frame {
     transform: scale(1.04) translateY(-2px);
     box-shadow:
-        0 14px 32px rgba(112,28,35,0.36),
-        0 4px 12px rgba(112,28,35,0.22);
+        0 16px 35px -5px rgba(112,28,35,0.4),
+        0 5px 14px -5px rgba(112,28,35,0.25);
 }
 .flip-card-front .photo-frame img {
     width: 100%;
@@ -313,7 +331,7 @@ html, body, [class*="css"] {
     margin: 2px 0 6px 0;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    color: #701c23;
+    color: #4e1318;
     font-size: 15.5px;
     letter-spacing: 0.3px;
     line-height: 1.25;
@@ -328,15 +346,15 @@ html, body, [class*="css"] {
     letter-spacing: 1.3px;
     text-transform: uppercase;
     border-radius: 999px;
-    background: linear-gradient(135deg, #701c23 0%, #a8323d 100%);
+    background: linear-gradient(135deg, #4e1318 0%, #a8323d 100%);
     color: #f4f0eb;
-    box-shadow: 0 3px 10px rgba(112,28,35,0.30);
+    box-shadow: 0 4px 12px rgba(112,28,35,0.35);
     margin-bottom: 4px;
 }
 .flip-card-front .role-badge.anggota {
     background: linear-gradient(135deg, #d9c3a3 0%, #c4a882 100%);
     color: #4e1318;
-    box-shadow: 0 3px 10px rgba(217,195,163,0.45);
+    box-shadow: 0 4px 12px rgba(217,195,163,0.5);
 }
 
 .flip-card-front .flip-hint {
@@ -361,9 +379,9 @@ html, body, [class*="css"] {
 
 .flip-card-back {
     background:
-        radial-gradient(circle at 30% 20%, rgba(217,195,163,0.18) 0%, transparent 50%),
-        radial-gradient(circle at 80% 90%, rgba(168,50,61,0.35) 0%, transparent 55%),
-        linear-gradient(150deg, #701c23 0%, #4e1318 55%, #2d0a0d 100%);
+        radial-gradient(circle at 30% 20%, rgba(217,195,163,0.25) 0%, transparent 50%),
+        radial-gradient(circle at 80% 90%, rgba(168,50,61,0.45) 0%, transparent 55%),
+        linear-gradient(150deg, #4e1318 0%, #2d0a0d 100%);
     color: #ffffff;
     transform: rotateY(180deg);
     text-align: left;
@@ -372,19 +390,19 @@ html, body, [class*="css"] {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid rgba(217,195,163,0.4);
+    border: 1px solid rgba(217,195,163,0.5);
     box-shadow:
-        0 0 0 1px rgba(217,195,163,0.15) inset,
-        0 0 60px rgba(0,0,0,0.35) inset;
+        0 0 0 1px rgba(217,195,163,0.2) inset,
+        0 0 60px rgba(0,0,0,0.4) inset;
 }
 
 .flip-card-back::before {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: radial-gradient(rgba(217,195,163,0.15) 1px, transparent 1px);
+    background-image: radial-gradient(rgba(217,195,163,0.2) 1px, transparent 1px);
     background-size: 12px 12px;
-    opacity: 0.5;
+    opacity: 0.6;
     pointer-events: none;
     border-radius: 18px;
 }
@@ -396,7 +414,7 @@ html, body, [class*="css"] {
     right: 16px;
     font-family: 'Playfair Display', serif;
     font-size: 70px;
-    color: rgba(217,195,163,0.18);
+    color: rgba(217,195,163,0.25);
     line-height: 1;
     pointer-events: none;
 }
@@ -440,7 +458,7 @@ html, body, [class*="css"] {
     transform: translate(-50%, -50%);
     color: #d9c3a3;
     font-size: 7px;
-    background: #4e1318;
+    background: #2d0a0d;
     padding: 0 8px;
 }
 
@@ -452,13 +470,13 @@ html, body, [class*="css"] {
     color: rgba(255,255,255,0.95);
     padding: 6px 10px;
     border-radius: 8px;
-    background: rgba(255,255,255,0.05);
+    background: rgba(255,255,255,0.08);
     border-left: 2px solid #d9c3a3;
     z-index: 1;
     transition: background 0.3s ease, border-color 0.3s ease;
 }
 .flip-card-back p:hover {
-    background: rgba(217,195,163,0.12);
+    background: rgba(217,195,163,0.15);
     border-left-color: #f4f0eb;
 }
 .flip-card-back p:last-child {
@@ -481,9 +499,9 @@ html, body, [class*="css"] {
     border-radius: 20px;
     overflow: hidden;
     box-shadow:
-        0 20px 45px rgba(112,28,35,0.18),
-        0 6px 14px rgba(112,28,35,0.10);
-    border: 1px solid rgba(217,195,163,0.65);
+        0 25px 50px -12px rgba(112,28,35,0.25),
+        0 10px 20px -10px rgba(112,28,35,0.15);
+    border: 1px solid rgba(255,255,255,0.6);
 }
 .hero-image-wrapper img {
     width: 100%;
@@ -497,8 +515,8 @@ html, body, [class*="css"] {
     inset: 0;
     background: linear-gradient(
         to top,
-        rgba(112,28,35,0.85) 0%,
-        rgba(112,28,35,0.35) 40%,
+        rgba(78,19,24,0.9) 0%,
+        rgba(112,28,35,0.4) 40%,
         transparent 75%
     );
     pointer-events: none;
@@ -515,6 +533,7 @@ html, body, [class*="css"] {
     padding: 4px 14px;
     background: rgba(244,240,235,0.15);
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(217,195,163,0.6);
     border-radius: 999px;
     font-size: 10px;
@@ -531,7 +550,7 @@ html, body, [class*="css"] {
     margin: 0;
     letter-spacing: 0.4px;
     color: #ffffff;
-    text-shadow: 0 2px 12px rgba(0,0,0,0.35);
+    text-shadow: 0 2px 12px rgba(0,0,0,0.4);
 }
 .hero-image-wrapper .hero-caption p {
     font-size: 12.5px;
@@ -647,8 +666,8 @@ st.markdown("<div style='margin-top: 50px;'></div>", unsafe_allow_html=True)
 menu = option_menu(
     menu_title=None, options=["Home", "About Us"], icons=["house-door", "hand-index"], default_index=0, orientation="horizontal",
     styles={
-        "container": {"padding": "10px!important", "background-color": "rgba(255,255,255,0.85)", "border-radius": "14px", "border": "1px solid rgba(217,195,163,0.6)", "margin-bottom": "38px"},
-        "nav-link-selected": {"background": "linear-gradient(135deg, #701c23 0%, #a8323d 100%)", "color": "#ffffff"}
+        "container": {"padding": "10px!important", "background-color": "rgba(255,255,255,0.85)", "backdrop-filter": "blur(10px)", "border-radius": "14px", "border": "1px solid rgba(217,195,163,0.6)", "margin-bottom": "38px"},
+        "nav-link-selected": {"background": "linear-gradient(135deg, #4e1318 0%, #a8323d 100%)", "color": "#ffffff", "box-shadow": "0 4px 12px rgba(112,28,35,0.3)"}
     }
 )
 
