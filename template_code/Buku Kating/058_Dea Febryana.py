@@ -151,7 +151,7 @@ elif menu == "Senator":
             {
                 "nama": "Fathinah Nur Azizah",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1mm2KiAgL7t_K6W7_QMZtiL1zBYs4ShEN",
-                "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
+                "kesan": "Kakaknya sangat ramah",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
             {
@@ -610,7 +610,7 @@ elif menu == "Departemen Internal":
             },
             {
                 "nama": "Kharisma Mustika Sari",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1D19eHLp36gQDWtDGafcywGarCFvj-2kH",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -676,7 +676,7 @@ elif menu == "Departemen Internal":
             },
             {
                 "nama": "Cika Adelia Br Marbun",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=10rU380AplfiHOyTapwPC-G-DwfhtIwwL",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -719,7 +719,7 @@ elif menu == "Departemen SSD":
             },
             {
                 "nama": "Afifah Fauziah",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1Wi7N0KTU4kswjroYAjB0PlFFPAW78iZq",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -761,7 +761,7 @@ elif menu == "Departemen SSD":
             },
             {
                 "nama": "Afdhal Rahmad Setiawan",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1_hjR3OStUrfYdlu1lDOuitIXpmyi7wB0",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -840,7 +840,7 @@ elif menu == "Departemen Medkraf":
             },
             {
                 "nama": "Alya Ramadhanti",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1jQblJOV0dRdxxnPsCLxDImxCoZzJaLEY",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1XiBUnnFpkevth6Sn01gipx9M6hXubugS",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -876,7 +876,7 @@ elif menu == "Departemen Medkraf":
             },
             {
                 "nama": "Lucia Advencia Rachel Nainggolan",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1YIFE4ecJDKSUBgNBY5s0v2RbS9dmQfMJ",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1kk3n8QlGADzVRQSdc3u_Pr3expk3eIj_",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
