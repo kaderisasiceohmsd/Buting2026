@@ -87,7 +87,9 @@ def load_image(url):
             response = requests.get(candidate, headers={"User-Agent": "Mozilla/5.0"}, timeout=15, stream=True)
             response.raise_for_status()
             img_bytes = BytesIO(response.content)
-            img = ImageOps.exif_transpose(Image.open(img_bytes)).convert("RGB")
+            
+            # 💥 FIX: Jangan langsung di-convert ke RGB agar transparansi tidak hilang
+            img = ImageOps.exif_transpose(Image.open(img_bytes))
             img.load(); response.close(); img_bytes.close()
             return img
         except: continue
@@ -98,10 +100,29 @@ def image_data_uri(url, max_dim=800, quality=80):
     img = load_image(url)
     if img is None: return None
     img = img.copy()
-    if max(img.size) > max_dim: img.thumbnail((max_dim, max_dim), Image.LANCZOS)
-    buffer = BytesIO(); img.save(buffer, format="JPEG", quality=quality, optimize=True)
-    encoded = base64.b64encode(buffer.getvalue()).decode("utf-8"); buffer.close()
-    return f"data:image/jpeg;base64,{encoded}"
+    
+    # 💥 FIX: Deteksi apakah gambar punya transparansi (RGBA atau P)
+    has_transparency = False
+    if img.mode in ('RGBA', 'LA') or (img.mode == 'P' and 'transparency' in img.info):
+        has_transparency = True
+        
+    if max(img.size) > max_dim: 
+        img.thumbnail((max_dim, max_dim), Image.LANCZOS)
+        
+    buffer = BytesIO()
+    
+    if has_transparency:
+        # Simpan sebagai PNG jika transparan agar background tidak hitam
+        img.save(buffer, format="PNG", optimize=True)
+        mime_type = "image/png"
+    else:
+        # Simpan sebagai JPEG jika tidak transparan (lebih hemat memori)
+        img.convert("RGB").save(buffer, format="JPEG", quality=quality, optimize=True)
+        mime_type = "image/jpeg"
+
+    encoded = base64.b64encode(buffer.getvalue()).decode("utf-8")
+    buffer.close()
+    return f"data:{mime_type};base64,{encoded}"
 
 def render_photo(img_src, alt="Foto"):
     if not img_src:
