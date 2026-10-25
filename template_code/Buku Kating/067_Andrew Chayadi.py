@@ -990,7 +990,7 @@ elif menu == "Departemen MIKFES":
 
         with tab1:
             gambar_urls_kepala_departemen_mikfes= [
-            "https://drive.google.com/uc?export=view&id=1rCtgSNBpeJlgEIz3JsWTZ3EZbpWb9XfF",
+            "https://drive.google.com/uc?export=view&id=1g-JXO76tjEz67NFg8eKFjEKBQlPncP6v",
             ]
             data_list_kepala_departemen_mikfes = [
             {
