@@ -1382,7 +1382,8 @@ if menu == "Departemen Eksternal":
                 "hobbi": "ngesen kanan",
                 "sosmed": "@fvnnn05",
                 "kesan": "Eh baik betul loh Abang ini, informatif walau kadang suka diputer-puter ya kalau nanya....",
-                "pesan": "Makasih ya bang tips n trik pplk nya, semoga kuliahnya lansyar terus, when ya kita satu kepanitiaan or satu divisi, tapi kenapa yah setiap ketemu langsung kok kaya orang ga kenal,,, padahal dah aku senyum n sapa loh",
+                "pesan": "Makasih ya bang tips n trik pplk nya, semoga kuliahnya lansyar terus, when ya kita satu kepanitiaan or satu divisi, tapi kenapa yah setiap ketemu langsung kok kaya orang ga kenal,,, padahal dah aku senyum n sapa loh"
+            },    
             {
                 "nama": "Muhammad Fathiy Zumar Yazid",
                 "nim": "124450081",
