@@ -499,7 +499,7 @@ if menu == "Senator":
                 "hobbi": "Nulis di medium",
                 "sosmed": "@fathinahnazzh",
                 "kesan": "Kak Fathinah baik banget, cantik, pinterr, humble juga, terus vibes-nya positif banget kak.",  
-                "pesan": "Semoga apa pun impian kak Fathinah bisa terwujud ya kak, semoga dilancarkan terus semua urusannya.""# 1
+                "pesan": "Semoga apa pun impian kak Fathinah bisa terwujud ya kak, semoga dilancarkan terus semua urusannya."# 1
             },
             {
                 "nama": "Helmy Surya Pratama",
