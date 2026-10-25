@@ -65,14 +65,14 @@ elif menu == "Senator":
     gambar_urls = [
         "https://drive.google.com/uc?export=view&id=1iwQT9-8ZVR2UA7YuUBSteXFBrqSQFNSq",
         "https://drive.google.com/uc?export=view&id=1Ro12i6tMYvQPqpEPA3ywc6uMhrhO4vCx",
-        "https://drive.google.com/uc?export=view&id=1hl-9hUW838NaebEADDOADkaiOEUJHt_N",
-        "https://drive.google.com/uc?export=view&id=17bSim4ApeDZb1q_0OsqNeI9OkvBM_IMS",
-        "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-        "https://drive.google.com/uc?export=view&id=1fXxMVx1XRbi-1i7JPfX9MyF8OABWoW6q",
-        "https://drive.google.com/uc?export=view&id=10OvO7M9lJapJtx9rC46Fb7gwAfGNOJZ1",
-        "https://drive.google.com/uc?export=view&id=11_x37gi7Bus2_Qn7_ApQ46paOPrZ_FAg",
+        "https://drive.google.com/uc?export=view&id=12VsbzuOcMaOXW0w9Evsg4LaYUvYzstPD",
+        "https://drive.google.com/uc?export=view&id=16b80bymcbRnisOUYfouvPFJwTQswKV0z",
+        "https://drive.google.com/uc?export=view&id=",
+        "https://drive.google.com/uc?export=view&id=1ftzUSanZf2du4lz8Xth_g3spB7LJ2_E-",
+        "https://drive.google.com/uc?export=view&id=173o3N3wR7SNCMZxcODkwn90iAhqDhjfv",
+        "https://drive.google.com/uc?export=view&id=11oGiQqgjsv4gLyttlPZBFBIcc15h86D6",
         "https://drive.google.com/uc?export=view&id=160IfGFPZsvUV786ppmmUUrh6f-0sc248",
-        "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+        "https://drive.google.com/uc?export=view&id=1fXxMVx1XRbi-1i7JPfX9MyF8OABWoW6q",
     ]
     data_list = [
         {"nama": "Fathinah Nur Azizah", "jabatan": "Senator Mahasiswa", "nim": "123450072", "umur": "21", "asal": "Jakarta", "alamat": "Belakang PB", "hobbi": "Nulis di Medium", "sosmed": "@sfathinahnazzh", "kesan": "Informatif", "pesan": "Terus berkarya!"},
