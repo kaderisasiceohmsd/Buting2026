@@ -352,7 +352,7 @@ if menu == "Senator":
                 "alamat": "Belwis",
                 "hobbi": "Nonton",
                 "sosmed": "@lia.h_264",
-                "kesan": "Kak Lia baikk banget dan ramahh jugaa,  
+                "kesan": "Kak Lia baikk banget dan ramahh jugaa",
                 "pesan":"semangat terus kuliahnya kakak !!!"
             },
             {
