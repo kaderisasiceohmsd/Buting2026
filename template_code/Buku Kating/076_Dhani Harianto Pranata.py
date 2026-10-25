@@ -40,19 +40,19 @@ if menu == "Kesekjenan":
             },
             {
                 "nama": "Qois Olifio",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1IvA_nI4wpruLlaCVw1ZL-JnDiMi1K03R",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=https://drive.google.com/file/d/125w8u-y78nBpbyEp8DEUYrJgjOr9uCXs/view?usp=sharing",
                 "kesan": "Cool, dan keliatan orang yang Sistematis",
                 "pesan": "Bang waktu presentasi jangan terlalu cepat ya bang hehe",
             },
             {
                 "nama": "Hafsa Fazila Arradhi",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1K3sEk-WQWh1kF9zRNe4ajtM_QR37NRiT",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=https://drive.google.com/file/d/1RETMQ8BDj154bTI5tXujvutI11QP0M8U/view?usp=sharing",
                 "kesan": "humble dan baik",
                 "pesan": "Selalu happy ya kak :)",
             },
             {
                 "nama": "Luthfia Laila Ramadhani",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1709lIORxWXXRmt_r0Bk0GcYqI55IYWgy",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=https://drive.google.com/file/d/1aF7xYQIyl7yJuDm4Mye7-IB2Cz2i9dbP/view?usp=sharing",
                 "kesan": "humble dan baik",
                 "pesan": "Jangan mudah patah semangat kak :)",
             },
@@ -113,31 +113,31 @@ elif menu == "Baleg":
             },
             {
                 "nama": "Jeremia Halim",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=https://drive.google.com/file/d/1XATd_S1RFlHijDy2wFrSIs_WUmJBxqP0/view?usp=sharing",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
             {
                 "nama": "Monica Patricia Tanjung",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=https://drive.google.com/file/d/1bDeV8nWY3vrkU3Y8rFrcxhyP2UkuFBc_/view?usp=sharing",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
             {
                 "nama": "Jona Timothy Ogatse Panjaitan",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=https://drive.google.com/file/d/17MAMVqLII92O0JXi6AWb-Yp_KPHnRoeS/view?usp=sharing",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
             {
                 "nama": "Sekar Dini Widya Putri",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=https://drive.google.com/file/d/1MR_SSwKYIUxM_QqlpOIPxh53wKuhdSxX/view?usp=sharing",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
             {
                 "nama": "Wan Nashwa Alhasni Yuska",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=https://drive.google.com/file/d/1qLwMMUAq1KotM7wFQJjhwY7trpvytBFS/view?usp=sharing",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -150,7 +150,7 @@ elif menu == "Senator":
         kating_data = [
             {
                 "nama": "Fathinah Nur Azizah",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=https://drive.google.com/file/d/1Rr8hNmXywi_DEc5WSSD2ZbhiGDmMNT5B/view?usp=sharing",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -198,7 +198,7 @@ elif menu == "Senator":
             },
             {
                 "nama": "Hazel Mahesa Handhaka",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=https://drive.google.com/file/d/1molbMkYBgGYciLu3ugEZcBHroSCpx0ic/view?usp=sharing",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -465,19 +465,19 @@ elif menu == "Departemen Eksternal":
         kating_data = [
             {
                 "nama": "Arini Puteri Elandra",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=https://drive.google.com/file/d/131P-ZEey0xSCH0V7QMZjU-w4e-t9f4qZ/view?usp=sharing",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
             {
                 "nama": "Nabyla Sharfina",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=https://drive.google.com/file/d/1F2BMgKgqIs0JQJWS8sDEGyHlVY-F8cTf/view?usp=sharing",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
             {
                 "nama": "Khoirul Muttoharoh",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=https://drive.google.com/file/d/1hWdbB1C3nkUp08GpOmCJqEb2nuRQ7kwk/view?usp=sharing",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -513,13 +513,13 @@ elif menu == "Departemen Eksternal":
             },
             {
                 "nama": "Yollanda Agustina",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=https://drive.google.com/file/d/1bqc9Gn99Hlkx52zaB4qUmtGmf0sUQ_-H/view?usp=sharing",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
             {
                 "nama": "Riska Erlis Dayu Tiara",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=https://drive.google.com/file/d/1VoBaMV2PTU_6V4Fv8qpHVS_zAEY4qCRl/view?usp=sharing",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -573,7 +573,7 @@ elif menu == "Departemen Eksternal":
             },
             {
                 "nama": "Favian Arkaanda",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=https://drive.google.com/file/d/1jdWLRwDnjB246FI17J2S6neDaQNUWUP5/view?usp=sharing",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -585,7 +585,7 @@ elif menu == "Departemen Eksternal":
             },
             {
                 "nama": "Muhammad Rizaldi",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=https://drive.google.com/file/d/1kbNYN6LCBYBVOw12wh2SPDzPXfcAc9x1/view?usp=sharing",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -604,7 +604,7 @@ elif menu == "Departemen Internal":
         kating_data = [
             {
                 "nama": "Haikal Fransisko Simbolon",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=https://drive.google.com/file/d/1RJsYvmgWED1PxxGM6KWNRbi1oauiuqvr/view?usp=sharing",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -628,7 +628,7 @@ elif menu == "Departemen Internal":
             },
             {
                 "nama": "Ahmad Farhan Ghani",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=https://drive.google.com/file/d/1gHgn-nBMjCXI40alDUylYPem57Cp5egg/view?usp=sharing",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -640,7 +640,7 @@ elif menu == "Departemen Internal":
             },
             {
                 "nama": "Cerine Sihotang",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=https://drive.google.com/file/d/12f93_Y7ZgpHBKPhdwmz1-Q387sYqLfUN/view?usp=sharing",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
