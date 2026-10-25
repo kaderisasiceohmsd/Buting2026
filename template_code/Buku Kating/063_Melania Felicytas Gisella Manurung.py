@@ -361,6 +361,28 @@ if menu == "Baleg":
         "pesan": "semangat terus kuliahnya kakak !!!"
     },
     {
+        "nama": "Givaro Ananta",
+        "nim": "123450078",
+        "umur": "21",
+        "asal": "Lampung Barat",
+        "alamat": "Sukabumi",
+        "hobbi": "Minum Kopi",
+        "sosmed": "@givarooo",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!"
+    },
+    {
+        "nama": "Monica Patricia Tanjung",
+        "nim": "123450073",
+        "umur": "21",
+        "asal": "Jakarta Barat",
+        "alamat": "Kotabaru",
+        "hobbi": "Lari",
+        "sosmed": "@monica_tjg",
+        "kesan": "Kakak ini asik saya suka belajar dengan dia",
+        "pesan": "semangat terus kuliahnya kakak !!!"
+    },
+    {
         "nama": "GH Mikael Niko A S",
         "nim": "124450079",
         "umur": "20",
@@ -379,17 +401,6 @@ if menu == "Baleg":
         "alamat": "Kedaton",
         "hobbi": "Mancing",
         "sosmed": "@syt.rifa",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
-    },
-    {
-        "nama": "Givaro Ananta",
-        "nim": "123450078",
-        "umur": "21",
-        "asal": "Lampung Barat",
-        "alamat": "Sukabumi",
-        "hobbi": "Minum Kopi",
-        "sosmed": "@givarooo",
         "kesan": "Kakak ini asik saya suka belajar dengan dia",
         "pesan": "semangat terus kuliahnya kakak !!!"
     },
@@ -423,17 +434,6 @@ if menu == "Baleg":
         "alamat": "Teluk Betung",
         "hobbi": "Nyanyi, olahraga",
         "sosmed": "jeremia_hm",
-        "kesan": "Kakak ini asik saya suka belajar dengan dia",
-        "pesan": "semangat terus kuliahnya kakak !!!"
-    },
-    {
-        "nama": "Monica Patricia Tanjung",
-        "nim": "123450073",
-        "umur": "21",
-        "asal": "Jakarta Barat",
-        "alamat": "Kotabaru",
-        "hobbi": "Lari",
-        "sosmed": "@monica_tjg",
         "kesan": "Kakak ini asik saya suka belajar dengan dia",
         "pesan": "semangat terus kuliahnya kakak !!!"
     },
@@ -473,7 +473,7 @@ if menu == "Baleg":
         ]
         display_images_with_data(gambar_urls, data_list)
     Baleg()
-
+    
 # Bason
 if menu == "Senator":
     def Senator():
