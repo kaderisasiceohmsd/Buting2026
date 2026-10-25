@@ -663,7 +663,7 @@ if menu == "Home":
     st.markdown("""
         <div class='content-box'>
             <b>Selamat datang di portal resmi kelompok Poisson!</b><br><br>
-            Kelompok kami merupakan wadah kolaborasi, kebersamaan, dan dedikasi tinggi dalam menjalani rangkaian kegiatan pengenalan kampus dan penugasan Buku Kating. Di sini, kami tidak hanya belajar menyelesaikan setiap tantangan akademik secara bersama-sama, tetapi juga membangun ikatan kekeluargaan yang erat, saling mendukung dalam setiap proses adaptasi, serta menjunjung tinggi nilai solidaritas dan profesionalisme sebagai bagian dari keluarga besar HMSD Adyatama ITERA.
+            "Dalam ilmu statistika, Distribusi Poisson berbicara tentang peluang terjadinya kejadian langka. Namun bagi kami, dipertemukannya sebelas kepala dalam satu wadah bukanlah sekadar angka probabilitas. Itu adalah kejadian paling langka yang kami syukuri. Kelompok Poisson adalah rumah, tempat kami tidak hanya belajar menyelesaikan tugas-tugas dan adaptasi kampus, tetapi juga tempat saling menjaga. Di antara ribuan jalur yang bisa kami pilih, semesta mempertemukan kami di sini, bukan untuk sekadar menjadi rekan satu kelompok, melainkan untuk menjadi sebuah keluarga."
         </div>
     """, unsafe_allow_html=True)
 
