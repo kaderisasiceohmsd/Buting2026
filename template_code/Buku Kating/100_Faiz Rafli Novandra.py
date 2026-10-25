@@ -1484,21 +1484,21 @@ if menu == "Departemen Eksternal":
 if menu == "Departemen Minbak":
     def Departemen_Minbak():
         gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1nd-i7ZPNXg5odHrDxrwymxM_apIRJ9SR",
+            "https://drive.google.com/uc?export=view&id=1Dj8QmAtbPHv1RiIVT4N6o1t5upgo9gjS",
+            "https://drive.google.com/uc?export=view&id=1erlAMgiZJ0e8nSSvLbNmMcu0_30SSD_m",
+            "https://drive.google.com/uc?export=view&id=1Xv7y_yBoPtGQl2HVs4vg454Y0nBjrVDc",
+            "https://drive.google.com/uc?export=view&id=1HrPPFpGqq3dPVCZQGTqQfxXfLqdvduZP",
+            "https://drive.google.com/uc?export=view&id=1_tGBvTjSKxq1DO7U6tIHYOwUfCKS5_Bw",
+            "https://drive.google.com/uc?export=view&id=1uCcUZodKBf24n7sSUxvQ5Zqaqilpp7qt",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1vTXoJj_3JKLvQKFejzxi5U8mmeDOMPFJ",
+            "https://drive.google.com/uc?export=view&id=1GK3NDPPdA0VWydTFIrFltBfb231ytL9l",
+            "https://drive.google.com/uc?export=view&id=1YzEJM1j5U06jtzxtM19STH2lFcmJNRLN",
+            "https://drive.google.com/uc?export=view&id=1iaxx0N5OPyA1pGJjHi48j5bujc0Xpa0D",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1z4Ijy04gV8vNZg1pOvIfK_u7EVXPa0jt",
+            "https://drive.google.com/uc?export=view&id=1N-jxk7ykiuzluAOzKIF8ZYk5fBqoLo7a",
         ]
         data_list = [
             {
@@ -1509,8 +1509,8 @@ if menu == "Departemen Minbak":
                 "alamat": "Panjang, Bandar Lampung",
                 "hobbi": "Balap",
                 "sosmed": "@kevinaj__",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Abang ini jago banget main basket",
+                "pesan": "Ajarin biar jago basket dong bang"
             },
             {
                 "nama": "Gusti Putu Ferazka Dhiyamika",
@@ -1520,8 +1520,8 @@ if menu == "Departemen Minbak":
                 "alamat": "Way Halim",
                 "hobbi": "Baca",
                 "sosmed": "@ferazkaa",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Kakak ini asik banget",
+                "pesan": "Semangat terus kuliah nya kak"
             },
             {
                 "nama": "Ari Aristo Muthahari Parisi",
@@ -1531,8 +1531,8 @@ if menu == "Departemen Minbak":
                 "alamat": "Gang Sakum, Belwis",
                 "hobbi": "Nonton F1",
                 "sosmed": "@ali_parisi3",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Abang ini asik banget orang nya dan ceria lagi",
+                "pesan": "Jangna lupa d=senyum terus bang"
             },
             {
                 "nama": "Ayu Andriani Parlina Wati",
@@ -1542,8 +1542,8 @@ if menu == "Departemen Minbak":
                 "alamat": "Airan",
                 "hobbi": "Belajar",
                 "sosmed": "@aayuandrianni_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Kakak ini selalu happy",
+                "pesan": "Jangna lupa makan nasi kak"
             },
             {
                 "nama": "Dafa Elpriza",
@@ -1553,8 +1553,8 @@ if menu == "Departemen Minbak":
                 "alamat": "Way Kandis",
                 "hobbi": "Nemenin Bryan live TikTok",
                 "sosmed": "@dafaelpriza_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Abang ini keren banget",
+                "pesan": "Semangat terus bang kuliah nya"
             },
             {
                 "nama": "Juwita Sari",
@@ -1564,8 +1564,8 @@ if menu == "Departemen Minbak":
                 "alamat": "Pemda",
                 "hobbi": "Lihat bulan",
                 "sosmed": "@ju.juwitaaa_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Kakak ini asik banget dan selalu ceria",
+                "pesan": "Jaga kesehatan nya kak"
             },
             {
                 "nama": "Muhammad Afdal Lutfi",
@@ -1575,8 +1575,8 @@ if menu == "Departemen Minbak":
                 "alamat": "JI Pulau Damar",
                 "hobbi": "Taptap layar kalo Bryan live",
                 "sosmed": "@afdall.03",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Abang ini asik banget dan suka merangkul",
+                "pesan": "Semoga kuliah nya gada hambatan bang"
             },
             {
                 "nama": "Salsabila Nazwa Putri",
@@ -1586,8 +1586,8 @@ if menu == "Departemen Minbak":
                 "alamat": "Korpri",
                 "hobbi": "Nongkrong di Kopken",
                 "sosmed": "@slbnzw_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Kakak ini baik dan selalu happy",
+                "pesan": "Jangan lupa makan ya kak"
             },
             {
                 "nama": "Muhammad Ridwan",
@@ -1597,8 +1597,8 @@ if menu == "Departemen Minbak":
                 "alamat": "Belwis",
                 "hobbi": "Nganterin Datasena ke gedung F",
                 "sosmed": "@mridwaan_22",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Abang ini asik dan kul",
+                "pesan": "Suskes terus kedepannya bang"
             },
             {
                 "nama": "Andra Ilham Bintang",
@@ -1608,8 +1608,8 @@ if menu == "Departemen Minbak":
                 "alamat": "Kota Baru",
                 "hobbi": "Ngitungin kelopak bunga di kebun",
                 "sosmed": "@andra.lhm",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Abang ini orang nya asik dan suka ketawa",
+                "pesan": "Jangan padam semangat nya bang"
             },
             {
                 "nama": "Bryan Paskah Telaumbanua",
@@ -1619,8 +1619,8 @@ if menu == "Departemen Minbak":
                 "alamat": "Belwis",
                 "hobbi": "Live TikTok",
                 "sosmed": "@bryantel_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Abang ini selalu asik dan happy",
+                "pesan": "Semangat terus kuliah nya bang"
             },
             {
                 "nama": "Ghiyats Thabularasa Meardhy",
@@ -1630,8 +1630,8 @@ if menu == "Departemen Minbak":
                 "alamat": "Korpri",
                 "hobbi": "Ngegift live Bryan",
                 "sosmed": "@meardhy_ghiyats",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Abang ini orang nya happy dan asik",
+                "pesan": "Jaga kesehatannya bang"
             },
             {
                 "nama": "Indah Julia Mawar Pratiwi",
@@ -1641,8 +1641,8 @@ if menu == "Departemen Minbak":
                 "alamat": "Airan",
                 "hobbi": "Bengong",
                 "sosmed": "@indahjuliaa",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Kakak ini baik dan suka ketawa ",
+                "pesan": "Semangat terus kuliah nya kak"
             },
             {
                 "nama": "Jacinda Kesya Alvara",
@@ -1652,8 +1652,8 @@ if menu == "Departemen Minbak":
                 "alamat": "Korpri",
                 "hobbi": "Nyapu depan gacoan",
                 "sosmed": "@cacalvra",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Kakak ini suka senyum dan keliatan happy terus",
+                "pesan": "Semangat terus kak jangan sampai padam"
             },
             {
                 "nama": "Muhammad Rafka Fatih Al Ghathfaan",
@@ -1663,8 +1663,8 @@ if menu == "Departemen Minbak":
                 "alamat": "Kota Baru",
                 "hobbi": "Bangun pagi",
                 "sosmed": "@muhammdrafka_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Abang ini orang nya asik banget",
+                "pesan": "Jangan lupa makan 3c sehari bang"
             },
         ]
         display_images_with_data(gambar_urls, data_list)
