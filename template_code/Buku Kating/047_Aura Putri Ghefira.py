@@ -1460,7 +1460,7 @@ if menu == "Departemen SSD":
                 "umur": "21 Tahun",
                 "asal":"Sumbar",
                 "alamat": "Belwis",
-                "hobi": "Membaca, Mencari Jurnal, berdagang, dan traktir staff SSD",
+                "hobbi": "Membaca, Mencari Jurnal, berdagang, dan traktir staff SSD",
                 "sosmed": "@ihsan.myusuf",
                 "kesan": "bang ihsan asik dan bisa mencairkan suasana",  
                 "pesan":"mau ditraktir juga dong bangg!"# 1
@@ -1471,7 +1471,7 @@ if menu == "Departemen SSD":
                 "umur": "21",
                 "asal":"Balam",
                 "alamat": "Balam",
-                "hobi": "Masak",
+                "hobbi": "Masak",
                 "sosmed": "@_inayasani",
                 "kesan": "Kakaknya imut dan cantik! super humble",  
                 "pesan":"keep shining and keep growing stronger kakakk!!"# 1
@@ -1482,7 +1482,7 @@ if menu == "Departemen SSD":
                 "umur": "19",
                 "asal":"Padang",
                 "alamat": "Hasan 4",
-                "hobi": "Nonton Marvel, Tidur",
+                "hobbi": "Nonton Marvel, Tidur",
                 "sosmed": "@fifah.zy",
                 "kesan": "kakaknya seruu, pecinta marvel",  
                 "pesan":"mau banget marathon nonton series marvel bareng!!"# 1
@@ -1493,7 +1493,7 @@ if menu == "Departemen SSD":
                 "umur": "21",
                 "asal":"lampung",
                 "alamat": "Pemda",
-                "hobi": "Main game",
+                "hobbi": "Main game",
                 "sosmed": "@hasan.ramadhan08",
                 "kesan": "abang operator, kalem, dan selalu tenang",  
                 "pesan":"semangat terus menjalani hari harinya bang!!"# 1
@@ -1504,7 +1504,7 @@ if menu == "Departemen SSD":
                 "umur": "19 tahun",
                 "asal":"Semarang",
                 "alamat": "Balam",
-                "hobi": "Nonton Drakor",
+                "hobbi": "Nonton Drakor",
                 "sosmed": "@lay.inr_",
                 "kesan": "keliatannya pendiem, kakaknya juga kalem",  
                 "pesan":"semangat kejar mimpi sampai negeri cina!!"# 1
@@ -1515,7 +1515,7 @@ if menu == "Departemen SSD":
                 "umur": "20",
                 "asal":"Bekasi",
                 "alamat": "Natar",
-                "hobi": "Mancing",
+                "hobbi": "Mancing",
                 "sosmed": "@iqbalazzahir_",
                 "kesan": "abang asprak alpro, selalu ramah",  
                 "pesan":"semoga segala halnya dilancarkan!"# 1
@@ -1526,7 +1526,7 @@ if menu == "Departemen SSD":
                 "umur": "19",
                 "asal":"Sumbar",
                 "alamat": "Kelengkeng 5",
-                "hobi": "Tidur",
+                "hobbi": "Tidur",
                 "sosmed": "@talithaaajtine",
                 "kesan": "kakaknya asik dan menyenangkan",  
                 "pesan":"semoga tidurnya selalu nyenyak kak!"# 1
@@ -1537,7 +1537,7 @@ if menu == "Departemen SSD":
                 "umur": "19",
                 "asal":"Palembang",
                 "alamat": "Wayhui",
-                "hobi": "Nyari Duit",
+                "hobbi": "Nyari Duit",
                 "sosmed": "@anadiacrn_",
                 "kesan": "kakaknya ramah dan baik hati",  
                 "pesan":"semangat terus sampe jadi bilioner ya kakk!!"# 1
@@ -1548,7 +1548,7 @@ if menu == "Departemen SSD":
                 "umur": "21",
                 "asal":"Sumsel",
                 "alamat": "Airan",
-                "hobi": "Basket",
+                "hobbi": "Basket",
                 "sosmed": "@pomest_",
                 "kesan": "humoris dan sering buat ketawa pas wawancara",  
                 "pesan":"semangat terus dan jangan menyerah bang!!"# 1
@@ -1559,7 +1559,7 @@ if menu == "Departemen SSD":
                 "umur": "20",
                 "asal":"Sumbar",
                 "alamat": "Samping kost rafli",
-                "hobi": "Fishing",
+                "hobbi": "Fishing",
                 "sosmed": "@dhal_setiawan",
                 "kesan": "abangnya santai dan kalo ngobrol enjoy aja",  
                 "pesan":"partner mancingnya bang iqbal bukan?"# 1
@@ -1570,7 +1570,7 @@ if menu == "Departemen SSD":
                 "umur": "20",
                 "asal":"Lampung Utara",
                 "alamat": "Belwis",
-                "hobi": "Masak",
+                "hobbi": "Masak",
                 "sosmed": "@anggunnitaaa_",
                 "kesan": "Selalu ceria dan tersenyum",  
                 "pesan":"semoga selalu ada hal yang bisa bikin tersenyum setiap hari!"# 1
@@ -1581,7 +1581,7 @@ if menu == "Departemen SSD":
                 "umur": "20",
                 "asal":"Lampung Timur",
                 "alamat": "Nargo Lestari",
-                "hobi": "Olahraga, Makan makanan manis",
+                "hobbi": "Olahraga, Makan makanan manis",
                 "sosmed": "@dellaansaftr",
                 "kesan": "kakaknya baik dan selalu ramah kesemua orang",  
                 "pesan":"semangat terus sampe jadi miliyader!"# 1
