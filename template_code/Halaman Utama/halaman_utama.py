@@ -219,7 +219,7 @@ elif menu == "About Us":
             "https://drive.google.com/thumbnail?id=1wYkTJHX0mhBy9UVW_9XoDMAvXd56xI2r&sz=w1000",  # cella
             "https://drive.google.com/thumbnail?id=1BZHhEBU0fE6kbtvuc67sUinlTB8yeKmq&sz=w1000",  # esha
             "https://drive.google.com/thumbnail?id=1WDDcHs08ui8kpk4ZgElSmS9LqSPwa3NB&sz=w1000",  # alip
-            "",  # ia (ID masih kosong, sengaja dibiarkan kosong agar tidak error)
+            "https://drive.google.com/thumbnail?id=1Izm8E2ZoZ0niP4dUymzxWXtgGWftbrq-",  # ia (ID masih kosong, sengaja dibiarkan kosong agar tidak error)
             "https://drive.google.com/thumbnail?id=13nJeccLKDvlcb9X08Vbo2ZKEjyXf0TuR&sz=w1000",  # oni
         ]
 
@@ -298,8 +298,8 @@ elif menu == "About Us":
                 "nama": "Gisella Salvia Pavita",
                 "sebagai": "Anggota",
                 "nim": "125450107",
-                "fun_fact": "[Isi Fun Fact]",
-                "motto_hidup": "[Isi Motto]",
+                "fun_fact": "[suka di kira orang lampung]",
+                "motto_hidup": "[Ga semua usaha itu dipermudah, tapi semua yang berusaha pasti akan berubah]",
             },
             {
                 "nama": "Piligo Arga Gayoni",
