@@ -1194,10 +1194,10 @@ elif menu == "About Us":
                 "nama": "Muhammad Rafli Raditya",
                 "sebagai": "Anggota",
                 "nim": "125450095",
-                "fun_fact": "Aku hidup dan semua orang hidup karena ku",
-                "motto_hidup": "",
+                "fun_fact": "Bisa 10 Bahasa Pemrogramman!",
+                "motto_hidup": "Grow through what you go through",
                 "sosmed": "@glorious_rafli",
-                "foto": "",
+                "foto": "https://drive.google.com/uc?export=view&id=1CUqKHr8nql3b9ifOLu0-cvcwrUxVe0L5",
             },
             {
                 "urut": "04",
@@ -1267,7 +1267,7 @@ elif menu == "About Us":
                 "fun_fact": "Isi fun fact di sini",
                 "motto_hidup": "Isi motto di sini",
                 "sosmed": "@filzhhy",
-                "foto": "",
+                "foto": "https://drive.google.com/uc?export=view&id=1fkdAu5a7UGyEBMMcIcysaN3f04fM2PVd",
             },
             {
                 "urut": "11",
