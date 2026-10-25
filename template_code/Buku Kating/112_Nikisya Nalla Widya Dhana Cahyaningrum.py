@@ -607,18 +607,18 @@ if menu == "Baleg":
 if menu == "Departemen SSD":
     def Departemen_SSD():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1JZCUC7s2g_iDZhX_38lKET5d0_5Ov2Ou",
-            "https://drive.google.com/uc?export=view&id=1Ba-iWTxdRqje0PSNG-_mq-ERMsCF9lKm",
-            "https://drive.google.com/uc?export=view&id=1xGuXBcABW0BzV2fdSI8uMyzrOinlG_HQ", 
-            "https://drive.google.com/uc?export=view&id=17XSxzb9Hn2uQAcyG-cwwaE-gPtsIOwtH",
-            "https://drive.google.com/uc?export=view&id=1If--XH0RrX3VeuftO3FySqb2WLkC_G67",
-            "https://drive.google.com/uc?export=view&id=1PN-s2mhfa61JgpnD4KIG5MVtD3cNqf-p", 
-            "https://drive.google.com/uc?export=view&id=1FOawy98J1xQRQF-OVJhf0UAXgJChQgOH",
-            "https://drive.google.com/uc?export=view&id=1HVtBDHCDHGOiwHr_6Kz9m-BS_-r49Uuc", 
-            "https://drive.google.com/uc?export=view&id=1U6BQ5VHy4upzRi1tGY2uXI_fWXgM99OJ",
-            "https://drive.google.com/uc?export=view&id=1Mw5X_urhC3VRiOgknD3briSDwCd0lySe",
-            "https://drive.google.com/uc?export=view&id=1y66p3M4w93HABwUN5hZrUQAaNhlcpeWm", 
-            "https://drive.google.com/uc?export=view&id=1Ed9KpgQpvj0DqhiFrx9FK6MMjzbR-0qs",
+            "https://drive.google.com/uc?export=view&id=1B2esdbejnyNV0wtncFxTElNRdr99Qdpw",
+            "https://drive.google.com/uc?export=view&id=1DSo__63xzeo8_zMqJFuQlZ7A2aX8qrSe",
+            "https://drive.google.com/uc?export=view&id=1276JXuhtUgDJeL5lyRA06UfZvyMo1kAP",
+            "https://drive.google.com/uc?export=view&id=1t4oU48ni4eVomLezLSjNel2PY2GzjLNM",
+            "https://drive.google.com/uc?export=view&id=1LLI8Gpzyp2oF3ABgXBmaXfGMS9ZrJQ6U",
+            "https://drive.google.com/uc?export=view&id=1UWtE5HM6foh62mA62qGVzmDW_gE96VqE",
+            "https://drive.google.com/uc?export=view&id=1GmJN7DyxEkDLn2M7fUyIo16gJbFsp4dA",
+            "https://drive.google.com/uc?export=view&id=1NeeyGEc8oMeHmyerTPI0h9jRnokBOBoy",
+            "https://drive.google.com/uc?export=view&id=1oX4uqiG-_9r5lI9kXSiuk27BFG3-xsgu",
+            "https://drive.google.com/uc?export=view&id=1BlYnLIdDo1bV5kZ4U55I_FBYtOk8f2jZ",
+            "https://drive.google.com/uc?export=view&id=12w3LabmLIHILVKUkABIOl--vciXz91Mw",
+            "https://drive.google.com/uc?export=view&id=1Ru9G68YDSeQqfS2bHFgf04k-hk7D68pu"
         ]
         data_list = [
             {
@@ -651,6 +651,17 @@ if menu == "Departemen SSD":
                 "alamat": "Airan",
                 "hobbi": "Nonton marvel",
                 "sosmed": "@fifah.zy",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"
+            },
+             {
+                "nama": "Anadia Carana ",
+                "nim": "123450019",
+                "umur": "21",
+                "asal":"Palembang ",
+                "alamat": "Way Huwi ",
+                "hobbi": "Nyari duit",
+                "sosmed": "@anadiacrn_",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
                 "pesan":"semangat terus kuliahnya kakak !!!"
             },
@@ -695,17 +706,6 @@ if menu == "Departemen SSD":
                 "alamat": "Pemda",
                 "hobbi": "Nonton",
                 "sosmed": "-",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"
-            },
-            {
-                "nama": "Anadia Carana ",
-                "nim": "123450019",
-                "umur": "21",
-                "asal":"Palembang ",
-                "alamat": "Way Huwi ",
-                "hobbi": "Nyari duit",
-                "sosmed": "@anadiacrn_",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
                 "pesan":"semangat terus kuliahnya kakak !!!"
             },
@@ -1510,6 +1510,17 @@ if menu == "Departemen Minbak":
                 "pesan": "semangat terus kuliahnya kakak !!!"
             },
             {
+                "nama": "Muhammad Ridwan",
+                "nim": "123450091",
+                "umur": "21 tahun",
+                "asal": "Lampung Tengah",
+                "alamat": "Belwis",
+                "hobbi": "Nganterin Datasena ke gedung F",
+                "sosmed": "@mridwaan_22",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",
+                "pesan": "semangat terus kuliahnya kakak !!!"
+            },
+            {
                 "nama": "Ayu Andriani Parlina Wati",
                 "nim": "124450058",
                 "umur": "20 tahun",
@@ -1561,17 +1572,6 @@ if menu == "Departemen Minbak":
                 "alamat": "Korpri",
                 "hobbi": "Nongkrong di Kopken",
                 "sosmed": "@slbnzw_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
-            },
-            {
-                "nama": "Muhammad Ridwan",
-                "nim": "123450091",
-                "umur": "21 tahun",
-                "asal": "Lampung Tengah",
-                "alamat": "Belwis",
-                "hobbi": "Nganterin Datasena ke gedung F",
-                "sosmed": "@mridwaan_22",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
             },
