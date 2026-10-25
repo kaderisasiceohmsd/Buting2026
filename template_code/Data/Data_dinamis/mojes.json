@@ -3,82 +3,298 @@
     "pemilik": "Mojes",
     "data": [
       {
+        "nama_kating": "Muhammad Hanif Dzaky Arifin",
+        "foto_massal_gdrive_id": "1jdAGQCgmTiguwtyS8msWM6ZsQ6RJ1wql",
+        "kesan": "Chill, dan baik, ramah",
+        "pesan": "Semangat selalu bang semoga dimudahkan dan dilancarkan segala urusannya"
+      },
+      {
+        "nama_kating": "Gustin Haleluya Tampubolon",
+        "foto_massal_gdrive_id": "1qyZR_r6C2qu5o7WRIa0heo_2x4ZmuKkv",
+        "kesan": "Ramah dan chill",
+        "pesan": "Semangat selalu semoga dimudahkan dan dilancarkan segala urusannya"
+      },
+      {
+        "nama_kating": "Ahmad Farhan Ghani",
+        "foto_massal_gdrive_id": "1TEQTfmfwmBIdFdluCTuojcBQSyGFN0J0",
+        "kesan": "Ramah, chill, cool",
+        "pesan": "Semangat selalu semoga dilancarkan segala urusan"
+      },
+      {
+        "nama_kating": "Rafa Sabina Fahimah",
+        "foto_massal_gdrive_id": "1whjv00iV38oKZRetkZc4Oif8oz2Euefw",
+        "kesan": "Baik dan Ramah",
+        "pesan": "Semangat selalu semoga dimudahkan dan dilancarkan segala urusannya"
+      },
+      {
+        "nama_kating": "Muhammad Harvinsyah",
+        "foto_massal_gdrive_id": "1lk_2zsxje0f7zCuIrZ9QSAlJIa30X5kP",
+        "kesan": "Chill dan ramah",
+        "pesan": "Semangat selalu semoga dimudahkan dan dilancarkan segala urusannya"
+      },
+      {
+        "nama_kating": "Cika Adelia Br Marbun",
+        "foto_massal_gdrive_id": "1Mj0tGhHhFrwkgHssra2q_VwMrn-LHBgc",
+        "kesan": "Ramah dan baik",
+        "pesan": "Semangat selalu semoga dimudahkan dan dilancarkan segala urusannya"
+      },
+      {
+        "nama_kating": "Audina Fitria",
+        "foto_massal_gdrive_id": "192Q5wTcFiG2__RF0G4gWb9NvaU88ZH2t",
+        "kesan": "Ramah dan chill",
+        "pesan": "Semangat selalu semoga dimudahkan dan dilancarkan segala urusannya"
+      },
+      {
+        "nama_kating": "Teresa Christiani Purba",
+        "foto_massal_gdrive_id": "1k04-Ljty9-q3kvqDwNgHshBRi-YLcL_p",
+        "kesan": "Ramah dan baik",
+        "pesan": "Tetap semangat kak dan semoga dimudahkan segala urusan"
+      },
+      {
+        "nama_kating": "Rozak Ramdani",
+        "foto_massal_gdrive_id": "1YdtxgjVnM1GLlyVZOo24M5iBymN8zWv4",
+        "kesan": "Ramah dan chill",
+        "pesan": "Tetap semangat kak dan semoga dimudahkan segala urusan"
+      },
+      {
+        "nama_kating": "Najla Nursyifa",
+        "foto_massal_gdrive_id": "1-_uaNSlxUqvw_sy8SLTxQtrBCUFLF8dl",
+        "kesan": "Ramah dan baik",
+        "pesan": "Tetap semangat kak dan semoga dimudahkan segala urusan"
+      },
+      {
+        "nama_kating": "Jaya Saputra Tamba",
+        "foto_massal_gdrive_id": "1FmSkNO3cwEPvb_aGz3W6qS8tivE5FDdt",
+        "kesan": "Ramah, chill, family friendly, cool, ,menyenangkan",
+        "pesan": "Bakar selalu semangatnya bang dan semoga dipermudah segala urusan"
+      },
+      {
+        "nama_kating": "Aisyah Khairun Nisa",
+        "foto_massal_gdrive_id": "1_SuXz6BAmAj18UghTV5Ecbme7okVx2NZ",
+        "kesan": "Baik, ramah, dan menyenagkan",
+        "pesan": "Tetap semangat kak dan semoga dimudahkan segala urusan"
+      },
+      {
+        "nama_kating": "Hanna Gresia Sinaga",
+        "foto_massal_gdrive_id": "1nfWAwzrl_d0lOk1Q4t5kTqnp7Bub_yu0",
+        "kesan": "Menyenagkan, murah senyum, dan ramah",
+        "pesan": "Tetap semangat kak dan semoga dimudahkan segala urusan"
+      },
+      {
+        "nama_kating": "Kharisma Mustika Sari",
+        "foto_massal_gdrive_id": "1L60ugXEjqibTQ3ePJKtA0FmDfMpj4Fns",
+        "kesan": "Ramah, dan baik",
+        "pesan": "Semoga Kakak terus menemukan hal-hal yang membuatnya berkembang."
+      },
+      {
+        "nama_kating": "Haikal Fransisko Simbolon",
+        "foto_massal_gdrive_id": "1B2rSAHAtmoN6JokUfuVWjQIcD4JGrP9N",
+        "kesan": "Ramah, chill, baik, dan menyenangkan",
+        "pesan": "Tetap semangat bang dan jangan lupa menikmati hidup"
+      },
+      {
+        "nama_kating": "Muhammad Alsi Syahrulloh",
+        "foto_massal_gdrive_id": "1JtNF9W7hYRBlMH8UjqZmptblpyKUW6v5",
+        "kesan": "Baik dan ramah",
+        "pesan": "Semoga perjalanan kakak ke depannya selalu dipermudah."
+      },
+      {
+        "nama_kating": "Melva Shaprina Febrianti",
+        "foto_massal_gdrive_id": "1hrbic-MMGenT11Wm-YnePkIxiU7QTDpT",
+        "kesan": "Ramah dan menyenangkan",
+        "pesan": "Semoga kakak selalu menemukan hal baik dalam setiap prosesnya."
+      },
+      {
+        "nama_kating": "Fabio Banyu Cyto",
+        "foto_massal_gdrive_id": "19LLFpYqEIx1g73-KqtkMnnvJoMNuVYA_",
+        "kesan": "Ramah dan mudah dimengerti ucapannya, profesional",
+        "pesan": "Tetap semangat dan semoga selalu diberikan kemudahan dalam setiap urusan"
+      },
+      {
+        "nama_kating": "Fadya Izzatul 'Aini",
+        "foto_massal_gdrive_id": "1V1ARe_IrMUFqGn4kI5BR-9N5PUYsZix8",
+        "kesan": "Ramah dan baik",
+        "pesan": "Semoga perjalanan akak ke depannya selalu dipermudah."
+      },
+      {
+        "nama_kating": "Rifky Henry Ferdianto",
+        "foto_massal_gdrive_id": "1-a5X6o9XAuW41NwpQb5pIE_Q7AZEqVwS",
+        "kesan": "Chill, cool, dan family friendly",
+        "pesan": "Semoga segala kesibukan Kakak berjalan lancar dan sesuai harapan."
+      },
+      {
+        "nama_kating": "Muhammad Syafiqul Falakh",
+        "foto_massal_gdrive_id": "1UjNxdd-h6sstYI1j3Pv7aIhaYc74nqfI",
+        "kesan": "Ramah, family friendly, dan baik",
+        "pesan": "Semoga Kakak tetap rendah hati dan sukses selalu."
+      },
+      {
+        "nama_kating": "Kaleb Filbert Istel",
+        "foto_massal_gdrive_id": "1w94d9Mn42VjxLSxkkv8fiok7n6jxhvr3",
+        "kesan": "Keren dan berotot",
+        "pesan": "Semoga Kakak selalu diberikan kemudahan dalam mencapai tujuan."
+      },
+      {
+        "nama_kating": "Hafidz Wahdiansyah",
+        "foto_massal_gdrive_id": "1-_rloWa73vmf94LATGXX-xdS57FyOCwl",
+        "kesan": "Family friendly, ramah, baik, dan menyenangkan",
+        "pesan": "Semoga Kakak tetap rendah hati dan sukses selalu."
+      },
+      {
+        "nama_kating": "Gathfan Nadif Ali",
+        "foto_massal_gdrive_id": "1O4nmV9DGerYyT-6nXsFgly71zlYxCR-R",
+        "kesan": "Ramah dan baik",
+        "pesan": "Semoga segala kesibukan Kakak berjalan lancar dan sesuai harapan."
+      },
+      {
+        "nama_kating": "Faiza Try Anjani",
+        "foto_massal_gdrive_id": "1QQ2caqaG6N-M77nOawoUsNio75o4dRKd",
+        "kesan": "Baik dan ramah",
+        "pesan": "Semoga Kakak selalu bersemangat menjalani setiap proses yang ada."
+      },
+      {
+        "nama_kating": "Razin Hafid Hamdi",
+        "foto_massal_gdrive_id": "1E7LuIfuvygrzrQxaylWOQBSPV4KCm6si",
+        "kesan": "Chill, ramah dan baiik",
+        "pesan": "Semoga semua rencana Kakak berjalan dengan lancar."
+      },
+      {
+        "nama_kating": "Sherena Florencia",
+        "foto_massal_gdrive_id": "1DQQ6US4mv73vDUp-p35st1_-o-w8ctVN",
+        "kesan": "Ramah, baik, dan murah senyum",
+        "pesan": "Semoga Kakak selalu dikelilingi orang-orang baik."
+      },
+      {
+        "nama_kating": "Lovianora Saragih",
+        "foto_massal_gdrive_id": "1Bdg0LqfjJ-27TowFbNW1IfQ4-MqWtcXs",
+        "kesan": "Ramah, baik, dan family friendly",
+        "pesan": "Semoga selalu sehat dan semangat menjalani kesibukan sehari-hari."
+      },
+      {
+        "nama_kating": "Elsa Sitorus",
+        "foto_massal_gdrive_id": "1nmyVqLhyTxvJGouLhvpeeP77Q2BVjGaK",
+        "kesan": "Ramah dan murah senyum",
+        "pesan": "Semoga kakak selalu menemukan hal baik dalam setiap prosesnya."
+      },
+      {
+        "nama_kating": "Akeyla Fairuz Shafi",
+        "foto_massal_gdrive_id": "1dJVPSTrxVei7JSBdnobKUwbLf1In3nta",
+        "kesan": "Ramah dan baik",
+        "pesan": "Semoga Kakak selalu dikelilingi orang-orang baik"
+      },
+      {
+        "nama_kating": "Yulia Kristine Malau",
+        "foto_massal_gdrive_id": "1pWLnNTP6W9-NItmGTnIhyfcm616_3NVJ",
+        "kesan": "Ramah dan baik",
+        "pesan": "Semoga semua rencana Kakak berjalan dengan lancar"
+      },
+      {
+        "nama_kating": "Vannisa Ramadhani",
+        "foto_massal_gdrive_id": "1zRhhGNpXVYiiveysLJ9Xx3hzzDfMWV9A",
+        "kesan": "Ramah dan baik",
+        "pesan": "Semoga kakak selalu diberikan kemudahan dalam mencapai semua tujuan"
+      },
+      {
+        "nama_kating": "Risa Romadona",
+        "foto_massal_gdrive_id": "16QtVb_fSuzN2ud6JVmTzPXoSqVkhO5nJ",
+        "kesan": "Ramah dan baik",
+        "pesan": "Semoga Kakak selalu bersemangat menjalani setiap proses yang ada"
+      },
+      {
+        "nama_kating": "Ni Made Okta Viola Darma Putri",
+        "foto_massal_gdrive_id": "1-GrUyRjO3VZQuTOhoSIXHmJ_g9-EUmWI",
+        "kesan": "Ramah , baik, murah senyum, dan menyenagkan",
+        "pesan": "Semoga kakak selalu menemukan hal baik dalam setiap prosesnya"
+      },
+      {
+        "nama_kating": "Manuel Frederika",
+        "foto_massal_gdrive_id": "1hjFEumSr2zrCJ-JS7RrrhwMBxy5Ye141",
+        "kesan": "Ramah dan menyenagkan",
+        "pesan": "Semoga Kakak selalu diberikan kemudahan dalam mencapai tujuan"
+      },
+      {
+        "nama_kating": "Tanty Widiyastuti",
+        "foto_massal_gdrive_id": "1bpxz7i0qZUpdVeZMvUW2qgxw6bPwp8gn",
+        "kesan": "Ramah, baik, dan menyenangkan",
+        "pesan": "Sukses selalu kak semoga segala urusannya dilancarkan."
+      },
+      {
         "nama_kating": "Jona Timothy Ogatse Panjaitan",
         "foto_massal_gdrive_id": "12Trrh7a7E29PAyV424Tgadv_RjXR2mb1",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah, baik, menyenangkan, family friendly",
+        "pesan": "Tetap semangat dan semoga lancar segala urusan"
       },
       {
         "nama_kating": "Hani Qurrota Aini",
         "foto_massal_gdrive_id": "1dkkgTSWJzjdnYox4e1z3gu3QxanrftZL",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah dan baik",
+        "pesan": "Tetap semangat dan semoga dilancarkan segala urusan"
       },
       {
         "nama_kating": "Afghanis Nursholehatunnisa",
         "foto_massal_gdrive_id": "1REhGcEJiJGK4gkQPodz2y55EMiUBNlMs",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah, menyenangkan, baik",
+        "pesan": "Tetap semangat dan semoga dilancarkan segala urusan"
       },
       {
         "nama_kating": "Siti Sarifah Sumamah",
         "foto_massal_gdrive_id": "156dM-AhCgaMCLGBa-A2hBYZGePl7ybVe",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah dan baik",
+        "pesan": "Tetap semangat dan dilancarkan segala urusan"
       },
       {
         "nama_kating": "Gh Mikael Niko A S",
         "foto_massal_gdrive_id": "1WJnohY749Qbr_gw_dyGRCiBX1aPgHHf2",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah, family friendly, baik",
+        "pesan": "Semangat selalu dan semoga dilancarkan segala urusan"
       },
       {
         "nama_kating": "Dharu Cahyoaji Sasongko",
         "foto_massal_gdrive_id": "1dwyI3rWzq1JEa_LU_4aziQWnwWBdrnOd",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah, cool",
+        "pesan": "Tetap semangat dan semakin menyala"
       },
       {
         "nama_kating": "Ridho Benedictus Togi Manik",
         "foto_massal_gdrive_id": "1Ru9Dp0i5ss10jHQ8I0zDbTGnF7SEDUyI",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah, cool, berwibawa",
+        "pesan": "Semoga selalu dilancarkan segala urusan"
       },
       {
         "nama_kating": "Juesi Apridelia Saragih",
         "foto_massal_gdrive_id": "1QnaMIolBcnWCa3XKQco1P_eoHaZGrYtw",
-        "kesan": "Baik sekali dan sangat menyenagkan",
-        "pesan": "Semoga tetap dan selalu menyenangkan"
+        "kesan": "Baik sekali, sangat menyenagkan, ramah, cool, cantik, baik, family friendly",
+        "pesan": "Semoga tetap dan selalu menyenangkan. Lancar terus ka juee"
       },
       {
         "nama_kating": "Sekar Dini Widya Putri",
         "foto_massal_gdrive_id": "1zfuOaM7lFao1Ze3sZkep4zXJrUBU9Bn_",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah dan baik",
+        "pesan": "Tetap semangat dan semoga lancar segala urusan"
       },
       {
         "nama_kating": "Wan Nashwa Alhasni Yuska",
         "foto_massal_gdrive_id": "1eNFC_CdsL_syKC3pg1u2R4TD6f1Wty13",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah, baik, menyenangkan",
+        "pesan": "Tetap semangat dan semoga lancar segala urusan"
       },
       {
         "nama_kating": "Monica Patricia Tanjung",
         "foto_massal_gdrive_id": "1LwTJIwAMhjSKIhyLATIAaOXttUW14WIh",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah dan baik",
+        "pesan": "Tetap semangat dan semoga lancar segala urusan"
       },
       {
         "nama_kating": "Jeremia Halim",
         "foto_massal_gdrive_id": "12jXDunU6I5BBG44jKi2rgzV3oJVLTXZA",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Baik, ramah, cool, chill",
+        "pesan": "Semoga selalu semangat dan keren selalu"
       },
       {
         "nama_kating": "Givaro Ananta",
         "foto_massal_gdrive_id": "1dR2ppdGe4hvQRHNiT0jVdYmJWl1ZxqI1",
-        "kesan": "Ramah",
-        "pesan": ""
+        "kesan": "Ramah, tampan, keren, baik, menyenangkan, family friendly",
+        "pesan": "Semangat dan semoga lancar luncur segala kerjaannya"
       },
       {
         "nama_kating": "Luthfia Laila Ramadhani",
@@ -117,6 +333,12 @@
         "pesan": "Semoga sukses selalu dan tetap membawa hal positif bagi orang sekitar."
       },
       {
+        "nama_kating": "Jeremi Marolop Partogi Situmorang",
+        "foto_massal_gdrive_id": "1groc5aZy1quPis8YyzX_cF6qb66_3CUf",
+        "kesan": "Ramah dan baik",
+        "pesan": "Semoga Kakak selalu menemukan hal baik dalam setiap prosesnya."
+      },
+      {
         "nama_kating": "Nobel Nizam Fathirizki",
         "foto_massal_gdrive_id": "15VgZcFCs9fLbzeALSnkjk7wsM_0DKEpC",
         "kesan": "Chill, dan tegas",
@@ -125,8 +347,8 @@
       {
         "nama_kating": "Salavi Naharani",
         "foto_massal_gdrive_id": "1KRbtCF6HvMVLUxMbXzYZuP1cRqupCjZj",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah dan baik",
+        "pesan": "Tetap semangat menjalani aktivitas dan tanggung jawab kak."
       },
       {
         "nama_kating": "Rafli Al Mansyah Tambunan",
@@ -139,12 +361,6 @@
         "foto_massal_gdrive_id": "1_D02eoVTWzmDb01HX5fZWAkmFP0g7rOt",
         "kesan": "Ramah dan baik",
         "pesan": "Tetap semangat menjalani aktivitas dan tanggung jawab kak."
-      },
-      {
-        "nama_kating": "Jeremi Marolop P",
-        "foto_massal_gdrive_id": "1groc5aZy1quPis8YyzX_cF6qb66_3CUf",
-        "kesan": "",
-        "pesan": ""
       },
       {
         "nama_kating": "Charrlindah",
@@ -219,6 +435,18 @@
         "pesan": "Tetap semangat menjalani aktivitas dan tanggung jawab kak."
       },
       {
+        "nama_kating": "Della Anisa Fitri",
+        "foto_massal_gdrive_id": "16dWOZIxLilJT1w6hDdBlEMTUbduVmjmG",
+        "kesan": "Chill, ramah",
+        "pesan": "Semoga Kakak tetap menjadi pribadi yang ramah kepada orang sekitar."
+      },
+      {
+        "nama_kating": "Mochammad Iqbal Az-Zahir",
+        "foto_massal_gdrive_id": "1kTpGmgQY18tH-_0t-7Ny_U4UAQm37_UO",
+        "kesan": "Ramah dan chill",
+        "pesan": "Semoga Kakak terus menikmati proses belajar dan berkembang."
+      },
+      {
         "nama_kating": "Anggun Nita",
         "foto_massal_gdrive_id": "19MZSTdnZpATQEmV-i5lkKEDqjctG944h",
         "kesan": "Ramah dan chill",
@@ -249,12 +477,6 @@
         "pesan": "Semoga Kakak selalu dikelilingi teman-teman yang mendukung hal positif."
       },
       {
-        "nama_kating": "Moch",
-        "foto_massal_gdrive_id": "1kTpGmgQY18tH-_0t-7Ny_U4UAQm37_UO",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
         "nama_kating": "Layina Ropiqo",
         "foto_massal_gdrive_id": "1PGwmwZVsxKUWtGT0Cr9WnkkTTAJ-wIoB",
         "kesan": "Chill, dan ramah",
@@ -283,6 +505,12 @@
         "foto_massal_gdrive_id": "1vCOKeqEOkK9uwh9uThRG_MGhX2Il6F5k",
         "kesan": "Chill, ramah, dan family friendly",
         "pesan": "Semoga setiap rencana yang disusun bisa berjalan sesuai harapan."
+      },
+      {
+        "nama_kating": "Gusti Putu Ferazka Dhiyamika",
+        "foto_massal_gdrive_id": "1J1egIBlG3evAIkZS4zbCMjcaTyYMWvBW",
+        "kesan": "Family friendly, ramah, menyenangkan",
+        "pesan": "Semoga langkah kita masing-masing membawa pelajaran yang bermanfaat."
       },
       {
         "nama_kating": "Indah Julia Mawar Pratiwi",
@@ -359,14 +587,8 @@
       {
         "nama_kating": "Ali Aristo Muthahhari Parisi",
         "foto_massal_gdrive_id": "1UVc3aiM2tc5ZOc7Z4EqxfW5zihWO49V8",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Gusti Putu Ferazka D.",
-        "foto_massal_gdrive_id": "1J1egIBlG3evAIkZS4zbCMjcaTyYMWvBW",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Chill dan baik",
+        "pesan": "Semoga Kakak selalu sukses dalam perkuliahan maupun kegiatan lainnya."
       },
       {
         "nama_kating": "Kevin Antonio Junior",
@@ -443,8 +665,8 @@
       {
         "nama_kating": "Sania Dwi Ayu Lestari",
         "foto_massal_gdrive_id": "1olWtBnutEz2wQpEoTppzUTE1Ru1l9irV",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah dan baik",
+        "pesan": "Semoga segala kesibukan Kakak berjalan lancar dan sesuai harapan."
       },
       {
         "nama_kating": "Muhammad Razan Maulana Pratama",
@@ -483,412 +705,196 @@
         "pesan": "Semoga Kakak terus berkembang dan mencapai hal yang diinginkan."
       },
       {
-        "nama_kating": "Ahmad Bimo Akbar Arkana",
+        "nama_kating": "Ahmad Bimo Akbar Arkana Putra",
         "foto_massal_gdrive_id": "1rwH2NNRNUSE_5ekxJoTndx1BoiJxIVbq",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah dan menyenangkan",
+        "pesan": "Semoga abang terus berkembang dan mencapai hal yang diinginkan."
+      },
+      {
+        "nama_kating": "Danil Nur Fadillah",
+        "foto_massal_gdrive_id": "106550R2GK6lVHEPQ-qBThiRKKNEoJxTs",
+        "kesan": "Baik, keren, dan menyenangkan",
+        "pesan": "Tetap semangat menjalani aktivitas dan tanggung jawab bang."
       },
       {
         "nama_kating": "Muhammad Rizaldi",
         "foto_massal_gdrive_id": "1VFzLmfkdYXfssrCThjCJ9e4z3-XHsXHZ",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah dan menyenangkan",
+        "pesan": "Tetap semangat bang, semoga segala urusan dan rencana ke depannya berjalan lancar."
       },
       {
         "nama_kating": "Selma Siti Aisyah",
         "foto_massal_gdrive_id": "1GEOX7AuxnJy0IM76tcO1-1Q1avXXB_hd",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah dan baik",
+        "pesan": "Semoga semua rencana Kakak berjalan dengan lancar."
       },
       {
         "nama_kating": "Khoirul Muttoharoh",
         "foto_massal_gdrive_id": "1D3CCOxLOKr62CL08CykGcyiI-a8gBHlC",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Baik dan ramah",
+        "pesan": "Semoga Kakak terus berkembang dan mencapai hal yang diinginkan."
       },
       {
         "nama_kating": "Aditya Taufiqurrohman",
         "foto_massal_gdrive_id": "1j3SuSlig48BjM-xffzCx1iAuO3JW7llU",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah dan menyenangkan",
+        "pesan": "Semoga abang terus berkembang dan mencapai hal yang diinginkan."
       },
       {
         "nama_kating": "Saskia Nova Magdalena",
         "foto_massal_gdrive_id": "18QCRVtC9mMsYr7V0eSxydgMS3jYXaCiQ",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah dan baik",
+        "pesan": "Semoga Kakak selalu dikelilingi teman-teman yang mendukung hal positif."
       },
       {
         "nama_kating": "Muhammad Fathiy Zumar Yazid",
         "foto_massal_gdrive_id": "18nAvl1Vq2mZ7M2plBkQj0I6L0rKL713z",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Keren dan ramah",
+        "pesan": "Tetap semangat menjalani aktivitas dan tanggung jawab bang."
       },
       {
         "nama_kating": "Favian Arkaanda",
         "foto_massal_gdrive_id": "1r9Qqb0N_1F3x9AEhMDsxTzcCR4qeRKhY",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Danil N Fadillah",
-        "foto_massal_gdrive_id": "106550R2GK6lVHEPQ-qBThiRKKNEoJxTs",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah dan menyenangkan",
+        "pesan": "Semoga segala kesibukan abang berjalan lancar dan sesuai harapan."
       },
       {
         "nama_kating": "Ashila Islamisahfa Vanisha",
         "foto_massal_gdrive_id": "1z3KSknTaxnLjUIyGS6XzZC5-jUpy1PCh",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Baik dan ramah",
+        "pesan": "Semoga Kakak selalu menemukan hal baik dalam setiap prosesnya."
       },
       {
         "nama_kating": "Tarisya Hidayatul Rahmi",
         "foto_massal_gdrive_id": "1Yr_ClWc2jO6qWOLJE-xi4sjkMIHex-cS",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Baik dan ramah",
+        "pesan": "Tetap semangat menjalani aktivitas dan tanggung jawab kak."
       },
       {
         "nama_kating": "Fathya Intami Gusda",
         "foto_massal_gdrive_id": "1jc_7oDAI7HWe1D6LOeXgzOb8lRzj3GLe",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Baik dan ramah",
+        "pesan": "Tetap semangat menjalani aktivitas dan tanggung jawab kak."
       },
       {
         "nama_kating": "Yollanda Agustina",
         "foto_massal_gdrive_id": "1vzhsTyjwXst76NyfQ8M5hAmC_uGBo7CN",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Baik, ramah, keren, dan menyenangkan",
+        "pesan": "Semoga Kakak selalu sukses dalam perkuliahan maupun kegiatan lainnya."
       },
       {
         "nama_kating": "Riska Erlis Dayu Tiara",
         "foto_massal_gdrive_id": "1zCG5Q_We_e7LYFvywpA-dLFIoBiRG4BV",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah, baik, dan murah senyum",
+        "pesan": "Semoga Kakak tetap menjadi pribadi yang ramah kepada orang sekitar."
       },
       {
         "nama_kating": "Indah Khairunnisa",
         "foto_massal_gdrive_id": "1o9U48bVSXdh8pocLNy5rLoM4h6fH0Y8v",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Baik dan menyenangkan",
+        "pesan": "Semoga Kakak tetap menjadi pribadi yang ramah kepada orang sekitar."
       },
       {
         "nama_kating": "Bima Ekayasa",
         "foto_massal_gdrive_id": "1ICSe7FHlp32_57oXmHJJnj1Wf-m2GVce",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Baik dan menyenangkan",
+        "pesan": "Semoga segala kesibukan abang berjalan lancar dan sesuai harapan."
       },
       {
         "nama_kating": "Asri Meilani",
         "foto_massal_gdrive_id": "18Wdy9Rf0fCSbDxpvFhVeEAnp5zsqYAhX",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Baik dan ramah",
+        "pesan": "Semoga Kakak selalu dikelilingi teman-teman yang mendukung hal positif."
       },
       {
         "nama_kating": "Alfaya Rafif Abiyyi",
         "foto_massal_gdrive_id": "12QZVBSwmasj8-c3jxWh_j04oh6mqIHLw",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Baik dan ramah",
+        "pesan": "Tetap semangat menjalani aktivitas dan tanggung jawab bang."
       },
       {
         "nama_kating": "Adinda Deswita Maharani",
         "foto_massal_gdrive_id": "1RgQ_hGUIH2fNuRt1_fXDk0MdHk4edY6s",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Baik dan ramah",
+        "pesan": "Semoga semua rencana Kakak berjalan dengan lancar."
       },
       {
         "nama_kating": "Ahmad Rizky",
         "foto_massal_gdrive_id": "1ol5_gML-ej_AwrkrhocLIoJt3OiCchag",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Keren, baik, dan ramah",
+        "pesan": "Semoga sukses selalu untuk kedepannya bang."
       },
       {
         "nama_kating": "Nabyla Sharfina",
         "foto_massal_gdrive_id": "1nkMokJmKAfsKJot_nYjG8TAB0k1FtSf3",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah dan baik",
+        "pesan": "Tetap semangat menjalani aktivitas dan tanggung jawab kak."
       },
       {
         "nama_kating": "Arini Puteri Elandra",
         "foto_massal_gdrive_id": "1vduSbQ4Imi13N4vrlmezU_aqJsQ_rYeQ",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah dan baik",
+        "pesan": "Semoga Kakak selalu diberikan kelancaran dalam setiap urusan."
       },
       {
         "nama_kating": "Dwi Rahma Fitriani",
         "foto_massal_gdrive_id": "13zIcqS-2WINyvvgrPD_5RdOXDaNNJSry",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah dan baik",
+        "pesan": "Selalu semangat dan semoga dilancarkan segala urusan"
       },
       {
         "nama_kating": "Nadya Ratu Anjani",
         "foto_massal_gdrive_id": "1JTQdrTz7jtvjHCEewIDrvJrBvUsz1LoE",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah dan baik",
+        "pesan": "Selalu semangat dan semoga dilancarkan segala urusan"
       },
       {
         "nama_kating": "Hazel Mahesa Handhaka",
         "foto_massal_gdrive_id": "13pHw3GHyP4XJb_dIEvpHsG6kQuE2q1uZ",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Cool, chill, ramah",
+        "pesan": "Semoga dilancarakan segala urusan dan dipermudah"
       },
       {
         "nama_kating": "Aqila Zayyan Salsabil",
         "foto_massal_gdrive_id": "1XXO6k6C7YzUvZsqGwP-6qNJFlbaP44Av",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah,  baik, menyenangkan, family friendly",
+        "pesan": "Semoga dilancarakan segala urusan dan dipermudah"
       },
       {
         "nama_kating": "Lia Hana Ichisasmita",
         "foto_massal_gdrive_id": "1meoFReikomddkUQzejq4B8C442vLBRU9",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah dan baik",
+        "pesan": "Semoga dilancarakan segala urusan dan dipermudah"
       },
       {
         "nama_kating": "Wielman Itolo Halawa",
         "foto_massal_gdrive_id": "1xpdLyF4jsmzInbigoMTI4BLhXzHjy7LM",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah, cool, baik",
+        "pesan": "Semangat kuliahnya dan semoga dilancarkan segala kegiatan"
       },
       {
         "nama_kating": "Suci Aulia",
         "foto_massal_gdrive_id": "130ntmQRI7TBi9rdkTktQzlwMgJxHwlT0",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah dan baik",
+        "pesan": "Semangat kuliahnya dan semoga dilancarkan segala kegiatan"
       },
       {
         "nama_kating": "Fernando Dimetrius Barus",
         "foto_massal_gdrive_id": "1SN8_KGy_Ogh_uJsunnv2x5cdym-4ALPu",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah dan baik",
+        "pesan": "Semangat kuliahnya dan semoga dilancarkan segala kegiatan"
       },
       {
         "nama_kating": "Helmy Surya Pratama",
         "foto_massal_gdrive_id": "1NvDGZJ4I7PL5-jSwgsfFAf8D1RpUTZaG",
-        "kesan": "",
-        "pesan": ""
+        "kesan": "Ramah, chill, family friendly",
+        "pesan": "Semangat kuliahnya dan semoga dilancarkan segala kegiatan"
       },
       {
         "nama_kating": "Fathinah Nur Azizah",
         "foto_massal_gdrive_id": "1KiPluBEO5cRWmd4WbHqACp1pSzKo0ovp",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Melva Shaprina Febrianti",
-        "foto_massal_gdrive_id": "1hrbic-MMGenT11Wm-YnePkIxiU7QTDpT",
-        "kesan": "",
-        "pesan": "Semoga kakak selalu menemukan hal baik dalam setiap prosesnya."
-      },
-      {
-        "nama_kating": "Fabio Banyu Cyto",
-        "foto_massal_gdrive_id": "19LLFpYqEIx1g73-KqtkMnnvJoMNuVYA_",
-        "kesan": "Ramah dan mudah dimengerti ucapannya",
-        "pesan": "Tetap semangat dan semoga selalu diberikan kemudahan dalam setiap langkah."
-      },
-      {
-        "nama_kating": "Fadya Izzatul 'Aini",
-        "foto_massal_gdrive_id": "1V1ARe_IrMUFqGn4kI5BR-9N5PUYsZix8",
-        "kesan": "",
-        "pesan": "Semoga perjalanan akak ke depannya selalu dipermudah."
-      },
-      {
-        "nama_kating": "M",
-        "foto_massal_gdrive_id": "1JtNF9W7hYRBlMH8UjqZmptblpyKUW6v5",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Rifky Henry Ferdianto",
-        "foto_massal_gdrive_id": "1-a5X6o9XAuW41NwpQb5pIE_Q7AZEqVwS",
-        "kesan": "",
-        "pesan": "Semoga segala kesibukan Kakak berjalan lancar dan sesuai harapan."
-      },
-      {
-        "nama_kating": "Muhammad Syafiqul Falakh",
-        "foto_massal_gdrive_id": "1UjNxdd-h6sstYI1j3Pv7aIhaYc74nqfI",
-        "kesan": "",
-        "pesan": "Semoga Kakak tetap rendah hati dan sukses selalu."
-      },
-      {
-        "nama_kating": "Kaleb Filbert Istel",
-        "foto_massal_gdrive_id": "1w94d9Mn42VjxLSxkkv8fiok7n6jxhvr3",
-        "kesan": "",
-        "pesan": "Semoga Kakak selalu diberikan kemudahan dalam mencapai tujuan."
-      },
-      {
-        "nama_kating": "Hafidz Wahdiansyah",
-        "foto_massal_gdrive_id": "1-_rloWa73vmf94LATGXX-xdS57FyOCwl",
-        "kesan": "",
-        "pesan": "Semoga Kakak tetap rendah hati dan sukses selalu."
-      },
-      {
-        "nama_kating": "Gathfan Nadif Ali",
-        "foto_massal_gdrive_id": "1O4nmV9DGerYyT-6nXsFgly71zlYxCR-R",
-        "kesan": "",
-        "pesan": "Semoga segala kesibukan Kakak berjalan lancar dan sesuai harapan."
-      },
-      {
-        "nama_kating": "Faiza Try Anjani",
-        "foto_massal_gdrive_id": "1QQ2caqaG6N-M77nOawoUsNio75o4dRKd",
-        "kesan": "",
-        "pesan": "Semoga Kakak selalu bersemangat menjalani setiap proses yang ada."
-      },
-      {
-        "nama_kating": "Razin Hafid Hamdi",
-        "foto_massal_gdrive_id": "1E7LuIfuvygrzrQxaylWOQBSPV4KCm6si",
-        "kesan": "",
-        "pesan": "Semoga semua rencana Kakak berjalan dengan lancar."
-      },
-      {
-        "nama_kating": "Sherena Florencia",
-        "foto_massal_gdrive_id": "1DQQ6US4mv73vDUp-p35st1_-o-w8ctVN",
-        "kesan": "",
-        "pesan": "Semoga Kakak selalu dikelilingi orang-orang baik."
-      },
-      {
-        "nama_kating": "Lovianora Saragih",
-        "foto_massal_gdrive_id": "1Bdg0LqfjJ-27TowFbNW1IfQ4-MqWtcXs",
-        "kesan": "",
-        "pesan": "Semoga selalu sehat dan semangat menjalani kesibukan sehari-hari."
-      },
-      {
-        "nama_kating": "Elsa Sitorus",
-        "foto_massal_gdrive_id": "1nmyVqLhyTxvJGouLhvpeeP77Q2BVjGaK",
-        "kesan": "",
-        "pesan": "Semoga kakak selalu menemukan hal baik dalam setiap prosesnya."
-      },
-      {
-        "nama_kating": "Akeyla Fairuz Shafi",
-        "foto_massal_gdrive_id": "1dJVPSTrxVei7JSBdnobKUwbLf1In3nta",
-        "kesan": "",
-        "pesan": "Semoga Kakak selalu dikelilingi orang-orang baik."
-      },
-      {
-        "nama_kating": "Yulia Kristine Malau",
-        "foto_massal_gdrive_id": "1pWLnNTP6W9-NItmGTnIhyfcm616_3NVJ",
-        "kesan": "",
-        "pesan": "Semoga semua rencana Kakak berjalan dengan lancar."
-      },
-      {
-        "nama_kating": "Vannisa Ramadhani",
-        "foto_massal_gdrive_id": "1zRhhGNpXVYiiveysLJ9Xx3hzzDfMWV9A",
-        "kesan": "",
-        "pesan": "Semoga Kakak selalu diberikan kemudahan dalam mencapai tujuan."
-      },
-      {
-        "nama_kating": "Risa Romadona",
-        "foto_massal_gdrive_id": "16QtVb_fSuzN2ud6JVmTzPXoSqVkhO5nJ",
-        "kesan": "Ramah dan baik",
-        "pesan": "Semoga Kakak selalu bersemangat menjalani setiap proses yang ada."
-      },
-      {
-        "nama_kating": "Ni Made Okta Viola Darma Putri",
-        "foto_massal_gdrive_id": "1-GrUyRjO3VZQuTOhoSIXHmJ_g9-EUmWI",
-        "kesan": "Ramah , baik, murah senyum, dan menyenagkan",
-        "pesan": "Semoga kakak selalu menemukan hal baik dalam setiap prosesnya."
-      },
-      {
-        "nama_kating": "Manuel Frederika",
-        "foto_massal_gdrive_id": "1hjFEumSr2zrCJ-JS7RrrhwMBxy5Ye141",
-        "kesan": "Ramah dan menyenagkan",
-        "pesan": "Semoga Kakak selalu diberikan kemudahan dalam mencapai tujuan."
-      },
-      {
-        "nama_kating": "Tanty Widiyastuti",
-        "foto_massal_gdrive_id": "1bpxz7i0qZUpdVeZMvUW2qgxw6bPwp8gn",
-        "kesan": "Ramah, baik, dan menyenangkan",
-        "pesan": "Sukses selalu kak semoga segala urusannya dilancarkan."
-      },
-      {
-        "nama_kating": "Rafa Sabina Fahimah",
-        "foto_massal_gdrive_id": "1whjv00iV38oKZRetkZc4Oif8oz2Euefw",
-        "kesan": "Baik dan Ramah",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Muhammad Harvinsyah",
-        "foto_massal_gdrive_id": "1lk_2zsxje0f7zCuIrZ9QSAlJIa30X5kP",
-        "kesan": "Chill dan ramah",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Gustin H",
-        "foto_massal_gdrive_id": "1qyZR_r6C2qu5o7WRIa0heo_2x4ZmuKkv",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Cika Adelia Br Marbun",
-        "foto_massal_gdrive_id": "1Mj0tGhHhFrwkgHssra2q_VwMrn-LHBgc",
-        "kesan": "Ramah dan baik",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Audina Fitria",
-        "foto_massal_gdrive_id": "192Q5wTcFiG2__RF0G4gWb9NvaU88ZH2t",
-        "kesan": "Ramah dan chill",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Muhammad Hanif Dzaky Arifin",
-        "foto_massal_gdrive_id": "1jdAGQCgmTiguwtyS8msWM6ZsQ6RJ1wql",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Teresa Christiani Purba",
-        "foto_massal_gdrive_id": "1k04-Ljty9-q3kvqDwNgHshBRi-YLcL_p",
-        "kesan": "Ramah dan baik",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Rozak Ramdani",
-        "foto_massal_gdrive_id": "1YdtxgjVnM1GLlyVZOo24M5iBymN8zWv4",
-        "kesan": "Ramah dan chill",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Najla Nursyifa",
-        "foto_massal_gdrive_id": "1-_uaNSlxUqvw_sy8SLTxQtrBCUFLF8dl",
-        "kesan": "Ramah dan baik",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Jaya Saputra Tamba",
-        "foto_massal_gdrive_id": "1FmSkNO3cwEPvb_aGz3W6qS8tivE5FDdt",
-        "kesan": "Ramah, chill, family friendly",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Aisyah Khairun Nisa",
-        "foto_massal_gdrive_id": "1_SuXz6BAmAj18UghTV5Ecbme7okVx2NZ",
-        "kesan": "Baik, ramah, dan menyenagkan",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "A Farhan Ghani",
-        "foto_massal_gdrive_id": "1TEQTfmfwmBIdFdluCTuojcBQSyGFN0J0",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Hanna Gresia Sinaga",
-        "foto_massal_gdrive_id": "1nfWAwzrl_d0lOk1Q4t5kTqnp7Bub_yu0",
-        "kesan": "Menyenagkan, murah senyum, dan ramah",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Kharisma Mustika Sari",
-        "foto_massal_gdrive_id": "1L60ugXEjqibTQ3ePJKtA0FmDfMpj4Fns",
-        "kesan": "Ramah, dan baik",
-        "pesan": "Semoga Kakak terus menemukan hal-hal yang membuatnya berkembang."
-      },
-      {
-        "nama_kating": "Haikal Fransisko Simbolon",
-        "foto_massal_gdrive_id": "1B2rSAHAtmoN6JokUfuVWjQIcD4JGrP9N",
-        "kesan": "Ramah, chill, baik, dan menyenangkan",
-        "pesan": "Tetap semangat bang dan jangan lupa menikmati prosesnya."
+        "kesan": "Cool, chill, ramah, baik",
+        "pesan": "Semangat selalu dan semoga dilancarkan segala kegiatan"
       },
       {
         "nama_kating": "Fadil Prasetyo Alfarizzi",
@@ -897,76 +903,10 @@
         "pesan": ""
       },
       {
-        "nama_kating": "M. Alsi Syahrulloh",
-        "foto_massal_gdrive_id": "",
-        "kesan": "",
-        "pesan": "Semoga perjalanan kakak ke depannya selalu dipermudah."
-      },
-      {
-        "nama_kating": "Ahmad Bimo Akbar Arkan Putra",
-        "foto_massal_gdrive_id": "",
-        "kesan": "",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Ahmad Farhan Ghani",
-        "foto_massal_gdrive_id": "",
-        "kesan": "Baik dan ramah",
-        "pesan": ""
-      },
-      {
         "nama_kating": "Cerine Sihotang",
         "foto_massal_gdrive_id": "",
         "kesan": "Ramah dan menyenangkan",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Muhammad Hanid Dzaky Arifin",
-        "foto_massal_gdrive_id": "",
-        "kesan": "Chill, dan baik",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Gustin Haleluya Tampubolon",
-        "foto_massal_gdrive_id": "",
-        "kesan": "Ramah dan chill",
-        "pesan": ""
-      },
-      {
-        "nama_kating": "Gusti Putu Ferazka Dhiyamika",
-        "foto_massal_gdrive_id": "",
-        "kesan": "Family friendly, ramah, menyenangkan",
-        "pesan": "Semoga langkah kita masing-masing membawa pelajaran yang bermanfaat."
-      },
-      {
-        "nama_kating": "Ari Aristo Muthahari Parisi",
-        "foto_massal_gdrive_id": "",
-        "kesan": "Chill dan baik",
-        "pesan": "Semoga Kakak selalu sukses dalam perkuliahan maupun kegiatan lainnya."
-      },
-      {
-        "nama_kating": "Jeremi Marolop P. Situmorang",
-        "foto_massal_gdrive_id": "",
-        "kesan": "Ramah dan baik",
-        "pesan": "Semoga Kakak selalu menemukan hal baik dalam setiap prosesnya."
-      },
-      {
-        "nama_kating": "Salavia Naharani",
-        "foto_massal_gdrive_id": "",
-        "kesan": "Ramah dan baik",
-        "pesan": "Tetap semangat menjalani aktivitas dan tanggung jawab kak."
-      },
-      {
-        "nama_kating": "Mochammad Iqbal Az-Zahir",
-        "foto_massal_gdrive_id": "",
-        "kesan": "Ramah dan chill",
-        "pesan": "Semoga Kakak terus menikmati proses belajar dan berkembang."
-      },
-      {
-        "nama_kating": "Della Anisa Fitri",
-        "foto_massal_gdrive_id": "",
-        "kesan": "Chill, ramah",
-        "pesan": "Semoga Kakak tetap menjadi pribadi yang ramah kepada orang sekitar."
+        "pesan": "Tetap semangat kak dan semoga dimudahkan segala urusan"
       }
     ]
   }
