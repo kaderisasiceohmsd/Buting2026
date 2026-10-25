@@ -961,7 +961,7 @@ if menu == "Departemen Internal":
 if menu == "Departemen Medkraf":
     def Departemen_Medkraf():
         gambar_urls = [
-           "https://drive.google.com/uc?export=view&id=1WkD_MkEVORvYZNjfAe_TuCmlqFJCZx9j",
+            "https://drive.google.com/uc?export=view&id=1WkD_MkEVORvYZNjfAe_TuCmlqFJCZx9j",
             "https://drive.google.com/uc?export=view&id=1P_akBIeGPmYY_qUv-bfAfz8Z0lsdRP3w",
             "https://drive.google.com/uc?export=view&id=1qKz9NXpHacvGcVNr1E0pEnC3ntRNOJGn",
             "https://drive.google.com/uc?export=view&id=1slAB255aqk6PYPo4lOLHXV6ZmbnjVAUl",
@@ -974,11 +974,11 @@ if menu == "Departemen Medkraf":
             "https://drive.google.com/uc?export=view&id=1i1PD5IEanlWVi9RIWDSFttyPbb1yy3Bj",
             "https://drive.google.com/uc?export=view&id=1DnA3HP8C1i1eHFz7bDjsK862Ib4wTUvI",
             "https://drive.google.com/uc?export=view&id=1U6hXT2jx1Dp5RqRQWyrEwCmM1QWrIa93",
-            "https://drive.google.com/uc?export=view&id=1dg0aeaVcgq7PJv182Q_DNm-GKlwANnXI",
+            "https://drive.google.com/uc?export=view&id=12mJvcD01kcJ124gb-FhOUPsgChvB9Tl_",
             "https://drive.google.com/uc?export=view&id=1GgRtgqkYuY-als9IUyVr0ha7jNcOsNbl",
             "https://drive.google.com/uc?export=view&id=1Tudx4OhwWpcjVrzC-_IvaZdYGhk7gsQA",
             "https://drive.google.com/uc?export=view&id=1DEcI9U67YO9hq7jvis3NtzSpCzLZzOdU",
-            "https://drive.google.com/uc?export=view&id=1cDuVprra24Ve_6-QnjjN9m7X1Wrnj2Q1",
+            "https://drive.google.com/uc?export=view&id=1cDuVprra24Ve_6-QnjjN9m7X1Wrnj2Q1"
         ]
         data_list = [
             {
