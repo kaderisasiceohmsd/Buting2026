@@ -1343,7 +1343,7 @@ if menu == "Departemen Eksternal":
                 "hobbi": "ngefollow up chat",
                 "sosmed": "@erlsriska",
                 "kesan": "Kakak ini orang nya asik banget ",
-                "pesan": Jaga kesehatan nya kak"
+                "pesan": "Jaga kesehatan nya kak"
             },
             {
                 "nama": "Yollanda Agustina",
