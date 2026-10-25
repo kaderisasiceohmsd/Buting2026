@@ -42,8 +42,8 @@ Anggota11 = st.Page("Buku Kating/112_Laikha Salwa Balqis.py", title="112 - Laikh
 Anggota12 = st.Page("Buku Kating/123_Piligo Arga Gayoni.py", title="123 - Piligo Arga Gayoni", icon=":material/person:")
 
 # --- 3. KREASI ---
-KREASI = st.Page("tools/KREASI.py", title="Flappy Tensor", icon=":material/search:")
-KREASII = st.Page("tools/KREASII.py", title="Game Tensor", icon=":material/search:")
+KREASI = st.Page("tools/KREASI.py", title="Apa Itu Tensor", icon=":material/search:")
+KREASII = st.Page("tools/KREASII.py", title="Flappy Tensor", icon=":material/search:")
 
 # --- PENGATURAN SIDEBAR OTOMATIS ---
 if st.session_state.pindah:
