@@ -1142,7 +1142,7 @@ elif menu == "Departemen MIKFES":
         with tab3:
             # Pindahkan URL dan Data anggota Komisi I ke dalam list ini
             gambar_urls_Divisi_Professional_Skill_and_Development = [
-            "https://drive.google.com/uc?export=view&id=1J1Ow3mPnTv1NZuoc5vtWmcrPZNIVovs5",
+            "https://drive.google.com/uc?export=view&id=1pQ2P5PlHY1ibjl43pF14QlDYV5Dc8hxU",
             "https://drive.google.com/uc?export=view&id=1K9487O-Qgrl_z9ggJHdLeBNAeKAJ-UyQ",
             "https://drive.google.com/uc?export=view&id=18AtZtf7ahz0ge0UVieOGv_k2TK3BFTUE",
             "https://drive.google.com/uc?export=view&id=1G4Qok6YiafAWpW1A0GTjfUMC9kqwkNHd",
