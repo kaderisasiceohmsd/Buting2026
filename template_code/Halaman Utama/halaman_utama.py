@@ -144,66 +144,47 @@ if menu == "Home":
             unsafe_allow_html=True,
         )
 
-        col_m1, col_m2, col_m3 = st.columns(3, gap="medium")
+        # --- DATA GALERI: untuk menambah kartu baru, cukup tambah satu blok {...} di list ini ---
+        GALERI = [
+            {
+                "emoji": "💻",
+                "judul": "Kerja Kelompok & Coding",
+                "deskripsi": "Momen diskusi seru di selasar gedung kampus dan kafe. Debat logika kode, revisi layout bareng, hingga sharing cemilan saat mata mulai mengantuk.",
+                "foto": "https://drive.google.com/uc?export=view&id=19fo5WQL02HB7IzvRUwhNoKySjy6uJ_Lv",
+            },
+            {
+                "emoji": "🚩",
+                "judul": "Rangkaian Acara CEO",
+                "deskripsi": "Keseruan saat mengikuti dinamika materi, yel-yel kelompok, dan simulasi organisasi. Melatih kekompakan, kepemimpinan, dan mental pantang menyerah.",
+                "foto": "https://drive.google.com/uc?export=view&id=11UyAE4hUKZ8dG0JG3OxqZCLOrAGGDGJ_",
+            },
+            {
+                "emoji": "☕",
+                "judul": "Main & Refreshing",
+                "deskripsi": "Karena hidup mahasiswa bukan cuma soal deadline! Momen makan bareng, nongkrong santai, dan bercanda lepas yang bikin kami makin akrab seperti keluarga.",
+                "foto": "https://drive.google.com/uc?export=view&id=1tWFKgAL9u58RnOrhMx-IexoK8y_FJLXb",
+            },
+        ]
 
-        with col_m1:
-            st.markdown(
-                """
-                <div class="glass-box" style="padding: 16px; text-align: center; margin-bottom: 12px;">
-                    <div style="font-size: 1.6rem; margin-bottom: 4px;">💻</div>
-                    <div style="font-weight: 700; color: #f1f5f9; font-size: 1rem; margin-bottom: 6px;">Kerja Kelompok & Coding</div>
-                    <p style="color: #94a3b8; font-size: 0.83rem; line-height: 1.6; margin: 0;">
-                        Momen diskusi seru di selasar gedung kampus dan kafe. Debat logika kode, revisi layout bareng, hingga sharing cemilan saat mata mulai mengantuk.
-                    </p>
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
-            # Slot foto kerja kelompok
-            foto_nugas = "https://drive.google.com/uc?export=view&id=19fo5WQL02HB7IzvRUwhNoKySjy6uJ_Lv"
-            with st.container(key="shine-photo-gallery-1"):
-                img_nugas = load_image(foto_nugas, fallback_name="Kerja Kelompok", keep_ratio=True)
-                st.image(img_nugas, use_container_width=True)
+        from html import escape as _esc
 
-        with col_m2:
-            st.markdown(
-                """
-                <div class="glass-box" style="padding: 16px; text-align: center; margin-bottom: 12px;">
-                    <div style="font-size: 1.6rem; margin-bottom: 4px;">🚩</div>
-                    <div style="font-weight: 700; color: #f1f5f9; font-size: 1rem; margin-bottom: 6px;">Rangkaian Acara CEO</div>
-                    <p style="color: #94a3b8; font-size: 0.83rem; line-height: 1.6; margin: 0;">
-                        Keseruan saat mengikuti dinamika materi, yel-yel kelompok, dan simulasi organisasi. Melatih kekompakan, kepemimpinan, dan mental pantang menyerah.
-                    </p>
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
-            # Slot foto kegiatan rangkaian
-            foto_rangkaian = "https://drive.google.com/uc?export=view&id=11UyAE4hUKZ8dG0JG3OxqZCLOrAGGDGJ_"
-            with st.container(key="shine-photo-gallery-2"):
-                img_rangkaian = load_image(foto_rangkaian, fallback_name="Rangkaian Acara", keep_ratio=True)
-                st.image(img_rangkaian, use_container_width=True)
-
-        with col_m3:
-            st.markdown(
-                """
-                <div class="glass-box" style="padding: 16px; text-align: center; margin-bottom: 12px;">
-                    <div style="font-size: 1.6rem; margin-bottom: 4px;">☕</div>
-                    <div style="font-weight: 700; color: #f1f5f9; font-size: 1rem; margin-bottom: 6px;">Main & Refreshing</div>
-                    <p style="color: #94a3b8; font-size: 0.83rem; line-height: 1.6; margin: 0;">
-                        Karena hidup mahasiswa bukan cuma soal deadline! Momen makan bareng, nongkrong santai, dan bercanda lepas yang bikin kami makin akrab seperti keluarga.
-                    </p>
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
-            # Slot foto hangout/main
-            foto_main = "https://drive.google.com/uc?export=view&id=1tWFKgAL9u58RnOrhMx-IexoK8y_FJLXb"
-            with st.container(key="shine-photo-gallery-3"):
-                img_main = load_image(foto_main, fallback_name="Main & Hangout", keep_ratio=True)
-                st.image(img_main, use_container_width=True)
-
-        st.write("")
+        KARTU_PER_BARIS = 3
+        for start in range(0, len(GALERI), KARTU_PER_BARIS):
+            cols_galeri = st.columns(KARTU_PER_BARIS, gap="medium")
+            for ci, item in enumerate(GALERI[start:start + KARTU_PER_BARIS]):
+                with cols_galeri[ci]:
+                    # depan: foto, belakang: teks (kartu berputar saat disentuh)
+                    with st.container(key=f"flip-card-{start + ci}"):
+                        img_galeri = load_image(item["foto"], fallback_name=item["judul"], keep_ratio=True)
+                        st.image(img_galeri, use_container_width=True)
+                        st.markdown(
+                            f'<div class="flip-back">'
+                            f'<div class="flip-emoji">{item["emoji"]}</div>'
+                            f'<div class="flip-title">{_esc(item["judul"])}</div>'
+                            f'<div class="flip-desc">{_esc(item["deskripsi"])}</div>'
+                            f'</div>',
+                            unsafe_allow_html=True,
+                        )
 
         # --- REFLEKSI AKHIR ---
         st.markdown(
