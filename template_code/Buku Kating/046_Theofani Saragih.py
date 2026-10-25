@@ -982,8 +982,8 @@ elif menu == "Departemen Minbak":
                     "alamat": "Kotabaru",
                     "hobbi": "Main rubik",
                     "sosmed": "@andra.lhm",
-                    "kesan": "Abang Andra seru bangett, loff abangg greedycuwikuki",
-                    "pesan": "Sehat selalu dan semangat terus menghadapi kelakuan member greedycuwikuki ini ya abangg!"
+                    "kesan": "Abang Andra seru bangett dan social butterfly parahh, teruss greedy juga ga akan lengkapp kalo gaada bang Andraa, loff besar buat my abangg gueh dan greedycuwikukii",
+                    "pesan": "Semangat terus abangg kuliahnyaa, dan jangan bosen bosen menghadapi kelakuan member greedycuwikuki ini ya abangg!"
                 },
                 {
                     "nama": "Bryan Paskah Telaumbanua",
@@ -1279,7 +1279,7 @@ elif menu == "Departemen MIKFES":
                     "alamat": "Belwis",
                     "hobbi": "Baca",
                     "sosmed": "@faizaanjanii",
-                    "kesan": "Kakaknya ramah bangett",
+                    "kesan": "Kakaknya pinterr dan ramah bangett",
                     "pesan": "Sehat selalu kakak, wish you all the bestt pokoknya"
                 },
                 {
@@ -2112,7 +2112,7 @@ elif menu == "Departemen Eksternal":
                     "umur": "Masih muda lah",
                     "asal": "Rahim Ibu",
                     "alamat": "Pasar lantai 3.5",
-                    "hobbi": "Tanyain sama yuder (beneran ditanya ya)",
+                    "hobbi": "Main layangan waktu hujan",
                     "sosmed": "@jaldii._",
                     "kesan": "Abangnya seruu bangett, social butterfly parahh",
                     "pesan": "Tutorkan punya energi sebanyak itu abangg"
