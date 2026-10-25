@@ -1754,7 +1754,7 @@ elif menu == "Departemen Medkraf":
             "https://drive.google.com/uc?export=view&id=1yRjuO64V97orH2TsE4ukQkTHG-8jrYcq",
             "https://drive.google.com/uc?export=view&id=151abb06UdlkJdsENrn7k1_Y4IuywOXDl",
             "https://drive.google.com/uc?export=view&id=1zKEwv5rakzSyeEXCXVqWrIth2xAVw9OF",
-            "https://drive.google.com/uc?export=view&id=18Lg4dGWduYlDt1u2akl-tAEQzbJe-DN8",
+            "https://drive.google.com/uc?export=view&id=1fKYe1yiaruMcrVHF_qqFoyIigzFUGvwF",
             "https://drive.google.com/uc?export=view&id=1JX8zPKLju6eYz_BJ1yXK110RpBPpx5VK"
         ]
         data_list = [
