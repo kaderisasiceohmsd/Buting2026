@@ -71,7 +71,7 @@ elif menu == "Baleg":
             },
             {
                 "nama": "Juesi Apridelia Saragih",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1g8Vp3eS55JsYh-3BBMDEy9i_qSaT0oD",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1g8Vp3eS55JsYh-3BBMDEy9i_qSaT0oDr",
                 "kesan": "cantik banget kak jue, baik, humble, kreatif",
                 "pesan": "terimakasih banyak kak!!! sukses selalu ya kak jue, semoga kebaikan selalu mengelilingi kak jue,",
             },
