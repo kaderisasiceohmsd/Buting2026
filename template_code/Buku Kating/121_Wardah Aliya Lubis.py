@@ -564,7 +564,7 @@ elif menu == "Departemen Minbak":
         
         with tab1:
             gambar_urls_kepala_departemen_minbak= [
-            "https://drive.google.com/uc?export=view&id=1qJRwzD08676Djt3ZV2UqPS2dovnOT8oG",
+            "https://drive.google.com/uc?export=view&id=1oUCS2tUHoQcpYaGCqxYVyvyE5_3AgQ1L",
             ]
             data_list_kepala_departemen_minbak= [
             {
