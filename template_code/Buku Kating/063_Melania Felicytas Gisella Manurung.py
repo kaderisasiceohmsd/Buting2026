@@ -1191,6 +1191,7 @@ if menu == "Departemen Eksternal":
             "https://drive.google.com/uc?export=view&id=1e2WuUW2YCWbIU_Nom3EMwKsmI1pBKiqA",
             "https://drive.google.com/uc?export=view&id=1GMVXI6Fl3QFsFcFrASOL-PF7KvGm27tp",
             "https://drive.google.com/uc?export=view&id=1nyW647V1VaulinfOIV1EMhRWrgsMu1KO",
+            "https://drive.google.com/uc?export=view&id=14dYW7zItCabbrOUnH5iRYf438v4J2D7S",
             "https://drive.google.com/uc?export=view&id=1nhiZJLhGmM89UGadhi1lDlmBXMxOWk6F",
             "https://drive.google.com/uc?export=view&id=15amOvtc20QlmrHw7J-H7S5xCIBKoyqPG",
             "https://drive.google.com/uc?export=view&id=1xo3ndSfW_dlxP4j4ADV9g7vcrAPtgnI6",
@@ -1200,7 +1201,6 @@ if menu == "Departemen Eksternal":
             "https://drive.google.com/uc?export=view&id=1REQU1QdmzVZV-2Ed0mP72mT8sYNkflnY",
             "https://drive.google.com/uc?export=view&id=1guAn8-nJ40BI10wD1eDAM9fPwSFTRczv",
             "https://drive.google.com/uc?export=view&id=102pd_geK6cnN3DvuJPzUgJqn_mMaluw3",
-            "https://drive.google.com/uc?export=view&id=14dYW7zItCabbrOUnH5iRYf438v4J2D7S",
             "https://drive.google.com/uc?export=view&id=1Xr_oY32zhdrer2Yaddxc6_K-ZsSo7PI0",
             "https://drive.google.com/uc?export=view&id=1n0diPN9QMZq1JbIin1uaa1CsesxqVMHA",
             "https://drive.google.com/uc?export=view&id=1anIVTJeeqO2JeHJkDPANItUSZEEWycIK",
@@ -1240,8 +1240,19 @@ if menu == "Departemen Eksternal":
                 "umur": "-",
                 "asal": "Lambar",
                 "alamat": "Airan",
-                "hobbi": "main",
+                "hobbi": "Main",
                 "sosmed": "@khoirul_muttoharoh",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",
+                "pesan": "semangat terus kuliahnya kakak !!!"
+            },
+            {
+                "nama": "Aditya Taufiqurrohman",
+                "nim": "123450032",
+                "umur": "15 Tahun",
+                "asal": "tetangga kadep",
+                "alamat": "belwis",
+                "hobbi": "Memancing keributan",
+                "sosmed": "@adityatfq",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
             },
@@ -1251,7 +1262,7 @@ if menu == "Departemen Eksternal":
                 "umur": "21 Tahun ini alhamdulillah",
                 "asal": "Tangerang Selatan",
                 "alamat": "GH",
-                "hobbi": "ga ngapa ngapain",
+                "hobbi": "Ga ngapa ngapain",
                 "sosmed": "@ahmad.rizky___",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1262,7 +1273,7 @@ if menu == "Departemen Eksternal":
                 "umur": "cepuyuh tayun",
                 "asal": "ikut kadep",
                 "alamat": "love earth",
-                "hobbi": "jadi idol",
+                "hobbi": "Jadi idol",
                 "sosmed": "@adindaadma",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1273,7 +1284,7 @@ if menu == "Departemen Eksternal":
                 "umur": "-",
                 "asal": "Tanggamus",
                 "alamat": "Balam",
-                "hobbi": "lihat lihat perumahan",
+                "hobbi": "Lihat lihat perumahan",
                 "sosmed": "@bimo_arkana",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1284,7 +1295,7 @@ if menu == "Departemen Eksternal":
                 "umur": "nelson piquet",
                 "asal": "balam",
                 "alamat": "balam",
-                "hobbi": "makan yang manis biar manis",
+                "hobbi": "Makan yang manis biar manis",
                 "sosmed": "@alfabiyi",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1295,7 +1306,7 @@ if menu == "Departemen Eksternal":
                 "umur": "20 tahun",
                 "asal": "Lampung Barat",
                 "alamat": "Korpri Raya",
-                "hobbi": "menonton film",
+                "hobbi": "Menonton film",
                 "sosmed": "@asrmeilani",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1306,7 +1317,7 @@ if menu == "Departemen Eksternal":
                 "umur": "-",
                 "asal": "Lampung",
                 "alamat": "Balam",
-                "hobbi": "berlaku humoris dan manis",
+                "hobbi": "Berlaku humoris dan manis",
                 "sosmed": "@bimayasa_",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1317,7 +1328,7 @@ if menu == "Departemen Eksternal":
                 "umur": "20 Tahun",
                 "asal": "Ampera",
                 "alamat": "Disini aja",
-                "hobbi": "mancing emosi, mancing ikan, mancing kecebong, mancing cupang",
+                "hobbi": "Mancing emosi, mancing ikan, mancing kecebong, mancing cupang",
                 "sosmed": "@khaindaa_",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1328,7 +1339,7 @@ if menu == "Departemen Eksternal":
                 "umur": "20 tahun",
                 "asal": "palembang",
                 "alamat": "bebas",
-                "hobbi": "ngefollow up chat",
+                "hobbi": "Ngefollow up chat",
                 "sosmed": "@erlsriska",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1338,20 +1349,9 @@ if menu == "Departemen Eksternal":
                 "nim": "124450024",
                 "umur": "-",
                 "asal": "Kerangka Bawang Sebelah Barat",
-                "alamat": "Kayu Mulya",
+                "alamat": "Jati Agung",
                 "hobbi": "Ikut Kepanitiaan",
                 "sosmed": "@yollanda_agustina16",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
-            },
-            {
-                "nama": "Aditya Taufiqurrohman",
-                "nim": "123450032",
-                "umur": "15 Tahun",
-                "asal": "tetangga kadep",
-                "alamat": "belwis",
-                "hobbi": "memancing keributan",
-                "sosmed": "@adityatfq",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
             },
@@ -1361,7 +1361,7 @@ if menu == "Departemen Eksternal":
                 "umur": "25 tahun",
                 "asal": "Tangsel",
                 "alamat": "Sukarame",
-                "hobbi": "baca wattpad",
+                "hobbi": "Baca wattpad",
                 "sosmed": "@fatthyaa_",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1383,7 +1383,7 @@ if menu == "Departemen Eksternal":
                 "umur": "20 tahun",
                 "asal": "sini",
                 "alamat": "jauh pokoknya",
-                "hobbi": "tidur",
+                "hobbi": "Tidur",
                 "sosmed": "@kshigf",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1405,7 +1405,7 @@ if menu == "Departemen Eksternal":
                 "umur": "-",
                 "asal": "Swiss",
                 "alamat": "Tanya bapas",
-                "hobbi": "ngesen kanan",
+                "hobbi": "Ngesen kanan",
                 "sosmed": "@fvnnn05",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1413,9 +1413,9 @@ if menu == "Departemen Eksternal":
             {
                 "nama": "Muhammad Fathiy Zumar Yazid",
                 "nim": "124450081",
-                "umur": "((15<<1) & 31) ⊕ 10",
+                "umur": "20",
                 "asal": "situlah",
-                "alamat": "pohon mulia",
+                "alamat": "Jati Agung",
                 "hobbi": "nyari hobi",
                 "sosmed": "@zydddddd_",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
