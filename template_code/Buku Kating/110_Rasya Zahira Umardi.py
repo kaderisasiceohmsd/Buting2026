@@ -1,13 +1,62 @@
-
 import streamlit as st
 from streamlit_option_menu import option_menu
 import requests
 from PIL import Image, ImageOps
 from io import BytesIO
+import base64
 
-st.markdown("""<style>.centered-title {text-align: center;}</style>""",unsafe_allow_html=True)
+st.set_page_config(layout="wide")
+
+st.markdown("""<style>.centered-title {text-align: center;}</style>""", unsafe_allow_html=True)
 st.markdown("<h1 class='centered-title'>BUKU KATING</h1>", unsafe_allow_html=True)
 
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #F8F5F2;
+        color: #000000; 
+    }
+
+    [data-testid="stHeader"] {
+        background-color: transparent !important;
+    }
+    
+    [data-testid="collapsedControl"] {
+        color: #bd411b !important;
+    }
+
+    [data-testid="stSidebar"] {
+        background-color: #bd411b !important;
+    }
+    
+    [data-testid="stSidebar"] * {
+        color: white !important;
+    }
+
+    [data-testid="stTabs"] button, 
+    [data-testid="stTabs"] button * {
+        color: #000000 !important;
+    }
+    
+    [data-testid="stTabs"] [data-baseweb="tab-highlight"] {
+        background-color: #bd411b !important;
+    }
+
+    .gambar-timbul {
+        width: 100%;
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        cursor: pointer;
+    }
+    .gambar-timbul:hover {
+        transform: translateY(-8px) scale(1.03); 
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 # bagian sini jangan diubah
 def streamlit_menu():
     selected = option_menu(
@@ -22,7 +71,7 @@ def streamlit_menu():
             "Departemen Internal",
             "Departemen SSD",
             "Departemen Medkraf",
-            "Departemen Minbak"
+            "Departemen Minbak",
         ],
         icons=[
             "people-fill",
@@ -34,21 +83,36 @@ def streamlit_menu():
             "people-fill",
             "people-fill",
             "people-fill",
-			"people-fill",
+            "people-fill",
         ],
         default_index=0,
         orientation="horizontal",
         styles={
-            "container": {"padding": "0!important", "background-color": "#fafafa"},
-            "icon": {"color": "black", "font-size": "19px"},
-            "nav-link": {
-                "font-size": "15px",
-                "text-align": "left",
-                "margin": "0px",
-                "--hover-color": "#eee",
+            "container": {
+                "padding": "10px !important", 
+                "background-color": "#c84b22", 
+                "border": "none !important", 
+                "border-radius": "0 !important", 
+                "box-shadow": "none !important" 
             },
-            "nav-link-selected": {"background-color": "#3FBAD8"},
-        },
+            "icon": {
+                "color": "white", 
+                "font-size": "19px"
+            },
+            "nav-link": {
+                "font-size": "14px",
+                "text-align": "center",
+                "margin": "5px", 
+                "color": "white",
+                "background-color": "transparent", 
+                "--hover-color": "rgba(255, 255, 255, 0.1)",
+            },
+            "nav-link-selected": {
+                "background-color": "#8c3010", 
+                "color": "white",
+                "border-radius": "10px" 
+            },
+            },
     )
     return selected
 
@@ -68,7 +132,10 @@ def load_image(url):
     except Exception as e:
         st.error(f"Error loading image: {e}")
         return None
-    
+     
+@st.cache_data
+@st.cache_data
+@st.cache_data
 @st.cache_data
 def display_images_with_data(gambar_urls, data_list):
     images = []
@@ -78,25 +145,71 @@ def display_images_with_data(gambar_urls, data_list):
             if img is not None:
                 images.append(img)
 
-    for i, img in enumerate(images):
-        # Menggunakan Streamlit untuk menampilkan gambar di tengah kolom
-        col1, col2, col3 = st.columns([1, 2, 1])
-        with col2:
-            st.image(img, use_container_width=True)
+    def img_to_base64(img):
+        import base64
+        from io import BytesIO
+        buffered = BytesIO()
+        img.save(buffered, format="PNG")
+        return base64.b64encode(buffered.getvalue()).decode()
 
-        if i < len(data_list):
-            st.write(f"Nama: {data_list[i]['nama']}")
-            st.write(f"NIM: {data_list[i]['nim']}")
-            st.write(f"Umur: {data_list[i]['umur']}")
-            st.write(f"Asal: {data_list[i]['asal']}")
-            st.write(f"Alamat: {data_list[i]['alamat']}")
-            st.write(f"Hobbi: {data_list[i]['hobbi']}")
-            st.write(f"Sosial Media: {data_list[i]['sosmed']}")
-            st.write(f"Kesan: {data_list[i]['kesan']}")
-            st.write(f"Pesan: {data_list[i]['pesan']}")
-            st.write("  ")
-    st.write("Semua gambar telah dimuat!")
+    st.markdown("""
+    <style>
+    .kartu-profil {
+        transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    }
+    .kartu-profil:hover {
+        transform: translateY(-8px) !important;
+        box-shadow: 0 15px 25px rgba(0,0,0,0.2) !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+    for i in range(0, len(images), 2):
+        cols = st.columns(2)
+        
+        for j in range(2):
+            index = i + j
+            if index < len(images):
+                with cols[j]:
+                    img_b64 = img_to_base64(images[index])
+                    data = data_list[index] if index < len(data_list) else {}
+                    
+                    nama = data.get('nama', '-')
+                    nim = data.get('nim', '-')
+                    umur = data.get('umur', '-')
+                    asal = data.get('asal', '-')
+                    alamat = data.get('alamat', '-')
+                    hobbi = data.get('hobbi', '-')
+                    sosmed = data.get('sosmed', '-')
+                    kesan = data.get('kesan', '-')
+                    pesan = data.get('pesan', '-')
+
+                    card_html = f"""<div class="kartu-profil" style="display: flex; flex-direction: row; background-color: #ffffff; border-radius: 16px; box-shadow: 0 6px 12px rgba(0,0,0,0.08); overflow: hidden; margin-bottom: 20px; height: 360px;">
+<div style="flex: 0 0 45%;">
+<img src="data:image/png;base64,{img_b64}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+</div>
+<div style="flex: 1; padding: 18px; display: flex; flex-direction: column; justify-content: space-between;">
+<div>
+<h4 style="margin: 0 0 4px 0; color: #1e1e1e; font-size: 18px; line-height: 1.2;">{nama}</h4>
+<p style="margin: 0 0 12px 0; color: #666; font-size: 14px; font-weight: bold;">{nim}</p>
+<div style="font-size: 13px; color: #444; line-height: 1.5;">
+<b>Umur:</b> {umur}<br>
+<b>Asal:</b> {asal}<br>
+<b>Alamat:</b> {alamat}<br>
+<b>Hobbi:</b> {hobbi}<br>
+<b>Sosmed:</b> {sosmed}
+</div>
+</div>
+<div style="background-color: #FFF3E0; padding: 12px; border-radius: 8px; margin-top: 12px;">
+<p style="margin: 0 0 4px 0; font-size: 12px; font-style: italic; color: #bd411b;"><b>Kesan:</b> "{kesan}"</p>
+<p style="margin: 0; font-size: 12px; font-style: italic; color: #bd411b;"><b>Pesan:</b> "{pesan}"</p>
+</div>
+</div>
+</div>"""
+                    
+                    st.markdown(card_html, unsafe_allow_html=True)
 menu = streamlit_menu()
+
 
 # BAGIAN SINI YANG HANYA BOLEH DIUABAH
 if menu == "Kesekjenan":
@@ -119,7 +232,6 @@ if menu == "Kesekjenan":
             "alamat": "Sekretariat HMSD",
             "hobbi": "Push Rank sampe IMO",
             "sosmed": "@jars_mrp",
-            "jabatan" : "Ketua Himpunan",
             "kesan": "Keren dan berwibawa, keren banget manage waktunya",  
             "pesan":"Terimakasii bang udah melalukan banyak perubahan dalam kinerja himpunan di kepemimpinan abang. Selanjutnya semangatt bangg nyusun dann ngerjain TA nyaa, semoga dipermudah segala urusan dalam per TA an ini ya bangg. Aamiin"# 1
             },
@@ -131,7 +243,6 @@ if menu == "Kesekjenan":
             "alamat": "Sekretariat HMSD",
             "hobbi": "Dzikir",
             "sosmed": "@muhammadaqil1111",
-            "jabatan" : "Sekretaris Jendral",
             "kesan": "Abangnya chill bangett, dan memperoleh banyak ilmu dari sekjen",  
             "pesan":"Kerennn, setelah ini semangatt nyusun TA nyaa, semoga diberi kelancaran dan lulus secepatnya ya bangg! "# 1
             },
@@ -143,7 +254,6 @@ if menu == "Kesekjenan":
             "alamat": "Airan",
             "hobbi": "Membaca",
             "sosmed": "@eeffiidefi",
-            "jabatan" : "Sekretaris 1",
             "kesan": "Charismatic woman #TAKJUB",  
             "pesan":"Keren bangetttt, semangatttt kaa ngerjain dan nyusun TA nyaa, semoga diberi kelancaran dan kemudahan sampe selesai nantii. Aamiin"# 1
             },
@@ -155,7 +265,6 @@ if menu == "Kesekjenan":
             "alamat": "Kota Baru",
             "hobbi": "Mainin Surat",
             "sosmed": "@qoisolifio_",
-            "jabatan" : "Sekretaris 2",
             "kesan": "Ngurus persuratan jujur keren bangettt",  
             "pesan":"Semangattt bang untuk TA nantii, semoga diberikan kelancaran dan kemudahan sampe usai #aamiin"# 1
             },
@@ -167,7 +276,6 @@ if menu == "Kesekjenan":
             "alamat": "Bandar Lampung",
             "hobbi": "Berenang",
             "sosmed": "@hafsafazilaa",
-            "jabatan" : "Bendahara 1",
             "kesan": "Vibesnya ceria bangett",  
             "pesan":"Kereennn, semangat kakaa untuk selanjutnya dan semoga diberi kelancarann dan kemudahan dalam menyusun TA nanti. Aamiin"# 1
             },
@@ -179,7 +287,6 @@ if menu == "Kesekjenan":
             "alamat": "Airan",
             "hobbi": "Bertemu Pak Tirta",
             "sosmed": "@luthfiaarmdhni",
-            "jabatan" : "Bendahara 2",
             "kesan": "Lucuuu kakanya, dan insight how to survive every semesternya sangat menarikk",  
             "pesan":"Tetap ceria terus ya kaa, semoga kaka selalu dikelilingi hal baik juga karena kaka orang baik. Semangatt ka nanti nyusun TA nyaa, smeoga diberi kemudahan dna kelancaran, aamiin"# 1
             },
@@ -247,7 +354,6 @@ if menu == "Badan Legislatif":
                 "alamat": "Bandar Lampung",
                 "hobbi": "Ngidupin api baleg di tiktok",
                 "sosmed": "@exvoltas",
-                "jabatan" : "Kepala Komisi",
                 "kesan": "Masyallah, pinter banget abangg, tips and trik mapres bangg",  
                 "pesan":"Semangat kuliah dan TA nya, semoga dimudahkan seluruh urusannya, aamiin!"# 1
             },
@@ -259,7 +365,6 @@ if menu == "Badan Legislatif":
                 "alamat": "Jati Agung",
                 "hobbi": "COD Musang",
                 "sosmed": "@me._kael",
-                "jabatan" : " Staff Komisi",
                 "kesan": "Lucu banget jokes jokes abangnyaa",  
                 "pesan": "Semangat terus kuliah dan organisasinya! Dan selamat atas terpilihnya jadi Kabaleg, abang beneran deserve atas hal tersebut #KERENNN. Nanti jang terlalu dibawa stress ya bangg!"# 1
             },
@@ -271,7 +376,6 @@ if menu == "Badan Legislatif":
                 "alamat": "Kedaton",
                 "hobbi": "Mancing",
                 "sosmed": "@syt.rifa",
-                "jabatan" : " Staff Komisi",
                 "kesan": "Imutt sekali kakanyaaa",  
                 "pesan":"Semangattt kaa kuliahnyaa, kaka imut balegg"# 1
             },
@@ -295,7 +399,6 @@ if menu == "Badan Legislatif":
                 "alamat": "Sukabumi",
                 "hobbi": "Minum Kopi",
                 "sosmed": "@givarooo",
-                "jabatan" : "Kepala Komisi",
                 "kesan": "Bang gip chill banget orangnyaa dan seruu",  
                 "pesan":"Semangat terus bang kuliahnya dan semoga dimudahkan TA nya ya banggg, Aamiin!"# 1
             },
@@ -307,7 +410,6 @@ if menu == "Badan Legislatif":
                 "alamat": "Owen Kost",
                 "hobbi": "Ngoding",
                 "sosmed": "@afghanisnt_",
-                "jabatan" : " Staff Komisi",
                 "kesan": "Public speakingnya bagus, aku dukung kaka jadi the next kadiv komisi 2 #YIPPIE",  
                 "pesan":"Semangat kaa kuliah dan organisasinyaa!!"# 1
             },
@@ -319,7 +421,6 @@ if menu == "Badan Legislatif":
                 "alamat": "Sukarame",
                 "hobbi": "Baca AU",
                 "sosmed": "@haniquratuain_",
-                "jabatan" : " Staff Komisi",
                 "kesan": "Lucu dan gemas bangettt",  
                 "pesan":"Semangat ka menghadapi bang Ridhoo, semoga dilancarkan semua urusannya kaaa!"# 1
             },
@@ -331,7 +432,6 @@ if menu == "Badan Legislatif":
                 "alamat": "Teluk",
                 "hobbi": "Nyanyi, olahraga",
                 "sosmed": "@jeremia_hm",
-                "jabatan" : " Staff Komisi",
                 "kesan": "Keren dan berwibawa",  
                 "pesan":"Semangat bang kuliahnyaaa! Jangan lupa jaga kesehatan!"# 1
             },
@@ -355,7 +455,6 @@ if menu == "Badan Legislatif":
             "alamat": "Kotabaru",
             "hobbi": "Lari",
             "sosmed": "@monica_tjg",
-            "jabatan" : "Kepala Komisi",
             "kesan": "Lucu, gemas, tapi tegas",  
             "pesan":"Semangat kaa kuliah dan organisasinyaaa, dan semoga diberikan kemudahan dan kelancaran dalam mengerjakan TA nya, aamiin!"# 1
             },
@@ -367,7 +466,6 @@ if menu == "Badan Legislatif":
             "alamat": "Pemda Raya",
             "hobbi": "Gym sama Koleksi figure, nafas manual",
             "sosmed": "@nagatseee",
-            "jabatan" : " Staff Komisi",
             "kesan": "Lucu abangnya, jokes jokesnya juga fresh, terus juga merangkul anak anak magang",  
             "pesan":"Semangat abang kuliah dan organisasinyaa!"# 1
             },
@@ -379,7 +477,6 @@ if menu == "Badan Legislatif":
             "alamat": "Pemda",
             "hobbi": "Jajan sama nisa, putri, suci",
             "sosmed": "@sekardnwp",
-            "jabatan" : " Staff Komisi",
             "kesan": "Tegas tapi chill juga",  
             "pesan":"Semangat terus ka kuliah dan organisasinyaa!"# 1
             },
@@ -391,7 +488,6 @@ if menu == "Badan Legislatif":
             "alamat": "Belwis",
             "hobbi": "Nyapa angin",
             "sosmed": "@nshaysk",
-            "jabatan" : " Staff Komisi",
             "kesan": "Lemah lembut sekaliii",  
             "pesan":"Semangat kaa TA dan kuliahnyaa! Semoga diberi kemudahan dan kelancaran sampai selesai nantii, Aamiin!"# 1
             },
@@ -1750,7 +1846,6 @@ elif menu == "Departemen Eksternal":
                 "alamat": "Teluk Betung Selatan",
                 "hobbi": "Nonton Kartun",
                 "sosmed": "@elandraa_",
-                "jabatan": "Kepala Departemen",
                 "kesan": "Karismatik woman, baik tapi tegas",
                 "pesan": "Sukses selalu kaa kedepannya, dan nanti semangat nyusun TA nyaa!!"
             },
@@ -1770,7 +1865,6 @@ elif menu == "Departemen Eksternal":
                 "alamat": "Jalan lapas",
                 "hobbi": "Jalan-jalan",
                 "sosmed": "@bylaash",
-                "jabatan": "Sekretaris",
                 "kesan": "Cantik dan baikk",
                 "pesan": "Semangatt kaa kuliahnyaa dan juga semangatt nyusun TA nya!!"
             },
@@ -1800,7 +1894,6 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "Main",
                 "sosmed": "@khoirul_muttoharoh",
                 "divisi" : "Hubungan Luar",
-                "jabatan": "Kepala Divisi",
                 "kesan": "Imutt",
                 "pesan": "Semangat kaa nanti nyusun TA nyaa, semoga diberikan kemudahan dalam segala hal. Aamiin"
             },
@@ -1813,7 +1906,6 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "Ga ngapa ngapain",
                 "sosmed": "@ahmad.rizky___",
                 "divisi" : "Hubungan Luar",
-                "jabatan": "Staff Ahli",
                 "kesan": "KERENNNN!!! abang beneran jadi role model saya bangett",
                 "pesan": "Jaga kesehatan bangg di negara yang ga sehat ini"
             },
@@ -1826,7 +1918,6 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "Mancing",
                 "sosmed": "@khaindaa_",
                 "divisi" : "Hubungan Luar",
-                "jabatan": "Anggota",
                 "kesan": "Kakanya ramah dan baik",
                 "pesan": "Jaga kesehatan kaa, dan semangatt kuliahnyaa!"
             },
@@ -1839,7 +1930,6 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "Lihat-lihat perumahan",
                 "sosmed": "@bimo_arkana",
                 "divisi" : "Hubungan Luar",
-                "jabatan": "Anggota",
                 "kesan": "Keren dan ramah",
                 "pesan": "Semangat terus bang kuliahnyaa, jaga kesehatan juga!!"
             },
@@ -1865,7 +1955,6 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "Nonton Film",
                 "sosmed": "@asemeilani",
                 "divisi" : "Hubungan Luar",
-                "jabatan": "Anggota",
                 "kesan": "Baik dan lucuu kakanyaa",
                 "pesan": "Sukses selalu kak untuk ke depannya!!"
             },
@@ -1878,7 +1967,6 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "Berlaku humoris dan manis",
                 "sosmed": "@bimayasa_",
                 "divisi" : "Hubungan Luar",
-                "jabatan": "Anggota",
                 "kesan": "Kerennn, baik dan ramah",
                 "pesan": "Semangatt terus bangg kuliahnya walau makin tambah semester makin nambah juga stressnya. Jaga kesehatan jugaa!"
             },
@@ -1891,7 +1979,6 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "Mancing",
                 "sosmed": "@khaindaa_",
                 "divisi" : "Hubungan Luar",
-                "jabatan": "Anggota",
                 "kesan": "Baik dan lucuu",
                 "pesan": "Kakk jangan ikut marah-marah kaa, kaka versi medis beneran terbaik banget"
             },
@@ -1904,7 +1991,6 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "ngefollow up chat",
                 "sosmed": "@erlsriska",
                 "divisi" : "Hubungan Luar",
-                "jabatan": "Anggota",
                 "kesan": "Gemass",
                 "pesan": "Jaga kesehatan ya kaa, dan semangat juga kuliahnya!!"
             },
@@ -1914,10 +2000,9 @@ elif menu == "Departemen Eksternal":
                 "umur": "20",
                 "asal": "Kerangka Bawang Sebelah Barat",
                 "alamat": "Jati Agung",
-                "hobbi": "Tanya bang Henry",
+                "hobbi": "Main Futsal",
                 "sosmed": "@yollanda_agustina16",
                 "divisi" : "Hubungan Luar",
-                "jabatan": "Anggota",
                 "kesan": "Semangatt terus ka yollandaaaa, kak yollanda keren hebat and kuattt",
                 "pesan": "Jaga kesehatan ya kaa, apalagi kaka ambil banyak kepanitian. Jangan sampe drop kaa"
             },
@@ -1948,7 +2033,6 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "Memancing keributan",
                 "sosmed": "@adityatfq",
                 "divisi" : "Pengabdian Masyarakat",
-                "jabatan": "Kepala Divisi",
                 "kesan": "Baik, ramah, dan welcome bangett",
                 "pesan": "Semangatt bang ngerjain TA nya, semoga selalu dipermudah langkah selanjutnyaa, Aamiin!"
             },
@@ -1961,7 +2045,6 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "Baca wattpad",
                 "sosmed": "@fatthyaa_",
                 "divisi" : "Pengabdian Masyarakat",
-                "jabatan": "Staff Ahli",
                 "kesan": "Keren banget kakanyaa",
                 "pesan": "Jaga kesehatan ya kaa, dan capai imppian kaka satu persatu!"
             },
@@ -1974,7 +2057,6 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "Jadi orang baik",
                 "sosmed": "-",
                 "divisi" : "Pengabdian Masyarakat",
-                "jabatan": "Staff Ahli",
                 "kesan": "Manis dan imutt",
                 "pesan": "Sukses selalu kaa untuk kedepannya, raih goals kaka satu persatu!"
             },
@@ -1987,7 +2069,6 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "Tidur",
                 "sosmed": "@kshigf",
                 "divisi" : "Pengabdian Masyarakat",
-                "jabatan": "Anggota",
                 "kesan": "Cantik dan ramah",
                 "pesan": "Jangan lupa untuk berbahagia ya kaa!"
             },
@@ -2000,7 +2081,6 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "Ngasih makan ikan cupang",
                 "sosmed": "@d4niel_fdlh",
                 "divisi" : "Pengabdian Masyarakat",
-                "jabatan": "Anggota",
                 "kesan": "Keren dan baik",
                 "pesan": "Semangat kuliahnya dan jaga kesehatannya bangg!"
             },
@@ -2009,11 +2089,10 @@ elif menu == "Departemen Eksternal":
                 "nim": "124450021",
                 "umur": "19",
                 "asal": "Swiss",
-                "alamat": "Main Game",
+                "alamat": "Way Halim",
                 "hobbi": "Ngesen kanan",
                 "sosmed": "@fvnnn05",
                 "divisi" : "Pengabdian Masyarakat",
-                "jabatan": "Anggota",
                 "kesan": "Mirip influencer si itu siapa namanya",
                 "pesan": "Kerenn banggg, semangatt menjalani perkuliahan dan kehidupan #salambinjai"
             },
@@ -2026,7 +2105,6 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "nyari hobi",
                 "sosmed": "@zydddddd__",
                 "divisi" : "Pengabdian Masyarakat",
-                "jabatan": "Anggota",
                 "kesan": "Abang keren kalau ga marah-marah",
                 "pesan": "Panjang umur sehat selalu bang, tetep semangat kuliah walau setiap semesternya bikin asam lambung naik"
             },
@@ -2036,10 +2114,9 @@ elif menu == "Departemen Eksternal":
                 "umur": "Masih muda lah",
                 "asal": "Rahim Ibu",
                 "alamat": "Pasar lantai 3.5",
-                "hobbi": "Tanyain sama yuder (beneran ditanya ya)",
+                "hobbi": "Membantu Yudia",
                 "sosmed": "@jaldii._",
                 "divisi" : "Pengabdian Masyarakat",
-                "jabatan": "Anggota",
                 "kesan": "KERENNN, jujur inspiring bangett",
                 "pesan": "Semangattt terus bang jaldi gapai impian satu persatu!!"
             },
@@ -2052,7 +2129,6 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "nonton thinkerbell",
                 "sosmed": "@snova.19",
                 "divisi" : "Pengabdian Masyarakat",
-                "jabatan": "Anggota",
                 "kesan": "Kakanya imut dan ramah",
                 "pesan": "Semangatttttt kaa kuliahnyaaa! GO GOO!!"
             },
@@ -2065,7 +2141,6 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "Jalan-jalan",
                 "sosmed": "@selmasiti_aisyah",
                 "divisi" : "Pengabdian Masyarakat",
-                "jabatan": "Anggota",
                 "kesan": "Ramah dan cantikk",
                 "pesan": "Vibes kakanya ceria dan positif bangett"
             },
@@ -2093,7 +2168,6 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Way Huwi",
                 "hobbi": "Musingin TA",
                 "sosmed": "@naylasalsabilaa._",
-                "jabatan": "Kepala Departemen",
                 "kesan": "KAKA KERENN!!",
                 "pesan": "Jujur takjub sih aku untuk orang orang di bidang media kreatif, walaupun dikejar dl desain tapi masih tangguh sekali"
             },
@@ -2113,8 +2187,6 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Way Huwi",
                 "hobbi": "Berenang",
                 "sosmed": "@donnamaya.p",
-                "divisi": "Sekdep",
-                "jabatan": "Sekdep",
                 "kesan": "KEREN JUGA JUJURRR",
                 "pesan": "Tetap semangat terus ya kaaa, semoga apapun wishlist kaka bisa tercapai satu persatuu"
             },
@@ -2138,7 +2210,6 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Tong setan",
                 "sosmed": "noerruuu",
                 "divisi": "Dokumentasi",
-                "jabatan": "Kepala Divisi",
                 "kesan": "TAKJUB",
                 "pesan": "Semangatt terus bangg kuliah dan organisasinyaa!"
             },
@@ -2151,7 +2222,6 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Nonton F1",
                 "sosmed": "@anshtsyaaql",
                 "divisi": "Dokumentasi",
-                "jabatan": "Anggota",
                 "kesan": "Gemes bangettt",
                 "pesan": "Tetap semangat ya kaa walau beban tugas kaka sometimes cukup beratt!"
             },
@@ -2164,7 +2234,6 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Mancing",
                 "sosmed": "felisyanbl__",
                 "divisi": "Dokumentasi",
-                "jabatan": "Anggota",
                 "kesan": "Kerennn",
                 "pesan": "Jaga kesehatan selalu kakaa, jangan lupa bahagia jugaa!!"
             },
@@ -2177,7 +2246,6 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Bully Felisya Nabila Nugroho",
                 "sosmed": "muh_razan_",
                 "divisi": "Dokumentasi",
-                "jabatan": "Anggota",
                 "kesan": "Kerennnnn",
                 "pesan": "Semangattt terus banggg!! sempetin waktu untuk abang istirahat sejenak dari organisasi dan perkuliahan yaa"
             },
@@ -2203,7 +2271,6 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Nongkrong depan ruang prodi",
                 "sosmed": "saniayyllstr",
                 "divisi": "Media dan Konten Spesialis",
-                "jabatan": "Kepala Divisi",
                 "kesan": "Ramah sekaliii",
                 "pesan": "Semangattt ka kuliah dan organisasinyaa, sempatin waktu untuk self reward yaa"
             },
@@ -2216,7 +2283,6 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Mancing",
                 "sosmed": "@aallishaa.a",
                 "divisi": "Media dan Konten Spesialis",
-                "jabatan": "Anggota",
                 "kesan": "My kaka cantik, ramah, and imutt",
                 "pesan": "Terus bahagia ya ka Allishaa!"
             },
@@ -2229,7 +2295,6 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Jalan-jalan dengan sepatu roda",
                 "sosmed": "alya.rmdhnti",
                 "divisi": "Media dan Konten Speasialis",
-                "jabatan": "Anggota",
                 "kesan": "Gemass",
                 "pesan": "Kakanya ramah bangett, semoga kaka selalu dikelilingi oleh hal hal baik yaa!"
             },
@@ -2242,7 +2307,6 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Belajar",
                 "sosmed": "bungaclrssf",
                 "divisi": "Media dan Konten Spesialis",
-                "jabatan": "Anggota",
                 "kesan": "Ramah bangettt",
                 "pesan": "Semangatt ka kuliah dan organisasinyaa, jaga pola makan dan jangan stress-stress yaa"
             },
@@ -2255,7 +2319,6 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Ngitungin beras di karung",
                 "sosmed": "difanyhsa_",
                 "divisi": "Media dan Konten Spesialis",
-                "jabatan": "Anggota",
                 "kesan": "Lucuu",
                 "pesan": "Semangattt teruss ka kuliah dan organisasinyaa, sempatkan waktu untuk rehat sejenak yaa"
             },
@@ -2268,7 +2331,6 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Berenang",
                 "sosmed": "@nzlhauly_",
                 "divisi": "Media dan Konten Spesialis",
-                "jabatan": "Anggota",
                 "kesan": "Gemass",
                 "pesan": "Semangat selalu kaa kuliah dan organisasinyaa"
             }
@@ -2294,7 +2356,6 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Menulis, membaca",
                 "sosmed": "n1tg._",
                 "divisi": "Media dan Konten Spesialis",
-                "jabatan": "Anggota",
                 "kesan": "Kakanya baik dan ramah",
                 "pesan": "Semangatt kuliah dan organisasinya kaa, jangan lupa berbahagiaa!"
             },
@@ -2307,7 +2368,6 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Nyuluh manuk",
                 "sosmed": "@daffascript_",
                 "divisi": "Media dan Konten Spesialis",
-                "jabatan": "Anggota",
                 "kesan": "Baik banget abangnya",
                 "pesan": "Semoga abang selalu dilingkupi oleh kebaikan"
             },
@@ -2320,7 +2380,6 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Scroll fesnuk",
                 "sosmed": "edsel_0712",
                 "divisi": "Media dan Konten Spesialis",
-                "jabatan": "Anggota",
                 "kesan": "Kerenn",
                 "pesan": "Jangan lupa jaga kesehatann dan jangan lupa berbahagia"
             },
@@ -2333,7 +2392,6 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Mencintai Andrew Garfield",
                 "sosmed": "luciarachel_",
                 "divisi": "Media dan Konten Spesialis",
-                "jabatan": "Anggota",
                 "kesan": "Kakanya asik",
                 "pesan": "Sehat selalu kaka"
             },
@@ -2346,7 +2404,6 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Melukis, menulis",
                 "sosmed": "@_shaazzh",
                 "divisi": "Media dan Konten Spesialis",
-                "jabatan": "Anggota",
                 "kesan": "Kakanya baik dan ramah",
                 "pesan": "Semangatt terus ka, semoga selalu berbahagiaa"
             },
@@ -2359,7 +2416,6 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Bobo",
                 "sosmed": "Xifasky",
                 "divisi": "Media dan Konten Spesialis",
-                "jabatan": "Anggota",
                 "kesan": "Cantik dan ramah sekalii",
                 "pesan": "Semangattt kaa untuk kuliah dan organisasinyaa!!"
             }
