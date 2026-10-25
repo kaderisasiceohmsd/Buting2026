@@ -89,7 +89,7 @@ elif menu == "Senator":
     display_images_with_data(gambar_urls, data_list, key="senator")
 elif menu == "Departemen PSDA":
     gambar_urls = [
-    "https://drive.google.com/uc?export=view&id=1H27h99POmiWUCAlE6QYKHBAIaEVZ2Qc9,
+    "https://drive.google.com/uc?export=view&id=1H27h99POmiWUCAlE6QYKHBAIaEVZ2Qc9",
     "https://drive.google.com/uc?export=view&id=17I9-4GEZKxZXLs6It2JVl-FqK_v-B5Od",
     "https://drive.google.com/uc?export=view&id=1pHdJR6kkFsjfaLlzWmxGQ0DhmkIlfkJE",
     "https://drive.google.com/uc?export=view&id=1MTynR9E6PxXJ3Z2f8ivGydfpYzIwhIKl",
@@ -106,7 +106,6 @@ elif menu == "Departemen PSDA":
     "https://drive.google.com/uc?export=view&id=1qh4sVGjSNo5uMH-7nkFLSdLEJwuZdakW",
     "https://drive.google.com/uc?export=view&id=14PYyybM4L5rDx3RgZ_yeN-6lKIJYdQXR",
     "https://drive.google.com/uc?export=view&id=1ZxWQGha7gz0gRbzzFP6zkgY0XMOv2Be2"
-
     ]
     data_list = [
         {"nama": "Arienta Khusnul Ananda", "jabatan": "Kepala Departemen PSDA", "nim": "122450033", "umur": "20", "asal": "Bogor", "alamat": "Korpri", "hobbi": "Leadership", "sosmed": "@psda", "kesan": "Keren", "pesan": "Semangat PSDA!"},
@@ -153,7 +152,6 @@ elif menu == "Departemen MIKFES":
     "https://drive.google.com/uc?export=view&id=14ph5VQqHmV10k_8SSiYkEyeoA_sOYG9y",
     "https://drive.google.com/uc?export=view&id=",
     "https://drive.google.com/uc?export=view&id=1SPdfip78XqFLjoIjdrBooyD0pwB4x7lZ"
-
     ]
     data_list = [
         {"nama": "Fabio Banyu Cyto", "jabatan": "Kepala Departemen Mikfes", "nim": "12340104", "umur": "21", "asal": "Bandar Lampung", "alamat": "Kedaton", "hobbi": "Tidur", "sosmed": "@biyokcb", "kesan": "Gayanya santai dan tidak pernah ribet.", "pesan": "Tetap jadi kakak yang asyik, Kak."},
