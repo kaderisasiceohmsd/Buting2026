@@ -1502,9 +1502,9 @@ if menu == "Departemen Minbak":
                 "nama": "Kevin Antonio Junior",
                 "nim": "123450109",
                 "umur": "21 tahun",
-                "asal": "Bandar Lampung",
+                "asal": "Sulawesi Tengah",
                 "alamat": "Panjang, Bandar Lampung",
-                "hobbi": "Balap",
+                "hobbi": "Mancing",
                 "sosmed": "@kevinaj__",
                 "kesan": "Bang Kevin tuh asik dan baik banget, apalagi kalau pas basket. Kalau di luar basket aku malah agak segan nyapa Bang Kevin , beda banget vibes-nya",
                 "pesan": "Semoga selalu semangat buataktivitas dan kuliahnya Bang!!!"
@@ -1513,22 +1513,22 @@ if menu == "Departemen Minbak":
                 "nama": "Gusti Putu Ferazka Dhiyamika",
                 "nim": "123450046",
                 "umur": "21 tahun",
-                "asal": "Lampung Utara",
-                "alamat": "Way Halim",
-                "hobbi": "Baca",
+                "asal": "Bekasi",
+                "alamat": "Way Dadi",
+                "hobbi": "Mandaki",
                 "sosmed": "@ferazkaa",
                 "kesan": "Kak Gusti cantik banget, terus vibes-nya positif. Imut dan lucu juga, jadi kalau ketemu tuh bawaannya adem",
                 "pesan": "Semoga vibes positifnya selalu dibawa ke mana pun Kak Gusti pergi. Semoga banyak hal baik yang datang  !!!"
             },
             {
-                "nama": "Ari Aristo Muthahari Parisi",
+                "nama": "Ali Aristo Muthahari Parisi",
                 "nim": "123450088",
                 "umur": "21 tahun",
                 "asal": "Lampung Timur",
                 "alamat": "Gang Sakum, Belwis",
                 "hobbi": "Nonton F1",
                 "sosmed": "@ali_parisi3",
-                "kesan": "Bang Ari tuh baik dan asik banget. Orangnya juga enak diajak ngobrol.",
+                "kesan": "Bang Ali tuh baik dan asik banget. Orangnya juga enak diajak ngobrol.",
                 "pesan": "Semoga semua urusan abang  dilancarkan terus. Semangat kuliahnya !!"
             },
             {
@@ -1537,7 +1537,7 @@ if menu == "Departemen Minbak":
                 "umur": "21 tahun",
                 "asal": "Lampung Tengah",
                 "alamat": "Belwis",
-                "hobbi": "Nganterin Datasena ke gedung F",
+                "hobbi": "Badminton",
                 "sosmed": "@mridwaan_22",
                 "kesan": "Bang Ridwan asik pol dan seru banget. Apalagi kalau ngajarin basket, baik banget dan sabar juga ngajarnya",
                 "pesan": "Semoga makin jago dan menyala terus, sukses di semua urusanny!!!"
@@ -1548,7 +1548,7 @@ if menu == "Departemen Minbak":
                 "umur": "20 tahun",
                 "asal": "Lampung Barat",
                 "alamat": "Airan",
-                "hobbi": "Belajar",
+                "hobbi": "Belajar + mengitung uang",
                 "sosmed": "@aayuandrianni_",
                 "kesan": "Kak Ayu tuh imut dan lucu banget. Orangnya juga keliatan asik",
                 "pesan": "Semoga selalu happy dan dikelilingi orang-orang baik. Semangat terus ya Kak!!!"
@@ -1559,7 +1559,7 @@ if menu == "Departemen Minbak":
                 "umur": "21 tahun",
                 "asal": "Bekasi",
                 "alamat": "Way Kandis",
-                "hobbi": "Nemenin Bryan live TikTok",
+                "hobbi": "joging",
                 "sosmed": "@dafaelpriza_",
                 "kesan": "Bang Dafa baik dan seru  orangnya",
                 "pesan": "semangat terus kuliahnya kakak dan sukse selalu !!!"
@@ -1570,7 +1570,7 @@ if menu == "Departemen Minbak":
                 "umur": "19 tahun",
                 "asal": "Lampung Barat",
                 "alamat": "Pemda",
-                "hobbi": "Lihat bulan",
+                "hobbi": "mancing",
                 "sosmed": "@ju.juwitaaa_",
                 "kesan": "Kak Juwita tuh partner basket yang asik dan seru banget. Kalau basket bareng jadi lebih rame dan seruuu",
                 "pesan": "Semoga semua ukegiatan dilancarkan terus. Semangat kuliahnya dan sukses terus kak !!!"
@@ -1581,7 +1581,7 @@ if menu == "Departemen Minbak":
                 "umur": "19 tahun",
                 "asal": "Lampung Tengah",
                 "alamat": "JI Pulau Damar",
-                "hobbi": "Taptap layar kalo Bryan live",
+                "hobbi": "memantau dl tugas",
                 "sosmed": "@afdall.03",
                 "kesan": "Bang Afdal tuh asik dan seru banget orangnya. Diajak ngobrol juga enak",
                 "pesan": "Semoga selalu ketemu banyak hal seru ke depannya. Semangat terus kuliahnya !!!"
@@ -1603,7 +1603,7 @@ if menu == "Departemen Minbak":
                 "umur": "18 tahun",
                 "asal": "Sumatera Selatan",
                 "alamat": "Kota Baru",
-                "hobbi": "Ngitungin kelopak bunga di kebun",
+                "hobbi": "Main rubik",
                 "sosmed": "@andra.lhm",
                 "kesan": "Bang Andra tuh coach basket yang jago dan  sabar banget ngajarin kita. Sumpah baik banget juga, apalagi waktu nampung Cosval di kosannya. Kalau dimintain tolong juga selalu ditolongin , baik banget jujur",
                 "pesan": "Makasih banyak ya Bang udah sabar ngajarin dan banyak bantuin. Semoga kebaikan Bang Andra dibalas dengan banyak hal baik juga!!!"
@@ -1625,7 +1625,7 @@ if menu == "Departemen Minbak":
                 "umur": "17 tahun",
                 "asal": "Bekasi",
                 "alamat": "Korpri",
-                "hobbi": "Ngegift live Bryan",
+                "hobbi": "Nanem sawit",
                 "sosmed": "@meardhy_ghiyats",
                 "kesan": "Bang Ghiyats tuh baik dan asik banget orangnya.",
                 "pesan": "Semoga selalu dikelilingi orang-orang baik dan makin banyak hal seru yang datang. Sukses terus Bang!"
@@ -1700,7 +1700,7 @@ if menu == "Departemen MIKFES":
                 "umur": "21 tahun",
                 "asal": "Bandar Lampung",
                 "alamat": "Kedaton",
-                "hobbi": "Tidur",
+                "hobbi": "Gangguin bang keya",
                 "sosmed": "@biyokcb",
                 "kesan": "Bang Fabio tuh pinter banget sih, gacor, kritis. Pokoknya best lah abang satu ini",
                 "pesan": "Gas terus Bang! Semoga makin gacor, makin keren, dan semua yang lagi dikejar bisa dapet. !!!"
@@ -1711,7 +1711,7 @@ if menu == "Departemen MIKFES":
                 "umur": "21 tahun",
                 "asal": "Lampung",
                 "alamat": "Airan Raya",
-                "hobbi": "Membaca",
+                "hobbi": "Nonton film",
                 "sosmed": "@tvnty_",
                 "kesan": "Kak Tanty tuh asik banget orangnyaa. Pintar, terus kalau diajak ngobrol tuh enak banget.",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1755,7 +1755,7 @@ if menu == "Departemen MIKFES":
                 "umur": "20 tahun",
                 "asal": "Batam",
                 "alamat": "Way Kandis",
-                "hobbi": "Tenis meja",
+                "hobbi": "Gitar",
                 "sosmed": "@manuelfdk_",
                 "kesan": "Bang Manuel tuh keren, baik, dan seru banget orangnya.a",
                 "pesan": "Semoga makin banyak hal seru yang Abang temuin ke depannya.!!"
@@ -1787,7 +1787,7 @@ if menu == "Departemen MIKFES":
                 "nim": "124450078",
                 "umur": "19 tahun",
                 "asal": "Kepulauan Riau",
-                "alamat": "Teluk Betung",
+                "alamat": "Jati mulyo",
                 "hobbi": "Nonton KHW",
                 "sosmed": "@vunnycaa",
                 "kesan": "Kak Vannisa baik dan asik banget orangnyaa",
@@ -1810,7 +1810,7 @@ if menu == "Departemen MIKFES":
                 "umur": "21 tahun",
                 "asal": "Sumatera Utara",
                 "alamat": "Pemda",
-                "hobbi": "Rebahan",
+                "hobbi": "Sibuk",
                 "sosmed": "@_els.a",
                 "kesan": "Kak Elsa tuh the best banget sih. Pintar, baik, asik, terus kegiatannya super duper sibuk. tapi semangatnya tetap menyala",
                 "pesan": "Semoga semua yang dikerjain selalu lancar dan hasilnya juga worth it, jangan lupa istirahat ya kak!!"
@@ -1821,7 +1821,7 @@ if menu == "Departemen MIKFES":
                 "umur": "20 tahun",
                 "asal": "Pringsewu",
                 "alamat": "Airan",
-                "hobbi": "Mancing",
+                "hobbi": "Main game",
                 "sosmed": "@fadyaizzatul_",
                 "kesan": "Kakaknya tuh asik dan baik banget",
                 "pesan": "Semoga makin banyak hal baik yang nyamperin Kak!!!"
@@ -1832,7 +1832,7 @@ if menu == "Departemen MIKFES":
                 "umur": "19 tahun",
                 "asal": "Sumatera Utara",
                 "alamat": "Way Huwi",
-                "hobbi": "Dengerin musik",
+                "hobbi": "Lari",
                 "sosmed": "@_loviaa",
                 "kesan": "Kak Lovi tuh berbakat banget, apalagi public speaking-nya. Udah jago, asik pula, dan yang paling penting nggak sombong sama sekali",
                 "pesan": "semangat terus  kakak, semoga kedepanya makin gacor dan bisa bawa Kak Lovi ke panggung-panggung yang lebih besar. !!!"
@@ -1909,7 +1909,7 @@ if menu == "Departemen MIKFES":
                 "umur": "19 tahun",
                 "asal": "Sumatera Selatan",
                 "alamat": "Sukarame",
-                "hobbi": "Scroll",
+                "hobbi": "memasak",
                 "sosmed": "@melva_fbrt",
                 "kesan": "Kak Melva tuh imut, lucu, dan baik banget.",
                 "pesan": "emoga selalu happy dan banyak hal baik yang mampir!"
@@ -1931,7 +1931,7 @@ if menu == "Departemen MIKFES":
                 "umur": "28 tahun",
                 "asal": "Kota bumi",
                 "alamat": "Rajabasa",
-                "hobbi": "Lari dari kenyataan",
+                "hobbi": "Ngerecokin nuel",
                 "sosmed": "@henryferdianto",
                 "kesan": "Bang Henry ini mah all role banget wkwk. Udah baik, pinter, jago, keren pula. Pokoknya paket lengkap.",
                 "pesan": "Semoga semua skill dan kemampuan Bang Henry makin kepake di tempat-tempat keren. Pokoknya sukses terus, jangan redup!!"
@@ -2010,7 +2010,7 @@ if menu == "Departemen PSDA":
                 "nama": "Afriza Azmi",
                 "nim": "124450110",
                 "umur": "20",
-                "asal":"Malang",
+                "asal": "Malang",
                 "alamat": "Lapangan",
                 "hobbi": "Teriak",
                 "sosmed": "@friezazmi",
