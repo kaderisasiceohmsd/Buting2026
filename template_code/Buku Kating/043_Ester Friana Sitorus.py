@@ -1957,7 +1957,7 @@ if menu == "Departemen PSDA":
             "https://drive.google.com/uc?export=view&id=1zcDTlgt0iV3RFtSn767kBS5M5Jg-XN5I",
             "https://drive.google.com/uc?export=view&id=1q5tYRQIEPoH0u-lbPJsOVTwUjF1VD9xA",
             "https://drive.google.com/uc?export=view&id=1Bj1fcVYQ5xihH_KmCPV-ehes_UXsfHLS",
-            "https://drive.google.com/uc?export=view&id=1Bj1fcVYQ5xihH_KmCPV-ehes_UXsfHLS",
+            "https://drive.google.com/uc?export=view&id=1BaOrYL4TWr3L0vMW3BNQRV0odP6wqkn6",
             "https://drive.google.com/uc?export=view&id=1iV-JVSrKuKARyU_moB3_JBEz4q96hccu",
             "https://drive.google.com/uc?export=view&id=10E0Q98DNWrjQZcaThzhaibOVpadGytta",
         ]
