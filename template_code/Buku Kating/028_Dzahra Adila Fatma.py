@@ -150,7 +150,7 @@ elif menu == "Departemen MIKFES":
     "https://drive.google.com/uc?export=view&id=1Vrvswo0jELEPwnrYNCEfE_VZLEkoQkSL",
     "https://drive.google.com/uc?export=view&id=1pUZFEO50xiSuAkpGqO_llU1tw1wfePC6",
     "https://drive.google.com/uc?export=view&id=14ph5VQqHmV10k_8SSiYkEyeoA_sOYG9y",
-    "https://drive.google.com/uc?export=view&id=",
+    "https://drive.google.com/uc?export=view&id=1zV0-nE0dqq2SKmX1FEzFa6u-vjCjmJFl",
     "https://drive.google.com/uc?export=view&id=1SPdfip78XqFLjoIjdrBooyD0pwB4x7lZ"
     ]
     data_list = [
@@ -348,3 +348,40 @@ elif menu == "Departemen Medkraf":
         {"nama": "Anggota Medkraf", "jabatan": "Staf Medkraf", "nim": "122450088", "umur": "20", "asal": "Yogyakarta", "alamat": "Airan", "hobbi": "Editing & Foto", "sosmed": "@medkraf", "kesan": "Kreatif banget", "pesan": "Karya tanpa batas!"},
     ]
     display_images_with_data(gambar_urls, data_list, key="medkraf")
+elif menu == "Departemen MINBAK":
+    gambar_urls = [
+        "https://drive.google.com/uc?export=view&id=1QKjEiAHI-7R4G6nARAwtpwznSDRBGeEf",
+        "https://drive.google.com/uc?export=view&id=1IewuyR9D75wCBJQzBuQUPeDnqVRDsg7N",
+        "https://drive.google.com/uc?export=view&id=1F3RoEv4bH1Y9NZM0UF4UTGj71NXVXuXR",
+        "https://drive.google.com/uc?export=view&id=11rdKCjab6sMMfeOCAXMJ8qsv1doiDNLV",
+        "https://drive.google.com/uc?export=view&id=14hnFO2ipm2R2-bAqCh60Zl7bWsKd47Kv",
+        "https://drive.google.com/uc?export=view&id=1kry0RNispEYkrAEjclO7AI9q5YgHjNvW",
+        "https://drive.google.com/uc?export=view&id=16Vb0PPgm4leFhs-UHi_y3d2HbJ1umATO",
+        "https://drive.google.com/uc?export=view&id=1wcpGjwXBm3vAhMm-2MaFHGwRDZDGTyON",
+        "https://drive.google.com/uc?export=view&id=1zSfVTWOy6ETHmkJyuIYBzLdf00_Jbcos",
+        "https://drive.google.com/uc?export=view&id=1fzsbNQEaVGtVt2W-NjzPV98YE_qoeMWC",
+        "https://drive.google.com/uc?export=view&id=1eQ1bdtP-9Gn5GOw42Z-CRHLHHCIqzqp9",
+        "https://drive.google.com/uc?export=view&id=1jaKvv_kWCJHeO9sDrIzgJpK_ZStMuUWA",
+        "https://drive.google.com/uc?export=view&id=1An7ve2IwlPkpSlNLXqzJNrxTJB3JOh2j",
+        "https://drive.google.com/uc?export=view&id=1nKBXMxPmi-JkKAw-vFoyp2kCLv-wlHsY",
+        "https://drive.google.com/uc?export=view&id=11B2Jk2UTmfzG6u9qVbPYMsmW2psQ7c2D"
+    ]
+    data_list = [
+        {"nama": "Kevin Antonio Junior", "jabatan": "Kepala Departemen Minbak", "nim": "123450109", "umur": "21", "asal": "Bandar Lampung", "alamat": "Panjang, Bandar Lampung", "hobbi": "Balap", "sosmed": "@kevinaj__", "kesan": "Sosoknya santai tapi tetap bisa diandalkan.", "pesan": "Tetap jadi kakak yang asyik diajak ngobrol, Kak."},
+        {"nama": "Gusti Putu Ferazka Dhiyamika", "jabatan": "Sekretaris Departemen Minbak", "nim": "123450046", "umur": "21", "asal": "Lampung Utara", "alamat": "Way Halim", "hobbi": "Baca", "sosmed": "@ferazkaa", "kesan": "Tutur katanya tenang dan enak didengar.", "pesan": "Terus bagikan wawasan dari bacaanmu ke kami, Kak."},
+        {"nama": "Ari Aristo Muthahari Parisi", "jabatan": "Kepala Divisi Manajemen Aktivitas dan Kompetisi", "nim": "123450088", "umur": "21", "asal": "Lampung Timur", "alamat": "Gang Sakum, Belwis", "hobbi": "Nonton F1", "sosmed": "@ali_parisi3", "kesan": "Orangnya kalem dan tidak banyak menuntut.", "pesan": "Tetap jadi pribadi yang rendah hati, Kak."},
+        {"nama": "Ayu Andriani Parlina Wati", "jabatan": "Staf Ahli Manajemen Aktivitas dan Kompetisi", "nim": "124450058", "umur": "20", "asal": "Lampung Barat", "alamat": "Airan", "hobbi": "Belajar", "sosmed": "@aayuandrianni_", "kesan": "Rajin dan selalu bersungguh-sungguh dalam bekerja.", "pesan": "Semoga semangat belajarnya menular ke kami, Kak."},
+        {"nama": "Dafa Elpriza", "jabatan": "Staf Manajemen Aktivitas dan Kompetisi", "nim": "124450131", "umur": "21", "asal": "Bekasi", "alamat": "Way Kandis", "hobbi": "Nemenin Bryan live TikTok", "sosmed": "@dafaelpriza_", "kesan": "Setia kawan dan gampang bikin suasana ramai.", "pesan": "Jangan berubah, tetap jadi teman yang seru, Kak."},
+        {"nama": "Juwita Sari", "jabatan": "Staf Manajemen Aktivitas dan Kompetisi", "nim": "124450066", "umur": "19", "asal": "Lampung Barat", "alamat": "Pemda", "hobbi": "Lihat bulan", "sosmed": "@ju.juwitaaa_", "kesan": "Sikapnya lembut dan menenangkan.", "pesan": "Tetap jadi tempat bercerita yang nyaman, Kak."},
+        {"nama": "Muhammad Afdal Lutfi", "jabatan": "Staf Manajemen Aktivitas dan Kompetisi", "nim": "124450047", "umur": "19", "asal": "Lampung Tengah", "alamat": "Jl Pulau Damar", "hobbi": "Taptap layar kalo Bryan live", "sosmed": "@afdall.03", "kesan": "Ceria dan selalu kompak dengan teman-temannya.", "pesan": "Terus jaga kekompakan itu, Kak."},
+        {"nama": "Salsabila Nazwa Putri", "jabatan": "Staf Manajemen Aktivitas dan Kompetisi", "nim": "124450002", "umur": "20", "asal": "Metro", "alamat": "Korpri", "hobbi": "Nongkrong di Kopken", "sosmed": "@slbnzw_", "kesan": "Mudah akrab dan enak diajak berdiskusi.", "pesan": "Tetap jadi kakak yang terbuka ke adik tingkat, ya, Kak."},
+        {"nama": "Muhammad Ridwan", "jabatan": "Kepala Divisi Manajemen Minat dan Bakat", "nim": "123450091", "umur": "21", "asal": "Lampung Tengah", "alamat": "Belwis", "hobbi": "Nganterin Datasena ke gedung F", "sosmed": "@mridwaan_22", "kesan": "Bertanggung jawab dan siap membantu kapan saja.", "pesan": "Jangan lelah jadi tumpuan kami, Kak."},
+        {"nama": "Andra Ilham Bintang", "jabatan": "Staf Manajemen Minat dan Bakat", "nim": "124450060", "umur": "18", "asal": "Sumatera Selatan", "alamat": "Kota Baru", "hobbi": "Ngitungin kelopak bunga di kebun", "sosmed": "@andra.lhm", "kesan": "Teliti dan sabar dalam mengerjakan sesuatu.", "pesan": "Tetap semangat dan jangan ragu bertanya ke kami, Kak."},
+        {"nama": "Bryan Paskah Telaumbanua", "jabatan": "Staf Manajemen Minat dan Bakat", "nim": "124450003", "umur": "22", "asal": "Nias", "alamat": "Belwis", "hobbi": "Live TikTok", "sosmed": "@bryantel_", "kesan": "Percaya dirinya tinggi dan bikin suasana hidup.", "pesan": "Tetap jadi pribadi yang menghibur, Kak."},
+        {"nama": "Ghiyats Thabularasa Meardhy", "jabatan": "Staf Manajemen Minat dan Bakat", "nim": "124450067", "umur": "17", "asal": "Bekasi", "alamat": "Korpri", "hobbi": "Ngegift live Bryan", "sosmed": "@meardhy_ghiyats", "kesan": "Royal ke teman dan murah hati.", "pesan": "Semoga kebaikanmu selalu dibalas, Kak."},
+        {"nama": "Indah Julia Mawar Pratiwi", "jabatan": "Staf Manajemen Minat dan Bakat", "nim": "124450055", "umur": "20", "asal": "Pringsewu", "alamat": "Airan", "hobbi": "Bengong", "sosmed": "@indahjuliaa", "kesan": "Pembawaannya adem dan tidak neko-neko.", "pesan": "Tetap jadi pribadi yang apa adanya, Kak."},
+        {"nama": "Jacinda Kesya Alvara", "jabatan": "Staf Manajemen Minat dan Bakat", "nim": "124450023", "umur": "18", "asal": "Kalimantan Barat", "alamat": "Korpri", "hobbi": "Nyapu depan gacoan", "sosmed": "@cacalvra", "kesan": "Ceria dan punya selera humor yang unik.", "pesan": "Terus tebar keceriaan ke sekitar, Kak."},
+        {"nama": "Muhammad Rafka Fatih Al Ghathfaan", "jabatan": "Staf Manajemen Minat dan Bakat", "nim": "124450089", "umur": "20", "asal": "Padang", "alamat": "Kota Baru", "hobbi": "Bangun pagi", "sosmed": "@muhammdrafka_", "kesan": "Disiplin dan selalu memulai hari lebih awal.", "pesan": "Ajari kami cara menjaga konsistensi, Kak."}
+    ]
+
+    display_images_with_data(gambar_urls, data_list, key="minbak")
