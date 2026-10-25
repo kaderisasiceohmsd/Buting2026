@@ -261,8 +261,8 @@ if menu == "Senator":
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1c64PsaYVJM4OTYebgsX_oYX2bH_OCChl",
             "https://drive.google.com/uc?export=view&id=1wMUo-SlRKvKN0f8oHdKSJeJJ4eIRTrEq",
-            "https://drive.google.com/uc?export=view&id=1Vya_0DFbHUz7UqW3eBREuFCU1HL8ZaQP"
-            "https://drive.google.com/uc?export=view&id=15Gi8f-PIqAcwGblk13JUw7bH8HQhL-cU"
+            "https://drive.google.com/uc?export=view&id=1Vya_0DFbHUz7UqW3eBREuFCU1HL8ZaQP",
+            "https://drive.google.com/uc?export=view&id=15Gi8f-PIqAcwGblk13JUw7bH8HQhL-cU",
             "https://drive.google.com/uc?export=view&id=1LZ9SBhfbnyutF7M9thr-sUzqwHU4B4HC",
             "https://drive.google.com/uc?export=view&id=15J9Zo3H3NQ5dtRbqi5E2j-b9XnQ3kr7F",
             "https://drive.google.com/uc?export=view&id=1K_XzYfG3oEOJvCGbpNQTVs8gJXgh5xDO",
@@ -391,8 +391,8 @@ if menu == "Baleg":
             "https://drive.google.com/uc?export=view&id=1yheurhi2SDntsUjvc_AfKLNNwAkIIQ9y",
             "https://drive.google.com/uc?export=view&id=1BXZlhZmAfocEDsRiv5-GTpcDkypYVrLz",
             "https://drive.google.com/uc?export=view&id=1HP6D3Vp1c04NDo1WO55IDTMxl21Vv7vL",
-            "https://drive.google.com/uc?export=view&id=1J-6X-4ZWXkiFMK9Jz1D1Lyhcpiq_za7v"
-            "https://drive.google.com/uc?export=view&id=1wo-wzkT7QUB92rbAtQFfgTUi2764MJAS"
+            "https://drive.google.com/uc?export=view&id=1J-6X-4ZWXkiFMK9Jz1D1Lyhcpiq_za7v",
+            "https://drive.google.com/uc?export=view&id=1wo-wzkT7QUB92rbAtQFfgTUi2764MJAS",
             "https://drive.google.com/uc?export=view&id=1qcydvF1rhMJl8imF4OsIHNz15oMwvfjr",
             "https://drive.google.com/uc?export=view&id=1aPUQy_xXr6pL7Xmjv_fwuxDbWGm6DUAn",
             "https://drive.google.com/uc?export=view&id=1pzoV2n7B4hU9Ze5860Y6AAY1e0HK73-u",
@@ -557,7 +557,7 @@ if menu == "Departemen SSD":
             "https://drive.google.com/uc?export=view&id=1yQ7d9bkO8n-iNf0Wm3N25TSfD9C0_rjU",
             "https://drive.google.com/uc?export=view&id=1rT8Uv1gvcX7RtFCmajVczNc6kkoErM6_",
             "https://drive.google.com/uc?export=view&id=1mohJhTKC6d5smexGVu9WLB_hJDJCp8Js",
-            "https://drive.google.com/uc?export=view&id=1eZ5A8Qq0S6a135wmx3wxolpKMWzBYVKQ"
+            "https://drive.google.com/uc?export=view&id=1eZ5A8Qq0S6a135wmx3wxolpKMWzBYVKQ",
             "https://drive.google.com/uc?export=view&id=1u4iR3h7zs7dSShZk8IFeQrERVnbEp11S",
             "https://drive.google.com/uc?export=view&id=1dIapYXxqnDjaI4h3nS1yjvnPEDi2o1zM",
             "https://drive.google.com/uc?export=view&id=1INI73XgMcZDv2IQPtthSX9cELCpMz2Jb",
