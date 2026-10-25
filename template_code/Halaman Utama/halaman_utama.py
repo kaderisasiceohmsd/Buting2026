@@ -1026,7 +1026,7 @@ if menu == "Home":
                 "label": "CHRONICLE II",
                 "koordinat": "RA 03h 42m",
                 "judul": "Langkah Penjelajahan",
-                "deskripsi": "Nyelesain Tugas Bareng, Capek Bareng DLl.",
+                "deskripsi": "Bukan sekadar menyelesaikan tugas, tapi juga merangkai cerita, menciptakan kenangan, dan tumbuh bersama dalam setiap langkah perjalanan.",
                 "foto": "https://drive.google.com/uc?export=view&id=1w8iZCZh6xh93viKSvY2XOG26iFnmr08p",
             },
             {
@@ -1040,7 +1040,7 @@ if menu == "Home":
                 "label": "CHRONICLE IV",
                 "koordinat": "RA 11h 05m",
                 "judul": "Harmoni Satu Data",
-                "deskripsi": "Ide, kode, dan kreativitas digabung sampai jadi karya yang bikin bangga.",
+                "deskripsi": "Berbeda ide, satu tujuan. Menyatukan kreativitas, membangun kolaborasi, dan menciptakan cerita dalam setiap proses perjalanan",
                 "foto": "https://drive.google.com/uc?export=view&id=1RZiQ5NwIoeKRqsZ8HFK7lDYgFjxlfA9a",
             },
             {
