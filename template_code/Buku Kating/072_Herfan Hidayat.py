@@ -1785,23 +1785,23 @@ if menu == "Departemen MIKFES":
 if menu == "Departemen PSDA":
     def Departemen_PSDA():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1XQcEhPXFw5ofIpf274xiTFlwLEsBMo2L", #Kadep PSDA
+            "https://drive.google.com/uc?export=view&id=1gtmWwIeZmijt0dINHOgV0qMvmbS9RQaO", #Sekdep PSDA
+            "https://drive.google.com/uc?export=view&id=1hjCN-T4IS_anHJNpoaN9stxQlj5iOIjc", #Kadiv Kader
+            "https://drive.google.com/uc?export=view&id=1bWxYfqEf8BUmPyL2p0pG2ZTP06V-EMCU",
+            "https://drive.google.com/uc?export=view&id=1o-K6LtC2EUsAq9T7KElCcj4kAHAQVqHC",
+            "https://drive.google.com/uc?export=view&id=14HsrddSAMU5HX4y-pldfuO97TF230RZL",
+            "https://drive.google.com/uc?export=view&id=1aghvxjvOO6MbyHKCAp9YDnjqeu1ULNYA",
+            "https://drive.google.com/uc?export=view&id=1e7ZHKC5RAFSLNHI9Tb79peW4fkr7VTkG",
+            "https://drive.google.com/uc?export=view&id=1jxiQaqcjDH7_narfy_M3KL_PXAd0Vhfs",
+            "https://drive.google.com/uc?export=view&id=1vxR1VGcJFU39Ctr19r92AhSugX0XRJFw",
+            "https://drive.google.com/uc?export=view&id=10MQ5Yn7m3b4q-jpZdTQF2-V0KKOEDL0i", #Kadiv PMA
+            "https://drive.google.com/uc?export=view&id=1Wr9ygvyqHPfuj6q3XRW5NGxptS9HdxGf",
+            "https://drive.google.com/uc?export=view&id=10Wx0BGyLOL1hTgvU5AC1fn9S2gBAdFG5",
+            "https://drive.google.com/uc?export=view&id=1aPuLie-3xU9sQHNS39p1uul1ThFuIePz",
+            "https://drive.google.com/uc?export=view&id=1YHTcNvndW-x7TWMKh2wKGAaufgTOIQnC",
+            "https://drive.google.com/uc?export=view&id=14m7YR5UO8q4E6WrTMs7LNcbAzGuwmzyD",
+            "https://drive.google.com/uc?export=view&id=132IUlpLlah3CWl4B4-RqdkG2lpl2qTyf",
         ]
         data_list = [
             {
@@ -1812,7 +1812,7 @@ if menu == "Departemen PSDA":
                 "alamat": "Samping kos capo",
                 "hobbi": "Baca jurnal",
                 "sosmed": "@arientakhsnl_",
-                "kesan": "Kak Arienta baik, keren, peduli, dan humble bangetttt",  
+                "kesan": "Kak Arienta baik, keren, peduli, pemandu lagi",  
                 "pesan":"Semoga diberi kesuksesan dan kesehatan selalu ya kak!!!"# 1
             },
             {
@@ -1823,8 +1823,8 @@ if menu == "Departemen PSDA":
                 "alamat": "Pudan Kost",
                 "hobbi": "Nyanyi dan masak ayam",
                 "sosmed": "@vany.salsabilaa",
-                "kesan": "Kak Vany baik, berwibawa, dan disiplin banget",  
-                "pesan":"Semoga selalu diberi kemudahan ya kakak!!!"# 1
+                "kesan": "Kak Vany baik, berwibawa, dan keren",  
+                "pesan":"Semoga selalu diberi kemudahan dan semangat selalu kak!!!"# 1
             },
             {
                 "nama": "Nobel Nizam Fathirizki",
@@ -1845,7 +1845,7 @@ if menu == "Departemen PSDA":
                 "alamat": "Lapangan",
                 "hobbi": "Teriak",
                 "sosmed": "@friezazmi",
-                "kesan": "Bang Azmi keren, gentle, tegas, dan energik bangetttt",  
+                "kesan": "Bang Azmi keren, gentle, tegas, dan  menyala",  
                 "pesan":"Semoga selalu diberikan kesehatan dan kekuatan ya bang!!!"# 1
             },
             {
@@ -1856,8 +1856,8 @@ if menu == "Departemen PSDA":
                 "alamat": "blok d 79 jl.manggis 8 perum pemda wayhui jatiagung lampung selatan",
                 "hobbi": "Memasak",
                 "sosmed": "@_ykeal",
-                "kesan": "Bang Ayake humoris, asik, humble dan baik bangetttt",  
-                "pesan":"Semoga selalu sehatt, bahagia, dan lancar rezekinya ya bang!!!"# 1
+                "kesan": "Bang Ayake orangnya asik, keren, dan role model saya yang gacor",  
+                "pesan":"Semoga selalu sehat, bahagia, dan lancar rezeki dan kuliahnya ya bang!!!"# 1
             },
             {
                 "nama": "Caesar Ozora Alrando",
@@ -1867,7 +1867,7 @@ if menu == "Departemen PSDA":
                 "alamat": "Gedung F",
                 "hobbi": "Mandiin anak ayam",
                 "sosmed": "@caesar.oriza",
-                "kesan": "Bang Caesar Baik, keren dan imut, serta suka berbagi ilmu",  
+                "kesan": "Bang Caesar Baik, keren, tegas dan mantap pol lah pokoknya, jiwa-jiwa korlap membara",  
                 "pesan":"Semoga selalu diberikan kelancaran ya bang!!!"# 1
             },
             {
@@ -1878,7 +1878,7 @@ if menu == "Departemen PSDA":
                 "alamat": "sebrang kost yazid rizal",
                 "hobbi": "ngapain aja deh",
                 "sosmed": "@yudiameilianaa_",
-                "kesan": "Kak Yudia ramah, tegas, keren, baik dan humble bangetttt",  
+                "kesan": "Kak Yudia ramah, cantik, tegas, keren, baik dan sedari jadi komdis pplk udah gacor sih",  
                 "pesan":"Semoga selalu semangat dan bahagia ya kak!!!"# 1
             },            
             {
@@ -1889,7 +1889,7 @@ if menu == "Departemen PSDA":
                 "alamat": "Di depan kostan bang ayake belok kanan",
                 "hobbi": "Mencari pakan anak ayam",
                 "sosmed": "@_haikaaall",
-                "kesan": "Bang Haikal baik, tegas, asik, jago futsal, dan humble bangetttt",  
+                "kesan": "Bang Haikal baik, tegas, jago futsal, dan keren sih aslii ",  
                 "pesan":"Semoga selalu sehat dan terhindar dari segala penyakit ya bang!!!"# 1
             },            
             {
@@ -1900,8 +1900,8 @@ if menu == "Departemen PSDA":
                 "alamat": "Oiya Cafe",
                 "hobbi": "jalan kaki ga boleh naik gojek",
                 "sosmed": "@putrimannaa",
-                "kesan": "Kak Putri baik, lucu, imut, dan humble bangetttt",  
-                "pesan":"Semoga selalu diberikan keselamatan dan kebahagiaan ya kak!!!"# 1
+                "kesan": "Kak Putri baik, cantik, tegas, keren deh pokoknya!",  
+                "pesan":"Semoga selalu diberikan keselamatan dan kebahagiaan serta lancar kuliahnya kak!"# 1
             },            
             {
                 "nama": "Queenta Thifaal Nabila",
@@ -1911,8 +1911,8 @@ if menu == "Departemen PSDA":
                 "alamat": "Tempat pemancingan",
                 "hobbi": "Baking",
                 "sosmed": "@queentanaabila",
-                "kesan": "Kak Queenta baik, ber aura, dan humble bangetttt",  
-                "pesan":"Semoga selalu sehat, bahagia dan diberi keselamatan ya kak!!!"# 1
+                "kesan": "Kak Queenta baik, cantik, manis orangnya, dan keren sih asli!",  
+                "pesan":"Semoga sehat selalu dan menyala selalu kak, dan tetaplah jadi orang yang selalu menyala!!!"# 1
             },            
             {
                 "nama": "Desman Velius Halawa",
@@ -1922,8 +1922,8 @@ if menu == "Departemen PSDA":
                 "alamat": "Airan",
                 "hobbi": "Main musik",
                 "sosmed": "@dsmanhal",
-                "kesan": "Bang Desman baik, asik, humble, dan jago bangetttt deffense futsalnya",  
-                "pesan":"Semoga selalu semangat dan sukses ya bang!!!"# 1
+                "kesan": "Bang Desman baik, asik, humble, dan ketangnya DATANOVAS yang menyala",  
+                "pesan":"Semoga sukses dan segala yang di cita-citakan dapat tercapai bang!!!"# 1
             },            
             {
                 "nama": "Azzelya Thianandry",
@@ -1933,7 +1933,7 @@ if menu == "Departemen PSDA":
                 "alamat": "Sukarame",
                 "hobbi": "Pilates",
                 "sosmed": "@azzelytn",
-                "kesan": "Kak Azzel baik, kalem, dan humble bangetttt",  
+                "kesan": "Kak Azzel baik, kalem, dan ramah juga orangnya",  
                 "pesan":"Semoga bahagia dimanapun kakak berada ya kak!!!"# 1
             },            
             {
@@ -1944,8 +1944,8 @@ if menu == "Departemen PSDA":
                 "alamat": "Cendrawasih 1",
                 "hobbi": "Ngurus Peternakan",
                 "sosmed": "@charrlln",
-                "kesan": "Kak Charrlindah baik, santai, dan humble bangetttt",  
-                "pesan":"Semoga selalu sehat dan bahagia ya kak!!!"# 1
+                "kesan": "Kak Charrlindah baik, santai, dan keren kak",  
+                "pesan":"Semoga sehat selalu dan kebahagiaan selalu menyertai kak!!!"# 1
             },
             {
                 "nama": "Jeremi Marolop P. Situmorang",
@@ -1955,8 +1955,8 @@ if menu == "Departemen PSDA":
                 "alamat": "RS Airan",
                 "hobbi": "Nonton a day in my life",
                 "sosmed": "@jemarrro",
-                "kesan": "Bang Jere humble, asik, kece, dan baik bangetttt",  
-                "pesan":"Semoga selalu kuat dan sehat ya bang!!!"# 1
+                "kesan": "Bang Jemar humble, asik, kece, dan calon capo damaskus yang menyala",  
+                "pesan":"Semoga selalu kuat dan dapat mecapai cita-citanya ya bang!!!"# 1
             },
             {
                 "nama": "Nabila Nur Azizah",
@@ -1966,8 +1966,8 @@ if menu == "Departemen PSDA":
                 "alamat": "Barokah",
                 "hobbi": "Main roblox",
                 "sosmed": "@n.bila_a",
-                "kesan": "Kak Nabila baik, santai, dan humble bangetttt",  
-                "pesan":"Semoga selalu dilancarkan urusannya ya kak!!!"# 1
+                "kesan": "Kak Nabila baik, santai, dan asik",  
+                "pesan":"Semoga selalu dilancarkan dan dimudahkan urusannya ya kak!!!"# 1
             },
             {
                 "nama": "Rafli Al Mansyah Tambunan",
@@ -1977,8 +1977,8 @@ if menu == "Departemen PSDA":
                 "alamat": "Belwis",
                 "hobbi": "Membaca peraturan rektor",
                 "sosmed": "@dearfkvmfl",
-                "kesan": "Bang Rafli kece, rambutnya keren terus, dan humble bangetttt",  
-                "pesan":"Semoga selalu sehat dan doa nya diwujudkan ya bang!!!"# 1
+                "kesan": "Bang Rafli kece dan keren orangnya",  
+                "pesan":"Semoga selalu sehat dan apa yang diusahakan dapat tercapai bang!!!"# 1
             },
             {
                 "nama": "Salafi Maharani",
@@ -1988,8 +1988,8 @@ if menu == "Departemen PSDA":
                 "alamat": "jatimulyo",
                 "hobbi": "Minum air putih",
                 "sosmed": "@afi.nhr",
-                "kesan": "Kak Salafi baik, lucu, kalem dan humble bangetttt",  
-                "pesan":"Semoga selalu sehat dan dilancarkan urusannya ya kak!!!"# 1
+                "kesan": "Kak Salafi orangnya, lucu, kalem dan baik",  
+                "pesan":"Semoga selalu sehat dan dimanapun berada selalu bertemu dengan yang baik-baik!!!"# 1
             },                      
         ]
         display_images_with_data(gambar_urls, data_list)
