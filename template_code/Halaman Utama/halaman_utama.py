@@ -1,7 +1,7 @@
 import base64
 import html
 from io import BytesIO
- 
+
 import requests
 import streamlit as st
 import streamlit.components.v1 as components
@@ -432,59 +432,16 @@ div[data-testid="stImage"] img {
     .section-head { flex-direction: column; align-items: flex-start; }
 }
 
-/* ---------- SIDEBAR (gaya navigasi bersekat) ---------- */
-section[data-testid="stSidebar"] {
-    background: linear-gradient(180deg, #0a1a42 0%, #081431 100%);
-    border-right: 1px solid rgba(120, 175, 255, 0.22);
+/* ---------- SIDEBAR ---------- */
+[data-testid="stSidebar"], [data-testid="stSidebar"] > div {
+    background: #0a1838 !important;
+    border-right: 1px solid #1f3e82;
 }
-section[data-testid="stSidebar"] > div { background: transparent; }
-
-[data-testid="stSidebarNav"] { padding-top: 6px; }
-[data-testid="stSidebarNav"] ul { padding: 0 10px; gap: 4px; }
-
-/* judul sekat: Halaman Utama / Buku Kating / Try Me !! */
-[data-testid="stSidebarNavSeparator"],
-[data-testid="stNavSectionHeader"],
-[data-testid="stSidebarNav"] span[data-testid*="Header"],
-[data-testid="stSidebarNav"] header {
-    font-family: 'Plus Jakarta Sans', sans-serif !important;
-    font-weight: 700 !important;
-    font-size: 15px !important;
-    color: #dbe8ff !important;
-}
-
-[data-testid="stSidebarNav"] a,
-[data-testid="stSidebarNavLink"] {
-    border-radius: 12px;
-    padding: 8px 12px;
-    transition: background .2s ease;
-}
-[data-testid="stSidebarNav"] a span,
-[data-testid="stSidebarNavLink"] span,
-[data-testid="stSidebarNavLink"] p {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 500;
-    font-size: 14.5px;
-    color: #e6efff !important;
-}
-[data-testid="stSidebarNav"] a:hover,
-[data-testid="stSidebarNavLink"]:hover {
-    background: rgba(23, 105, 232, 0.28);
-}
-/* halaman aktif: pil biru solid */
-[data-testid="stSidebarNav"] a[aria-current="page"],
-[data-testid="stSidebarNavLink"][aria-current="page"] {
-    background: #1769e8;
-    box-shadow: 0 6px 18px rgba(23, 105, 232, 0.45);
-}
-[data-testid="stSidebarNav"] a[aria-current="page"] span,
-[data-testid="stSidebarNavLink"][aria-current="page"] span,
-[data-testid="stSidebarNavLink"][aria-current="page"] p {
-    color: #fff !important;
-    font-weight: 800;
-}
-[data-testid="stSidebarCollapseButton"] button,
-[data-testid="stExpandSidebarButton"] { color: #a3c4f3; }
+[data-testid="stSidebar"] * { color: #cad8f2 !important; }
+[data-testid="stSidebarNavLink"] { border-radius: 12px !important; }
+[data-testid="stSidebarNavLink"]:hover { background: #15357a !important; }
+[data-testid="stSidebarNavLink"][aria-current="page"] { background: #1769e8 !important; }
+[data-testid="stSidebarNavLink"][aria-current="page"] * { color: #fff !important; font-weight: 700; }
 
 [data-testid="stWidgetLabel"] p, [data-testid="stRadio"] label p, .stCaption p { color: #fff !important; }
 </style>
@@ -1024,6 +981,38 @@ Terinspirasi dari <b>Teorema Bayes</b> dalam Sains Data dan Statistika, kelompok
 
 
 # ==================================================
+# HALAMAN: ABOUT US (semua anggota sekaligus)
+# ==================================================
+def about_us():
+    hero()
+    st.markdown(
+        '<div class="section-head"><h2>About Us — Buku Kating Bayesian</h2></div>',
+        unsafe_allow_html=True,
+    )
+    with st.spinner("Memuat foto anggota..."):
+        uris = [foto_anggota(i) for i in range(len(data_list))]
+
+    lurah_html = "".join(
+        member_card(i + 1, data_list[i], uris[i], featured=True) for i in range(2)
+    )
+    anggota_html = "".join(
+        member_card(i + 1, data_list[i], uris[i]) for i in range(2, len(data_list))
+    )
+    st.markdown(
+        f'<div class="section-head"><h2>Pimpinan Kelompok</h2>'
+        f'<span class="count-chip">2 Orang</span></div>'
+        f'<div class="lurah-grid">{lurah_html}</div>',
+        unsafe_allow_html=True,
+    )
+    st.markdown(
+        f'<div class="section-head"><h2>Anggota</h2>'
+        f'<span class="count-chip">{len(data_list) - 2} Orang</span></div>'
+        f'<div class="member-grid">{anggota_html}</div>',
+        unsafe_allow_html=True,
+    )
+
+
+# ==================================================
 # HALAMAN: SATU ANGGOTA = SATU HALAMAN
 # ==================================================
 def buat_halaman_anggota(i):
@@ -1119,6 +1108,7 @@ halaman_anggota = [
 pg = st.navigation({
     "Halaman Utama": [
         st.Page(halaman_utama, title="Bayesian", default=True, url_path="bayesian"),
+        st.Page(about_us, title="About Us", icon=":material/groups:", url_path="about-us"),
     ],
     "Buku Kating": halaman_anggota,
     "Try Me !!": [
