@@ -14,7 +14,6 @@ from tools.ui_helper import (
     load_image,
     render_kating_cards,
     get_menu_styles,
-    dept_menu,
 )
 
 # Injeksi tema estetis global
@@ -34,8 +33,9 @@ st.markdown(
 
 
 def streamlit_menu():
-    return dept_menu(
-        [
+    selected = option_menu(
+        menu_title=None,
+        options=[
             "Kesekjenan",
             "Baleg",
             "Senator",
@@ -46,8 +46,24 @@ def streamlit_menu():
             "Departemen SSD",
             "Departemen Medkraf",
             "Departemen Minbak",
-        ]
+        ],
+        icons=[
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+        ],
+        default_index=0,
+        orientation="horizontal",
+        styles=get_menu_styles(),
     )
+    return selected
 
 
 def display_images_with_data(gambar_urls, data_list):
@@ -915,7 +931,7 @@ elif menu == "Departemen PSDA":
         display_images_with_data(gambar_urls, data_list)
     DepartemenPSDA()
 
-elif menu == "Departemen Senator":
+elif menu == "Senator":
     def Senator():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1Axt58DPBwBqWrKLRH2ip_VrSwyt3gToG",
@@ -1052,7 +1068,7 @@ elif menu == "Departemen Eksternal":
             "https://drive.google.com/uc?export=view&id=19bd1LgaTN2qxlP0WnPFo_ebeo3Nu38f3",
             "https://drive.google.com/uc?export=view&id=1y-peb_TJdsz6917amHsvtp8i3iiIKAty",
             "https://drive.google.com/uc?export=view&id=1fiYcN-ZAzAWrvJh6FNUHR0s355mL0Lrh",
-            "https://drive.google.com/uc?export=view&id=1KXNLI8AE21p_7nbOdlax1TSHrOyqThI_",#Fathya
+            "https://drive.google.com/uc?export=view&id=1Wi3lgwMsNEXEtp1PSl-i0zl7qTT2orVt",#Fathya
             "https://drive.google.com/uc?export=view&id=11eSDc0OjUecwl4kck7HcLxa4uBECWXCe",
             "https://drive.google.com/uc?export=view&id=1Qf8jg-0O3toujQgrjhsLZ3UAm7r_yaJL",
             "https://drive.google.com/uc?export=view&id=15wTEsKtgOB8Nc1An6b4u0zL3876gvkE6",
@@ -1082,8 +1098,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "Teluk Betung Selatan",
                 "hobbi": "Nonton Kartun",
                 "sosmed": "@elandraa_",
-                "kesan": "ngeliat kak arini tuh kawa wanita carier banget",  
-                "pesan": "Semangat dan semoga lancar TA nyaa "# 1
+                "kesan": "ngeliat kak arini tuh kaya wanita carier banget, tenpesona sama prestasi dan kepemimpinanya sebagai kepala departemen eksternal",  
+                "pesan": "Semangat dan semoga lancar TA nyaa kaaaa"# 1
             },
             {
                 "nama": "Nabyla Sharfina",
@@ -1093,8 +1109,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "Jalan Lapas",
                 "hobbi": "Jalan - Jalan",
                 "sosmed": "@bylaash",
-                "kesan": "kakaknya manis banget suka ngeliatnyaaa",  
-                "pesan": "always senyum yaa kaa"# 1
+                "kesan": "kakaknya manis banget suka ngeliatnyaaa, orangnya juga asik bangetttt",  
+                "pesan": "always senyum yaa kaa, biar makin manisss"# 1
             },
             {
                 "nama": "Aditya Taufiqurrohman",
@@ -1126,8 +1142,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "Gerbang Barat",
                 "hobbi": "Jadi orang baik",
                 "sosmed": "tari_",
-                "kesan": "kakanya baik, ramah jugaa",  
-                "pesan": "semangat menjali semester akhirnya kak"# 1
+                "kesan": "kakanya baik, ramah jugaa, hobinya keren sih kaa memotivasi banget loveee",  
+                "pesan": "semangat menjali semester akhirnya kak, ssemoga lancar tanpa ada kendala"# 1
             },
             {
                 "nama": "Selma Siti Aisyah",
@@ -1138,7 +1154,7 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "jalan-jalan",
                 "sosmed": "@selmasiti_aisyah",
                 "kesan": "kakanya cantik dan senyumnya maniss",  
-                "pesan": "semangat kuliahnya kak selma"# 1
+                "pesan": "semangat kuliahnya kak selma dan menjalani semester akhir semoga ga banyak revisi"# 1
             },
             {
                 "nama": "Ashila Islamisahfa Vanisha",
@@ -1149,7 +1165,7 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "tidur",
                 "sosmed": "@kshigf",
                 "kesan": "kakanya lucu , ramah dan gemass",  
-                "pesan": "Tetap semangat untuk Kakak dalam menyelesaikan tugas"# 1
+                "pesan": "Tetap semangat untuk Kakak dalam menyelesaikan tugas-tugas kuliahnyaaa"# 1
             },
             {
                 "nama": "Danil N Fadillah",
@@ -1160,7 +1176,7 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "Ngasih makan ikan cupang",
                 "sosmed": "@d4niel_fdlh",
                 "kesan": "baru tau kalo bang danil ternyata yang masuk ITERA ganteng itu tohhh",  
-                "pesan": "semoga ikan cupangnya sehat ya bangg"# 1
+                "pesan": "semoga ikan cupangnya sehat ya bangg ga kekurusan"# 1
             },
             {
                 "nama": "Favian Arkaanda",
@@ -1171,18 +1187,18 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "ngesen kanan",
                 "sosmed": "@fvnnn05",
                 "kesan": "makasih bang yang selalu gercep kalo ada yang sakit selama rangkaian",  
-                "pesan": "semoga selalu bahagia dan ayo badmin lagi bangg"# 1
+                "pesan": "semoga selalu bahagia dan ayo badmin lagi bangg bareng keluarga kecil tensorrrr"# 1
             },
             {
                 "nama": "Muhammad Fathiy Zumar Yazid",
                 "nim": "124450081",
-                "umur": "((15≪1) & 31) ⊕ 10",
+                "umur": "20",
                 "asal": "situlah",
                 "alamat": "pohon mulia",
                 "hobbi": "nyari hobi",
                 "sosmed": "@zydddddd__",
                 "kesan": "aku kira orangnya galak, ternyata asik juga kalo lagi ngobrol dan ternyata anak smanda",  
-                "pesan": "rajin-rajin pulang yuk banggg"# 1
+                "pesan": "rajin-rajin pulang yuk banggg, jalan pulang ternyata daah lebih bagus dikit tapi"# 1
             },
             {
                 "nama": "Muhammad Rizaldi",
@@ -1193,7 +1209,7 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "tanyain sama yuder",
                 "sosmed": "@jaldii._",
                 "kesan": "orangnya asikk banget dan ada aja yang dibuat lelucon",  
-                "pesan": "semangat mc nya banggg"# 1
+                "pesan": "semangat mc nya banggg, always be happy"# 1
             },
             {
                 "nama": "Saskia Nova Magdalena",
@@ -1215,7 +1231,7 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "main",
                 "sosmed": "@khoirul_muttoharoh",
                 "kesan": "kak mut lucu dan gemass, keren banget sihh bisa lolos pimnas",  
-                "pesan": "semangat pimnasnya semoga menang ya kakkk"
+                "pesan": "semangat pimnasnya sampe akhir kaaaa, semoga menang ya kakkk"
             },
             {
                 "nama": "Ahmad Rizky",
@@ -1226,7 +1242,7 @@ elif menu == "Departemen Eksternal":
                 "hobbi": "ga ngapa ngapain",
                 "sosmed": "@ahmad.rizky___",
                 "kesan": "keren bang ahmad dengan segala prestasinya",  
-                "pesan": "Tetap semangat untuk Kakak dalam menyelesaikan tugas"
+                "pesan": "Tetap semangat untuk bang ahmad dalam menyelesaikan tugas-tugas kulliahnya"
             },
             {
                 "nama": "Indah Khairunnisa",
@@ -1236,9 +1252,9 @@ elif menu == "Departemen Eksternal":
                 "alamat": "Disini aja",
                 "hobbi": "mancing emosi, mancing ikan, mancing kecebong, mancing cupang",
                 "sosmed": "@khaindaa_",
-                "kesan": "makasih kak dah bantu kallo sakit selama rangkaian, seneng bisa kenal di hublu juga",  
+                "kesan": "makasih kak dah bantu kalo sakit selama rangkaian, seneng bisa kenal di hublu juga",  
                 "pesan": "energinya jangan pernah habis ya kak buat selalu heboh, tetap semangat untuk Kakak dalam menyelesaikan tugas"# 1
-            },
+            }, 
             {
                 "nama": "Bima Ekayasa",
                 "nim": "124450106",
@@ -1550,7 +1566,7 @@ elif menu == "Departemen MIKFES":
                 "nama": "Kaleb Filbert Istel",
                 "nim": "124450053",
                 "umur": "20",
-                "asal":"Bandar Lampung ",
+                "asal": "Bandar Lampung ",
                 "alamat": "Campang Raya, Sukabumi",
                 "hobbi": "Gym, membaca, dan bermain",
                 "sosmed": "@kelelep_comberan",
@@ -1561,7 +1577,7 @@ elif menu == "Departemen MIKFES":
                 "nama": "Melva Shaprina Febrianti",
                 "nim": "124450087",
                  "umur": "19",
-                "asal":"Sumatera Selatan ",
+                "asal": "Sumatera Selatan ",
                 "alamat": "Sukarame ",
                 "hobbi": "Memasak",
                 "sosmed": "@melva_fbrt",
@@ -1583,7 +1599,7 @@ elif menu == "Departemen MIKFES":
                 "nama": "Rifky Henry Ferdianto",
                 "nim": "124450115",
                 "umur": "-",
-                "asal":"Kotabumi",
+                "asal": "Kotabumi",
                 "alamat": "Rajabasa",
                 "hobbi": "Ngerecokin nuel",
                 "sosmed": "@henryferdianto",
@@ -1971,7 +1987,7 @@ elif menu == "Departemen Medkraf":
                 "hobbi": "Bengong",
                 "sosmed": "@xifasky",
                 "kesan": "kakanya cantik,ramahh dan baikk",  
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi Kakak dilancarkan sampai lulus."
+                "pesan": "Semoga segala urusan akademis, dan skripsi Kakak dilancarkan sampai lulus, lancar selalu kakkkk."
             }
 
         ]
@@ -1979,5 +1995,12 @@ elif menu == "Departemen Medkraf":
     DepartemenMedkraf()
 # Tambahkan menu lainnya sesuai kebutuhan
 
+# aku sebenernyaa penasaran yang habis kelas metnum kemarin, yang kita mau foto sampe set 6 itu, pas masih dikls itu aku ngeliat si bungsu tuh lagi ceritakan sama ezra & arga nah muka dia tuh semringah banget senyumnya tuh semata-matamnyaaa.
+#nah pas tanya sama kamu gini yg aku denger  "kallo semisal aku tiba-tiba dateng pas kelompokmu masih kerkom masalah ga?"
+# terus aku tuh dengan beliau lagi suka sama orang yang katanya sih sefakultas nahh aku tuh penasaran samaa siapa apakah paluuu tahuuuuu?
+#terus yang pas kita habis foto itu kan aku mau langsung kan emang mau ada urusan, tapi palu kaya nahan ada sesuatu gitu kaya ga boleh langsung pulang tapi alasan yg kmu kasih itu nunggu kak ipin, tapi aku rasa ada hal lain gitu lohh bukan soal nunggu kak ipin
+#terus pas kak ipin udh mau dateng kmu tuh nelpon entah siapa tapi dengan bahsa daerah mu yg aku tanget buruan turun kesini mumpung orangnya masih dibawah dan ajak apa lahh ituuuu
+#terus ga lama 3 orang turun dr lantai3, nah muka si bungsu tuh kaya canggung entah kena gitu kaya aneh gitu
+# tolong konfirmasi pernyataan dan pertanyaan diatas
 
 
