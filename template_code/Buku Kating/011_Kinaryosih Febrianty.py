@@ -484,7 +484,7 @@ if menu == "Baleg":
                 "alamat": "Bandar Lampung",
                 "hobbi": "Makan mie gomak",
                 "sosmed": "@exvoltas & @ddharu",
-                "kesan": "Abang keren ini,,, sampe bingung mau ngasih kata" apa saking kerennya,, bangga banget",
+                "kesan": "Abang keren ini,,, sampe bingung mau ngasih kata-kata apa saking kerennya,, bangga banget",
                 "pesan": "SEMANGAT PIMNASNYA BANG DHARU, selalu bangga dengan semua pencapaian abangnya,,, when ya sekeren bang dharu"
             },
             {
@@ -807,7 +807,7 @@ if menu == "Departemen Internal":
                 "hobbi": "Ngabarin orang tua",
                 "sosmed": "@hanna_g_sinaga",
                 "kesan": "Ka Hannaaa positive vibes bangeeett, seru ngobrolnya",  
-                "pesan": "Semangat dan lancar terus sampai akhir yaaa kakk, sampe di fase ngabarin orang tua "mau wisuda""
+                "pesan": "Semangat dan lancar terus sampai akhir yaaa kakk, sampe di fase ngabarin orang tua (mau wisuda)"
             },
             {
                 "nama": "Muhammad Hanif Dzaky Arifin",
@@ -1349,7 +1349,7 @@ if menu == "Departemen Eksternal":
                 "hobbi": "baca wattpad",
                 "sosmed": "@fatthyaa_",
                 "kesan": "Ramah dan baik betul Kaka ini",
-                "pesan": "Ternyata masih ada yang suka baca wattpad ya sekarang ini, SEMANGAT TERUS KA, nanti hobinya berubah jadi "baca jurnal""
+                "pesan": "Ternyata masih ada yang suka baca wattpad ya sekarang ini, SEMANGAT TERUS KA, nanti hobinya berubah jadi baca jurnal"
             },
             {
                 "nama": "Tarisya Hidayatul Rahmi",
@@ -2002,7 +2002,7 @@ if menu == "Departemen PSDA":
                 "hobbi": "Memasak",
                 "sosmed": "@_ykeal",
                 "kesan": "Abang ini kalau di luar rangkaian seru sihh, baik jugaa, tapi di rangkaian juga baik betul lohh",  
-                "pesan":"Semangat terus bang kuliahnyaa, lancarr teruss semua hal yang lagi dikerjainnya# 1
+                "pesan":"Semangat terus bang kuliahnyaa, lancarr teruss semua hal yang lagi dikerjainnya"
             },
             {
                 "nama": "Caesar Ozora Alrando",
