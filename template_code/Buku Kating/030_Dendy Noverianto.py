@@ -997,8 +997,8 @@ if menu == "Departemen Internal":
                 "alamat": "Way Halim",
                 "hobbi": "Ngeledek orang",
                 "sosmed": "@haikalsbln",
-                "kesan": "Bang Haikal adalah sosok yang hangat, merangkul, dan peduli dalam menjaga keharmonisan serta hubungan di internal Himpunan",  
-                "pesan": "Semoga sukses selalu, baik dalam akademik maupun organisasinya."
+                "kesan": "Bang Haikal baik dan suka menolong dan merangkul orangnya",  
+                "pesan": "Semoga sehat selalu ya bang terimakasih udah pernah menolong saya saat motor saya mati"
             },
             {
                 "nama": "Kharisma Mustika Sari",
@@ -1008,8 +1008,8 @@ if menu == "Departemen Internal":
                 "alamat": "Untung Senopati",
                 "hobbi": "Suka nolong orang",
                 "sosmed": "@rismaa.mustika_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Kak Risma baik dan humble banget orangnya",  
+                "pesan": "semoga sehat selalu kak risma !!!"
             },
             {
                 "nama": "Hanna Grecia Sinaga",
@@ -1019,8 +1019,8 @@ if menu == "Departemen Internal":
                 "alamat": "Sukarame",
                 "hobbi": "Ngabarin orang tua",
                 "sosmed": "@hanna_g_sinaga",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Kak Hanna orangnya humble, baik, dan perhatian bangettt orangnya",  
+                "pesan": "Semangatt terus kak Hanna semoga impiannya tercapai!!!"
             },
             {
                 "nama": "A Farhan Ghani",
@@ -1030,8 +1030,8 @@ if menu == "Departemen Internal":
                 "alamat": "Kemiling",
                 "hobbi": "Balap Liar",
                 "sosmed": "@farhanghani",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Bang Farhan keren dan kece bangett orangnya, humble juga",  
+                "pesan": "Semoga selalu semangat main bas nya bang!!!"
             },
             {
                 "nama": "Aisyah Khairun Nisa",
@@ -1041,8 +1041,8 @@ if menu == "Departemen Internal":
                 "alamat": "Belwis",
                 "hobbi": "Ngeliatin orang",
                 "sosmed": "@aisyahkhair._",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Kak Aisyah baik, lucu, dan baik orangnya",  
+                "pesan": "Selalu semangat menjalani hidupnya ya kak!!!"
             },
             {
                 "nama": "Cerine Sihotang",
@@ -1052,8 +1052,8 @@ if menu == "Departemen Internal":
                 "alamat": "Belwis",
                 "hobbi": "Balap liar",
                 "sosmed": "@cerine_ipynb",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Kak Cerine Lucu, humble dan baik sekali",  
+                "pesan": "Semoga selalu diberikan keselamatan ya kak!!!"
             },
             {
                 "nama": "Jaya Saputra Tamba",
@@ -1063,8 +1063,8 @@ if menu == "Departemen Internal":
                 "alamat": "Pemda",
                 "hobbi": "Berkebun dan membuat lagu",
                 "sosmed": "@jay.saputratmb",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Bang jaya berwibawa dan keren banget orangnya",  
+                "pesan": "Semoga menjadi Kahim next periode ya bang!!!"
             },
             {
                 "nama": "Najla Nur Syifa",
@@ -1074,8 +1074,8 @@ if menu == "Departemen Internal":
                 "alamat": "Belwis",
                 "hobbi": "Gangguin cika",
                 "sosmed": "@njlanursyifa",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan": "semangat terus kuliahnya kakak !!!"
+                "kesan": "Kak Najla baik, manis, dan humble banget orangnya",  
+                "pesan": "Semangat terus untuk kuliahnya ya kak !!!"
             },
             {
                 "nama": "Rozaq Ramdani",
@@ -1085,85 +1085,85 @@ if menu == "Departemen Internal":
                 "alamat": "Korpri Raya",
                 "hobbi": "Isengin harvin di kelas",
                 "sosmed": "@rozaqramdani__",
-                "kesan": "Orangnya asik dan ramah",
-                "pesan": "Semangat terus kuliahnya!"
+                "kesan": "Bang Rozaq kece dan keren orangnya",
+                "pesan": "Semoga selalu dimudahkan jalannya ya bang!"
             },
             {
-                "nama": "Rozaq Ramdani",
-                "nim": "124450100",
-                "umur": "18",
-                "asal": "Lampung Selatan",
-                "alamat": "Korpri Raya",
-                "hobbi": "Isengin harvin di kelas",
-                "sosmed": "@rozaqramdani__",
-                "kesan": "Orangnya asik dan ramah",
-                "pesan": "Semangat terus kuliahnya!"
+                "nama": "Teresa Christiani Purba",
+                "nim": "124450046",
+                "umur": "19",
+                "asal": "Riau",
+                "alamat": "Belwis",
+                "hobbi": "Masak",
+                "sosmed": "@christiani8872",
+                "kesan": "Kak tere baik dan humble banget orangnya",
+                "pesan": "Semoga kak tere sehat selalu ya kak!"
             },
             {
-                "nama": "Rozaq Ramdani",
-                "nim": "124450100",
-                "umur": "18",
-                "asal": "Lampung Selatan",
-                "alamat": "Korpri Raya",
-                "hobbi": "Isengin harvin di kelas",
-                "sosmed": "@rozaqramdani__",
-                "kesan": "Orangnya asik dan ramah",
-                "pesan": "Semangat terus kuliahnya!"
+                "nama": "Muhammad Hanif Dzaky Arifin",
+                "nim": "124450064",
+                "umur": "21",
+                "asal": "Padang Sumbar",
+                "alamat": "Perumnas Way Kandis",
+                "hobbi": "Ngedistro",
+                "sosmed": "@hnfdzky_",
+                "kesan": "Bang hanif baik, ramah bangett dan alim orangnya",
+                "pesan": "Semoga bahagia di dunia dan akhirat ya bang!"
             },
             {
-                "nama": "Rozaq Ramdani",
-                "nim": "124450100",
-                "umur": "18",
-                "asal": "Lampung Selatan",
-                "alamat": "Korpri Raya",
-                "hobbi": "Isengin harvin di kelas",
-                "sosmed": "@rozaqramdani__",
-                "kesan": "Orangnya asik dan ramah",
-                "pesan": "Semangat terus kuliahnya!"
+                "nama": "Audina Fitria",
+                "nim": "124450038",
+                "umur": "20",
+                "asal": "Sumatera Barat",
+                "alamat": "Sukarame",
+                "hobbi": "Main ke air terjun",
+                "sosmed": "@audinaf_03",
+                "kesan": "Kak Audina baik, kalem dan baik bangett",
+                "pesan": "Semangatt terus ya kak audina!"
             },
             {
-                "nama": "Rozaq Ramdani",
-                "nim": "124450100",
-                "umur": "18",
-                "asal": "Lampung Selatan",
-                "alamat": "Korpri Raya",
-                "hobbi": "Isengin harvin di kelas",
-                "sosmed": "@rozaqramdani__",
-                "kesan": "Orangnya asik dan ramah",
-                "pesan": "Semangat terus kuliahnya!"
+                "nama": "Cika Adelia Br Marbun",
+                "nim": "124450107",
+                "umur": "20",
+                "asal": "Riau",
+                "alamat": "Belwis",
+                "hobbi": "Terlambat",
+                "sosmed": "@cikamrbn",
+                "kesan": "Kak Cika baik, humble dan murah senyum",
+                "pesan": "Semoga kak cika diberikan kebahagiaan di sepanjang kehidupannya!"
             },
             {
-                "nama": "Rozaq Ramdani",
-                "nim": "124450100",
-                "umur": "18",
-                "asal": "Lampung Selatan",
-                "alamat": "Korpri Raya",
-                "hobbi": "Isengin harvin di kelas",
-                "sosmed": "@rozaqramdani__",
-                "kesan": "Orangnya asik dan ramah",
-                "pesan": "Semangat terus kuliahnya!"
+                "nama": "Gustin Haleluya Tampubolon",
+                "nim": "124450068",
+                "umur": "21",
+                "asal": "Toba Sumatera Utara",
+                "alamat": "Airan",
+                "hobbi": "Nonton",
+                "sosmed": "@gustinhaleluya",
+                "kesan": "Kak Gustin Baik dan sabar banget orangnya",
+                "pesan": "Semoga dimudahkan segala urusannya ya kak!"
             },
             {
-                "nama": "Rozaq Ramdani",
-                "nim": "124450100",
-                "umur": "18",
-                "asal": "Lampung Selatan",
-                "alamat": "Korpri Raya",
-                "hobbi": "Isengin harvin di kelas",
-                "sosmed": "@rozaqramdani__",
-                "kesan": "Orangnya asik dan ramah",
-                "pesan": "Semangat terus kuliahnya!"
+                "nama": "Muhammad Harvinsyah",
+                "nim": "124450128",
+                "umur": "20",
+                "asal": "Sumatera Selatan",
+                "alamat": "Belwis",
+                "hobbi": "Nembak Burung",
+                "sosmed": "@muhvinz_",
+                "kesan": "Bang harvin cool, baik dan asik orangnya",
+                "pesan": "Semoga sehat selalu ya bang!"
             },
             {
-                "nama": "Rozaq Ramdani",
-                "nim": "124450100",
-                "umur": "18",
-                "asal": "Lampung Selatan",
-                "alamat": "Korpri Raya",
-                "hobbi": "Isengin harvin di kelas",
-                "sosmed": "@rozaqramdani__",
-                "kesan": "Orangnya asik dan ramah",
-                "pesan": "Semangat terus kuliahnya!"
+                "nama": "Rafa Sabina Fahimah",
+                "nim": "124450036",
+                "umur": "20",
+                "asal": "Natar",
+                "alamat": "Natar",
+                "hobbi": "Cari duit",
+                "sosmed": "@snasaa._",
+                "kesan": "Kak Bina baik, asik, dan humble bangett orangnya",
+                "pesan": "Semangat terus ya cari duitnya ya kak binaa!"
             },
         ]
         display_images_with_data(gambar_urls, data_list)
