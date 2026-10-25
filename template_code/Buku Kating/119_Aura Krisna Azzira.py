@@ -658,7 +658,7 @@ elif menu == "Departemen Internal":
             },
             {
                 "nama": "Rozak Ramdani",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1fadtmSgKvZZZj7x9n_0SmvEgXkQw_sLp",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1iYJqLV_MMtctG905fPlnfYBLkDueCwk3",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -670,7 +670,7 @@ elif menu == "Departemen Internal":
             },
             {
                 "nama": "Audina Fitria",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1fadtmSgKvZZZj7x9n_0SmvEgXkQw_sLp",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1iYJqLV_MMtctG905fPlnfYBLkDueCwk3",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -749,13 +749,13 @@ elif menu == "Departemen SSD":
             },
             {
                 "nama": "Talitha Justine",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1LbUK8UOIRpNhbeMloGNATb8LVOwRrB4s",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
             {
                 "nama": "Abdillah Fikri Al Pome",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1fadtmSgKvZZZj7x9n_0SmvEgXkQw_sLp",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1iYJqLV_MMtctG905fPlnfYBLkDueCwk3",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -804,7 +804,7 @@ elif menu == "Departemen Medkraf":
             },
             {
                 "nama": "Sania Dwi Ayu Lestari",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1fadtmSgKvZZZj7x9n_0SmvEgXkQw_sLp",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1iYJqLV_MMtctG905fPlnfYBLkDueCwk3",
                 "kesan": "kakak sania superr seru, baikk, dan juga mengayomi sekali",
                 "pesan": "sukses selalu kak saniaa, semoga selalu dikelilingi kebaikan",
             },
@@ -835,8 +835,8 @@ elif menu == "Departemen Medkraf":
             {
                 "nama": "Allisha",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1cdH6fRmVcBDybO-OqdurXa7EKlNEUEYh",
-                "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
-                "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
+                "kesan": "seruu bangettt, humble dan tentunya pembaik",
+                "pesan": "semangat terus kuliahnya kak, suksess selalu",
             },
             {
                 "nama": "Alya Ramadhanti",
@@ -882,7 +882,7 @@ elif menu == "Departemen Medkraf":
             },
             {
                 "nama": "Shafa Delaila Azzahra",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1fadtmSgKvZZZj7x9n_0SmvEgXkQw_sLp",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1iYJqLV_MMtctG905fPlnfYBLkDueCwk3",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
