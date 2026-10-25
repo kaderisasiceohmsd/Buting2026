@@ -444,7 +444,7 @@ def streamlit_menu():
         menu_title=None,
         options=[
             "Kesekjenan",
-            "Baleg",
+            "Badan Legislatif",
             "Senator",
             "Departemen PSDA",
             "Departemen MIKFES",
@@ -804,7 +804,7 @@ if menu == "Kesekjenan":
 # ==================================================
 # BALEG
 # ==================================================
-elif menu == "Baleg":
+elif menu == "Badan Legislatif":
     gambar_urls = [
         "https://drive.google.com/uc?export=view&id=1vdS84GGW7B8ghDlYTs6MGv1oVvpsN_Sm",
         "https://drive.google.com/uc?export=view&id=1DK_xmFDCLmIaU0-HfuKVkH19D0ii0gDQ",
@@ -986,7 +986,7 @@ elif menu == "Baleg":
 # ==================================================
 # SENATOR
 # ==================================================
-elif menu == "Senator":
+elif menu == "Badan Kesenatoran":
     gambar_urls = [
         "https://drive.google.com/uc?export=view&id=135LqYaR2dogYlLKneMDtC1rxO-FfYSar",
         "https://drive.google.com/uc?export=view&id=1iOKB8fOMkgmLi_XC5Vvrei_RO4Ypwh9O",
