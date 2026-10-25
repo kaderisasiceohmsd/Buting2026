@@ -1476,7 +1476,7 @@ if menu == "Departemen Eksternal":
                 "sosmed": "@selmasiti_aisyah",
                 "kesan": "Kakak ini ramah dan asik",
                 "pesan": "Sukses terus kak"
-            }
+            },
         ]
         display_images_with_data(gambar_urls, data_list)
     Departemen_Eksternal()
@@ -1665,7 +1665,7 @@ if menu == "Departemen Minbak":
                 "sosmed": "@muhammdrafka_",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
-            }
+            },
         ]
         display_images_with_data(gambar_urls, data_list)
     Departemen_Minbak()
@@ -1938,7 +1938,7 @@ if menu == "Departemen MIKFES":
                 "sosmed": "@henryferdianto",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
-            }
+            },
         ]
         display_images_with_data(gambar_urls, data_list)
     Departemen_MIKFES()
