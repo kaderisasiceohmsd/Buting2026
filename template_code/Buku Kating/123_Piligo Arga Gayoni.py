@@ -14,7 +14,6 @@ from tools.ui_helper import (
     load_image,
     render_kating_cards,
     get_menu_styles,
-    dept_menu,
 )
 
 # Injeksi tema estetis global
