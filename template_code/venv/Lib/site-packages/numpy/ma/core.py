@@ -314,6 +314,14 @@ def default_fill_value(obj):
     return _recursive_fill_value(dtype, _scalar_fill_value)
 
 
+def _check_fill_value_or_default(fill_value, ndtype):
+    try:
+        with np.errstate(invalid='raise'):
+            return _check_fill_value(fill_value, ndtype)
+    except (TypeError, ValueError, OverflowError, FloatingPointError):
+        return None
+
+
 def _extremum_fill_value(obj, extremum, extremum_name):
 
     def _scalar_fill_value(dtype):
@@ -2320,7 +2328,7 @@ def masked_object(x, value, copy=True, shrink=True):
     else:
         condition = umath.equal(np.asarray(x), value)
         mask = nomask
-    mask = mask_or(mask, make_mask(condition, shrink=shrink))
+    mask = mask_or(mask, make_mask(condition, shrink=shrink), shrink=shrink)
     return masked_array(x, mask=mask, copy=copy, fill_value=value)
 
 
@@ -3009,11 +3017,19 @@ class MaskedArray(ndarray):
                 _data._sharedmask = False
 
         # Update fill_value.
-        if fill_value is None:
-            fill_value = getattr(data, '_fill_value', None)
-        # But don't run the check unless we have something to check.
         if fill_value is not None:
             _data._fill_value = _check_fill_value(fill_value, _data.dtype)
+        else:
+            fill_value = getattr(data, '_fill_value', None)
+            if fill_value is not None:
+                if getattr(data, 'dtype', None) != _data.dtype:
+                    fill_value = _check_fill_value_or_default(
+                        fill_value, _data.dtype)
+                    if fill_value is not None:
+                        _data._fill_value = fill_value
+                else:
+                    _data._fill_value = _check_fill_value(
+                        fill_value, _data.dtype)
         # Process extra options ..
         if hard_mask is None:
             _data._hardmask = getattr(data, '_hardmask', False)
@@ -3039,10 +3055,7 @@ class MaskedArray(ndarray):
             _optinfo.update(getattr(obj, '__dict__', {}))
         _fill_value = getattr(obj, '_fill_value', None)
         if _fill_value is not None and getattr(obj, 'dtype', None) != self.dtype:
-            try:
-                _fill_value = _check_fill_value(_fill_value, self.dtype)
-            except (TypeError, ValueError, OverflowError):
-                _fill_value = None
+            _fill_value = _check_fill_value_or_default(_fill_value, self.dtype)
         _dict = {'_fill_value': _fill_value,
                      '_hardmask': getattr(obj, '_hardmask', False),
                      '_sharedmask': getattr(obj, '_sharedmask', False),

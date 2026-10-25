@@ -662,6 +662,10 @@ class Commit(base.Object, TraversableIterableObj, Diffable, Serializable):
         :return:
             :class:`Commit` object representing the new commit.
 
+        :raise ValueError:
+            If the name or email of the author or committer contains ``<``, ``>`` or a
+            line feed, as these would change the identity headers of the commit.
+
         :note:
             Additional information about the committer and author are taken from the
             environment or from the git configuration. See :manpage:`git-commit-tree(1)`
@@ -786,6 +790,16 @@ class Commit(base.Object, TraversableIterableObj, Diffable, Serializable):
     # { Serializable Implementation
 
     def _serialize(self, stream: BytesIO) -> "Commit":
+        # An identity is written as "name <email> date" on a single header line, so a
+        # line feed or an angle bracket inside a name or email moves those boundaries:
+        # it can add header lines, end the headers early, or present another email.
+        # Git drops these three characters when it writes an identity; refuse them
+        # here before anything is written.
+        for actor in (self.author, self.committer):
+            for value in (actor.name, actor.email):
+                if value and any(char in value for char in "<>\n"):
+                    raise ValueError("Commit identity %r must not contain '<', '>' or a line feed" % value)
+
         write = stream.write
         write(("tree %s\n" % self.tree).encode("ascii"))
         for p in self.parents:
@@ -885,7 +899,7 @@ class Commit(base.Object, TraversableIterableObj, Diffable, Serializable):
             if buf[0:10] == b"encoding ":
                 self.encoding = buf[buf.find(b" ") + 1 :].decode(self.encoding, "ignore")
             elif buf[0:7] == b"gpgsig ":
-                sig = buf[buf.find(b" ") + 1 :] + b"\n"
+                sig_lines = [buf[buf.find(b" ") + 1 :] + b"\n"]
                 is_next_header = False
                 while True:
                     sigbuf = readline()
@@ -895,9 +909,9 @@ class Commit(base.Object, TraversableIterableObj, Diffable, Serializable):
                         buf = sigbuf.strip()
                         is_next_header = True
                         break
-                    sig += sigbuf[1:]
+                    sig_lines.append(sigbuf[1:])
                 # END read all signature
-                self.gpgsig = sig.rstrip(b"\n").decode(self.encoding, "ignore")
+                self.gpgsig = b"".join(sig_lines).rstrip(b"\n").decode(self.encoding, "ignore")
                 if is_next_header:
                     continue
             buf = readline().strip()

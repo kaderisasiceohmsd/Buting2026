@@ -1,3 +1,13 @@
+# Tests for tornado.curl_httpclient
+#
+# Most of our tests actually live in HTTPClientCommonTestCase in httpclient_test.py.
+# New tests should be added there unless they deal with implementation details specific
+# to CurlAsyncHTTPClient.
+#
+# Subclasses of AsyncHTTPTestCase in this file should override get_http_client to return
+# an instance of CurlAsyncHTTPClient. Tests that do not do this will actually be run
+# with the default HTTP client instead, which is sometimes overridden to be a different
+# implementation.
 from contextlib import contextmanager
 import gc
 from hashlib import md5
@@ -12,14 +22,13 @@ from tornado.escape import utf8
 from tornado.log import app_log
 from tornado.netutil import ssl_options_to_context
 from tornado.test import httpclient_test
-from tornado.testing import (
+from tornado.test.util import (
     AsyncHTTPSTestCase,
     AsyncHTTPTestCase,
     AsyncTestCase,
-    ExpectLog,
-    setup_with_context_manager,
+    skipNotCPython,
 )
-from tornado.test.util import skipNotCPython
+from tornado.testing import ExpectLog
 from tornado.web import Application, RequestHandler
 
 try:
@@ -223,6 +232,22 @@ class CurlHTTPClientTestCase(AsyncHTTPTestCase):
         )
         self.assertEqual(response.body, b"ok")
 
+    def test_streaming_callback_not_permitted(self):
+        @gen.coroutine
+        def _recv_chunk(chunk):
+            yield gen.moment
+
+        with self.assertRaises(TypeError):
+            self.fetch("/digest", streaming_callback=_recv_chunk)
+
+        import asyncio
+
+        async def _async_recv_chunk(chunk):
+            await asyncio.sleep(0)
+
+        with self.assertRaises(TypeError):
+            self.fetch("/digest", streaming_callback=_async_recv_chunk)
+
 
 @contextmanager
 def _ignore_proxy_env_vars():
@@ -259,7 +284,7 @@ class ProxyAuthEchoHandler(RequestHandler):
 @unittest.skipIf(pycurl is None, "pycurl module not present")
 class CurlHTTPClientReuseProxyAuthTestCase(AsyncHTTPTestCase):
     def setUp(self):
-        setup_with_context_manager(self, _ignore_proxy_env_vars())
+        self.enterContext(_ignore_proxy_env_vars())
         super().setUp()
 
     def get_app(self):
@@ -310,7 +335,7 @@ class ClientCertEchoHandler(RequestHandler):
 @unittest.skipIf(pycurl is None, "pycurl module not present")
 class CurlHTTPClientReuseCertsTestCase(AsyncHTTPSTestCase):
     def setUp(self):
-        setup_with_context_manager(self, _ignore_proxy_env_vars())
+        self.enterContext(_ignore_proxy_env_vars())
         super().setUp()
 
     def get_app(self):
