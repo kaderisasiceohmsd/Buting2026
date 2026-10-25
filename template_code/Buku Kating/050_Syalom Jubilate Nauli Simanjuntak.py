@@ -117,8 +117,10 @@ if menu == "Kesekjenan":
                 "alamat": "Kesekretariatan HMSD",
                 "hobbi": "Push IMO",
                 "sosmed": "@jars_mrp",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "pertama kali liat abangnya agak takut gitu dan waktu tau abangnya jadi asprak ADS makin takut gitu.
+                Tapi ternyata selama praktikum, abangnya baik banget ngejelasin dan bantu ngerjain tugas-tugas praktikum aku.",  
+                "pesan":"terimakasih atas bantuannya ya bang, mungkin kalo waktu itu aku ga nanya abang, tugas praktikum aku ga selesai.
+                Dan semangat dalam memimpin Himpunan Mahasiswa Sains Data ADYATAMA ITERA"# 1
             },
             {
                 "nama": "Muhammad Aqil Ramadhan",
@@ -128,8 +130,9 @@ if menu == "Kesekjenan":
                 "alamat": "Sekretariatan HMSD",
                 "hobbi": "Dzikir",
                 "sosmed": "@Muhammadaqil1111",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "Awal kenal bg aqil waktu latihan basket, waktu itu mainnya jago banget.
+                Udah beberapa kali ngobrol sama abangnya dan orangnya santai banget!",  
+                "pesan":"semangat terus kuliahnya bang! semoga nanti pas IO menang yaa!"# 1
             },
             {
                 "nama": "Efi Defiyanti",
@@ -139,8 +142,8 @@ if menu == "Kesekjenan":
                 "alamat": "Airan",
                 "hobbi": "Membaca",
                 "sosmed": "@eeffiidefi",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+                "kesan": "kakaknya lucu mirip loopy dari pertama kali liat, terus waktu praktikum ADS kakaknya bener-bener ngebantu.",  
+                "pesan":"Makasih kak udah bantu aku ngerjain tugas praktikum, maaf yaa aku sebentar-sebentar udah nanya."# 1
             },
            {
                 "nama": "Qois Olifio",
@@ -150,7 +153,7 @@ if menu == "Kesekjenan":
                 "alamat": "Kotabaru",
                 "hobbi": "Mainin Surat",
                 "sosmed": "@qoisolifio_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "kesan": "",  
                 "pesan":"semangat terus kuliahnya kakak !!!"# 1
             }, 
             {
@@ -422,8 +425,15 @@ if menu == "Badan Kesenatoran":
                 "alamat": "Sukarame",
                 "hobbi": "Mendokumentasikan Bayes",
                 "sosmed": "@aqilazayyaan",
-                "kesan": "Kakaknya baik banget!!",  
-                "pesan":"Semangat terus kak!"# 6
+                "kesan": "Awal kenal kak aqila waktu jadi mentor bayes disitu kak aqila pembawaanya selalu happy gitu.
+                Aku langsung seneng dapet mentor yang pembawaannya ceria, kak aqila juga sabar banget ngarahin aku yang selalu linglung ini,
+                dan juga ternyata kak aqila word of affirmation, soalnya aku sempat cerita-cerita ke kak aqila dan kata-kata dari dia jadi penyemangat,
+                aku terharu banget sih waktu itu, jadi nangis dulu baru bales chat dari kak aqila. Tapi kak aqila juga sangat tegas orangnya,
+                bener-bener ada waktu dimana dia tegas ke kami, tapi ga lama langsung ketawa-ketawa lagi, heran juga transisinya cepat gitu.",  
+                "pesan":"terimakasih banyak ya kak aqila sudah sabar menghadapi kelompok bayes ini. Ga kerasa kak aqila sudah membersamai kami selama kurang lebih 5 bulan
+                dan masanya sebentar lagi habis, tapi kak aqila akan selalu jadi mentor yang terbaik. Semoga setelah masa kaderisasi selesai kita tetap berkomunikasi ya kak,
+                semoga ada waktu dimana kita bisa kumpul untuk bertukar cerita dan bercanda lagi. Terimakasih juga atas ilmu yang udah kakak berikan, semoga dapat diterapkan sebagaimana mestinya.
+                Sayang kak aqila banyak-banyak."# 6
             },                      
             {
                 "nama": "Wielman Itolo Halawa",
@@ -496,6 +506,8 @@ if menu == "Departemen MIKFES":
             "https://drive.google.com/uc?export=view&id=15cq-IfafVPT5QyJpVhF3kE7vGJoSGkLR",
             "https://drive.google.com/uc?export=view&id=1gexcjHkKZoxx9lxoZvPYbhmQ8rCso1GC",
             "https://drive.google.com/uc?export=view&id=1BSyGem1tMTKdubzR8fhmoBJ80LrthHoG",
+            "https://drive.google.com/uc?export=view&id=1lfdYpo3fbXk1j78clkFuk2RQW4tS6pU0",
+            "https://drive.google.com/uc?export=view&id=1LL8qT1U-bOlzDgdF6sTmJf0vAmTi79U3",
         ]
 
         data_list = [
@@ -730,6 +742,17 @@ if menu == "Departemen MIKFES":
                 "kesan" : "Humornya unik dan bikin suasana cair.",
                 "pesan" : "Semoga kenyataan selalu ramah padamu, Kak."
             },
+            {
+                "nama": "Fadil Prasetyo Alfaritzi",
+                "nim" : "Belum Tahu",
+                "asal" : "Bandar Lampung",
+                "alamat" : "Bandar Lampung",
+                "hobbi": "Gitar",
+                "umur" : "21",
+                "sosmed" : "@fadilalfarizzii",
+                "kesan" : "abangnya baik dan ramah",
+                "pesan" : "semangat terus kuliahnya bang"
+            },
             
         ]
 
@@ -956,9 +979,11 @@ if menu == "Departemen Eksternal":
             "https://drive.google.com/uc?export=view&id=1VH42xi_IUv-_Emp1_kHv4gUsBWxGU-Lm",
             "https://drive.google.com/uc?export=view&id=134PCNlfoJm8QOottXy8-MyZGJss4RBp1",
             "https://drive.google.com/uc?export=view&id=1b1BTkqErNIjciLfQS7BA-StzXK4Mzfsq",
+            "https://drive.google.com/uc?export=view&id=1PZpCUg59Iz-es0dOojCrAXB7ceKdGlru",
             "https://drive.google.com/uc?export=view&id=1jgib2SdAXhv975xhTV4oGD31ZvhbuXCc",
             "https://drive.google.com/uc?export=view&id=19khIgsPY8T5uVzMW4UJFiu2DaHwcEGHX",
             "https://drive.google.com/uc?export=view&id=1s4vQJnmvbWui_xyqwrm5oXmOMTeQQsIr",
+            "https://drive.google.com/uc?export=view&id=1qvTqoejpzOGkJ0NOprV5Zn8Hbn0VYZKp",
             "https://drive.google.com/uc?export=view&id=1ZMJ627XOaDBYPru269k8VsLHDFr2YvbH",
             "https://drive.google.com/uc?export=view&id=1egXh4XKBqig2vXfbulkm9SnOASs-Q-Xu",
             "https://drive.google.com/uc?export=view&id=122NEVojaihUDF2rmr8khc37IG70DzPbP",
