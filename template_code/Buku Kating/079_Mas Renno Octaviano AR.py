@@ -511,7 +511,8 @@ elif menu == "Departemen PSDA":
             "https://drive.google.com/uc?export=view&id=1B0kwwvgyq-qkxCmFuVVmD8H7_2ml9-s3",
         
         ]
-     data_list = [
+        
+        data_list = [
             {
                 "Nama": "Arienta Khusnul Ananda",
                 "Nim": "",
