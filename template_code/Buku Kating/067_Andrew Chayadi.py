@@ -3,10 +3,60 @@ from streamlit_option_menu import option_menu
 import requests
 from PIL import Image, ImageOps
 from io import BytesIO
+import base64
+
+st.set_page_config(layout="wide")
 
 st.markdown("""<style>.centered-title {text-align: center;}</style>""", unsafe_allow_html=True)
 st.markdown("<h1 class='centered-title'>BUKU KATING</h1>", unsafe_allow_html=True)
 
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #F8F5F2;
+        color: #000000; 
+    }
+
+    [data-testid="stHeader"] {
+        background-color: transparent !important;
+    }
+    
+    [data-testid="collapsedControl"] {
+        color: #bd411b !important;
+    }
+
+    [data-testid="stSidebar"] {
+        background-color: #bd411b !important;
+    }
+    
+    [data-testid="stSidebar"] * {
+        color: white !important;
+    }
+
+    [data-testid="stTabs"] button, 
+    [data-testid="stTabs"] button * {
+        color: #000000 !important;
+    }
+    
+    [data-testid="stTabs"] [data-baseweb="tab-highlight"] {
+        background-color: #bd411b !important;
+    }
+
+    .gambar-timbul {
+        width: 100%;
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        cursor: pointer;
+    }
+    .gambar-timbul:hover {
+        transform: translateY(-8px) scale(1.03); 
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 # bagian sini jangan diubah
 def streamlit_menu():
     selected = option_menu(
@@ -38,16 +88,31 @@ def streamlit_menu():
         default_index=0,
         orientation="horizontal",
         styles={
-            "container": {"padding": "0!important", "background-color": "#fafafa"},
-            "icon": {"color": "black", "font-size": "19px"},
-            "nav-link": {
-                "font-size": "15px",
-                "text-align": "left",
-                "margin": "0px",
-                "--hover-color": "#eee",
+            "container": {
+                "padding": "10px !important", 
+                "background-color": "#c84b22", 
+                "border": "none !important", 
+                "border-radius": "0 !important", 
+                "box-shadow": "none !important" 
             },
-            "nav-link-selected": {"background-color": "#3FBAD8"},
-        },
+            "icon": {
+                "color": "white", 
+                "font-size": "19px"
+            },
+            "nav-link": {
+                "font-size": "14px",
+                "text-align": "center",
+                "margin": "5px", 
+                "color": "white",
+                "background-color": "transparent", 
+                "--hover-color": "rgba(255, 255, 255, 0.1)",
+            },
+            "nav-link-selected": {
+                "background-color": "#8c3010", 
+                "color": "white",
+                "border-radius": "10px" 
+            },
+            },
     )
     return selected
 
@@ -69,6 +134,9 @@ def load_image(url):
         return None
      
 @st.cache_data
+@st.cache_data
+@st.cache_data
+@st.cache_data
 def display_images_with_data(gambar_urls, data_list):
     images = []
     for i, url in enumerate(gambar_urls):
@@ -77,23 +145,69 @@ def display_images_with_data(gambar_urls, data_list):
             if img is not None:
                 images.append(img)
 
-    for i, img in enumerate(images):
-        col1, col2, col3 = st.columns([1, 2, 1])
-        with col2:
-            st.image(img, use_container_width=True)
+    def img_to_base64(img):
+        import base64
+        from io import BytesIO
+        buffered = BytesIO()
+        img.save(buffered, format="PNG")
+        return base64.b64encode(buffered.getvalue()).decode()
 
-        if i < len(data_list):
-            st.write(f"Nama: {data_list[i]['nama']}")
-            st.write(f"NIM: {data_list[i]['nim']}")
-            st.write(f"Umur: {data_list[i]['umur']}")
-            st.write(f"Asal: {data_list[i]['asal']}")
-            st.write(f"Alamat: {data_list[i]['alamat']}")
-            st.write(f"Hobbi: {data_list[i]['hobbi']}")
-            st.write(f"Sosial Media: {data_list[i]['sosmed']}")
-            st.write(f"Kesan: {data_list[i]['kesan']}")
-            st.write(f"Pesan: {data_list[i]['pesan']}")
-            st.write("  ")
+    st.markdown("""
+    <style>
+    .kartu-profil {
+        transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    }
+    .kartu-profil:hover {
+        transform: translateY(-8px) !important;
+        box-shadow: 0 15px 25px rgba(0,0,0,0.2) !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
+    for i in range(0, len(images), 2):
+        cols = st.columns(2)
+        
+        for j in range(2):
+            index = i + j
+            if index < len(images):
+                with cols[j]:
+                    img_b64 = img_to_base64(images[index])
+                    data = data_list[index] if index < len(data_list) else {}
+                    
+                    nama = data.get('nama', '-')
+                    nim = data.get('nim', '-')
+                    umur = data.get('umur', '-')
+                    asal = data.get('asal', '-')
+                    alamat = data.get('alamat', '-')
+                    hobbi = data.get('hobbi', '-')
+                    sosmed = data.get('sosmed', '-')
+                    kesan = data.get('kesan', '-')
+                    pesan = data.get('pesan', '-')
+
+                    card_html = f"""<div class="kartu-profil" style="display: flex; flex-direction: row; background-color: #ffffff; border-radius: 16px; box-shadow: 0 6px 12px rgba(0,0,0,0.08); overflow: hidden; margin-bottom: 20px; height: 360px;">
+<div style="flex: 0 0 45%;">
+<img src="data:image/png;base64,{img_b64}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+</div>
+<div style="flex: 1; padding: 18px; display: flex; flex-direction: column; justify-content: space-between;">
+<div>
+<h4 style="margin: 0 0 4px 0; color: #1e1e1e; font-size: 18px; line-height: 1.2;">{nama}</h4>
+<p style="margin: 0 0 12px 0; color: #666; font-size: 14px; font-weight: bold;">{nim}</p>
+<div style="font-size: 13px; color: #444; line-height: 1.5;">
+<b>Umur:</b> {umur}<br>
+<b>Asal:</b> {asal}<br>
+<b>Alamat:</b> {alamat}<br>
+<b>Hobbi:</b> {hobbi}<br>
+<b>Sosmed:</b> {sosmed}
+</div>
+</div>
+<div style="background-color: #FFF3E0; padding: 12px; border-radius: 8px; margin-top: 12px;">
+<p style="margin: 0 0 4px 0; font-size: 12px; font-style: italic; color: #bd411b;"><b>Kesan:</b> "{kesan}"</p>
+<p style="margin: 0; font-size: 12px; font-style: italic; color: #bd411b;"><b>Pesan:</b> "{pesan}"</p>
+</div>
+</div>
+</div>"""
+                    
+                    st.markdown(card_html, unsafe_allow_html=True)
 menu = streamlit_menu()
 
 # BAGIAN SINI YANG HANYA BOLEH DIUBAH
@@ -1317,7 +1431,7 @@ elif menu == "Departemen Eksternal":
 
         with tab2:
             gambar_urls_sekdep_eksternal = [
-            "https://drive.google.com/uc?export=view&id=1E3GvqoGWxhja7K_jKk9NpgEVjuLBgrcP",
+            "https://drive.google.com/uc?export=view&id=1tbJhrkjRdo3WHIXp7RGhfG6ur0GcljVI",
             ]
             data_list_sekdep_eksternal = [
             {
@@ -1336,16 +1450,16 @@ elif menu == "Departemen Eksternal":
 
         with tab3:
             gambar_urls_hubungan_luar = [
-            "https://drive.google.com/uc?export=view&id=1NdxI7kuTgiEiutow57MPkZtSBkau1lK0",
-            "https://drive.google.com/uc?export=view&id=1LNA6K_zrpCh_8B787bIxo8JB1UCWVwl9",
-            "https://drive.google.com/uc?export=view&id=1RkhM5S_5A8U0kUtI5wWR2SB3YJCLxHmX",
-            "https://drive.google.com/uc?export=view&id=1vFEG4uocG4-BNkttz9YjGWBhluRBeDbc",
-            "https://drive.google.com/uc?export=view&id=1vFEG4uocG4-BNkttz9YjGWBhluRBeDbc",
-            "https://drive.google.com/uc?export=view&id=1vFEG4uocG4-BNkttz9YjGWBhluRBeDbc",
-            "https://drive.google.com/uc?export=view&id=1vFEG4uocG4-BNkttz9YjGWBhluRBeDbc",
-            "https://drive.google.com/uc?export=view&id=1vFEG4uocG4-BNkttz9YjGWBhluRBeDbc",
-            "https://drive.google.com/uc?export=view&id=1vFEG4uocG4-BNkttz9YjGWBhluRBeDbc",
-            "https://drive.google.com/uc?export=view&id=1vFEG4uocG4-BNkttz9YjGWBhluRBeDbc",
+            "https://drive.google.com/uc?export=view&id=1pxQ2X6CxL7TGamYbxewNx0HPyriRSKbv",
+            "https://drive.google.com/uc?export=view&id=19byi4aK_pNmzPPtpHilUNUDOnMHJhgMz",
+            "https://drive.google.com/uc?export=view&id=1eBg3YzzRjWv5HL-_MdrTYGjUnOCv2MRL",
+            "https://drive.google.com/uc?export=view&id=1c6Y9E0EM8NDDF97IOQmY36qyWPr693yY",
+            "https://drive.google.com/uc?export=view&id=1zN8-vJAU9rYdVs794mr5lqfwiNyaR03u",
+            "https://drive.google.com/uc?export=view&id=10xwMJl3LHaeenET0u6Bk6jshkYN9CUOV",
+            "https://drive.google.com/uc?export=view&id=1fiUYgOP67qKokVw9M5S-gPCwSQJjBqm2",
+            "https://drive.google.com/uc?export=view&id=19LBMF4gIYEZHZMKEGETi67XPWLM67Ew3",
+            "https://drive.google.com/uc?export=view&id=1F0cvNkFTDBePb-Wewt7OEOwqGEy1wckv",
+            "https://drive.google.com/uc?export=view&id=1F0cvNkFTDBePb-Wewt7OEOwqGEy1wckv",
             ]
             data_list_hubungan_luar = [
             {
@@ -1420,7 +1534,7 @@ elif menu == "Departemen Eksternal":
             "umur": "20",
             "asal": "Kerangka Bawang Sebelah Barat",
             "alamat": "Kayu Mulya",
-            "hobbi": "",
+            "hobbi": "futsal",
             "sosmed": "@yollanda_agustina16",
             "kesan": "",  
             "pesan": ""
@@ -1463,15 +1577,15 @@ elif menu == "Departemen Eksternal":
 
         with tab4:
             gambar_urls_pengabdian_masyarakat = [
-            "https://drive.google.com/uc?export=view&id=1TUqVePQ0R95loxH2Zqbb_Le74GsnOxTN",
-            "https://drive.google.com/uc?export=view&id=1PhtcoQexxeNPD-B53SSojJ-ieX61ZSpx",
-            "https://drive.google.com/uc?export=view&id=1-IhjUPBL9tVC_27_oUq1cquGFobnew_6",
-            "https://drive.google.com/uc?export=view&id=17WuUaC_OHDVufacMa_rIau-lXD1zK2GK",
-            "https://drive.google.com/uc?export=view&id=117nH2xIUY0iEdEL4euoPqw0foc87uK98",
-            "https://drive.google.com/uc?export=view&id=117nH2xIUY0iEdEL4euoPqw0foc87uK98",
-            "https://drive.google.com/uc?export=view&id=117nH2xIUY0iEdEL4euoPqw0foc87uK98",
-            "https://drive.google.com/uc?export=view&id=117nH2xIUY0iEdEL4euoPqw0foc87uK98",
-            "https://drive.google.com/uc?export=view&id=117nH2xIUY0iEdEL4euoPqw0foc87uK98",
+            "https://drive.google.com/uc?export=view&id=1thhQockQPc81Hrw5T4hBuE4m14TikkfT",
+            "https://drive.google.com/uc?export=view&id=1kgAopWkrKxHlqaWVTAiR2IaBBi-UMFGJ",
+            "https://drive.google.com/uc?export=view&id=1ONqJaZUIsNrm20hZV3b12qhujhYmRGYU",
+            "https://drive.google.com/uc?export=view&id=1WfSjKNl_6PtYoHO6ttGmodpyvuYZD_pd",
+            "https://drive.google.com/uc?export=view&id=1EBnJ0ZiLoEJ9YN4DHBb7Nxwyoj_WaCVO",
+            "https://drive.google.com/uc?export=view&id=1od7tSpOVLhk5Uuxvl8Of3DfrFnuURQUo",
+            "https://drive.google.com/uc?export=view&id=14kUkc2PHfnvIEoTdki-nwm75iHNp8zvP",
+            "https://drive.google.com/uc?export=view&id=14S22usYXwhdLTgwKY7wBg6LRHFjS_Wgz",
+            "https://drive.google.com/uc?export=view&id=1EJpLmbBsLNtxhTRxsG-k6iQMcoftZcFJ",
             ]
            
             data_list_pengabdian_masyarakat = [
@@ -1587,7 +1701,7 @@ elif menu == "Departemen Internal":
 
         with tab1:
             gambar_urls_Kadep_internal = [
-            "https://drive.google.com/uc?export=view&id=1N4dIHHdB5CeVz8OygZn-hNOX1MjASRk1",
+            "https://drive.google.com/uc?export=view&id=1kGtKEzfgls6ef_oKU8gIrCrswMjvm6--",
             ]
             data_list_Kadep_internal = [
             {
@@ -1606,7 +1720,7 @@ elif menu == "Departemen Internal":
 
         with tab2:
             gambar_urls_sekdep_internal = [
-            "https://drive.google.com/uc?export=view&id=1E3GvqoGWxhja7K_jKk9NpgEVjuLBgrcP",
+            "https://drive.google.com/uc?export=view&id=110WGquNZuSQk4nQVn4EDg8SFZzs0zPxy",
             ]
             data_list_sekdep_internal = [
             {
@@ -1625,14 +1739,14 @@ elif menu == "Departemen Internal":
 
         with tab3:
             gambar_urls_keharmonisasian = [
-            "https://drive.google.com/uc?export=view&id=1NdxI7kuTgiEiutow57MPkZtSBkau1lK0",
-            "https://drive.google.com/uc?export=view&id=1LNA6K_zrpCh_8B787bIxo8JB1UCWVwl9",
-            "https://drive.google.com/uc?export=view&id=1RkhM5S_5A8U0kUtI5wWR2SB3YJCLxHmX",
-            "https://drive.google.com/uc?export=view&id=1vFEG4uocG4-BNkttz9YjGWBhluRBeDbc",
-            "https://drive.google.com/uc?export=view&id=1vFEG4uocG4-BNkttz9YjGWBhluRBeDbc",
-            "https://drive.google.com/uc?export=view&id=1vFEG4uocG4-BNkttz9YjGWBhluRBeDbc",
-            "https://drive.google.com/uc?export=view&id=1vFEG4uocG4-BNkttz9YjGWBhluRBeDbc",
-            "https://drive.google.com/uc?export=view&id=1vFEG4uocG4-BNkttz9YjGWBhluRBeDbc",
+            "https://drive.google.com/uc?export=view&id=1V08D2gwf2lZ5hWZRDGzr459YLQXvsEuD",
+            "https://drive.google.com/uc?export=view&id=1hNcuCxmSd5TY6TYwnLJBvg0lCCktvtUP",
+            "https://drive.google.com/uc?export=view&id=1TMIkLgkIl3v-mPEYOZoaxrz2HZUL7L_5",
+            "https://drive.google.com/uc?export=view&id=1UR3TXBnVZ_GvcOiqS9M1306-E35edKG0",
+            "https://drive.google.com/uc?export=view&id=1q3lCHc_6mo4REx341E4dLByFr_gn-DIg",
+            "https://drive.google.com/uc?export=view&id=19JjgXBZS8JPYcVfvnal5M531Gw4RuVEr",
+            "https://drive.google.com/uc?export=view&id=181kFHPoj4VhIaRMAAjP2BiIzE8OJN9EH",
+            "https://drive.google.com/uc?export=view&id=1G-rd9MULK5udMN3t6gr61Dh7_YCM1BEj",
             ]
             data_list_keharmonisasian = [
             {
@@ -1728,11 +1842,12 @@ elif menu == "Departemen Internal":
 
         with tab4:
             gambar_urls_kerohanian = [
-            "https://drive.google.com/uc?export=view&id=1TUqVePQ0R95loxH2Zqbb_Le74GsnOxTN",
-            "https://drive.google.com/uc?export=view&id=1PhtcoQexxeNPD-B53SSojJ-ieX61ZSpx",
-            "https://drive.google.com/uc?export=view&id=1-IhjUPBL9tVC_27_oUq1cquGFobnew_6",
-            "https://drive.google.com/uc?export=view&id=17WuUaC_OHDVufacMa_rIau-lXD1zK2GK",
-            "https://drive.google.com/uc?export=view&id=117nH2xIUY0iEdEL4euoPqw0foc87uK98",
+            "https://drive.google.com/uc?export=view&id=1CzlywM4FoisbnlB_MC2jShBWbypLVqNe",
+            "https://drive.google.com/uc?export=view&id=1LDgQQXhtg8Mc7vfiE_tNpG9fUVArEq9C",
+            "https://drive.google.com/uc?export=view&id=1i4dKfBqIV6D1fUymtAWQHFJaqzW0ZT6N",
+            "https://drive.google.com/uc?export=view&id=1J4AGVndTY_BopYy94ahDf-74RuAy1Xkh",
+            "https://drive.google.com/uc?export=view&id=1R1NpvxL2QREGXGfuR412OUEQapXCvGhd",
+            "https://drive.google.com/uc?export=view&id=1hqcrAfcG2yoGO2b0ED6jrxbr-lptyiWC",
             ]
            
             data_list_kerohanian = [
@@ -1834,7 +1949,7 @@ elif menu == "Departemen SSD":
             
         with tab2:
             gambar_urls_sekdep_ssd = [
-            "https://drive.google.com/uc?export=view&id=1E3GvqoGWxhja7K_jKk9NpgEVjuLBgrcP",
+            "https://drive.google.com/uc?export=view&id=1VgcweaEm_FOHsry3L35EI1jzE5TXcoeF",
             ]
             data_list_sekdep_ssd = [
             {
@@ -1853,10 +1968,11 @@ elif menu == "Departemen SSD":
 
         with tab3:
             gambar_urls_kemitraan = [
-            "https://drive.google.com/uc?export=view&id=1NdxI7kuTgiEiutow57MPkZtSBkau1lK0",
-            "https://drive.google.com/uc?export=view&id=1LNA6K_zrpCh_8B787bIxo8JB1UCWVwl9",
-            "https://drive.google.com/uc?export=view&id=1RkhM5S_5A8U0kUtI5wWR2SB3YJCLxHmX",
-            "https://drive.google.com/uc?export=view&id=1vFEG4uocG4-BNkttz9YjGWBhluRBeDbc",
+            "https://drive.google.com/uc?export=view&id=1nbtG_1jK7Jqzh1H16YSNbYFBunHtKvwc",
+            "https://drive.google.com/uc?export=view&id=1Hi_5tvUENkU3p8gHDGR1ZkTN_5ADKF2J",
+            "https://drive.google.com/uc?export=view&id=1_QlBNJiu10XT8HxDWYVRoFr7S95T1_w4",
+            "https://drive.google.com/uc?export=view&id=1_RhbZ1XITJ4-wdlIFKmuGQ_uCaAPIe_E",
+            "https://drive.google.com/uc?export=view&id=1MH_NrlYDN6FcxomlqmB9CBsGJJgaV9-I",
             ]
             data_list_kemitraan = [
             {
@@ -1919,11 +2035,11 @@ elif menu == "Departemen SSD":
 
         with tab4:
             gambar_urls_kewirausahaan = [
-            "https://drive.google.com/uc?export=view&id=1TUqVePQ0R95loxH2Zqbb_Le74GsnOxTN",
-            "https://drive.google.com/uc?export=view&id=1PhtcoQexxeNPD-B53SSojJ-ieX61ZSpx",
-            "https://drive.google.com/uc?export=view&id=1-IhjUPBL9tVC_27_oUq1cquGFobnew_6",
-            "https://drive.google.com/uc?export=view&id=17WuUaC_OHDVufacMa_rIau-lXD1zK2GK",
-            "https://drive.google.com/uc?export=view&id=117nH2xIUY0iEdEL4euoPqw0foc87uK98",
+            "https://drive.google.com/uc?export=view&id=1nbtG_1jK7Jqzh1H16YSNbYFBunHtKvwc",
+            "https://drive.google.com/uc?export=view&id=1YFshJlT7D7patOdDFp0JyU2yPCYa8zrE",
+            "https://drive.google.com/uc?export=view&id=1kV9ahlwDUQUcsS1CDle6Z6_pFKwp5wik",
+            "https://drive.google.com/uc?export=view&id=11eveYhnpHEcAPcCwXoURj_nvbJyUXDla",
+            "https://drive.google.com/uc?export=view&id=1fe9zZMbpXUXkdJKmyc5MJCabqMVC1Fcw",
             ]
            
             data_list_kewirausahaan = [
@@ -1994,17 +2110,17 @@ elif menu == "Departemen Medkraf":
 
         with tab1:
             gambar_urls_Kadep_medkraf = [
-            "https://drive.google.com/uc?export=view&id=1b5BlJfjO0SGyy0XTUPyN8ZOJ8zkvOBUD",
+            "https://drive.google.com/uc?export=view&id=1zG0mnwqLUsndMcOJ-mHXW93poVhd2Zrd",
             ]
             data_list_Kadep_medkraf = [
             {
-            "nama": "",
-            "nim": "",
-            "umur": "",
-            "asal": "",
-            "alamat": "",
-            "hobbi": "",
-            "sosmed": "",
+            "nama": "Nayla Salsabila Fathianisa",
+            "nim": "123450082",
+            "umur": "20",
+            "asal": "Payakumbuh, Sumatera Barat",
+            "alamat": "Way Huwi",
+            "hobbi": "Mendengarkan Musik",
+            "sosmed": "@naylasalsabilaa._",
             "kesan": "",  
             "pesan": ""
             },
@@ -2013,17 +2129,17 @@ elif menu == "Departemen Medkraf":
 
         with tab2:
             gambar_urls_sekdep_medkraf = [
-            "https://drive.google.com/uc?export=view&id=1hB4PN9eK9z13aE5sxeq218htzjTkEVS9",
+            "https://drive.google.com/uc?export=view&id=1CXkNVje18wp1E6NujokW6SIkgTV-8fb4",
             ]
             data_list_sekdep_medkraf = [
             {
-            "nama": "",
-            "nim": "",
-            "umur": "",
-            "asal": "",
-            "alamat": "",
-            "hobbi": "",
-            "sosmed": "",
+            "nama": "Donna Maya Puspita",
+            "nim": "123450028",
+            "umur": "21",
+            "asal": "Bekasi",
+            "alamat": "Way Huwi",
+            "hobbi": "Listening to music",
+            "sosmed": "@donnamaya.p",
             "kesan": "",  
             "pesan": ""
             },
@@ -2032,75 +2148,53 @@ elif menu == "Departemen Medkraf":
 
         with tab3:
             gambar_urls_Divisi_dokumentasi = [
-            "https://drive.google.com/uc?export=view&id=1Re_t0YbK2mT-mjnestjAdTS11mGbAtc6",
-            "https://drive.google.com/uc?export=view&id=1GSlalGfy31swutJV2zZpWdSRgGK9tlSo",
-            "https://drive.google.com/uc?export=view&id=1YEEeDJoyZpavqkCRiyzLAPkp30gGWcJs",
-            "https://drive.google.com/uc?export=view&id=1yZWmRobFZhHEX0y-5e0_PH2eJ4LnK748",
+            "https://drive.google.com/uc?export=view&id=1deLZkPCCb3mB-gxYqvwHyQyyPXVPv9Rq",
+            "https://drive.google.com/uc?export=view&id=1P0pMhYZgnZwPxURB6LX92RsLfpYDwIkc",
+            "https://drive.google.com/uc?export=view&id=18MJRsS_yBSAzqmWPIh4M6h96QR9GZ0e1",
+            "https://drive.google.com/uc?export=view&id=1GNTkKjWa7Y3-2G1XsXHxZe-G47Wi6l_A",
             ]
             data_list_Divisi_dokumentasi = [
             {
-            "nama": "",
-            "nim": "",
-            "umur": "",
-            "asal": "",
-            "alamat": "",
-            "hobbi": "",
-            "sosmed": "",
+            "nama": "Labo John Noel Napitupulu",
+            "nim": "123450037",
+            "umur": "20",
+            "asal": "Medan, Jakut, Palembang",
+            "alamat": "Belwis",
+            "hobbi": "Motoran",
+            "sosmed": "@noerruuu",
             "kesan": "",  
             "pesan": ""
             },
             {
-            "nama": "",
-            "nim": "",
-            "umur": "",
-            "asal": "",
-            "alamat": "",
-            "hobbi": "",
-            "sosmed": "",
+            "nama": "Anash Tasya Ausyaqila",
+            "nim": "124450050",
+            "umur": "20",
+            "asal": "Bandar Lampung",
+            "alamat": "Way Halim",
+            "hobbi": "Nonton",
+            "sosmed": "@anshtsyaaql",
             "kesan": "",  
             "pesan": ""
             },
             {
-            "nama": "",
-            "nim": "",
-            "umur": "",
-            "asal": "",
-            "alamat": "",
-            "hobbi": "",
-            "sosmed": "",
+            "nama": "Felisya Nabila Nugroho",
+            "nim": "124450104",
+            "umur": "19",
+            "asal": "Lampung Timur",
+            "alamat": "Kota Baru",
+            "hobbi": "Mancing emosi",
+            "sosmed": "@felisyanbl",
             "kesan": "",  
             "pesan": ""
             },
             {
-            "nama": "",
-            "nim": "",
-            "umur": "",
-            "asal": "",
-            "alamat": "",
-            "hobbi": "",
-            "sosmed": "",
-            "kesan": "",  
-            "pesan": ""
-            },
-            {
-            "nama": "",
-            "nim": "",
-            "umur": "",
-            "asal": "",
-            "alamat": "",
-            "hobbi": "",
-            "sosmed": "",
-            "kesan": "",  
-            "pesan": ""
-            },
-            {
-            "nama": "",
-            "nim": "",
-            "umur": "",
-            "asal": "",
-            "alamat": "",
-            "hobbi": "",
-            "sosmed": "",
+            "nama": "Muhammad Razan Maulana Pratama",
+            "nim": "124450031",
+            "umur": "21",
+            "asal": "Jawa Barat",
+            "alamat": "Korpri",
+            "hobbi": "Poto orang",
+            "sosmed": "@muh_razan_",
             "kesan": "",  
             "pesan": ""
             },
@@ -2109,178 +2203,159 @@ elif menu == "Departemen Medkraf":
 
         with tab4:
             gambar_urls_Divisi_Media_dan_Konten_Spesialis = [
-            "https://drive.google.com/uc?export=view&id=1Vx0Nk2OylnbrRx_L6ZW5JQ6GVqgI3rTQ",
-            "https://drive.google.com/uc?export=view&id=1Y-n9WgzEVokH0XimAqDOSa_epwnhnwmZ",
-            "https://drive.google.com/uc?export=view&id=1qLUI-SymckwaduId3Bbk4DEOa0mGPnY9",
-            "https://drive.google.com/uc?export=view&id=1m_my97kVsCVPinEGsp19Rg4rFgbUG8S_",
-            "https://drive.google.com/uc?export=view&id=1n0jpZiHb2p-lVgL4sXTd76oGO8sfi1Ed",
+            "https://drive.google.com/uc?export=view&id=1bMv7Osx12FyzLL0VDK11Br65tWVHI8tB",
+            "https://drive.google.com/uc?export=view&id=1RFmTo_N1IGIryqc-2MMOuNS6RI_pT43X",
+            "https://drive.google.com/uc?export=view&id=1uWywpG2jyhTPP3H5rc20jbPcmFb_SWsz",
+            "https://drive.google.com/uc?export=view&id=1OYEjcTrTWftCr62ZxFHMoKNv6BNf45iR",
+            "https://drive.google.com/uc?export=view&id=1uWywpG2jyhTPP3H5rc20jbPcmFb_SWsz",
+            "https://drive.google.com/uc?export=view&id=1qTrWtd_uC-5mpAzcBlF44M5RRDSDclSM",
             ]
             data_list_Divisi_Media_dan_Konten_Spesialis = [
             {
-                "nama": "",
-                "nim": "",
-                "umur": "",
-                "asal": "",
-                "alamat": "",
-                "hobbi": "",
-                "sosmed": "",
-                "kesan": "",  
-                "pesan": ""
+            "nama": "Sania Dwi Ayu Lestari",
+            "nim": "124450086",
+            "umur": "21",
+            "asal": "Karawang",
+            "alamat": "Airan Raya",
+            "hobbi": "Nonton netflix",
+            "sosmed": "@saniayyllstr",
+            "kesan": "",  
+            "pesan": "",
+            },
+           {
+            "nama": "Allisha",
+            "nim": "124450019",
+            "umur": "16",
+            "asal": "Kayangan",
+            "alamat": "Heaven",
+            "hobbi": "Mancing",
+            "sosmed": "@aallishaa.a",
+            "kesan": "",  
+            "pesan": "",
             },
             {
-                "nama": "",
-                "nim": "",
-                "umur": "",
-                "asal": "",
-                "alamat": "",
-                "hobbi": "",
-                "sosmed": "",
-                "kesan": "",  
-                "pesan": ""
+            "nama": "Alya Ramadhanti",
+            "nim": "124450091",
+            "umur": "19",
+            "asal": "Jambi",
+            "alamat": "Airan",
+            "hobbi": "Jalan jalan",
+            "sosmed": "@alya.rmdhnti",
+            "kesan": "",  
+            "pesan": ""
             },
             {
-                "nama": "",
-                "nim": "",
-                "umur": "",
-                "asal": "",
-                "alamat": "",
-                "hobbi": "",
-                "sosmed": "",
-                "kesan": "",  
-                "pesan": ""
+            "nama": "Bunga Clarisa Sefa",
+            "nim": "20 ",
+            "umur": "",
+            "asal": "Lampung Selatan",
+            "alamat": "Lampung Selatan",
+            "hobbi": "Belajar",
+            "sosmed": "@bungaclrssf",
+            "kesan": "",  
+            "pesan": ""
             },
             {
-                "nama": "",
-                "nim": "",
-                "umur": "",
-                "asal": "",
-                "alamat": "",
-                "hobbi": "",
-                "sosmed": "",
-                "kesan": "",  
-                "pesan": ""
+            "nama": "Difanya Husakina",
+            "nim": "124450043",
+            "umur": "20",
+            "asal": "Pagar Alam",
+            "alamat": "Airan Raya",
+            "hobbi": "Membaca Alquran",
+            "sosmed": "@difanyhsa_",
+            "kesan": "",  
+            "pesan": ""
             },
             {
-                "nama": "",
-                "nim": "",
-                "umur": "",
-                "asal": "",
-                "alamat": "",
-                "hobbi": "",
-                "sosmed": "",
-                "kesan": "",  
-                "pesan": ""
+            "nama": "Nazlah Auliya",
+            "nim": "124450054",
+            "umur": "20",
+            "asal": "Bandar Lampung",
+            "alamat": "Bandar Lampung",
+            "hobbi": "Berenang",
+            "sosmed": "@nzlhauly_",
+            "kesan": "",  
+            "pesan": ""
             },
-            {
-                "nama": "",
-                "nim": "",
-                "umur": "",
-                "asal": "",
-                "alamat": "",
-                "hobbi": "",
-                "sosmed": "",
-                "kesan": "",  
-                "pesan": ""
-            },
-            {
-                "nama": "",
-                "nim": "",
-                "umur": "",
-                "asal": "",
-                "alamat": "",
-                "hobbi": "",
-                "sosmed": "",
-                "kesan": "",  
-                "pesan": ""
-            }
             ]
             display_images_with_data(gambar_urls_Divisi_Media_dan_Konten_Spesialis, data_list_Divisi_Media_dan_Konten_Spesialis)
 
         with tab5:
             gambar_urls_Divisi_Visual_Design = [
-            "https://drive.google.com/uc?export=view&id=1atZTxIoNLVNQVFRr4CRIL7sWe8SGNYbq",
-            "https://drive.google.com/uc?export=view&id=1KSezc8FGz4EDRuYnUxfB0J5kcA6xw1Q3",
-            "https://drive.google.com/uc?export=view&id=1AZeqrWofTPAnMCbqZdGvhoUcoraK6SZt",
-            "https://drive.google.com/uc?export=view&id=1xR39p8ryuUsU9tngr4Vb1Cw37p4zQ4y8",
+            "https://drive.google.com/uc?export=view&id=1Pej1chcJU40ZlAPZ8xDxxs3d4ujH5-zY",
+            "https://drive.google.com/uc?export=view&id=15Lwu-_KkXR6zF1ZMh2LsXFS7XAz_DBVF",
+            "https://drive.google.com/uc?export=view&id=1RZV454S_IpTykKKVe9nBNkvBvH8MYkzQ",
+            "https://drive.google.com/uc?export=view&id=1x-7ZkdvpvQBcxB8AmO_lRhOFkjLEGsT7",
+            "https://drive.google.com/uc?export=view&id=1WtcX03vQv9IxzsoUGcKWSwL7TUQhe6DB",
+            "https://drive.google.com/uc?export=view&id=1m4HjYszig5AUUk2zsjww_2WPBCQcvUyp",
             ]
             data_list_Divisi_Visual_Design = [
             {
-                "nama": "",
-                "nim": "",
-                "umur": "",
-                "asal": "",
-                "alamat": "",
-                "hobbi": "",
-                "sosmed": "",
-                "kesan": "",  
-                "pesan": ""
+            "nama": "Raihana Adelia Putri",
+            "nim": "123450041",
+            "umur": "20",
+            "asal": "Lampung Tengah",
+            "alamat": "Aira Raya 1",
+            "hobbi": "Menulis, membaca",
+            "sosmed": "@n1tg._",
+            "kesan": "",  
+            "pesan": ""
             },
             {
-                "nama": "",
-                "nim": "",
-                "umur": "",
-                "asal": "",
-                "alamat": "",
-                "hobbi": "",
-                "sosmed": "",
-                "kesan": "",  
-                "pesan": ""
+            "nama": "Daffa Kharisma Adzana",
+            "nim": "124450061",
+            "umur": "21",
+            "asal": "Surabaya",
+            "alamat": "Sukarame",
+            "hobbi": "-",
+            "sosmed": "@daffascript",
+            "kesan": "",  
+            "pesan": ""
             },
             {
-                "nama": "",
-                "nim": "",
-                "umur": "",
-                "asal": "",
-                "alamat": "",
-                "hobbi": "",
-                "sosmed": "",
-                "kesan": "",  
-                "pesan": ""
+            "nama": "Edsel Adya Pradipta",
+            "nim": "124450098",
+            "umur": "20",
+            "asal": "Lampung Selatan",
+            "alamat": "Natar",
+            "hobbi": "Nonton Anime",
+            "sosmed": "@edsel_0712",
+            "kesan": "",  
+            "pesan": ""
             },
             {
-                "nama": "",
-                "nim": "",
-                "umur": "",
-                "asal": "",
-                "alamat": "",
-                "hobbi": "",
-                "sosmed": "",
-                "kesan": "",  
-                "pesan": ""
+            "nama": "Lucia Advencia Rachel Nainggolan",
+            "nim": "124450085",
+            "umur": "20",
+            "asal": "Bekasi",
+            "alamat": "Belwis",
+            "hobbi": "Tidur",
+            "sosmed": "@luciarachel_",
+            "kesan": "",  
+            "pesan": ""
             },
             {
-                "nama": "",
-                "nim": "",
-                "umur": "",
-                "asal": "",
-                "alamat": "",
-                "hobbi": "",
-                "sosmed": "",
-                "kesan": "",  
-                "pesan": ""
+            "nama": "Shafa Delaila Azzahra",
+            "nim": "124450124",
+            "umur": "20",
+            "asal": "Lampung Tengah",
+            "alamat": "Perum Pemda",
+            "hobbi": "Melukis dan menulis",
+            "sosmed": "@_shaazzh",
+            "kesan": "",  
+            "pesan": ""
             },
             {
-                "nama": "",
-                "nim": "",
-                "umur": "",
-                "asal": "",
-                "alamat": "",
-                "hobbi": "",
-                "sosmed": "",
-                "kesan": "",  
-                "pesan": ""
+            "nama": "Zannuba Arifah Ilman",
+            "nim": "124450112",
+            "umur": "18",
+            "asal": "Lampung Timur",
+            "alamat": "Bengong",
+            "hobbi": "@xifasky",
+            "sosmed": "Rajabasa",
+            "kesan": "",  
+            "pesan": ""
             },
-            {
-                "nama": "",
-                "nim": "",
-                "umur": "",
-                "asal": "",
-                "alamat": "",
-                "hobbi": "",
-                "sosmed": "",
-                "kesan": "",  
-                "pesan": ""
-            }
             ]
             display_images_with_data(gambar_urls_Divisi_Visual_Design, data_list_Divisi_Visual_Design)
     medkraf()
