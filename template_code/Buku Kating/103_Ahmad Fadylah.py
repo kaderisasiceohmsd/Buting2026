@@ -1631,8 +1631,8 @@ elif menu == "Departemen SSD":
                 "alamat": "Belwis",
                 "hobbi": "Jualan",
                 "sosmed": "@ihsan.myusuf",
-                "kesan": "...",
-                "pesan": "..."# 1
+                "kesan": "Bang Ihsan orangnya lucuu banget, suka ngelawak, dan asik diajak ngobrol, selalu ada aja tingkah atau candaan yang bikin suasana jadi lebih rame.",
+                "pesan": "Semoga abang selalu diberi kelancaran dan kemudahan dalam segala hal."# 1
             },
             {
                 "nama": "hanifah inaya sani",
@@ -1642,8 +1642,8 @@ elif menu == "Departemen SSD":
                 "alamat": "Bandar Lampung ",
                 "hobbi": "Masak",
                 "sosmed": "@_inayasani",
-                "kesan": "...",
-                "pesan": "..."# 1
+                "kesan": "Kak Hanifah orangnya humble parahhh, lucu, dan baik banget",
+                "pesan": "Semoga kakak selalu sehat, bahagia, dan dilancarkan semua urusannya. Sukses terus ke depannya ya, Kak"# 1
             },
             {
                 "nama": "Afifah Fauziah",
@@ -1653,8 +1653,8 @@ elif menu == "Departemen SSD":
                 "alamat": "Airan",
                 "hobbi": "Nonton marvel",
                 "sosmed": "@fifah.zy",
-                "kesan": "...",
-                "pesan": "..."# 1
+                "kesan": "Kak Afifah orangnya humblee dan asik banget! Ramah juga orangnya, pokoknya seru deh bisa kenal kakak",
+                "pesan": "Semoga kakak selalu sehat, bahagia, dan dilancarkan semua urusannya. Sukses terus ya, Kak, semoga semua hal baik selalu menyertai kakak"# 1
             },
             {
                 "nama": "Hasan Nur Ramadhan",
@@ -1664,7 +1664,7 @@ elif menu == "Departemen SSD":
                 "alamat": "Sebelah kostan Ayake",
                 "hobbi": "Nonton YouTube",
                 "sosmed": "@hasan.ramdhan08",
-                "kesan": "...",
+                "kesan": "Bang Hasan orangnya kalem, tapi asik banget, apalagi kalau diajak diskusi, enak diajak bertukar pikiran dan bisa nyam",
                 "pesan": "..."
             },
             {
