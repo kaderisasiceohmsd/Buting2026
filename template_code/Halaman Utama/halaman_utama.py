@@ -1224,7 +1224,7 @@ elif menu == "About Us":
                 "nama": "Mojes Wijaya",
                 "sebagai": "Anggota",
                 "nim": "125450094",
-                "fun_fact": "Tulis tangan mirip sansekerta \",
+                "fun_fact": "Tulis tangan mirip sansekerta",
                 "motto_hidup": "Perhatikan map",
                 "sosmed": "@mojeswwwijaya",
                 "foto": "https://drive.google.com/uc?export=view&id=114wxxW8dyiUPBz87C3IyQJOyyl2M29kw",
