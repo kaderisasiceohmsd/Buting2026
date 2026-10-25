@@ -29,7 +29,7 @@ DURASI_MAKSIMUM = 5.0 # detik (batas maksimal preload agar transisi ke web tetap
 FOTO_ANGGOTA = {
     "Bintang": "https://drive.google.com/uc?export=view&id=1KPiPBu6qnc-7uAcvTlfVxfvw3P3ojjPY",
     "Najwa":   "https://drive.google.com/uc?export=view&id=1TWNgccBsATeQyTnJdCx30lPXOk-lF0JP",
-    "Rafli":   ""https://drive.google.com/uc?export=view&id=1CUqKHr8nql3b9ifOLu0-cvcwrUxVe0L5",
+    "Rafli":   "https://drive.google.com/uc?export=view&id=1CUqKHr8nql3b9ifOLu0-cvcwrUxVe0L5",
     "Abyan":   "https://drive.google.com/uc?export=view&id=1i9oSkeFZT1sL0SJmMWmZb4l_qPCxAV-4",
     "Bayu":    "https://drive.google.com/uc?export=view&id=1AeNI3iwCdGOXgrjncpYatIqfuv4qvZ3W",
     "Mojes":   "https://drive.google.com/uc?export=view&id=114wxxW8dyiUPBz87C3IyQJOyyl2M29kw",
