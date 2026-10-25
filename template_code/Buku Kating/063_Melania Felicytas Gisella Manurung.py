@@ -966,16 +966,16 @@ if menu == "Departemen Medkraf":
             "https://drive.google.com/uc?export=view&id=1fW6unVkvue1Ekpt9M8JbwwXeu6495l0t",
             "https://drive.google.com/uc?export=view&id=1HZdS0Y8zmqpBLit6swJNjH__ySvuB3UX",
             "https://drive.google.com/uc?export=view&id=1qa-dMhZ4qI5Fc0fKYU11oTxDARyC6z5Q",
+            "https://drive.google.com/uc?export=view&id=1T2m2iNHoNSTfnOFiVHrZMa74QGGCcru4",
+            "https://drive.google.com/uc?export=view&id=19YEdSf3jLuI2HrJsg8YK7TlZqTrVgYOy",
             "https://drive.google.com/uc?export=view&id=1OBnBt8yG2K5BDmMeAkUpU9FVLVJC6hn9",
             "https://drive.google.com/uc?export=view&id=1OH89l6M_70HcXJUszCVx_S1KQSbMfGQV",
             "https://drive.google.com/uc?export=view&id=1NUKfpFOpOpGIJiOkptMEhkOe3BsI-GC9",
-            "https://drive.google.com/uc?export=view&id=1T2m2iNHoNSTfnOFiVHrZMa74QGGCcru4",
             "https://drive.google.com/uc?export=view&id=1xwzUZKAPnFFu4RLQ6flLq26tnboe6AcH",
             "https://drive.google.com/uc?export=view&id=1lyyLW_yCl_7jxiwi2IryY9tc82LZgWZp",
             "https://drive.google.com/uc?export=view&id=1BdUjwH5i0ndiWHW3Hmwa_26LhC0KXEGW",
             "https://drive.google.com/uc?export=view&id=1PybRKZbYxA5CaezGSWLr-jb3GbVi5-8-",
             "https://drive.google.com/uc?export=view&id=1x3a6GbibDHKnPC6lwGCUi_5ui5FJYAzc",
-            "https://drive.google.com/uc?export=view&id=19YEdSf3jLuI2HrJsg8YK7TlZqTrVgYOy",
             "https://drive.google.com/uc?export=view&id=15wIxXBAFXkneqfAdk2nFBrS3AmhVTLrb",
             "https://drive.google.com/uc?export=view&id=1-oYxq09pjMdpS7nvDenEZIZgCLtefk0O",
             "https://drive.google.com/uc?export=view&id=1-mmgDhqmluefAIH1UlyQeeOjOfWZHYzZ",
@@ -1016,6 +1016,28 @@ if menu == "Departemen Medkraf":
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
                 "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
+             {
+                "nama": "Sania Dwi Ayu Lestari",
+                "nim": "123450086",
+                "umur": "21",
+                "asal":"Karawang",
+                "alamat": "Airan raya",
+                "hobbi": "nonton netflix",
+                "sosmed": "@saniayyllstr",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
+            {
+                "nama": "Raihana Adelia putri",
+                "nim": "123450041",
+                "umur": "20",
+                "asal":"Lampung Tengah",
+                "alamat": "Airan Raya 1",
+                "hobbi": "Menulis, Membaca",
+                "sosmed": "@n1tg._",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
+                "pesan":"semangat terus kuliahnya kakak !!!"# 1
+            },
             {
                 "nama": "Anash Tasya Ausyaqila",
                 "nim": "124450050",
@@ -1039,24 +1061,13 @@ if menu == "Departemen Medkraf":
                 "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
             {
-                "nama": "Muhammad Razan Maulana",
+                "nama": "Muhammad Razan Maulana Pratama",
                 "nim": "124450031",
                 "umur": "21",
                 "asal":"Jawa Barat",
                 "alamat": "Korpri",
                 "hobbi": "Poto orang",
                 "sosmed": "@muh_razan_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
-            {
-                "nama": "Sania Dwi Ayu Lestari",
-                "nim": "123450086",
-                "umur": "21",
-                "asal":"Karawang",
-                "alamat": "Airan raya",
-                "hobbi": "nonton netflix",
-                "sosmed": "@saniayyllstr",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
                 "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
@@ -1112,17 +1123,6 @@ if menu == "Departemen Medkraf":
                 "alamat": "Bandar Lampung",
                 "hobbi": "berenang",
                 "sosmed": "@nzlhauly_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"semangat terus kuliahnya kakak !!!"# 1
-            },
-            {
-                "nama": "Raihana Adelia putri",
-                "nim": "123450041",
-                "umur": "20",
-                "asal":"Lampung Tengah",
-                "alamat": "Airan Raya 1",
-                "hobbi": "Menulis, Membaca",
-                "sosmed": "@n1tg._",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",  
                 "pesan":"semangat terus kuliahnya kakak !!!"# 1
             },
