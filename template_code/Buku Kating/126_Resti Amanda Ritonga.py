@@ -101,12 +101,12 @@ menu = streamlit_menu()
 if menu == "Kesekjenan":
     def kesekjenan():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=13ueapgHy3SYk-eQZOtMppHsgraZ-bjnj",
+            "https://drive.google.com/uc?export=view&id=10UhvBjVD8uQyCyqzJBxSGwy9nyxYLvVn",
+            "https://drive.google.com/uc?export=view&id=1E_IpsHfQtSSrsKqZQNzHyexw7vx2M5pG",
+            "https://drive.google.com/uc?export=view&id=1UWVMhr0M2EGenb0TU1DRSQnINuxzMV0T",
+            "https://drive.google.com/uc?export=view&id=14pq5rFI0zESghvFA2AJr3-PJnGC3JEKm",
+            "https://drive.google.com/uc?export=view&id=12N0pS5cQtEkrX53dFEcb3DGyMIWmdPTC",
         ]
         data_list = [
             {
@@ -118,8 +118,8 @@ if menu == "Kesekjenan":
                 "Alamat": "Sekretariat HMSD",
                 "Hobbi": "push rank sampe imo",
                 "Sosmed": "@jars_mrp",
-                "Kesan": "Abangnya keren, kalem, asik juga waktu jadi pemateri",  
-                "Pesan":"Semangat terus bang semoga skripsinya dimudahkan"
+                "Kesan": "Abangnya keren, kalem, asik juga waktu jadi pemateri pada ditanyain pas wawancara juga ngejelesinnya sanagt bagus",  
+                "Pesan":"Semangat terus bang semoga dimudahkan segara urusannya dan lancar lancar kuliahnya"
             },
             {
                 "Nama": "Muhammad Aqil Ramadhan",
@@ -130,8 +130,8 @@ if menu == "Kesekjenan":
                 "Alamat": "Sekretariat HMSD",
                 "Hobbi": "Zikir",
                 "Sosmed": "@muhammadaqil1111",
-                "Kesan": "Abangnya asik, lucu, suka bercanda juga, kalau jadi pemateri asik",  
-                "Pesan":"Sehat selalu bang semoga dimudahkan segala urusan"
+                "Kesan": "Abangnya asik, lucu, suka bercanda juga, kalau jadi pemateri asik, abangnya juga keren",  
+                "Pesan":"Sehat selalu bang semoga dimudahkan segala urusan dan ancar lancar studynya"
             },
             {
                 "Nama": "Efi Defiyati",
@@ -143,7 +143,7 @@ if menu == "Kesekjenan":
                 "Hobbi": "Membaca",
                 "Sosmed": "@eeffiidefi",
                 "Kesan": "Kakaknya baik sama kalem",  
-                "Pesan":"Semangat terus dan sehat selalu kak"
+                "Pesan":"Semangat terus dan sehat selalu kak, lancar segaala urusan"
             },
             {
                 "Nama": "Qois Olifio",
@@ -154,8 +154,8 @@ if menu == "Kesekjenan":
                 "Alamat": "Kota Baru",
                 "Hobbi": "Mainin Surat",
                 "Sosmed": "@qoisolifio_ ",
-                "Kesan": "Abangnya keren, kalem, lucu",  
-                "Pesan":"Semangat bikin bikin suratnyaa bang, semoga jadi mudah bikin skripsinya"
+                "Kesan": "Abangnya keren, kalem, lucu, pas jadi pemateri juga ngejelasinnya ngerti dan baik",  
+                "Pesan":"Semangat bikin bikin surat menyuratnyaa bang, semoga dilancarkan kuliahnya"
             },
             {
                 "Nama": "Hafsa Fazila Arradhi",
@@ -178,8 +178,8 @@ if menu == "Kesekjenan":
                 "Alamat": "Airan",
                 "Hobbi": "Mintain Duit",
                 "Sosmed": "@luthfiaarmdhni ",
-                "Kesan": "Kakaknya lucu, baik, keren, asik juga",  
-                "Pesan":"Semoga dimudahkan selalu ya kak segala urusannya"
+                "Kesan": "Kakaknya lucu,imut, baik, keren, asik juga",  
+                "Pesan":"Semoga dimudahkan selalu ya kak segala urusannya, kakaknya keren"
             },                                                  
         ]
         display_images_with_data(gambar_urls, data_list)
@@ -222,7 +222,7 @@ elif menu == "Senator":
                 "Hobbi": "Ngesen kiri",
                 "Sosmed": "@helmy_inst",
                 "Kesan": "Abangnya seru, asik, lucu",
-                "Pesan": "Semangat terus bang"
+                "Pesan": "Semangat terus bang, semoga dilancarkan urusannnya"
             },
             {
                 "Nama": "Fernando Dimetrius Barus",
@@ -234,7 +234,7 @@ elif menu == "Senator":
                 "Hobbi": "Badminton",
                 "Sosmed": "@barus.fernando",
                 "Kesan": "Abangnya baik, asik, kalem",
-                "Pesan": "Semoga selalu dimudahkan bang"
+                "Pesan": "Semoga selalu dimudahkan bang dan sehat"
             },
             {
                 "Nama": "Suci Aulia",
@@ -270,7 +270,7 @@ elif menu == "Senator":
                 "Hobbi": "Nonton",
                 "Sosmed": "@lia,h_264",
                 "Kesan": "Kakaknya lucu, asik juga",
-                "Pesan": "Semoga kuliahnya lancar ya kak"
+                "Pesan": "Semoga kuliahnya lancar ya kak dann keren"
             },
             {
                 "Nama": "Aqila Zayyan Salsabil",
@@ -281,7 +281,7 @@ elif menu == "Senator":
                 "Alamat": "Sukarame",
                 "Hobbi": "Mendokumentasi Bayes",
                 "Sosmed": "@aqilazayyaan",
-                "Kesan": "Kakaknya lucu, keren juga",
+                "Kesan": "Kakaknya lucu, keren juga, cantik",
                 "Pesan": "Semoga kelompoknya nambah gacor kak"
             },
             {
@@ -294,7 +294,7 @@ elif menu == "Senator":
                 "Hobbi": "Giring Ayam",
                 "Sosmed": "@hazelhandhaka",
                 "Kesan": "Abangnya keren, asik juga",
-                "Pesan": "Semoga sukses bang"
+                "Pesan": "Semoga sukses bang, sehat bang, keren selalu"
             },
             {
                 "Nama": "Nadya Ratu Anjani",
@@ -483,7 +483,7 @@ elif menu == "Departemen SSD":
                 "Hobbi": "Lagi suka olahraga",
                 "Sosmed": "@dellaansaftr",
                 "Kesan": "Kakaknya baik dan ramah",
-                "Pesan": "Sehat selalu kak"
+                "Pesan": "Sehat selalu kak d"
             },
         ]
         display_images_with_data(gambar_urls, data_list)
