@@ -156,7 +156,7 @@ elif menu == "Senator":
             },
             {
                 "nama": "Helmy Surya Pratama",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1erTQ_pyVOkYxSXtXSe0gc78xbc3JYk0b",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1GVBCaePsAHroGJJvFAJqYdcLPqAPcLUG",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -174,7 +174,7 @@ elif menu == "Senator":
             },
             {
                 "nama": "Fernando Dimetrius Barus",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1GVBCaePsAHroGJJvFAJqYdcLPqAPcLUG",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1erTQ_pyVOkYxSXtXSe0gc78xbc3JYk0b",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
