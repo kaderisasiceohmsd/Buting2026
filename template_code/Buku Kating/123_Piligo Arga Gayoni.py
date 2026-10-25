@@ -33,8 +33,9 @@ st.markdown(
 
 
 def streamlit_menu():
-    return dept_menu(
-        [
+    selected = option_menu(
+        menu_title=None,
+        options=[
             "Kesekjenan",
             "Baleg",
             "Senator",
@@ -45,8 +46,24 @@ def streamlit_menu():
             "Departemen SSD",
             "Departemen Medkraf",
             "Departemen Minbak",
-        ]
+        ],
+        icons=[
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+            "people-fill",
+        ],
+        default_index=0,
+        orientation="horizontal",
+        styles=get_menu_styles(),
     )
+    return selected
 
 
 def display_images_with_data(gambar_urls, data_list):
