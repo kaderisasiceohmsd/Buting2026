@@ -146,14 +146,44 @@ elif menu == "Departemen Eksternal":
     display_images_with_data(gambar_urls, data_list, key="eksternal")
 
 elif menu == "Departemen Internal":
-    gambar_urls = ["https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"]
+    gambar_urls = ["https://drive.google.com/uc?export=view&id=1Qg9iT4ppQ45YFIjoEoIxQ_g6MTbWnynB",
+                   "https://drive.google.com/uc?export=view&id=1Y7MDaZXYo5vgq7ys0OfAPb_gnc1VyAhx",
+                   "https://drive.google.com/uc?export=view&id=1SaRStJOtsNOuFmJh4KugmkB4USQi8CEq",
+                   "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_", #bg farhan
+                   "https://drive.google.com/uc?export=view&id=18crJAyEqY6DyIqbpZghKkkfWQQoxBbff",
+                   "https://drive.google.com/uc?export=view&id=1BsDaOvqb1cUerICtSyA34NepJFIiyzPx",
+                   "https://drive.google.com/uc?export=view&id=1z2zPCwICtKXmjKXPrkHz_36WJ13VSgSk", 
+                   "https://drive.google.com/uc?export=view&id=1c0M4qugAMtMNI_582UFtOFPhXZe24Znt",
+                   "https://drive.google.com/uc?export=view&id=1bJ_IJg4uEXqZceG0XwIt_QPvPKZReylK",
+                   "https://drive.google.com/uc?export=view&id=1q93vvZb2ymsxed7qxBO5VYLdmS7myBU5", 
+                   "https://drive.google.com/uc?export=view&id=1sDRImohzil7wDem8OWoo-UEeLUkeHLSN",
+                   "https://drive.google.com/uc?export=view&id=1urUksXckK29uycn-PYEr5J3tm0wmV6R7",
+                   "https://drive.google.com/uc?export=view&id=1o_wExnoejzGXjp6gRfN1pINRVpVS6by8",
+                   "https://drive.google.com/uc?export=view&id=1GUdEDsFa2vtasR_pqN3jfvAKbl0BNQsz",
+                   "https://drive.google.com/uc?export=view&id=1YTkJwCJ33mkzrI0ZWvZCuTiadQQNesHx",
+                   "https://drive.google.com/uc?export=view&id=1sbgqsVlY3R_GQi_9S5Rs-fyFgCL6_0mv",
+                  
+    ]
     data_list = [
         {"nama": "Anggota Internal", "jabatan": "Staf Internal", "nim": "122450066", "umur": "20", "asal": "Tangerang", "alamat": "Sukarame", "hobbi": "Design", "sosmed": "@internal", "kesan": "Keluarga baru", "pesan": "Harmonis selalu!"},
     ]
     display_images_with_data(gambar_urls, data_list, key="internal")
 
 elif menu == "Departemen SSD":
-    gambar_urls = ["https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"] * 12
+    gambar_urls = ["https://drive.google.com/uc?export=view&id=1e2lyEW3Tt1s_reEotgt6YgXt6QgoxFNo",
+                   "https://drive.google.com/uc?export=view&id=1nvNY6Q4-bvt4oZdnnhEjGoPt3xr2baeI",
+                   "https://drive.google.com/uc?export=view&id=1DFI7WURFKOXwQ1LQUR3Eu9bGW3tEVE-O",
+                   "https://drive.google.com/uc?export=view&id=1n2VOosrTtoArBMyCGoDmMecLGnGnTo6W",
+                   "https://drive.google.com/uc?export=view&id=1KzdXaRGL_f_W-YQcPVKeLR1GfFhAv4zQ",
+                   "https://drive.google.com/uc?export=view&id=1aRXo2dZIW5Kohof94cwtpQgHCQsT7ubY",
+                   "https://drive.google.com/uc?export=view&id=11V7sGDZ4w5Z6bE4TomfZUcnQPl_2fJVf",
+                   "https://drive.google.com/uc?export=view&id=1uXIjyfX6Cb9bOFGFdUtcrgdMBn9NCwZF",
+                   "https://drive.google.com/uc?export=view&id=1603I5xBQpFHTPm0NMgyoOats53W2WHy1",
+                   "https://drive.google.com/uc?export=view&id=1r6_C9O2tuNk1U6adKEs7W8lTTMaywsz-",
+                   "https://drive.google.com/uc?export=view&id=1nUDxWI0MmRglG4nvEfuUcw9wcTIX7OoS",
+                   "https://drive.google.com/uc?export=view&id=1-Tf7Dh2YmI7FAmz-BnTs48AjryAnRTAW",
+                  
+    ]
     data_list = [{"nama": "Anggota SSD", "jabatan": "Staf SSD", "nim": "122450077", "umur": "20", "asal": "Depok", "alamat": "Korpri", "hobbi": "Coding", "sosmed": "@ssd", "kesan": "Inovatif", "pesan": "Ciptakan solusi!"}] * 12
     display_images_with_data(gambar_urls, data_list, key="ssd")
 
