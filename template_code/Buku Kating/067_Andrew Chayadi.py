@@ -3,10 +3,60 @@ from streamlit_option_menu import option_menu
 import requests
 from PIL import Image, ImageOps
 from io import BytesIO
+import base64
+
+st.set_page_config(layout="wide")
 
 st.markdown("""<style>.centered-title {text-align: center;}</style>""", unsafe_allow_html=True)
 st.markdown("<h1 class='centered-title'>BUKU KATING</h1>", unsafe_allow_html=True)
 
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #F8F5F2;
+        color: #000000; 
+    }
+
+    [data-testid="stHeader"] {
+        background-color: transparent !important;
+    }
+    
+    [data-testid="collapsedControl"] {
+        color: #bd411b !important;
+    }
+
+    [data-testid="stSidebar"] {
+        background-color: #bd411b !important;
+    }
+    
+    [data-testid="stSidebar"] * {
+        color: white !important;
+    }
+
+    [data-testid="stTabs"] button, 
+    [data-testid="stTabs"] button * {
+        color: #000000 !important;
+    }
+    
+    [data-testid="stTabs"] [data-baseweb="tab-highlight"] {
+        background-color: #bd411b !important;
+    }
+
+    .gambar-timbul {
+        width: 100%;
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        cursor: pointer;
+    }
+    .gambar-timbul:hover {
+        transform: translateY(-8px) scale(1.03); 
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 # bagian sini jangan diubah
 def streamlit_menu():
     selected = option_menu(
@@ -38,16 +88,31 @@ def streamlit_menu():
         default_index=0,
         orientation="horizontal",
         styles={
-            "container": {"padding": "0!important", "background-color": "#fafafa"},
-            "icon": {"color": "black", "font-size": "19px"},
-            "nav-link": {
-                "font-size": "15px",
-                "text-align": "left",
-                "margin": "0px",
-                "--hover-color": "#eee",
+            "container": {
+                "padding": "10px !important", 
+                "background-color": "#c84b22", 
+                "border": "none !important", 
+                "border-radius": "0 !important", 
+                "box-shadow": "none !important" 
             },
-            "nav-link-selected": {"background-color": "#3FBAD8"},
-        },
+            "icon": {
+                "color": "white", 
+                "font-size": "19px"
+            },
+            "nav-link": {
+                "font-size": "14px",
+                "text-align": "center",
+                "margin": "5px", 
+                "color": "white",
+                "background-color": "transparent", 
+                "--hover-color": "rgba(255, 255, 255, 0.1)",
+            },
+            "nav-link-selected": {
+                "background-color": "#8c3010", 
+                "color": "white",
+                "border-radius": "10px" 
+            },
+            },
     )
     return selected
 
@@ -69,6 +134,9 @@ def load_image(url):
         return None
      
 @st.cache_data
+@st.cache_data
+@st.cache_data
+@st.cache_data
 def display_images_with_data(gambar_urls, data_list):
     images = []
     for i, url in enumerate(gambar_urls):
@@ -77,23 +145,69 @@ def display_images_with_data(gambar_urls, data_list):
             if img is not None:
                 images.append(img)
 
-    for i, img in enumerate(images):
-        col1, col2, col3 = st.columns([1, 2, 1])
-        with col2:
-            st.image(img, use_container_width=True)
+    def img_to_base64(img):
+        import base64
+        from io import BytesIO
+        buffered = BytesIO()
+        img.save(buffered, format="PNG")
+        return base64.b64encode(buffered.getvalue()).decode()
 
-        if i < len(data_list):
-            st.write(f"Nama: {data_list[i]['nama']}")
-            st.write(f"NIM: {data_list[i]['nim']}")
-            st.write(f"Umur: {data_list[i]['umur']}")
-            st.write(f"Asal: {data_list[i]['asal']}")
-            st.write(f"Alamat: {data_list[i]['alamat']}")
-            st.write(f"Hobbi: {data_list[i]['hobbi']}")
-            st.write(f"Sosial Media: {data_list[i]['sosmed']}")
-            st.write(f"Kesan: {data_list[i]['kesan']}")
-            st.write(f"Pesan: {data_list[i]['pesan']}")
-            st.write("  ")
+    st.markdown("""
+    <style>
+    .kartu-profil {
+        transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    }
+    .kartu-profil:hover {
+        transform: translateY(-8px) !important;
+        box-shadow: 0 15px 25px rgba(0,0,0,0.2) !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
+    for i in range(0, len(images), 2):
+        cols = st.columns(2)
+        
+        for j in range(2):
+            index = i + j
+            if index < len(images):
+                with cols[j]:
+                    img_b64 = img_to_base64(images[index])
+                    data = data_list[index] if index < len(data_list) else {}
+                    
+                    nama = data.get('nama', '-')
+                    nim = data.get('nim', '-')
+                    umur = data.get('umur', '-')
+                    asal = data.get('asal', '-')
+                    alamat = data.get('alamat', '-')
+                    hobbi = data.get('hobbi', '-')
+                    sosmed = data.get('sosmed', '-')
+                    kesan = data.get('kesan', '-')
+                    pesan = data.get('pesan', '-')
+
+                    card_html = f"""<div class="kartu-profil" style="display: flex; flex-direction: row; background-color: #ffffff; border-radius: 16px; box-shadow: 0 6px 12px rgba(0,0,0,0.08); overflow: hidden; margin-bottom: 20px; height: 360px;">
+<div style="flex: 0 0 45%;">
+<img src="data:image/png;base64,{img_b64}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+</div>
+<div style="flex: 1; padding: 18px; display: flex; flex-direction: column; justify-content: space-between;">
+<div>
+<h4 style="margin: 0 0 4px 0; color: #1e1e1e; font-size: 18px; line-height: 1.2;">{nama}</h4>
+<p style="margin: 0 0 12px 0; color: #666; font-size: 14px; font-weight: bold;">{nim}</p>
+<div style="font-size: 13px; color: #444; line-height: 1.5;">
+<b>Umur:</b> {umur}<br>
+<b>Asal:</b> {asal}<br>
+<b>Alamat:</b> {alamat}<br>
+<b>Hobbi:</b> {hobbi}<br>
+<b>Sosmed:</b> {sosmed}
+</div>
+</div>
+<div style="background-color: #FFF3E0; padding: 12px; border-radius: 8px; margin-top: 12px;">
+<p style="margin: 0 0 4px 0; font-size: 12px; font-style: italic; color: #bd411b;"><b>Kesan:</b> "{kesan}"</p>
+<p style="margin: 0; font-size: 12px; font-style: italic; color: #bd411b;"><b>Pesan:</b> "{pesan}"</p>
+</div>
+</div>
+</div>"""
+                    
+                    st.markdown(card_html, unsafe_allow_html=True)
 menu = streamlit_menu()
 
 # BAGIAN SINI YANG HANYA BOLEH DIUBAH
@@ -536,192 +650,216 @@ elif menu == "Badan Legislatif":
     
 elif menu == "Departemen Minbak":
     def Departemen_Minbak():
-        gambar_urls = [
+        st.markdown("<h3 style='text-align: center;'>Departemen Minat dan bakat</h3>", unsafe_allow_html=True)
+        tab1, tab2, tab3, tab4= st.tabs(["Kepala Departemen", "Sekretaris Departemen", "Manajemen Aktivitas dan Kompetisi", "Manajemen Minat dan Bakat"])
+        
+        with tab1:
+            gambar_urls_kepala_departemen_minbak= [
             "https://drive.google.com/uc?export=view&id=12QOfSNfjMqEfLwP3pk5Gg9AjoIcuKE_O",
-            "https://drive.google.com/uc?export=view&id=1v4Gx1LnKyMPQ7YXSDYj6cXXJdsvx2h7N",
+            ]
+            data_list_kepala_departemen_minbak= [
+            {
+            "nama": "Kevin Antonio Junior",
+            "nim": "123450109",
+            "umur": "23",
+            "asal": "Sulawesi Tengah",
+            "alamat": "Panjang",
+            "hobbi": "Mancing",
+            "sosmed": "@kevinaja__",
+            "kesan": "Sangat menginspirasi dan memimpin dengan baik",
+            "pesan": "Semangat terus kak!"
+            },
+            ]
+            display_images_with_data(gambar_urls_kepala_departemen_minbak, data_list_kepala_departemen_minbak)
+
+        with tab2:
+            # Pindahkan URL dan Data anggota Sekretaris ke dalam list ini
+            gambar_urls_sekretaris_departemen_minbak = ["https://drive.google.com/uc?export=view&id=1v4Gx1LnKyMPQ7YXSDYj6cXXJdsvx2h7N",]
+            data_list_sekretaris_departemen_minbak = [ 
+            {
+            "nama": "Gusti Putu Ferazka Dhiyamika",
+            "nim": "123450046",
+            "umur": "21",
+            "asal": "Bekasi",
+            "alamat": "Way Dadi",
+            "hobbi": "Mendaki",
+            "sosmed": "@ferazkaa",
+            "kesan": "Sangat rapi dan cekatan dalam mengelola administrasi",
+            "pesan": "Sukses selalu kak!"
+            },
+            ]
+            display_images_with_data(gambar_urls_sekretaris_departemen_minbak, data_list_sekretaris_departemen_minbak)
+
+        with tab3:
+            gambar_urls_manajemen_aktivitas_dan_kompetisi = [
             "https://drive.google.com/uc?export=view&id=1ukRXDoD9AcY83O8RzjKReZFYzxW2oKmB",
             "https://drive.google.com/uc?export=view&id=1A6UjUE-8JDvoQAzRJsIN04UlNQXxfCj1",
             "https://drive.google.com/uc?export=view&id=19aZL3HXHjIgPNRt4t2afY7BsqNS4QAxC",
             "https://drive.google.com/uc?export=view&id=1UUWG7wy3dw2XCUepwe0v9lcz5JPslfti",
             "https://drive.google.com/uc?export=view&id=1FesizaWmDQGZSFVcVmh_nmtQVNrN_fk5",
             "https://drive.google.com/uc?export=view&id=1LrR9YBcxKwIXTui_CLDIzDT52OGaIjrY",
-            "https://drive.google.com/uc?export=view&id=1beTFZVK1JkqqFEluOj8wQTdGEG5newe-",
-            "https://drive.google.com/uc?export=view&id=1BzoAEefRUd_6pRibFmr9mfq3ztI2ictU",
-            "https://drive.google.com/uc?export=view&id=1XWhKwI0vmASijbtxREkuRt2NjeT8dlVf",
-            "https://drive.google.com/uc?export=view&id=1wTj3IEpr0vt_advP1kdQoxlidINfMihJ",
-            "https://drive.google.com/uc?export=view&id=1hWFq1yNhPul0IvmasCEmzbUoWUHMgNBR",
-            "https://drive.google.com/uc?export=view&id=1LCHVLYPVRj7kRdJzZ7hw8yeb90vk0sk9",
-            "https://drive.google.com/uc?export=view&id=1GXwVs1gKStV9ei_5d3Jv7lYxzBejOYhn",
-        ]
-        data_list = [
-    {
-        "nama": "Kevin Antonio Junior",
-        "nim": "123450109",
-        "umur": "23",
-        "asal": "Sulawesi Tengah",
-        "alamat": "Panjang",
-        "hobbi": "Mancing",
-        "sosmed": "@kevinaja__",
-        "kesan": "Sangat menginspirasi dan memimpin dengan baik",
-        "pesan": "Semangat terus kak!"
-    },
-    {
-        "nama": "Gusti Putu Ferazka Dhiyamika",
-        "nim": "123450046",
-        "umur": "21",
-        "asal": "Bekasi",
-        "alamat": "Way Dadi",
-        "hobbi": "Mendaki",
-        "sosmed": "@ferazkaa",
-        "kesan": "Sangat rapi dan cekatan dalam mengelola administrasi",
-        "pesan": "Sukses selalu kak!"
-    },
-    {
-        "nama": "Ali Aristo Muthahhari Parisi",
-        "nim": "123450088",
-        "umur": "21",
-        "asal": "Lampung Timur",
-        "alamat": "Gang Sakum Belwis",
-        "hobbi": "Nonton F1",
-        "sosmed": "@ali_parisi3",
-        "kesan": "Keren dan selalu memberikan arahan yang jelas",
-        "pesan": "Semangat menjalankan tugasnya kak!"
-    },
-    {
-        "nama": "Ayu Andriani Parlina Wati",
-        "nim": "124450058",
-        "umur": "20",
-        "asal": "Lampung Barat",
-        "alamat": "Airan",
-        "hobbi": "Belajar + menghitung uang",
-        "sosmed": "@aayuandriani_",
-        "kesan": "Sangat ramah dan aktif berkontribusi",
-        "pesan": "Tetap semangat dan sukses terus!"
-    },
-    {
-        "nama": "Dafa Elpriza",
-        "nim": "124450131",
-        "umur": "21",
-        "asal": "Bekasi",
-        "alamat": "Way Kandis",
-        "hobbi": "Jogging",
-        "sosmed": "@dafaelpriza_",
-        "kesan": "Sangat menyenangkan dan mudah diajak kerja sama",
-        "pesan": "Sukses terus perkuliahan dan aktivitasnya!"
-    },
-    {
-        "nama": "Juwita Sari",
-        "nim": "124450066",
-        "umur": "19",
-        "asal": "Lampung Barat",
-        "alamat": "Pemda",
-        "hobbi": "Mancing",
-        "sosmed": "@ju.juwitaaa_",
-        "kesan": "Sangat baik dan murah senyum",
-        "pesan": "Semangat terus kuliahnya!"
-    },
-    {
-        "nama": "Muhammad Afdal Luthfi",
-        "nim": "124450047",
-        "umur": "19",
-        "asal": "Lampung Tengah",
-        "alamat": "Jl. Pulau Damar",
-        "hobbi": "Memantau dl tugas",
-        "sosmed": "@afdall.03",
-        "kesan": "Sangat bertanggung jawab dan fokus",
-        "pesan": "Semangat terus kakak!"
-    },
-    {
-        "nama": "Salsabila Nazwa Putri",
-        "nim": "124450002",
-        "umur": "20",
-        "asal": "Metro",
-        "alamat": "Korpri",
-        "hobbi": "Nongkrong di kopken",
-        "sosmed": "@slbnzw_",
-        "kesan": "Sangat asik dan ceria",
-        "pesan": "Tetap semangat kuliahnya ya kak!"
-    },
-    {
-        "nama": "Muhammad Ridwan",
-        "nim": "123450091",
-        "umur": "21",
-        "asal": "Lampung Tengah",
-        "alamat": "Belwis",
-        "hobbi": "Badminton",
-        "sosmed": "@mridwaan_22",
-        "kesan": "Sangat mengayomi dan membimbing dengan sabar",
-        "pesan": "Semangat terus memimpin divisinya kak!"
-    },
-    {
-        "nama": "Andra Ilham Bintang",
-        "nim": "124450060",
-        "umur": "18",
-        "asal": "Sumatera Selatan",
-        "alamat": "Kotabaru",
-        "hobbi": "Main rubik",
-        "sosmed": "@andra.lhm",
-        "kesan": "Sangat kreatif dan pintar",
-        "pesan": "Sukses selalu kuliahnya!"
-    },
-    {
-        "nama": "Bryan Paskah Telaumbanua",
-        "nim": "124450003",
-        "umur": "20",
-        "asal": "Nias",
-        "alamat": "Belwis",
-        "hobbi": "Live tiktok",
-        "sosmed": "@bryantel_",
-        "kesan": "Sangat menghibur dan ramah",
-        "pesan": "Semangat terus berkarya kak!"
-    },
-    {
-        "nama": "Ghiyats Thabularasa Meardhy",
-        "nim": "124450067",
-        "umur": "17",
-        "asal": "Surabaya",
-        "alamat": "Kemiling",
-        "hobbi": "Nanem Sawit",
-        "sosmed": "@meardhy_ghiyats",
-        "kesan": "Sangat unik dan bersemangat",
-        "pesan": "Tetap semangat dan sukses selalu!"
-    },
-    {
-        "nama": "Indah Julia Mawar Pratiwi",
-        "nim": "124450055",
-        "umur": "20",
-        "asal": "Pringsewu",
-        "alamat": "Airan",
-        "hobbi": "Bengong",
-        "sosmed": "@indahjuliaa",
-        "kesan": "Sangat baik dan bersahabat",
-        "pesan": "Sukses terus perkuliahannya kak!"
-    },
-    {
-        "nama": "Jacinda Kesya Alvara",
-        "nim": "124450023",
-        "umur": "18",
-        "asal": "Kalimantan Barat",
-        "alamat": "Korpri",
-        "hobbi": "Nyapu depan gacoan",
-        "sosmed": "@cacalvra",
-        "kesan": "Sangat ceria dan menyenangkan",
-        "pesan": "Semangat terus ya kak!"
-    },
-    {
-        "nama": "Muhammad Rafka",
-        "nim": "124450089",
-        "umur": "20",
-        "asal": "Padang",
-        "alamat": "Kotabaru",
-        "hobbi": "Bangun pagi",
-        "sosmed": "@muhammdrafka_",
-        "kesan": "Sangat disiplin dan dapat diandalkan",
-        "pesan": "Sukses selalu buat perkuliahannya!"
-    }
-]
+            
+            ]
+            data_list_manajemen_aktivitas_dan_kompetisi = [
+            {
+            "nama": "Ali Aristo Muthahhari Parisi",
+            "nim": "123450088",
+            "umur": "21",
+            "asal": "Lampung Timur",
+            "alamat": "Gang Sakum Belwis",
+            "hobbi": "Nonton F1",
+            "sosmed": "@ali_parisi3",
+            "kesan": "Keren dan selalu memberikan arahan yang jelas",
+            "pesan": "Semangat menjalankan tugasnya kak!"
+            },
+            {
+            "nama": "Ayu Andriani Parlina Wati",
+            "nim": "124450058",
+            "umur": "20",
+            "asal": "Lampung Barat",
+            "alamat": "Airan",
+            "hobbi": "Belajar + menghitung uang",
+            "sosmed": "@aayuandriani_",
+            "kesan": "Sangat ramah dan aktif berkontribusi",
+            "pesan": "Tetap semangat dan sukses terus!"
+            },
+            {
+            "nama": "Dafa Elpriza",
+            "nim": "124450131",
+            "umur": "21",
+            "asal": "Bekasi",
+            "alamat": "Way Kandis",
+            "hobbi": "Jogging",
+            "sosmed": "@dafaelpriza_",
+            "kesan": "Sangat menyenangkan dan mudah diajak kerja sama",
+            "pesan": "Sukses terus perkuliahan dan aktivitasnya!"
+            },
+            {
+            "nama": "Juwita Sari",
+            "nim": "124450066",
+            "umur": "19",
+            "asal": "Lampung Barat",
+            "alamat": "Pemda",
+            "hobbi": "Mancing",
+            "sosmed": "@ju.juwitaaa_",
+            "kesan": "Sangat baik dan murah senyum",
+            "pesan": "Semangat terus kuliahnya!"
+            },
+            {
+            "nama": "Muhammad Afdal Luthfi",
+            "nim": "124450047",
+            "umur": "19",
+            "asal": "Lampung Tengah",
+            "alamat": "Jl. Pulau Damar",
+            "hobbi": "Memantau dl tugas",
+            "sosmed": "@afdall.03",
+            "kesan": "Sangat bertanggung jawab dan fokus",
+            "pesan": "Semangat terus kakak!"
+            },
+            {
+            "nama": "Salsabila Nazwa Putri",
+            "nim": "124450002",
+            "umur": "20",
+            "asal": "Metro",
+            "alamat": "Korpri",
+            "hobbi": "Nongkrong di kopken",
+            "sosmed": "@slbnzw_",
+            "kesan": "Sangat asik dan ceria",
+            "pesan": "Tetap semangat kuliahnya ya kak!"
+            },
+            ]
+            display_images_with_data(gambar_urls_manajemen_aktivitas_dan_kompetisi, data_list_manajemen_aktivitas_dan_kompetisi)
 
-        display_images_with_data(gambar_urls, data_list)
+        with tab4:
+            gambar_urls_manajemen_minat_dan_bakat = [
+                "https://drive.google.com/uc?export=view&id=1beTFZVK1JkqqFEluOj8wQTdGEG5newe-",
+                "https://drive.google.com/uc?export=view&id=1BzoAEefRUd_6pRibFmr9mfq3ztI2ictU",
+                "https://drive.google.com/uc?export=view&id=1XWhKwI0vmASijbtxREkuRt2NjeT8dlVf",
+                "https://drive.google.com/uc?export=view&id=1wTj3IEpr0vt_advP1kdQoxlidINfMihJ",
+                "https://drive.google.com/uc?export=view&id=1hWFq1yNhPul0IvmasCEmzbUoWUHMgNBR",
+                "https://drive.google.com/uc?export=view&id=1LCHVLYPVRj7kRdJzZ7hw8yeb90vk0sk9",
+                "https://drive.google.com/uc?export=view&id=1GXwVs1gKStV9ei_5d3Jv7lYxzBejOYhn",
+            ]
+            data_list_manajemen_minat_dan_bakat = [
+            {
+                "nama": "Muhammad Ridwan",
+                "nim": "123450091",
+                "umur": "21",
+                "asal": "Lampung Tengah",
+                "alamat": "Belwis",
+                "hobbi": "Badminton",
+                "sosmed": "@mridwaan_22",
+                "kesan": "Sangat mengayomi dan membimbing dengan sabar",
+                "pesan": "Semangat terus memimpin divisinya kak!"
+            },
+            {
+                "nama": "Andra Ilham Bintang",
+                "nim": "124450060",
+                "umur": "18",
+                "asal": "Sumatera Selatan",
+                "alamat": "Kotabaru",
+                "hobbi": "Main rubik",
+                "sosmed": "@andra.lhm",
+                "kesan": "Sangat kreatif dan pintar",
+                "pesan": "Sukses selalu kuliahnya!"
+            },
+            {
+                "nama": "Bryan Paskah Telaumbanua",
+                "nim": "124450003",
+                "umur": "20",
+                "asal": "Nias",
+                "alamat": "Belwis",
+                "hobbi": "Live tiktok",
+                "sosmed": "@bryantel_",
+                "kesan": "Sangat menghibur dan ramah",
+                "pesan": "Semangat terus berkarya kak!"
+            },
+            {
+                "nama": "Ghiyats Thabularasa Meardhy",
+                "nim": "124450067",
+                "umur": "17",
+                "asal": "Surabaya",
+                "alamat": "Kemiling",
+                "hobbi": "Nanem Sawit",
+                "sosmed": "@meardhy_ghiyats",
+                "kesan": "Sangat unik dan bersemangat",
+                "pesan": "Tetap semangat dan sukses selalu!"
+            },
+            {
+                "nama": "Indah Julia Mawar Pratiwi",
+                "nim": "124450055",
+                "umur": "20",
+                "asal": "Pringsewu",
+                "alamat": "Airan",
+                "hobbi": "Bengong",
+                "sosmed": "@indahjuliaa",
+                "kesan": "Sangat baik dan bersahabat",
+                "pesan": "Sukses terus perkuliahannya kak!"
+            },
+            {
+                "nama": "Jacinda Kesya Alvara",
+                "nim": "124450023",
+                "umur": "18",
+                "asal": "Kalimantan Barat",
+                "alamat": "Korpri",
+                "hobbi": "Nyapu depan gacoan",
+                "sosmed": "@cacalvra",
+                "kesan": "Sangat ceria dan menyenangkan",
+                "pesan": "Semangat terus ya kak!"
+            },
+            {
+                "nama": "Muhammad Rafka",
+                "nim": "124450089",
+                "umur": "20",
+                "asal": "Padang",
+                "alamat": "Kotabaru",
+                "hobbi": "Bangun pagi",
+                "sosmed": "@muhammdrafka_",
+                "kesan": "Sangat disiplin dan dapat diandalkan",
+                "pesan": "Sukses selalu buat perkuliahannya!"
+            }
+            ]
+            display_images_with_data(gambar_urls_manajemen_minat_dan_bakat, data_list_manajemen_minat_dan_bakat)  
 
     Departemen_Minbak()
 
@@ -739,24 +877,24 @@ elif menu == "Departemen PSDA":
             ]
             data_list_Inti = [
             {
-            "nama": "",
-            "nim": "",
-            "umur": "",
-            "asal": "",
-            "alamat": "",
-            "hobbi": "",
-            "sosmed": "",
+            "nama": "Arienta Khusnul Ananda",
+            "nim": "123450097",
+            "umur": "21",
+            "asal": "Deket Pantai Kedu, Kalianda",
+            "alamat": "Samping kos capo",
+            "hobbi": "Baca jurnal",
+            "sosmed": "@arientakhsnl_",
             "kesan": "",  
             "pesan": ""
             },
             {
-            "nama": "",
-            "nim": "",
-            "umur": "",
-            "asal": "",
-            "alamat": "",
-            "hobbi": "",
-            "sosmed": "",
+            "nama": "Vany Salsabila Putri",
+            "nim": "123450022",
+            "umur": "20",
+            "asal": "Sibolga",
+            "alamat": "Pudan Kost",
+            "hobbi": "Pacaran",
+            "sosmed": "@vany.salsabilaa",
             "kesan": "",  
             "pesan": ""
             },
@@ -771,82 +909,95 @@ elif menu == "Departemen PSDA":
                 "https://drive.google.com/uc?export=view&id=1hwMvpoPLc4SgNgdcSQOvwFhIM6yzQs9e",
                 "https://drive.google.com/uc?export=view&id=13ZKxCk_pOUaiNoq_XNuBCBiXuzs0w4iX",
                 "https://drive.google.com/uc?export=view&id=1CzK_qdmB15tqlk-HgJRzv1Xywt7AXMw5",
+                "https://drive.google.com/uc?export=view&id=1CzK_qdmB15tqlk-HgJRzv1Xywt7AXMw5",
+                "https://drive.google.com/uc?export=view&id=1CzK_qdmB15tqlk-HgJRzv1Xywt7AXMw5",
             ]
             data_list_Divisi_Kaderisasi = [
             {
-            "nama": "",
-            "nim": "",
-            "umur": "",
-            "asal": "",
-            "alamat": "",
+            "nama": "Nobel Nizam Fathirizki",
+            "nim": "123450117",
+            "umur": "123450117",
+            "asal": "Bandar Lampung",
+            "alamat": "Urip",
             "hobbi": "",
-            "sosmed": "",
+            "sosmed": "@nobelnizam",
             "kesan": "",  
             "pesan": ""
             },
             {
-            "nama": "",
-            "nim": "",
-            "umur": "",
-            "asal": "",
+            "nama": "Afriza Azmi",
+            "nim": "124450110",
+            "umur": "20",
+            "asal": "Malang",
             "alamat": "",
             "hobbi": "",
-            "sosmed": "",
+            "sosmed": "@friezazmi",
             "kesan": "",  
             "pesan": ""
             },
             {
-            "nama": "",
-            "nim": "",
-            "umur": "",
-            "asal": "",
+            "nama": "Haikal Seventino Tamba",
+            "nim": "124450012",
+            "umur": "18",
+            "asal": "Solok, Sumatera Barat",
             "alamat": "",
             "hobbi": "",
-            "sosmed": "",
+            "sosmed": "@_haikaaall",
             "kesan": "",  
             "pesan": ""
             },
             {
-            "nama": "",
-            "nim": "",
-            "umur": "",
+            "nama": "Euodia Meiliana Friedita",
+            "nim": "124450029",
+            "umur": "18",
             "asal": "",
             "alamat": "",
             "hobbi": "",
-            "sosmed": "",
+            "sosmed": "@yudiameilianaa_",
             "kesan": "",  
             "pesan": ""
             },
             {
-            "nama": "",
-            "nim": "",
-            "umur": "",
+            "nama": "Ayake Alfatih Ramadan",
+            "nim": "124450108",
+            "umur": "21",
+            "asal": "Solok, Sumatera Barat",
+            "alamat": "",
+            "hobbi": "Masak ayam",
+            "sosmed": "@ykeall",
+            "kesan": "",  
+            "pesan": ""
+            },
+             {
+           "nama": "Caesar Ozora Alrando",
+            "nim": "124450017",
+            "umur": "21",
             "asal": "",
             "alamat": "",
             "hobbi": "",
-            "sosmed": "",
+            "sosmed": "@caesar.oriza",
             "kesan": "",  
             "pesan": ""
             },
             {
-            "nama": "",
-            "nim": "",
-            "umur": "",
+            "nama": "Putri Manna Anantama Simbolon",
+            "nim": "124450056",
+            "umur": "18",
             "asal": "",
             "alamat": "",
             "hobbi": "",
-            "sosmed": "",
+            "sosmed": "@@putrimannaa",
             "kesan": "",  
             "pesan": ""
             },
             {
-            "nama": "",
-            "nim": "",
-            "umur": "",
-            "asal": "",
+            "nama": "Queenta Thifaal Nabila",
+            "nim": "124450059",
+            "umur": "18",
+            "asal": "Kota Gajah",
             "alamat": "",
             "hobbi": "",
-            "sosmed": "",
+            "sosmed": "@queentanabila",
             "kesan": "",  
             "pesan": ""
             },
@@ -865,17 +1016,17 @@ elif menu == "Departemen PSDA":
             ]
             data_list_Divisi_Peningkatan_Mutu_Anggota = [
             {
-                "nama": "",
-                "nim": "",
+                "nama": "@queentanabila",
+                "nim": "123450114",
                 "umur": "",
                 "asal": "",
                 "alamat": "",
                 "hobbi": "",
-                "sosmed": "",
+                "sosmed": "desmannhal_",
                 "kesan": "",  
                 "pesan": ""
             },
-            {
+             {
                 "nama": "",
                 "nim": "",
                 "umur": "",
@@ -945,510 +1096,1266 @@ elif menu == "Departemen PSDA":
             display_images_with_data(gambar_urls_Divisi_Peningkatan_Mutu_Anggota, data_list_Divisi_Peningkatan_Mutu_Anggota)
     PSDA()
 
-if menu == "Departemen MIKFES":
-    def Departemen_MIKFES():
-        gambar_urls = [ 
-            "https://drive.google.com/uc?export=view&id=183k16AoHkTUktFlI3AZ1_W-MbtNMEA3k",
-            "https://drive.google.com/uc?export=view&id=1gMvVn8mtfgamx9T7ERggSnaRMclwyLy8",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1pHe1ymk1ky1yVe8oRPDHB6i2w7f_3QIa",
-            "https://drive.google.com/uc?export=view&id=1vPEfAV3rbUN3bqei2tGOBWDmJ337PPzI",
-            "https://drive.google.com/uc?export=view&id=1HSBFN1x64xqcVgS7B604goY78BpOU6r-",
-            "https://drive.google.com/uc?export=view&id=1iU8ir2PQEfOCcHU7oLlVzuQZqX7E5iOK",
-            "https://drive.google.com/uc?export=view&id=1D97TZadKandGYpPCALxNFQ7kbEUS36jD",
-            "https://drive.google.com/uc?export=view&id=1f_2ggNOXI0RS23gtDUytScYXxE_USU-q",
-            "https://drive.google.com/uc?export=view&id=1YBGIgwOg0A55qju5mB7VjX37I4R-DW2L",
-            "https://drive.google.com/uc?export=view&id=1wCeXyFM2Ke3C-Wtkt6gVr6a_MRO8Qsue",
-            "https://drive.google.com/uc?export=view&id=12G_wnWsKMrhhGTYRy_PDioQWtKY8ePDM",
-            "https://drive.google.com/uc?export=view&id=1UorSEpoTGfKxwuFxYOASOiNsI1eAQJqe",
-            "https://drive.google.com/uc?export=view&id=1f6la1Sts8od4yXwrsk2CSnH7OKMCzHgV",
-            "https://drive.google.com/uc?export=view&id=1gnWMdoOZ8VdPPDtB16kO2C1wao9EacGi",
-            "https://drive.google.com/uc?export=view&id=1MZeJ6i-kxlql0Qufe7ybp8Pxzf0aTq3h",
-            "https://drive.google.com/uc?export=view&id=1RovSz6KLqvkodHtt2OhB4LlVI2Ry2AJe",
-            "https://drive.google.com/uc?export=view&id=1NNCMcdTACb9SbvhBhTL117BV7VxLgZtL",
-            "https://drive.google.com/uc?export=view&id=1BcPSYbRBepnkT4wj69nyqKr83YgH8i3G",
-            "https://drive.google.com/uc?export=view&id=1OJT24OYBkSjm1nSBMk_czxfDcDC_lg6H",
-            "https://drive.google.com/uc?export=view&id=1hyVOpdSHBJ14uHGnlE0oBmNQeQyawJvJ",
-            "https://drive.google.com/uc?export=view&id=16yGIaMQSo42fALYk7pAQfjWANWhWkrmL",
+elif menu == "Departemen MIKFES":
+    def mikfes():
+        st.markdown("<h3 style='text-align: center;'>Departemen Akademik dan Keprofeisan</h3>", unsafe_allow_html=True)
+        
+        tab1, tab2, tab3, tab4, tab5 = st.tabs(["Kepala Departemen", "Sekretaris Departemen", "Divisi Professional Skill and Development", "Divisi Pusat Inovasi dan Kajian Akademik", "Divisi Research & Development"])
 
-        ]
-        data_list = [
+        with tab1:
+            gambar_urls_kepala_departemen_mikfes= [
+            "https://drive.google.com/uc?export=view&id=1g-JXO76tjEz67NFg8eKFjEKBQlPncP6v",
+            ]
+            data_list_kepala_departemen_mikfes = [
             {
-                "nama": "Fabio Banyu Cyto",
-                "nim": "123450104",
-                "umur": "21",
-                "asal": "Kedaton",
-                "alamat": "Kedaton",
-                "hobbi": "Main game & travel",
-                "sosmed": "@biyokcb",
-                "kesan": "JUJUR KEREN BANGETTTT, saya beneran perlu berguru dengan abang",
-                "pesan": "Semangatt TA nya nanti banggg, tapi saya beneran butuh banget banyak belajar ke abang karena ilmu abang DAGING semuaaa"
+            "nama": "Fabio Banyu Cyto",
+            "nim": "123450104",
+            "umur": "21",
+            "asal": "Bandar Lampung",
+            "alamat": "Kedaton",
+            "hobbi": "Tidur",
+            "sosmed": "@biyokcb",
+            "kesan": "...",  
+            "pesan": "..."
+            },
+            ]
+            display_images_with_data(gambar_urls_kepala_departemen_mikfes, data_list_kepala_departemen_mikfes)
+
+        with tab2:
+            # Pindahkan URL dan Data anggota Sekretaris ke dalam list ini
+            gambar_urls_sekretaris_mikfes = ["https://drive.google.com/uc?export=view&id=1K9487O-Qgrl_z9ggJHdLeBNAeKAJ-UyQ",]
+            data_list_sekretaris_mikfes = [ 
+            {
+            "nama": "Tanty Widiyastuti",
+            "nim": "123450094",
+            "umur": "21",
+            "asal": "Lampung",
+            "alamat": "Airan Raya",
+            "hobbi": "Membaca",
+            "sosmed": "@tvnty_",
+            "kesan": "...",  
+            "pesan": "..."
+            },
+            ]
+            display_images_with_data(gambar_urls_sekretaris_mikfes, data_list_sekretaris_mikfes)
+
+        with tab3:
+            # Pindahkan URL dan Data anggota Komisi I ke dalam list ini
+            gambar_urls_Divisi_Professional_Skill_and_Development = [
+            "https://drive.google.com/uc?export=view&id=1J1Ow3mPnTv1NZuoc5vtWmcrPZNIVovs5",
+            "https://drive.google.com/uc?export=view&id=1K9487O-Qgrl_z9ggJHdLeBNAeKAJ-UyQ",
+            "https://drive.google.com/uc?export=view&id=18AtZtf7ahz0ge0UVieOGv_k2TK3BFTUE",
+            "https://drive.google.com/uc?export=view&id=1G4Qok6YiafAWpW1A0GTjfUMC9kqwkNHd",
+            "https://drive.google.com/uc?export=view&id=1KaoL1ruuGH9jT_6SGEWEGpo7cfaLXLJS",
+            "https://drive.google.com/uc?export=view&id=1DG8shlDjNnxji-kryZNSNwvJAL-b_hAP",
+            ]
+            data_list_Divisi_Professional_Skill_and_Development = [
+            {
+            "nama": "Fadil Prasetyo Alfarizzi",
+            "nim": "123450048",
+            "umur": "21",
+            "asal": "Bandar Lampung",
+            "alamat": "Bandar Lampung",
+            "hobbi": "Gitar",
+            "sosmed": "@fadilalfarizzii",
+            "kesan": "...",  
+            "pesan": "..."
             },
             {
-                "nama": "Tanty Widiyastuti",
-                "nim": "123450094",
-                "umur": "21",
-                "asal": "Lampung Tengah",
-                "alamat": "Airan",
-                "hobbi": "Mendengarkan Musik",
-                "sosmed": "@tvnty_",
-                "kesan": "First impression ku ke kaka, kaka ceria bangettt beneran gemasss",
-                "pesan": "Semangatt TA nya kaa, semoga diberikan kelancaran dalam mengerjakan TA, jangan lupa jaga kesehatan!"
+            "nama": "Manuel Frederika",
+            "nim": "124450039",
+            "umur": "20",
+            "asal": "Jabung",
+            "alamat": "Batam",
+            "hobbi": "Tenis meja",
+            "sosmed": "@manuelfdk_",
+            "kesan": "...",  
+            "pesan": "..."
             },
             {
-                "nama": "Fadil Prasetyo Alfarizzi",
-                "nim": "123450...",
-                "umur": "...",
-                "asal": "...",
-                "alamat": "...",
-                "hobbi": "...",
-                "sosmed": "...",
-                "kesan": "Inspiratif bangett",
-                "pesan": "Masih ga nyangka secepat itu abang kembali ke pangkuan-Nya, tapi sekarang abang udah ga sakit lagi ya.. Doa terbaik untuk mu bang Fadil, fly high and rest in peace a good soul"
+            "nama": "Ni Made Okta Viola Darma Putri",
+            "nim": "124450005",
+            "umur": "12",
+            "asal": "Bali",
+            "alamat": "Nusa Penida",
+            "hobbi": "Menghayal",
+            "sosmed": "@Violaadrtr_",
+            "kesan": "...",  
+            "pesan": "..."
             },
             {
-                "nama": "Manuel Frederika",
-                "nim": "124450039",
-                "umur": "20",
-                "asal": "Batam",
-                "alamat": "Way kandis",
-                "hobbi": "Katama",
-                "sosmed": "manuelfdk_",
-                "kesan": "Proker stecu abang beneran membantu saya-^^",
-                "pesan": "Abang keren bangett, dilanjutkan ya bangg. Jangan lupa jaga pola tidur dan makan nya!"
+            "nama": "Risa Romadona",
+            "nim": "124450127",
+            "umur": "20",
+            "asal": "Natar",
+            "alamat": "Natar",
+            "hobbi": "Natar",
+            "sosmed": "@risarmdna",
+            "kesan": "...",  
+            "pesan": "..."
             },
             {
-                "nama": "Ni Made Okta Viola Darma Putri",
-                "nim": "124450005",
-                "umur": "20",
-                "asal": "Lampung Tengah",
-                "alamat": "Korpri",
-                "hobbi": "Travelling",
-                "sosmed": "@violaadrtr_",
-                "kesan": "Kaka cantikk",
-                "pesan": "Kaka semangat kuliahnya yaa, jaga pola makan dan pola tidurnyaa, jangan sampe drop yaa!!"
+            "nama": "Vannisa Ramadhani",
+            "nim": "124450078",
+            "umur": "19",
+            "asal": "Bali",
+            "alamat": "Teluk Betung",
+            "hobbi": "Nonton KHW",
+            "sosmed": "@vunnycaa",
+            "kesan": "...",  
+            "pesan": "..."
             },
             {
-                "nama": "Risa Romadona",
-                "nim": "124450127",
-                "umur": "20",
-                "asal": "Natar",
-                "alamat": "Natar",
-                "hobbi": "rolling skate",
-                "sosmed": "@risarmdna",
-                "kesan": "Cutee",
-                "pesan": "kakaa kerennn, semoga kaka selalu menemukan kebaikan di setiap hal hal kecil yaa! jaga kesehatan kaa!"
+            "nama": "Yulia Kristine Malau",
+            "nim": "124450119",
+            "umur": "20",
+            "asal": "Jambi",
+            "alamat": "Sabah Balau",
+            "hobbi": "Belajar",
+            "sosmed": "@krnylee",
+            "kesan": "...",  
+            "pesan": "..."
+            },
+            ]
+            display_images_with_data(gambar_urls_Divisi_Professional_Skill_and_Development, data_list_Divisi_Professional_Skill_and_Development)
+
+        with tab4:
+            # Pindahkan URL dan Data anggota Komisi II ke dalam list ini
+            gambar_urls_Divisi_Pusat_Inovasi_dan_Kajian_Akademik = [
+                "https://drive.google.com/uc?export=view&id=1Za-at_KwA9nu02sfpTMC_SC6KlxX3P7X",
+                "https://drive.google.com/uc?export=view&id=1ptzssY_Gkkt-73H1C34jMHD3l7MEnKNJ",
+                "https://drive.google.com/uc?export=view&id=15XBon1oWrw8tv3fDf7Kz1nmGuK-YkD0p",
+                "https://drive.google.com/uc?export=view&id=1yhyTdnnsAsYG9r8i_sWkRBSHeniLvfpo",
+                "https://drive.google.com/uc?export=view&id=1swlWLuvnhYIuncA3X_jmga-WUrSCDm2e",
+                "https://drive.google.com/uc?export=view&id=1sNQ4_O9pcBOJfuQ1HM7V8cg7uBghZL-4",
+            ]
+            data_list_Divisi_Pusat_Inovasi_dan_Kajian_Akademik = [
+            {
+            "nama": "Akeyla Fairuz Shafi",
+            "nim": "123450119",
+            "umur": "21",
+            "asal": "Bandar Lampung",
+            "alamat": "Sukabumi",
+            "hobbi": "Berenang",
+            "sosmed": "@keyashafi_",
+            "kesan": "...",  
+            "pesan": "..."
             },
             {
-                "nama": "Vannisa Ramadhani",
-                "nim": "124450078",
-                "umur": "19",
-                "asal": "Kepulauan Riau",
-                "alamat": "Telung Betung",
-                "hobbi": "Nonton KHW",
-                "sosmed": "@vunnycaa",
-                "kesan": "waktu kaka menjelaskan proker LEGACY jujur keren bangettt",
-                "pesan": "Semoga apapun plan kaka bisa tercapai satu persatu ya kaa, semangat kuliahnya dan jaga kesehatan!"
+            "nama": "Elsa Sitorus",
+            "nim": "124450088",
+            "umur": "21",
+            "asal": "Sumatera Utara",
+            "alamat": "Pemda",
+            "hobbi": "Rebahan",
+            "sosmed": "@_els.a",
+            "kesan": "...",  
+            "pesan": "..."
             },
             {
-                "nama": "Yulia Kristine Malau",
-                "nim": "",
-                "umur": "...",
-                "asal": "...",
-                "alamat": "...",
-                "hobbi": "...",
-                "sosmed": "...",
-                "kesan": "...",
-                "pesan": "..."
+            "nama": "Fadya Izzatul 'Aini",
+            "nim": "124450062",
+            "umur": "20",
+            "asal": "Pringsewu",
+            "alamat": "Airan",
+            "hobbi": "Mancing",
+            "sosmed": "@fadyaizzatul_",
+            "kesan": "...",  
+            "pesan": "..."
             },
             {
-                "nama": "Akeyla Fairus Shafi",
-                "nim": "123450119",
-                "umur": "21",
-                "asal": "Bandar Lampung",
-                "alamat": "Bandara Lampung",
-                "hobbi": "Dengerin Musik",
-                "sosmed": "@keyashafi_",
-                "kesan": "Jujur keren keren bangg proker PIKA, saya beneran terkena marketingnya",
-                "pesan": "Semangat nanti TA nya bangg, semoga dipermudah jalan dan urusannyaa!"
+            "nama": "Lovianora Saragih",
+            "nim": "124450105",
+            "umur": "19",
+            "asal": "Sumatera Utara",
+            "alamat": "Way Huwi",
+            "hobbi": "Dengerin musik",
+            "sosmed": "@_loviaa",
+            "kesan": "...",  
+            "pesan": "..."
             },
             {
-                "nama": "Elsa Sitorus",
-                "nim": "124450088",
-                "umur": "21",
-                "asal": "Sumatera Utara",
-                "alamat": "Pemda",
-                "hobbi": "Rebahan",
-                "sosmed": "_els.a",
-                "kesan": "Ceria dan social butterfly bangetttt",
-                "pesan": "Kaa walau perkuliahan semakin bertambah sem semakin terasa ngebantainya, tapi tetap semangatt ya kaa, jangan lupa jaga pola makan dan pola tidurnyaa jangan sampe drop-!"
+            "nama": "M. Alsi Syahrulloh",
+            "nim": "124450092",
+            "umur": "20",
+            "asal": "Kalianda",
+            "alamat": "Kota Baru",
+            "hobbi": "Main game, tidur",
+            "sosmed": "@aluccy_",
+            "kesan": "...",  
+            "pesan": "..."
             },
             {
-                "nama": "Fadya Izzatul 'Aini",
-                "nim": "124450062",
-                "umur": "20",
-                "asal": "Pringsewu",
-                "alamat": "Airan",
-                "hobbi": "Makan",
-                "sosmed": "@fadyaizzatul_",
-                "kesan": "Gemassss dan ceria bangett",
-                "pesan": "Go semangat goo!! kaa semoga kakak selalu diberikan kemudahan di setiap langkah kakak yaa"
+            "nama": "Sherena Florencia",
+            "nim": "124450027",
+            "umur": "19",
+            "asal": "Bengkulu Selatan",
+            "alamat": "Belwis",
+            "hobbi": "Make up",
+            "sosmed": "@sher_renna",
+            "kesan": "...",  
+            "pesan": "..."
+            },
+            ]
+            display_images_with_data(gambar_urls_Divisi_Pusat_Inovasi_dan_Kajian_Akademik, data_list_Divisi_Pusat_Inovasi_dan_Kajian_Akademik)
+
+        with tab5:
+            # Pindahkan URL dan Data anggota Komisi III ke dalam list ini
+            gambar_urls_Divisi_Research_Development = [
+                "https://drive.google.com/uc?export=view&id=1ftOW6KLI4wZUDtTiBROw6sJJO_oRmBsF",
+                "https://drive.google.com/uc?export=view&id=1FY0YsNf1YdIcCYnGsnxrimz2XSzKzTMq",
+                "https://drive.google.com/uc?export=view&id=1ZHYYz6UzqAiLMQzE_ARGjZKzRbz1A0tr",
+                "https://drive.google.com/uc?export=view&id=1lfOt31ozH1FxRHcupWxHKWJMIb5Gfj1N",
+                "https://drive.google.com/uc?export=view&id=12q0SFvIBYJR-7E-OMI_BonrgBo7_JHc_",
+                "https://drive.google.com/uc?export=view&id=1V1_MdlCw0c6e50dpeQEGEEEZ8rnEtPI9",
+                "https://drive.google.com/uc?export=view&id=1QL9rfgS3wQmfxRzDfMDK18isZd8o4akI",
+                "https://drive.google.com/uc?export=view&id=1NzD8hmdVj_ZSqM2JcRcYJTpqL9gLpkew",
+            ]
+            data_list_Divisi_Research_Development = [
+            {
+            "nama": "Razin Hafid Hamdi",
+            "nim": "123450096",
+            "umur": "21",
+            "asal": "Padang",
+            "alamat": "Belwis",
+            "hobbi": "Futsal",
+            "sosmed": "@razyn.hfd",
+            "kesan": "...",  
+            "pesan": "..."
             },
             {
-                "nama": "Lovianora Saragih",
-                "nim": "...",
-                "umur": "...",
-                "asal": "...",
-                "alamat": "...",
-                "hobbi": "...",
-                "sosmed": "...",
-                "kesan": "...",
-                "pesan": "..."
+            "nama": "Faiza Try Anjani",
+            "nim": "124450075",
+            "umur": "19",
+            "asal": "Padang",
+            "alamat": "Belwis",
+            "hobbi": "Baca novel",
+            "sosmed": "@faizaanjanii",
+            "kesan": "...",  
+            "pesan": "..."
             },
             {
-                "nama": "M. Alsi Syahrulloh",
-                "nim": "124450092",
-                "umur": "20",
-                "asal": "Kalianda",
-                "alamat": "Gedung Harapan",
-                "hobbi": "Main Game",
-                "sosmed": "@keyashafi",
-                "kesan": "Abang kerennn",
-                "pesan": "Semangatt terus ya bang kuliahnyaa, jangan lupa jaga kesehatan jugaaa!!"
+            "nama": "Gathfan Nadif Ali",
+            "nim": "124450001",
+            "umur": "20",
+            "asal": "Bandar Lampung",
+            "alamat": "Rajabasa",
+            "hobbi": "Main game",
+            "sosmed": "@gathfannadif",
+            "kesan": "...",  
+            "pesan": "..."
             },
             {
-                "nama": "Sherena Florencia",
-                "nim": "124450027",
-                "umur": "19",
-                "asal": "Bengkulu Selatan",
-                "alamat": "Belwis",
-                "hobbi": "Make up",
-                "sosmed": "@sher_renna",
-                "kesan": "Cantik imut cutee beneran gemass",
-                "pesan": "Semoga dunia selalu berbaik hati dengan kakak yaa, semangattt kuliahnyaa kaa!!"
+            "nama": "Hafidz Wahdiansyah",
+            "nim": "124450064",
+            "umur": "20",
+            "asal": "Metro",
+            "alamat": "Metro Kibang, Lampung Timur",
+            "hobbi": "3N (Ngoding, Ngegame, Nyibukin diri)",
+            "sosmed": "@apiszzaja_",
+            "kesan": "...",  
+            "pesan": "..."
             },
             {
-                "nama": "Razin Hafid Hamdi",
-                "nim": "123450096",
-                "umur": "21",
-                "asal": "Padang",
-                "alamat": "Belwis",
-                "hobbi": "Futsal",
-                "sosmed": "@razyn.hfd",
-                "kesan": "Pinter bangett, beneran saya perlu banyak belajar dari abangg",
-                "pesan": "Semangattt bang nanti TA nyaa, semoga dipermudah dan diperlancar semuanyaa, aamiin"
+            "nama": "Kaleb Filbert Istel",
+            "nim": "124450053",
+            "umur": "20",
+            "asal": "Bandar Lampung",
+            "alamat": "Campang Raya",
+            "hobbi": "Ngegym, baca novel",
+            "sosmed": "@kelelep_comberan",
+            "kesan": "...",  
+            "pesan": "..."
             },
             {
-                "nama": "Faiza Try Anjani",
-                "nim": "124450075",
-                "umur": "19",
-                "asal": "Padang",
-                "alamat": "Belwis",
-                "hobbi": "Baca",
-                "sosmed": "@faizaanjanii",
-                "kesan": "Fisrt impression ku ke kaka beneran kagum dan my role modell",
-                "pesan": "Kaka beneran keren bangetttt, dari awal kenal saya kagum sama kakaa, tips n trick cara bagi waktu belajar dan organisasi kaa #helppp"
+            "nama": "Melva Shaprina Febrianti",
+            "nim": "124450087",
+            "umur": "19",
+            "asal": "Sumatera Selatan",
+            "alamat": "Sumatera Selatan",
+            "hobbi": "Scroll",
+            "sosmed": "@melva_fbrt",
+            "kesan": "...",  
+            "pesan": "..."
             },
             {
-                "nama": "Gathfan Nadif ALi",
-                "nim": "124450001",
-                "umur": "20",
-                "asal": "Bandar Lampung",
-                "alamat": "Rajabasa",
-                "hobbi": "Main game",
-                "sosmed": "@gathfannadif",
-                "kesan": "Abang kerennnn",
-                "pesan": "Semangatttt kuliahnya banggg, jangan lupa jaga kesehatan yaa!"
+            "nama": "Muhammad Syafiqul Falakh",
+            "nim": "124450099",
+            "umur": "20",
+            "asal": "Lampung Utara",
+            "alamat": "Asrama TB 3",
+            "hobbi": "Membaca",
+            "sosmed": "@Syaafiqui",
+            "kesan": "...",  
+            "pesan": "..."
             },
             {
-                "nama": "Hafidz Wahdiansyah",
-                "nim": "124450064",
-                "umur": "20",
-                "asal": "Metro",
-                "alamat": "Metro Kibang",
-                "hobbi": "Ngegame",
-                "sosmed": "@apiszzaja_",
-                "kesan": "Kerenn tapi sometimes abangnya jail jugaa",
-                "pesan": "Semangatt bang kuliahnyaa!!"
+            "nama": "Rifky Henry Ferdianto",
+            "nim": "124450115",
+            "umur": "28",
+            "asal": "Kota bumi",
+            "alamat": "Rajabasa",
+            "hobbi": "Lari dari kenyataan",
+            "sosmed": "@henryferdianto",
+            "kesan": "...",  
+            "pesan": "..."
             },
-            {
-                "nama": "Kaleb Filbert Istel",
-                "nim": "124450062",
-                "umur": "20",
-                "asal": "Bandar Lampung",
-                "alamat": "Campang Raya",
-                "hobbi": "Nge-gym, baca novel",
-                "sosmed": "@kelelep_comberan",
-                "kesan": "Kerennn dan pinter bangett",
-                "pesan": "Masih keinget saya momen kelompok saya dibantai oleh pertanyaan dari abang, tapi JUJURRR minat banget berguru mengenai komputasi ke abangg karena ilmu abang DAGING BANGETTT"
-            },
-            {
-                "nama": "Melva Shaprina Febrianti",
-                "nim": "124450087",
-                "umur": "19",
-                "asal": "Sumatera Selatan",
-                "alamat": "Sukarame",
-                "hobbi": "Menari",
-                "sosmed": "@melva_fbrt",
-                "kesan": "CUTEEE, beneran gemas bangettt",
-                "pesan": "Semangatt kaa kuliahnyaaa!!"
-            },
-            {
-                "nama": "Muhammad Syafiqul Falakh",
-                "nim": "125450099",
-                "umur": "20",
-                "asal": "Lampung Selatan",
-                "alamat": "Asrama",
-                "hobbi": "Membaca",
-                "sosmed": "@syaafiq",
-                "kesan": "Inspiratif person",
-                "pesan": "Pengalaman abang beneran keren-keren bangett, semoga plan abang satu per satu bisa tercapai ya bangg, aamiin!"
-            },
-            {
-                "nama": "Rifky Henry Ferdianto",
-                "nim": "124450115",
-                "umur": "150 (p, mksud bg??? #kaget)",
-                "asal": "Rajabasa",
-                "alamat": "Balam",
-                "hobbi": "Tennis Meja",
-                "sosmed": "@henryferdianto",
-                "kesan": "Orang serius yang tidak serius",
-                "pesan": "Kocak bangett dah, semoga hal hal baik selalu melingkupi hidup abang yaaa, aamiin!"
-            },
-        ]
-        display_images_with_data(gambar_urls, data_list)
-    Departemen_MIKFES()
+            ]
+            display_images_with_data(gambar_urls_Divisi_Research_Development, data_list_Divisi_Research_Development)
+    mikfes()
 
 elif menu == "Departemen Eksternal":
     def eksternal():
-        gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=",
-            "https://drive.google.com/uc?export=view&id=",
-            "https://drive.google.com/uc?export=view&id=",
-            "https://drive.google.com/uc?export=view&id=",
-            "https://drive.google.com/uc?export=view&id=",
-            "https://drive.google.com/uc?export=view&id=",
-        ]
-        data_list = [
+        st.markdown("<h3 style='text-align: center;'>Departemen Eksternal</h3>", unsafe_allow_html=True)
+        
+        tab1, tab2, tab3, tab4 = st.tabs(["Kepala Departemen", "Sekretaris Departemen","Divisi Hubungan Luar", "Divisi Pengabdian Masyarakat"])
+
+        with tab1:
+            gambar_urls_Kadep_eksternal = [
+            "https://drive.google.com/uc?export=view&id=1g-JXO76tjEz67NFg8eKFjEKBQlPncP6v",
+            ]
+            data_list_Kadep_eksternal = [
             {
-                "nama": "",
-                "nim": "",
-                "umur": "",
-                "asal": "",
-                "alamat": "",
-                "hobbi": "",
-                "sosmed": "",
-                "kesan": "",  
-                "pesan": ""
+            "nama": "Arini Puteri Elandra",
+            "nim": "123450069",
+            "umur": "21",
+            "asal": "Lampung",
+            "alamat": "Teluk Betung Selatan",
+            "hobbi": "Nonton Kartun",
+            "sosmed": "@elandraa_",
+            "kesan": "",  
+            "pesan": "a"
+            },
+            ]
+            display_images_with_data(gambar_urls_Kadep_eksternal, data_list_Kadep_eksternal)
+
+        with tab2:
+            gambar_urls_sekdep_eksternal = [
+            "https://drive.google.com/uc?export=view&id=1tbJhrkjRdo3WHIXp7RGhfG6ur0GcljVI",
+            ]
+            data_list_sekdep_eksternal = [
+            {
+            "nama": "Nabyla Sharfina",
+            "nim": "123450008",
+            "umur": "20",
+            "asal": "Bengkulu",
+            "alamat": "Jalan Lapas",
+            "hobbi": "Jalan - jalan",
+            "sosmed": "@bylaash",
+            "kesan": "",  
+            "pesan": ""
+            },
+            ]
+            display_images_with_data(gambar_urls_sekdep_eksternal, data_list_sekdep_eksternal)
+
+        with tab3:
+            gambar_urls_hubungan_luar = [
+            "https://drive.google.com/uc?export=view&id=1pxQ2X6CxL7TGamYbxewNx0HPyriRSKbv",
+            "https://drive.google.com/uc?export=view&id=19byi4aK_pNmzPPtpHilUNUDOnMHJhgMz",
+            "https://drive.google.com/uc?export=view&id=1eBg3YzzRjWv5HL-_MdrTYGjUnOCv2MRL",
+            "https://drive.google.com/uc?export=view&id=1c6Y9E0EM8NDDF97IOQmY36qyWPr693yY",
+            "https://drive.google.com/uc?export=view&id=1zN8-vJAU9rYdVs794mr5lqfwiNyaR03u",
+            "https://drive.google.com/uc?export=view&id=10xwMJl3LHaeenET0u6Bk6jshkYN9CUOV",
+            "https://drive.google.com/uc?export=view&id=1fiUYgOP67qKokVw9M5S-gPCwSQJjBqm2",
+            "https://drive.google.com/uc?export=view&id=19LBMF4gIYEZHZMKEGETi67XPWLM67Ew3",
+            "https://drive.google.com/uc?export=view&id=1F0cvNkFTDBePb-Wewt7OEOwqGEy1wckv",
+            "https://drive.google.com/uc?export=view&id=1F0cvNkFTDBePb-Wewt7OEOwqGEy1wckv",
+            ]
+            data_list_hubungan_luar = [
+            {
+            "nama": "Khoirul Muttoharoh",
+            "nim": "123450021",
+            "umur": "21",
+            "asal": "Lampung barat",
+            "alamat": "Airan",
+            "hobbi": "main",
+            "sosmed": "@khoirul_muttoharoh",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Ahmad Rizky",
+            "nim": "123450050",
+            "umur": "21",
+            "asal": "Tangerang Selatan",
+            "alamat": "GH",
+            "hobbi": "ga ngapa ngapain",
+            "sosmed": "@ahmad.rizky___",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Indah Khairunnisa",
+            "nim": "124450077",
+            "umur": "20",
+            "asal": "Ampera",
+            "alamat": "",
+            "hobbi": "",
+            "sosmed": "@khaindaa_",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Bima Ekayasa",
+            "nim": "124450106",
+            "umur": "20",
+            "asal": "Lampung",
+            "alamat": "Bandar Lampung",
+            "hobbi": "",
+            "sosmed": "@bimayasa_",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Ahmad Bimo Akbar Arkana",
+            "nim": "124450113",
+            "umur": "-",
+            "asal": "Tanggamus",
+            "alamat": "Bandar Lampung",
+            "hobbi": "lihat lihat perumahan",
+            "sosmed": "@bimo_arkana",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Adinda Deswita Maharani",
+            "nim": "124450083",
+            "umur": "20",
+            "asal": "Ikut kadep",
+            "alamat": "love earth",
+            "hobbi": "jadi idol",
+            "sosmed": "@@adindaadma",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Yollanda Agustina",
+            "nim": "124450024",
+            "umur": "20",
+            "asal": "Kerangka Bawang Sebelah Barat",
+            "alamat": "Kayu Mulya",
+            "hobbi": "futsal",
+            "sosmed": "@yollanda_agustina16",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Riska Erlis Dayu Tiara",
+            "nim": "124450022",
+            "umur": "20",
+            "asal": "Palembang",
+            "alamat": "",
+            "hobbi": "",
+            "sosmed": "@erlsriska",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Alfaya Abiyyi",
+            "nim": "124450006",
+            "umur": "20",
+            "asal": "",
+            "alamat": "",
+            "hobbi": "",
+            "sosmed": "@alfabiyi",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Asri Meilani",
+            "nim": "124450010",
+            "umur": "20",
+            "asal": "Lampung Barat",
+            "alamat": "Korpri Raya",
+            "hobbi": "",
+            "sosmed": "@asrmeilani",
+            "kesan": "",  
+            "pesan": ""
+            },
+            ]
+            display_images_with_data(gambar_urls_hubungan_luar, data_list_hubungan_luar)
+
+        with tab4:
+            gambar_urls_pengabdian_masyarakat = [
+            "https://drive.google.com/uc?export=view&id=1thhQockQPc81Hrw5T4hBuE4m14TikkfT",
+            "https://drive.google.com/uc?export=view&id=1kgAopWkrKxHlqaWVTAiR2IaBBi-UMFGJ",
+            "https://drive.google.com/uc?export=view&id=1ONqJaZUIsNrm20hZV3b12qhujhYmRGYU",
+            "https://drive.google.com/uc?export=view&id=1WfSjKNl_6PtYoHO6ttGmodpyvuYZD_pd",
+            "https://drive.google.com/uc?export=view&id=1EBnJ0ZiLoEJ9YN4DHBb7Nxwyoj_WaCVO",
+            "https://drive.google.com/uc?export=view&id=1od7tSpOVLhk5Uuxvl8Of3DfrFnuURQUo",
+            "https://drive.google.com/uc?export=view&id=14kUkc2PHfnvIEoTdki-nwm75iHNp8zvP",
+            "https://drive.google.com/uc?export=view&id=14S22usYXwhdLTgwKY7wBg6LRHFjS_Wgz",
+            "https://drive.google.com/uc?export=view&id=1EJpLmbBsLNtxhTRxsG-k6iQMcoftZcFJ",
+            ]
+           
+            data_list_pengabdian_masyarakat = [
+            {
+            "nama": "Aditya Taufiqurrohman",
+            "nim": "123450032",
+            "umur": "22",
+            "asal": "",
+            "alamat": "Belwis",
+            "hobbi": "",
+            "sosmed": "@adityatfq",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Fathya Intami Gusda",
+            "nim": "123450095",
+            "umur": "25",
+            "asal": "Tangerang selatan",
+            "alamat": "Sukarame",
+            "hobbi": "",
+            "sosmed": "@fatthyaa_",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Tarisya Hidayatul Rahmi",
+            "nim": "123450052",
+            "umur": "25",
+            "asal": "Luhak tanah data",
+            "alamat": "Gerbar",
+            "hobbi": "Jadi orang baik",
+            "sosmed": "-",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Selma Siti Aisyah",
+            "nim": "123450044",
+            "umur": "20",
+            "asal": "lampung",
+            "alamat": "balam",
+            "hobbi": "jalan-jalan",
+            "sosmed": "@selmasiti_aisyah",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Ashila Islamisahfa Vanisha",
+            "nim": "124450028",
+            "umur": "20",
+            "asal": "",
+            "alamat": "",
+            "hobbi": "Tidur",
+            "sosmed": "@kshigf",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Danil N Fadillah",
+            "nim": "124450103",
+            "umur": "19",
+            "asal": "",
+            "alamat": "",
+            "hobbi": "Ngasih makan ikan cupang",
+            "sosmed": "@d4niel_fdlh",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Favian Arkaanda",
+            "nim": "124450021",
+            "umur": "19",
+            "asal": "",
+            "alamat": "",
+            "hobbi": "Tidur",
+            "sosmed": "@fvnnn05",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Muhammad Fathiy Zumar Yazid",
+            "nim": "124450081",
+            "umur": "20",
+            "asal": "",
+            "alamat": "",
+            "hobbi": "Tidur",
+            "sosmed": "@jaldii._",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Saskia Nova Magdalena",
+            "nim": "124450074",
+            "umur": "-",
+            "asal": "",
+            "alamat": "",
+            "hobbi": "Tidur",
+            "sosmed": "@snova.19",
+            "kesan": "",  
+            "pesan": ""
             },
         ]
-        display_images_with_data(gambar_urls, data_list)
+            display_images_with_data(gambar_urls_pengabdian_masyarakat, data_list_pengabdian_masyarakat)
     eksternal()
+
 
 elif menu == "Departemen Internal":
     def internal():
-        gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=",
-            "https://drive.google.com/uc?export=view&id=",
-            "https://drive.google.com/uc?export=view&id=",
-            "https://drive.google.com/uc?export=view&id=",
-            "https://drive.google.com/uc?export=view&id=",
-            "https://drive.google.com/uc?export=view&id=",
-        ]
-        data_list = [
+        st.markdown("<h3 style='text-align: center;'>Departemen Internal</h3>", unsafe_allow_html=True)
+        
+        tab1, tab2, tab3, tab4 = st.tabs(["Kepala Departemen", "Sekretaris Departemen","Divisi Keharmonisasian", "Divisi Kerohanian"])
+
+        with tab1:
+            gambar_urls_Kadep_internal = [
+            "https://drive.google.com/uc?export=view&id=1kGtKEzfgls6ef_oKU8gIrCrswMjvm6--",
+            ]
+            data_list_Kadep_internal = [
             {
-                "nama": "",
-                "nim": "",
-                "umur": "",
-                "asal": "",
-                "alamat": "",
-                "hobbi": "",
-                "sosmed": "",
-                "kesan": "",  
-                "pesan": ""
+            "nama": "Haikal Fransisko Simbolon",
+            "nim": "123450106",
+            "umur": "23",
+            "asal": "Jambi",
+            "alamat": "Jatimulyo",
+            "hobbi": "",
+            "sosmed": "@haikalsbln_",
+            "kesan": "",  
+            "pesan": "a"
+            },
+            ]
+            display_images_with_data(gambar_urls_Kadep_internal, data_list_Kadep_internal)
+
+        with tab2:
+            gambar_urls_sekdep_internal = [
+            "https://drive.google.com/uc?export=view&id=110WGquNZuSQk4nQVn4EDg8SFZzs0zPxy",
+            ]
+            data_list_sekdep_internal = [
+            {
+            "nama": "Kharisma Mustika Sari",
+            "nim": "123450034",
+            "umur": "21",
+            "asal": "",
+            "alamat": "",
+            "hobbi": "",
+            "sosmed": "@rismaa.mustika_",
+            "kesan": "",  
+            "pesan": ""
+            },
+            ]
+            display_images_with_data(gambar_urls_sekdep_internal, data_list_sekdep_internal)
+
+        with tab3:
+            gambar_urls_keharmonisasian = [
+            "https://drive.google.com/uc?export=view&id=1V08D2gwf2lZ5hWZRDGzr459YLQXvsEuD",
+            "https://drive.google.com/uc?export=view&id=1hNcuCxmSd5TY6TYwnLJBvg0lCCktvtUP",
+            "https://drive.google.com/uc?export=view&id=1TMIkLgkIl3v-mPEYOZoaxrz2HZUL7L_5",
+            "https://drive.google.com/uc?export=view&id=1UR3TXBnVZ_GvcOiqS9M1306-E35edKG0",
+            "https://drive.google.com/uc?export=view&id=1q3lCHc_6mo4REx341E4dLByFr_gn-DIg",
+            "https://drive.google.com/uc?export=view&id=19JjgXBZS8JPYcVfvnal5M531Gw4RuVEr",
+            "https://drive.google.com/uc?export=view&id=181kFHPoj4VhIaRMAAjP2BiIzE8OJN9EH",
+            "https://drive.google.com/uc?export=view&id=1G-rd9MULK5udMN3t6gr61Dh7_YCM1BEj",
+            ]
+            data_list_keharmonisasian = [
+            {
+            "nama": "Hanna Gresia Sinaga",
+            "nim": "123450038",
+            "umur": "21",
+            "asal": "Kisaran City",
+            "alamat": "Sukarame",
+            "hobbi": "",
+            "sosmed": "@hanna_g_sinaga",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Ahmad Farhan Ghani",
+            "nim": "123450121",
+            "umur": "20",
+            "asal": "Kemiling",
+            "alamat": "Kemiling",
+            "hobbi": "Olahraga menembak",
+            "sosmed": "@farhnghnii",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Aisyah Khairun Nisa",
+            "nim": "124450096",
+            "umur": "20",
+            "asal": "Air Molek, Riau",
+            "alamat": "Belwis",
+            "hobbi": "Menulis Wish list",
+            "sosmed": "@aisyahkhair_",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Cerine Sihotang",
+            "nim": "124450049",
+            "umur": "19",
+            "asal": "Medan",
+            "alamat": "Belwis",
+            "hobbi": "Balap liar",
+            "sosmed": "@cerine_ipynb",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Jaya Saputra Tamba",
+            "nim": "124450094",
+            "umur": "22",
+            "asal": "Kisaran City",
+            "alamat": "Pemda",
+            "hobbi": "Kick boxing",
+            "sosmed": "@jay.saputratmb",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Najla Nursyifa",
+            "nim": "124450051",
+            "umur": "20",
+            "asal": "Aceh",
+            "alamat": "Belwis",
+            "hobbi": "Nonton ASMR",
+            "sosmed": "@njlanursyifa",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Rozak Ramdani",
+            "nim": "124450100",
+            "umur": "18",
+            "asal": "Lampung Selatan",
+            "alamat": "Korpri Raya",
+            "hobbi": "Isengin Harvin di kelas",
+            "sosmed": "@rozakramdani__",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Teresa Christiani Purba",
+            "nim": "124450046",
+            "umur": "19",
+            "asal": "Riau",
+            "alamat": "Belwis",
+            "hobbi": "Masak",
+            "sosmed": "@christiani8872",
+            "kesan": "",  
+            "pesan": ""
+            },
+            ]
+            display_images_with_data(gambar_urls_keharmonisasian, data_list_keharmonisasian)
+
+        with tab4:
+            gambar_urls_kerohanian = [
+            "https://drive.google.com/uc?export=view&id=1CzlywM4FoisbnlB_MC2jShBWbypLVqNe",
+            "https://drive.google.com/uc?export=view&id=1LDgQQXhtg8Mc7vfiE_tNpG9fUVArEq9C",
+            "https://drive.google.com/uc?export=view&id=1i4dKfBqIV6D1fUymtAWQHFJaqzW0ZT6N",
+            "https://drive.google.com/uc?export=view&id=1J4AGVndTY_BopYy94ahDf-74RuAy1Xkh",
+            "https://drive.google.com/uc?export=view&id=1R1NpvxL2QREGXGfuR412OUEQapXCvGhd",
+            "https://drive.google.com/uc?export=view&id=1hqcrAfcG2yoGO2b0ED6jrxbr-lptyiWC",
+            ]
+           
+            data_list_kerohanian = [
+            {
+            "nama": "Muhammad Hanid Dzaky Arifin",
+            "nim": "124450064",
+            "umur": "21",
+            "asal": "Sumatera Barat",
+            "alamat": "Way Kandis",
+            "hobbi": "Nonton film",
+            "sosmed": "@hnfdzky_",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Audina Fitria",
+            "nim": "124450038",
+            "umur": "20",
+            "asal": "Sumatera Barat",
+            "alamat": "Sukarame",
+            "hobbi": "Main ke air terjun",
+            "sosmed": "@audinaf_03",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Cika Adelia Br Marbun",
+            "nim": "124450107",
+            "umur": "20",
+            "asal": "Pekanbaru, Riau",
+            "alamat": "Belwis",
+            "hobbi": "Dengerin lagu",
+            "sosmed": "@cikamrbn",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Gustin Haleluya Tampubolon",
+            "nim": "124450068",
+            "umur": "21",
+            "asal": "Toba, Sumatera Utara",
+            "alamat": "Airan",
+            "hobbi": "Nonton",
+            "sosmed": "@gustinhaleluya",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Muhammad Harvinsyah",
+            "nim": "124450128",
+            "umur": "20",
+            "asal": "Sumatera Selatan",
+            "alamat": "Belwis",
+            "hobbi": "Beburu ayam hutan",
+            "sosmed": "@muhvinz_",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Rafa Sabina Fahimah",
+            "nim": "124450036",
+            "umur": "20",
+            "asal": "Natar",
+            "alamat": "Natar",
+            "hobbi": "Nginep di rumah Yollanda",
+            "sosmed": "@snasaa",
+            "kesan": "",  
+            "pesan": ""
             },
         ]
-        display_images_with_data(gambar_urls, data_list)
+            display_images_with_data(gambar_urls_kerohanian, data_list_kerohanian)
     internal()
 
-if menu == "Departemen SSD":
-    def Departemen_SSD():
-        gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=14jFxHpSiQQ-ZdlNPkNn_8JVfcQnGWSvQ",
-            "https://drive.google.com/uc?export=view&id=1eZXM43pKL5dkqFJKVlWPls7ngHzGN22q",
-            "https://drive.google.com/uc?export=view&id=1n0LUuor4_bwmz1QQc8d3k9OLVseEyq_w",
-            "https://drive.google.com/uc?export=view&id=1O5a59ai8q_NG4no9v5G5_HnAoHfdwMPr",
-            "https://drive.google.com/uc?export=view&id=1HQPg7YwlSRWNirdyumo3VX9HjnLuximV",
-            "https://drive.google.com/uc?export=view&id=1AQpRKL0whGttOVWlKqKOeEsT0S6hOpiJ",
-            "https://drive.google.com/uc?export=view&id=1L3TyKqZF8i_mh629DreTdRKhuhcesVKc",
-            "https://drive.google.com/uc?export=view&id=1zn2md_RpQ_OCbZrHqL9TX_VR4jpMDDoE",
-            "https://drive.google.com/uc?export=view&id=1A6ZSNaUPfZHIi951OzfoSXl-NnSreAXf",
-            "https://drive.google.com/uc?export=view&id=1qGm0nwmxknY3RFjpqsYVvgWTUkHD-imo",
-            "https://drive.google.com/uc?export=view&id=13uaveV1UZw6w_VG8eSlHYxgCU7tl72Ix",
-            "https://drive.google.com/uc?export=view&id=1fMgJJIrNWierk4biwSqw7D9qzs77jrD8",
-        ]
 
-        data_list = [
-            # --- Pimpinan & Sekretaris ---
+elif menu == "Departemen SSD":
+    def ssd():
+        st.markdown("<h3 style='text-align: center;'>Departemen Storage Sains Data</h3>", unsafe_allow_html=True)
+        
+        tab1, tab2, tab3, tab4 = st.tabs(["Kepala Departemen", "Sekretaris Departemen","Divisi Kemitraan", "Divisi Kewirausahaan"])
+
+        with tab1:
+            gambar_urls_Kadep_ssd = [
+            "https://drive.google.com/uc?export=view&id=1CSwgJej4dFkWF4nJF_GDXfC4zQlFbMVS",
+            ]
+            data_list_Kadep_ssd = [
             {
-                "nama": "Ihsan Maulana Yusuf",
-                "nim": "123450110",
-                "umur": "21",
-                "asal": "Sumbar",
-                "alamat": "Belwis",
-                "hobbi": "Baca jurnal, cari jurnal yang berhubungan ta",
-                "sosmed": "@ihsan.myusuf",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!",
+            "nama": "Ihsan Maulana Yusuf",
+            "nim": "123450110",
+            "umur": "21",
+            "asal": "Sumatra Barat",
+            "alamat": "Belwis",
+            "hobbi": "",
+            "sosmed": "@ihsan.myusuf",
+            "kesan": "",  
+            "pesan": "a"
+            },
+            ]
+            display_images_with_data(gambar_urls_Kadep_ssd, data_list_Kadep_ssd)
+            
+        with tab2:
+            gambar_urls_sekdep_ssd = [
+            "https://drive.google.com/uc?export=view&id=1VgcweaEm_FOHsry3L35EI1jzE5TXcoeF",
+            ]
+            data_list_sekdep_ssd = [
+            {
+            "nama": "Hanifah Inaya Sani",
+            "nim": "123450123",
+            "umur": "20",
+            "asal": "Bandar Lampung",
+            "alamat": "Bandar Lampung",
+            "hobbi": "Masak",
+            "sosmed": "@_inayasani",
+            "kesan": "",  
+            "pesan": ""
+            },
+            ]
+            display_images_with_data(gambar_urls_sekdep_ssd, data_list_sekdep_ssd)
+
+        with tab3:
+            gambar_urls_kemitraan = [
+            "https://drive.google.com/uc?export=view&id=1nbtG_1jK7Jqzh1H16YSNbYFBunHtKvwc",
+            "https://drive.google.com/uc?export=view&id=1Hi_5tvUENkU3p8gHDGR1ZkTN_5ADKF2J",
+            "https://drive.google.com/uc?export=view&id=1_QlBNJiu10XT8HxDWYVRoFr7S95T1_w4",
+            "https://drive.google.com/uc?export=view&id=1_RhbZ1XITJ4-wdlIFKmuGQ_uCaAPIe_E",
+            "https://drive.google.com/uc?export=view&id=1MH_NrlYDN6FcxomlqmB9CBsGJJgaV9-I",
+            ]
+            data_list_kemitraan = [
+            {
+            "nama": "Afifah Fauziah",
+            "nim": "125450002",
+            "umur": "20",
+            "asal": "Bandung",
+            "alamat": "Airan",
+            "hobbi": "Nonton Marvel",
+            "sosmed": "@fifah.zy",
+            "kesan": "",  
+            "pesan": ""
             },
             {
-                "nama": "Hanifah Inaya Sani",
-                "nim": "123450000",
-                "umur": "21",
-                "asal": "Balam",
-                "alamat": "Korpri",
-                "hobbi": "Memasak",
-                "sosmed": "@_inayasani",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!",
-            },
-            # --- Divisi Kemitraan ---
-            {
-                "nama": "Afifah Fauziah",
-                "nim": "123450002",
-                "umur": "18",
-                "asal": "Padang",
-                "alamat": "Hasan 4",
-                "hobbi": "Baca jurnal, nonton Marvel",
-                "sosmed": "-",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!",
+            "nama": "Hasan Nur Ramadhan",
+            "nim": "",
+            "umur": "20",
+            "asal": "Depok",
+            "alamat": "Korpri",
+            "hobbi": "Coding",
+            "sosmed": "",
+            "kesan": "",  
+            "pesan": "@hasan.ramadhan08"
             },
             {
-                "nama": "Hasan Nur Ramadhan",
-                "nim": "124450013",
-                "umur": "25",
-                "asal": "Lamteng",
-                "alamat": "Pemda",
-                "hobbi": "Nonton yutub",
-                "sosmed": "-",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!",
+            "nama": "Layina Ropiqo",
+            "nim": "124450016",
+            "umur": "19",
+            "asal": "Bandar Lampung",
+            "alamat": "Bandar Lampung",
+            "hobbi": "Nonton Dracin",
+            "sosmed": "",
+            "kesan": "",  
+            "pesan": "@lay.inr_"
             },
             {
-                "nama": "Layina Ropiqo",
-                "nim": "124450016",
-                "umur": "20",
-                "asal": "Semarang",
-                "alamat": "Balam",
-                "hobbi": "Nonton dracin",
-                "sosmed": "@layinr_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!",
+            "nama": "Mochammad Iqbal Az-Zahir",
+            "nim": "124450052",
+            "umur": "20",
+            "asal": "Bekasi",
+            "alamat": "Natar",
+            "hobbi": "Nonton drakor",
+            "sosmed": "@iqbalazzahir_",
+            "kesan": "",  
+            "pesan": ""
             },
             {
-                "nama": "Talitha Justine",
-                "nim": "124450076",
-                "umur": "19",
-                "asal": "Sumbar",
-                "alamat": "Pemda",
-                "hobbi": "Nonton",
-                "sosmed": "@talljtine_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!",
+            "nama": "Talitha Justine",
+            "nim": "124450076",
+            "umur": "19",
+            "asal": "Jakarta",
+            "alamat": "Pemda",
+            "hobbi": "Nonton",
+            "sosmed": "-",
+            "kesan": "",  
+            "pesan": ""
+            },
+            ]
+            display_images_with_data(gambar_urls_kemitraan, data_list_kemitraan)
+
+        with tab4:
+            gambar_urls_kewirausahaan = [
+            "https://drive.google.com/uc?export=view&id=1nbtG_1jK7Jqzh1H16YSNbYFBunHtKvwc",
+            "https://drive.google.com/uc?export=view&id=1YFshJlT7D7patOdDFp0JyU2yPCYa8zrE",
+            "https://drive.google.com/uc?export=view&id=1kV9ahlwDUQUcsS1CDle6Z6_pFKwp5wik",
+            "https://drive.google.com/uc?export=view&id=11eveYhnpHEcAPcCwXoURj_nvbJyUXDla",
+            "https://drive.google.com/uc?export=view&id=1fe9zZMbpXUXkdJKmyc5MJCabqMVC1Fcw",
+            ]
+           
+            data_list_kewirausahaan = [
+            {
+            "nama": "Anadia Carana",
+            "nim": "123450019",
+            "umur": "20",
+            "asal": "Palembang",
+            "alamat": "Way Huwi",
+            "hobbi": "Nyari duit",
+            "sosmed": "@anadiacrn_",
+            "kesan": "",  
+            "pesan": ""
             },
             {
-                "nama": "Mochammad Iqbal Az-zahir",
-                "nim": "124450052",
-                "umur": "20",
-                "asal": "Bekasi",
-                "alamat": "Natar",
-                "hobbi": "Nonton Drakor",
-                "sosmed": "@iqbalazzahir_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!",
+            "nama": "Abdillah Fikri Al pome",
+            "nim": "123450062",
+            "umur": "21",
+            "asal": "Baturaja, Sumatera Selatan",
+            "alamat": "Belakang PB",
+            "hobbi": "Olahraga",
+            "sosmed": "@pomest__",
+            "kesan": "",  
+            "pesan": ""
             },
             {
-                "nama": "Anadia Carana",
-                "nim": "123450019",
-                "umur": "20",
-                "asal": "Palembang",
-                "alamat": "Wayhui",
-                "hobbi": "Nyari duit",
-                "sosmed": "@anadiacrn",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!",
+            "nama": "Afdhal Rahmad Setiawan",
+            "nim": "124450008",
+            "umur": "20",
+            "asal": "Sumatera Barat",
+            "alamat": "Belwis",
+            "hobbi": "Fishing",
+            "sosmed": "@dhal_setiawan",
+            "kesan": "",  
+            "pesan": ""
             },
             {
-                "nama": "Abdillah Fikri Al pome",
-                "nim": "124450062",
-                "umur": "21",
-                "asal": "Sumsel",
-                "alamat": "Airan",
-                "hobbi": "Basket",
-                "sosmed": "@pomest",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!",
+            "nama": "Anggun Nita",
+            "nim": "124450009",
+            "umur": "20",
+            "asal": "Lampung Utara",
+            "alamat": "Belwis",
+            "hobbi": "Nonton Kartun",
+            "sosmed": "@anggunnitaaa_",
+            "kesan": "",  
+            "pesan": ""
             },
             {
-                "nama": "Afdhal Rahmad Setiawan",
-                "nim": "124450008",
-                "umur": "20",
-                "asal": "Sumbar",
-                "alamat": "Belwis",
-                "hobbi": "Fishing and game",
-                "sosmed": "@Afdhal",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!",
-            },
-            {
-                "nama": "Anggun Nita",
-                "nim": "124450009",
-                "umur": "20",
-                "asal": "Lamutara",
-                "alamat": "-",
-                "hobbi": "Nonton kartun",
-                "sosmed": "@anggunitaaa_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "Semangat terus kuliahnya kakak !!!"  
-            },
-            {
-                "nama": "Della Anisa Fitri",
-                "nim": "124450095",
-                "umur": "18",
-                "asal": "Lamtim",
-                "alamat": "Kotabaru",
-                "hobbi": "Olahraga",
-                "sosmed": "@delaanisafitri",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!",
+            "nama": "Della Anisa Fitri",
+            "nim": "124450095",
+            "umur": "17",
+            "asal": "Lampung Timur",
+            "alamat": "Kota Baru",
+            "hobbi": "Berdandan",
+            "sosmed": "@dellaansaftr",
+            "kesan": "",  
+            "pesan": ""
             },
         ]
-        display_images_with_data(gambar_urls, data_list)
-    Departemen_SSD()
+            display_images_with_data(gambar_urls_kewirausahaan, data_list_kewirausahaan)
+    ssd()
 
 elif menu == "Departemen Medkraf":
     def medkraf():
-        gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=",
-            "https://drive.google.com/uc?export=view&id=",
-            "https://drive.google.com/uc?export=view&id=",
-            "https://drive.google.com/uc?export=view&id=",
-            "https://drive.google.com/uc?export=view&id=",
-            "https://drive.google.com/uc?export=view&id=",
-        ]
-        data_list = [
+        st.markdown("<h3 style='text-align: center;'>Departemen Media Kreatif</h3>", unsafe_allow_html=True)
+        
+        tab1, tab2, tab3, tab4, tab5 = st.tabs(["Kepala Departemen", "Sekretaris Departemen", "Divisi Dokumentasi", "Divisi Media dan Konten Spesialis", "Visual Design"])
+
+        with tab1:
+            gambar_urls_Kadep_medkraf = [
+            "https://drive.google.com/uc?export=view&id=1zG0mnwqLUsndMcOJ-mHXW93poVhd2Zrd",
+            ]
+            data_list_Kadep_medkraf = [
             {
-                "nama": "",
-                "nim": "",
-                "umur": "",
-                "asal": "",
-                "alamat": "",
-                "hobbi": "",
-                "sosmed": "",
-                "kesan": "",  
-                "pesan": ""
+            "nama": "Nayla Salsabila Fathianisa",
+            "nim": "123450082",
+            "umur": "20",
+            "asal": "Payakumbuh, Sumatera Barat",
+            "alamat": "Way Huwi",
+            "hobbi": "Mendengarkan Musik",
+            "sosmed": "@naylasalsabilaa._",
+            "kesan": "",  
+            "pesan": ""
             },
-        ]
-        display_images_with_data(gambar_urls, data_list)
+            ]
+            display_images_with_data(gambar_urls_Kadep_medkraf, data_list_Kadep_medkraf)
+
+        with tab2:
+            gambar_urls_sekdep_medkraf = [
+            "https://drive.google.com/uc?export=view&id=1CXkNVje18wp1E6NujokW6SIkgTV-8fb4",
+            ]
+            data_list_sekdep_medkraf = [
+            {
+            "nama": "Donna Maya Puspita",
+            "nim": "123450028",
+            "umur": "21",
+            "asal": "Bekasi",
+            "alamat": "Way Huwi",
+            "hobbi": "Listening to music",
+            "sosmed": "@donnamaya.p",
+            "kesan": "",  
+            "pesan": ""
+            },
+            ]
+            display_images_with_data(gambar_urls_sekdep_medkraf, data_list_sekdep_medkraf)
+
+        with tab3:
+            gambar_urls_Divisi_dokumentasi = [
+            "https://drive.google.com/uc?export=view&id=1deLZkPCCb3mB-gxYqvwHyQyyPXVPv9Rq",
+            "https://drive.google.com/uc?export=view&id=1P0pMhYZgnZwPxURB6LX92RsLfpYDwIkc",
+            "https://drive.google.com/uc?export=view&id=18MJRsS_yBSAzqmWPIh4M6h96QR9GZ0e1",
+            "https://drive.google.com/uc?export=view&id=1GNTkKjWa7Y3-2G1XsXHxZe-G47Wi6l_A",
+            ]
+            data_list_Divisi_dokumentasi = [
+            {
+            "nama": "Labo John Noel Napitupulu",
+            "nim": "123450037",
+            "umur": "20",
+            "asal": "Medan, Jakut, Palembang",
+            "alamat": "Belwis",
+            "hobbi": "Motoran",
+            "sosmed": "@noerruuu",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Anash Tasya Ausyaqila",
+            "nim": "124450050",
+            "umur": "20",
+            "asal": "Bandar Lampung",
+            "alamat": "Way Halim",
+            "hobbi": "Nonton",
+            "sosmed": "@anshtsyaaql",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Felisya Nabila Nugroho",
+            "nim": "124450104",
+            "umur": "19",
+            "asal": "Lampung Timur",
+            "alamat": "Kota Baru",
+            "hobbi": "Mancing emosi",
+            "sosmed": "@felisyanbl",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Muhammad Razan Maulana Pratama",
+            "nim": "124450031",
+            "umur": "21",
+            "asal": "Jawa Barat",
+            "alamat": "Korpri",
+            "hobbi": "Poto orang",
+            "sosmed": "@muh_razan_",
+            "kesan": "",  
+            "pesan": ""
+            },
+            ]
+            display_images_with_data(gambar_urls_Divisi_dokumentasi, data_list_Divisi_dokumentasi)
+
+        with tab4:
+            gambar_urls_Divisi_Media_dan_Konten_Spesialis = [
+            "https://drive.google.com/uc?export=view&id=1bMv7Osx12FyzLL0VDK11Br65tWVHI8tB",
+            "https://drive.google.com/uc?export=view&id=1RFmTo_N1IGIryqc-2MMOuNS6RI_pT43X",
+            "https://drive.google.com/uc?export=view&id=1uWywpG2jyhTPP3H5rc20jbPcmFb_SWsz",
+            "https://drive.google.com/uc?export=view&id=1OYEjcTrTWftCr62ZxFHMoKNv6BNf45iR",
+            "https://drive.google.com/uc?export=view&id=1uWywpG2jyhTPP3H5rc20jbPcmFb_SWsz",
+            "https://drive.google.com/uc?export=view&id=1qTrWtd_uC-5mpAzcBlF44M5RRDSDclSM",
+            ]
+            data_list_Divisi_Media_dan_Konten_Spesialis = [
+            {
+            "nama": "Sania Dwi Ayu Lestari",
+            "nim": "124450086",
+            "umur": "21",
+            "asal": "Karawang",
+            "alamat": "Airan Raya",
+            "hobbi": "Nonton netflix",
+            "sosmed": "@saniayyllstr",
+            "kesan": "",  
+            "pesan": "",
+            },
+           {
+            "nama": "Allisha",
+            "nim": "124450019",
+            "umur": "16",
+            "asal": "Kayangan",
+            "alamat": "Heaven",
+            "hobbi": "Mancing",
+            "sosmed": "@aallishaa.a",
+            "kesan": "",  
+            "pesan": "",
+            },
+            {
+            "nama": "Alya Ramadhanti",
+            "nim": "124450091",
+            "umur": "19",
+            "asal": "Jambi",
+            "alamat": "Airan",
+            "hobbi": "Jalan jalan",
+            "sosmed": "@alya.rmdhnti",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Bunga Clarisa Sefa",
+            "nim": "20 ",
+            "umur": "",
+            "asal": "Lampung Selatan",
+            "alamat": "Lampung Selatan",
+            "hobbi": "Belajar",
+            "sosmed": "@bungaclrssf",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Difanya Husakina",
+            "nim": "124450043",
+            "umur": "20",
+            "asal": "Pagar Alam",
+            "alamat": "Airan Raya",
+            "hobbi": "Membaca Alquran",
+            "sosmed": "@difanyhsa_",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Nazlah Auliya",
+            "nim": "124450054",
+            "umur": "20",
+            "asal": "Bandar Lampung",
+            "alamat": "Bandar Lampung",
+            "hobbi": "Berenang",
+            "sosmed": "@nzlhauly_",
+            "kesan": "",  
+            "pesan": ""
+            },
+            ]
+            display_images_with_data(gambar_urls_Divisi_Media_dan_Konten_Spesialis, data_list_Divisi_Media_dan_Konten_Spesialis)
+
+        with tab5:
+            gambar_urls_Divisi_Visual_Design = [
+            "https://drive.google.com/uc?export=view&id=1Pej1chcJU40ZlAPZ8xDxxs3d4ujH5-zY",
+            "https://drive.google.com/uc?export=view&id=15Lwu-_KkXR6zF1ZMh2LsXFS7XAz_DBVF",
+            "https://drive.google.com/uc?export=view&id=1RZV454S_IpTykKKVe9nBNkvBvH8MYkzQ",
+            "https://drive.google.com/uc?export=view&id=1x-7ZkdvpvQBcxB8AmO_lRhOFkjLEGsT7",
+            "https://drive.google.com/uc?export=view&id=1WtcX03vQv9IxzsoUGcKWSwL7TUQhe6DB",
+            "https://drive.google.com/uc?export=view&id=1m4HjYszig5AUUk2zsjww_2WPBCQcvUyp",
+            ]
+            data_list_Divisi_Visual_Design = [
+            {
+            "nama": "Raihana Adelia Putri",
+            "nim": "123450041",
+            "umur": "20",
+            "asal": "Lampung Tengah",
+            "alamat": "Aira Raya 1",
+            "hobbi": "Menulis, membaca",
+            "sosmed": "@n1tg._",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Daffa Kharisma Adzana",
+            "nim": "124450061",
+            "umur": "21",
+            "asal": "Surabaya",
+            "alamat": "Sukarame",
+            "hobbi": "-",
+            "sosmed": "@daffascript",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Edsel Adya Pradipta",
+            "nim": "124450098",
+            "umur": "20",
+            "asal": "Lampung Selatan",
+            "alamat": "Natar",
+            "hobbi": "Nonton Anime",
+            "sosmed": "@edsel_0712",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Lucia Advencia Rachel Nainggolan",
+            "nim": "124450085",
+            "umur": "20",
+            "asal": "Bekasi",
+            "alamat": "Belwis",
+            "hobbi": "Tidur",
+            "sosmed": "@luciarachel_",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Shafa Delaila Azzahra",
+            "nim": "124450124",
+            "umur": "20",
+            "asal": "Lampung Tengah",
+            "alamat": "Perum Pemda",
+            "hobbi": "Melukis dan menulis",
+            "sosmed": "@_shaazzh",
+            "kesan": "",  
+            "pesan": ""
+            },
+            {
+            "nama": "Zannuba Arifah Ilman",
+            "nim": "124450112",
+            "umur": "18",
+            "asal": "Lampung Timur",
+            "alamat": "Bengong",
+            "hobbi": "@xifasky",
+            "sosmed": "Rajabasa",
+            "kesan": "",  
+            "pesan": ""
+            },
+            ]
+            display_images_with_data(gambar_urls_Divisi_Visual_Design, data_list_Divisi_Visual_Design)
     medkraf()
