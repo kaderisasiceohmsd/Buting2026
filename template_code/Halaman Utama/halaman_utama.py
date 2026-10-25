@@ -146,7 +146,7 @@ if menu == "Home":
             {
                 "emoji": "💻",
                 "judul": "Kerja Kelompok & Coding",
-                "deskripsi": "Momen diskusi seru di selasar gedung kampus dan kafe. Debat logika kode, revisi layout bareng, hingga sharing cemilan saat mata mulai mengantuk.",
+                "deskripsi": "Momen diskusi seru di kafe. Bingung sama error kode, revisi layout bareng, hingga sharing cemilan saat mata mulai mengantuk.",
                 "foto": "https://drive.google.com/thumbnail?id=1LlKGfllyj2v536zpkPKSzsJ4tPjRcjwC&sz=w1000",
             },
             {
