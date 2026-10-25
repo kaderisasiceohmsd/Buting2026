@@ -1466,14 +1466,15 @@ if menu == "Departemen Minbak":
             "https://drive.google.com/uc?export=view&id=1JhtYw4YIys5-CS4PwaDdcNgSBPnmFeTk",
             "https://drive.google.com/uc?export=view&id=19SjFMFBonP95ND3KTC7bPScKKpE47-Y9",
             "https://drive.google.com/uc?export=view&id=15mQ5BdPQaf7mn6gvb9QpDWnUaAKOU5eP",
-            "https://drive.google.com/uc?export=view&id=18IaQhmk9-efK4ydoYwIyQNXCSJhfeZRp",
+            "https://drive.google.com/uc?export=view&id=1ScO9TQqmLDRIzkY-gbJzEdypoAXhlTFF",
             "https://drive.google.com/uc?export=view&id=1t3NJQbHVdAH3DZsokJtaOFU1gVGIYp3F",
-            "https://drive.google.com/uc?export=view&id=1ScO9TQqmLDRIzkY-gbJzEdypoAXhlTFF",
-            "https://drive.google.com/uc?export=view&id=1ScO9TQqmLDRIzkY-gbJzEdypoAXhlTFF",
+            "https://drive.google.com/uc?export=view&id=1o8zZyO7fIT4joko-1iIB70Wwo1xHlgYi",
+            "https://drive.google.com/uc?export=view&id=1wQgy7uH-55O3VnN0HE8V2ZErQSXrAtr3",
             "https://drive.google.com/uc?export=view&id=1HUGju2PmyNfpy8dD-eeftnp2YqY9QURM",
             "https://drive.google.com/uc?export=view&id=1ixFxDg-Z9zzwpuT4cp2SzbE25o9Og3vY",
             "https://drive.google.com/uc?export=view&id=1mIqyFGb5jGvB_IDbznW4v5D8e8ysnMJk",
-            "https://drive.google.com/uc?export=view&id=1ScO9TQqmLDRIzkY-gbJzEdypoAXhlTFF"
+            "https://drive.google.com/uc?export=view&id=1mIqyFGb5jGvB_IDbznW4v5D8e8ysnMJk"
+        ]
         ]
         data_list = [
             {
@@ -1921,23 +1922,23 @@ if menu == "Departemen MIKFES":
 if menu == "Departemen PSDA":
     def Departemen_PSDA():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1apn2sJ9axvR0nD-kWjfSF6Kv-TVwCgR7",
+            "https://drive.google.com/uc?export=view&id=1GZyrGUKwSIEbBctAHZ5pmxKptZMnSvm_",
+            "https://drive.google.com/uc?export=view&id=10Xg8nWCnbRbQ_Mq61VYs_EZN8vUtY7Ea",
+            "https://drive.google.com/uc?export=view&id=1E-H42E_ZEjD5UDrpNNi7TKINj6nP6tMx",
+            "https://drive.google.com/uc?export=view&id=1MphAXTzlPB6rq-FvFzoyIQ3W4yCuC8PG",
+            "https://drive.google.com/uc?export=view&id=1cpMNDyo4nRmwg9w22npH60WxyEl_4pSp",
+            "https://drive.google.com/uc?export=view&id=1b1J1mw0i8QRdM2ZfaRzuL-zNGalx3YZd",
+            "https://drive.google.com/uc?export=view&id=1zkiB-YJAX1ngGicejEWznHIpNwlwPYip",
+            "https://drive.google.com/uc?export=view&id=1GumXAJfXBWfTr_JBosJ9iBHEVLFxRasb",
+            "https://drive.google.com/uc?export=view&id=1fVa7k3i9NOuPAalDL_V7UiDvRqdtauJI",
+            "https://drive.google.com/uc?export=view&id=1FlocO2rxRrlmSZihLwkI4de_GvpO0GaK",
+            "https://drive.google.com/uc?export=view&id=1NubmVm1coiCaGtk6CE1pHxgoNt54IBSx",
+            "https://drive.google.com/uc?export=view&id=1nMiRqB3lDplpzfKNQVNQ4OqPGq4E9vIY",
+            "https://drive.google.com/uc?export=view&id=1YneY6IlRFyjnJ5FmA_SQv5eNcPDocyKR",
+            "https://drive.google.com/uc?export=view&id=1HV5tQqFICgeayD2u7WXdCPaHHGiMh0kX",
+            "https://drive.google.com/uc?export=view&id=12OMRj6_B9YtQinpbzmQqKpXqVBLtA-L-",
+            "https://drive.google.com/uc?export=view&id=1tfs3lh7j7WoFmFfL2coI-4G7SIjsUR1v"
         ]
         data_list = [
             {
@@ -1973,6 +1974,17 @@ if menu == "Departemen PSDA":
                 "kesan": "Bang Nobel Berwibawa, Asik dan jago banget sulap, baik, tegas, dan keren banget",  
                 "pesan":"Semogaa sukses dan berkah selalu ya bang!!!"# 1
             },
+            {
+                "nama": "Desman Velius Halawa",
+                "nim": "123450113",
+                "umur": "25",
+                "asal":"Nias",
+                "alamat": "Airan",
+                "hobbi": "Main musik",
+                "sosmed": "@dsmanhal",
+                "kesan": "Bang Desman baik, asik, humble, dan jago bangetttt deffense futsalnya",  
+                "pesan":"Semoga selalu semangat dan sukses ya bang!!!"# 1
+            },   
             {
                 "nama": "Afriza Azmi",
                 "nim": "124450110",
@@ -2049,18 +2061,7 @@ if menu == "Departemen PSDA":
                 "sosmed": "@queentanaabila",
                 "kesan": "Kak Queenta baik, ber aura, dan humble bangetttt",  
                 "pesan":"Semoga selalu sehat, bahagia dan diberi keselamatan ya kak!!!"# 1
-            },            
-            {
-                "nama": "Desman Velius Halawa",
-                "nim": "123450113",
-                "umur": "25",
-                "asal":"Nias",
-                "alamat": "Airan",
-                "hobbi": "Main musik",
-                "sosmed": "@dsmanhal",
-                "kesan": "Bang Desman baik, asik, humble, dan jago bangetttt deffense futsalnya",  
-                "pesan":"Semoga selalu semangat dan sukses ya bang!!!"# 1
-            },            
+            },                     
             {
                 "nama": "Azzelya Thianandry",
                 "nim": "124450041",
