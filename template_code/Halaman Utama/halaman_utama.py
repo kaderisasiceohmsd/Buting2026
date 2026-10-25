@@ -1206,7 +1206,7 @@ elif menu == "About Us":
                 "nim": "125450104",
                 "fun_fact": "Pernah foto Sama Fufufafaa & Pria Solo",
                 "motto_hidup": " Hidup Realistis dan jangan lupa Ibadah",
-                "sosmed": "@byan_.27",
+                "sosmed": "@byann_.27",
                 "foto": "https://drive.google.com/uc?export=view&id=1i9oSkeFZT1sL0SJmMWmZb4l_qPCxAV-4",
             },
             {
@@ -1246,7 +1246,7 @@ elif menu == "About Us":
                 "nim": "125450036",
                 "fun_fact": "bisa nyelesain 1 drakor dalam 1 hari",
                 "motto_hidup": "Tidak semua di dunia ini dinilai menurut versimu",
-                "sosmed": "@asttritsy",
+                "sosmed": "@asstritsy",
                 "foto": "https://drive.google.com/uc?export=view&id=1D-_sGW7jHoUpCms068h97XYi4fdLxHMc",
             },
             {
@@ -1296,7 +1296,7 @@ elif menu == "About Us":
                 "nim": "125450069",
                 "fun_fact": "Mantan saya 4",
                 "motto_hidup": "Selalu beribadah kepada Allah swt",
-                "sosmed": "@na.biwa",
+                "sosmed": "@na_biwa",
                 "foto": "https://drive.google.com/uc?export=view&id=16JerAO1bW_lVSKEYSVi8qSo3qeWCqfzO",
             },
         ]
