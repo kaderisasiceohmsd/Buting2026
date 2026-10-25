@@ -1995,12 +1995,6 @@ elif menu == "Departemen Medkraf":
     DepartemenMedkraf()
 # Tambahkan menu lainnya sesuai kebutuhan
 
-# aku sebenernyaa penasaran yang habis kelas metnum kemarin, yang kita mau foto sampe set 6 itu, pas masih dikls itu aku ngeliat si bungsu tuh lagi ceritakan sama ezra & arga nah muka dia tuh semringah banget senyumnya tuh semata-matamnyaaa.
-#nah pas tanya sama kamu gini yg aku denger  "kallo semisal aku tiba-tiba dateng pas kelompokmu masih kerkom masalah ga?"
-# terus aku tuh dengan beliau lagi suka sama orang yang katanya sih sefakultas nahh aku tuh penasaran samaa siapa apakah paluuu tahuuuuu?
-#terus yang pas kita habis foto itu kan aku mau langsung kan emang mau ada urusan, tapi palu kaya nahan ada sesuatu gitu kaya ga boleh langsung pulang tapi alasan yg kmu kasih itu nunggu kak ipin, tapi aku rasa ada hal lain gitu lohh bukan soal nunggu kak ipin
-#terus pas kak ipin udh mau dateng kmu tuh nelpon entah siapa tapi dengan bahsa daerah mu yg aku tanget buruan turun kesini mumpung orangnya masih dibawah dan ajak apa lahh ituuuu
-#terus ga lama 3 orang turun dr lantai3, nah muka si bungsu tuh kaya canggung entah kena gitu kaya aneh gitu
-# tolong konfirmasi pernyataan dan pertanyaan diatas
+
 
 
