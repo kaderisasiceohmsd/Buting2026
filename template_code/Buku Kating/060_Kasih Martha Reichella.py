@@ -1073,7 +1073,7 @@ elif menu == "Departemen Eksternal":
             "https://drive.google.com/uc?export=view&id=17_-7-ebHA-RxAJNc00Xtemf32v5WbKDi",
             "https://drive.google.com/uc?export=view&id=10Uw7gdK6hQ97-m4P_BBz2irolfHEJlVP",
             "https://drive.google.com/uc?export=view&id=14rc20GI-JfvWM4tn5O-08WJgerRR9zNn",
-            "https://drive.google.com/uc?export=view&id=1qc8GQETcntSsYKsLdXk727G9J7Ia3B9r",
+            "https://drive.google.com/uc?export=view&id=1jUFhnRvvlsBn0DN95lkOawa1d6Wn8cGi",
             "https://drive.google.com/uc?export=view&id=1rXV5iY3LykiLoeTcioyRI3xo2YnbwO2p",
             "https://drive.google.com/uc?export=view&id=1pXl2E4LCIqFDYT42B4RNXUgnuoahNi4j",
             "https://drive.google.com/uc?export=view&id=1-oLIbLMy95icoDgl07oN9FKWthV0ASZI",
@@ -1640,7 +1640,7 @@ elif menu == "Departemen SSD":
                 "pesan": "Semangat Bang ngerjain TA-nya"# 1
             },
             {
-                "nama": "hanifah inaya sani",
+                "nama": "Hanifah Inaya Sani",
                 "nim": "123450123",
                 "umur": "20",
                 "asal": "Bandar Lampung ",
