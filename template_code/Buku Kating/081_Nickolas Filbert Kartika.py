@@ -1331,7 +1331,7 @@ elif menu == "Departemen Medkraf":
         display_images_with_data(gambar_urls, data_list)
 
     Departemen_Medkraf()
-elif menu == "Departemen Internal":
+if menu == "Departemen Internal":
     def Departemen_Internal():
         gambar_urls = [
         ]
@@ -1511,8 +1511,8 @@ elif menu == "Departemen Internal":
             },
         ]
         display_images_with_data(gambar_urls, data_list)
+        
     Departemen_Internal()
-
 elif menu == "Departemen Eksternal":
     def Departemen_Eksternal():
         gambar_urls = [
