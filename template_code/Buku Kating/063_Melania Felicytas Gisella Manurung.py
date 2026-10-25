@@ -1653,18 +1653,18 @@ if menu == "Departemen MIKFES":
             "https://drive.google.com/uc?export=view&id=1FzAREZlWFMKqU7R8DLjnE-KfyXXelDJp",
             "https://drive.google.com/uc?export=view&id=1-jDmp_F7p1ChxyniYhNhYfnlJMlsppZO",
             "https://drive.google.com/uc?export=view&id=1C954lrGnhUfiqbLVbCg7Masvza6LeZQV",
+            "https://drive.google.com/uc?export=view&id=1lAnh64tpDE6LkGnz57dPS1lMkD2-2U27",
+            "https://drive.google.com/uc?export=view&id=1Y7ZNNxDO8WTBFvoX33dwYfVatk7Egljo",
             "https://drive.google.com/uc?export=view&id=13AotutQGashT8YWIv_OzHCS7pP967r0f",
             "https://drive.google.com/uc?export=view&id=14XyZLRUVWpb4d-1G3SmzfRt0qoMT5-zB",
             "https://drive.google.com/uc?export=view&id=14LqlwfDzbkSBQYDz8HK-EuQKgb2l4QcG",
             "https://drive.google.com/uc?export=view&id=1PADBkvqxGXGbCttCIAyfWyjOo5s0CGz0",
             "https://drive.google.com/uc?export=view&id=1O6gjwegL6q1QhyjhoSkkkAL84I6lCy0M",
-            "https://drive.google.com/uc?export=view&id=1lAnh64tpDE6LkGnz57dPS1lMkD2-2U27",
             "https://drive.google.com/uc?export=view&id=1T3DZMBP-CS8fYAI3XqcVXuIESXY8LSp-",
             "https://drive.google.com/uc?export=view&id=1S6sQesy0gAEh2YzjlKgYEbhKgvzJt4HW",
             "https://drive.google.com/uc?export=view&id=1QQzvvOTPX84dK22jcvn0vqXBrcxmqOL3",
             "https://drive.google.com/uc?export=view&id=1XCJvlpmTCVR-jtCG4fCP7XxcpeLzZ2rn",
             "https://drive.google.com/uc?export=view&id=1ePpAPeJlaDiXsCTRckUU8fPItDOZD2qt",
-            "https://drive.google.com/uc?export=view&id=1Y7ZNNxDO8WTBFvoX33dwYfVatk7Egljo",
             "https://drive.google.com/uc?export=view&id=1lBHzSinc4lQAWL7VvxLa4riFh8xkSPTg",
             "https://drive.google.com/uc?export=view&id=1gFbGRoKy6ZyhozWyK5tD81uTMillUbEh",
             "https://drive.google.com/uc?export=view&id=1-QNF0EPSWELlHCwpuNdUWJRvtI7E48x7",
@@ -1677,10 +1677,10 @@ if menu == "Departemen MIKFES":
             {
                 "nama": "Fabio Banyu Cyto",
                 "nim": "123450104",
-                "umur": "21 tahun",
+                "umur": "21",
                 "asal": "Bandar Lampung",
-                "alamat": "Kedaton",
-                "hobbi": "Tidur",
+                "alamat": "Kedaton Bandar Lampung",
+                "hobbi": "Gangguin bang keya",
                 "sosmed": "@biyokcb",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1688,10 +1688,10 @@ if menu == "Departemen MIKFES":
             {
                 "nama": "Tanty Widiyastuti",
                 "nim": "123450094",
-                "umur": "21 tahun",
+                "umur": "21",
                 "asal": "Lampung",
                 "alamat": "Airan Raya",
-                "hobbi": "Membaca",
+                "hobbi": "Nonton film",
                 "sosmed": "@tvnty_",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1699,7 +1699,7 @@ if menu == "Departemen MIKFES":
             {
                 "nama": "Fadil Prasetyo Alfarizzi",
                 "nim": "123450048",
-                "umur": "21 tahun",
+                "umur": "21",
                 "asal": "Bandar Lampung",
                 "alamat": "Bandar Lampung",
                 "hobbi": "Gitar",
@@ -1708,12 +1708,34 @@ if menu == "Departemen MIKFES":
                 "pesan": "semangat terus kuliahnya kakak !!!"
             },
             {
+                "nama": "Akeyla Fairuz Shafi",
+                "nim": "123450119",
+                "umur": "21",
+                "asal": "Bandar Lampung",
+                "alamat": "Bandar Lampung",
+                "hobbi": "Berenang",
+                "sosmed": "@keyashafi_",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",
+                "pesan": "semangat terus kuliahnya kakak !!!"
+            },
+            {
+                "nama": "Razin Hafid Hamdi",
+                "nim": "123450096",
+                "umur": "21",
+                "asal": "Padang",
+                "alamat": "Jl. Lapas",
+                "hobbi": "Futsal",
+                "sosmed": "@razyn.hfd",
+                "kesan": "Kakak ini asik saya suka belajar dengan dia",
+                "pesan": "semangat terus kuliahnya kakak !!!"
+            },
+            {
                 "nama": "Manuel Frederika",
                 "nim": "124450039",
-                "umur": "20 tahun",
+                "umur": "20",
                 "asal": "Batam",
                 "alamat": "Way Kandis",
-                "hobbi": "Tenis meja",
+                "hobbi": "Gitar",
                 "sosmed": "@manuelfdk_",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1721,7 +1743,7 @@ if menu == "Departemen MIKFES":
             {
                 "nama": "Ni Made Okta Viola Darma Putri",
                 "nim": "124450005",
-                "umur": "12 tahun",
+                "umur": "12",
                 "asal": "Bali",
                 "alamat": "Nusa Penida",
                 "hobbi": "Menghayal",
@@ -1732,7 +1754,7 @@ if menu == "Departemen MIKFES":
             {
                 "nama": "Risa Romadona",
                 "nim": "124450127",
-                "umur": "20 tahun",
+                "umur": "20",
                 "asal": "Natar",
                 "alamat": "Natar",
                 "hobbi": "Rolling Skate",
@@ -1743,10 +1765,10 @@ if menu == "Departemen MIKFES":
             {
                 "nama": "Vannisa Ramadhani",
                 "nim": "124450078",
-                "umur": "19 tahun",
+                "umur": "19",
                 "asal": "Kepulauan Riau",
-                "alamat": "Teluk Betung",
-                "hobbi": "Nonton KHW",
+                "alamat": "Jatimulyo",
+                "hobbi": "Mantengin KHW",
                 "sosmed": "@vunnycaa",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1754,7 +1776,7 @@ if menu == "Departemen MIKFES":
             {
                 "nama": "Yulia Kristine Malau",
                 "nim": "124450119",
-                "umur": "20 tahun",
+                "umur": "20",
                 "asal": "Jambi",
                 "alamat": "Sabah Balau",
                 "hobbi": "Belajar",
@@ -1763,23 +1785,12 @@ if menu == "Departemen MIKFES":
                 "pesan": "semangat terus kuliahnya kakak !!!"
             },
             {
-                "nama": "Akeyla Fairuz Shafi",
-                "nim": "123450119",
-                "umur": "21 tahun",
-                "asal": "Bandar Lampung",
-                "alamat": "Bandar Lampung",
-                "hobbi": "Berenang",
-                "sosmed": "@keyashafi_",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
-            },
-            {
                 "nama": "Elsa Sitorus",
                 "nim": "124450088",
-                "umur": "21 tahun",
+                "umur": "21",
                 "asal": "Sumatera Utara",
                 "alamat": "Pemda",
-                "hobbi": "Rebahan",
+                "hobbi": "Sibuk",
                 "sosmed": "@_els.a",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1787,10 +1798,10 @@ if menu == "Departemen MIKFES":
             {
                 "nama": "Fadya Izzatul 'Aini",
                 "nim": "124450062",
-                "umur": "20 tahun",
+                "umur": "20",
                 "asal": "Pringsewu",
                 "alamat": "Airan",
-                "hobbi": "Mancing",
+                "hobbi": "Main game",
                 "sosmed": "@fadyaizzatul_",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1798,10 +1809,10 @@ if menu == "Departemen MIKFES":
             {
                 "nama": "Lovianora Saragih",
                 "nim": "124450105",
-                "umur": "19 tahun",
+                "umur": "19",
                 "asal": "Sumatera Utara",
                 "alamat": "Way Huwi",
-                "hobbi": "Dengerin musik",
+                "hobbi": "Lari",
                 "sosmed": "@_loviaa",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1809,10 +1820,10 @@ if menu == "Departemen MIKFES":
             {
                 "nama": "M. Alsi Syahrulloh",
                 "nim": "124450092",
-                "umur": "20 tahun",
+                "umur": "18",
                 "asal": "Kalianda",
                 "alamat": "Kota Baru",
-                "hobbi": "Main game, tidur",
+                "hobbi": "Main game",
                 "sosmed": "@aruccy_",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1820,7 +1831,7 @@ if menu == "Departemen MIKFES":
             {
                 "nama": "Sherena Florencia",
                 "nim": "124450027",
-                "umur": "19 tahun",
+                "umur": "19",
                 "asal": "Bengkulu Selatan",
                 "alamat": "Belwis",
                 "hobbi": "Make up",
@@ -1829,20 +1840,9 @@ if menu == "Departemen MIKFES":
                 "pesan": "semangat terus kuliahnya kakak !!!"
             },
             {
-                "nama": "Razin Hafid Hamdi",
-                "nim": "123450096",
-                "umur": "21 tahun",
-                "asal": "Padang",
-                "alamat": "Belwis",
-                "hobbi": "Futsal",
-                "sosmed": "@razyn.hfd",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",
-                "pesan": "semangat terus kuliahnya kakak !!!"
-            },
-            {
                 "nama": "Faiza Try Anjani",
                 "nim": "124450075",
-                "umur": "19 tahun",
+                "umur": "19",
                 "asal": "Padang",
                 "alamat": "Belwis",
                 "hobbi": "Baca novel",
@@ -1853,9 +1853,9 @@ if menu == "Departemen MIKFES":
             {
                 "nama": "Gathfan Nadif Ali",
                 "nim": "124450001",
-                "umur": "20 tahun",
+                "umur": "20",
                 "asal": "Bandar Lampung",
-                "alamat": "Rajabasa",
+                "alamat": "Rajabasa Raya",
                 "hobbi": "Main game",
                 "sosmed": "@gathfannadif",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
@@ -1864,7 +1864,7 @@ if menu == "Departemen MIKFES":
             {
                 "nama": "Hafidz Wahdiansyah",
                 "nim": "124450064",
-                "umur": "20 tahun",
+                "umur": "20",
                 "asal": "Metro",
                 "alamat": "Metro Kibang, Lampung Timur",
                 "hobbi": "3N (Ngoding, Ngegame, Nyibukin diri)",
@@ -1875,10 +1875,10 @@ if menu == "Departemen MIKFES":
             {
                 "nama": "Kaleb Filbert Istel",
                 "nim": "124450053",
-                "umur": "20 tahun",
+                "umur": "20",
                 "asal": "Bandar Lampung",
-                "alamat": "Campang Raya",
-                "hobbi": "Ngegym, baca novel",
+                "alamat": "Campang Raya, Sukabumi",
+                "hobbi": "Gym, membaca, dan bermain",
                 "sosmed": "@kelelep_comberan",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1886,10 +1886,10 @@ if menu == "Departemen MIKFES":
             {
                 "nama": "Melva Shaprina Febrianti",
                 "nim": "124450087",
-                "umur": "19 tahun",
+                "umur": "19",
                 "asal": "Sumatera Selatan",
                 "alamat": "Sukarame",
-                "hobbi": "Scroll",
+                "hobbi": "Memasak",
                 "sosmed": "@melva_fbrt",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
@@ -1908,10 +1908,10 @@ if menu == "Departemen MIKFES":
             {
                 "nama": "Rifky Henry Ferdianto",
                 "nim": "124450115",
-                "umur": "28 tahun",
+                "umur": "-",
                 "asal": "Kota bumi",
                 "alamat": "Rajabasa",
-                "hobbi": "Lari dari kenyataan",
+                "hobbi": "Ngerecokin nuel",
                 "sosmed": "@henryferdianto",
                 "kesan": "Kakak ini asik saya suka belajar dengan dia",
                 "pesan": "semangat terus kuliahnya kakak !!!"
