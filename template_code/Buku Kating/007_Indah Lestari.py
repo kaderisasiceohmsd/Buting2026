@@ -22,7 +22,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 st.markdown("<h1 class='centered-title'>BUKU KATING</h1>", unsafe_allow_html=True)
- 
+
 # bagian sini jangan diubah
 def streamlit_menu():
     selected = option_menu(
@@ -135,24 +135,24 @@ if menu == "Kesekjenan":
                 "https://drive.google.com/thumbnail?id=1A-tjV1Cw5Nt8bhlRr0B1_1EMF725rben&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1-7LCL719bCdP3ba66VdshxS45PPfuTVI&sz=w1000",
         ]
-        
+
         data_list = [
             {
-                "Nama": "Ginda Fajar Riadi Marpaung", 
+                "Nama": "Ginda Fajar Riadi Marpaung",
                 "NIM" : "123450103",
                 "Asal" : "Bakinang",
-                "Alamat" : "Sekretariat HMSD", 
+                "Alamat" : "Sekretariat HMSD",
                 "Hobi": "Push Rank",
                 "Umur" : "22",
                 "Sosmed" : "@jars_mrp",
                 "Kesan" : "Orangnya kalem dan enak diajak ngobrol.",
-                "Pesan" : "Semoga selalu sehat dan sukses terus, Kak."
+                "Pesan" : "Semoga selalu sehat dan sukses terus, Bang."
             },
             {
-                "Nama": "Muhammad Aqil Ramadhan", 
+                "Nama": "Muhammad Aqil Ramadhan",
                 "NIM" : "123450066",
                 "Asal" : "Riau",
-                "Alamat" : "Kotabaru", 
+                "Alamat" : "Kotabaru",
                 "Hobi": "Dzikir",
                 "Umur" : "22",
                 "Sosmed" : "@Muhammadaqil1111",
@@ -160,7 +160,7 @@ if menu == "Kesekjenan":
                 "Pesan" : "Terus istiqomah dan jaga kesehatan ya, Bang."
             },
             {
-                "Nama": "Efi Defiyati", 
+                "Nama": "Efi Defiyati",
                 "NIM" : "123450005",
                 "Asal" : "Lampung Timur",
                 "Alamat" : "Airan",
@@ -171,7 +171,7 @@ if menu == "Kesekjenan":
                 "Pesan" : "Semoga makin banyak bacaan seru dan tetap semangat, Kak."
             },
             {
-                "Nama": "Qois Olifio", 
+                "Nama": "Qois Olifio",
                 "NIM" : "123450067",
                 "Asal" : "Batam",
                 "Alamat" : "Kotabaru",
@@ -179,13 +179,13 @@ if menu == "Kesekjenan":
                 "Umur" : "22",
                 "Sosmed" : "@qoisolifio_",
                 "Kesan" : "Humoris dan selalu punya cerita menarik.",
-                "Pesan" : "Tetap jadi pribadi yang asyik dan jangan lupa istirahat, Bang."    
+                "Pesan" : "Tetap jadi pribadi yang asyik dan jangan lupa istirahat, Bang."
             },
             {
-                "Nama": "Hafsa Fazilah Arradhi", 
+                "Nama": "Hafsa Fazilah Arradhi",
                 "NIM" : "123450079",
                 "Asal" : "Bandar Lampung",
-                "Alamat" : "Bandar Lampung", 
+                "Alamat" : "Bandar Lampung",
                 "Hobi": "Bertemu luluk",
                 "Umur" : "21",
                 "Sosmed" : "@hafsafazilahh",
@@ -193,7 +193,7 @@ if menu == "Kesekjenan":
                 "Pesan" : "Semoga selalu lancar dalam segala urusan, Kak."
             },
             {
-                "Nama": "Luthfia Laila Ramadhani", 
+                "Nama": "Luthfia Laila Ramadhani",
                 "NIM" : "123450004",
                 "Asal" : "Bengkulu",
                 "Alamat" : "Airan",
@@ -206,7 +206,7 @@ if menu == "Kesekjenan":
         ]
         display_images_with_data(gambar_urls, data_list)
     kesekjenan()
- 
+
 if menu == "Departemen Internal":
     def departemen_internal():
         gambar_urls = [
@@ -227,7 +227,7 @@ if menu == "Departemen Internal":
                 "https://drive.google.com/thumbnail?id=1B9-H5Lg9bmICHwXZm18doQJwFKrqPZjx&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1iwmfJcLJ9MgTOL8u7l2S84GyWFeS9rwt&sz=w1000",
         ]
-        
+
         data_list = [
             {
                 "Nama": "Haikal Fransisko Simbolon",
@@ -408,14 +408,14 @@ if menu == "Departemen Internal":
         ]
         display_images_with_data(gambar_urls, data_list)
     departemen_internal()
- 
+
 if menu == "Departemen Minbak":
     def departemen_minbak():
         gambar_urls = [
                 "https://drive.google.com/thumbnail?id=1LmTiRyUcWG_SqZ0MEPeWhkvOVrT3s4mh&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1M0dQnyVPYdq1zw2RBR0qUh1mxVx-BcIj&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1mNK7jsiP9fzP2MVhgoSFBuliJ-34yhgn&sz=w1000",
-                "https://drive.google.com/thumbnail?id=1CXdr-HnrFBxtU7lw_Gu_t6shs16bg-eT&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1j6bKVLt-PqU-1PKop4xYh2668akcXXVi&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1aaeqBP63GTE_0eWV71a-iFxPfvOCdmBK&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1Z9WzO1pTPe5JvsoZmjOiC-LsOrPg0cQj&sz=w1000",
@@ -428,10 +428,10 @@ if menu == "Departemen Minbak":
                 "https://drive.google.com/thumbnail?id=1PLW0frBFtUk69JjkIqeUe4rUXD2iYhGF&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1klKh2QC87HzU6CGPfniznstefmlEFgkb&sz=w1000",
         ]
-        
+
         data_list = [
             {
-                "Nama": "Kevin Antonio Junior", 
+                "Nama": "Kevin Antonio Junior",
                 "NIM" : "123450109",
                 "Asal" : "Bandar Lampung",
                 "Alamat" : "Panjang, Bandar Lampung",
@@ -442,7 +442,7 @@ if menu == "Departemen Minbak":
                 "Pesan" : "Tetap semangat dan selalu hati-hati di jalan, Bang."
             },
             {
-                "Nama": "Gusti Putu Ferazka Dhiyamika", 
+                "Nama": "Gusti Putu Ferazka Dhiyamika",
                 "NIM" : "123450046",
                 "Asal" : "Lampung Utara",
                 "Alamat" : "Way Halim",
@@ -453,7 +453,7 @@ if menu == "Departemen Minbak":
                 "Pesan" : "Semoga selalu ada waktu buat baca buku-buku favoritnya, Kak."
             },
             {
-                "Nama": "Ari Aristo Muthahari Parisi", 
+                "Nama": "Ari Aristo Muthahari Parisi",
                 "NIM" : "123450088",
                 "Asal" : "Lampung Timur",
                 "Alamat" : "Gang Sakum, Belwis",
@@ -464,7 +464,7 @@ if menu == "Departemen Minbak":
                 "Pesan" : "Semoga tim jagoannya sering naik podium, Bang."
             },
             {
-                "Nama": "Ayu Andriani Parlina Wati", 
+                "Nama": "Ayu Andriani Parlina Wati",
                 "NIM" : "124450058",
                 "Asal" : "Lampung Barat",
                 "Alamat" : "Airan",
@@ -475,7 +475,7 @@ if menu == "Departemen Minbak":
                 "Pesan" : "Tetap semangat dan jangan lupa istirahat yang cukup, Kak."
             },
             {
-                "Nama": "Dafa Elpriza", 
+                "Nama": "Dafa Elpriza",
                 "NIM" : "124450131",
                 "Asal" : "Bekasi",
                 "Alamat" : "Way Kandis",
@@ -486,7 +486,7 @@ if menu == "Departemen Minbak":
                 "Pesan" : "Tetap jadi teman yang menyenangkan dan semangat terus, Bang."
             },
             {
-                "Nama": "Juwita Sari", 
+                "Nama": "Juwita Sari",
                 "NIM" : "124450066",
                 "Asal" : "Lampung Barat",
                 "Alamat" : "Pemda",
@@ -497,7 +497,7 @@ if menu == "Departemen Minbak":
                 "Pesan" : "Semoga malam-malamnya selalu cerah buat lihat bulan, Kak."
             },
             {
-                "Nama": "Muhammad Afdal Lutfi", 
+                "Nama": "Muhammad Afdal Lutfi",
                 "NIM" : "124450047",
                 "Asal" : "Lampung Tengah",
                 "Alamat" : "Jl Pulau Damar",
@@ -508,7 +508,7 @@ if menu == "Departemen Minbak":
                 "Pesan" : "Terus semangat dan jaga kesehatan ya, Bang."
             },
             {
-                "Nama": "Salsabila Nazwa Putri", 
+                "Nama": "Salsabila Nazwa Putri",
                 "NIM" : "124450002",
                 "Asal" : "Metro",
                 "Alamat" : "Korpri",
@@ -519,7 +519,7 @@ if menu == "Departemen Minbak":
                 "Pesan" : "Semoga kopinya selalu enak dan harinya menyenangkan, Kak."
             },
             {
-                "Nama": "Muhammad Ridwan", 
+                "Nama": "Muhammad Ridwan",
                 "NIM" : "123450091",
                 "Asal" : "Lampung Tengah",
                 "Alamat" : "Belwis",
@@ -530,7 +530,7 @@ if menu == "Departemen Minbak":
                 "Pesan" : "Tetap semangat dan semoga selalu dilancarkan urusannya, Bang."
             },
             {
-                "Nama": "Andra Ilham Bintang", 
+                "Nama": "Andra Ilham Bintang",
                 "NIM" : "124450060",
                 "Asal" : "Sumatera Selatan",
                 "Alamat" : "Kota Baru",
@@ -541,7 +541,7 @@ if menu == "Departemen Minbak":
                 "Pesan" : "Semoga kebunnya selalu mekar dan tetap semangat, Bang."
             },
             {
-                "Nama": "Bryan Paskah Telaumbanua", 
+                "Nama": "Bryan Paskah Telaumbanua",
                 "NIM" : "124450003",
                 "Asal" : "Nias",
                 "Alamat" : "Belwis",
@@ -552,7 +552,7 @@ if menu == "Departemen Minbak":
                 "Pesan" : "Semoga livenya makin ramai dan tetap semangat, Bang."
             },
             {
-                "Nama": "Ghiyats Thabularasa Meardhy", 
+                "Nama": "Ghiyats Thabularasa Meardhy",
                 "NIM" : "124450067",
                 "Asal" : "Bekasi",
                 "Alamat" : "Korpri",
@@ -563,7 +563,7 @@ if menu == "Departemen Minbak":
                 "Pesan" : "Tetap semangat kuliahnya dan jangan lupa atur uang jajan, Bang."
             },
             {
-                "Nama": "Indah Julia Mawar Pratiwi", 
+                "Nama": "Indah Julia Mawar Pratiwi",
                 "NIM" : "124450055",
                 "Asal" : "Pringsewu",
                 "Alamat" : "Airan",
@@ -574,7 +574,7 @@ if menu == "Departemen Minbak":
                 "Pesan" : "Semoga selalu tenang dan bahagia dengan caranya sendiri, Kak."
             },
             {
-                "Nama": "Jacinda Kesya Alvara", 
+                "Nama": "Jacinda Kesya Alvara",
                 "NIM" : "124450023",
                 "Asal" : "Kalimantan Barat",
                 "Alamat" : "Korpri",
@@ -585,7 +585,7 @@ if menu == "Departemen Minbak":
                 "Pesan" : "Tetap jadi pribadi yang ceria dan semangat terus, Kak."
             },
             {
-                "Nama": "Muhammad Rafka Fatih Al Ghathfaan", 
+                "Nama": "Muhammad Rafka Fatih Al Ghathfaan",
                 "NIM" : "124450089",
                 "Asal" : "Padang",
                 "Alamat" : "Kota Baru",
@@ -609,7 +609,7 @@ if menu == "Departemen MIKFES":
                 "https://drive.google.com/thumbnail?id=1B1xnmTfBNm6THDaYEGumOzmoG26Oeb5X&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1Wr5lendBrvxtk1fhkM8pSfzeJ899uSfD&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1j_tkOe45i7phandICi4VXfeV2qle9hvO&sz=w1000",
-                "https://drive.google.com/thumbnail?id=1xJ9kgCVoSDaX4I7VmpPAhgWurfQDpPnn&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1l-hshDMm9ZCSWt5Ez-F_nSHdh_TjEZBZ&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1KIhipi1EfXGYoHwdSldLTS1dzCfymOFs&sz=w1000",
                 "https://drive.google.com/thumbnail?id=18houjnI7YwabEryeJKmTpVycxLpWOpn7&sz=w1000",
@@ -625,10 +625,10 @@ if menu == "Departemen MIKFES":
                 "https://drive.google.com/thumbnail?id=1nYeVLDt_Hu-mBQt7auGJf3hoSSlsektx&sz=w1000",
                 "https://drive.google.com/thumbnail?id=13tzhGEnWEqtFuA8NQjU6JzUX9CR_sFnt&sz=w1000",
         ]
-        
+
         data_list = [
             {
-                "Nama": "Fabio Banyu Cyto", 
+                "Nama": "Fabio Banyu Cyto",
                 "NIM" : "12340104",
                 "Asal" : "Bandar Lampung",
                 "Alamat" : "Kedaton",
@@ -639,7 +639,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Semoga tidurnya selalu nyenyak dan tetap semangat kuliahnya, Bang."
             },
             {
-                "Nama": "Tanty Widiyastuti", 
+                "Nama": "Tanty Widiyastuti",
                 "NIM" : "123450094",
                 "Asal" : "Lampung",
                 "Alamat" : "Airan Raya",
@@ -650,7 +650,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Semoga bacaannya selalu seru dan tetap semangat, Kak."
             },
             {
-                "Nama": "Fadil Prasetyo Alfaritzi", 
+                "Nama": "Fadil Prasetyo Alfaritzi",
                 "NIM" : "123450048",
                 "Asal" : "Bandar Lampung",
                 "Alamat" : "Bandar Lampung",
@@ -661,7 +661,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Terus berkarya, Bang."
             },
             {
-                "Nama": "Manuel Frederika", 
+                "Nama": "Manuel Frederika",
                 "NIM" : "124450039",
                 "Asal" : "Batam",
                 "Alamat" : "Way Kandis",
@@ -672,7 +672,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Semoga makin jago tenis mejanya dan tetap sehat, Bang."
             },
             {
-                "Nama": "Ni Made Okta Viola Darma Putri", 
+                "Nama": "Ni Made Okta Viola Darma Putri",
                 "NIM" : "124450005",
                 "Asal" : "Bali",
                 "Alamat" : "Nusa Penida",
@@ -683,7 +683,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Semoga khayalannya jadi kenyataan dan tetap semangat, Kak."
             },
             {
-                "Nama": "Risa Romadona", 
+                "Nama": "Risa Romadona",
                 "NIM" : "124450127",
                 "Asal" : "Natar",
                 "Alamat" : "Natar",
@@ -694,7 +694,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Tetap hati-hati dan semoga makin lihai main skate, Kak."
             },
             {
-                "Nama": "Vannisa Ramadhani", 
+                "Nama": "Vannisa Ramadhani",
                 "NIM" : "124450078",
                 "Asal" : "Kepulauan Riau",
                 "Alamat" : "Teluk Betung",
@@ -705,7 +705,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Semoga selalu ada tontonan seru dan tetap semangat, Kak."
             },
             {
-                "Nama": "Yulia Cristine Malau", 
+                "Nama": "Yulia Cristine Malau",
                 "NIM" : "124450119",
                 "Asal" : "Jambi",
                 "Alamat" : "Sabah Balau",
@@ -716,7 +716,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Tetap semangat belajarnya dan jangan lupa istirahat, Kak."
             },
             {
-                "Nama": "Akeyla Fairuz Shafi", 
+                "Nama": "Akeyla Fairuz Shafi",
                 "NIM" : "1234501",
                 "Asal" : "Bandar Lampung",
                 "Alamat" : "Bandar Lampung",
@@ -727,7 +727,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Semoga playlist-nya selalu menemani hari yang baik, Kak."
             },
             {
-                "Nama": "Elsa Sitorus", 
+                "Nama": "Elsa Sitorus",
                 "NIM" : "124450088",
                 "Asal" : "Sumatera Utara",
                 "Alamat" : "Pemda",
@@ -738,7 +738,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Semoga selalu bisa istirahat cukup dan tetap semangat, Kak."
             },
             {
-                "Nama": "Fadya Izzatul ‘Aini", 
+                "Nama": "Fadya Izzatul ‘Aini",
                 "NIM" : "124450062",
                 "Asal" : "Pringsewu",
                 "Alamat" : "Airan",
@@ -749,7 +749,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Semoga pancingannya selalu dapat hasil dan tetap semangat, Kak."
             },
             {
-                "Nama": "Lovianora Saragih", 
+                "Nama": "Lovianora Saragih",
                 "NIM" : "124450105",
                 "Asal" : "Sumatera Utara",
                 "Alamat" : "Way Huwi",
@@ -760,7 +760,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Tetap semangat kuliahnya dan nikmati musik favoritnya, Kak."
             },
             {
-                "Nama": "M. Alsi Syahrulloh", 
+                "Nama": "M. Alsi Syahrulloh",
                 "NIM" : "124450092",
                 "Asal" : "Kalianda",
                 "Alamat" : "Kotabaru",
@@ -771,7 +771,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Semoga rank-nya naik terus, tapi jangan lupa kuliah, Bang."
             },
             {
-                "Nama": "Sherena Florencia", 
+                "Nama": "Sherena Florencia",
                 "NIM" : "124450027",
                 "Asal" : "Bengkulu Selatan",
                 "Alamat" : "Belwis",
@@ -782,7 +782,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Tetap semangat dan semoga makin kreatif berdandan, Kak."
             },
             {
-                "Nama": "Razin Hafid Hamdi", 
+                "Nama": "Razin Hafid Hamdi",
                 "NIM" : "123450096",
                 "Asal" : "Padang",
                 "Alamat" : "Belwis",
@@ -793,7 +793,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Semoga makin jago futsalnya dan selalu sehat, Bang."
             },
             {
-                "Nama": "Faiza Try Anjani", 
+                "Nama": "Faiza Try Anjani",
                 "NIM" : "124450075",
                 "Asal" : "Padang",
                 "Alamat" : "Belwis",
@@ -804,7 +804,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Semoga selalu ada novel seru untuk dibaca, Kak."
             },
             {
-                "Nama": "Gathfan Nadif Ali", 
+                "Nama": "Gathfan Nadif Ali",
                 "NIM" : "124450001",
                 "Asal" : "Bandar Lampung",
                 "Alamat" : "Rajabasa",
@@ -815,7 +815,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Tetap semangat dan semoga menang terus, Bang."
             },
             {
-                "Nama": "Hafidz Wahdiansyah", 
+                "Nama": "Hafidz Wahdiansyah",
                 "NIM" : "124450064",
                 "Asal" : "Metro",
                 "Alamat" : "Metro Kibang, Lampung Timur",
@@ -826,7 +826,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Semoga kodingannya lancar dan jangan lupa istirahat, Bang."
             },
             {
-                "Nama": "Kaleb Filbert Istel", 
+                "Nama": "Kaleb Filbert Istel",
                 "NIM" : "124450053",
                 "Asal" : "Bandar Lampung",
                 "Alamat" : "Campang Raya",
@@ -837,7 +837,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Terus semangat dan semoga makin sehat serta kuat, Bang."
             },
             {
-                "Nama": "Melva Shaprina Febrianti", 
+                "Nama": "Melva Shaprina Febrianti",
                 "NIM" : "124450087",
                 "Asal" : "Sumsel",
                 "Alamat" : "Sukarame",
@@ -848,7 +848,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Tetap semangat dan jangan terlalu lama scroll sebelum tidur, Kak."
             },
             {
-                "Nama": "Muhammad Syafiqul Falakh", 
+                "Nama": "Muhammad Syafiqul Falakh",
                 "NIM" : "124450099",
                 "Asal" : "Lampung Utara",
                 "Alamat" : "Asrama TB 3",
@@ -859,7 +859,7 @@ if menu == "Departemen MIKFES":
                 "Pesan" : "Semoga bacaannya terus bertambah dan tetap semangat, Bang."
             },
             {
-                "Nama": "Rifky Henry Ferdianto", 
+                "Nama": "Rifky Henry Ferdianto",
                 "NIM" : "124450115",
                 "Asal" : "Kobum",
                 "Alamat" : "Rajabasa",
@@ -872,7 +872,7 @@ if menu == "Departemen MIKFES":
         ]
         display_images_with_data(gambar_urls, data_list)
     departemen_mikfes()
- 
+
 if menu == "Departemen Medkraf":
     def departemen_medkraf():
         gambar_urls = [
@@ -895,10 +895,10 @@ if menu == "Departemen Medkraf":
                 "https://drive.google.com/thumbnail?id=1fS4PLcacEBNpVWQmL1TR3j97-Tae2guU&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1XNHJnlrpx1Hm8hHtNjSiOgWlxrgFBuv9&sz=w1000",
         ]
-        
+
         data_list = [
             {
-                "Nama": "Nayla Salsabila Fathianisa", 
+                "Nama": "Nayla Salsabila Fathianisa",
                 "NIM" : "123450082",
                 "Asal" : "Payakumbuh, Sumatera Barat",
                 "Alamat" : "Way Huwi",
@@ -909,7 +909,7 @@ if menu == "Departemen Medkraf":
                 "Pesan" : "Semoga harinya selalu ditemani lagu-lagu yang asyik, Kak."
             },
             {
-                "Nama": "Donna Maya Puspita", 
+                "Nama": "Donna Maya Puspita",
                 "NIM" : "123450028",
                 "Asal" : "Bekasi",
                 "Alamat" : "Way Huwi",
@@ -920,7 +920,7 @@ if menu == "Departemen Medkraf":
                 "Pesan" : "Tetap semangat kuliahnya dan jaga kesehatan ya, Kak."
             },
             {
-                "Nama": "Labo John Nuel Napitupulu", 
+                "Nama": "Labo John Nuel Napitupulu",
                 "NIM" : "123450037",
                 "Asal" : "Medan",
                 "Alamat" : "Belwis",
@@ -931,7 +931,7 @@ if menu == "Departemen Medkraf":
                 "Pesan" : "Semoga selalu aman di jalan dan tetap semangat, Bang."
             },
             {
-                "Nama": "Anash Tasya Ausyaqila", 
+                "Nama": "Anash Tasya Ausyaqila",
                 "NIM" : "124450050",
                 "Asal" : "Bandar Lampung",
                 "Alamat" : "Way Halim",
@@ -942,7 +942,7 @@ if menu == "Departemen Medkraf":
                 "Pesan" : "Semoga selalu ada film dan serial seru buat ditonton, Kak."
             },
             {
-                "Nama": "Felisya Nabila Putri Nugroho", 
+                "Nama": "Felisya Nabila Putri Nugroho",
                 "NIM" : "124450104",
                 "Asal" : "Lampung Timur",
                 "Alamat" : "Kota Baru",
@@ -953,7 +953,7 @@ if menu == "Departemen Medkraf":
                 "Pesan" : "Tetap semangat dan jangan kelewat jahil ya, Kak."
             },
             {
-                "Nama": "Muhammad Razan Maulana Pratama", 
+                "Nama": "Muhammad Razan Maulana Pratama",
                 "NIM" : "124450031",
                 "Asal" : "Jawa Barat",
                 "Alamat" : "Korpri",
@@ -964,7 +964,7 @@ if menu == "Departemen Medkraf":
                 "Pesan" : "Semoga makin jago motret dan tetap semangat, Bang."
             },
             {
-                "Nama": "Sania Dwi Ayu Lestari", 
+                "Nama": "Sania Dwi Ayu Lestari",
                 "NIM" : "123450086",
                 "Asal" : "Karawang",
                 "Alamat" : "Airan Raya",
@@ -975,7 +975,7 @@ if menu == "Departemen Medkraf":
                 "Pesan" : "Tetap semangat dan jangan begadang kebanyakan maraton film, Kak."
             },
             {
-                "Nama": "Allisha", 
+                "Nama": "Allisha",
                 "NIM" : "124450019",
                 "Asal" : "Kayangan",
                 "Alamat" : "Heaven",
@@ -986,7 +986,7 @@ if menu == "Departemen Medkraf":
                 "Pesan" : "Semoga pancingannya selalu dapat hasil dan tetap semangat, Kak."
             },
             {
-                "Nama": "Alya Ramadhanti", 
+                "Nama": "Alya Ramadhanti",
                 "NIM" : "124450091",
                 "Asal" : "Jambi",
                 "Alamat" : "Airan",
@@ -997,7 +997,7 @@ if menu == "Departemen Medkraf":
                 "Pesan" : "Semoga bisa jalan-jalan ke banyak tempat seru."
             },
             {
-                "Nama": "Bunga Clarisa Sefa", 
+                "Nama": "Bunga Clarisa Sefa",
                 "NIM" : "124450097",
                 "Asal" : "Lampung Selatan",
                 "Alamat" : "Lampung Selatan",
@@ -1008,7 +1008,7 @@ if menu == "Departemen Medkraf":
                 "Pesan" : "Tetap semangat belajarnya dan jangan lupa istirahat, Kak."
             },
             {
-                "Nama": "Difanya Husakina", 
+                "Nama": "Difanya Husakina",
                 "NIM" : "124450043",
                 "Asal" : "Pagar Alam",
                 "Alamat" : "Airan Raya",
@@ -1019,7 +1019,7 @@ if menu == "Departemen Medkraf":
                 "Pesan" : "Semoga selalu istiqomah dan diberi kelancaran dalam segala hal, Kak."
             },
             {
-                "Nama": "Nazlah Auliya", 
+                "Nama": "Nazlah Auliya",
                 "NIM" : "124450054",
                 "Asal" : "Bandar Lampung",
                 "Alamat" : "Bandar Lampung",
@@ -1030,7 +1030,7 @@ if menu == "Departemen Medkraf":
                 "Pesan" : "Tetap semangat berenangnya dan jaga kesehatan, Kak."
             },
             {
-                "Nama": "Raihana Adelia Putri", 
+                "Nama": "Raihana Adelia Putri",
                 "NIM" : "123450041",
                 "Asal" : "Lampung Tengah",
                 "Alamat" : "Airan Raya 1",
@@ -1041,7 +1041,7 @@ if menu == "Departemen Medkraf":
                 "Pesan" : "Terus menulis dan semoga karyanya makin banyak dibaca, Kak."
             },
             {
-                "Nama": "Daffa Kharisma Adzana", 
+                "Nama": "Daffa Kharisma Adzana",
                 "NIM" : "124450061",
                 "Asal" : "Surabaya",
                 "Alamat" : "Sukarame",
@@ -1052,7 +1052,7 @@ if menu == "Departemen Medkraf":
                 "Pesan" : "Tetap semangat dan semoga selalu dilancarkan urusannya, Bang."
             },
             {
-                "Nama": "Edsel Adya Pradipta", 
+                "Nama": "Edsel Adya Pradipta",
                 "NIM" : "124450098",
                 "Asal" : "Lampung Selatan",
                 "Alamat" : "Natar",
@@ -1063,7 +1063,7 @@ if menu == "Departemen Medkraf":
                 "Pesan" : "Semoga selalu ada anime baru yang seru buat ditonton, Bang."
             },
             {
-                "Nama": "Lucia Advencia Rachel Nainggolan", 
+                "Nama": "Lucia Advencia Rachel Nainggolan",
                 "NIM" : "124450085",
                 "Asal" : "Bekasi",
                 "Alamat" : "Belwis",
@@ -1074,7 +1074,7 @@ if menu == "Departemen Medkraf":
                 "Pesan" : "Semoga tidurnya selalu nyenyak dan tetap semangat kuliahnya, Kak."
             },
             {
-                "Nama": "Shafa Delaila Azzahra", 
+                "Nama": "Shafa Delaila Azzahra",
                 "NIM" : "124450124",
                 "Asal" : "Lampung Tengah",
                 "Alamat" : "Perumahan Pemda",
@@ -1085,7 +1085,7 @@ if menu == "Departemen Medkraf":
                 "Pesan" : "Terus berkarya lewat lukisan dan tulisannya, Kak."
             },
             {
-                "Nama": "Zannuba Arifah Ilman", 
+                "Nama": "Zannuba Arifah Ilman",
                 "NIM" : "124450112",
                 "Asal" : "Lampung Timur",
                 "Alamat" : "Rajabasa",
@@ -1098,7 +1098,7 @@ if menu == "Departemen Medkraf":
         ]
         display_images_with_data(gambar_urls, data_list)
     departemen_medkraf()
- 
+
 if menu == "Departemen SSD":
     def departemen_ssd():
         gambar_urls = [
@@ -1137,7 +1137,7 @@ if menu == "Departemen SSD":
                 "Hobi": "Masak",
                 "Sosmed": "@_inayasani",
                 "Kesan": "Hangat dan bersahabat, selalu enak diajak bercerita.",
-                "Pesan": "Semoga masakannya makin lezat dan tetap semangat kuliahnya, Kak."    
+                "Pesan": "Semoga masakannya makin lezat dan tetap semangat kuliahnya, Kak."
             },
             {
                 "Nama": "Afifah Fauziah",
@@ -1148,7 +1148,7 @@ if menu == "Departemen SSD":
                 "Hobi": "Menonton Marvel",
                 "Sosmed": "@fifah_zy",
                 "Kesan": "Menyenangkan dan punya banyak bahan obrolan seru.",
-                "Pesan": "Semoga selalu ada waktu buat maraton film favoritnya, Kak." 
+                "Pesan": "Semoga selalu ada waktu buat maraton film favoritnya, Kak."
             },
             {
                 "Nama": "Hasan Nur Ramadan",
@@ -1279,7 +1279,7 @@ if menu == "Departemen Eksternal":
                 "https://drive.google.com/thumbnail?id=1EYBV6RRqusJHID9wBnWblQn3Bt5btWhU&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1wqgESOTAgRvpxBRd9_VCeXJx59sqVNdt&sz=w1000",
         ]
-        
+
         data_list = [
             {
                 "Nama": "Arini Puteri Elandra",
@@ -1544,7 +1544,7 @@ if menu == "Baleg":
                 "https://drive.google.com/thumbnail?id=1C73RoxxcTEAlmd6k7hp--MtZyaKW-rNy&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1nIO-PvQG6LvH3pQqyRfnvzr8nqNc4G5J&sz=w1000",
         ]
-        
+
         data_list = [
             {
                 "Nama": "Ridho Benedictus Togi Manik",
@@ -1707,7 +1707,7 @@ if menu == "Senator":
                 "https://drive.google.com/thumbnail?id=12IEIMFtaDznO9NcUrOTL4oFCAnsn9Nox&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1ic3TjU_UanbrveqxZuXLmMuS2dJjVwdq&sz=w1000",
         ]
-        
+
         data_list = [
             {
                 "Nama": "Fathinah Nur Azizah",
@@ -1828,7 +1828,7 @@ if menu == "Departemen PSDA":
     def departemen_psda():
         gambar_urls = [
                 "https://drive.google.com/thumbnail?id=1rtQUYVQTjKv8mVXY-oTZjtSBt3AjBu-M&sz=w1000",
-                "https://drive.google.com/thumbnail?id=1NzoFn9lIwkrNQzOM1G3etHVf3XPXg0th&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1qiqilQlorrXphwrSiIhWQ3MDb2piO1_l&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1vnhd8eZErjHQmcpf5remRLGUltxyGhl5&sz=w1000",
                 "https://drive.google.com/thumbnail?id=13LarCMwZ3YIunv7I98ZA3QfMWj-m6eLy&sz=w1000",
@@ -1845,7 +1845,7 @@ if menu == "Departemen PSDA":
                 "https://drive.google.com/thumbnail?id=1A9_mPnBNGbs2wgz8zL0eQPD_QblR1R3-&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1aJ6Qi8r_Vrk-gudloO62PPzqYGczn_qC&sz=w1000",
         ]
-        
+
         data_list = [
             {
                 "Nama": "Arienta Khusnul Ananda",
@@ -1855,7 +1855,7 @@ if menu == "Departemen PSDA":
                 "Alamat": "Samping kost Haikal",
                 "Hobi": "Naksir cowo cakep",
                 "Sosmed": "@arientakhsnl_",
-                "Kesan": "Supel dan hangat, gampang bikin suasana jadi akrab.",
+                "Kesan": "Gampang bikin suasana jadi akrab.",
                 "Pesan": "Semoga selalu dilancarkan urusannya dan tetap semangat, Kak."
             },
             {
@@ -1866,7 +1866,7 @@ if menu == "Departemen PSDA":
                 "Alamat": "Cenderawasih 1",
                 "Hobi": "Ngurus peternakan",
                 "Sosmed": "@charrlnn",
-                "Kesan": "Kalem dan telaten, kelihatan sabar dalam mengurus sesuatu.",
+                "Kesan": "Kelihatan sabar dalam mengurus sesuatu.",
                 "Pesan": "Semoga peternakannya makin sukses dan selalu sehat, Kak."
             },
             {
@@ -1877,7 +1877,7 @@ if menu == "Departemen PSDA":
                 "Alamat": "Urip",
                 "Hobi": "-",
                 "Sosmed": "@nobelnizam",
-                "Kesan": "Tenang dan sopan, enak diajak bertukar pikiran.",
+                "Kesan": "Enak diajak bertukar pikiran.",
                 "Pesan": "Semoga selalu lancar dalam studi dan tetap semangat, Bang."
             },
             {
@@ -1888,8 +1888,8 @@ if menu == "Departemen PSDA":
                 "Alamat": "Sebelah kost Haikal",
                 "Hobi": "Nyebar beras",
                 "Sosmed": "@friezazmi",
-                "Kesan": "Santai dan lucu, selalu ada hal seru buat dibahas.",
-                "Pesan": "Tetap jadi pribadi yang menyenangkan dan jaga kesehatan, Kak."
+                "Kesan": "Selalu ada hal seru buat dibahas.",
+                "Pesan": "Tetap jadi pribadi yang menyenangkan dan jaga kesehatan, Bang."
             },
             {
                 "Nama": "Ayake Alfatih Ramadan",
@@ -1899,7 +1899,7 @@ if menu == "Departemen PSDA":
                 "Alamat": "Blok D No 57, Jln Manggis, Pemda Way Huwi, Lamsel, Jatiagung",
                 "Hobi": "Goreng ayam",
                 "Sosmed": "@ykeall",
-                "Kesan": "Ramah dan gampang berbaur, kelihatannya jago masak.",
+                "Kesan": "Ramah dan gampang berbaur.",
                 "Pesan": "Semoga masakannya makin enak dan tetap semangat, Bang."
             },
             {
@@ -1910,8 +1910,8 @@ if menu == "Departemen PSDA":
                 "Alamat": "Gedung F",
                 "Hobi": "Pengembala anak ayam",
                 "Sosmed": "@caesar.oriza",
-                "Kesan": "Easy going dan humoris, nyaman diajak ngobrol.",
-                "Pesan": "Semoga anak-anak ayamnya sehat dan tetap semangat, Bang."
+                "Kesan": "Easy going dan humoris.",
+                "Pesan": "Tetap semangat, Bang."
             },
             {
                 "Nama": "Euodia Meiliana Friedita",
@@ -1921,7 +1921,7 @@ if menu == "Departemen PSDA":
                 "Alamat": "Diatas tanjakan",
                 "Hobi": "Ngekader",
                 "Sosmed": "@yudiameilianaa_",
-                "Kesan": "Enerjik dan komunikatif, pintar menghidupkan suasana.",
+                "Kesan": "Enerjik dan komunikatif.",
                 "Pesan": "Semoga kegiatannya selalu berjalan lancar dan menyenangkan, Kak."
             },
             {
@@ -1932,7 +1932,7 @@ if menu == "Departemen PSDA":
                 "Alamat": "Sebelah kontrakan Jemar",
                 "Hobi": "Ngurusin pakan anak ayam",
                 "Sosmed": "@_haikaaalll",
-                "Kesan": "Tenang dan perhatian, bisa jadi tempat bertanya.",
+                "Kesan": "Tenang dan bisa jadi tempat bertanya.",
                 "Pesan": "Semoga selalu sehat dan sukses terus, Bang."
             },
             {
@@ -1943,7 +1943,7 @@ if menu == "Departemen PSDA":
                 "Alamat": "Nomandenl",
                 "Hobi": "Mancing emosi",
                 "Sosmed": "@putrimannaa",
-                "Kesan": "Asyik dan jenaka, gampang bikin orang tertawa.",
+                "Kesan": "Ceria selalu.",
                 "Pesan": "Tetap jadi pribadi yang ceria dan semangat terus."
             },
             {
@@ -1954,7 +1954,7 @@ if menu == "Departemen PSDA":
                 "Alamat": "Depan pemancingan",
                 "Hobi": "Nyuapin anak ayam",
                 "Sosmed": "@queentanaabila",
-                "Kesan": "Lembut dan penyayang, orangnya menyenangkan.",
+                "Kesan": "orangnya menyenangkan.",
                 "Pesan": "Semoga semua rencananya lancar dan tetap sehat."
             },
             {
@@ -1965,7 +1965,7 @@ if menu == "Departemen PSDA":
                 "Alamat": "Asrama TB 3",
                 "Hobi": "Ngejek orang",
                 "Sosmed": "@dsmanhl",
-                "Kesan": "Jenaka dan blak-blakan, bikin suasana jadi hidup.",
+                "Kesan": "Bikin suasana jadi hidup.",
                 "Pesan": "Tetap semangat dan jangan lupa jaga ucapan."
             },
             {
