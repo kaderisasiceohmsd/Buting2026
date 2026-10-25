@@ -325,7 +325,7 @@ if menu == "Badan Legislatif":
                 "umur": "20",
                 "asal":"Krui",
                 "alamat": "Jatimulyo",
-                "hobi": "Memancing",
+                "hobbi": "Memancing",
                 "sosmed": "@afghanisnt_",
                 "kesan": "Kak nisa orangnya baik, humble",  
                 "pesan":"Semoga kedepannya kak nisa selalu diberikan kelancaran dalam segala hal ya kak"# 1
@@ -336,7 +336,7 @@ if menu == "Badan Legislatif":
                 "umur": "21",
                 "asal":"Sumatera Utara",
                 "alamat": "Kota Baru",
-                "hobi": "Tidur",
+                "hobbi": "Tidur",
                 "sosmed": "@monica_tjg",
                 "kesan": "Kak Monica baik lucu juga",  
                 "pesan":"semangat terus kuliahnya kakak, semoga sehat selaluuu"# 1
@@ -902,7 +902,7 @@ if menu == "Departemen MIKFES":
                 "hobbi": "Belum Tahu",
                 "umur" : "Belum Tahu",
                 "sosmed" : "Belum Tahu",
-                "kesan" :kak yulia cantik banget.",
+                "kesan" : "kak yulia cantik banget.",
                 "pesan" : "Semoga selalu sukses dalam setiap kegiatan, Kak."
             },
             {
@@ -1242,7 +1242,7 @@ if menu == "Departemen Eksternal":
         display_images_with_data(gambar_urls, data_list)
     eksternal ()
     
-        if menu == "Departemen Internal":
+if menu == "Departemen Internal":
     def internal():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1LFWtTDRbOp75yZWEDUA-VNzdAzmFiQVb",
@@ -1498,7 +1498,7 @@ if menu == "Departemen SSD":
                 "umur": "21",
                 "asal":"lampung",
                 "alamat": "Pemda",
-                "hobi": "Main game",
+                "hobbi": "Main game",
                 "sosmed": "@hasan.ramadhan08",
                 "kesan": "abangnya keren banget",  
                 "pesan":"semoga yang di semogakan tersemogakan!!!"# 1
