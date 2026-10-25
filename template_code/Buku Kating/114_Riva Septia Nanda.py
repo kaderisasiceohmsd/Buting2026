@@ -54,7 +54,7 @@ if menu == "Kesekjenan":
                 "nama": "Luthfia Laila Ramadhani",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1rm36l_1tTEAmt5hLlvep5EeNGf7tPtwS",
                 "kesan": "humble dan asik",
-                "pesan": "semangat terus kakk",
+                "pesan": "semangat terus kakk kuliahnyaa",
             },
         ]
         display_kating(kating_data, departemen=menu)
@@ -340,7 +340,7 @@ elif menu == "Departemen MIKFES":
                 "nama": "Fadil Prasetyo Alfarizzi",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", # 1
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
-                "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
+                "pesan": "Khusnul Khotimah ya bang Fadil",
             },
             {
                 "nama": "Akeyla Fairuz Shafi",
@@ -374,7 +374,7 @@ elif menu == "Departemen MIKFES":
             },
             {
                 "nama": "Vannisa Ramadhani",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", # 1
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1UAaJD9kgNw9tKR9AxqwEPsM5e1iMzyq9",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -392,7 +392,7 @@ elif menu == "Departemen MIKFES":
             },
             {
                 "nama": "Fadya Izzatul 'Aini",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", # 1
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=14u97Su4vU0ElaGD2UrYWDdHh9hOaYzEP",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -547,7 +547,7 @@ elif menu == "Departemen Eksternal":
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
-            { 
+            { 1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX
                 "nama": "Ashila Islamisahfa Vanisha",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1A6wiwUEAPrBXWU58fP7XVyYz8ep4byEA",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
@@ -846,7 +846,7 @@ elif menu == "Departemen Medkraf":
             },
             {
                 "nama": "Bunga Clarisa Sefa",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", # 1
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1ABYVy1wvozoNgghs7BTiloP1naSPAr7u",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -901,13 +901,13 @@ elif menu == "Departemen MINBAK":
         kating_data = [
             {
                 "nama": "Kevin Antonio Junior",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", # 1
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1TGR6KzUlYp3Y-BZqhwbPv8BdqSEubmVQ",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
             {
                 "nama": "Gusti Putu Ferazka Dhiyamika",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", # 1
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1-5TB3mRubcIzO0dmhDWEBCXM8KVwSEcP", 
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -937,7 +937,7 @@ elif menu == "Departemen MINBAK":
             },
             {
                 "nama": "Salsabila Nazwa Putri",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", # 1
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1Ew6lNKpFmU6Ej-8C-vqMHS3StAt6CQt6",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
@@ -985,7 +985,7 @@ elif menu == "Departemen MINBAK":
             },
             {
                 "nama": "Muhammad Rafka Fatih Al Ghathfaan",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1wyN5jkQvwtvIKAY7CYG63D3Dhv99PTdX", # 1
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=15WBY_Vk86ICnBFWAo49zd0iS6bHTKHUI",
                 "kesan": "Kakaknya sangat ramah, humble, dan menginspirasi!",
                 "pesan": "Semangat terus kuliah dan menjalankan amanahnya di HMSD!",
             },
