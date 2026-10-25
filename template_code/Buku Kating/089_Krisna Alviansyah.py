@@ -890,7 +890,7 @@ elif menu == "Departemen Medkraf":
                 "nama": "Zannuba Arifah Ilman",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=15-Dj6tV-jHOTLegb7kFz1xBpNjszpmtK",
                 "kesan": "Baik",
-                "pesan": "Semangat terus kuliahnya kak gas lulus cepat
+                "pesan": "Semangat terus kuliahnya kak gas lulus cepat"
             },
         ]
         display_kating(kating_data, departemen=menu)
