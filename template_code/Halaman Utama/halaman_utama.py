@@ -114,9 +114,7 @@ if menu == "Home":
         )
 
         # --- FOTO UTAMA KELOMPOK DENGAN EFEK KACA SAAT DISENTUH ---
-        foto_kelompok = "https://drive.google.com/uc?export=view&id=1BFaWjCYfj0HFeGBBDB8SmUYsZkxcEvM7",
-        foto_kelompok = "https://drive.google.com/uc?export=view&id=1shCe20B7mM0gWlBoqdIXkgB5Y3P51k03",
-        foto_kelompok = "https://drive.google.com/uc?export=view&id=1mQYgg7IBYjZ3WxgGxW_3EyN2qK_NSo0c"
+        foto_kelompok = "https://drive.google.com/uc?export=view&id=1BFaWjCYfj0HFeGBBDB8SmUYsZkxcEvM7"
         st.markdown(
             """
             <div style="text-align: center; margin: 24px 0 12px 0;">
@@ -214,19 +212,20 @@ elif menu == "About Us":
             unsafe_allow_html=True,
         )
 
+        # Menggunakan format lh3.googleusercontent.com/d/[FILE_ID]
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1U9qL_kV5pRVGxwjX5vY9Ye60zewUyis1",
-            "https://drive.google.com/uc?export=view&id=1VDxX_RUW42qOiFcx2ZzNQIOC5EVmBt9p",#wawa
-            "https://drive.google.com/uc?export=view&id=1JyZqi_gGn-Z0U7rbn6wm6yCff3iBAXUY",#anoy
-            "https://drive.google.com/uc?export=view&id=1qn7DTt5dewAf4lrewAOw1wdGqarl4Gjy",#juju
-            "https://drive.google.com/uc?export=view&id=1pE1AmXiK-KOvxQgsWiw8LOIJFmSC4qBt",#anya
-            "https://drive.google.com/uc?export=view&id=1t-jcrs_NnloNmQS9C1Yx6x79HpRA3PyC",#tingting
-            "https://drive.google.com/uc?export=view&id=1Q9BG3ckhXSkR241w6WQKUgks1NOisDVR",#lui
-            "https://drive.google.com/uc?export=view&id=1wYkTJHX0mhBy9UVW_9XoDMAvXd56xI2r",#cella
-            "https://drive.google.com/uc?export=view&id=1BZHhEBU0fE6kbtvuc67sUinlTB8yeKmq",#esha
-            "https://drive.google.com/uc?export=view&id=1WDDcHs08ui8kpk4ZgElSmS9LqSPwa3NB",#alip
-            "https://drive.google.com/uc?export=view&id=",#ia
-            "https://drive.google.com/uc?export=view&id=13nJeccLKDvlcb9X08Vbo2ZKEjyXf0TuR"#oni
+            "https://lh3.googleusercontent.com/d/1U9qL_kV5pRVGxwjX5vY9Ye60zewUyis1",
+            "https://lh3.googleusercontent.com/d/1VDxX_RUW42qOiFcx2ZzNQIOC5EVmBt9p",  # wawa
+            "https://lh3.googleusercontent.com/d/1JyZqi_gGn-Z0U7rbn6wm6yCff3iBAXUY",  # anoy
+            "https://lh3.googleusercontent.com/d/1qn7DTt5dewAf4lrewAOw1wdGqarl4Gjy",  # juju
+            "https://lh3.googleusercontent.com/d/1pE1AmXiK-KOvxQgsWiw8LOIJFmSC4qBt",  # anya
+            "https://lh3.googleusercontent.com/d/1t-jcrs_NnloNmQS9C1Yx6x79HpRA3PyC",  # tingting
+            "https://lh3.googleusercontent.com/d/1Q9BG3ckhXSkR241w6WQKUgks1NOisDVR",  # lui
+            "https://lh3.googleusercontent.com/d/1wYkTJHX0mhBy9UVW_9XoDMAvXd56xI2r",  # cella
+            "https://lh3.googleusercontent.com/d/1BZHhEBU0fE6kbtvuc67sUinlTB8yeKmq",  # esha
+            "https://lh3.googleusercontent.com/d/1WDDcHs08ui8kpk4ZgElSmS9LqSPwa3NB",  # alip
+            "https://lh3.googleusercontent.com/d/MASUKKAN_ID_IA_DISINI",  # ia (isi ID file ia)
+            "https://lh3.googleusercontent.com/d/13nJeccLKDvlcb9X08Vbo2ZKEjyXf0TuR",  # oni
         ]
 
         data_list = [
