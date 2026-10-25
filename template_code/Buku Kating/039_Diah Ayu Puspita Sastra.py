@@ -1269,14 +1269,14 @@ if menu == "Departemen Eksternal":
                 "https://drive.google.com/thumbnail?id=1fpdjkjM-oMjFcWSJ13V3E7ya8lKEzVhk&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1d66FXvP3dW5hls9u-2M3gYMDKiGHbBa8&sz=w1000",
                 "https://drive.google.com/thumbnail?id=103WK6Bg6qhbWFj28uusAQZasU-rMw88T&sz=w1000",
-                "https://drive.google.com/thumbnail?id=12--j2D3Pi1v2wFAAuLCdUN2LvFyhCU5V&sz=w1000",
+                "https://drive.google.com/thumbnail?id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1rmsfgHcyfb_qT3Ov6XNlkZvJKtO1vPzP&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1RWHiuKgpNh7piMEc5FpjS0zn1II3uvx7&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1S6VRVLrpDokCkPDhQUVn6ZPS6b0dk1DS&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1EyW5Gg3AGDMow0S8rPbwcGF4ehqdE_GM&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1lNTHI2SX9WJWEQeoRRf62PRjTkNYcR7E&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1SvldPyhtHv9Y7KP1xEHSqkm9k0YMAhIv&sz=w1000",
-                "https://drive.google.com/thumbnail?id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_&sz=w1000",
+                "https://drive.google.com/thumbnail?id=12--j2D3Pi1v2wFAAuLCdUN2LvFyhCU5V&sz=w1000",
                 "https://drive.google.com/thumbnail?id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_&sz=w1000",
         ]
         
