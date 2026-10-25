@@ -488,28 +488,6 @@ if menu == "Baleg":
                 "pesan": "Makasih udah ga pelit ilmu sama kami bangg, sukses selalu yaa banggg."
             },
             {
-                "nama": "GH Mikael Niko A S",
-                "nim": "124450079",
-                "umur": "20",
-                "asal": "Pasir Sakti",
-                "alamat": "Jati Agung",
-                "hobbi": "Tidur",
-                "sosmed": "@me._kael",
-                "kesan": "Abangnya ramah dan baik pas wwc.",
-                "pesan": "Semoga makin keren dan sehat selalu yaa banggg"
-            },
-            {
-                "nama": "Siti Sarifah Sumamah",
-                "nim": "124450015",
-                "umur": "19",
-                "asal": "Bekasi",
-                "alamat": "Kedaton",
-                "hobbi": "Mancing",
-                "sosmed": "@syt.rifa",
-                "kesan": "Kakaknya cantik bangett trus baikk jugaa.",
-                "pesan": "Semangattt kakakk semoga semakin banyak pengalaman baik kedepannyaa."
-            },
-            {
                 "nama": "Givaro Ananta",
                 "nim": "123450078",
                 "umur": "21",
@@ -530,6 +508,28 @@ if menu == "Baleg":
                 "sosmed": "@monica_tjg",
                 "kesan": "Kakaknya baikk cantikk dan ramahh:DD",
                 "pesan": "Makasih buat ilmu yang udah kakak kasih saat wwc"
+            },
+            {
+                "nama": "GH Mikael Niko A S",
+                "nim": "124450079",
+                "umur": "20",
+                "asal": "Pasir Sakti",
+                "alamat": "Jati Agung",
+                "hobbi": "Tidur",
+                "sosmed": "@me._kael",
+                "kesan": "Abangnya ramah dan baik pas wwc.",
+                "pesan": "Semoga makin keren dan sehat selalu yaa banggg"
+            },
+            {
+                "nama": "Siti Sarifah Sumamah",
+                "nim": "124450015",
+                "umur": "19",
+                "asal": "Bekasi",
+                "alamat": "Kedaton",
+                "hobbi": "Mancing",
+                "sosmed": "@syt.rifa",
+                "kesan": "Kakaknya cantik bangett trus baikk jugaa.",
+                "pesan": "Semangattt kakakk semoga semakin banyak pengalaman baik kedepannyaa."
             },
             {
                 "nama": "Afghanis Nursholehatunisa",
