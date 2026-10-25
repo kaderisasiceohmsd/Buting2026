@@ -968,7 +968,7 @@ elif menu == "Departemen MINBAK":
             {
                 "nama": "Ghiyats Thabularasa Meardhy",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1S-QT0CHPEU6SrDR5TIJa1xwegJiaE1zd",
-                "kesan": kakaknya sangat ramah, humble, pembaik",
+                "kesan": "kakaknya sangat ramah, humble, pembaik",
                 "pesan": "semangat terus kuliahnya bang, suksesss",
             },
             {
