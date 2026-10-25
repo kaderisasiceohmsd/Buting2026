@@ -508,7 +508,7 @@ elif menu == "Departemen Internal":
             "https://drive.google.com/uc?export=view&id=1GcHgRYXdW5zVM5G29xbVDtYl2fQwteCu",#bang jaya
             "https://drive.google.com/uc?export=view&id=1I0DTA9qqcYAnD6YxbDk7zRLxOrbm18FJ",#kak najla
             "https://drive.google.com/uc?export=view&id=1119djuVLsanaWw_IDWJBoEP0pTT6TUeO",#bang rozak
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",#kak teresa
+            "https://drive.google.com/uc?export=view&id=1yyHXInMg2sPWqzi9BO1HaHvVwCCsltAD",#kak teresa
             "https://drive.google.com/uc?export=view&id=1Lpn4uABtN9Cxqy-1jieIX48CwC-clU0d",#bang hanif
             "https://drive.google.com/uc?export=view&id=1ouP6BhvGNwUVxPyKyuFFBGLq9VkpQsqX",#kak audina
             "https://drive.google.com/uc?export=view&id=1WaPxkjJLi5CXvxIDFc9ivz1LRj8tMEWP",#kak cika
@@ -519,8 +519,8 @@ elif menu == "Departemen Internal":
         ]
         data_list = [
             {
-                "nama": "Haikal Fransiskus Simbolon",
-                "nim": "123450123",
+                "nama": "Haikal Fransisko Simbolon",
+                "nim": "123450106",
                 "umur": "23",
                 "asal": "Bengkulu",
                 "alamat": "Belwis",
@@ -1111,8 +1111,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "Sukarame",
                 "hobbi": "baca wattpad",
                 "sosmed": "@fatthyaa_",
-                "kesan": "lll",
-                "pesan": "semangat menjalani hari-harinya kakk"# 1
+                "kesan": "Kak Fathya ramashh sih, lucuu jugaaa",
+                "pesan": "Semoga semua keinginan kak fathya cepat terwujud dan makin lucu"# 1
             },
             {
                 "nama": "Tarisya Hidayatul Rahmi",
@@ -1121,9 +1121,9 @@ elif menu == "Departemen Eksternal":
                 "asal": "Luhak tanah data",
                 "alamat": "Gerbang Barat",
                 "hobbi": "Jadi orang baik",
-                "sosmed": "tari_",
-                "kesan": "kakanya baik, ramah jugaa",
-                "pesan": "semangat menjali semester akhirnya kak"# 1
+                "sosmed": "@tari_",
+                "kesan": "Kak Tarisya baikk, beberapa kali ketemu pun terlihat vibes baiknya",
+                "pesan": "Semoga kak tarisya selalu mendapatkan yang terbaik untuk segala hal"# 1
             },
             {
                 "nama": "Selma Siti Aisyah",
@@ -1133,8 +1133,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "balam",
                 "hobbi": "jalan-jalan",
                 "sosmed": "@selmasiti_aisyah",
-                "kesan": "kakanya cantik dan senyumnya maniss",
-                "pesan": "semangat kuliahnya kak selma"# 1
+                "kesan": "Kak Selma baik, lucuu, dan juga asikk",
+                "pesan": "Semoga semua keinginan kak selma segera tercapai"# 1
             },
             {
                 "nama": "Ashila Islamisahfa Vanisha",
@@ -1144,8 +1144,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "jauh pokoknya",
                 "hobbi": "tidur",
                 "sosmed": "@kshigf",
-                "kesan": "kakanya lucu , ramah dan gemass",
-                "pesan": "Tetap semangat untuk Kakak dalam menyelesaikan tugas"# 1
+                "kesan": "Kak Ashila lucuu, ramahh, dan juga baik lahhh",
+                "pesan": "Semoga kak ashila selalu didekat hal-hal baikkk"# 1
             },
             {
                 "nama": "Danil N Fadillah",
@@ -1155,8 +1155,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "Belakang Polda",
                 "hobbi": "Ngasih makan ikan cupang",
                 "sosmed": "@d4niel_fdlh",
-                "kesan": "baru tau kalo bang danil ternyata yang masuk ITERA ganteng itu tohhh",
-                "pesan": "semoga ikan cupangnya sehat ya bangg"# 1
+                "kesan": "Bang Danil cakep sih, baikk, dan juga asik jugaa",
+                "pesan": "Semoga bang danil secepatnya mencapai semua impian bang danil"# 1
             },
             {
                 "nama": "Favian Arkaanda",
@@ -1166,8 +1166,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "Tanya bapas",
                 "hobbi": "ngesen kanan",
                 "sosmed": "@fvnnn05",
-                "kesan": "makasih bang yang selalu gercep kalo ada yang sakit selama rangkaian",
-                "pesan": "semoga selalu bahagia dan ayo badmin lagi bangg"# 1
+                "kesan": "Bang Favian baikk, dan juga sangat perhatiann",
+                "pesan": "Semoga semua mimpi-mimpi bang favian segera terwujud"# 1
             },
             {
                 "nama": "Muhammad Fathiy Zumar Yazid",
@@ -1177,8 +1177,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "pohon mulia",
                 "hobbi": "nyari hobi",
                 "sosmed": "@zydddddd__",
-                "kesan": "aku kira orangnya galak, ternyata asik juga kalo lagi ngobrol dan ternyata anak smanda",
-                "pesan": "rajin-rajin pulang yuk banggg"# 1
+                "kesan": "Bang Yazid asikk parah, pas jadi asprak seruu dan juga baikk",
+                "pesan": "Semoga bang yazid selalu didekat hal-hal baikk"# 1
             },
             {
                 "nama": "Muhammad Rizaldi",
@@ -1188,8 +1188,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "Pasar lantai 3.5",
                 "hobbi": "tanyain sama yuder",
                 "sosmed": "@jaldii._",
-                "kesan": "orangnya asikk banget dan ada aja yang dibuat lelucon",
-                "pesan": "semangat mc nya banggg"# 1
+                "kesan": "Bang jaldi baikk sih, dan asikk jugaa",
+                "pesan": "Semoga semua yang bang jaldi inginkan segera tercapai"# 1
             },
             {
                 "nama": "Saskia Nova Magdalena",
@@ -1199,8 +1199,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "Pinggir Jalan",
                 "hobbi": "nonton thinkerbell",
                 "sosmed": "@snova.19",
-                "kesan": "kaknya cantik, lucu dan ramahh",
-                "pesan": "Tetap semangat untuk Kakak dalam menyelesaikan tugas"
+                "kesan": "Kak saskia baikk, lusyuu, dan juga ramah sekalii",
+                "pesan": "Semoga kak saskia selalu mendapatkan semua yang kak saskia inginkan"
             },
             {
                 "nama": "Khoirul Muthoharoh",
@@ -1210,8 +1210,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "Airan",
                 "hobbi": "main",
                 "sosmed": "@khoirul_muttoharoh",
-                "kesan": "kak mut lucu dan gemass, keren banget sihh bisa lolos pimnas",
-                "pesan": "semangat pimnasnya semoga menang ya kakkk"
+                "kesan": "Kak khoirul sangat asikk, dan juga baikk",
+                "pesan": "Semoga kak khoirul selalu mendaptkan yang terbaik di segala hal"
             },
             {
                 "nama": "Ahmad Rizky",
@@ -1221,8 +1221,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "GH",
                 "hobbi": "ga ngapa ngapain",
                 "sosmed": "@ahmad.rizky___",
-                "kesan": "keren bang ahmad dengan segala prestasinya",
-                "pesan": "Tetap semangat untuk Kakak dalam menyelesaikan tugas"
+                "kesan": "Bang Ahmad keren sih, kagum sama bang ahmad.",
+                "pesan": "Semoga semua yang bang ahmad kejar dan ingingkan segera tercapaii"
             },
             {
                 "nama": "Indah Khairunnisa",
@@ -1232,8 +1232,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "Disini aja",
                 "hobbi": "mancing emosi, mancing ikan, mancing kecebong, mancing cupang",
                 "sosmed": "@khaindaa_",
-                "kesan": "makasih kak dah bantu kallo sakit selama rangkaian, seneng bisa kenal di hublu juga",
-                "pesan": "energinya jangan pernah habis ya kak buat selalu heboh, tetap semangat untuk Kakak dalam menyelesaikan tugas"# 1
+                "kesan": "Kak Indah baikk, lucuu, dan juga ramahh sekalii",
+                "pesan": "Semoga kak indah selalu mendapatkan hal-hal baikk"# 1
             },
             {
                 "nama": "Bima Ekayasa",
@@ -1243,8 +1243,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "Balam",
                 "hobbi": "berlaku humoris dan manis",
                 "sosmed": "@bimayasa_",
-                "kesan": "jujur serem liat bang abim waktu di kotbar karna mukanya serius banget dan aku ga terlalu jelas ngeliatnya",
-                "pesan": "makasih bang atas ilmu yang di beri saat magang hublu"
+                "kesan": "Bang bima baikk, walaupun kalau dilihat sangat seram",
+                "pesan": "Semoga semua keinginan bang bima cepat terwujudd"
             },
             {
                 "nama": "Ahmad Bimo Akbar Arkana",
@@ -1254,8 +1254,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "Balam",
                 "hobbi": "lihat lihat perumahan",
                 "sosmed": "@bimo_arkana",
-                "kesan": "hobinya sangat keren sihh bang, pasti mau bangun claster yaaa",
-                "pesan": "Tetap semangat untuk Kakak dalam menyelesaikan tugas"
+                "kesan": "Bang bimo terlihat seram, tapi aslinya baikk kok. fun fact bang bimo manggil aku 'virna' yang dimana itu jarang bgt",
+                "pesan": "Semoga bang bimo selalu memdapatkan hal-hal baikkk"
             },
             {
                 "nama": "Adinda Deswita Maharani",
@@ -1265,8 +1265,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "love earth",
                 "hobbi": "jadi idol",
                 "sosmed": "@adindaadma",
-                "kesan": "kakanya cantik banget suka ngeliatnyaaa omgg",
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi Kakak dilancarkan sampai lulus."# 1
+                "kesan": "Kak Adinda lucuu, asikkk, ramah, dan juga baikkk",
+                "pesan": "Semoga semua impian kak adinda segera terwujudd "# 1
             },
             {
                 "nama": "Yollanda Agustina",
@@ -1276,8 +1276,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "Kayu Mulya",
                 "hobbi": "Tanya bang Henry",
                 "sosmed": "@yollanda_agustina16",
-                "kesan": "mentor yang baik dan ceriaa bangettt",
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi Kakak dilancarkan sampai lulus."
+                "kesan": "Kak Yolanda asikk, baikk jugaa, dan juga sangat happy vibes",
+                "pesan": "Semoga kak yolanda mencapai segera semua keinginan kak yolandaa"
             },
             {
                 "nama": "Riska Erlis Dayu Tiara",
@@ -1287,8 +1287,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "bebas",
                 "hobbi": "ngefollow up chat",
                 "sosmed": "@erlsriska",
-                "kesan": "pertama kenal waktu jadi asprak alpro, ternyata lanjut jadi mentor kesayangan tensor",
-                "pesan": "makasih kak udah perhatian ke tensor, dah mau dengerin cerita keluh kesah ku dan kasih saran yang terbaik, dan banyak hal lagi yang ga bisa ku unggkapkan lewat kata-kata kakk"
+                "kesan": "Kak Riska sangat lucuu, jujur aku kira dulu anak 25....",
+                "pesan": "Semoga semua keinginan kak riska cepat terwujud, semua hal-hal baik selalu disekeliling kak riska, dan juga makasihh ya kak karena selalu ada buat kami selama iniii lop uuu"
             },
             {
                 "nama": "Alfaya Abiyyi",
@@ -1298,8 +1298,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "balam",
                 "hobbi": "makan yang manis biar manis",
                 "sosmed": "@alfabiyi",
-                "kesan": "hobbinya sangat mengundang semut sih itu bang",
-                "pesan": "Tetap semangat untuk Kakak dalam menyelesaikan tugas"
+                "kesan": "Bang Alfaya baikk, ramah, dan juga lucuu",
+                "pesan": "Semoga semua mimpi bang alfaya segera terwujud"
             },
             {
                 "nama": "Asri Meilani",
@@ -1309,8 +1309,8 @@ elif menu == "Departemen Eksternal":
                 "alamat": "Korpri Raya",
                 "hobbi": "menonton film",
                 "sosmed": "@asrmeilani",
-                "kesan": "kak mei cantik banget suka ngeliatnyaa omgg, baik hati banget lagi",
-                "pesan": "semoga selalu bahagia dan ceria ya kakk, Tetap semangat untuk Kakak dalam menyelesaikan tugas"
+                "kesan": "Kak asri sangat baikk, dan juga ramahh, lucu jugaaa",
+                "pesan": "Semoga kak asri selalu dikelilingi hal-hal baikk"
             }
         ]
         display_images_with_data(gambar_urls, data_list)
@@ -1352,8 +1352,8 @@ elif menu == "Departemen MIKFES":
                 "alamat": "Kedaton Bandar Lampung ",
                 "hobbi": "Gangguin bang keya",
                 "sosmed": "@biyokcb ig",
-                "kesan": "...",
-                "pesan": "Tetap semangat menginspirasi banyak orang ya bang, semoga sukses selalu menyertai abang."# 1
+                "kesan": "Bang Fabio sangat lah asik, dan juga pas ngeasprak sangat seru",
+                "pesan": "Semoga bang fabio selalu bisa mendapatkan semua yang bang fabio inginkan"# 1
             },
             {
                 "nama": "Tanty Widiyastuti",
@@ -1363,8 +1363,8 @@ elif menu == "Departemen MIKFES":
                 "alamat": "Airan Raya",
                 "hobbi": "Nonton film",
                 "sosmed": "@tvnty_",
-                "kesan": "...",
-                "pesan": "Semoga ilmu dan kebaikan yang Kakak bagikan ke kami menjadi berkah untuk perjalanan Kakak."# 1
+                "kesan": "Kak Tanty sangat asikk, dan juga lucuu sekalii",
+                "pesan": "Semoga kak tanty selalu dikelilingin oleh hal-hal baikk"# 1
             },
             {
                 "nama": "Fadil Prasetyo",
@@ -1374,8 +1374,8 @@ elif menu == "Departemen MIKFES":
                 "alamat": "Bandar Lampung",
                 "hobbi": "Gitar",
                 "sosmed": "@fadilalfarizzii",
-                "kesan": "...",
-                "pesan": "Tetap semangat menjalani pengobatannya yang bang semoga lekas sembuh, semoga sukses selalu menyertai abang."# 1
+                "kesan": "Bang Fadil sangat kerenn, kagum banget sama abangnyaa",
+                "pesan": "Semoga bang fadil selalu ditempatkan di tempat yang paling terbaik"# 1
             },
             {
                 "nama": "Manuel Frederika",
@@ -1385,8 +1385,8 @@ elif menu == "Departemen MIKFES":
                 "alamat": "Way Kandis ",
                 "hobbi": "Gitar",
                 "sosmed": "@manuelfdk_",
-                "kesan": "...",
-                "pesan": "Tetap semangat menginspirasi banyak orang ya bang, semoga sukses selalu menyertai abang."
+                "kesan": "Bang Manuel baikk, ramahh, dan juga asik sihh",
+                "pesan": "Semoga bang manuel selalu didekatkan hal-hal baikk"
             },
             {
                 "nama": "Ni Made Okta Viola Darma Putri",
@@ -1396,8 +1396,8 @@ elif menu == "Departemen MIKFES":
                 "alamat": "nusa peninda",
                 "hobbi": "menghayal",
                 "sosmed": "@violaadrtr_",
-                "kesan": "...",
-                "pesan": "Semoga ilmu dan kebaikan yang Kakak bagikan ke kami menjadi berkah untuk perjalanan Kakak"# 1
+                "kesan": "Kak Okta maniss, ramah, dan baikk jugaa",
+                "pesan": "Semoga semua keinginan kak okta segera terwujud"# 1
             },
             {
                 "nama": "Risa Romadona",
@@ -1407,8 +1407,8 @@ elif menu == "Departemen MIKFES":
                 "alamat": "natar",
                 "hobbi": "rolling skate",
                 "sosmed": "@risarmdna",
-                "kesan": "..",
-                "pesan": "Semoga ilmu dan kebaikan yang Kakak bagikan ke kami menjadi berkah untuk perjalanan Kakak"# 1
+                "kesan": "Kak Risa lucuuk, baikk jugaa, dan ramahh",
+                "pesan": "Semoga kak risa bisa segera mewujudkan mimpi-mimpinya"# 1
             },
             {
                 "nama": "Vannisa Ramadhani",
@@ -1418,8 +1418,8 @@ elif menu == "Departemen MIKFES":
                 "alamat": "teluk betung",
                 "hobbi": "nonton khw",
                 "sosmed": "@vunnycaa",
-                "kesan": "....",
-                "pesan": "Semoga ilmu dan kebaikan yang Kakak bagikan ke kami menjadi berkah untuk perjalanan Kakak"# 1
+                "kesan": "Kak Vannisa baikk, maniss, axiks jugaa",
+                "pesan": "Semoga kak vannisa selalu mendapatkan hal yang terbaik disetiap hall"# 1
             },
             {
                 "nama": "Yulia Kristine Malau",
@@ -1429,8 +1429,8 @@ elif menu == "Departemen MIKFES":
                 "alamat": "Sabah Balau",
                 "hobbi": "Belajar",
                 "sosmed": "@krnylee",
-                "kesan": "...",
-                "pesan": "Semoga ilmu dan kebaikan yang Kakak bagikan ke kami menjadi berkah untuk perjalanan Kakak"# 1
+                "kesan": "Kak yulia imoutt, dan juga baikk",
+                "pesan": "Semoga mimpi-mimpi kak yulia segera tercapaii"# 1
             },
             {
                 "nama": "Akeyla Fairuz Shafi",
@@ -1440,8 +1440,8 @@ elif menu == "Departemen MIKFES":
                 "alamat": "Bandar Lampung",
                 "hobbi": "Berenang ",
                 "sosmed": "@keyashafi_",
-                "kesan": "...",
-                "pesan": "Tetap semangat menginspirasi banyak orang ya bang, semoga sukses selalu menyertai abang."# 1
+                "kesan": "Bang Akeyla baikk, dan juga sangat cooool",
+                "pesan": "Semoga bang akeyla mendapatkan semua hal baik selamanyaa"# 1
             },
             {
                 "nama": "Elsa Sitorus",
@@ -1451,8 +1451,8 @@ elif menu == "Departemen MIKFES":
                 "alamat": "Pemda",
                 "hobbi": "Sibuk",
                 "sosmed": "@_els.a",
-                "kesan": "...",
-                "pesan": "Semoga ilmu dan kebaikan yang Kakak bagikan ke kami menjadi berkah untuk perjalanan Kakak"# 1
+                "kesan": "Kak Elsa baikk, lucuu, dan juga sangat asikk",
+                "pesan": "Semoga kak elsa selalu didekatkan dengan hal-hal baik"# 1
             },
             {
                 "nama": "Fadya Izzatul 'Aini",
@@ -1462,8 +1462,8 @@ elif menu == "Departemen MIKFES":
                 "alamat": "airan",
                 "hobbi": "mancing",
                 "sosmed": "@fadyaizzatul_",
-                "kesan": "...",
-                "pesan": "...."# 1
+                "kesan": "Kak Fadya baikk, dangat amat pengertian, dan juga maniss sekali senyumnya",
+                "pesan": "Semoga kak fadya segera mendapatkan apa yang kak fadya inginkan"# 1
             },
             {
                 "nama": "Lovianora Saragih",
@@ -1473,8 +1473,8 @@ elif menu == "Departemen MIKFES":
                 "alamat": "way huwi",
                 "hobbi": "dengering musik",
                 "sosmed": "@_loviaa",
-                "kesan": "....",
-                "pesan": "Semoga ilmu dan kebaikan yang Kakak bagikan ke kami menjadi berkah untuk perjalanan Kakak"# 1
+                "kesan": "Kak Lovi maniss, baikk, dan pas jadi asprak sangat asikk",
+                "pesan": "Semoga semua impian kak lovi segera terwujudd"# 1
             },
             {
                 "nama": "M. Alsi Syahrulloh",
@@ -1484,8 +1484,8 @@ elif menu == "Departemen MIKFES":
                 "alamat": "kota baru",
                 "hobbi": "main game, tidur",
                 "sosmed": "@aluccy_",
-                "kesan": "...",
-                "pesan": ".Selamat melanjutkan aktivitas kuliah! Semoga IPK semester ini memuaskan dan sesuai harapan.."# 1
+                "kesan": "Bang Alsi baikk, dan juga asikk, cool juga sihh qweren",
+                "pesan": "Semoga bang alsi selalu mendapatkan yang terbaik disegala hal"# 1
             },
             {
                 "nama": "Sherena Florencia",
@@ -1495,19 +1495,19 @@ elif menu == "Departemen MIKFES":
                 "alamat": "Belwis",
                 "hobbi": "Make up",
                 "sosmed": "@sher_renna",
-                "kesan": "...",
-                "pesan": "Selamat melanjutkan aktivitas kuliah, Kak! Semoga IPK semester ini memuaskan dan sesuai harapan."
+                "kesan": "Kak Sherena lucuu, baikk, dan juga ramahh",
+                "pesan": "Semoga semua yang kak sherena impikan segera terwujud"
             },
             {
                 "nama": "Razin Hafid Hamdi",
                 "nim": "123450096",
-                 "umur": "21",
+                "umur": "21",
                 "asal":"Padang",
                 "alamat": "Jl. Lapas",
                 "hobbi": "Futsal",
                 "sosmed": "@razyn.hfd",
-                "kesan": "...",
-                "pesan": "Tetap semangat menginspirasi banyak orang ya bang, semoga sukses selalu menyertai abang."
+                "kesan": "Bang Razin cooool, baikk, dan juga ramah",
+                "pesan": "Semoga bang razin selalu mendapatkan apapun yang bang razin inginkan"
             },
             {
                 "nama": "Faiza Try Anjani",
@@ -1517,8 +1517,8 @@ elif menu == "Departemen MIKFES":
                 "alamat": "Belwis",
                 "hobbi": "Baca novel ",
                 "sosmed": "@faizaanjanii",
-                "kesan": "...",
-                "pesan": "Selamat melanjutkan aktivitas kuliah, Kak! Semoga IPK semester ini memuaskan dan sesuai harapan."
+                "kesan": "Kak Faiza imoutt, baikk, dan juga ramah sekalii",
+                "pesan": "Semoga semua keinginan kak faiza segera tercapai"
             },
             {
                 "nama": "Gathfan Nadif Ali",
@@ -1528,8 +1528,8 @@ elif menu == "Departemen MIKFES":
                 "alamat": "Rajabasa Raya",
                 "hobbi": "Main game",
                 "sosmed": "@gathfannadif",
-                "kesan": "...",
-                "pesan": "Tetap semangat menginspirasi banyak orang ya bang, semoga sukses selalu menyertai abang."
+                "kesan": "Bang gathfan baikk, kerenn jugaa lah, dan ramahh",
+                "pesan": "Semoga bang gathfan selalu dikelilingi hal-hal baik yaa"
             },
 {
                 "nama": "Hafidz Wahdiansyah",
@@ -1539,8 +1539,8 @@ elif menu == "Departemen MIKFES":
                 "alamat": "Metro Kibang, Lampung Timur ",
                 "hobbi": "3N ( Ngoding , Ngegame, Nyibukin Diri)",
                 "sosmed": "@apiszzaja",
-                "kesan": "...",
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi dilancarkan sampai lulus"# 1
+                "kesan": "Bang Hafidz asikk parahh, baik jugaa, dan ramahhhhhhh sekaliiii",
+                "pesan": "Semoga apapun yang bang hafidz impikan segera tercapaii"# 1
             },
             {
                 "nama": "Kaleb Filbert Istel",
@@ -1550,19 +1550,19 @@ elif menu == "Departemen MIKFES":
                 "alamat": "Campang Raya, Sukabumi",
                 "hobbi": "Gym, membaca, dan bermain",
                 "sosmed": "@kelelep_comberan",
-                "kesan": "...",
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi dilancarkan sampai lulus"
+                "kesan": "Bang Kaleb baikk, pintar sekalii lah my tutor ALE iniii",
+                "pesan": "Semoga bang kaleb selalu bisa mencapai semua hal yang bang kaleb inginkan"
             },
             {
                 "nama": "Melva Shaprina Febrianti",
                 "nim": "124450087",
-                 "umur": "19",
+                "umur": "19",
                 "asal":"Sumatera Selatan ",
                 "alamat": "Sukarame ",
                 "hobbi": "Memasak",
                 "sosmed": "@melva_fbrt",
-                "kesan": "..",
-                "pesan": "Selamat melanjutkan aktivitas kuliah, Kak! Semoga IPK semester ini memuaskan dan sesuai harapan."
+                "kesan": "Kak Melva lucuuu sekalii, asikk, baik jugaa",
+                "pesan": "Semoga kak melva selalu dikelilingi hal baikk seperti budaks tensor"
             },
             {
                 "nama": "Muhammad Syafiqul Falakh",
@@ -1572,8 +1572,8 @@ elif menu == "Departemen MIKFES":
                 "alamat": "Asrama TB 3",
                 "hobbi": "Membaca",
                 "sosmed": "@syafiqui",
-                "kesan": "...",
-                "pesan": "Tetap semangat menginspirasi banyak orang ya bang, semoga sukses selalu menyertai abang."
+                "kesan": "Bang syafiq kerennn, baikk, dan juga ramahh",
+                "pesan": "Semoga bang syafiq segera mencapai semua impian bang syafiq"
             },
             {
                 "nama": "Rifky Henry Ferdianto",
@@ -1583,8 +1583,8 @@ elif menu == "Departemen MIKFES":
                 "alamat": "Rajabasa",
                 "hobbi": "Ngerecokin nuel",
                 "sosmed": "@henryferdianto",
-                "kesan": "....",
-                "pesan": "Tetap semangat menginspirasi banyak orang ya bang, semoga sukses selalu menyertai abang."
+                "kesan": "Bang Henry jujur seramm, tapi aslinya tidak kokk",
+                "pesan": "Semoga bang henry selalu bisa mendapatkan hal-hal yang bang henry inginkan"
             }
 
         ]
@@ -1618,8 +1618,8 @@ elif menu == "Departemen SSD":
                 "alamat": "Belwis",
                 "hobbi": "Jualan",
                 "sosmed": "@ihsan.myusuf",
-                "kesan": "...",
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi dilancarkan sampai lulus"# 1
+                "kesan": "Bang Ihsan sangatt asikk, dan juga baikkkk",
+                "pesan": "Semoga bang ihsan selalu bisa mendapatkan apa yang bang ihsan inginkan"# 1
             },
             {
                 "nama": "hanifah inaya sani",
@@ -1629,8 +1629,8 @@ elif menu == "Departemen SSD":
                 "alamat": "Bandar Lampung ",
                 "hobbi": "Masak",
                 "sosmed": "@_inayasani",
-                "kesan": "...",
-                "pesan": "Semangat buat kuliahnya, sampai lulus"# 1
+                "kesan": "Kak Hanifa manisss, baikk, dan juga asikk",
+                "pesan": "Semoga semua keinginan kak hanifa cepat terwujud"# 1
             },
             {
                 "nama": "Afifah Fauziah",
@@ -1640,8 +1640,8 @@ elif menu == "Departemen SSD":
                 "alamat": "Airan",
                 "hobbi": "Nonton marvel",
                 "sosmed": "@fifah.zy",
-                "kesan": "...",
-                "pesan": "Semangat buat kuliahnya, sampai lulus"# 1
+                "kesan": "Kak afifah sangat baikk, dan juga lucuu",
+                "pesan": "Semoga impian kak afifah segera terwujud"# 1
             },
             {
                 "nama": "Hasan Nur Ramadhan",
@@ -1651,8 +1651,8 @@ elif menu == "Departemen SSD":
                 "alamat": "Sebelah kostan Ayake",
                 "hobbi": "Nonton YouTube",
                 "sosmed": "@hasan.ramdhan08",
-                "kesan": "...",
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi dilancarkan sampai lulus"
+                "kesan": "Bang Hasan baiik, asikk, dan juga ramahh",
+                "pesan": "Semoga bang hasan selalu dikelilingin hal-hal baikk"
             },
             {
                 "nama": "Layina Ropiqo",
@@ -1662,8 +1662,8 @@ elif menu == "Departemen SSD":
                 "alamat": "Bandar Lampung ",
                 "hobbi": "Nonton dracin",
                 "sosmed": "@lay.inr_",
-                "kesan": "...",
-                "pesan": "Semangat buat kuliahnya, sampai lulus"# 1
+                "kesan": "Kak layina baikkk, dan juga ramahh sekalii",
+                "pesan": "Semoga kak layina selalu dapat mencapai semua keinginannya"# 1
             },
             {
                 "nama": "Mochammad Iqbal Az-zahir",
@@ -1673,8 +1673,8 @@ elif menu == "Departemen SSD":
                 "alamat": "Natar",
                 "hobbi": "Nonton drakor ",
                 "sosmed": "@iqbalazzahir_",
-                "kesan": "....",
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi dilancarkan sampai lulus"# 1
+                "kesan": "Bang Iqbal asikk bgt, dan juga baikk ramahh",
+                "pesan": "Semoga bang iqbal segera dapat mewujudkan impiannya"# 1
             },
             {
                 "nama": "Talitha Justine",
@@ -1683,9 +1683,9 @@ elif menu == "Departemen SSD":
                 "asal": "Jakarta",
                 "alamat": "Pemda",
                 "hobbi": "Nonton ",
-                "sosmed": "...",
-                "kesan": "...",
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi dilancarkan sampai lulus"# 1
+                "sosmed": "talljtine_",
+                "kesan": "Kak talitha lucuuu, baikk jugaa dan ramah sekalii",
+                "pesan": "Semoga semua impian kak talitha segera terwujudd"# 1
             },
             {
                 "nama": "Anadia Carana ",
@@ -1695,8 +1695,8 @@ elif menu == "Departemen SSD":
                 "alamat": "Way Huwi ",
                 "hobbi": "Nyari duit",
                 "sosmed": "@anadiacrn_",
-                "kesan": "...",
-                "pesan": "Semangat buat kuliahnya, sampai lulus"# 1
+                "kesan": "Kak Anadia baikkk, dan juga ramahhh sekalii",
+                "pesan": "Semoga kak anadia selalu dikelilingi dengan hal-hal baikkk"# 1
             },
             {
                 "nama": "Abdilah Fikri Alpome",
@@ -1706,8 +1706,8 @@ elif menu == "Departemen SSD":
                 "alamat": "Airan ",
                 "hobbi": "Basket",
                 "sosmed": "@pomest__",
-                "kesan": "...",
-                "pesan": ".Selamat melanjutkan aktivitas kuliah! Semoga IPK semester ini memuaskan dan sesuai harapan.."# 1
+                "kesan": "Bang abdilah asikkk, sangat ramahhh",
+                "pesan": "Semoga bang abdilah cepat bisa mencapai impiannya"# 1
             },
             {
                 "nama": "Afdhal Rahmad Setiawan",
@@ -1717,8 +1717,8 @@ elif menu == "Departemen SSD":
                 "alamat": "Belwis ",
                 "hobbi": "Fishing",
                 "sosmed": "@dhalsetiawan",
-                "kesan": "",
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi dilancarkan sampai lulus"# 1
+                "kesan": "Bang Afdhal sangat pemdiam dimata saya dan pemalu, tapii baikk",
+                "pesan": "Semoga bang afdhal selalu dikelilingi hal-hal baikk"# 1
             },
             {
                 "nama": "Anggun Nita",
@@ -1728,8 +1728,8 @@ elif menu == "Departemen SSD":
                 "alamat": "Belwis ",
                 "hobbi": "Nonton kartun",
                 "sosmed": "@anggunnitaaa_",
-                "kesan": "kakanya cantik dan cute",
-                "pesan": "Semangat buat kuliahnya, sampai lulus"# 1
+                "kesan": "Kak anggun maniss, baikkk, dan juga asikkk",
+                "pesan": "Semoga semua impian kak anggun cepai tercapaii"# 1
             },
             {
                 "nama": "Della Anisa Fitri",
@@ -1739,8 +1739,8 @@ elif menu == "Departemen SSD":
                 "alamat": "Margo Lestari ",
                 "hobbi": "Lagi gak punya hobi ",
                 "sosmed": "@dellaansaftr",
-                "kesan": "kakanya cantik dan cute",
-                "pesan": "Semangat buat kuliahnya, sampai lulus"# 1
+                "kesan": "Kak Della baikik, lucuu, dan juga ramahh sakalii",
+                "pesan": "Semoga kak della bisa mencapai semua keinginannya"# 1
             }
 
         ]
@@ -1766,7 +1766,7 @@ elif menu == "Departemen Medkraf":
             "https://drive.google.com/uc?export=view&id=1je3oVKZUJ9TCfJ9Y2J3xnsk7F6sS-0aG",#bang dafa 
             "https://drive.google.com/uc?export=view&id=1sddGo_PUS7V8v5vW9g8wxjm4LgEzQygi",#bang edsel
             "https://drive.google.com/uc?export=view&id=1Fw4NjT8IHO_y88kIZbXl5DOr2NEpfEcw",#kak lucia
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",#kak shafa
+            "https://drive.google.com/uc?export=view&id=1YsbWlCy3pUjoBjbbGGu1Uga9axhE7rvA",#kak shafa
             "https://drive.google.com/uc?export=view&id=1NIviKZtMCV_Nx1hY4TEzL9SkO-JF8E51",#kak zannuba
 
         ]
@@ -1779,8 +1779,8 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Way Huwi, Jati Agung, Lampung Selatan",
                 "hobbi": "Mendengarkan Musik",
                 "sosmed": "@naylasalsabilaa._",
-                "kesan": "..",
-                "pesan": "Selamat melanjutkan aktivitas kuliah, Kak! Semoga IPK semester ini memuaskan dan sesuai harapan."# 1
+                "kesan": "Kak Nayla maniss, asikk, dan juga baikkk",
+                "pesan": "Semoga kak nayla selalu didekatkan oleh hal-hal baikkk"# 1
             },
             {
                 "nama": "Donna Maya Puspita",
@@ -1790,8 +1790,8 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Way Huwi",
                 "hobbi": "Listening to music",
                 "sosmed": "@donnamaya.p",
-                "kesan": "...",
-                "pesan": "Semangat terus ya kakaaaa semester ini, semoga lancar2 kuliahnya sampai lulus"# 1
+                "kesan": "Kak Donna asikkk bangettt, lucuu, dan juga baikk ",
+                "pesan": "Semoga semua impian kak donna bisa cepat terwujudd"# 1
             },
             {
                 "nama": "Labo John Noel Napitupulu ",
@@ -1801,8 +1801,8 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Belwis",
                 "hobbi": "Motoran ",
                 "sosmed": "@noerruuu",
-                "kesan": "...",
-                "pesan": "..."# 1
+                "kesan": "Bang Labo baikk dan asikk walaupun awalnya terlihat seramm",
+                "pesan": "Semoga bang labo selalu bisa melalukan yang terbaikk dan mencapai semua impiannya"# 1
             },
             {
                 "nama": "Anash Tasya Ausyaqila",
@@ -1812,8 +1812,8 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Way Halim ",
                 "hobbi": "Nonton",
                 "sosmed": "@anshtsyaaql",
-                "kesan": "kakanya cantik dan cute",
-                "pesan": "Selamat melanjutkan aktivitas kuliah, Kak! Semoga IPK semester ini memuaskan dan sesuai harapan."
+                "kesan": "Kak Anash lucuu, baikk, dan jugaa ramahh",
+                "pesan": "Semoga kak anash segera mendapaykan semua yang kak anash inginkan"
             },
             {
                 "nama": "Felisya Nabila Nugroho",
@@ -1823,8 +1823,8 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Kota Baru",
                 "hobbi": "Gangguin Anash&Razan, jail di grup",
                 "sosmed": "@felisyanbl__",
-                "kesan": "kakanya cantik dan cute",
-                "pesan": "Selamat melanjutkan aktivitas kuliah, Kak! Semoga IPK semester ini memuaskan dan sesuai harapan."# 1
+                "kesan": "Kak Felisya maniss, lucuuu, baikkk jugaa",
+                "pesan": "Semoga kak feli selalu bisa dalam menghadapi hal-hal disetiap harinya"# 1
             },
             {
                 "nama": "Muhammad Razan Maulana Pratama",
@@ -1834,8 +1834,8 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Korpri",
                 "hobbi": "Poto orang",
                 "sosmed": "@muh_razan_",
-                "kesan": "...",
-                "pesan": "..."# 1
+                "kesan": "Bang Razan kerenn apalagi pas megang kameraa, baikk juga, dan ramahh",
+                "pesan": "Semoga semua yang bang razan inginkan segera terwujud"# 1
             },
             {
                 "nama": "Sania DWi Ayu Lestari",
@@ -1845,8 +1845,8 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Airan Raya",
                 "hobbi": "Nonton netflix",
                 "sosmed": "@saniayyllstr",
-                "kesan": "pertama kali liat waktu pplk, kakanya cantik dan cute",
-                "pesan": "Selamat melanjutkan aktivitas kuliah, Kak! Semoga IPK semester ini memuaskan dan sesuai harapan."# 1
+                "kesan": "Kak sania lucuu, baik jugaa, dan ramah bangett",
+                "pesan": "Semoga kak sania segera mendapatkan apa yang kak sania inginkan"# 1
             },
             {
                 "nama": "Allisha",
@@ -1856,8 +1856,8 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Heaven",
                 "hobbi": "Mancing",
                 "sosmed": "@aallishaa.a",
-                "kesan": "kakanya cantik dan cute",
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi Kakak dilancarkan sampai lulus."# 1
+                "kesan": "Kak Allisha manisss, baikk, dan juga lucuu",
+                "pesan": "Semoga kak allisha selalu didekatkan dengan hal-hal baikk"# 1
             },
             {
                 "nama": "Alya Ramadhanti",
@@ -1867,8 +1867,8 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Airan",
                 "hobbi": "Jalan jalan",
                 "sosmed": "@alya.rmdhnti",
-                "kesan": "kakanya cantik, ramahh dan cute",
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi Kakak dilancarkan sampai lulus."# 1
+                "kesan": "Kak Alya lucuu, baikk, dan juga sangat ramah",
+                "pesan": "Semoga segala yang kak alya impikan segera tercapai"# 1
             },
             {
                 "nama": "Bunga Clarisa Sefa",
@@ -1878,8 +1878,8 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Lampung Selatan",
                 "hobbi": "Belajar",
                 "sosmed": "@bungaclrssf",
-                "kesan": "kakaaa cantik banget aku suka ngeliatnya",
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi Kakak dilancarkan sampai lulus."# 1
+                "kesan": "Kak Bunga maniss bangett, ramah jugaa, dan baikk",
+                "pesan": "Semoga semua impian kak bungan segera terwujud"# 1
             },
             {
                 "nama": "Difanya Husakina",
@@ -1889,8 +1889,8 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Airan Raya",
                 "hobbi": "Membaca Alquran",
                 "sosmed": "@difanyhsa_",
-                "kesan": "...",
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi Kakak dilancarkan sampai lulus."# 1
+                "kesan": "Kak Difanya manisss, humble, dan juga baikk",
+                "pesan": "Semoga kak difanya selalu bisa untuk menghadapi hal-hal setiap hari"# 1
             },
             {
                 "nama": "Nazlah Auliya",
@@ -1900,8 +1900,8 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Bandar Lampung",
                 "hobbi": "Berenang ",
                 "sosmed": "@nzlhauly_",
-                "kesan": "kakanya cantik dan cute",
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi Kakak dilancarkan sampai lulus."# 1
+                "kesan": "Kak Nazlah lucuuu, baikk, dan juga sangat ramahh",
+                "pesan": "Semoga kak nazlah selalu dikelilingi hal-hal baikkk seperti seperti didekat tensorr"# 1
             },
             {
                 "nama": "Raihana Adelia Putri",
@@ -1911,8 +1911,8 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Aira Raya 1",
                 "hobbi": "Menulis, membaca",
                 "sosmed": "@n1tg._",
-                "kesan": "kakanya cantik,ramhhh dan cute",
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi Kakak dilancarkan sampai lulus."# 1
+                "kesan": "Kak Raihana manisss, lucuu, baikk jugaa",
+                "pesan": "Semoga semua impian kak raihana segera terwujudd"# 1
             },
             {
                 "nama": "Daffa Kharisma Adzana",
@@ -1922,8 +1922,8 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Sukarame ",
                 "hobbi": "-",
                 "sosmed": "@daffascript",
-                "kesan": "..",
-                "pesan":".."
+                "kesan": "Bang daffa asikkk, baikk, dan ramah sekalii",
+                "pesan":"Semoga bang daffa selalu bisa dalam menjalankan hari disetiap harinya"
             },
             {
                 "nama": "Edsel Adya Pradipta",
@@ -1933,8 +1933,8 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Natar",
                 "hobbi": "Nonton Anime",
                 "sosmed": "@edsel_0712",
-                "kesan": "...",
-                "pesan": "..."# 1
+                "kesan": "Bang Edsel pendiam lah dimata sayaa, tapi bang edsel baikkk",
+                "pesan": "Semoga semua keinginan bang edsel segera tercapai"# 1
             },
             {
                 "nama": "Lucia Advencia Rachel Nainggolan",
@@ -1944,8 +1944,8 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Belwis",
                 "hobbi": "Tidur",
                 "sosmed": "@luciarachel_",
-                "kesan": "cute, gemass banget waktu liatnya karna  cantik bgt",
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi Kakak dilancarkan sampai lulus."
+                "kesan": "Kak Lucia lucuu, baikk, dan jugaa ramahh",
+                "pesan": "Semoga Kak lucia bisa mencapai semua keinginannya secepatnya"
             },
             {
                 "nama": "Shafa Delaila Azzahra",
@@ -1955,8 +1955,8 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Perum Pemda",
                 "hobbi": "Melukis dan menulis",
                 "sosmed": "@_shaazzh",
-                "kesan": "kakanya cantik dan ramah",
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi Kakak dilancarkan sampai lulus."# 1
+                "kesan": "Kak Shafa lucuuu, baikk, dan jugaa humblee",
+                "pesan": "Semoga semua impian kak shafa segera terwujudd yaa"# 1
             },
             {
                 "nama": "Zannuba Arifah Ilman",
@@ -1966,8 +1966,8 @@ elif menu == "Departemen Medkraf":
                 "alamat": "Rajabasa",
                 "hobbi": "Bengong",
                 "sosmed": "@xifasky",
-                "kesan": "kakanya cantik,ramahh dan baikk",
-                "pesan": "Semoga segala urusan akademis, organisasi, dan skripsi Kakak dilancarkan sampai lulus."
+                "kesan": "Kak Zannuba lucuuuu, ramahh, dan jugaa baikkk",
+                "pesan": "Semoga kak zannuba selalu didekatkan dengan hal-hal baikkk"
             }
 
         ]
