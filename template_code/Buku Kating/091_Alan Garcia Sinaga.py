@@ -791,7 +791,7 @@ def display_images_with_data(gambar_urls, data_list):
 
     shown = 0
     for i, data in enumerate(data_list):
-        nama = clean(data.get("Nama"), "Tanpa Nama")
+        nama = clean(data.get("nama"), "Tanpa Nama")
         if q:
             haystack = " ".join(
                 str(data.get(k, "")) for k in ("Nama", "NIM", "Asal", "Alamat", "Hobi", "Sosmed", "Kesan", "Pesan")
@@ -808,22 +808,22 @@ def display_images_with_data(gambar_urls, data_list):
                 f"<small>Foto belum tersedia</small></div>"
             )
 
-        umur = clean(data.get("Umur"))
+        umur = clean(data.get("umur"))
         umur_text = f"{umur} Tahun" if umur.isdigit() else umur
         sosmed = clean(data.get("Sosmed"))
         sosmed_html = f"<span class='social-chip'>{esc(sosmed)}</span>" if sosmed != "-" else "-"
 
         tiles = "".join([
-            _tile("🪪", "NIM", esc(clean(data.get("NIM")))),
+            _tile("🪪", "NIM", esc(clean(data.get("nim")))),
             _tile("🎂", "Umur", esc(umur_text)),
-            _tile("📍", "Asal", esc(clean(data.get("Asal")))),
-            _tile("🏠", "Alamat", esc(clean(data.get("Alamat")))),
-            _tile("🎯", "Hobi", esc(clean(data.get("Hobi")))),
+            _tile("📍", "Asal", esc(clean(data.get("asal")))),
+            _tile("🏠", "Alamat", esc(clean(data.get("alamat")))),
+            _tile("🎯", "Hobi", esc(clean(data.get("hobbi")))),
             _tile("📸", "Sosial Media", sosmed_html),
         ])
         quotes = (
-            _quote("💬 Kesan", clean(data.get("Kesan"), ""))
-            + _quote("✉️ Pesan", clean(data.get("Pesan"), ""))
+            _quote("💬 Kesan", clean(data.get("kesan"), ""))
+            + _quote("✉️ Pesan", clean(data.get("pesan"), ""))
         )
 
         jabatan = clean(JABATAN_BY_NAMA.get(nama), "Jabatan belum tersedia")
