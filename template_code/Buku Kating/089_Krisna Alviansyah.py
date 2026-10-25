@@ -84,26 +84,26 @@ elif menu == "Baleg":
             {
                 "nama": "Givaro Ananta",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1NzfunTqYdz5-O1ZobEl9JCkEWblIGhuo",
-                "kesan": "Abangnya asik",
-                "pesan": "Semangat bang kuliahnya",
-            },
-            {
-                "nama": "Monica Patricia Tanjung",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1ZBSQuhGe4eM1eb0XFJCkxoXhDH6D56WR",
-                "kesan": "bang jeremi algoritma video ignya sama",
-                "pesan": "Semangat terus ya bang jeremi kualiahnya",
-            },
-            {
-                "nama": "Gh Mikael Niko A S",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1N8aKdak_CfVFQz2qH7qRE9NJLEbP35O-",
                 "kesan": "Abangnya terlihat cool",
                 "pesan": "Selalu semangat kuliahnya bang Givaro",
             },
             {
-                "nama": "Siti Sarifah Sumamah",
-                "link_gdrive": "https://drive.google.com/uc?export=view&id=1nFN_M_5_iIgw-X4sgSHgV4qMbmTnJk3i",
+                "nama": "Monica Patricia Tanjung",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1ZBSQuhGe4eM1eb0XFJCkxoXhDH6D56WR",
                 "kesan": "kak monica pembaik",
                 "pesan": "Semangat kuliahnya ya kak maap gak ada kata kata selain ini :)",
+            },
+            {
+                "nama": "Gh Mikael Niko A S",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1N8aKdak_CfVFQz2qH7qRE9NJLEbP35O-",
+                "kesan": "Abangnya asik",
+                "pesan": "Semangat bang kuliahnya",
+            },
+            {
+                "nama": "Siti Sarifah Sumamah",
+                "link_gdrive": "https://drive.google.com/uc?export=view&id=1nFN_M_5_iIgw-X4sgSHgV4qMbmTnJk3i",
+                "kesan": "kak sarifa lucu",
+                "pesan": "Semangat kuliahnya ya kak, maap kak template hehe",
             },
             {
                 "nama": "Afghanis Nursholehatunnisa",
@@ -120,8 +120,8 @@ elif menu == "Baleg":
             {
                 "nama": "Jeremia Halim",
                 "link_gdrive": "https://drive.google.com/uc?export=view&id=1LmJ0_dAkId8hUOrW-Mk6cHFT8lhFIiXh",
-                "kesan": "Kakaknya imut banget",
-                "pesan": "Semangat ya kak kuliahnya :)",
+                "kesan": "bang jeremi algoritma video ignya sama",
+                "pesan": "Semangat terus ya bang jeremi kuliahnya",
             },
             {
                 "nama": "Jona Timothy Ogatse Panjaitan",
