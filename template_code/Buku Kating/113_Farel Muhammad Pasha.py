@@ -348,16 +348,16 @@ if menu == "Baleg":
 if menu == "Senator":
     def Senator():
         gambar_urls = [
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
-            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1BhJQSROOrBo3TZ3H6pnoMRxMjnkE0m78",
+            "https://drive.google.com/uc?export=view&id=11WqFNtxAelGTryhZEzfec5sM3UXd1A9f",
+            "https://drive.google.com/uc?export=view&id=1tiRkQG5IirT7wuKV7qT0Iah_PFd1O4Rv",
+            "https://drive.google.com/uc?export=view&id=1iGfOjTnHF43zFxXgd4rsbG6AiCItmCd-",
+            "https://drive.google.com/uc?export=view&id=1pyoDk0voR0nvQAf47-RLpxOFaXfVor_j",
+            "https://drive.google.com/uc?export=view&id=1kg2SyAQd7MqBaIhg9SojZ01XRAIIHXFx",
+            "https://drive.google.com/uc?export=view&id=1hWQiTjc1CPnWFiMPwtBrNhjbByJyvgUc",
+            "https://drive.google.com/uc?export=view&id=1o6BGjwhDlTsYL1Eo2TOxe36tKlRau-As",
+            "https://drive.google.com/uc?export=view&id=1xOnkyFBTidBqDCtrwIQRKN2grcbgraRO",
+            "https://drive.google.com/uc?export=view&id=1xeEYGqj4AZfWSPyKx-EL7agDtjGxCqsx",
         ]
         data_list = [
             {
