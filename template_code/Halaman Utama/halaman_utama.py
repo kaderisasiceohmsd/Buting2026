@@ -1297,7 +1297,7 @@ elif menu == "About Us":
                 "fun_fact": "Mantan saya 4",
                 "motto_hidup": "Selalu beribadah kepada Allah swt",
                 "sosmed": "@na.biwa",
-                "foto": "",
+                "foto": "https://drive.google.com/uc?export=view&id=16JerAO1bW_lVSKEYSVi8qSo3qeWCqfzO",
             },
         ]
 
