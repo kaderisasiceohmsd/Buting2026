@@ -108,6 +108,7 @@ def display_images_with_data(gambar_urls, data_list):
 
 menu = streamlit_menu()
 
+# --- 1. KESEKJENAN ---
 if menu == "Kesekjenan":
     gambar_urls = [
         "https://drive.google.com/uc?export=view&id=1RPRXY1_sjMuAcDhD0A46aDYlfkQ2CnXW",
@@ -127,6 +128,7 @@ if menu == "Kesekjenan":
     ]
     display_images_with_data(gambar_urls, data_list)
 
+# --- 2. BADAN LEGISLATIF ---
 elif menu == "Badan Legislatif":
     gambar_urls = [
         "https://drive.google.com/uc?export=view&id=1f54XEKLV5-_iY0Ke1Amy_8n2lsuTpWrB",
@@ -160,6 +162,7 @@ elif menu == "Badan Legislatif":
     ]
     display_images_with_data(gambar_urls, data_list)
 
+# --- 3. BADAN KESENATORAN ---
 elif menu == "Badan Kesenatoran":
     gambar_urls = [
         "https://drive.google.com/uc?export=view&id=1DB2rHAmkffUqkrya8F8oZcQ5ky-E7IpU",
@@ -187,6 +190,7 @@ elif menu == "Badan Kesenatoran":
     ]
     display_images_with_data(gambar_urls, data_list)
 
+# --- 4. DEPARTEMEN PSDA ---
 elif menu == "Departemen PSDA":
     gambar_urls = [
         "https://drive.google.com/uc?export=view&id=153egJP5i9qz2r7v2CKyXgsdi-UlttKIF",
@@ -228,6 +232,11 @@ elif menu == "Departemen PSDA":
     ]
     display_images_with_data(gambar_urls, data_list)
 
+# --- 5. DEPARTEMEN MIKFES ---
+elif menu == "Departemen MIKFES":
+    st.info("Data untuk Departemen MIKFES belum diisi.")
+
+# --- 6. DEPARTEMEN EKSTERNAL ---
 elif menu == "Departemen Eksternal":
     gambar_urls = [
         "https://drive.google.com/uc?export=view&id=1nsN3TV4twKSbjBdoIzTqW6VYpgxXaJK5",
@@ -279,6 +288,7 @@ elif menu == "Departemen Eksternal":
     ]
     display_images_with_data(gambar_urls, data_list)
 
+# --- 7. DEPARTEMEN INTERNAL ---
 elif menu == "Departemen Internal":
     gambar_urls = [
         "https://drive.google.com/uc?export=view&id=1yY0UcwW0OGe_wjFslLfXidx_p4gdgLtM",
@@ -306,6 +316,7 @@ elif menu == "Departemen Internal":
     ]
     display_images_with_data(gambar_urls, data_list)
 
+# --- 8. DEPARTEMEN SSD ---
 elif menu == "Departemen SSD":
     gambar_urls = [
         "https://drive.google.com/uc?export=view&id=1aMv9qlfsOuyoPiS2R8NTcgAxozaNZqou",
@@ -332,6 +343,11 @@ elif menu == "Departemen SSD":
     ]
     display_images_with_data(gambar_urls, data_list)
 
+# --- 9. DEPARTEMEN MEDKRAF ---
+elif menu == "Departemen Medkraf":
+    st.info("Data untuk Departemen Medkraf belum diisi.")
+
+# --- 10. DEPARTEMEN MINBAK ---
 elif menu == "Departemen Minbak":
     gambar_urls = [
         "https://drive.google.com/uc?export=view&id=1Udk2xpvnZx6fPqH0f9wwTJN980Bz1TkV",
