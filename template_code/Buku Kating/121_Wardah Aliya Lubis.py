@@ -117,7 +117,7 @@ if menu == "Kesekjenan":
             "umur": "22",
             "asal":"Batam",
             "alamat": "Sekretariat HMSD",
-            "hobbi": "Push Rank sampe IMO",
+            "hobbi": "Push Rank s IMO",
             "sosmed": "@jars_mrp",
             "jabatan" : "Ketua Himpunan",
             "kesan": "Keren dan berwibawa, keren banget manage waktunya",  
