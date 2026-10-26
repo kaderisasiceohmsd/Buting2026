@@ -10,7 +10,7 @@ from loading_screen import show_loading_screen
 
 st.set_page_config(
     page_title="Konstelasi Jordan",
-    page_icon="⭐", # <-- Menggunakan emoji bintang sebagai logo/favicon tab browser
+    page_icon="💫", # <-- Menggunakan emoji bintang sebagai logo/favicon tab browser
     layout="wide"
 )
 # ==============================================================================
@@ -365,17 +365,18 @@ components.html(f"""
     if (!modeBtn) {{
       modeBtn = document.createElement('button');
       modeBtn.id = 'jordan-mode-btn';
+      const isMobile = window.innerWidth <= 768;
       Object.assign(modeBtn.style, {{
         position: 'fixed',
-        bottom: '18px',
-        right: '22px',
+        bottom: isMobile ? '82px' : '72px',
+        right: isMobile ? '14px' : '20px',
         zIndex: '999999',
         background: 'rgba(9, 10, 22, 0.92)',
         color: '#ffd740',
         border: '1px solid rgba(255,215,64,0.45)',
         borderRadius: '20px',
-        padding: '6px 15px',
-        fontSize: '11.5px',
+        padding: isMobile ? '6px 12px' : '7px 16px',
+        fontSize: isMobile ? '11px' : '12px',
         fontFamily: 'Poppins, sans-serif',
         fontWeight: '600',
         letterSpacing: '0.5px',
@@ -391,6 +392,25 @@ components.html(f"""
         applyVisualMode(nextMode);
       }});
       document.body.appendChild(modeBtn);
+            if (!document.getElementById('jordan-mode-style')) {{
+        const st = document.createElement('style');
+        st.id = 'jordan-mode-style';
+        st.textContent = `
+          #jordan-mode-btn {
+            bottom: calc(env(safe-area-inset-bottom, 0px) + 72px) !important;
+            right: 20px !important;
+          }
+          @media (max-width: 768px) {
+            #jordan-mode-btn {
+              bottom: calc(env(safe-area-inset-bottom, 0px) + 82px) !important;
+              right: 14px !important;
+              padding: 6px 12px !important;
+              font-size: 11px !important;
+            }
+          }
+        `;
+        document.head.appendChild(st);
+      }}
     }}
 
     // ===== 5. PAGE VISIBILITY =====
@@ -894,14 +914,14 @@ components.html(f"""
     const pwin = window.parent, pdoc = window.parent.document;
     if (!pwin || !pdoc) return;
 
-    const CURRENT_VERSION = 15;
+    const CURRENT_VERSION = 16;
     if (pwin.__jordanCosmicActive && pwin.__jordanCosmicVersion === CURRENT_VERSION) return;
 
     if (pwin.__jordanCosmicAnimId) {{
       pwin.cancelAnimationFrame(pwin.__jordanCosmicAnimId);
       pwin.__jordanCosmicAnimId = null;
     }}
-    ['jordan-meteor-canvas', 'jordan-cosmic-core', 'jordan-reduce-btn', 'jordan-mode-btn', 'jordan-constellation-hud'].forEach(function(id) {{
+     ['jordan-meteor-canvas', 'jordan-cosmic-core', 'jordan-reduce-btn', 'jordan-mode-btn', 'jordan-mode-style', 'jordan-constellation-hud'].forEach(function(id) {{
       const el = pdoc.getElementById(id);
       if (el) el.remove();
     }});
