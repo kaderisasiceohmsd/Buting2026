@@ -305,7 +305,7 @@ elif menu == "Senator":
                 "Alamat": "Sukarame",
                 "Hobbi": "Membaca",
                 "Sosmed": "@nadyaanjaani",
-                "Kesan": "Kakaknya cantik, ramah, baik",
+                "Kesan": "Kakaknya cantik, ramah, baik, maparin materi juga bagus dan mudah dipahami",
                 "Pesan": "Semangat terus kak, semoga kuliahnya lancar"
             },
             {
