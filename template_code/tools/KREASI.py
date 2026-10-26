@@ -533,6 +533,43 @@ def get_client_device_fp() -> str:
     return st.session_state["jordan_device_fp"]
 
 
+# ==============================================================================
+# SINKRONISASI LEADERBOARD CLOUD ABADI VIA GOOGLE SHEETS (APPS SCRIPT)
+# ==============================================================================
+# URL Web App Google Apps Script. Prioritas:
+# 1. st.secrets["LEADERBOARD_APPSCRIPT_URL"] (jika disetel di Streamlit Cloud)
+# 2. Nilai LEADERBOARD_APPSCRIPT_URL di bawah ini
+# 3. Fallback otomatis ke penyimpanan JSON lokal (Data/Data_dinamis/leaderboard_jordan.json)
+LEADERBOARD_APPSCRIPT_URL = "https://script.google.com/macros/s/AKfycby6nEH8KWQuSLTnsQSJvUr3T_MISaRh-53TyBA4WTOOrHWqkiaDKRrWa9KPI8QNVLLJ/exec"
+
+
+def _get_appscript_url() -> str:
+    try:
+        if "LEADERBOARD_APPSCRIPT_URL" in st.secrets:
+            return str(st.secrets["LEADERBOARD_APPSCRIPT_URL"]).strip()
+    except Exception:
+        pass
+    return LEADERBOARD_APPSCRIPT_URL.strip()
+
+
+@st.cache_data(ttl=35, show_spinner=False)
+def _fetch_remote_leaderboard(url: str):
+    """Ambil data leaderboard dari Google Sheets via Apps Script Web App dengan timeout cepat."""
+    if not url:
+        return None
+    try:
+        resp = requests.get(url, timeout=3.8)
+        if resp.status_code == 200:
+            js = resp.json()
+            if isinstance(js, dict) and js.get("status") == "success":
+                entries = js.get("entries", [])
+                if isinstance(entries, list) and entries:
+                    return entries[:50]
+    except Exception:
+        pass
+    return None
+
+
 @st.cache_resource
 def _get_leaderboard_store():
     """
@@ -556,7 +593,7 @@ def _get_leaderboard_store():
             with open(lb_file, "r", encoding="utf-8") as f:
                 loaded = json.load(f)
             if isinstance(loaded, list) and loaded:
-                return {"entries": loaded[:40], "path": lb_file, "lock": lock, "rate_map": {}}
+                return {"entries": loaded[:50], "path": lb_file, "lock": lock, "rate_map": {}}
         except Exception:
             pass
 
@@ -571,6 +608,21 @@ def _get_leaderboard_store():
 
 def get_global_leaderboard():
     store = _get_leaderboard_store()
+    remote_url = _get_appscript_url()
+
+    # 1. Sinkronisasi dari Google Sheets jika URL sudah dikonfigurasi
+    if remote_url:
+        cloud_entries = _fetch_remote_leaderboard(remote_url)
+        if cloud_entries:
+            store["entries"] = cloud_entries
+            try:
+                with open(store["path"], "w", encoding="utf-8") as f:
+                    json.dump(cloud_entries, f, ensure_ascii=False, indent=2)
+            except Exception:
+                pass
+            return store
+
+    # 2. Fallback lokal dari file JSON
     path = store["path"]
     try:
         mt = os.path.getmtime(path) if os.path.exists(path) else 0.0
@@ -578,7 +630,7 @@ def get_global_leaderboard():
             with open(path, "r", encoding="utf-8") as f:
                 loaded = json.load(f)
             if isinstance(loaded, list) and loaded:
-                store["entries"] = loaded[:40]
+                store["entries"] = loaded[:50]
                 store["mtime"] = mt
     except Exception:
         pass
@@ -640,8 +692,9 @@ def save_score_to_leaderboard(nama: str, kelompok: str, skor: int, streak: int) 
             matched_item["tanggal"] = tanggal_str
             matched_item["device_fp"] = device_fp
             msg = f"🔥 **Rekor Baru!** Skor perangkatmu diperbarui dari {old_score} pts menjadi **{skor} pts**."
+            saved_entry = matched_item
         else:
-            entries.append({
+            saved_entry = {
                 "nama": clean_name,
                 "kelompok": kelompok,
                 "kategori": kategori,
@@ -650,7 +703,8 @@ def save_score_to_leaderboard(nama: str, kelompok: str, skor: int, streak: int) 
                 "bulan": bulan_str,
                 "tanggal": tanggal_str,
                 "device_fp": device_fp,
-            })
+            }
+            entries.append(saved_entry)
             msg = "🎉 Skor kamu berhasil diabadikan ke Prasasti Leaderboard!"
 
         rate_map[device_fp] = now_ts
@@ -658,7 +712,7 @@ def save_score_to_leaderboard(nama: str, kelompok: str, skor: int, streak: int) 
             rate_map.clear()
 
         entries.sort(key=lambda x: x.get("skor", 0), reverse=True)
-        del entries[40:]
+        del entries[50:]
 
         try:
             with open(store["path"], "w", encoding="utf-8") as f:
@@ -666,6 +720,15 @@ def save_score_to_leaderboard(nama: str, kelompok: str, skor: int, streak: int) 
             store["mtime"] = os.path.getmtime(store["path"])
         except Exception:
             pass
+
+        # Kirim update ke Google Sheets secara background/non-blocking jika URL aktif
+        remote_url = _get_appscript_url()
+        if remote_url:
+            try:
+                requests.post(remote_url, json={"entry": saved_entry}, timeout=4.5)
+                _fetch_remote_leaderboard.clear()
+            except Exception:
+                pass
 
         return True, msg
 
