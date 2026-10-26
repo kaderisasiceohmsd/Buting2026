@@ -6,13 +6,14 @@ if _APP_DIR not in sys.path:
 import json
 import streamlit as st
 import streamlit.components.v1 as components
-from loading_screen import show_loading_screen
-
 st.set_page_config(
     page_title="Konstelasi Jordan",
-    page_icon="💫", # <-- Menggunakan emoji bintang sebagai logo/favicon tab browser
+    page_icon="💫",
     layout="wide"
 )
+
+from loading_screen import show_loading_screen
+
 # ==============================================================================
 # KONFIGURASI UTAMA & DAFTAR BINTANG KONSTELASI 10 KELOMPOK
 # ==============================================================================
@@ -392,25 +393,14 @@ components.html(f"""
         applyVisualMode(nextMode);
       }});
       document.body.appendChild(modeBtn);
-            if (!document.getElementById('jordan-mode-style')) {{
-        const st = document.createElement('style');
-        st.id = 'jordan-mode-style';
-        st.textContent = `
-          #jordan-mode-btn {
-            bottom: calc(env(safe-area-inset-bottom, 0px) + 72px) !important;
-            right: 20px !important;
-          }
-          @media (max-width: 768px) {
-            #jordan-mode-btn {
-              bottom: calc(env(safe-area-inset-bottom, 0px) + 82px) !important;
-              right: 14px !important;
-              padding: 6px 12px !important;
-              font-size: 11px !important;
-            }
-          }
-        `;
-        document.head.appendChild(st);
+
+      function updateModeBtnPos() {{
+        const isMob = (window.innerWidth || 1920) <= 768;
+        modeBtn.style.bottom = isMob ? '82px' : '72px';
+        modeBtn.style.right = isMob ? '14px' : '20px';
       }}
+      updateModeBtnPos();
+      window.addEventListener('resize', updateModeBtnPos, {{ passive: true }});
     }}
 
     // ===== 5. PAGE VISIBILITY =====
@@ -921,7 +911,7 @@ components.html(f"""
       pwin.cancelAnimationFrame(pwin.__jordanCosmicAnimId);
       pwin.__jordanCosmicAnimId = null;
     }}
-     ['jordan-meteor-canvas', 'jordan-cosmic-core', 'jordan-reduce-btn', 'jordan-mode-btn', 'jordan-mode-style', 'jordan-constellation-hud'].forEach(function(id) {{
+    ['jordan-meteor-canvas', 'jordan-cosmic-core', 'jordan-reduce-btn', 'jordan-mode-btn', 'jordan-mode-style', 'jordan-constellation-hud'].forEach(function(id) {{
       const el = pdoc.getElementById(id);
       if (el) el.remove();
     }});
