@@ -25,11 +25,19 @@ st.markdown("""
     .main .block-container,
     [data-testid="stMainBlockContainer"],
     [data-testid="stAppViewBlockContainer"] {
-        max-width: 960px !important;
+        max-width: 1120px !important;
         width: 100% !important;
         padding-top: 1.5rem !important;
         padding-left: 2rem !important;
         padding-right: 2rem !important;
+    }
+    @media (max-width: 640px) {
+        .main .block-container,
+        [data-testid="stMainBlockContainer"],
+        [data-testid="stAppViewBlockContainer"] {
+            padding-left: 0.65rem !important;
+            padding-right: 0.65rem !important;
+        }
     }
     @media (max-width: 640px) {
         .main .block-container,
@@ -211,9 +219,9 @@ st.markdown("""
 
 st.markdown("""
 <div class='arcade-hero'>
-    <div class='arcade-badge'>✦ STELLAR SANCTUARY • ASTRAL &amp; SEFIRAH CASTLE ARCHIVE ✦</div>
+    <div class='arcade-badge'>✦ STELLAR SANCTUARY • STAR STREAM &amp; SEFIRAH CASTLE ARCHIVE ✦</div>
     <h1 class='arcade-title'>🎮 JORDAN ASTRAL ARCADE</h1>
-    <p class='arcade-subtitle'>Lima game seputar Sains Data, dari kuis kating sampai adu bola</p>
+    <p class='arcade-subtitle'>Lima Skenario Konstelasi &amp; Simulasi Kecerdasan Buatan di Bawah Langit Kelompok 01 Jordan</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -267,32 +275,32 @@ active_game = option_menu(
 # DATA HELPER UNTUK GAME 1 (ANGGOTA JORDAN + 151 KATING HMSD + LEADERBOARD)
 # ==============================================================================
 ANGGOTA_JORDAN = [
-    {"nama": "Bintang Mahardika", "jabatan": "Pak Lurah Konstelasi Jordan", "departemen": "Konstelasi Jordan", "divisi": "Pimpinan Konstelasi", "nim": "125450106", "asal": "Lampung", "hobi": "Eksplorasi Sains Data", "foto": "https://drive.google.com/uc?export=view&id=1KPiPBu6qnc-7uAcvTlfVxfvw3P3ojjPY"},
-    {"nama": "Sayyidina Najwa Syahra", "jabatan": "Bu Lurah Konstelasi Jordan", "departemen": "Konstelasi Jordan", "divisi": "Pimpinan Konstelasi", "nim": "125450002", "asal": "Lampung", "hobi": "Membaca & Organisasi", "foto": "https://drive.google.com/uc?export=view&id=1TWNgccBsATeQyTnJdCx30lPXOk-lF0JP"},
-    {"nama": "Muhammad Rafli Raditya", "jabatan": "Anggota Konstelasi Jordan", "departemen": "Konstelasi Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450095", "asal": "Indonesia", "hobi": "Coding & AI Engineering", "foto": "https://drive.google.com/uc?export=view&id=1eRqS2Dm2UYeKTpmixAU5WmjmWMqqW1co"},
-    {"nama": "M Abyan Alghaniyyu", "jabatan": "Anggota Konstelasi Jordan", "departemen": "Konstelasi Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450104", "asal": "Indonesia", "hobi": "Sains Data & Teknologi", "foto": "https://drive.google.com/uc?export=view&id=1i9oSkeFZT1sL0SJmMWmZb4l_qPCxAV-4"},
-    {"nama": "Rahmad Bayu Ridho", "jabatan": "Anggota Konstelasi Jordan", "departemen": "Konstelasi Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450093", "asal": "Indonesia", "hobi": "Olahraga & Musik", "foto": ""},
-    {"nama": "Mojes Wijaya", "jabatan": "Anggota Konstelasi Jordan", "departemen": "Konstelasi Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450094", "asal": "Indonesia", "hobi": "Gaming & Analisis", "foto": "https://drive.google.com/uc?export=view&id=114wxxW8dyiUPBz87C3IyQJOyyl2M29kw"},
-    {"nama": "Iva Aulia Sofia", "jabatan": "Anggota Konstelasi Jordan", "departemen": "Konstelasi Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450062", "asal": "Indonesia", "hobi": "Desain & Kuliner", "foto": "https://drive.google.com/uc?export=view&id=1Kz0h3yq36ZDbBLIovx6MtEHTXlD_Nj5r"},
-    {"nama": "Astrit Aisya Rahmi", "jabatan": "Anggota Konstelasi Jordan", "departemen": "Konstelasi Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450036", "asal": "Indonesia", "hobi": "Fotografi & Musik", "foto": "https://drive.google.com/uc?export=view&id=1D-_sGW7jHoUpCms068h97XYi4fdLxHMc"},
-    {"nama": "Septi Widia Arini", "jabatan": "Anggota Konstelasi Jordan", "departemen": "Konstelasi Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450055", "asal": "Indonesia", "hobi": "Menulis & Membaca", "foto": ""},
-    {"nama": "Fildzah Cahya Kamila", "jabatan": "Anggota Konstelasi Jordan", "departemen": "Konstelasi Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450040", "asal": "Indonesia", "hobi": "Seni & Kreativitas", "foto": ""},
-    {"nama": "Lintar Abhinaya Putra Zulmi", "jabatan": "Anggota Konstelasi Jordan", "departemen": "Konstelasi Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450064", "asal": "Indonesia", "hobi": "Teknologi & Strategi", "foto": ""},
-    {"nama": "Ahda Nabiwa", "jabatan": "Anggota Konstelasi Jordan", "departemen": "Konstelasi Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450069", "asal": "Indonesia", "hobi": "Diskusi & Eksplorasi", "foto": ""},
-    {"nama": "Bening Arianti", "jabatan": "Anggota Konstelasi Jordan", "departemen": "Konstelasi Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450068", "asal": "Indonesia", "hobi": "Musik & Traveling", "foto": ""},
+    {"nama": "Bintang Mahardika", "jabatan": "Pak Lurah Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Pimpinan Kelompok", "nim": "125450106", "asal": "Lampung", "hobi": "Eksplorasi Sains Data", "foto": ""},
+    {"nama": "Sayyidina Najwa Syahra", "jabatan": "Bu Lurah Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Pimpinan Kelompok", "nim": "125450002", "asal": "Lampung", "hobi": "Membaca & Organisasi", "foto": ""},
+    {"nama": "Muhammad Rafli Raditya", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450095", "asal": "Indonesia", "hobi": "Coding & AI Engineering", "foto": "https://drive.google.com/uc?export=view&id=1eRqS2Dm2UYeKTpmixAU5WmjmWMqqW1co"},
+    {"nama": "M Abyan Alghaniyyu", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450104", "asal": "Indonesia", "hobi": "Sains Data & Teknologi", "foto": ""},
+    {"nama": "Rahmad Bayu Ridho", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450093", "asal": "Indonesia", "hobi": "Olahraga & Musik", "foto": ""},
+    {"nama": "Mojes Wijaya", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450094", "asal": "Indonesia", "hobi": "Gaming & Analisis", "foto": ""},
+    {"nama": "Iva Aulia Sofia", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450062", "asal": "Indonesia", "hobi": "Desain & Kuliner", "foto": ""},
+    {"nama": "Astrit Aisyah Rahmi", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450036", "asal": "Indonesia", "hobi": "Fotografi & Musik", "foto": ""},
+    {"nama": "Septi Widia Arin", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450055", "asal": "Indonesia", "hobi": "Menulis & Membaca", "foto": ""},
+    {"nama": "Fildzah Cahya Kamila", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450040", "asal": "Indonesia", "hobi": "Seni & Kreativitas", "foto": ""},
+    {"nama": "Lintar Abhinaya Putra Zulmi", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450064", "asal": "Indonesia", "hobi": "Teknologi & Strategi", "foto": ""},
+    {"nama": "Ahda Nabiwa", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450069", "asal": "Indonesia", "hobi": "Diskusi & Eksplorasi", "foto": ""},
+    {"nama": "Bening Arianti", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450068", "asal": "Indonesia", "hobi": "Musik & Traveling", "foto": ""},
 ]
 
 DAFTAR_KELOMPOK_RESMI = [
-    "Konstelasi Jordan",
-    "Konstelasi Jacobi",
-    "Konstelasi Tensor",
-    "Konstelasi Anova",
-    "Konstelasi Markov",
-    "Konstelasi Pandas",
-    "Konstelasi Poisson",
-    "Konstelasi COSVAL",
-    "Konstelasi Bayesian",
-    "Konstelasi Greedy",
+    "01 - Jordan",
+    "02 - Jacobi",
+    "03 - Tensor",
+    "04 - Anova",
+    "05 - Markov",
+    "06 - Pandas",
+    "07 - Poisson",
+    "08 - COSVAL",
+    "09 - Bayesian",
+    "10 - Greedy",
     "Kating / Pengurus HMSD",
 ]
 
@@ -379,100 +387,48 @@ def sanitize_player_name(raw_name: str) -> str:
     return cleaned
 
 
-def _extract_drive_id(url: str) -> str:
-    """Ambil ID file Google Drive dari berbagai format link (uc?id=, open?id=, /file/d/ID/, lh3/d/ID)."""
-    if not url:
-        return ""
-    url = url.strip()
-    for pat in (r"[?&]id=([\w-]{10,})", r"/file/d/([\w-]{10,})", r"/d/([\w-]{10,})"):
-        m = re.search(pat, url)
-        if m:
-            return m.group(1)
-    if re.fullmatch(r"[\w-]{20,}", url):
-        return url
-    return ""
-
-
-@st.cache_data(ttl=3600, max_entries=64, show_spinner=False)
+@st.cache_data(ttl=3600, show_spinner=False)
 def load_quiz_photo(url: str):
     """
     Unduh gambar dari Google Drive lewat server Python agar tidak diblokir browser (anti broken image).
-    Mencoba beberapa URL cadangan, karena format link Drive tiap orang bisa berbeda.
     """
     if not url or not url.strip():
         return None
-    gid = _extract_drive_id(url)
-    candidates = [url.strip()]
-    if gid:
-        candidates = [
-            f"https://drive.google.com/thumbnail?id={gid}&sz=w800",
-            f"https://lh3.googleusercontent.com/d/{gid}=w800",
-            f"https://drive.google.com/uc?export=view&id=gid".replace("gid", gid),
-        ]
-    for cand in candidates:
-        try:
-            resp = requests.get(cand, timeout=8)
-            if resp.status_code != 200 or "image" not in resp.headers.get("Content-Type", "image"):
-                continue
-            img = Image.open(BytesIO(resp.content))
-            img = ImageOps.exif_transpose(img)
-            img.thumbnail((380, 500))
-            return img
-        except Exception:
-            continue
-    return None
+    try:
+        resp = requests.get(url.strip(), timeout=8)
+        if resp.status_code != 200:
+            return None
+        img = Image.open(BytesIO(resp.content))
+        img = ImageOps.exif_transpose(img)
+        img = img.resize((260, 340))
+        return img
+    except Exception:
+        return None
 
 
-@st.cache_data(ttl=3600, max_entries=2, show_spinner=False)
+@st.cache_data(ttl=3600, show_spinner=False)
 def _load_kating_quiz_pool_cached(_mtime: float = 0.0):
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     statis_path = os.path.join(base_dir, "Data", "Data_statis", "data_anggota_hmsd_2026.json")
     if not os.path.exists(statis_path):
         statis_path = os.path.join(base_dir, "Data", "data_statis", "data_anggota_hmsd_2026.json")
-    dinamis_dir = os.path.join(base_dir, "Data", "Data_dinamis")
-    if not os.path.isdir(dinamis_dir):
-        dinamis_dir = os.path.join(base_dir, "Data", "data_dinamis")
+    dinamis_path = os.path.join(base_dir, "Data", "Data_dinamis", "Rafli.json")
+    if not os.path.exists(dinamis_path):
+        dinamis_path = os.path.join(base_dir, "Data", "data_dinamis", "rafli.json")
 
-    # Prioritas pertama: bintang.json (paling lengkap), lalu baru anggota lain sebagai cadangan
     foto_map = {}
-    skip_files = {"buku_kating.json", "leaderboard_jordan.json"}
-    priority_order = [
-        "bintang.json",
-        "astrit.json",
-        "bayu.json",
-        "bening.json",
-        "iva.json",
-        "mojes.json",
-        "abyan.json",
-        "najwa.json",
-        "lala.json",
-        "septi.json",
-        "biwa.json",
-        "lintar.json",
-        "rafli.json",
-    ]
-    if os.path.isdir(dinamis_dir):
-        existing_files = [
-            f for f in os.listdir(dinamis_dir)
-            if f.lower().endswith(".json") and f.lower() not in skip_files
-        ]
-        existing_files.sort(
-            key=lambda fn: priority_order.index(fn.lower()) if fn.lower() in priority_order else 999
-        )
-        for fname in existing_files:
-            try:
-                with open(os.path.join(dinamis_dir, fname), "r", encoding="utf-8") as f:
-                    d_json = json.load(f)
-                if not (d_json and isinstance(d_json, list)):
-                    continue
-                for block in d_json:
-                    for item in block.get("data", []):
-                        k = str(item.get("nama_kating", "")).strip().lower()
-                        gid = str(item.get("foto_massal_gdrive_id", "")).strip()
-                        if k and gid and k not in foto_map:
-                            foto_map[k] = f"https://drive.google.com/uc?export=view&id={gid}"
-            except Exception:
-                continue
+    if os.path.exists(dinamis_path):
+        try:
+            with open(dinamis_path, "r", encoding="utf-8") as f:
+                d_json = json.load(f)
+            if d_json and isinstance(d_json, list):
+                for item in d_json[0].get("data", []):
+                    k = str(item.get("nama_kating", "")).strip().lower()
+                    gid = str(item.get("foto_massal_gdrive_id", "")).strip()
+                    if k and gid:
+                        foto_map[k] = f"https://drive.google.com/uc?export=view&id={gid}"
+        except Exception:
+            pass
 
     pool = []
     if os.path.exists(statis_path):
@@ -508,6 +464,7 @@ def load_kating_quiz_pool():
     mt = os.path.getmtime(statis_path) if os.path.exists(statis_path) else 0.0
     return _load_kating_quiz_pool_cached(mt)
 
+
 def get_client_device_fp() -> str:
     """
     Buat sidik jari perangkat (Device Fingerprint SHA-256) dari kombinasi IP jaringan + spesifikasi browser/OS.
@@ -534,41 +491,63 @@ def get_client_device_fp() -> str:
 
 
 # ==============================================================================
-# SINKRONISASI LEADERBOARD CLOUD ABADI VIA GOOGLE SHEETS (APPS SCRIPT)
+# INTEGRASI GOOGLE APPS SCRIPT / GOOGLE SHEETS & NORMALISASI TANGGAL
 # ==============================================================================
-# URL Web App Google Apps Script. Prioritas:
-# 1. st.secrets["LEADERBOARD_APPSCRIPT_URL"] (jika disetel di Streamlit Cloud)
-# 2. Nilai LEADERBOARD_APPSCRIPT_URL di bawah ini
-# 3. Fallback otomatis ke penyimpanan JSON lokal (Data/Data_dinamis/leaderboard_jordan.json)
-LEADERBOARD_APPSCRIPT_URL = "https://script.google.com/macros/s/AKfycby6nEH8KWQuSLTnsQSJvUr3T_MISaRh-53TyBA4WTOOrHWqkiaDKRrWa9KPI8QNVLLJ/exec"
+LEADERBOARD_APPSCRIPT_URL = ""
 
 
 def _get_appscript_url() -> str:
+    """Ambil URL Google Apps Script dari st.secrets atau variabel lokal."""
     try:
         if "LEADERBOARD_APPSCRIPT_URL" in st.secrets:
-            return str(st.secrets["LEADERBOARD_APPSCRIPT_URL"]).strip()
+            u = st.secrets["LEADERBOARD_APPSCRIPT_URL"].strip()
+            if u.startswith("http"):
+                return u
     except Exception:
         pass
-    return LEADERBOARD_APPSCRIPT_URL.strip()
+    if LEADERBOARD_APPSCRIPT_URL and LEADERBOARD_APPSCRIPT_URL.strip().startswith("http"):
+        return LEADERBOARD_APPSCRIPT_URL.strip()
+    return ""
 
 
-@st.cache_data(ttl=35, show_spinner=False)
-def _fetch_remote_leaderboard(url: str):
-    """Ambil data leaderboard dari Google Sheets via Apps Script Web App dengan timeout cepat."""
-    if not url:
-        return None
-    try:
-        resp = requests.get(url, timeout=3.8)
-        if resp.status_code == 200:
-            js = resp.json()
-            if isinstance(js, dict) and js.get("status") == "success":
-                entries = js.get("entries", [])
-                if isinstance(entries, list) and entries:
-                    return entries[:50]
-    except Exception:
-        pass
-    return None
+def _normalize_month_str(raw_val) -> str:
+    """Mengubah format bulan apa pun (Date object string Google Sheets, '2026-10', 'Oct 2026', dll.) menjadi 'YYYY-MM'."""
+    if not raw_val:
+        return ""
+    s = str(raw_val).strip()
+    m = re.search(r"(\d{4})[-/.](\d{1,2})", s)
+    if m:
+        return f"{m.group(1)}-{int(m.group(2)):02d}"
+    m_mo = re.search(r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|Agu|Okt|Des)", s, re.IGNORECASE)
+    m_yr = re.search(r"\b(20\d{2})\b", s)
+    if m_mo and m_yr:
+        month_map = {
+            "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "mei": 5,
+            "jun": 6, "jul": 7, "aug": 8, "agu": 8, "sep": 9, "oct": 10,
+            "okt": 10, "nov": 11, "dec": 12, "des": 12,
+        }
+        mo_num = month_map.get(m_mo.group(1).lower()[:3], 10)
+        return f"{m_yr.group(1)}-{mo_num:02d}"
+    return s[:7]
 
+
+def _format_clean_date(raw_val) -> str:
+    """Format string tanggal apa pun jadi format ringkas '26 Okt 2026'."""
+    if not raw_val:
+        return ""
+    s = str(raw_val).strip()
+    m1 = re.search(r"(\d{1,2})\s+([A-Za-z]+)\s+(20\d{2})", s)
+    if m1:
+        return f"{int(m1.group(1))} {m1.group(2)[:3].title()} {m1.group(3)}"
+    m2 = re.search(r"([A-Za-z]{3,})\s+(\d{1,2})\s+(20\d{2})", s)
+    if m2:
+        return f"{int(m2.group(2))} {m2.group(1)[:3].title()} {m2.group(3)}"
+    m3 = re.search(r"(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})", s)
+    if m3:
+        mo_names = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des']
+        mo_idx = max(0, min(11, int(m3.group(2)) - 1))
+        return f"{int(m3.group(3))} {mo_names[mo_idx]} {m3.group(1)}"
+    return s[:12]
 
 @st.cache_resource
 def _get_leaderboard_store():
@@ -580,10 +559,10 @@ def _get_leaderboard_store():
     lb_file = os.path.join(base_dir, "Data", "Data_dinamis", "leaderboard_jordan.json")
 
     default_entries = [
-        {"nama": "Bintang Mahardika", "kelompok": "Konstelasi Jordan", "kategori": "kader", "skor": 540, "streak": 6, "bulan": "2026-10", "tanggal": "18 Okt 2026", "protected": True},
-        {"nama": "Sayyidina Najwa", "kelompok": "Konstelasi Jordan", "kategori": "kader", "skor": 510, "streak": 5, "bulan": "2026-10", "tanggal": "18 Okt 2026", "protected": True},
-        {"nama": "M Rafli Raditya", "kelompok": "Konstelasi Jordan", "kategori": "kader", "skor": 480, "streak": 5, "bulan": "2026-10", "tanggal": "18 Okt 2026", "protected": True},
-        {"nama": "M Abyan Alghaniyyu", "kelompok": "Konstelasi Jordan", "kategori": "kader", "skor": 410, "streak": 4, "bulan": "2026-10", "tanggal": "18 Okt 2026", "protected": True},
+        {"nama": "Bintang Mahardika", "kelompok": "Konstelasi Jordan", "kategori": "player", "skor": 540, "streak": 6, "bulan": "2026-10", "tanggal": "18 Okt 2026", "protected": True},
+        {"nama": "Sayyidina Najwa", "kelompok": "Konstelasi Jordan", "kategori": "player", "skor": 510, "streak": 5, "bulan": "2026-10", "tanggal": "18 Okt 2026", "protected": True},
+        {"nama": "M Rafli Raditya", "kelompok": "Konstelasi Jordan", "kategori": "player", "skor": 480, "streak": 5, "bulan": "2026-10", "tanggal": "18 Okt 2026", "protected": True},
+        {"nama": "M Abyan Alghaniyyu", "kelompok": "Konstelasi Jordan", "kategori": "player", "skor": 410, "streak": 4, "bulan": "2026-10", "tanggal": "18 Okt 2026", "protected": True},
         {"nama": "Kak Yollanda A.", "kelompok": "Kating / Pengurus HMSD", "kategori": "kating", "skor": 720, "streak": 8, "bulan": "2026-10", "tanggal": "18 Okt 2026", "protected": True},
     ]
 
@@ -593,7 +572,7 @@ def _get_leaderboard_store():
             with open(lb_file, "r", encoding="utf-8") as f:
                 loaded = json.load(f)
             if isinstance(loaded, list) and loaded:
-                return {"entries": loaded[:50], "path": lb_file, "lock": lock, "rate_map": {}}
+                return {"entries": loaded[:40], "path": lb_file, "lock": lock, "rate_map": {}}
         except Exception:
             pass
 
@@ -608,21 +587,6 @@ def _get_leaderboard_store():
 
 def get_global_leaderboard():
     store = _get_leaderboard_store()
-    remote_url = _get_appscript_url()
-
-    # 1. Sinkronisasi dari Google Sheets jika URL sudah dikonfigurasi
-    if remote_url:
-        cloud_entries = _fetch_remote_leaderboard(remote_url)
-        if cloud_entries:
-            store["entries"] = cloud_entries
-            try:
-                with open(store["path"], "w", encoding="utf-8") as f:
-                    json.dump(cloud_entries, f, ensure_ascii=False, indent=2)
-            except Exception:
-                pass
-            return store
-
-    # 2. Fallback lokal dari file JSON
     path = store["path"]
     try:
         mt = os.path.getmtime(path) if os.path.exists(path) else 0.0
@@ -630,7 +594,7 @@ def get_global_leaderboard():
             with open(path, "r", encoding="utf-8") as f:
                 loaded = json.load(f)
             if isinstance(loaded, list) and loaded:
-                store["entries"] = loaded[:50]
+                store["entries"] = loaded[:40]
                 store["mtime"] = mt
     except Exception:
         pass
@@ -645,7 +609,7 @@ def save_score_to_leaderboard(nama: str, kelompok: str, skor: int, streak: int) 
         return False, "❌ Nama terdeteksi mengandung kata tidak pantas oleh filter bahasa (GitHub/API). Gunakan nama yang sopan."
 
     device_fp = get_client_device_fp()
-    kategori = "kating" if "Kating" in kelompok else "kader"
+    kategori = "kating" if any(w in kelompok.lower() for w in ("kating", "senior", "mentor")) else "player"
     skor = max(0, int(skor))
     streak = max(0, int(streak))
 
@@ -668,7 +632,8 @@ def save_score_to_leaderboard(nama: str, kelompok: str, skor: int, streak: int) 
         # 1 Perangkat (device_fp) atau Nama+Konstelasi yang sama = 1 Slot di Leaderboard
         matched_item = None
         for item in entries:
-            if item.get("kategori", "kader") != kategori:
+            item_cat = "kating" if any(w in str(item.get("kategori", "")).lower() for w in ("kating", "senior", "mentor")) else "player"
+            if item_cat != kategori:
                 continue
             same_device = bool(item.get("device_fp") and item.get("device_fp") == device_fp)
             same_name = (item.get("nama", "").lower() == clean_name.lower() and item.get("kelompok") == kelompok)
@@ -692,9 +657,8 @@ def save_score_to_leaderboard(nama: str, kelompok: str, skor: int, streak: int) 
             matched_item["tanggal"] = tanggal_str
             matched_item["device_fp"] = device_fp
             msg = f"🔥 **Rekor Baru!** Skor perangkatmu diperbarui dari {old_score} pts menjadi **{skor} pts**."
-            saved_entry = matched_item
         else:
-            saved_entry = {
+            entries.append({
                 "nama": clean_name,
                 "kelompok": kelompok,
                 "kategori": kategori,
@@ -703,8 +667,7 @@ def save_score_to_leaderboard(nama: str, kelompok: str, skor: int, streak: int) 
                 "bulan": bulan_str,
                 "tanggal": tanggal_str,
                 "device_fp": device_fp,
-            }
-            entries.append(saved_entry)
+            })
             msg = "🎉 Skor kamu berhasil diabadikan ke Prasasti Leaderboard!"
 
         rate_map[device_fp] = now_ts
@@ -712,7 +675,7 @@ def save_score_to_leaderboard(nama: str, kelompok: str, skor: int, streak: int) 
             rate_map.clear()
 
         entries.sort(key=lambda x: x.get("skor", 0), reverse=True)
-        del entries[50:]
+        del entries[40:]
 
         try:
             with open(store["path"], "w", encoding="utf-8") as f:
@@ -721,14 +684,15 @@ def save_score_to_leaderboard(nama: str, kelompok: str, skor: int, streak: int) 
         except Exception:
             pass
 
-        # Kirim update ke Google Sheets secara background/non-blocking jika URL aktif
+        # Kirim update ke Google Sheets secara background thread agar tidak menghambat respons Streamlit
         remote_url = _get_appscript_url()
         if remote_url:
-            try:
-                requests.post(remote_url, json={"entry": saved_entry}, timeout=4.5)
-                _fetch_remote_leaderboard.clear()
-            except Exception:
-                pass
+            def _bg_sync(url, item):
+                try:
+                    requests.post(url, json={"entry": item}, timeout=5.0)
+                except Exception:
+                    pass
+            threading.Thread(target=_bg_sync, args=(remote_url, saved_entry), daemon=True).start()
 
         return True, msg
 
@@ -738,7 +702,7 @@ def save_score_to_leaderboard(nama: str, kelompok: str, skor: int, streak: int) 
 # ==============================================================================
 if active_game == "Survival Quiz":
     st.markdown("### 🔢 Jordan Survival Quiz: Tiga Petunjuk Rasi Bintang")
-    st.caption("Kamu punya **3 nyawa** (bertahanlah sejauh mungkin!). Tiap soal bernilai dasar **100 poin** (+ **Bonus Kecepatan** hingga **+25 poin** & **Bonus Streak**), tapi membuka Clue 2 atau Clue 3 memotong **30 poin**.")
+    st.caption("Kamu punya **3 nyawa** (bertahanlah sejauh mungkin!). Tiap soal bernilai dasar **100 poin** (+ **Bonus Kecepatan** hingga **+25 poin** & **Bonus Streak**), tapi membuka Clue 2 memotong **30 poin** dan Clue 3 (Foto) memotong **45 poin**.")
 
     c_mode1, c_mode2 = st.columns([2, 1])
     with c_mode1:
@@ -823,8 +787,8 @@ if active_game == "Survival Quiz":
     c2_open = st.session_state.surv_clue2_open
     c3_open = st.session_state.surv_clue3_open
 
-    penalty = (30 if c2_open else 0) + (30 if c3_open else 0)
-    current_question_pts = max(40, 100 - penalty)
+    penalty = (30 if c2_open else 0) + (45 if c3_open else 0)
+    current_question_pts = max(25, 100 - penalty)
     streak_bonus = min(45, st.session_state.surv_streak * 9)
 
     st.markdown(f"""
@@ -876,11 +840,11 @@ if active_game == "Survival Quiz":
             </div>
             """, unsafe_allow_html=True)
 
-        # CLUE 3: Foto Profil (-30 Poin)
+        # CLUE 3: Foto Profil (-45 Poin)
         if c3_open:
             st.markdown("""
             <div class='clue-stage-card' style='border-left-color:#00e676;'>
-                <div class='clue-title' style='color:#00e676;'>📸 CLUE TAHAP 3 (TERBUKA • POTONGAN -30 POIN)</div>
+                <div class='clue-title' style='color:#00e676;'>📸 CLUE TAHAP 3 (TERBUKA • POTONGAN -45 POIN)</div>
             </div>
             """, unsafe_allow_html=True)
             foto_url = q.get("foto", "")
@@ -898,7 +862,7 @@ if active_game == "Survival Quiz":
         else:
             st.markdown("""
             <div class='clue-stage-locked'>
-                🔒 <b>Clue Tahap 3 (Foto Profil)</b> masih terkunci. Buka jika ingin melihat fotonya (-30 Poin).
+                🔒 <b>Clue Tahap 3 (Foto Profil)</b> masih terkunci. Buka jika ingin melihat fotonya (-45 Poin).
             </div>
             """, unsafe_allow_html=True)
 
@@ -912,7 +876,7 @@ if active_game == "Survival Quiz":
                         st.rerun()
             with b_col2:
                 if not c3_open:
-                    if st.button("📸 Buka Clue 3: Foto Profil (-30 Poin)", use_container_width=True):
+                    if st.button("📸 Buka Clue 3: Foto Profil (-45 Poin)", use_container_width=True):
                         st.session_state.surv_clue3_open = True
                         st.rerun()
 
@@ -1003,66 +967,73 @@ if active_game == "Survival Quiz":
                     st.session_state.surv_lb_feedback = (ok_save, msg_save)
                     if ok_save:
                         st.session_state.surv_saved = True
-                    st.rerun()
+                    st.rerun(scope="fragment")
 
         if st.button("🔄 Mulai Survival Baru (Reset 3 Nyawa)", type="primary", use_container_width=True):
             del st.session_state["surv_lives"]
-            st.rerun()
+            st.rerun(scope="app")
 
-    # ===== SEKSI LEADERBOARD DI BAWAH (LEBAR PENUH & LEGA) =====
-    st.markdown("---")
-    st.markdown("### 🏆 Prasasti Skor Jordan (Leaderboard)")
-    st.caption(
-        "Dilengkapi **Filter Anti-Kata Kasar** dan dipisah antara **Divisi Kader (Maba)** vs **Hall of Fame Kating**."
-    )
-    lb_period = st.radio(
-        "Periode Papan Skor:",
-        ["🏛️ Prasasti Abadi (All-Time Artefak)", "🔥 Musim Bulan Ini (Monthly)"],
-        horizontal=True,
-    )
-    lb_div = st.tabs(["⭐ Divisi Kader (10 Konstelasi)", "👑 Hall of Fame Kating"])
+    # ===== SEKSI LEADERBOARD DI BAWAH (ISOLASI FRAGMENT AGAR CEPAT & TANPA RELOAD HALAMAN) =====
+    @st.fragment
+    def _render_leaderboard_section():
+        st.markdown("---")
+        st.markdown("### 🏆 Prasasti Skor Jordan (Leaderboard)")
+        st.caption("Papan peringkat penjelajah bintang Konstelasi Jordan.")
+        lb_period = st.radio(
+            "Periode Papan Skor:",
+            ["🏛️ Prasasti Abadi (All-Time Artefak)", "🔥 Musim Bulan Ini (Monthly)"],
+            horizontal=True,
+            key="lb_period_radio"
+        )
+        lb_div = st.tabs(["🎮 Player (10 Konstelasi)", "👑 Senior / Mentor"])
 
-    store = get_global_leaderboard()
-    now_month = datetime.now().strftime("%Y-%m")
-    raw_entries = store["entries"]
-    if "Bulan Ini" in lb_period:
-        raw_entries = [e for e in raw_entries if e.get("bulan") == now_month]
+        store = get_global_leaderboard()
+        now_month = datetime.now().strftime("%Y-%m")
+        raw_entries = store["entries"]
+        if "Bulan Ini" in lb_period:
+            raw_entries = [e for e in raw_entries if _normalize_month_str(e.get("bulan")) == now_month]
 
-    with lb_div[0]:
-        kader_list = [e for e in raw_entries if e.get("kategori", "kader") == "kader"][:10]
-        if not kader_list:
-            st.info("Belum ada skor kader pada periode ini. Jadilah yang pertama!")
-        else:
-            rows_html = ""
-            for idx, item in enumerate(kader_list, 1):
-                medal = "🥇" if idx == 1 else ("🥈" if idx == 2 else ("🥉" if idx == 3 else f"#{idx:02d}"))
-                rows_html += (
-                    f"<div class='lb-row'>"
-                    f"<span class='lb-rank'>{medal}</span>"
-                    f"<span class='lb-name'>{item['nama']} <span style='font-size:0.78em;color:#78909c;margin-left:6px;'>({item.get('tanggal','')})</span></span>"
-                    f"<span class='lb-group'>{item['kelompok']}</span>"
-                    f"<span class='lb-score'>{item['skor']} pts</span>"
-                    f"</div>"
-                )
-            st.markdown(f"<div class='lb-card'>{rows_html}</div>", unsafe_allow_html=True)
+        with lb_div[0]:
+            player_list = [e for e in raw_entries if e.get("kategori", "player") in ("player", "kader")][:10]
+            if not player_list:
+                st.info("Belum ada skor Player pada periode ini. Jadilah yang pertama!")
+            else:
+                rows_html = ""
+                for idx, item in enumerate(player_list, 1):
+                    medal = "🥇" if idx == 1 else ("🥈" if idx == 2 else ("🥉" if idx == 3 else f"#{idx:02d}"))
+                    clean_tgl = _format_clean_date(item.get("tanggal", ""))
+                    tgl_html = f"<span style='font-size:0.78em;color:#78909c;margin-left:6px;'>({clean_tgl})</span>" if clean_tgl else ""
+                    rows_html += (
+                        f"<div class='lb-row'>"
+                        f"<span class='lb-rank'>{medal}</span>"
+                        f"<span class='lb-name'>{item['nama']} {tgl_html}</span>"
+                        f"<span class='lb-group'>{item['kelompok']}</span>"
+                        f"<span class='lb-score'>{item['skor']} pts</span>"
+                        f"</div>"
+                    )
+                st.markdown(f"<div class='lb-card'>{rows_html}</div>", unsafe_allow_html=True)
 
-    with lb_div[1]:
-        kating_list = [e for e in raw_entries if e.get("kategori") == "kating"][:10]
-        if not kating_list:
-            st.info("Belum ada Kating yang mencatatkan skor di periode ini.")
-        else:
-            rows_html = ""
-            for idx, item in enumerate(kating_list, 1):
-                medal = "👑" if idx == 1 else f"#{idx:02d}"
-                rows_html += (
-                    f"<div class='lb-row'>"
-                    f"<span class='lb-rank'>{medal}</span>"
-                    f"<span class='lb-name'>{item['nama']} <span style='font-size:0.78em;color:#78909c;margin-left:6px;'>({item.get('tanggal','')})</span></span>"
-                    f"<span class='lb-group'>Pengurus HMSD</span>"
-                    f"<span class='lb-score'>{item['skor']} pts</span>"
-                    f"</div>"
-                )
-            st.markdown(f"<div class='lb-card'>{rows_html}</div>", unsafe_allow_html=True)
+        with lb_div[1]:
+            kating_list = [e for e in raw_entries if e.get("kategori") in ("kating", "senior", "mentor")][:10]
+            if not kating_list:
+                st.info("Belum ada Senior / Mentor yang mencatatkan skor di periode ini.")
+            else:
+                rows_html = ""
+                for idx, item in enumerate(kating_list, 1):
+                    medal = "👑" if idx == 1 else f"#{idx:02d}"
+                    clean_tgl = _format_clean_date(item.get("tanggal", ""))
+                    tgl_html = f"<span style='font-size:0.78em;color:#78909c;margin-left:6px;'>({clean_tgl})</span>" if clean_tgl else ""
+                    rows_html += (
+                        f"<div class='lb-row'>"
+                        f"<span class='lb-rank'>{medal}</span>"
+                        f"<span class='lb-name'>{item['nama']} {tgl_html}</span>"
+                        f"<span class='lb-group'>{item.get('kelompok', 'Pengurus HMSD')}</span>"
+                        f"<span class='lb-score'>{item['skor']} pts</span>"
+                        f"</div>"
+                    )
+                st.markdown(f"<div class='lb-card'>{rows_html}</div>", unsafe_allow_html=True)
+
+    _render_leaderboard_section()
 
 
 # ==============================================================================
@@ -1485,9 +1456,10 @@ elif active_game == "Neon Tactics AI":
 </script>
 </body>
 </html>"""
-    components.html(ttt_html, height=500, scrolling=True)
+    components.html(ttt_html, height=480, scrolling=False)
 
 
+# ==============================================================================
 
 # ==============================================================================
 # GAME 3-5: HTML DIPISAH KE FOLDER tools/arcade/ AGAR KREASI.py TETAP RAPI
@@ -1495,30 +1467,28 @@ elif active_game == "Neon Tactics AI":
 ARCADE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "arcade")
 
 
-@st.cache_data(ttl=86400, max_entries=8, show_spinner=False)
-def _read_arcade_html_cached(path: str, mtime: float) -> str:
-    with open(path, "r", encoding="utf-8") as f:
-        return f.read()
-
-
 def load_arcade_html(filename: str) -> str:
     path = os.path.join(ARCADE_DIR, filename)
     try:
-        return _read_arcade_html_cached(path, os.path.getmtime(path))
+        with open(path, "r", encoding="utf-8") as f:
+            return f.read()
     except Exception as e:
         return f"<div style='color:#ff8a80;font-family:sans-serif;padding:20px'>Gagal memuat {filename}: {e}</div>"
 
 
-# Wajah bola untuk Konstelasi Jordan (dan override lokal opsional di template_code/assets/faces/<nama>.jpg)
+# Wajah bola. Kunci = nama bola di game. Nilai = judul artikel Wikipedia ATAU path file lokal.
+# DEBUG: kalau wajah tidak muncul, taruh foto manual di template_code/assets/faces/<nama>.jpg (contoh: jordan.jpg)
 BALL_FACE_SOURCES = {
     "Jordan": "Camille_Jordan",
+    "Jacobi": "Carl_Gustav_Jacob_Jacobi",
+    "Poisson": "Siméon_Denis_Poisson",
+    "Gauss": "Carl_Friedrich_Gauss",
+    "Lagrange": "Joseph-Louis_Lagrange",
+    "Laplace": "Pierre-Simon_Laplace",
+    "Taylor": "Brook_Taylor",
+    "Euler": "Leonhard_Euler",
+    "Bayes": "Thomas_Bayes",
 }
-LOCAL_FACE_CANDIDATES = [
-    "Jordan", "Jacobi", "Tensor", "Anova", "Markov",
-    "Pandas", "Poisson", "COSVAL", "Bayesian", "Greedy",
-    "Bintang", "Najwa", "Rafli", "Abyan", "Bayu", "Mojes",
-    "Iva", "Astrit", "Septi", "Fildzah", "Lintar", "Biwa", "Bening",
-]
 
 
 def _img_to_face_b64(img, top_bias: float = 0.12) -> str:
@@ -1541,7 +1511,8 @@ def load_ball_faces() -> dict:
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     local_dir = os.path.join(base_dir, "assets", "faces")
     headers = {"User-Agent": "JordanArcade/1.0 (Buku Kating HMSD ITERA; edukasi)"}
-    for name in LOCAL_FACE_CANDIDATES:
+    names = list(BALL_FACE_SOURCES.keys()) + ["Rafli"]
+    for name in names:
         # 1) Prioritas: file lokal assets/faces/<nama>.jpg|png
         for ext in (".jpg", ".jpeg", ".png", ".webp"):
             p = os.path.join(local_dir, name.lower() + ext)
@@ -1551,10 +1522,16 @@ def load_ball_faces() -> dict:
                 except Exception:
                     pass
                 break
-        if name in faces or name not in BALL_FACE_SOURCES:
+        if name in faces:
             continue
         try:
-            # 2) Wikipedia: ambil potret untuk Konstelasi Jordan
+            if name == "Rafli":
+                foto = next((m["foto"] for m in ANGGOTA_JORDAN if m["nama"].startswith("Muhammad Rafli")), "")
+                img = load_quiz_photo(foto) if foto else None
+                if img is not None:
+                    faces[name] = _img_to_face_b64(img, top_bias=0.05)
+                continue
+            # 2) Wikipedia: ambil thumbnail potret matematikawan
             title = BALL_FACE_SOURCES[name]
             meta = requests.get(f"https://en.wikipedia.org/api/rest_v1/page/summary/{title}", headers=headers, timeout=8).json()
             src = (meta.get("thumbnail") or meta.get("originalimage") or {}).get("source")
@@ -1569,25 +1546,36 @@ def load_ball_faces() -> dict:
 
 
 if active_game == "Pathfinding Race":
-    st.markdown("### 🧭 Astral Pathfinding: Adu Algoritma Pencarian")
-    st.caption("Pilih dua algoritma, lalu adu di peta yang sama. Bandingkan **Blind Search** (BFS, DFS, UCS) dengan **Informed Search** (Greedy, A*). Atur kecepatan lewat slider atau jalankan per langkah dengan tombol **Step**.")
-    components.html(load_arcade_html("game3_pathfinding.html"), height=880, scrolling=True)
+    st.markdown("### 🧭 Pathfinding Lab: Adu Algoritma Pencarian")
+    st.caption(
+        "Pilih dua algoritma lalu adu di peta yang sama. Bandingkan **Blind Search** (BFS, DFS, UCS) dengan "
+        "**Informed Search** (Greedy, A*) di peta graf kampus, medan berbobot, jebakan U, dan labirin. "
+        "Atur kecepatan dengan slider atau jalankan per langkah dengan tombol **Step**."
+    )
+    components.html(load_arcade_html("game3_pathfinding.html"), height=860, scrolling=False)
 
 elif active_game == "Gauss-Jordan Puzzle":
-    st.markdown("### 🧮 Gauss-Jordan Astral Cipher: Menaklukkan Matriks")
-    st.caption("Ubah matriks jadi matriks identitas dengan tiga operasi baris elementer, lalu baca solusi SPL-nya. Makin sedikit langkah dan hint, makin tinggi skornya.")
-    components.html(load_arcade_html("game4_gauss_jordan.html"), height=720, scrolling=True)
+    st.markdown("### 🧮 Gauss-Jordan Puzzle: Jordan Menaklukkan Matriks")
+    st.caption(
+        "Kelompok Jordan, metode Gauss-**Jordan**. Pakai tiga operasi baris elementer untuk mengubah matriks "
+        "menjadi identitas dan temukan solusi SPL. Makin sedikit langkah dan hint, makin tinggi skornya."
+    )
+    components.html(load_arcade_html("game4_gauss_jordan.html"), height=700, scrolling=False)
 
 elif active_game == "Ball Battle Arena":
-    st.markdown("### ⚡ Clash of Constellations: Race & Fight Arena")
-    st.caption("**🏁 Race**: balapan bola lewat 3 lintasan. **⚔️ Fight**: pertarungan tanpa gravitasi antar 10 konstelasi atau 13 bintang Jordan, mode Royale atau Duel 1v1 pakai senjata.")
-    with st.spinner("Memanggil proyeksi astral para konstelasi..."):
+    st.markdown("### ⚡ Ball Arena: Race & Fight")
+    st.caption(
+        "**🏁 Race**: balapan bola jatuh di 3 lintasan. **⚔️ Fight**: tanpa gravitasi, bola memantul sesuai pola. "
+        "Pilih *Battle Royale* (power-up) atau *Duel 1v1* (senjata yang makin kuat tiap kena). "
+        "Peserta custom disimpan hanya di perangkatmu."
+    )
+    with st.spinner("Menyiapkan wajah para peserta..."):
         faces = load_ball_faces()
     html = load_arcade_html("game5_ball_arena.html").replace("__FACES_JSON__", json.dumps(faces))
-    components.html(html, height=920, scrolling=True)
+    components.html(html, height=900, scrolling=False)
     missing = [n for n in BALL_FACE_SOURCES if n not in faces]
     if missing:
         st.caption(
             "ℹ️ Wajah belum termuat untuk: " + ", ".join(missing)
-            + ". Bola tetap tampil dengan kode konstelasi. Untuk debug/override manual, taruh foto di `assets/faces/jordan.jpg`."
+            + ". Bola tetap tampil dengan kode nama. Untuk memaksa, taruh foto di `assets/faces/<nama>.jpg`."
         )
