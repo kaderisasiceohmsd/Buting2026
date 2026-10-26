@@ -21,8 +21,8 @@ import re
 FOTO_MENTOR = "https://drive.google.com/uc?export=view&id=1XSOLkGiiUzZG4DWbOTatlkscwcaFhrty"
 NAMA_MENTOR  = "Kak Yollanda Agustina"
 
-DURASI_MINIMUM  = 3.2 # detik (optimal: animasi planet terasa mulus & tidak membuat pengguna menunggu lama)
-DURASI_MAKSIMUM = 5.0 # detik (batas maksimal preload agar transisi ke web tetap responsif)
+DURASI_MINIMUM  = 5.0
+DURASI_MAKSIMUM = 10
 
 # Foto 13 anggota: bebas isi link Google Drive (format apa pun) atau nama file lokal.
 # Jika dikosongkan (""), otomatis memakai avatar inisial sesuai warna orbitnya.
