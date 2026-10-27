@@ -78,7 +78,7 @@
     <div class="grp">
       <div class="f"><label>Kecepatan <span id="spdT">1.0x</span></label><input type="range" id="spd" min="0.5" max="2" step="0.1" value="1"></div>
       <button id="editBtn">✏️ Edit Custom</button>
-      <button id="resetBtn">🔄 Reset</button>
+      <button id="resetBtn">🔄 Acak / Reset</button>
       <button id="goBtn" class="go">🚀 MULAI!</button>
     </div>
   </div>
@@ -244,7 +244,7 @@ function buildTrack(type){
   return { segs, pegs, spins, finishY, H: finishY+260 };
 }
 
-// ======================= PREPARE =======================
+// ======================= PREPARE (POSISI ACAK TANPA LAG) =======================
 function makeBall(p, idx, r){ return { p, idx, name:p.name, short:(p.short||p.name.slice(0,2)).toUpperCase(), color:p.color||"#ffd740", x:0, y:0, vx:0, vy:0, r, hp:100, maxhp:100, alive:true, fin:false, stuck:0, fx:{}, cd:{}, wp:null, bleedT:0 }; }
 function fightFree(x,y,r){
   if (world.bumpers.some(q=>Math.hypot(q.x-x,q.y-y)<q.r+r+10)) return false;
@@ -259,7 +259,23 @@ function prepare(){
   if (mode==="race"){
     world = buildTrack($("track").value);
     const n=list.length, r=n>10?15:17;
-    list.forEach((p,i)=>{ const b=makeBall(p,i,r); const cols=Math.min(n,10), row=Math.floor(i/cols), col=i%cols; const xMax = $("track").value==="zigzag" ? VW-170 : VW-50; b.x=50+col*((xMax-50)/Math.max(1,cols-1)); b.y=70+row*44; b.vx=rnd(-40,40); balls.push(b); });
+    // Fisher-Yates shuffle pada slot posisi start agar setiap bola selalu diacak posisinya
+    const slots = Array.from({length: n}, (_, k) => k);
+    for (let k = n - 1; k > 0; k--) {
+      const j = Math.floor(Math.random() * (k + 1));
+      const tmp = slots[k]; slots[k] = slots[j]; slots[j] = tmp;
+    }
+    list.forEach((p,i)=>{
+      const b=makeBall(p,i,r);
+      const s=slots[i];
+      const cols=Math.min(n,10), row=Math.floor(s/cols), col=s%cols;
+      const xMax = $("track").value==="zigzag" ? VW-170 : VW-50;
+      const baseX = 50+col*((xMax-50)/Math.max(1,cols-1));
+      b.x=Math.max(b.r+8, Math.min(VW-b.r-8, baseX + rnd(-8,8)));
+      b.y=70+row*44 + rnd(-5,5);
+      b.vx=rnd(-55,55);
+      balls.push(b);
+    });
   } else {
     const fm = $("fmap").value, duel = $("sub").value==="duel";
     world = { map: fm, inset: 0, arrows: [], waves: [], chains: [], zaps: [], bumpers: [] };
@@ -272,10 +288,13 @@ function prepare(){
         const a=rnd(0,6.28); b.vx=Math.cos(a)*150; b.vy=Math.sin(a)*150; balls.push(b); });
     } else {
       const i1=+$("p1").value, i2=+$("p2").value===i1 ? (i1+1)%list.length : +$("p2").value;
-      [[i1,"w1",VW*.22],[i2,"w2",VW*.78]].forEach(([pi,wsel,x],k)=>{
-        const b=makeBall(list[pi],pi,40); b.x=x; b.y=VH/2+(k?-25:25); const a=rnd(-.6,.6)+(k?Math.PI:0); b.vx=Math.cos(a)*160; b.vy=Math.sin(a)*160;
+      const swapSide = Math.random() < 0.5;
+      const xA = swapSide ? VW*.78 : VW*.22;
+      const xB = swapSide ? VW*.22 : VW*.78;
+      [[i1,"w1",xA,swapSide?1:0],[i2,"w2",xB,swapSide?0:1]].forEach(([pi,wsel,x,side],k)=>{
+        const b=makeBall(list[pi],pi,40); b.x=x+rnd(-15,15); b.y=VH/2+rnd(-65,65); const a=rnd(-.6,.6)+(side?Math.PI:0); b.vx=Math.cos(a)*160; b.vy=Math.sin(a)*160;
         let wk=$(wsel).value; if (wk==="acak") { const ks=Object.keys(WEAPONS); wk=ks[Math.floor(Math.random()*ks.length)]; }
-        b.wp={key:wk, ...WEAPONS[wk], ang:k?Math.PI:0, dir:k?-1:1}; b.skillCd=2.8; b.shotCd=1.0; balls.push(b);
+        b.wp={key:wk, ...WEAPONS[wk], ang:side?Math.PI:0, dir:side?-1:1}; b.skillCd=2.8; b.shotCd=1.0; balls.push(b);
       });
     }
   }
@@ -564,7 +583,7 @@ function draw(){
   ctx.save(); if (shake>.2) ctx.translate(rnd(-shake,shake), rnd(-shake,shake));
   if (mode==="race") drawRace(); else drawFight();
   ctx.restore();
-  if (phase==="setup") overlay("⏸️ SIAP DI GARIS START", "Atur mode dan peserta, lalu tekan 🚀 MULAI!");
+  if (phase==="setup") overlay("⏸️ SIAP DI GARIS START (POSISI ACAK)", "Atur mode dan peserta, lalu tekan 🚀 MULAI!");
   else if (phase==="over" && winner) overlay("🏆 PEMENANG: "+winner.name.toUpperCase()+" ("+winner.short+")", "Tekan 🔁 Main Lagi atau ganti mode di atas");
 }
 function overlay(t1,t2){
