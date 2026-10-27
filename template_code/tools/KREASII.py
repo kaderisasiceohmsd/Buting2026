@@ -179,8 +179,161 @@ st.markdown("""
         color: #ffd740;
         margin-top: 3px;
     }
+    /* Custom SVG Chart Container */
+    .stellar-chart-wrap {
+        background: linear-gradient(160deg, #0d1024 0%, #070814 100%);
+        border: 1px solid rgba(255, 215, 64, 0.24);
+        border-radius: 14px;
+        padding: 14px 16px 10px 16px;
+        margin: 0.6rem 0 1rem 0;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+    }
+    .stellar-legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        margin-bottom: 8px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.78em;
+        color: #cfd8dc;
+    }
+    .stellar-legend-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .stellar-legend-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+    }
 </style>
 """, unsafe_allow_html=True)
+
+
+# ==============================================================================
+#     FUNGSI GRAFIK SVG NATIVE (PENGGANTI st.line_chart AGAR BEBAS ERROR ALTAIR)
+# ==============================================================================
+def render_stellar_line_chart(
+    df: pd.DataFrame,
+    colors: list[str],
+    height: int = 260,
+    highlight_x: float | None = None,
+):
+    """
+    Merender grafik garis interaktif menggunakan SVG murni (tanpa Altair/Vega)
+    sehingga 100% kompatibel dengan Python 3.14+ di Streamlit Cloud.
+    """
+    xs = df.index.to_numpy(dtype=float)
+    cols = list(df.columns)
+    n_pts = len(xs)
+    if n_pts == 0:
+        return
+
+    all_vals = df.to_numpy(dtype=float)
+    y_min = float(np.nanmin(all_vals))
+    y_max = float(np.nanmax(all_vals))
+    if abs(y_max - y_min) < 1e-6:
+        y_min -= 0.5
+        y_max += 0.5
+    else:
+        pad = (y_max - y_min) * 0.08
+        y_min = min(0.0, y_min - pad) if y_min >= 0 else y_min - pad
+        y_max = y_max + pad
+
+    x_min, x_max = float(xs[0]), float(xs[-1])
+    if abs(x_max - x_min) < 1e-6:
+        x_max = x_min + 1.0
+
+    vw, vh = 760, height
+    pad_l, pad_r, pad_t, pad_b = 48, 20, 16, 34
+    pw = vw - pad_l - pad_r
+    ph = vh - pad_t - pad_b
+
+    def sx(xv: float) -> float:
+        return pad_l + (xv - x_min) / (x_max - x_min) * pw
+
+    def sy(yv: float) -> float:
+        return pad_t + (1.0 - (yv - y_min) / (y_max - y_min)) * ph
+
+    svg_parts = []
+
+    # 1. Grid Horizontal & Label Y
+    n_y_ticks = 5
+    for i in range(n_y_ticks + 1):
+        yv = y_min + (y_max - y_min) * (i / n_y_ticks)
+        yp = sy(yv)
+        svg_parts.append(
+            f'<line x1="{pad_l}" y1="{yp:.1f}" x2="{vw - pad_r}" y2="{yp:.1f}" '
+            f'stroke="rgba(255,255,255,0.07)" stroke-width="1"/>'
+        )
+        lbl = f"{yv:.2f}" if (y_max - y_min) < 2.5 else f"{yv:.1f}"
+        svg_parts.append(
+            f'<text x="{pad_l - 8}" y="{yp + 3.5:.1f}" fill="#90a4ae" '
+            f'font-family="JetBrains Mono, monospace" font-size="10" text-anchor="end">{lbl}</text>'
+        )
+
+    # 2. Grid Vertikal & Label X
+    step_x = max(1, int(round(n_pts / 8)))
+    for idx in range(0, n_pts, step_x):
+        xv = float(xs[idx])
+        xp = sx(xv)
+        svg_parts.append(
+            f'<line x1="{xp:.1f}" y1="{pad_t}" x2="{xp:.1f}" y2="{vh - pad_b}" '
+            f'stroke="rgba(255,255,255,0.05)" stroke-width="1"/>'
+        )
+        xlbl = f"{int(xv)}" if xv.is_integer() else f"{xv:.1f}"
+        svg_parts.append(
+            f'<text x="{xp:.1f}" y="{vh - 10}" fill="#90a4ae" '
+            f'font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">{xlbl}</text>'
+        )
+
+    # 3. Garis Vertikal Penanda Langkah Waktu (jika ada highlight_x)
+    if highlight_x is not None and x_min <= highlight_x <= x_max:
+        hx = sx(float(highlight_x))
+        svg_parts.append(
+            f'<line x1="{hx:.1f}" y1="{pad_t}" x2="{hx:.1f}" y2="{vh - pad_b}" '
+            f'stroke="rgba(255,215,64,0.55)" stroke-width="1.6" stroke-dasharray="4,4"/>'
+        )
+
+    # 4. Gambar Kurva & Titik Data
+    show_dots = n_pts <= 35
+    for c_idx, col_name in enumerate(cols):
+        col_hex = colors[c_idx % len(colors)]
+        y_vals = df[col_name].to_numpy(dtype=float)
+        pts_str = " ".join(f"{sx(float(xs[k])):.1f},{sy(float(y_vals[k])):.1f}" for k in range(n_pts))
+        svg_parts.append(
+            f'<polyline fill="none" stroke="{col_hex}" stroke-width="2.4" '
+            f'stroke-linecap="round" stroke-linejoin="round" points="{pts_str}"/>'
+        )
+        if show_dots:
+            for k in range(n_pts):
+                cx_p = sx(float(xs[k]))
+                cy_p = sy(float(y_vals[k]))
+                x_lbl = int(xs[k]) if float(xs[k]).is_integer() else xs[k]
+                svg_parts.append(
+                    f'<circle cx="{cx_p:.1f}" cy="{cy_p:.1f}" r="3.2" fill="{col_hex}" stroke="#090a14" stroke-width="1">'
+                    f'<title>{col_name} (t={x_lbl}): {y_vals[k]:.4f}</title></circle>'
+                )
+
+    legend_html = "".join(
+        f"<span class='stellar-legend-item'>"
+        f"<span class='stellar-legend-dot' style='background:{colors[i % len(colors)]};box-shadow:0 0 6px {colors[i % len(colors)]};'></span>"
+        f"<span>{c}</span></span>"
+        for i, c in enumerate(cols)
+    )
+
+    chart_html = (
+        f"<div class='stellar-chart-wrap'>"
+        f"<div class='stellar-legend'>{legend_html}</div>"
+        f"<svg viewBox='0 0 {vw} {vh}' width='100%' style='max-height:{vh}px;display:block;' xmlns='http://www.w3.org/2000/svg'>"
+        + "".join(svg_parts)
+        + "</svg></div>"
+    )
+    st.markdown(chart_html, unsafe_allow_html=True)
+
 
 # ==============================================================================
 #                                HERO HEADER
@@ -397,7 +550,6 @@ if active_codex == "Jordan Recurrent Network (JRN)":
     )
 
     loop_label = "Jordan Feedback Loop: y(t-1) → c(t)" if is_jordan_view else "Elman Feedback Loop: h(t-1) → c(t)"
-    # Koordinat panah umpan balik yang presisi (tidak menabrak isi kotak Context Unit)
     if is_jordan_view:
         loop_path = "M 597 155 L 597 248 L 522 248"
         loop_text_x, loop_text_y = "606", "205"
@@ -506,9 +658,11 @@ if active_codex == "Jordan Recurrent Network (JRN)":
         "5. Tanpa Memori (Feedforward)": np.round(y_ff, 3),
     }).set_index("Waktu (t)")
 
-    st.line_chart(
+    render_stellar_line_chart(
         df_sim,
-        color=["#80d8ff", "#ea80fc", "#ffd740", "#00e676", "#78909c"],
+        colors=["#80d8ff", "#ea80fc", "#ffd740", "#00e676", "#78909c"],
+        height=270,
+        highlight_x=float(t_inspect),
     )
 
     half_life = (-1.0 / math.log(alpha)) if 0.01 < alpha < 0.999 else (0.0 if alpha <= 0.01 else 99.0)
@@ -569,11 +723,8 @@ if active_codex == "Jordan Recurrent Network (JRN)":
         seq_len = len(y_true)
         rng = np.random.default_rng(18881986)
 
-        # Jaga agar mem_alpha pada eksperimen berada di rentang efektif (0.25..0.75)
         eff_alpha = min(0.75, max(0.25, mem_alpha))
         n_hid = 10
-        # Fitur input ke Hidden: [Plan=1.0, c1(t), c2(t), sin_trace(t), cos_trace(t)]
-        # Di mana c1 & c2 berevolusi dari recurrent output y(t-1)
         W_in_j = rng.normal(0, 0.55, size=(5, n_hid))
         b_h_j = np.zeros(n_hid)
         W_out_j = rng.normal(0, 0.45, size=(n_hid, 1))
@@ -589,7 +740,6 @@ if active_codex == "Jordan Recurrent Network (JRN)":
             c1 = 0.5
             c2 = 0.5
             ep_loss = 0.0
-            # Scheduled sampling: transisi mulus dari teacher-guided ke murni output sendiri (closed-loop)
             tf_ratio = max(0.0, 1.0 - (ep / max(1, epochs * 0.65)))
             for t_i in range(seq_len):
                 phase_s = math.sin(2.0 * math.pi * t_i / seq_len)
@@ -625,7 +775,6 @@ if active_codex == "Jordan Recurrent Network (JRN)":
             loss_hist_j.append(ep_loss / seq_len)
             loss_hist_ff.append(ff_mse)
 
-        # Evaluasi akhir murni Closed-Loop (menggunakan prediksi y_hat sendiri)
         preds_j = []
         c1 = 0.5
         c2 = 0.5
@@ -657,7 +806,7 @@ if active_codex == "Jordan Recurrent Network (JRN)":
             "Prediksi Jordan Network": np.round(preds_jrn, 3),
             "Feedforward (Tanpa Memori)": np.round(preds_ff_const, 3),
         }).set_index("Langkah Urutan")
-        st.line_chart(df_seq, color=["#80d8ff", "#ffd740", "#78909c"])
+        render_stellar_line_chart(df_seq, colors=["#80d8ff", "#ffd740", "#78909c"], height=240)
 
     with res_col2:
         st.markdown("**📉 Penurunan Error (MSE Loss) Selama Pelatihan:**")
@@ -666,7 +815,7 @@ if active_codex == "Jordan Recurrent Network (JRN)":
             "MSE Jordan Network": np.round(loss_jrn, 5),
             "MSE Feedforward (Stagnan)": np.round(loss_ff, 5),
         }).set_index("Epoch")
-        st.line_chart(df_loss, color=["#00e676", "#ff5252"])
+        render_stellar_line_chart(df_loss, colors=["#00e676", "#ff5252"], height=240)
 
     final_mse_jrn = float(loss_jrn[-1])
     final_mse_ff = float(loss_ff[-1])
@@ -719,7 +868,6 @@ elif active_codex == "Eliminasi Gauss-Jordan":
         return f"{f.numerator}/{f.denominator}"
 
     def fmt_sub_op(row_target: int, factor: Fraction, row_pivot: int) -> str:
-        """Format operasi baris R_i <- R_i - factor * R_r dengan tanda + / - yang bersih."""
         if factor > 0:
             fac_str = "" if factor == 1 else f"{fmt_frac(factor)} \\cdot "
             return f"R_{{{row_target}}} \\leftarrow R_{{{row_target}}} - {fac_str}R_{{{row_pivot}}}"
