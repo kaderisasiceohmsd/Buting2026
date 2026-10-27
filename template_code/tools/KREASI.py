@@ -275,19 +275,19 @@ active_game = option_menu(
 # DATA HELPER UNTUK GAME 1 (ANGGOTA JORDAN + 151 KATING HMSD + LEADERBOARD)
 # ==============================================================================
 ANGGOTA_JORDAN = [
-    {"nama": "Bintang Mahardika", "jabatan": "Pak Lurah Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Pimpinan Kelompok", "nim": "125450106", "asal": "Lampung", "hobi": "Eksplorasi Sains Data", "foto": ""},
-    {"nama": "Sayyidina Najwa Syahra", "jabatan": "Bu Lurah Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Pimpinan Kelompok", "nim": "125450002", "asal": "Lampung", "hobi": "Membaca & Organisasi", "foto": ""},
-    {"nama": "Muhammad Rafli Raditya", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450095", "asal": "Indonesia", "hobi": "Coding & AI Engineering", "foto": "https://drive.google.com/uc?export=view&id=1eRqS2Dm2UYeKTpmixAU5WmjmWMqqW1co"},
-    {"nama": "M Abyan Alghaniyyu", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450104", "asal": "Indonesia", "hobi": "Sains Data & Teknologi", "foto": ""},
-    {"nama": "Rahmad Bayu Ridho", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450093", "asal": "Indonesia", "hobi": "Olahraga & Musik", "foto": ""},
-    {"nama": "Mojes Wijaya", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450094", "asal": "Indonesia", "hobi": "Gaming & Analisis", "foto": ""},
-    {"nama": "Iva Aulia Sofia", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450062", "asal": "Indonesia", "hobi": "Desain & Kuliner", "foto": ""},
-    {"nama": "Astrit Aisyah Rahmi", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450036", "asal": "Indonesia", "hobi": "Fotografi & Musik", "foto": ""},
-    {"nama": "Septi Widia Arin", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450055", "asal": "Indonesia", "hobi": "Menulis & Membaca", "foto": ""},
-    {"nama": "Fildzah Cahya Kamila", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450040", "asal": "Indonesia", "hobi": "Seni & Kreativitas", "foto": ""},
-    {"nama": "Lintar Abhinaya Putra Zulmi", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450064", "asal": "Indonesia", "hobi": "Teknologi & Strategi", "foto": ""},
-    {"nama": "Ahda Nabiwa", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450069", "asal": "Indonesia", "hobi": "Diskusi & Eksplorasi", "foto": ""},
-    {"nama": "Bening Arianti", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450068", "asal": "Indonesia", "hobi": "Musik & Traveling", "foto": ""},
+    {"nama": "Bintang Mahardika", "jabatan": "Pak Lurah Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Pimpinan Kelompok", "nim": "125450106", "asal": "Lampung", "hobi": "Eksplorasi Sains Data", "foto": "1KPiPBu6qnc-7uAcvTlfVxfvw3P3ojjPY"},
+    {"nama": "Sayyidina Najwa Syahra", "jabatan": "Bu Lurah Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Pimpinan Kelompok", "nim": "125450002", "asal": "Lampung", "hobi": "Membaca & Organisasi", "foto": "1TWNgccBsATeQyTnJdCx30lPXOk-lF0JP"},
+    {"nama": "Muhammad Rafli Raditya", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450095", "asal": "Indonesia", "hobi": "Coding & AI Engineering", "foto": "1CUqKHr8nql3b9ifOLu0-cvcwrUxVe0L5"},
+    {"nama": "M Abyan Alghaniyyu", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450104", "asal": "Indonesia", "hobi": "Sains Data & Teknologi", "foto": "1i9oSkeFZT1sL0SJmMWmZb4l_qPCxAV-4"},
+    {"nama": "Rahmad Bayu Ridho", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450093", "asal": "Indonesia", "hobi": "Olahraga & Musik", "foto": "1AeNI3iwCdGOXgrjncpYatIqfuv4qvZ3W"},
+    {"nama": "Mojes Wijaya", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450094", "asal": "Indonesia", "hobi": "Gaming & Analisis", "foto": "114wxxW8dyiUPBz87C3IyQJOyyl2M29kw"},
+    {"nama": "Iva Aulia Sofia", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450062", "asal": "Indonesia", "hobi": "Desain & Kuliner", "foto": "1Kz0h3yq36ZDbBLIovx6MtEHTXlD_Nj5r"},
+    {"nama": "Astrit Aisyah Rahmi", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450036", "asal": "Indonesia", "hobi": "Fotografi & Musik", "foto": "1D-_sGW7jHoUpCms068h97XYi4fdLxHMc"},
+    {"nama": "Septi Widia Arin", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450055", "asal": "Indonesia", "hobi": "Menulis & Membaca", "foto": "15eNIKvQctlDzyoHUjK5GI55pAKK8F3g2"},
+    {"nama": "Fildzah Cahya Kamila", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450040", "asal": "Indonesia", "hobi": "Seni & Kreativitas", "foto": "13yOwhEQH_zVkrbuGiohD--90zVLc_zQK"},
+    {"nama": "Lintar Abhinaya Putra Zulmi", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450064", "asal": "Indonesia", "hobi": "Teknologi & Strategi", "foto": "1fkdAu5a7UGyEBMMcIcysaN3f04fM2PVd"},
+    {"nama": "Ahda Nabiwa", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450069", "asal": "Indonesia", "hobi": "Diskusi & Eksplorasi", "foto": "16JerAO1bW_lVSKEYSVi8qSo3qeWCqfzO"},
+    {"nama": "Bening Arianti", "jabatan": "Anggota Kelompok 01 Jordan", "departemen": "Kelompok 01 Jordan", "divisi": "Anggota Orbit Jordan", "nim": "125450068", "asal": "Indonesia", "hobi": "Musik & Traveling", "foto": "1wqq9-YkpFJ7D6_WQyKqKsg6UWvXzku-4"},
 ]
 
 DAFTAR_KELOMPOK_RESMI = [
@@ -301,7 +301,7 @@ DAFTAR_KELOMPOK_RESMI = [
     "08 - COSVAL",
     "09 - Bayesian",
     "10 - Greedy",
-    "Kating HMSD",
+    "Kating / Pengurus HMSD",
 ]
 
 # Filter kata tidak pantas menggunakan dataset publik GitHub + API eksternal + SHA-256 one-way digest
@@ -624,7 +624,7 @@ def _get_leaderboard_store():
         {"nama": "Sayyidina Najwa", "kelompok": "Konstelasi Jordan", "kategori": "player", "skor": 510, "streak": 5, "bulan": "2026-10", "tanggal": "18 Okt 2026", "protected": True},
         {"nama": "M Rafli Raditya", "kelompok": "Konstelasi Jordan", "kategori": "player", "skor": 480, "streak": 5, "bulan": "2026-10", "tanggal": "18 Okt 2026", "protected": True},
         {"nama": "M Abyan Alghaniyyu", "kelompok": "Konstelasi Jordan", "kategori": "player", "skor": 410, "streak": 4, "bulan": "2026-10", "tanggal": "18 Okt 2026", "protected": True},
-        {"nama": "Kak Yollanda A.", "kelompok": "Kating", "kategori": "kating", "skor": 720, "streak": 8, "bulan": "2026-10", "tanggal": "18 Okt 2026", "protected": True},
+        {"nama": "Kak Yollanda A.", "kelompok": "Kating / Pengurus HMSD", "kategori": "kating", "skor": 720, "streak": 8, "bulan": "2026-10", "tanggal": "18 Okt 2026", "protected": True},
     ]
 
     lock = threading.Lock()
@@ -1114,7 +1114,7 @@ if active_game == "Survival Quiz":
                         f"<div class='lb-row'>"
                         f"<span class='lb-rank'>{medal}</span>"
                         f"<span class='lb-name'>{item['nama']} {tgl_html}</span>"
-                        f"<span class='lb-group'>{item.get('kelompok', 'Kating')}</span>"
+                        f"<span class='lb-group'>{item.get('kelompok', 'Pengurus HMSD')}</span>"
                         f"<span class='lb-score'>{item['skor']} pts</span>"
                         f"</div>"
                     )
