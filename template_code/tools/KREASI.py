@@ -301,7 +301,7 @@ DAFTAR_KELOMPOK_RESMI = [
     "08 - COSVAL",
     "09 - Bayesian",
     "10 - Greedy",
-    "Kating / Pengurus HMSD",
+    "Kating",
 ]
 
 # Filter kata tidak pantas menggunakan dataset publik GitHub + API eksternal + SHA-256 one-way digest
@@ -387,23 +387,50 @@ def sanitize_player_name(raw_name: str) -> str:
     return cleaned
 
 
+def _extract_drive_id_quiz(url: str) -> str:
+    """Ekstrak ID Google Drive dari berbagai variasi URL atau string ID langsung."""
+    if not url:
+        return ""
+    url = str(url).strip()
+    for pat in (r"[?&]id=([\w-]{10,})", r"/file/d/([\w-]{10,})", r"/d/([\w-]{10,})"):
+        m = re.search(pat, url)
+        if m:
+            return m.group(1)
+    if re.fullmatch(r"[\w-]{20,}", url):
+        return url
+    return ""
+
+
 @st.cache_data(ttl=3600, show_spinner=False)
 def load_quiz_photo(url: str):
     """
     Unduh gambar dari Google Drive lewat server Python agar tidak diblokir browser (anti broken image).
+    Mendukung Googleusercontent lh3, Drive thumbnail CDN cepat, dan export=view dengan header browser.
     """
-    if not url or not url.strip():
+    if not url or not str(url).strip():
         return None
-    try:
-        resp = requests.get(url.strip(), timeout=8)
-        if resp.status_code != 200:
-            return None
-        img = Image.open(BytesIO(resp.content))
-        img = ImageOps.exif_transpose(img)
-        img = img.resize((260, 340))
-        return img
-    except Exception:
-        return None
+    url = str(url).strip()
+    gid = _extract_drive_id_quiz(url)
+    candidates = [url]
+    if gid:
+        candidates = [
+            f"https://lh3.googleusercontent.com/d/{gid}=w500",
+            f"https://drive.google.com/thumbnail?id={gid}&sz=w500",
+            f"https://drive.google.com/uc?export=view&id={gid}",
+        ]
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+    for cand in candidates:
+        try:
+            resp = requests.get(cand, headers=headers, timeout=8)
+            ctype = resp.headers.get("Content-Type", "").lower()
+            if resp.status_code == 200 and resp.content and "html" not in ctype:
+                img = Image.open(BytesIO(resp.content))
+                img = ImageOps.exif_transpose(img)
+                img = img.resize((260, 340))
+                return img
+        except Exception:
+            continue
+    return None
 
 
 @st.cache_data(ttl=3600, show_spinner=False)
@@ -412,28 +439,39 @@ def _load_kating_quiz_pool_cached(_mtime: float = 0.0):
     statis_path = os.path.join(base_dir, "Data", "Data_statis", "data_anggota_hmsd_2026.json")
     if not os.path.exists(statis_path):
         statis_path = os.path.join(base_dir, "Data", "data_statis", "data_anggota_hmsd_2026.json")
-    dinamis_path = os.path.join(base_dir, "Data", "Data_dinamis", "Rafli.json")
-    if not os.path.exists(dinamis_path):
-        dinamis_path = os.path.join(base_dir, "Data", "data_dinamis", "rafli.json")
+    
+    dinamis_dir = os.path.join(base_dir, "Data", "Data_dinamis")
+    if not os.path.isdir(dinamis_dir):
+        dinamis_dir = os.path.join(base_dir, "Data", "data_dinamis")
 
     foto_map = {}
-    if os.path.exists(dinamis_path):
-        try:
-            with open(dinamis_path, "r", encoding="utf-8") as f:
-                d_json = json.load(f)
-            if d_json and isinstance(d_json, list):
-                for item in d_json[0].get("data", []):
-                    k = str(item.get("nama_kating", "")).strip().lower()
-                    gid = str(item.get("foto_massal_gdrive_id", "")).strip()
-                    if k and gid:
-                        foto_map[k] = f"https://drive.google.com/uc?export=view&id={gid}"
-        except Exception:
-            pass
+    if os.path.isdir(dinamis_dir):
+        # Prioritas file sumber foto: bintang, rafli, buku_kating, lalu semua file anggota lainnya
+        all_files = os.listdir(dinamis_dir)
+        priority_order = ["bintang.json", "rafli.json", "buku_kating.json", "najwa.json", "septi.json", "biwa.json"]
+        ordered_files = [f for f in priority_order if f in all_files] + [f for f in all_files if f not in priority_order and f.endswith(".json") and f != "leaderboard_jordan.json"]
+        for fn in ordered_files:
+            fp = os.path.join(dinamis_dir, fn)
+            try:
+                with open(fp, "r", encoding="utf-8-sig") as f:
+                    content = json.load(f)
+                entries = content if isinstance(content, list) else [content]
+                for ent in entries:
+                    if not isinstance(ent, dict):
+                        continue
+                    for item in ent.get("data", []):
+                        nk = str(item.get("nama_kating", "")).strip().lower()
+                        gid = str(item.get("foto_massal_gdrive_id", "")).strip()
+                        if nk and gid and gid != "1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_":
+                            if nk not in foto_map:
+                                foto_map[nk] = gid
+            except Exception:
+                pass
 
     pool = []
     if os.path.exists(statis_path):
         try:
-            with open(statis_path, "r", encoding="utf-8") as f:
+            with open(statis_path, "r", encoding="utf-8-sig") as f:
                 s_json = json.load(f)
             for m in s_json:
                 nama = (m.get("nama") or "").strip()
@@ -441,6 +479,19 @@ def _load_kating_quiz_pool_cached(_mtime: float = 0.0):
                     continue
                 hobi_list = m.get("hobi", [])
                 hobi_str = ", ".join(hobi_list) if isinstance(hobi_list, list) and hobi_list else "-"
+                
+                # Pencocokan foto: exact -> normalized token / substring match
+                n_low = nama.lower()
+                gid_found = foto_map.get(n_low, "")
+                if not gid_found:
+                    n_tokens = [w for w in re.sub(r"[^a-z0-9\s]", "", n_low).split() if len(w) >= 3]
+                    for k, gid in foto_map.items():
+                        k_tokens = [w for w in re.sub(r"[^a-z0-9\s]", "", k).split() if len(w) >= 3]
+                        common = len(set(n_tokens) & set(k_tokens))
+                        if common >= 2 or (len(n_tokens) == 1 and common == 1) or n_low.startswith(k) or k.startswith(n_low):
+                            gid_found = gid
+                            break
+
                 pool.append({
                     "nama": nama,
                     "nim": str(m.get("nim") or "-"),
@@ -449,7 +500,7 @@ def _load_kating_quiz_pool_cached(_mtime: float = 0.0):
                     "departemen": str(m.get("departemen") or "HMSD Adyatama"),
                     "divisi": str(m.get("divisi") or "Pimpinan / BPH"),
                     "jabatan": str(m.get("jabatan") or "Pengurus"),
-                    "foto": foto_map.get(nama.lower(), ""),
+                    "foto": gid_found,
                 })
         except Exception:
             pass
@@ -461,7 +512,16 @@ def load_kating_quiz_pool():
     statis_path = os.path.join(base_dir, "Data", "Data_statis", "data_anggota_hmsd_2026.json")
     if not os.path.exists(statis_path):
         statis_path = os.path.join(base_dir, "Data", "data_statis", "data_anggota_hmsd_2026.json")
+    dinamis_dir = os.path.join(base_dir, "Data", "Data_dinamis")
+    if not os.path.isdir(dinamis_dir):
+        dinamis_dir = os.path.join(base_dir, "Data", "data_dinamis")
+
     mt = os.path.getmtime(statis_path) if os.path.exists(statis_path) else 0.0
+    if os.path.isdir(dinamis_dir):
+        for fn in ("bintang.json", "rafli.json"):
+            fp = os.path.join(dinamis_dir, fn)
+            if os.path.exists(fp):
+                mt += os.path.getmtime(fp)
     return _load_kating_quiz_pool_cached(mt)
 
 
@@ -493,7 +553,7 @@ def get_client_device_fp() -> str:
 # ==============================================================================
 # INTEGRASI GOOGLE APPS SCRIPT / GOOGLE SHEETS & NORMALISASI TANGGAL
 # ==============================================================================
-LEADERBOARD_APPSCRIPT_URL = ""
+LEADERBOARD_APPSCRIPT_URL = "https://script.google.com/macros/s/AKfycby6nEH8KWQuSLTnsQSJvUr3T_MISaRh-53TyBA4WTOOrHWqkiaDKRrWa9KPI8QNVLLJ/exec"
 
 
 def _get_appscript_url() -> str:
@@ -563,7 +623,7 @@ def _get_leaderboard_store():
         {"nama": "Sayyidina Najwa", "kelompok": "Konstelasi Jordan", "kategori": "player", "skor": 510, "streak": 5, "bulan": "2026-10", "tanggal": "18 Okt 2026", "protected": True},
         {"nama": "M Rafli Raditya", "kelompok": "Konstelasi Jordan", "kategori": "player", "skor": 480, "streak": 5, "bulan": "2026-10", "tanggal": "18 Okt 2026", "protected": True},
         {"nama": "M Abyan Alghaniyyu", "kelompok": "Konstelasi Jordan", "kategori": "player", "skor": 410, "streak": 4, "bulan": "2026-10", "tanggal": "18 Okt 2026", "protected": True},
-        {"nama": "Kak Yollanda A.", "kelompok": "Kating / Pengurus HMSD", "kategori": "kating", "skor": 720, "streak": 8, "bulan": "2026-10", "tanggal": "18 Okt 2026", "protected": True},
+        {"nama": "Kak Yollanda A.", "kelompok": "Kating", "kategori": "kating", "skor": 720, "streak": 8, "bulan": "2026-10", "tanggal": "18 Okt 2026", "protected": True},
     ]
 
     lock = threading.Lock()
@@ -641,6 +701,7 @@ def save_score_to_leaderboard(nama: str, kelompok: str, skor: int, streak: int) 
                 matched_item = item
                 break
 
+        saved_entry = None
         if matched_item is not None:
             old_score = int(matched_item.get("skor", 0))
             old_name = matched_item.get("nama", clean_name)
@@ -656,9 +717,10 @@ def save_score_to_leaderboard(nama: str, kelompok: str, skor: int, streak: int) 
             matched_item["bulan"] = bulan_str
             matched_item["tanggal"] = tanggal_str
             matched_item["device_fp"] = device_fp
+            saved_entry = matched_item
             msg = f"🔥 **Rekor Baru!** Skor perangkatmu diperbarui dari {old_score} pts menjadi **{skor} pts**."
         else:
-            entries.append({
+            saved_entry = {
                 "nama": clean_name,
                 "kelompok": kelompok,
                 "kategori": kategori,
@@ -667,7 +729,8 @@ def save_score_to_leaderboard(nama: str, kelompok: str, skor: int, streak: int) 
                 "bulan": bulan_str,
                 "tanggal": tanggal_str,
                 "device_fp": device_fp,
-            })
+            }
+            entries.append(saved_entry)
             msg = "🎉 Skor kamu berhasil diabadikan ke Prasasti Leaderboard!"
 
         rate_map[device_fp] = now_ts
@@ -686,7 +749,7 @@ def save_score_to_leaderboard(nama: str, kelompok: str, skor: int, streak: int) 
 
         # Kirim update ke Google Sheets secara background thread agar tidak menghambat respons Streamlit
         remote_url = _get_appscript_url()
-        if remote_url:
+        if remote_url and saved_entry:
             def _bg_sync(url, item):
                 try:
                     requests.post(url, json={"entry": item}, timeout=5.0)
@@ -710,7 +773,7 @@ if active_game == "Survival Quiz":
             "Pilih Arena Soal Survival:",
             [
                 "🌌 Ekspedisi Gabungan (13 Anggota Jordan + 151 Kating HMSD)",
-                "⭐ Pemanasan Orbit Jordan dulu (13 Anggota, lanjut HMSD jika masih hidup)",
+                "⭐ Pemanasan Orbit Jordan dulu (13 Anggota, lanjut HMSD)",
             ],
             horizontal=True,
         )
@@ -1027,7 +1090,7 @@ if active_game == "Survival Quiz":
                         f"<div class='lb-row'>"
                         f"<span class='lb-rank'>{medal}</span>"
                         f"<span class='lb-name'>{item['nama']} {tgl_html}</span>"
-                        f"<span class='lb-group'>{item.get('kelompok', 'Pengurus HMSD')}</span>"
+                        f"<span class='lb-group'>{item.get('kelompok', 'kating')}</span>"
                         f"<span class='lb-score'>{item['skor']} pts</span>"
                         f"</div>"
                     )
