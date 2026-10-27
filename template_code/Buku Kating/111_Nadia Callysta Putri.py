@@ -215,11 +215,11 @@ if menu == "Kesekjenan":
     def Kesekjenan():
         gambar_urls = [
             "https://drive.google.com/uc?export=view&id=1vfjOJqTM3P0D8T7hSm8aea22gbMg-zOX",
-            "https://drive.google.com/uc?export=view&id=1_mXB5AUDN2W8AKzxUL9EgOCn-IDCAWh4",
-            "https://drive.google.com/uc?export=view&id=1XzlbGX4qZIqmrhh3pCwz7x6fFXWDxnXm",
-            "https://drive.google.com/uc?export=view&id=11aQzjpJpG45cQe6nrD6FiNO8dCl3fIB2",
-            "https://drive.google.com/uc?export=view&id=1tqawXYrLEd78veTqpmcNMF0v7Kd-B00j",
-            "https://drive.google.com/uc?export=view&id=1VAUMxL9qcV2J_v87vbJjTkPr_V1QQQ16",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
         ]
         data_list = [
             {
