@@ -301,7 +301,7 @@ DAFTAR_KELOMPOK_RESMI = [
     "08 - COSVAL",
     "09 - Bayesian",
     "10 - Greedy",
-    "Kating",
+    "Kating HMSD",
 ]
 
 # Filter kata tidak pantas menggunakan dataset publik GitHub + API eksternal + SHA-256 one-way digest
@@ -612,8 +612,9 @@ def _format_clean_date(raw_val) -> str:
 @st.cache_resource
 def _get_leaderboard_store():
     """
-    Menyimpan Prasasti Skor Abadi & Skor Bulanan di RAM Server dengan Thread Lock
-    serta membaca/menulis ke Data/Data_dinamis/leaderboard_jordan.json.
+    Menyimpan Prasasti Skor Abadi & Skor Bulanan di RAM Server dengan Thread Lock.
+    Pada startup pertama, prioritas baca dari Google Sheets via AppScript doGet.
+    Fallback ke file JSON lokal atau default entries jika Sheets tidak tersedia.
     """
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     lb_file = os.path.join(base_dir, "Data", "Data_dinamis", "leaderboard_jordan.json")
@@ -627,6 +628,27 @@ def _get_leaderboard_store():
     ]
 
     lock = threading.Lock()
+
+    # PRIORITAS 1: Tarik data terbaru dari Google Sheets via AppScript doGet
+    remote_url = _get_appscript_url()
+    if remote_url:
+        try:
+            resp = requests.get(remote_url, timeout=8.0)
+            if resp.status_code == 200:
+                rdata = resp.json()
+                if rdata.get("status") == "success" and isinstance(rdata.get("entries"), list) and rdata["entries"]:
+                    cloud_entries = rdata["entries"][:40]
+                    # Simpan ke file lokal sebagai cache
+                    try:
+                        with open(lb_file, "w", encoding="utf-8") as f:
+                            json.dump(cloud_entries, f, ensure_ascii=False, indent=2)
+                    except Exception:
+                        pass
+                    return {"entries": cloud_entries, "path": lb_file, "lock": lock, "rate_map": {}, "mtime": 0.0, "cloud_synced": True}
+        except Exception:
+            pass
+
+    # PRIORITAS 2: Baca dari file JSON lokal (fallback jika Sheets tidak tersedia)
     if os.path.exists(lb_file):
         try:
             with open(lb_file, "r", encoding="utf-8") as f:
@@ -636,6 +658,7 @@ def _get_leaderboard_store():
         except Exception:
             pass
 
+    # PRIORITAS 3: Default entries (fallback terakhir)
     try:
         with open(lb_file, "w", encoding="utf-8") as f:
             json.dump(default_entries, f, ensure_ascii=False, indent=2)
@@ -750,12 +773,13 @@ def save_score_to_leaderboard(nama: str, kelompok: str, skor: int, streak: int) 
         # Kirim update ke Google Sheets secara background thread agar tidak menghambat respons Streamlit
         remote_url = _get_appscript_url()
         if remote_url and saved_entry:
+            entry_copy = dict(saved_entry)
             def _bg_sync(url, item):
                 try:
-                    requests.post(url, json={"entry": item}, timeout=5.0)
+                    requests.post(url, json={"entry": item}, timeout=10.0)
                 except Exception:
                     pass
-            threading.Thread(target=_bg_sync, args=(remote_url, saved_entry), daemon=True).start()
+            threading.Thread(target=_bg_sync, args=(remote_url, entry_copy), daemon=True).start()
 
         return True, msg
 
@@ -773,7 +797,7 @@ if active_game == "Survival Quiz":
             "Pilih Arena Soal Survival:",
             [
                 "🌌 Ekspedisi Gabungan (13 Anggota Jordan + 151 Kating HMSD)",
-                "⭐ Pemanasan Orbit Jordan dulu (13 Anggota, lanjut HMSD)",
+                "⭐ Pemanasan Orbit Jordan dulu (13 Anggota, lanjut HMSD jika masih hidup)",
             ],
             horizontal=True,
         )
@@ -1030,11 +1054,11 @@ if active_game == "Survival Quiz":
                     st.session_state.surv_lb_feedback = (ok_save, msg_save)
                     if ok_save:
                         st.session_state.surv_saved = True
-                    st.rerun(scope="fragment")
+                    st.rerun()
 
         if st.button("🔄 Mulai Survival Baru (Reset 3 Nyawa)", type="primary", use_container_width=True):
             del st.session_state["surv_lives"]
-            st.rerun(scope="app")
+            st.rerun()
 
     # ===== SEKSI LEADERBOARD DI BAWAH (ISOLASI FRAGMENT AGAR CEPAT & TANPA RELOAD HALAMAN) =====
     @st.fragment
@@ -1090,7 +1114,7 @@ if active_game == "Survival Quiz":
                         f"<div class='lb-row'>"
                         f"<span class='lb-rank'>{medal}</span>"
                         f"<span class='lb-name'>{item['nama']} {tgl_html}</span>"
-                        f"<span class='lb-group'>{item.get('kelompok', 'kating')}</span>"
+                        f"<span class='lb-group'>{item.get('kelompok', 'Kating')}</span>"
                         f"<span class='lb-score'>{item['skor']} pts</span>"
                         f"</div>"
                     )
