@@ -1562,19 +1562,22 @@ def load_arcade_html(filename: str) -> str:
     except Exception as e:
         return f"<div style='color:#ff8a80;font-family:sans-serif;padding:20px'>Gagal memuat {filename}: {e}</div>"
 
-
-# Wajah bola. Kunci = nama bola di game. Nilai = judul artikel Wikipedia ATAU path file lokal.
-# DEBUG: kalau wajah tidak muncul, taruh foto manual di template_code/assets/faces/<nama>.jpg (contoh: jordan.jpg)
+# Wajah bola: nama bola -> nama anggota di ANGGOTA_JORDAN (foto Google Drive)
+# Semua foto diambil dari field "foto" di ANGGOTA_JORDAN agar cepat dan pasti tersedia.
 BALL_FACE_SOURCES = {
-    "Jordan": "Camille_Jordan",
-    "Jacobi": "Carl_Gustav_Jacob_Jacobi",
-    "Poisson": "Siméon_Denis_Poisson",
-    "Gauss": "Carl_Friedrich_Gauss",
-    "Lagrange": "Joseph-Louis_Lagrange",
-    "Laplace": "Pierre-Simon_Laplace",
-    "Taylor": "Brook_Taylor",
-    "Euler": "Leonhard_Euler",
-    "Bayes": "Thomas_Bayes",
+    "Bintang": "Bintang Mahardika",
+    "Najwa": "Sayyidina Najwa Syahra",
+    "Rafli": "Muhammad Rafli Raditya",
+    "Abyan": "M Abyan Alghaniyyu",
+    "Bayu": "Rahmad Bayu Ridho",
+    "Mojes": "Mojes Wijaya",
+    "Iva": "Iva Aulia Sofia",
+    "Astrit": "Astrit Aisyah Rahmi",
+    "Septi": "Septi Widia Arin",
+    "Fildzah": "Fildzah Cahya Kamila",
+    "Lintar": "Lintar Abhinaya Putra Zulmi",
+    "Biwa": "Ahda Nabiwa",
+    "Bening": "Bening Arianti",
 }
 
 
@@ -1594,39 +1597,31 @@ def _img_to_face_b64(img, top_bias: float = 0.12) -> str:
 
 @st.cache_data(ttl=86400, max_entries=2, show_spinner=False)
 def load_ball_faces() -> dict:
+    """Muat foto wajah 13 anggota Jordan untuk bola di Ball Arena dari Google Drive."""
     faces = {}
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     local_dir = os.path.join(base_dir, "assets", "faces")
-    headers = {"User-Agent": "JordanArcade/1.0 (Buku Kating HMSD ITERA; edukasi)"}
-    names = list(BALL_FACE_SOURCES.keys()) + ["Rafli"]
-    for name in names:
+    for ball_name, member_name in BALL_FACE_SOURCES.items():
         # 1) Prioritas: file lokal assets/faces/<nama>.jpg|png
+        found_local = False
         for ext in (".jpg", ".jpeg", ".png", ".webp"):
-            p = os.path.join(local_dir, name.lower() + ext)
+            p = os.path.join(local_dir, ball_name.lower() + ext)
             if os.path.exists(p):
                 try:
-                    faces[name] = _img_to_face_b64(Image.open(p))
+                    faces[ball_name] = _img_to_face_b64(Image.open(p))
+                    found_local = True
                 except Exception:
                     pass
                 break
-        if name in faces:
+        if found_local:
             continue
+        # 2) Ambil foto dari ANGGOTA_JORDAN (Google Drive ID)
         try:
-            if name == "Rafli":
-                foto = next((m["foto"] for m in ANGGOTA_JORDAN if m["nama"].startswith("Muhammad Rafli")), "")
-                img = load_quiz_photo(foto) if foto else None
+            foto_id = next((m["foto"] for m in ANGGOTA_JORDAN if m["nama"] == member_name), "")
+            if foto_id:
+                img = load_quiz_photo(foto_id)
                 if img is not None:
-                    faces[name] = _img_to_face_b64(img, top_bias=0.05)
-                continue
-            # 2) Wikipedia: ambil thumbnail potret matematikawan
-            title = BALL_FACE_SOURCES[name]
-            meta = requests.get(f"https://en.wikipedia.org/api/rest_v1/page/summary/{title}", headers=headers, timeout=8).json()
-            src = (meta.get("thumbnail") or meta.get("originalimage") or {}).get("source")
-            if not src:
-                continue
-            r = requests.get(src, headers=headers, timeout=8)
-            if r.status_code == 200:
-                faces[name] = _img_to_face_b64(Image.open(BytesIO(r.content)))
+                    faces[ball_name] = _img_to_face_b64(img, top_bias=0.05)
         except Exception:
             continue
     return faces
@@ -1664,5 +1659,5 @@ elif active_game == "Ball Battle Arena":
     if missing:
         st.caption(
             "ℹ️ Wajah belum termuat untuk: " + ", ".join(missing)
-            + ". Bola tetap tampil dengan kode nama. Untuk memaksa, taruh foto di `assets/faces/<nama>.jpg`."
+            + ". Bola tetap tampil dengan kode nama."
         )
