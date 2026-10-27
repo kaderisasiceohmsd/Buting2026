@@ -401,23 +401,24 @@ components.html(f"""
       }}
     }}
 
-    // Inject tombol mode switcher
+    // Inject tombol mode switcher (Di bawah navigasi sidebar kiri)
     let modeBtn = document.getElementById('jordan-mode-btn');
     if (!modeBtn) {{
       modeBtn = document.createElement('button');
       modeBtn.id = 'jordan-mode-btn';
-      const isMobile = window.innerWidth <= 768;
       Object.assign(modeBtn.style, {{
-        position: 'fixed',
-        bottom: isMobile ? '82px' : '72px',
-        right: isMobile ? '14px' : '20px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: 'calc(100% - 2rem)',
+        margin: '14px 1rem 18px 1rem',
         zIndex: '999999',
         background: 'rgba(9, 10, 22, 0.92)',
         color: '#ffd740',
         border: '1px solid rgba(255,215,64,0.45)',
-        borderRadius: '20px',
-        padding: isMobile ? '6px 12px' : '7px 16px',
-        fontSize: isMobile ? '11px' : '12px',
+        borderRadius: '12px',
+        padding: '8px 14px',
+        fontSize: '12px',
         fontFamily: 'Poppins, sans-serif',
         fontWeight: '600',
         letterSpacing: '0.5px',
@@ -432,15 +433,51 @@ components.html(f"""
         const nextMode = MODES[(curIdx + 1) % MODES.length];
         applyVisualMode(nextMode);
       }});
-      document.body.appendChild(modeBtn);
 
-      function updateModeBtnPos() {{
-        const isMob = (window.innerWidth || 1920) <= 768;
-        modeBtn.style.bottom = isMob ? '82px' : '72px';
-        modeBtn.style.right = isMob ? '14px' : '20px';
+      function mountAndPositionModeBtn() {{
+        const sidebarNav = document.querySelector('[data-testid="stSidebarNav"]');
+        const sidebarContent = document.querySelector('[data-testid="stSidebarContent"]');
+        const sidebar = document.querySelector('[data-testid="stSidebar"]');
+        const isCollapsed = sidebar && sidebar.getAttribute('aria-expanded') === 'false';
+
+        if (!isCollapsed && (sidebarNav || sidebarContent)) {{
+          const parentTarget = sidebarNav ? sidebarNav.parentNode : sidebarContent;
+          if (modeBtn.parentNode !== parentTarget) {{
+            if (sidebarNav && sidebarNav.nextSibling) {{
+              parentTarget.insertBefore(modeBtn, sidebarNav.nextSibling);
+            }} else {{
+              parentTarget.appendChild(modeBtn);
+            }}
+          }}
+          Object.assign(modeBtn.style, {{
+            position: 'relative',
+            bottom: 'auto',
+            left: 'auto',
+            right: 'auto',
+            width: 'calc(100% - 2rem)',
+            margin: '12px 1rem 18px 1rem'
+          }});
+        }} else {{
+          // Fallback jika sidebar sedang di-collapse: tampil di pojok kiri bawah
+          if (modeBtn.parentNode !== document.body) {{
+            document.body.appendChild(modeBtn);
+          }}
+          Object.assign(modeBtn.style, {{
+            position: 'fixed',
+            bottom: '16px',
+            left: '16px',
+            right: 'auto',
+            width: 'auto',
+            margin: '0'
+          }});
+        }}
       }}
-      updateModeBtnPos();
-      window.addEventListener('resize', updateModeBtnPos, {{ passive: true }});
+
+      mountAndPositionModeBtn();
+      window.addEventListener('resize', mountAndPositionModeBtn, {{ passive: true }});
+      if (window.__jordanSidebarObserver) window.__jordanSidebarObserver.disconnect();
+      window.__jordanSidebarObserver = new MutationObserver(mountAndPositionModeBtn);
+      window.__jordanSidebarObserver.observe(document.body, {{ childList: true, subtree: true, attributes: true, attributeFilter: ['aria-expanded'] }});
     }}
 
     // ===== 5. PAGE VISIBILITY =====
@@ -944,7 +981,7 @@ components.html(f"""
     const pwin = window.parent, pdoc = window.parent.document;
     if (!pwin || !pdoc) return;
 
-    const CURRENT_VERSION = 16;
+    const CURRENT_VERSION = 17;
     if (pwin.__jordanCosmicActive && pwin.__jordanCosmicVersion === CURRENT_VERSION) return;
 
     if (pwin.__jordanCosmicAnimId) {{
