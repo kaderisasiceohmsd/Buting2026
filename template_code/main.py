@@ -17,9 +17,6 @@ from loading_screen import show_loading_screen
 # ==============================================================================
 # KONFIGURASI UTAMA & DAFTAR BINTANG KONSTELASI 10 KELOMPOK
 # ==============================================================================
-# Kamu bebas mengubah nama, gelar, deskripsi (sepanjang apa pun otomatis rapi),
-# dan warna RGB [R, G, B] di bawah ini tanpa perlu menyentuh kode CSS/JS!
-# ==============================================================================
 
 NAMA_MENTOR_UTAMA = "Kak Yollanda Agustina"
 
@@ -103,7 +100,7 @@ st.session_state["nama_mentor_utama"] = NAMA_MENTOR_UTAMA
 # ===== CUSTOM LOADING SCREEN =====
 show_loading_screen()
 
-# ===== GLOBAL CSS STYLING (STELLAR)
+# ===== GLOBAL CSS STYLING (STELLAR) =====
 st.markdown("""
 <style>
 /* ===== FORCE GOLD PRIMARY ACCENT ON TABS & RADIO ===== */
@@ -154,12 +151,11 @@ html.jordan-mode-simple [data-testid="stSidebar"] {
     background: #08080d !important;
 }
 
-/* ===== STATIC STARFIELD CSS (Satu layer terpusat yang ringan) ===== */
+/* ===== STATIC STARFIELD CSS ===== */
 .stApp::before {
     content: '';
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    /* Nebula halus + banyak lapisan bintang dengan ukuran tile berbeda agar tidak terlihat berulang */
     background-image:
         radial-gradient(ellipse 55% 45% at 82% 12%, rgba(95,55,195,0.20), transparent 70%),
         radial-gradient(ellipse 50% 40% at 12% 78%, rgba(24,155,215,0.14), transparent 70%),
@@ -184,7 +180,6 @@ html.jordan-mode-simple [data-testid="stSidebar"] {
     transition: opacity 0.4s ease;
 }
 
-/* Lapisan bintang berkelap-kelip (twinkle) dengan ukuran tile berbeda */
 .stApp::after {
     content: '';
     position: fixed;
@@ -212,8 +207,7 @@ html.jordan-mode-simple .stApp::after {
     display: none !important;
 }
 
-/* ===== PASTIKAN SEMUA ELEMEN KONTEN DI ATAS CANVAS (Z-INDEX >= 1) ===== */
-/* Dengan ini komet, bintang, dan nebula TIDAK AKAN PERNAH menembus foto/teks/kartu */
+/* ===== PASTIKAN SEMUA ELEMEN KONTEN DI ATAS CANVAS ===== */
 [data-testid="stAppViewContainer"] > section[data-testid="stMain"],
 .main .block-container,
 [data-testid="stMainBlockContainer"] {
@@ -290,7 +284,6 @@ components.html(f"""
   function __runJordanCosmicEngine__(catalog) {{
 
     // ===== 1. SETUP CANVAS DI BELAKANG KONTEN (zIndex: 0) =====
-    // Agar komet, nebula, dan bintang TIDAK PERNAH menembus/menutupi kartu & foto
     const CANVAS_ID = 'jordan-meteor-canvas';
     let cv = document.getElementById(CANVAS_ID);
     if (!cv) {{
@@ -313,7 +306,6 @@ components.html(f"""
     window.addEventListener('resize', resize, {{ passive: true }});
 
     // ===== 2. SETUP FLOATING HUD TOOLTIP UNTUK KONSTELASI =====
-    // Menggunakan elemen HTML agar teks deskripsi panjang otomatis wrap & tajam
     const HUD_ID = 'jordan-constellation-hud';
     let hudEl = document.getElementById(HUD_ID);
     if (!hudEl) {{
@@ -391,7 +383,6 @@ components.html(f"""
         if (hudEl) {{ hudEl.style.opacity = '0'; hudEl.style.display = 'none'; }}
         ctx.clearRect(0, 0, cv.width, cv.height);
         if (mode === 'reduce') {{
-          // Gambar nebula statis 1 kali saja, hemat 100% GPU loop
           cosmicNebula.draw();
         }}
       }} else {{
@@ -401,30 +392,30 @@ components.html(f"""
       }}
     }}
 
-    // Inject tombol mode switcher (Di bawah navigasi sidebar kiri)
+    // Inject tombol mode switcher (Selalu stick di kanan luar sidebar bagian bawah)
     let modeBtn = document.getElementById('jordan-mode-btn');
     if (!modeBtn) {{
       modeBtn = document.createElement('button');
       modeBtn.id = 'jordan-mode-btn';
+      const isMobile = window.innerWidth <= 768;
       Object.assign(modeBtn.style, {{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: 'calc(100% - 2rem)',
-        margin: '14px 1rem 18px 1rem',
+        position: 'fixed',
+        bottom: isMobile ? '16px' : '20px',
+        left: '260px',
+        right: 'auto',
         zIndex: '999999',
         background: 'rgba(9, 10, 22, 0.92)',
         color: '#ffd740',
         border: '1px solid rgba(255,215,64,0.45)',
-        borderRadius: '12px',
-        padding: '8px 14px',
-        fontSize: '12px',
+        borderRadius: '20px',
+        padding: isMobile ? '6px 12px' : '7px 16px',
+        fontSize: isMobile ? '11px' : '12px',
         fontFamily: 'Poppins, sans-serif',
         fontWeight: '600',
         letterSpacing: '0.5px',
         cursor: 'pointer',
         backdropFilter: 'blur(6px)',
-        transition: 'all 0.2s ease',
+        transition: 'border-color 0.2s ease, color 0.2s ease',
         boxShadow: '0 4px 14px rgba(0,0,0,0.55)'
       }});
       modeBtn.addEventListener('click', function(e) {{
@@ -433,51 +424,53 @@ components.html(f"""
         const nextMode = MODES[(curIdx + 1) % MODES.length];
         applyVisualMode(nextMode);
       }});
+      document.body.appendChild(modeBtn);
 
-      function mountAndPositionModeBtn() {{
-        const sidebarNav = document.querySelector('[data-testid="stSidebarNav"]');
-        const sidebarContent = document.querySelector('[data-testid="stSidebarContent"]');
+      function updateModeBtnPos() {{
+        const isMob = (window.innerWidth || 1920) <= 768;
         const sidebar = document.querySelector('[data-testid="stSidebar"]');
-        const isCollapsed = sidebar && sidebar.getAttribute('aria-expanded') === 'false';
-
-        if (!isCollapsed && (sidebarNav || sidebarContent)) {{
-          const parentTarget = sidebarNav ? sidebarNav.parentNode : sidebarContent;
-          if (modeBtn.parentNode !== parentTarget) {{
-            if (sidebarNav && sidebarNav.nextSibling) {{
-              parentTarget.insertBefore(modeBtn, sidebarNav.nextSibling);
-            }} else {{
-              parentTarget.appendChild(modeBtn);
-            }}
+        let leftPos = 18;
+        if (sidebar && !isMob) {{
+          const sbRect = sidebar.getBoundingClientRect();
+          if (sbRect.right > 20) {{
+            leftPos = Math.round(sbRect.right + 18);
           }}
-          Object.assign(modeBtn.style, {{
-            position: 'relative',
-            bottom: 'auto',
-            left: 'auto',
-            right: 'auto',
-            width: 'calc(100% - 2rem)',
-            margin: '12px 1rem 18px 1rem'
-          }});
-        }} else {{
-          // Fallback jika sidebar sedang di-collapse: tampil di pojok kiri bawah
-          if (modeBtn.parentNode !== document.body) {{
-            document.body.appendChild(modeBtn);
-          }}
-          Object.assign(modeBtn.style, {{
-            position: 'fixed',
-            bottom: '16px',
-            left: '16px',
-            right: 'auto',
-            width: 'auto',
-            margin: '0'
-          }});
         }}
+        modeBtn.style.left = leftPos + 'px';
+        modeBtn.style.right = 'auto';
+        modeBtn.style.bottom = isMob ? '16px' : '20px';
       }}
 
-      mountAndPositionModeBtn();
-      window.addEventListener('resize', mountAndPositionModeBtn, {{ passive: true }});
+      updateModeBtnPos();
+      window.addEventListener('resize', updateModeBtnPos, {{ passive: true }});
+
+      // 1. ResizeObserver: mendeteksi real-time saat sidebar ditarik (dipanjang/pendekin)
+      const sidebarEl = document.querySelector('[data-testid="stSidebar"]');
+      if (sidebarEl && window.ResizeObserver) {{
+        if (window.__jordanSidebarResizeObs) window.__jordanSidebarResizeObs.disconnect();
+        window.__jordanSidebarResizeObs = new ResizeObserver(updateModeBtnPos);
+        window.__jordanSidebarResizeObs.observe(sidebarEl);
+      }}
+
+      // 2. MutationObserver: mendeteksi saat tombol collapse/expand diklik
       if (window.__jordanSidebarObserver) window.__jordanSidebarObserver.disconnect();
-      window.__jordanSidebarObserver = new MutationObserver(mountAndPositionModeBtn);
-      window.__jordanSidebarObserver.observe(document.body, {{ childList: true, subtree: true, attributes: true, attributeFilter: ['aria-expanded'] }});
+      window.__jordanSidebarObserver = new MutationObserver(function() {{
+        updateModeBtnPos();
+        const sb = document.querySelector('[data-testid="stSidebar"]');
+        if (sb && window.ResizeObserver && window.__jordanSidebarResizeObs) {{
+          window.__jordanSidebarResizeObs.observe(sb);
+        }}
+        let count = 0;
+        const timer = setInterval(function() {{
+          updateModeBtnPos();
+          if (++count > 15) clearInterval(timer);
+        }}, 25);
+      }});
+      window.__jordanSidebarObserver.observe(document.body, {{
+        attributes: true,
+        subtree: true,
+        attributeFilter: ['aria-expanded', 'style', 'class']
+      }});
     }}
 
     // ===== 5. PAGE VISIBILITY =====
@@ -491,9 +484,8 @@ components.html(f"""
       }});
     }}
 
-    // ===== 6. DETEKSI ZONA AMAN (AGAR BINTANG KONSTELASI TIDAK KENA ELEMEN) =====
+    // ===== 6. DETEKSI ZONA AMAN =====
     function isSafeSkyMargin(x, y) {{
-      // Hindari area sidebar di kiri
       const sidebar = document.querySelector('[data-testid="stSidebar"]');
       let leftBound = 20;
       if (sidebar) {{
@@ -502,7 +494,6 @@ components.html(f"""
       }}
       if (x < leftBound || x > cv.width - 25 || y < 55 || y > cv.height - 65) return false;
 
-      // Periksa elemen di titik (x, y) menggunakan elementFromPoint
       const el = document.elementFromPoint(x, y);
       if (!el) return true;
       const forbidden = el.closest(
@@ -527,27 +518,26 @@ components.html(f"""
     }}
 
     // ========================================================
-    // A. SMOOTH DUAL-LAYER NEBULA (TANPA TELEPORT / PATAH)
+    // A. SMOOTH DUAL-LAYER NEBULA
     // ========================================================
     class SmoothCosmicNebula {{
       constructor() {{
-        // Palet warna Astral World (ORV x LOTM)
         this.palettes = [
-          {{ c1: [95, 55, 195],  c2: [24, 155, 215] }},  // Astral Violet & Starlight Cyan
-          {{ c1: [24, 155, 215], c2: [38, 195, 130] }},  // Starlight Cyan & Emerald Aurora
-          {{ c1: [165, 65, 140], c2: [235, 165, 45] }},  // Crimson Star & Sefirah Gold
-          {{ c1: [45, 95, 210],  c2: [145, 70, 220] }},  // Deep Cosmos Blue & Mystic Purple
-          {{ c1: [225, 165, 45], c2: [185, 65, 115] }}   // Sovereign Gold & Rose Nebula
+          {{ c1: [95, 55, 195],  c2: [24, 155, 215] }},
+          {{ c1: [24, 155, 215], c2: [38, 195, 130] }},
+          {{ c1: [165, 65, 140], c2: [235, 165, 45] }},
+          {{ c1: [45, 95, 210],  c2: [145, 70, 220] }},
+          {{ c1: [225, 165, 45], c2: [185, 65, 115] }}
         ];
         this.idx = 0;
         this.nextIdx = 1;
         this.t = 0;
-        this.colorSpeed = 0.0014; // Transisi warna sangat lembut
+        this.colorSpeed = 0.0014;
         this.driftPhase = Math.random() * Math.PI * 2;
       }}
       update() {{
         this.t += this.colorSpeed;
-        this.driftPhase += 0.0025; // Gerak mengambang kontinu (tidak pernah reset/teleport)
+        this.driftPhase += 0.0025;
         if (this.t >= 1) {{
           this.t -= 1;
           this.idx = this.nextIdx;
@@ -557,14 +547,12 @@ components.html(f"""
       draw() {{
         const p1 = this.palettes[this.idx];
         const p2 = this.palettes[this.nextIdx];
-        // Cosine Ease-In-Out agar perpindahan antar palet mulus sempurna
         const ease = 0.5 - 0.5 * Math.cos(this.t * Math.PI);
         const lerp = (a, b) => Math.round(a + (b - a) * ease);
 
         const r1 = lerp(p1.c1[0], p2.c1[0]), g1 = lerp(p1.c1[1], p2.c1[1]), b1 = lerp(p1.c1[2], p2.c1[2]);
         const r2 = lerp(p1.c2[0], p2.c2[0]), g2 = lerp(p1.c2[1], p2.c2[1]), b2 = lerp(p1.c2[2], p2.c2[2]);
 
-        // Posisi pusat mengambang halus dengan kurva Lissajous
         const cx1 = cv.width  * (0.50 + 0.18 * Math.sin(this.driftPhase));
         const cy1 = cv.height * (0.36 + 0.12 * Math.cos(this.driftPhase * 0.8));
         const rad1 = Math.max(cv.width, cv.height) * 0.46;
@@ -597,12 +585,11 @@ components.html(f"""
     const cosmicNebula = new SmoothCosmicNebula();
 
     // ========================================================
-    // B. 10 BINTANG KONSTELASI KELOMPOK (DI ZONA PINGGIR AMAN)
+    // B. 10 BINTANG KONSTELASI KELOMPOK
     // ========================================================
     class ConstellationStar {{
       constructor(data, side) {{
         this.data = data;
-        // Pilih zona tepi kiri (di kanan sidebar) atau tepi kanan layar agar tidak tabrak konten tengah
         const sidebar = document.querySelector('[data-testid="stSidebar"]');
         let sbRight = 260;
         if (sidebar) {{
@@ -640,7 +627,6 @@ components.html(f"""
         const colStr = 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ',';
 
         ctx.save();
-        // Glow halo ringan (tanpa shadowBlur yang berat)
         const glowR = this.isHovered ? 22 : (13 + Math.sin(this.pulse) * 3);
         const g = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, glowR);
         g.addColorStop(0, colStr + (a * 0.85) + ')');
@@ -651,14 +637,12 @@ components.html(f"""
         ctx.arc(this.x, this.y, glowR, 0, Math.PI * 2);
         ctx.fill();
 
-        // Cincin orbit tipis
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.r + 6 + Math.sin(this.pulse) * 2.5, 0, Math.PI * 2);
         ctx.strokeStyle = colStr + (a * (this.isHovered ? 0.9 : 0.42)) + ')';
         ctx.lineWidth = 1.1;
         ctx.stroke();
 
-        // Sinar Bintang 4 Penjuru
         const fl = this.isHovered ? 13 : 8;
         ctx.strokeStyle = colStr + a + ')';
         ctx.lineWidth = 1.4;
@@ -667,13 +651,11 @@ components.html(f"""
         ctx.moveTo(this.x, this.y - fl); ctx.lineTo(this.x, this.y + fl);
         ctx.stroke();
 
-        // Inti bintang
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
         ctx.fillStyle = '#ffffff';
         ctx.fill();
 
-        // Label kecil di samping bintang
         if (!this.isHovered && a > 0.45) {{
           ctx.font = '600 9px Poppins, sans-serif';
           ctx.fillStyle = colStr + (a * 0.8) + ')';
@@ -692,14 +674,12 @@ components.html(f"""
     function refillShuffleBag() {{
       if (!catalog || catalog.length === 0) return;
       shuffleBag = catalog.slice();
-      // Fisher-Yates shuffle (acak murni tanpa duplikat)
       for (let i = shuffleBag.length - 1; i > 0; i--) {{
         const j = Math.floor(Math.random() * (i + 1));
         const tmp = shuffleBag[i];
         shuffleBag[i] = shuffleBag[j];
         shuffleBag[j] = tmp;
       }}
-      // Hindari item pertama siklus baru sama dengan item terakhir siklus sebelumnya
       if (shuffleBag.length > 1 && lastSpawnedKode && (shuffleBag[0].kode || shuffleBag[0].nama) === lastSpawnedKode) {{
         const swapIdx = 1 + Math.floor(Math.random() * (shuffleBag.length - 1));
         const tmp = shuffleBag[0];
@@ -777,7 +757,7 @@ components.html(f"""
     }}
 
     // ========================================================
-    // C. BINTANG JATUH HALUS (DI BELAKANG ELEMEN, TANPA RNN)
+    // C. BINTANG JATUH HALUS
     // ========================================================
     const PALETTE_STRINGS = [
       'rgba(255,215,64,',
@@ -826,10 +806,9 @@ components.html(f"""
     }}
 
     // ========================================================
-    // D. STARLIGHT TOUCH (EFEK KLIK MIKRO YANG RINGAN & ELEGAN)
+    // D. STARLIGHT TOUCH
     // ========================================================
     function spawnStarlightTouch(ox, oy) {{
-      // 1 Cincin Riak Halus
       clickEntities.push({{
         x: ox, y: oy, r: 3, maxR: 42, alpha: 0.75,
         update: function() {{
@@ -849,7 +828,6 @@ components.html(f"""
         get dead() {{ return this.alpha <= 0; }}
       }});
 
-      // 5 Percikan Debu Bintang Kecil
       for (let i = 0; i < 5; i++) {{
         const ang = (Math.PI * 2 / 5) * i + (Math.random() - 0.5) * 0.4;
         const spd = 1.8 + Math.random() * 2.4;
@@ -928,17 +906,14 @@ components.html(f"""
     }};
     document.addEventListener('click', window.__jordanCosmicClickHandler, {{ capture: true, passive: true }});
 
-    // Terapkan mode awal
     applyVisualMode(window.__jordanVisualMode);
 
     let lastFrameTime = 0;
     function loop(now) {{
       window.__jordanCosmicAnimId = window.requestAnimationFrame(loop);
-      // Jika mode reduce atau simple, atau tab tidak aktif, skip render penuh (0% GPU/CPU)
       if (window.__jordanVisualMode !== 'astral' || document.visibilityState !== 'visible') {{
         return;
       }}
-      // Adaptive FPS: 60fps saat ada interaksi klik aktif, ~32fps saat idle agar ringan di laptop/HP
       const minInterval = (clickEntities.length > 0 || celestialEvents.length > 0) ? 16 : 32;
       if (now && (now - lastFrameTime < minInterval)) {{
         return;
@@ -947,11 +922,9 @@ components.html(f"""
 
       ctx.clearRect(0, 0, cv.width, cv.height);
 
-      // 1. Smooth Dual Nebula
       cosmicNebula.update();
       cosmicNebula.draw();
 
-      // 2. Bintang Konstelasi 10 Kelompok (Di Zona Pinggir Aman)
       for (let i = constellationStars.length - 1; i >= 0; i--) {{
         constellationStars[i].update();
         constellationStars[i].draw();
@@ -959,14 +932,12 @@ components.html(f"""
       }}
       updateConstellationHud();
 
-      // 3. Bintang Jatuh Halus (Di Belakang Konten)
       for (let i = celestialEvents.length - 1; i >= 0; i--) {{
         celestialEvents[i].update();
         celestialEvents[i].draw();
         if (celestialEvents[i].dead) celestialEvents.splice(i, 1);
       }}
 
-      // 4. Starlight Touch Ripple
       for (let i = clickEntities.length - 1; i >= 0; i--) {{
         clickEntities[i].update();
         clickEntities[i].draw();
@@ -981,7 +952,7 @@ components.html(f"""
     const pwin = window.parent, pdoc = window.parent.document;
     if (!pwin || !pdoc) return;
 
-    const CURRENT_VERSION = 17;
+    const CURRENT_VERSION = 19;
     if (pwin.__jordanCosmicActive && pwin.__jordanCosmicVersion === CURRENT_VERSION) return;
 
     if (pwin.__jordanCosmicAnimId) {{
