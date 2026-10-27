@@ -159,17 +159,57 @@ html.jordan-mode-simple [data-testid="stSidebar"] {
     content: '';
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
+    /* Nebula halus + banyak lapisan bintang dengan ukuran tile berbeda agar tidak terlihat berulang */
     background-image:
-        radial-gradient(circle, rgba(255,255,255,0.72) 1px, transparent 1px),
-        radial-gradient(circle, rgba(255,215,64,0.48)  1px, transparent 1px),
-        radial-gradient(circle, rgba(140,215,255,0.50) 1px, transparent 1px),
-        radial-gradient(circle, rgba(255,255,255,0.38) 1px, transparent 1px);
-    background-size: 130px 130px, 210px 210px, 175px 175px, 280px 280px;
-    background-position: 18px 22px, 65px 85px, 35px 145px, 120px 55px;
+        radial-gradient(ellipse 55% 45% at 82% 12%, rgba(95,55,195,0.20), transparent 70%),
+        radial-gradient(ellipse 50% 40% at 12% 78%, rgba(24,155,215,0.14), transparent 70%),
+        radial-gradient(ellipse 40% 35% at 60% 95%, rgba(185,65,115,0.12), transparent 70%),
+        radial-gradient(circle at 23% 41%, rgba(255,255,255,0.95) 0.9px, transparent 1.6px),
+        radial-gradient(circle at 71% 17%, rgba(255,255,255,0.80) 0.7px, transparent 1.4px),
+        radial-gradient(circle at 47% 83%, rgba(170,225,255,0.85) 1.0px, transparent 1.8px),
+        radial-gradient(circle at 88% 64%, rgba(255,226,140,0.80) 0.8px, transparent 1.5px),
+        radial-gradient(circle at 9% 12%, rgba(255,255,255,0.60) 0.5px, transparent 1.1px),
+        radial-gradient(circle at 36% 69%, rgba(255,255,255,0.55) 0.5px, transparent 1.1px),
+        radial-gradient(circle at 63% 52%, rgba(200,180,255,0.65) 0.6px, transparent 1.2px),
+        radial-gradient(circle at 54% 27%, rgba(255,255,255,0.45) 0.5px, transparent 1px),
+        radial-gradient(circle at 15% 93%, rgba(255,255,255,0.50) 0.5px, transparent 1px);
+    background-size:
+        100% 100%, 100% 100%, 100% 100%,
+        397px 331px, 523px 449px, 613px 577px, 719px 661px,
+        149px 167px, 191px 211px, 263px 241px, 113px 127px, 173px 139px;
+    background-repeat: no-repeat, no-repeat, no-repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat;
     pointer-events: none;
     z-index: 0;
-    opacity: 0.34;
+    opacity: 0.85;
     transition: opacity 0.4s ease;
+}
+
+/* Lapisan bintang berkelap-kelip (twinkle) dengan ukuran tile berbeda */
+.stApp::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image:
+        radial-gradient(circle at 31% 22%, rgba(255,255,255,1) 1px, rgba(255,255,255,0.25) 2.4px, transparent 3.6px),
+        radial-gradient(circle at 74% 58%, rgba(170,225,255,1) 1px, rgba(170,225,255,0.22) 2.4px, transparent 3.6px),
+        radial-gradient(circle at 52% 88%, rgba(255,226,140,1) 1px, rgba(255,226,140,0.22) 2.4px, transparent 3.6px);
+    background-size: 467px 389px, 641px 557px, 809px 733px;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.9;
+    animation: jordanTwinkle 5.5s ease-in-out infinite alternate;
+}
+@keyframes jordanTwinkle {
+    0%   { opacity: 0.25; }
+    50%  { opacity: 0.95; }
+    100% { opacity: 0.45; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .stApp::after { animation: none; opacity: 0.7; }
+}
+body.jordan-mode-simple .stApp::after,
+html.jordan-mode-simple .stApp::after {
+    display: none !important;
 }
 
 /* ===== PASTIKAN SEMUA ELEMEN KONTEN DI ATAS CANVAS (Z-INDEX >= 1) ===== */
