@@ -460,6 +460,9 @@ def about_page():
         unsafe_allow_html=True,
     )
 
+with st.sidebar:
+    st.markdown("### 🌿 MARKOV")
+    st.write("Selamat datang di website kami!")
 
 menu = streamlit_menu()
 
