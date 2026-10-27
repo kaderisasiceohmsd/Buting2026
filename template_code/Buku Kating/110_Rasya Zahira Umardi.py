@@ -332,7 +332,7 @@ if menu == "Badan Legislatif":
             "alamat": "Pelangi",
             "hobbi": "Dengerin lagu semusim dari marsel",
             "sosmed": "@j__eesie",
-            "kesan": "GEMASSSSS! beneran imut kakanya dan seru banget dengerin storytelling ka juee, karena cara ka jue bercerita kayak sivia the catchup club",  
+            "kesan": "GEMASSS! beneran imut kakanya dan seru banget dengerin storytelling ka juee, karena cara ka jue bercerita kayak sivia the catchup club",  
             "pesan":"Semangatt terus kak kuliah dan TA nya, semoga dimudahkan segala urusannya yaa, aamiin"# 1
             },
             ]
@@ -2114,7 +2114,7 @@ elif menu == "Departemen Eksternal":
                 "umur": "Masih muda lah",
                 "asal": "Rahim Ibu",
                 "alamat": "Pasar lantai 3.5",
-                "hobbi": "Membantu Yudia",
+                "hobbi": "Main layangan waktu hujan",
                 "sosmed": "@jaldii._",
                 "divisi" : "Pengabdian Masyarakat",
                 "kesan": "KERENNN, jujur inspiring bangett",
