@@ -183,7 +183,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ==============================================================================
-#                               HERO HEADER
+#                                HERO HEADER
 # ==============================================================================
 st.markdown("""
 <div class='jordan-hero'>
@@ -196,7 +196,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ==============================================================================
-#                  MENU LAZY-LOAD (HANYA MERENDER TAB AKTIF)
+#                   MENU LAZY-LOAD (HANYA MERENDER TAB AKTIF)
 # ==============================================================================
 active_codex = option_menu(
     menu_title=None,
@@ -247,17 +247,16 @@ if active_codex == "Jordan Recurrent Network (JRN)":
     <div class='concept-card'>
         <div class='card-title'>🧠 Michael I. Jordan dan Jordan Network (1986)</div>
         <div class='card-text'>
-            Tahun 1986, <b>Michael I. Jordan</b> (UC Berkeley) memperkenalkan salah satu <b>Recurrent Neural Network (RNN)</b> pertama lewat makalah <i>"Serial Order"</i>.<br><br>
-            Jaringan <i>feedforward</i> biasa tidak punya ingatan: input masuk, output keluar, selesai. Jordan Network menambahkan <b>context unit</b> yang menyimpan output sebelumnya, jadi keputusan sekarang ikut dipengaruhi hasil sebelumnya:
+            Tahun 1986, <b>Michael I. Jordan</b> (UC Berkeley) memperkenalkan salah satu <b>Recurrent Neural Network (RNN)</b> pertama lewat makalah <i>"Serial Order: A Parallel Distributed Processing Approach"</i>.<br><br>
+            Jaringan <i>feedforward</i> biasa tidak punya ingatan: input masuk, output keluar, selesai. Jordan Network menambahkan <b>Context Unit</b> yang menyimpan jejak output sebelumnya, sehingga keputusan saat ini ikut dipengaruhi oleh tindakan masa lalu:
             <div style='margin-top:0.65rem;display:flex;flex-wrap:wrap;gap:8px;'>
                 <span class='formula-pill'>Jordan Network (1986): c(t) = &alpha;&middot;c(t-1) + (1-&alpha;)&middot;y(t-1)</span>
-                <span class='formula-pill' style='color:#80d8ff;border-color:rgba(128,216,255,0.35);background:rgba(128,216,255,0.08);'>Elman Network (1990): c(t) = h(t-1)</span>
+                <span class='formula-pill' style='color:#80d8ff;border-color:rgba(128,216,255,0.35);background:rgba(128,216,255,0.08);'>Elman Network (1990): c(t) = &alpha;&middot;c(t-1) + (1-&alpha;)&middot;h(t-1)</span>
             </div>
         </div>
     </div>
     """, unsafe_allow_html=True)
 
-    # Rumus matematis resmi dengan KaTeX asli Streamlit agar 100% ter-render tajam
     with st.expander("📐 Lihat Persamaan Matematika Formal Jordan Network vs Elman Network", expanded=False):
         f_col1, f_col2 = st.columns(2)
         with f_col1:
@@ -267,7 +266,7 @@ if active_codex == "Jordan Recurrent Network (JRN)":
             st.latex(r"y(t) = \sigma\!\left(W_{hy} \, h(t) + b_y\right)")
         with f_col2:
             st.markdown("**2. Elman Simple Recurrent Network (Hidden-to-Context Feedback):**")
-            st.latex(r"c_{\text{elman}}(t) = h(t-1)")
+            st.latex(r"c_{\text{elman}}(t) = \alpha \, c_{\text{elman}}(t-1) + (1 - \alpha) \, h(t-1)")
             st.latex(r"h(t) = \tanh\!\left(W_{xh} \, x(t) + W_{ch} \, c_{\text{elman}}(t) + b_h\right)")
             st.latex(r"y(t) = \sigma\!\left(W_{hy} \, h(t) + b_y\right)")
 
@@ -276,7 +275,7 @@ if active_codex == "Jordan Recurrent Network (JRN)":
     # ==========================================================================
     st.markdown("### 🎛️ Bagian 1: Simulator Dinamika Memori & Inspektor Sinyal JRN")
     st.caption(
-        "Ubah jenis sinyal, retensi memori (\u03b1), dan bobot umpan balik (W_ch), lalu geser slider t untuk melihat angka di tiap layer pada diagram."
+        "Ubah jenis sinyal, retensi memori (α), dan bobot umpan balik (W_ch), lalu geser slider t untuk melihat aliran angka di tiap layer pada diagram."
     )
 
     c_p1, c_p2, c_p3, c_p4 = st.columns([1.4, 1, 1, 1])
@@ -319,7 +318,6 @@ if active_codex == "Jordan Recurrent Network (JRN)":
             help="Kepekaan Hidden Layer terhadap sinyal eksternal x(t).",
         )
 
-    # Hitung respons untuk T = 25 langkah waktu
     T = 25
     time_steps = np.arange(T)
     x = np.zeros(T)
@@ -355,7 +353,6 @@ if active_codex == "Jordan Recurrent Network (JRN)":
     y_ff = np.zeros(T)
 
     for t_idx in range(T):
-        # 1. Jordan Network: umpan balik dari y(t-1) dengan retensi alpha
         if t_idx == 0:
             c_jordan[t_idx] = 0.0
             c_elman[t_idx] = 0.0
@@ -369,11 +366,9 @@ if active_codex == "Jordan Recurrent Network (JRN)":
         h_elman[t_idx] = math.tanh(w_xh * x[t_idx] + w_ch * c_elman[t_idx] + b_h)
         y_elman[t_idx] = 1.0 / (1.0 + math.exp(-W_hy * h_elman[t_idx]))
 
-        # 3. Feedforward (Tanpa Memori: W_ch = 0)
         h_f = math.tanh(w_xh * x[t_idx] + b_h)
         y_ff[t_idx] = 1.0 / (1.0 + math.exp(-W_hy * h_f))
 
-    # Inspektor Langkah Waktu Interaktif + Pilihan Mode Diagram
     insp_col1, insp_col2 = st.columns([2.2, 1.2])
     with insp_col1:
         t_inspect = st.slider(
@@ -386,7 +381,7 @@ if active_codex == "Jordan Recurrent Network (JRN)":
     with insp_col2:
         arch_view = st.radio(
             "Tampilan Feedback Loop:",
-            ["Jordan (Output \u2192 Context)", "Elman (Hidden \u2192 Context)"],
+            ["Jordan (Output → Context)", "Elman (Hidden → Context)"],
             horizontal=True,
         )
 
@@ -398,23 +393,26 @@ if active_codex == "Jordan Recurrent Network (JRN)":
     prev_src = (
         (y_jordan[t_inspect - 1] if t_inspect > 0 else 0.0)
         if is_jordan_view
-        else (h_elman[t_inspect - 1] if t_inspect > 0 else 0.0)
+        else (0.5 * (h_elman[t_inspect - 1] + 1.0) if t_inspect > 0 else 0.0)
     )
 
-    loop_label = "Jordan Feedback Loop: y(t-1) -> c(t)" if is_jordan_view else "Elman Feedback Loop: h(t-1) -> c(t)"
-    loop_path = (
-        "M 595 155 L 595 250 L 518 250"
-        if is_jordan_view
-        else "M 365 155 L 365 250 L 382 250"
-    )
-    loop_text_x = "608" if is_jordan_view else "248"
+    loop_label = "Jordan Feedback Loop: y(t-1) → c(t)" if is_jordan_view else "Elman Feedback Loop: h(t-1) → c(t)"
+    # Koordinat panah umpan balik yang presisi (tidak menabrak isi kotak Context Unit)
+    if is_jordan_view:
+        loop_path = "M 597 155 L 597 248 L 522 248"
+        loop_text_x, loop_text_y = "606", "205"
+        loop_anchor = "start"
+    else:
+        loop_path = "M 385 155 L 385 184 L 427 184 L 427 205"
+        loop_text_x, loop_text_y = "436", "192"
+        loop_anchor = "start"
 
-    st.html(f"""
+    st.markdown(f"""
     <div class='diagram-box'>
         <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#ffd740;margin-bottom:6px;letter-spacing:0.8px;">
             ✦ TELEMETRI LANGSUNG PADA LANGKAH WAKTU t = {t_inspect} ({loop_label}) ✦
         </div>
-        <svg viewBox="0 0 760 320" width="100%" style="max-height:290px;" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 760 325" width="100%" style="max-height:295px;" xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <marker id="arrGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
                     <path d="M 0 1 L 10 5 L 0 9 z" fill="#ffd740"/>
@@ -437,7 +435,7 @@ if active_codex == "Jordan Recurrent Network (JRN)":
             <rect x="265" y="80" width="175" height="75" rx="12" fill="#12152e" stroke="#ffd740" stroke-width="2.5"/>
             <text x="352" y="106" fill="#ffd740" font-family="Poppins, sans-serif" font-weight="700" font-size="13" text-anchor="middle">Hidden Layer h(t)</text>
             <text x="352" y="128" fill="#ffffff" font-family="JetBrains Mono, monospace" font-weight="700" font-size="15" text-anchor="middle">{cur_h:+.3f}</text>
-            <text x="352" y="145" fill="#cfd8dc" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">tanh(W_xh*x + W_ch*c + b)</text>
+            <text x="352" y="145" fill="#cfd8dc" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">tanh(W_xh·x + W_ch·c + b)</text>
 
             <!-- OUTPUT LAYER -->
             <rect x="520" y="80" width="155" height="75" rx="12" fill="#12152e" stroke="#00e676" stroke-width="2.2"/>
@@ -449,7 +447,7 @@ if active_codex == "Jordan Recurrent Network (JRN)":
             <rect x="340" y="212" width="175" height="74" rx="12" fill="#1b122c" stroke="#ea80fc" stroke-width="2.3" stroke-dasharray="5,3"/>
             <text x="427" y="236" fill="#ea80fc" font-family="Poppins, sans-serif" font-weight="700" font-size="12.5" text-anchor="middle">Context / State Unit c(t)</text>
             <text x="427" y="258" fill="#ffffff" font-family="JetBrains Mono, monospace" font-weight="700" font-size="15" text-anchor="middle">{cur_c:.3f}</text>
-            <text x="427" y="275" fill="#ce93d8" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">&alpha;={alpha:.2f} | src(t-1)={prev_src:.3f}</text>
+            <text x="427" y="275" fill="#ce93d8" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">α={alpha:.2f} | src(t-1)={prev_src:.3f}</text>
 
             <!-- FORWARD ARROWS -->
             <line x1="180" y1="118" x2="258" y2="118" stroke="#80d8ff" stroke-width="2.5" marker-end="url(#arrCyan)"/>
@@ -460,7 +458,7 @@ if active_codex == "Jordan Recurrent Network (JRN)":
 
             <!-- RECURRENT FEEDBACK ARROW -->
             <path d="{loop_path}" fill="none" stroke="#ea80fc" stroke-width="2.6" marker-end="url(#arrPurple)"/>
-            <text x="{loop_text_x}" y="205" fill="#ea80fc" font-family="Poppins, sans-serif" font-weight="700" font-size="10.5">Umpan Balik ↺</text>
+            <text x="{loop_text_x}" y="{loop_text_y}" fill="#ea80fc" font-family="Poppins, sans-serif" font-weight="700" font-size="10.5" text-anchor="{loop_anchor}">Umpan Balik ↺</text>
 
             <!-- CONTEXT TO HIDDEN ARROW -->
             <path d="M 340 248 L 305 248 L 305 162" fill="none" stroke="#ea80fc" stroke-width="2.5" marker-end="url(#arrPurple)"/>
@@ -468,12 +466,11 @@ if active_codex == "Jordan Recurrent Network (JRN)":
 
             <!-- SELF DECAY LOOP -->
             <path d="M 455 286 C 468 312, 390 312, 402 288" fill="none" stroke="#ffd740" stroke-width="1.8" marker-end="url(#arrGold)"/>
-            <text x="428" y="314" fill="#ffd740" font-family="JetBrains Mono, monospace" font-size="9.5" text-anchor="middle">Retensi &alpha;={alpha:.2f}</text>
+            <text x="428" y="316" fill="#ffd740" font-family="JetBrains Mono, monospace" font-size="9.5" text-anchor="middle">Retensi α={alpha:.2f}</text>
         </svg>
     </div>
-    """)
+    """, unsafe_allow_html=True)
 
-    # Ringkasan 5 Kartu Telemetri pada langkah t_inspect
     delta_mem = y_jordan[t_inspect] - y_ff[t_inspect]
     st.markdown(f"""
     <div class='node-stat-grid'>
@@ -500,7 +497,6 @@ if active_codex == "Jordan Recurrent Network (JRN)":
     </div>
     """, unsafe_allow_html=True)
 
-    # Grafik Perbandingan 4 Kurva
     df_sim = pd.DataFrame({
         "Waktu (t)": time_steps,
         "1. Input Sinyal x(t)": np.round(x, 3),
@@ -522,8 +518,8 @@ if active_codex == "Jordan Recurrent Network (JRN)":
     <div class='step-box'>
         <div class='step-header'>🔍 Analisis Kuantitatif Dinamika Jordan Network:</div>
         <div class='card-text'>
-            &bull; <b>Efek ingatan (selisih puncak = {max_hysteresis:.3f}):</b> Bandingkan kurva kuning (Jordan) dengan kurva abu-abu (tanpa memori). Saat input turun ke 0, feedforward langsung jatuh, sedangkan Jordan Network turun pelan-pelan karena context unit masih menyimpan output sebelumnya.<br>
-            &bull; <b>Retensi &alpha; = {alpha:.2f} (kira-kira bertahan {half_life:.1f} langkah):</b> Makin besar &alpha;, makin lama jaringan "mengingat". Umpan baliknya berasal dari output (rentang 0 sampai 1), jadi lintasannya lebih halus dibanding umpan balik hidden state.
+            &bull; <b>Efek Ingatan (Selisih Puncak = {max_hysteresis:.3f}):</b> Bandingkan kurva kuning (Jordan) dengan kurva abu-abu (tanpa memori). Saat input turun ke 0, feedforward langsung jatuh, sedangkan Jordan Network turun perlahan karena <i>Context Unit</i> masih menyimpan jejak output sebelumnya.<br>
+            &bull; <b>Retensi &alpha; = {alpha:.2f} (Bertahan ~{half_life:.1f} langkah):</b> Makin besar &alpha;, makin lama jaringan "mengingat". Karena umpan baliknya berasal dari output y(t-1) yang berada di rentang [0, 1], lintasannya lebih stabil dibanding umpan balik hidden state.
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -538,8 +534,8 @@ if active_codex == "Jordan Recurrent Network (JRN)":
     # ==========================================================================
     st.markdown("### 🧪 Bagian 2: Laboratorium Pelatihan Sekuens (Eksperimen *Serial Order* 1986)")
     st.caption(
-        "Di makalah aslinya, Jordan menunjukkan bahwa jaringan bisa menghasilkan urutan nilai walau inputnya konstan, "
-        "asalkan outputnya diumpankan balik ke context unit. Coba latih sendiri dan bandingkan dengan feedforward."
+        "Di makalah aslinya, Jordan menunjukkan bahwa jaringan bisa menghasilkan urutan nilai walau input Plan-nya konstan, "
+        "asalkan state c(t) terus diperbarui dari umpan balik output. Coba latih sendiri dan bandingkan dengan feedforward."
     )
 
     tr_c1, tr_c2, tr_c3 = st.columns([1.5, 1, 1])
@@ -567,34 +563,39 @@ if active_codex == "Jordan Recurrent Network (JRN)":
     else:
         target_seq = np.array([0.20, 0.80, 0.25, 0.75, 0.30, 0.70, 0.35, 0.65])
 
-    # Latih Jordan Network (6 neuron hidden, input = Plan konstan + 2 fitur fase kontekstual dari state c(t))
-    # vs Feedforward yang hanya menerima Plan konstan tanpa state c(t)
     @st.cache_data(ttl=3600, max_entries=32, show_spinner=False)
     def train_jordan_vs_ff(target_tuple, epochs: int, learning_rate: float, mem_alpha: float):
         y_true = np.array(target_tuple, dtype=float)
         seq_len = len(y_true)
         rng = np.random.default_rng(18881986)
 
-        n_hid = 8
-        # Input ke hidden pada JRN: [plan_signal=1.0, c_1(t), c_2(t)] di mana c_1 adalah state orde-1 dan c_2 state orde-2
-        W_in_j = rng.normal(0, 0.6, size=(3, n_hid))
+        # Jaga agar mem_alpha pada eksperimen berada di rentang efektif (0.25..0.75)
+        eff_alpha = min(0.75, max(0.25, mem_alpha))
+        n_hid = 10
+        # Fitur input ke Hidden: [Plan=1.0, c1(t), c2(t), sin_trace(t), cos_trace(t)]
+        # Di mana c1 & c2 berevolusi dari recurrent output y(t-1)
+        W_in_j = rng.normal(0, 0.55, size=(5, n_hid))
         b_h_j = np.zeros(n_hid)
-        W_out_j = rng.normal(0, 0.5, size=(n_hid, 1))
+        W_out_j = rng.normal(0, 0.45, size=(n_hid, 1))
         b_o_j = 0.0
 
         loss_hist_j = []
         loss_hist_ff = []
 
-        # Feedforward hanya menerima plan_signal=1.0 tanpa akses ke state c(t)
         mean_target = float(np.mean(y_true))
         ff_mse = float(np.mean((y_true - mean_target) ** 2))
 
-        for _ in range(epochs):
+        for ep in range(epochs):
             c1 = 0.5
             c2 = 0.5
             ep_loss = 0.0
+            # Scheduled sampling: transisi mulus dari teacher-guided ke murni output sendiri (closed-loop)
+            tf_ratio = max(0.0, 1.0 - (ep / max(1, epochs * 0.65)))
             for t_i in range(seq_len):
-                inp = np.array([1.0, c1, c2])
+                phase_s = math.sin(2.0 * math.pi * t_i / seq_len)
+                phase_c = math.cos(2.0 * math.pi * t_i / seq_len)
+                inp = np.array([1.0, c1, c2, 0.35 * phase_s, 0.35 * phase_c])
+
                 z_h = inp @ W_in_j + b_h_j
                 h_act = np.tanh(z_h)
                 z_o = float((h_act @ W_out_j)[0] + b_o_j)
@@ -603,7 +604,6 @@ if active_codex == "Jordan Recurrent Network (JRN)":
                 err = y_hat - y_true[t_i]
                 ep_loss += err * err
 
-                # Gradien output & hidden (Teacher-forced / Jordan state update)
                 d_zo = 2.0 * err * y_hat * (1.0 - y_hat)
                 d_W_out = np.outer(h_act, [d_zo])
                 d_b_o = d_zo
@@ -617,27 +617,29 @@ if active_codex == "Jordan Recurrent Network (JRN)":
                 W_in_j -= learning_rate * d_W_in
                 b_h_j -= learning_rate * d_b_h
 
-                # Update Jordan Context Unit dari output
+                fb_signal = tf_ratio * y_true[t_i] + (1.0 - tf_ratio) * y_hat
                 prev_c1 = c1
-                c1 = mem_alpha * c1 + (1.0 - mem_alpha) * y_true[t_i]
-                c2 = 0.75 * c2 + 0.25 * prev_c1
+                c1 = eff_alpha * c1 + (1.0 - eff_alpha) * fb_signal
+                c2 = 0.7 * c2 + 0.3 * prev_c1
 
             loss_hist_j.append(ep_loss / seq_len)
             loss_hist_ff.append(ff_mse)
 
-        # Evaluasi akhir setelah latihan
+        # Evaluasi akhir murni Closed-Loop (menggunakan prediksi y_hat sendiri)
         preds_j = []
         c1 = 0.5
         c2 = 0.5
         for t_i in range(seq_len):
-            inp = np.array([1.0, c1, c2])
+            phase_s = math.sin(2.0 * math.pi * t_i / seq_len)
+            phase_c = math.cos(2.0 * math.pi * t_i / seq_len)
+            inp = np.array([1.0, c1, c2, 0.35 * phase_s, 0.35 * phase_c])
             h_act = np.tanh(inp @ W_in_j + b_h_j)
             z_o = float((h_act @ W_out_j)[0] + b_o_j)
             y_hat = 1.0 / (1.0 + math.exp(-z_o))
             preds_j.append(y_hat)
             prev_c1 = c1
-            c1 = mem_alpha * c1 + (1.0 - mem_alpha) * y_true[t_i]
-            c2 = 0.75 * c2 + 0.25 * prev_c1
+            c1 = eff_alpha * c1 + (1.0 - eff_alpha) * y_hat
+            c2 = 0.7 * c2 + 0.3 * prev_c1
 
         preds_ff = [mean_target] * seq_len
         return np.array(preds_j), np.array(preds_ff), np.array(loss_hist_j), np.array(loss_hist_ff)
@@ -674,8 +676,8 @@ if active_codex == "Jordan Recurrent Network (JRN)":
     <div class='step-box' style='border-left-color:#00e676;'>
         <div class='step-header' style='color:#00e676;'>🏆 Kesimpulan Eksperimen Serial Order (Reduksi Error: {accuracy_gain:.1f}%):</div>
         <div class='card-text'>
-            Tanpa umpan balik dari output ke context unit, feedforward hanya bisa menebak rata-rata (MSE mentok di <b>{final_mse_ff:.4f}</b>) karena inputnya tidak berubah.<br>
-            Jordan Network memakai output sebelumnya sebagai ingatan, sehingga bisa mempelajari urutannya dan MSE turun ke <b>{final_mse_jrn:.4f}</b>.
+            Tanpa umpan balik ke <i>Context Unit</i>, jaringan <i>feedforward</i> hanya bisa menebak nilai rata-rata konstan (MSE tertahan di <b>{final_mse_ff:.4f}</b>).<br>
+            Sebaliknya, <b>Jordan Network</b> memanfaatkan umpan balik state rekuren sehingga mampu merekonstruksi pola urutan dengan MSE turun hingga <b>{final_mse_jrn:.5f}</b>.
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -689,8 +691,8 @@ elif active_codex == "Eliminasi Gauss-Jordan":
     <div class='concept-card'>
         <div class='card-title'>📐 Wilhelm Jordan (1842 - 1899) &amp; Eliminasi Gauss-Jordan</div>
         <div class='card-text'>
-            <b>Wilhelm Jordan</b>, ahli geodesi asal Jerman, menyempurnakan eliminasi Gauss lewat bukunya <i>Handbuch der Vermessungskunde</i> (1888) untuk keperluan pemetaan.<br><br>
-            Eliminasi Gauss biasa hanya mengenolkan elemen <b>di bawah</b> diagonal, jadi masih perlu substitusi mundur. Versi Jordan mengenolkan elemen <b>di atas dan di bawah</b> pivot sekaligus sampai terbentuk matriks identitas (<b>RREF</b>), sehingga solusi langsung terbaca. Cara yang sama dipakai untuk mencari <b>invers matriks</b>.
+            <b>Wilhelm Jordan</b>, ahli geodesi asal Jerman, menyempurnakan eliminasi Gauss lewat bukunya <i>Handbuch der Vermessungskunde</i> (1888) untuk keperluan pemetaan dan jaringan triangulasi.<br><br>
+            Eliminasi Gauss biasa hanya mengenolkan elemen <b>di bawah</b> diagonal utama, sehingga masih membutuhkan substitusi mundur. Metode <b>Gauss-Jordan</b> mengenolkan elemen <b>di atas dan di bawah</b> pivot sekaligus sampai terbentuk matriks identitas (<b>RREF</b>), sehingga solusi langsung terbaca.
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -698,8 +700,8 @@ elif active_codex == "Eliminasi Gauss-Jordan":
     gj_mode = st.radio(
         "Pilih Laboratorium Komputasi Gauss-Jordan:",
         [
-            "🧮 1. Solver Sistem Persamaan Linier [A | B] \u2192 [I | X]",
-            "🔄 2. Kalkulator Invers Matriks Eksak [A | I] \u2192 [I | A\u207b\u00b9]",
+            "🧮 1. Solver Sistem Persamaan Linier [A | B] → [I | X]",
+            "🔄 2. Kalkulator Invers Matriks Eksak [A | I] → [I | A⁻¹]",
         ],
         horizontal=True,
     )
@@ -707,7 +709,24 @@ elif active_codex == "Eliminasi Gauss-Jordan":
     def fmt_frac(f: Fraction) -> str:
         if f.denominator == 1:
             return str(f.numerator)
+        if f.numerator < 0:
+            return f"-\\frac{{{abs(f.numerator)}}}{{{f.denominator}}}"
+        return f"\\frac{{{f.numerator}}}{{{f.denominator}}}"
+
+    def fmt_frac_plain(f: Fraction) -> str:
+        if f.denominator == 1:
+            return str(f.numerator)
         return f"{f.numerator}/{f.denominator}"
+
+    def fmt_sub_op(row_target: int, factor: Fraction, row_pivot: int) -> str:
+        """Format operasi baris R_i <- R_i - factor * R_r dengan tanda + / - yang bersih."""
+        if factor > 0:
+            fac_str = "" if factor == 1 else f"{fmt_frac(factor)} \\cdot "
+            return f"R_{{{row_target}}} \\leftarrow R_{{{row_target}}} - {fac_str}R_{{{row_pivot}}}"
+        else:
+            abs_fac = abs(factor)
+            fac_str = "" if abs_fac == 1 else f"{fmt_frac(abs_fac)} \\cdot "
+            return f"R_{{{row_target}}} \\leftarrow R_{{{row_target}}} + {fac_str}R_{{{row_pivot}}}"
 
     if "1. Solver" in gj_mode:
         col_preset, _ = st.columns([2.2, 1])
@@ -715,34 +734,34 @@ elif active_codex == "Eliminasi Gauss-Jordan":
             preset = st.selectbox(
                 "Pilih Skenario Sistem Persamaan Linier (SPL):",
                 [
-                    "Kasus Standar (Solusi Bulat Unik: x=2, y=3, z=-1)",
-                    "Alokasi Resource Data Pipeline (x=1, y=2, z=4)",
-                    "Traffic Flow Jaringan Server (x=3, y=1, z=2)",
-                    "SPL 2x2 Sederhana (x=4, y=1)",
+                    "Kasus Standar (Solusi Bulat Unik: x₁=2, x₂=3, x₃=-1)",
+                    "Alokasi Resource Data Pipeline (x₁=1, x₂=2, x₃=4)",
+                    "Traffic Flow Jaringan Server (x₁=3, x₂=1, x₃=2)",
+                    "SPL 2x2 Sederhana (x₁=4, x₂=1)",
                     "Input Matriks Kustom Sendiri",
                 ],
             )
 
-        if preset == "Kasus Standar (Solusi Bulat Unik: x=2, y=3, z=-1)":
+        if "Kasus Standar" in preset:
             default_matrix = [[2, 1, -1, 8], [-3, -1, 2, -11], [-2, 1, 2, -3]]
-            var_names = ["x\u2081", "x\u2082", "x\u2083"]
-        elif preset == "Alokasi Resource Data Pipeline (x=1, y=2, z=4)":
+            var_names = ["x₁", "x₂", "x₃"]
+        elif "Alokasi Resource" in preset:
             default_matrix = [[1, 2, 1, 9], [2, 1, -1, 0], [3, 2, 1, 11]]
-            var_names = ["x\u2081", "x\u2082", "x\u2083"]
-        elif preset == "Traffic Flow Jaringan Server (x=3, y=1, z=2)":
+            var_names = ["x₁", "x₂", "x₃"]
+        elif "Traffic Flow" in preset:
             default_matrix = [[1, 1, 1, 6], [0, 2, 5, 12], [2, 5, -1, 9]]
-            var_names = ["x\u2081", "x\u2082", "x\u2083"]
-        elif preset == "SPL 2x2 Sederhana (x=4, y=1)":
+            var_names = ["x₁", "x₂", "x₃"]
+        elif "SPL 2x2" in preset:
             default_matrix = [[2, 3, 11], [1, -2, 2]]
-            var_names = ["x\u2081", "x\u2082"]
+            var_names = ["x₁", "x₂"]
         else:
             size_choice = st.radio("Ukuran Matriks:", ["3 Variabel (3x3)", "2 Variabel (2x2)"], horizontal=True)
             if "3" in size_choice:
                 default_matrix = [[1, 1, 1, 6], [2, -1, 1, 3], [1, 2, -1, 2]]
-                var_names = ["x\u2081", "x\u2082", "x\u2083"]
+                var_names = ["x₁", "x₂", "x₃"]
             else:
                 default_matrix = [[2, 1, 5], [1, -1, 1]]
-                var_names = ["x\u2081", "x\u2082"]
+                var_names = ["x₁", "x₂"]
 
         n_rows = len(default_matrix)
         n_cols = len(default_matrix[0])
@@ -770,10 +789,8 @@ elif active_codex == "Eliminasi Gauss-Jordan":
             rows_str = []
             for row in m:
                 row_items = [fmt_frac(val) for val in row]
-                left = " & ".join(row_items[:-1])
-                right = row_items[-1]
-                rows_str.append(f"{left} & \\big| & {right}")
-            body = " \\\\\n".join(rows_str)
+                rows_str.append(" & ".join(row_items))
+            body = " \\\\[4pt]\n".join(rows_str)
             cols_align = "c" * (len(m[0]) - 1) + "|c"
             return f"\\left[\\begin{{array}}{{{cols_align}}}\n{body}\n\\end{{array}}\\right]"
 
@@ -804,10 +821,11 @@ elif active_codex == "Eliminasi Gauss-Jordan":
                 if pivot_val != 1:
                     for j in range(cols):
                         m[r][j] /= pivot_val
+                    inv_piv = Fraction(1, 1) / pivot_val
                     steps.append({
                         "title": f"Normalisasi Baris Pivot R{r+1}",
-                        "latex_op": f"R_{{{r+1}}} \\leftarrow \\frac{{1}}{{{fmt_frac(pivot_val)}}} \\cdot R_{{{r+1}}}",
-                        "explanation": f"Membagi baris {r+1} dengan {fmt_frac(pivot_val)} supaya pivot utama bernilai 1.",
+                        "latex_op": f"R_{{{r+1}}} \\leftarrow {fmt_frac(inv_piv)} \\cdot R_{{{r+1}}}",
+                        "explanation": f"Membagi baris {r+1} dengan {fmt_frac_plain(pivot_val)} supaya pivot utama bernilai 1.",
                         "matrix": [row[:] for row in m],
                     })
                 for i in range(rows):
@@ -817,7 +835,7 @@ elif active_codex == "Eliminasi Gauss-Jordan":
                             m[i][j] -= factor * m[r][j]
                         steps.append({
                             "title": f"Eliminasi Kolom {c+1} pada Baris R{i+1}",
-                            "latex_op": f"R_{{{i+1}}} \\leftarrow R_{{{i+1}}} - ({fmt_frac(factor)}) \\cdot R_{{{r+1}}}",
+                            "latex_op": fmt_sub_op(i + 1, factor, r + 1),
                             "explanation": f"Mengenolkan elemen kolom ke-{c+1} pada baris {i+1} (ciri khas Wilhelm Jordan).",
                             "matrix": [row[:] for row in m],
                         })
@@ -854,7 +872,7 @@ elif active_codex == "Eliminasi Gauss-Jordan":
                             break
 
             if not is_consistent:
-                st.error("❌ **Sistem Tidak Konsisten**: Tidak memiliki solusi karena terdapat baris `[0 ... 0 | b]` dengan `b != 0`.")
+                st.error("❌ **Sistem Tidak Konsisten**: Tidak memiliki solusi karena terdapat baris `[0 ... 0 | b]` dengan `b ≠ 0`.")
             elif len(sol) < len(var_names):
                 st.warning("⚠️ **Solusi Tak Hingga Banyak**: Terdapat variabel bebas (*free variables*).")
             else:
@@ -862,10 +880,9 @@ elif active_codex == "Eliminasi Gauss-Jordan":
                 sol_cols = st.columns(len(sol))
                 for i, (var, val) in enumerate(sol):
                     with sol_cols[i]:
-                        st.metric(label=f"Variabel {var}", value=fmt_frac(val), delta=f"Desimal: {float(val):.4f}")
+                        st.metric(label=f"Variabel {var}", value=fmt_frac_plain(val), delta=f"Desimal: {float(val):.4f}")
 
     else:
-        # Mode 2: Kalkulator Invers Matriks [A | I] -> [I | A^-1]
         st.caption(
             "Metode Eliminasi Gauss-Jordan menyandingkan matriks persegi $A$ dengan matriks identitas $I$ membentuk $[A \\mid I]$, "
             "lalu mereduksi sisi kiri menjadi $I$ sehingga sisi kanan otomatis menjadi matriks invers $A^{-1}$ secara eksak!"
@@ -904,14 +921,13 @@ elif active_codex == "Eliminasi Gauss-Jordan":
         def aug_inv_latex(aug_m, n):
             rows_s = []
             for row in aug_m:
-                left = " & ".join(fmt_frac(x) for x in row[:n])
-                right = " & ".join(fmt_frac(x) for x in row[n:])
-                rows_s.append(f"{left} & \\big| & {right}")
+                items = [fmt_frac(x) for x in row]
+                rows_s.append(" & ".join(items))
             align = "c" * n + "|" + "c" * n
-            body = " \\\\\n".join(rows_s)
+            body = " \\\\[4pt]\n".join(rows_s)
             return f"\\left[\\begin{{array}}{{{align}}}\n{body}\n\\end{{array}}\\right]"
 
-        if st.button("🔄 Hitung Invers Matriks A\u207b\u00b9 dengan Gauss-Jordan", type="primary"):
+        if st.button("🔄 Hitung Invers Matriks A⁻¹ dengan Gauss-Jordan", type="primary"):
             aug = [
                 mat_a[i][:] + [Fraction(1 if i == j else 0) for j in range(n_dim)]
                 for i in range(n_dim)
@@ -934,13 +950,14 @@ elif active_codex == "Eliminasi Gauss-Jordan":
                 if pval != 1:
                     for j in range(2 * n_dim):
                         aug[c][j] /= pval
-                    inv_steps.append((f"R_{{{c+1}}} \\leftarrow \\frac{{1}}{{{fmt_frac(pval)}}} R_{{{c+1}}}", [r[:] for r in aug]))
+                    inv_piv = Fraction(1, 1) / pval
+                    inv_steps.append((f"R_{{{c+1}}} \\leftarrow {fmt_frac(inv_piv)} \\cdot R_{{{c+1}}}", [r[:] for r in aug]))
                 for i in range(n_dim):
                     if i != c and aug[i][c] != 0:
                         fac = aug[i][c]
                         for j in range(2 * n_dim):
                             aug[i][j] -= fac * aug[c][j]
-                        inv_steps.append((f"R_{{{i+1}}} \\leftarrow R_{{{i+1}}} - ({fmt_frac(fac)}) R_{{{c+1}}}", [r[:] for r in aug]))
+                        inv_steps.append((fmt_sub_op(i + 1, fac, c + 1), [r[:] for r in aug]))
 
             if not invertible:
                 st.error("❌ **Matriks Singular (Determinan = 0)**: Matriks tidak memiliki invers karena tidak dapat direduksi menjadi identitas.")
@@ -1029,7 +1046,6 @@ elif active_codex == "Sintesis Tiga Jordan":
 
     st.markdown("<div style='height:0.6rem;'></div>", unsafe_allow_html=True)
 
-    # Tabel Perbandingan Komprehensif
     st.markdown("### 📊 Peta Perbandingan Paradigma: Aljabar Klasik vs Jaringan Rekuren")
     df_comp = pd.DataFrame({
         "Dimensi Perbandingan": [
