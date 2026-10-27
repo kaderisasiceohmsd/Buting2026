@@ -66,10 +66,45 @@ st.markdown(
         color: var(--bark);
         font-family: 'Nunito', sans-serif;
     }
-    #MainMenu, footer, [data-testid="stToolbar"], [data-testid="stDecoration"] {visibility: hidden;}
-    header {background: transparent !important;}
+    
+    /* 🔥 [AWAL PERBAIKAN FINAL TOMBOL SIDEBAR HP] 🔥 */
+    /* Menyembunyikan menu setting bawaan dan footer */
+    #MainMenu, footer, [data-testid="stToolbar"] { visibility: hidden !important; }
+    
+    /* Mengatur area header agar transparan tapi tetap menampung tombol */
+    header[data-testid="stHeader"] {
+        background: transparent !important;
+        z-index: 999999 !important; /* Memaksa header berada di paling depan */
+        pointer-events: none; /* Mencegah header memblokir klik ke elemen di bawahnya */
+    }
+    
+    /* Mengaktifkan kembali klik khusus untuk tombol-tombol di dalam header */
+    header[data-testid="stHeader"] * {
+        pointer-events: auto !important; 
+    }
+    
+    /* Memaksa gaya tombol sidebar bawaan Streamlit agar muncul berbentuk kotak cream border hijau */
+    header[data-testid="stHeader"] button {
+        color: var(--moss) !important; /* Warna ikon menjadi hijau gelap */
+        background-color: var(--cream) !important;
+        border: 2px solid var(--olive) !important;
+        border-radius: 8px !important;
+        margin-left: 15px !important;
+        margin-top: 10px !important;
+        display: inline-flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        box-shadow: 0 4px 10px rgba(79, 107, 69, 0.2) !important;
+    }
+    header[data-testid="stHeader"] button:hover {
+        background-color: var(--sage) !important;
+    }
+    /* 🔥 [AKHIR PERBAIKAN FINAL TOMBOL SIDEBAR HP] 🔥 */
+
     section[data-testid="stSidebar"] {background: #D3E3C8; border-right: 1px solid rgba(107, 143, 94, 0.25);}
-    .block-container {padding-top: 2rem; padding-bottom: 4rem; max-width: 960px;}
+    /* Padding top dinaikkan jadi 4rem agar logo daun tidak tertutup tombol sidebar */
+    .block-container {padding-top: 4rem; padding-bottom: 4rem; max-width: 960px;} 
+    
     h1, h2, h3 {font-family: 'Fredoka', sans-serif; color: var(--moss);}
     @keyframes rise {from {opacity: 0; transform: translateY(24px);} to {opacity: 1; transform: translateY(0);}}
     @keyframes sway {0%, 100% {transform: rotate(-6deg);} 50% {transform: rotate(6deg);}}
@@ -460,9 +495,14 @@ def about_page():
         unsafe_allow_html=True,
     )
 
+
 with st.sidebar:
-    st.markdown("### 🌿 MARKOV")
-    st.write("Selamat datang di website kami!")
+    st.markdown("<h2 style='text-align: center; color: var(--moss); font-family: Fredoka, sans-serif;'>🌿 Markov</h2>", unsafe_allow_html=True)
+    st.write("---")
+    st.write("**Kelompok 05**")
+    st.write("CEO HMSD Adyatama ITERA 2026")
+    st.info("Gunakan menu utama di tengah halaman untuk berpindah navigasi (Home / About Us).")
+
 
 menu = streamlit_menu()
 
