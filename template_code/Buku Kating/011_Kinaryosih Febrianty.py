@@ -352,8 +352,8 @@ if menu == "Senator":
                 "alamat": "Kedamaian",
                 "hobbi": "Ngesen kiri",
                 "sosmed": "@helmy_inst",
-                "kesan": "Kakak ini asik saya suka belajar dengan dia",  
-                "pesan":"Lancar lancarrr perkuliahannya kakkk, semangat teruss nugasnyaa sambil dengerin lagu itu"
+                "kesan": "Asikk seruuu #bapasssbangga",  
+                "pesan":"Bang Helmy terimakasih sudah acc itu, Semangaaat terus kuliahnya semoga selalu lancar tiap apapun yang dikerjain"
             },
             {
                 "nama": "Lia Hana Ichisasmita",
