@@ -37,12 +37,44 @@ def display_images_with_data(gambar_urls, data_list):
 
 
 # JANGAN DIUBAH
+def display_images_two_per_row(gambar_urls, data_list):
+    jumlah_data = max(len(gambar_urls), len(data_list))
 
+    for start in range(0, jumlah_data, 2):
+        col1, col2 = st.columns(2)
+
+        kolom = [col1, col2]
+
+        for offset, col in enumerate(kolom):
+            i = start + offset
+
+            if i >= jumlah_data:
+                continue
+
+            with col:
+                # Menampilkan foto anggota
+                if i < len(gambar_urls):
+                    with st.spinner(f"Memuat foto anggota {i + 1}..."):
+                        img = load_image(gambar_urls[i])
+
+                    st.image(img, use_container_width=True)
+
+                # Menampilkan biodata anggota
+                if i < len(data_list):
+                    data = data_list[i]
+
+                    st.markdown(f"### {data['nama']}")
+                    st.write(f"**Sebagai:** {data['sebagai']}")
+                    st.write(f"**NIM:** {data['nim']}")
+                    st.write(f"**Fun Fact:** {data['fun_fact']}")
+                    st.write(f"**Motto Hidup:** {data['motto_hidup']}")
+
+                st.divider()
 st.markdown(
     """
     <div style='text-align: center;'>
         <h1 style='font-size: 5.5em;'>WEBSITE KATING</h1>
-        <p style='font-size: 2em;'>CEO HMSD Adyatama ITERA 2024</p>
+        <p style='font-size: 2em;'>CEO HMSD Adyatama ITERA 2026</p>
     </div>
     """,
     unsafe_allow_html=True,
@@ -75,19 +107,32 @@ def streamlit_menu():
         default_index=0,
         orientation="horizontal",
         styles={
-            "container": {"padding": "0!important", "background-color": "#fafafa"},
-            "icon": {"color": "black", "font-size": "19px"},
-            "nav-link": {
-                "font-size": "15px",
-                "text-align": "left",
-                "margin": "0px",
-                "--hover-color": "#eee",
+            "container": {
+                "padding": "5px",
+                "background-color": st.get_option("theme.backgroundColor"),
+                "border-radius": "10px",
             },
-            "nav-link-selected": {"background-color": "#3FBAD8"},
+            "icon": {
+                "color": st.get_option("theme.textColor"),
+                "font-size": "19px",
+            },
+            "nav-link": {
+                "background-color": st.get_option("theme.backgroundColor"),
+                "font-size": "16px",
+                "font-weight": "600",
+                "text-align": "center",
+                "margin": "0px 5px",
+                "color": st.get_option("theme.textColor"),
+                "--hover-color": st.get_option("theme.secondaryBackgroundColor"),
+            },
+            "nav-link-selected": {
+                "background-color": st.get_option("theme.sidebar.secondaryBackgroundColor"),
+                "color": st.get_option("theme.sidebar.textColor"),
+                "font-weight": "600",
+            },
         },
     )
     return selected
-
 
 menu = streamlit_menu()
 
@@ -102,24 +147,19 @@ if menu == "Home":
             "<h1 class='centered-title'>Deskripsi Kelompok</h1>", unsafe_allow_html=True
         )
         st.markdown(
-            """<div style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                    laborum.</div>""",
+            """<div style="text-align: justify;">Pandas, "A"nya apa? ASIK. Kelompok 6 di Kaderisasi CEO HMSD Adyatama ITERA.
+            Berisikan berbagai macam orang unik yang berasal dari berbagai daerah. Ada Minang, ada Jawa, ada Lampung, ada Batak,
+            namun semua perbedaan itu yang membuat kelompok ini unik, tapi seluruhnya juga punya tujuan yang sama yaitu menjadi 
+            lebih baik melalui Kaderisasi ini.</div>""",
             unsafe_allow_html=True,
         )
         st.write(""" """)
-        foto_kelompok = "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"
+        foto_kelompok = "https://drive.google.com/uc?export=view&id=15_GjrUPEJAT5kQh4hWcxLTr7cID059TL"
         layout(foto_kelompok)
         st.markdown(
-            """<div style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                    laborum.</div>""",
+            """<div style="text-align: justify;">Kelompok ini sebenarnya tidak sepenuhnya saling tidak mengenal dari awal.
+            Beberapa orang sudah menjadi teman dekat dari awal, namun tidak menutup untuk menjadi lebih terbuka,
+            di kelompok ini kami berubah menjadi lebih baik dan terus berkembang.</div>""",
             unsafe_allow_html=True,
         )
         st.write(""" """)
@@ -135,6 +175,12 @@ elif menu == "About Us":
         )
         st.markdown("<h1 class='centered-title'>About Us</h1>", unsafe_allow_html=True)
         gambar_urls = [
+            "https://drive.google.com/uc?export=view&id=1rCHpAW7n7XM5J5-78wNuHXaD4B2qr5P8",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=10hH3ZahcCSye-uxU9INHp_BOQUbu-08T",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
@@ -143,62 +189,84 @@ elif menu == "About Us":
         ]
         data_list = [
             {
-                "nama": "x",
+                "nama": "Muhammad Haikal Farros",
                 "sebagai": "Pak Lurah",
-                "nim": "122450016",
-                "fun_fact": "suka makan pedes, tapi ga suka efeknya",
-                "motto_hidup": "new semester new me",
+                "nim": "125450049",
+                "fun_fact": "Minum espresso 6 shoots (muntah dikit), waktu kecil pernah jatuh di septitank",
+                "motto_hidup": "im still standing like a soldier, that is how i survive",
             },
             {
-                "nama": "x",
+                "nama": "Resti Amanda Ritonga",
                 "sebagai": "Bu Lurah",
-                "nim": "122450000",
-                "fun_fact": "nyemilin es bata",
-                "motto_hidup": "Ya apa ya",
+                "nim": "125450126",
+                "fun_fact": "Setiap hari dengar lagu Hindia",
+                "motto_hidup": "Hidup hanya sekali, lakukan yang terbaik",
             },
             {
-                "nama": "x",
+                "nama": "Ridho Bitsiqah Akila Hartono",
+                "sebagai": "Anaknya pak lurah",
+                "nim": "125450092",
+                "fun_fact": "Kalau semingguan ga nyemil manis jadi badmoodan",
+                "motto_hidup": "Every step you took there's something to take",
+            },
+            {
+                "nama": "Mayang Nuraini",
                 "sebagai": "Anggota",
-                "nim": "122450083",
-                "fun_fact": "nyemilin es bata",
-                "motto_hidup": "mantap",
+                "nim": "125450131",
+                "fun_fact": "Takut sama jarum suntik",
+                "motto_hidup": "Hiduplah seperti Gojo Satoru, tetap semangat walau masalah seberat domain expansion",
             },
             {
-                "nama": "x",
-                "sebagai": "Anggotaa",
-                "nim": "122450000",
-                "fun_fact": "nyemilin",
-                "motto_hidup": "jalanin dulu aja",
+                "nama": "Mas Renno Octaviano AR",
+                "sebagai": "Anggota",
+                "nim": "125450079",
+                "fun_fact": "Pernah di tag McD",
+                "motto_hidup": "Pilihan sulit memerlukan keyakinan yang kuat",
             },
             {
-                "nama": "x",
-                "sebagai": "Anggotaa",
-                "nim": "122450100",
-                "fun_fact": "nyemilin es bata, kiko",
-                "motto_hidup": "jalanin dulu keles",
+                "nama": "Zaky Firmansyah",
+                "sebagai": "Anggota",
+                "nim": "125450027",
+                "fun_fact": "Kesurupan kalau liat bulan",
+                "motto_hidup": "Fokus pada solusi bukan masalah",
             },
             {
-                "nama": "x",
-                "sebagai": "Anggotaa",
-                "nim": "122450100",
-                "fun_fact": "nyemilin es bata, kiko",
-                "motto_hidup": "jalanin dulu keles",
+                "nama": "Ivana Ikhsan",
+                "sebagai": "Anggota",
+                "nim": "125450080",
+                "fun_fact": "Suka nonton podcast horor yang banyak dokum asli tapi padahal penakut parah",
+                "motto_hidup": "Melambat tidak sama dengan mengalah",
             },
             {
-                "nama": "x",
-                "sebagai": "Anggotaa",
-                "nim": "122450100",
-                "fun_fact": "nyemilin es bata, kiko",
-                "motto_hidup": "jalanin dulu keles",
+                "nama": "Marcellinus Kevin",
+                "sebagai": "Anggota",
+                "nim": "125450054",
+                "fun_fact": "G pernah pingsan, mimisan, kesurupan",
+                "motto_hidup": "Mengalah bukan berarti kalah",
             },
             {
-                "nama": "x",
-                "sebagai": "Anggotaa",
-                "nim": "122450110",
-                "fun_fact": "nyemilin es bata, kiko",
-                "motto_hidup": "jalanin dulu keles",
+                "nama": "Citra Handayani Pakpahan",
+                "sebagai": "Anggota",
+                "nim": "125450102",
+                "fun_fact": "Seringan rambut pendek dan minimal minum 5 botol Yakult seminggu",
+                "motto_hidup": "Menjadi, bukan sekedar ada.",
+            },
+            {
+                "nama": "Hasna Azwa Az Zahra",
+                "sebagai": "Anggota",
+                "nim": "125450034",
+                "fun_fact": "Takut sama boneka",
+                "motto_hidup": "Bloom at your own pace.",
+            },
+            {
+                "nama": "",
+                "sebagai": "Anggota",
+                "nim": "",
+                "fun_fact": "",
+                "motto_hidup": "",
             },
         ]
-        display_images_with_data(gambar_urls, data_list)
+
+        display_images_two_per_row(gambar_urls, data_list)
 
     about_page()
