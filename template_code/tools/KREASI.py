@@ -12,17 +12,34 @@ st.set_page_config(
 )
 
 # ============================================================
+<<<<<<< HEAD
+# CSS CUSTOM (Tampilan Menarik)
+# ============================================================
+st.markdown("""
+<style>
+    /* Background halaman */
+=======
 # CSS CUSTOM
 # ============================================================
 st.markdown("""
 <style>
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
     .stApp {
         background: linear-gradient(135deg, #1e3c72 0%, #2a5298 45%, #6a3093 100%);
         background-attachment: fixed;
     }
+<<<<<<< HEAD
+
+    /* Header */
     .game-header {
         background: rgba(255,255,255,0.12);
         backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+=======
+    .game-header {
+        background: rgba(255,255,255,0.12);
+        backdrop-filter: blur(14px);
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
         border-radius: 20px;
         padding: 24px 30px;
         text-align: center;
@@ -30,10 +47,26 @@ st.markdown("""
         border: 1px solid rgba(255,255,255,0.25);
         box-shadow: 0 8px 32px rgba(0,0,0,0.25);
     }
+<<<<<<< HEAD
+    .game-header h1 {
+        margin: 0;
+        font-size: 2.4em;
+        color: #fff;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    .game-header p {
+        margin: 8px 0 0 0;
+        color: rgba(255,255,255,0.85);
+        font-size: 1.05em;
+    }
+
+    /* Statistik */
+=======
     .game-header h1 { margin: 0; font-size: 2.4em; color: #fff;
                       text-shadow: 0 2px 10px rgba(0,0,0,0.3); }
     .game-header p  { margin: 8px 0 0 0; color: rgba(255,255,255,0.85); font-size: 1.05em; }
 
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
     .stat-box {
         background: rgba(255,255,255,0.15);
         border-radius: 14px;
@@ -43,6 +76,24 @@ st.markdown("""
         border: 1px solid rgba(255,255,255,0.22);
         margin-bottom: 12px;
     }
+<<<<<<< HEAD
+    .stat-box .val {
+        font-size: 1.8em;
+        font-weight: 800;
+        color: #fff;
+        line-height: 1.1;
+    }
+    .stat-box .lbl {
+        font-size: 0.82em;
+        color: rgba(255,255,255,0.8);
+        margin-top: 4px;
+    }
+
+    /* Tombol kartu tertutup (di area utama) */
+    div[data-testid="stButton"] > button {
+        width: 100% !important;
+        height: 120px !important;
+=======
     .stat-box .val { font-size: 1.8em; font-weight: 800; color: #fff; line-height: 1.1; }
     .stat-box .lbl { font-size: 0.82em; color: rgba(255,255,255,0.8); margin-top: 4px; }
 
@@ -50,6 +101,7 @@ st.markdown("""
     div[data-testid="stButton"] > button {
         width: 100% !important;
         height: 130px !important;
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
         border-radius: 18px !important;
         font-size: 2.2em !important;
         font-weight: 700 !important;
@@ -64,6 +116,11 @@ st.markdown("""
         box-shadow: 0 10px 28px rgba(0,0,0,0.4) !important;
         border-color: rgba(255,255,255,0.7) !important;
     }
+<<<<<<< HEAD
+
+    /* Override tombol di sidebar (tetap normal) */
+=======
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
     section[data-testid="stSidebar"] div[data-testid="stButton"] > button {
         height: auto !important;
         font-size: 1em !important;
@@ -76,6 +133,19 @@ st.markdown("""
         transform: none !important;
     }
 
+<<<<<<< HEAD
+    /* Kartu terbuka (preview sebelum dicocokkan) */
+    .flipped-card {
+        height: 120px;
+        border-radius: 18px;
+        background: linear-gradient(135deg, #fceabb 0%, #f8b500 100%);
+        color: #2c2c2c;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+=======
     /* Kartu terbuka */
     .flipped-card {
         height: 130px; border-radius: 18px;
@@ -84,10 +154,29 @@ st.markdown("""
         display: flex; flex-direction: column;
         align-items: center; justify-content: center;
         padding: 8px;
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
         box-shadow: 0 6px 20px rgba(0,0,0,0.25);
         border: 3px solid rgba(255,255,255,0.55);
         text-align: center;
         animation: flipIn 0.3s ease;
+<<<<<<< HEAD
+    }
+    .flipped-card .card-emoji { font-size: 2.2em; line-height: 1; margin-bottom: 4px; }
+    .flipped-card .card-text  { font-size: 0.85em; font-weight: 800; }
+    .flipped-card .card-subtext { font-size: 0.68em; opacity: 0.7; }
+
+    /* Kartu sudah cocok */
+    .matched-card {
+        height: 120px;
+        border-radius: 18px;
+        background: linear-gradient(135deg, #56ab2f 0%, #a8e063 100%);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+=======
         overflow: hidden;
     }
     .flipped-card .card-emoji   { font-size: 2.2em; line-height: 1; margin-bottom: 4px; }
@@ -104,10 +193,16 @@ st.markdown("""
         display: flex; flex-direction: column;
         align-items: center; justify-content: center;
         padding: 8px;
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
         box-shadow: 0 6px 20px rgba(0,0,0,0.25);
         border: 3px solid rgba(255,255,255,0.65);
         text-align: center;
         animation: matchPulse 0.5s ease;
+<<<<<<< HEAD
+    }
+    .matched-card .card-emoji { font-size: 2.2em; line-height: 1; margin-bottom: 4px; }
+    .matched-card .card-text  { font-size: 0.85em; font-weight: 800; }
+=======
         overflow: hidden;
     }
     .matched-card .card-emoji { font-size: 2.2em; line-height: 1; margin-bottom: 4px; }
@@ -126,6 +221,7 @@ st.markdown("""
         box-shadow: 0 2px 8px rgba(0,0,0,0.25);
     }
     .matched-card .card-photo { border-color: #fff; }
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
 
     @keyframes flipIn {
         from { transform: rotateY(90deg); opacity: 0.3; }
@@ -140,20 +236,44 @@ st.markdown("""
     /* Banner menang */
     .win-banner {
         background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+<<<<<<< HEAD
+        padding: 32px 24px;
+        border-radius: 22px;
+        color: white;
+        text-align: center;
+        margin-top: 22px;
+=======
         padding: 32px 24px; border-radius: 22px;
         color: white; text-align: center; margin-top: 22px;
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
         box-shadow: 0 10px 40px rgba(0,0,0,0.35);
         animation: matchPulse 0.6s ease;
     }
     .win-banner h1 { margin: 0; font-size: 2.8em; text-shadow: 0 2px 10px rgba(0,0,0,0.2); }
     .win-banner p  { margin: 10px 0 0 0; font-size: 1.15em; }
     .win-stats {
+<<<<<<< HEAD
+        display: inline-block;
+        background: rgba(255,255,255,0.25);
+        padding: 10px 22px;
+        border-radius: 12px;
+        margin-top: 16px;
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+
+    /* Sembunyikan branding */
+    #MainMenu, footer { visibility: hidden; }
+
+    /* Sidebar tampilan */
+=======
         display: inline-block; background: rgba(255,255,255,0.25);
         padding: 10px 22px; border-radius: 12px; margin-top: 16px;
         font-size: 1.1em; font-weight: 600;
     }
 
     #MainMenu, footer { visibility: hidden; }
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
     section[data-testid="stSidebar"] {
         background: linear-gradient(180deg, #1e1e2e 0%, #2a2a3e 100%);
     }
@@ -162,6 +282,51 @@ st.markdown("""
 
 # ============================================================
 # DATA ANGGOTA KELOMPOK
+<<<<<<< HEAD
+# (tambahkan key "foto" berisi URL untuk pakai foto asli)
+# ============================================================
+ANGGOTA = [
+    {"nama": "Andi Saputra",   "nim": "2301001", "peran": "Ketua",       "bidang": "Web Dev",     "emoji": "👨‍💻"},
+    {"nama": "Budi Rahayu",    "nim": "2301002", "peran": "Sekretaris",  "bidang": "Desain UI/UX", "emoji": "🎨"},
+    {"nama": "Citra Dewi",     "nim": "2301003", "peran": "Bendahara",   "bidang": "Data Analyst", "emoji": "📊"},
+    {"nama": "Dian Pratama",   "nim": "2301004", "peran": "Anggota",     "bidang": "Mobile Dev",   "emoji": "📱"},
+    {"nama": "Eka Wijaya",     "nim": "2301005", "peran": "Anggota",     "bidang": "Backend Dev",  "emoji": "⚙️"},
+    {"nama": "Fani Lestari",   "nim": "2301006", "peran": "Anggota",     "bidang": "UI Designer",  "emoji": "🎭"},
+    {"nama": "Gilang Permana", "nim": "2301007", "peran": "Anggota",     "bidang": "DevOps",       "emoji": "🚀"},
+    {"nama": "Hana Sari",      "nim": "2301008", "peran": "Anggota",     "bidang": "QA Engineer",  "emoji": "🧪"},
+]
+
+# ============================================================
+# FUNGSI INISIALISASI GAME
+# ============================================================
+def init_game(num_pairs: int):
+    """Membuat dek baru berisi 2 kartu per anggota."""
+    num_pairs = min(num_pairs, len(ANGGOTA))
+    selected = random.sample(ANGGOTA, num_pairs)
+
+    deck = []
+    for mid, person in enumerate(selected):
+        # Kartu 1: emoji + nama (Name Card)
+        deck.append({
+            "member_id": mid,
+            "type": "name",
+            "nama": person["nama"],
+            "nim": person["nim"],
+            "peran": person["peran"],
+            "bidang": person["bidang"],
+            "emoji": person["emoji"],
+        })
+        # Kartu 2: emoji + NIM + peran (Info Card)
+        deck.append({
+            "member_id": mid,
+            "type": "info",
+            "nama": person["nama"],
+            "nim": person["nim"],
+            "peran": person["peran"],
+            "bidang": person["bidang"],
+            "emoji": person["emoji"],
+        })
+=======
 # ------------------------------------------------------------
 # CARA ISI FOTO:
 #   1. Upload foto ke Google Drive
@@ -220,6 +385,7 @@ def init_game():
                 "emoji":     person["emoji"],
                 "foto":      person.get("foto", ""),
             })
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
 
     random.shuffle(deck)
 
@@ -229,6 +395,13 @@ def init_game():
     st.session_state.moves       = 0
     st.session_state.start_time  = time.time()
     st.session_state.end_time    = None
+<<<<<<< HEAD
+    st.session_state.num_pairs   = num_pairs
+    st.session_state.won         = False
+
+# ============================================================
+# SIDEBAR — KONTROL GAME
+=======
     st.session_state.won         = False
 
 # ============================================================
@@ -264,21 +437,44 @@ def card_visual(card, state):
 
 # ============================================================
 # SIDEBAR — KONTROL GAME (TANPA PILIHAN KESULITAN)
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
 # ============================================================
 with st.sidebar:
     st.markdown("## 🎮 Kontrol Game")
 
+<<<<<<< HEAD
+    difficulty = st.radio(
+        "Pilih Kesulitan:",
+        ["🟢 Mudah (4 pasang)", "🟡 Sedang (6 pasang)", "🔴 Sulit (8 pasang)"],
+        index=1,
+    )
+    num_pairs = {
+        "🟢 Mudah (4 pasang)": 4,
+        "🟡 Sedang (6 pasang)": 6,
+        "🔴 Sulit (8 pasang)": 8,
+    }[difficulty]
+
+    if st.button("🔄 Game Baru", use_container_width=True):
+        init_game(num_pairs)
+=======
     if st.button("🔄 Game Baru", use_container_width=True):
         init_game()
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
         st.rerun()
 
     st.divider()
     st.markdown("### 💡 Cara Bermain")
     st.markdown("""
     1. Klik kartu tertutup untuk membalik
+<<<<<<< HEAD
+    2. Cocokkan **dua kartu dengan emoji yang sama**
+    3. Kartu berisi info anggota: nama, NIM, peran, bidang
+    4. Semakin sedikit langkah, semakin tinggi rating ⭐
+=======
     2. Cocokkan **dua kartu milik anggota yang sama**  
        (kartu **nama** & kartu **NIM** punya foto/emoji yang sama)
     3. Semakin sedikit langkah, semakin tinggi rating ⭐
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
     """)
 
     st.divider()
@@ -290,10 +486,17 @@ with st.sidebar:
             )
 
 # ============================================================
+<<<<<<< HEAD
+# AUTO INIT (saat pertama load / ganti kesulitan)
+# ============================================================
+if "deck" not in st.session_state or st.session_state.get("num_pairs") != num_pairs:
+    init_game(num_pairs)
+=======
 # AUTO INIT (HANYA SAAT PERTAMA LOAD)
 # ============================================================
 if "deck" not in st.session_state:
     init_game()
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
 
 # ============================================================
 # HEADER
@@ -301,23 +504,37 @@ if "deck" not in st.session_state:
 st.markdown("""
 <div class="game-header">
     <h1>🃏 Memory Card Kelompok</h1>
+<<<<<<< HEAD
+    <p>Cocokkan pasangan kartu dengan emoji yang sama untuk mengenal anggota tim!</p>
+=======
     <p>Cocokkan dua kartu milik anggota yang sama — kenali tim dengan cara seru!</p>
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
 </div>
 """, unsafe_allow_html=True)
 
 # ============================================================
 # STATISTIK
 # ============================================================
+<<<<<<< HEAD
+elapsed = time.time() - st.session_state.start_time
+matched_pairs = len(st.session_state.matched) // 2
+best = st.session_state.get("best_moves", "—")
+=======
 elapsed       = time.time() - st.session_state.start_time
 matched_pairs = len(st.session_state.matched) // 2
 total_pairs   = len(ANGGOTA)
 best          = st.session_state.get("best_moves", "—")
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
 
 c1, c2, c3, c4 = st.columns(4)
 with c1:
     st.markdown(f'<div class="stat-box"><div class="val">{st.session_state.moves}</div><div class="lbl">🎯 Langkah</div></div>', unsafe_allow_html=True)
 with c2:
+<<<<<<< HEAD
+    st.markdown(f'<div class="stat-box"><div class="val">{matched_pairs}/{st.session_state.num_pairs}</div><div class="lbl">✅ Pasangan</div></div>', unsafe_allow_html=True)
+=======
     st.markdown(f'<div class="stat-box"><div class="val">{matched_pairs}/{total_pairs}</div><div class="lbl">✅ Pasangan</div></div>', unsafe_allow_html=True)
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
 with c3:
     st.markdown(f'<div class="stat-box"><div class="val">{int(elapsed)}s</div><div class="lbl">⏱️ Waktu</div></div>', unsafe_allow_html=True)
 with c4:
@@ -328,8 +545,13 @@ st.markdown("<div style='height:14px;'></div>", unsafe_allow_html=True)
 # ============================================================
 # GRID KARTU
 # ============================================================
+<<<<<<< HEAD
+deck = st.session_state.deck
+NUM_COLS = 4
+=======
 deck     = st.session_state.deck
 NUM_COLS = 4   # 12 pasang = 24 kartu → 6 baris
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
 
 for row_start in range(0, len(deck), NUM_COLS):
     cols = st.columns(NUM_COLS, gap="small")
@@ -341,10 +563,50 @@ for row_start in range(0, len(deck), NUM_COLS):
 
         with cols[col_idx]:
             if idx in st.session_state.matched:
+<<<<<<< HEAD
+                # ─── Kartu sudah dicocokkan (hijau) ───
+                if card["type"] == "name":
+                    st.markdown(f"""
+                        <div class="matched-card">
+                            <div class="card-emoji">{card['emoji']}</div>
+                            <div class="card-text">{card['nama']}</div>
+                        </div>
+                    """, unsafe_allow_html=True)
+                else:
+                    st.markdown(f"""
+                        <div class="matched-card">
+                            <div class="card-emoji">{card['emoji']}</div>
+                            <div class="card-text">{card['nim']}</div>
+                        </div>
+                    """, unsafe_allow_html=True)
+
+            elif idx in st.session_state.flipped:
+                # ─── Kartu sedang dibalik (preview kuning) ───
+                if card["type"] == "name":
+                    st.markdown(f"""
+                        <div class="flipped-card">
+                            <div class="card-emoji">{card['emoji']}</div>
+                            <div class="card-text">{card['nama']}</div>
+                            <div class="card-subtext">{card['peran']}</div>
+                        </div>
+                    """, unsafe_allow_html=True)
+                else:
+                    st.markdown(f"""
+                        <div class="flipped-card">
+                            <div class="card-emoji">{card['emoji']}</div>
+                            <div class="card-text">{card['nim']}</div>
+                            <div class="card-subtext">{card['bidang']}</div>
+                        </div>
+                    """, unsafe_allow_html=True)
+
+            else:
+                # ─── Kartu tertutup (klik) ───
+=======
                 st.markdown(card_visual(card, "matched"), unsafe_allow_html=True)
             elif idx in st.session_state.flipped:
                 st.markdown(card_visual(card, "flipped"), unsafe_allow_html=True)
             else:
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
                 if st.button("❓", key=f"card_{idx}", use_container_width=True):
                     st.session_state.flipped.append(idx)
                     st.rerun()
@@ -365,6 +627,10 @@ if len(st.session_state.flipped) == 2:
         st.toast(f"✅ Cocok! {deck[a]['nama']}")
         st.rerun()
     else:
+<<<<<<< HEAD
+        # Tampilkan sebentar lalu balik lagi
+=======
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
         time.sleep(1.0)
         st.session_state.flipped = []
         st.rerun()
@@ -412,5 +678,9 @@ if st.session_state.get("won"):
     col_a, col_b, col_c = st.columns([1, 2, 1])
     with col_b:
         if st.button("🔄 Main Lagi", key="play_again", use_container_width=True):
+<<<<<<< HEAD
+            init_game(st.session_state.num_pairs)
+=======
             init_game()
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
             st.rerun()

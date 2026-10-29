@@ -1096,8 +1096,13 @@ if menu == "Senator":
                 "alamat": "Sukarame",
                 "hobbi": "Mendokumentasi Bayes",
                 "sosmed": "@aqilazayyaan",
+<<<<<<< HEAD
+                "kesan": "Kakaknya cantik, lucu dan suka ketawa",  
+                "pesan":"Semoga kakaknya tetap jadi orang yang lucu"# 1
+=======
                 "kesan": "Kakaknya cantik, lucu dan identik sama bunga matahari",  
                 "pesan":"Semoga kakaknya tetap jadi orang yang lucu dan unik"# 1
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
             },
             {
                 "nama": "Hazel Mahesa Handhaka",
@@ -1313,6 +1318,8 @@ if menu == "Departemen Minbak":
         ]
         display_images_with_data(gambar_urls, data_list)
     Departemen_Minbak()
+<<<<<<< HEAD
+=======
 
 if menu == "Departemen PSDA":
     def PSDA():
@@ -2000,4 +2007,5 @@ if menu == "Departemen Internal":
         ]
         display_images_with_data(gambar_urls, data_list)
     Departemen_Internal()
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
 # Tambahkan menu lainnya sesuai kebutuhan

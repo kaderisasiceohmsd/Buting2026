@@ -1312,6 +1312,8 @@ if menu == "Departemen Minbak":
         ]
         display_images_with_data(gambar_urls, data_list)
     Departemen_Minbak()
+<<<<<<< HEAD
+=======
 
 if menu == "Departemen PSDA":
     def PSDA():
@@ -1999,4 +2001,5 @@ if menu == "Departemen Internal":
         ]
         display_images_with_data(gambar_urls, data_list)
     Departemen_Internal()
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
 # Tambahkan menu lainnya sesuai kebutuhan

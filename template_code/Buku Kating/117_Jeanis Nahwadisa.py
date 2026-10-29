@@ -1128,6 +1128,22 @@ if menu == "Senator":
 if menu == "Departemen Minbak":
     def Departemen_Minbak():
         gambar_urls = [
+<<<<<<< HEAD
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+            "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_",
+=======
             "https://drive.google.com/uc?export=view&id=18nhfqYnA7v8X2DtA1QMnumC0IKKSs3aD",
             "https://drive.google.com/uc?export=view&id=1PzF-0FFPj_yWqu2V1BvphbmcYCElLZBV",
             "https://drive.google.com/uc?export=view&id=1t6Fn2V3t0L5txMinnTSB0WBFqmrrRA9o",
@@ -1142,6 +1158,7 @@ if menu == "Departemen Minbak":
             "https://drive.google.com/uc?export=view&id=1dUGivUf0q4VQ-mNRKDiO1Ot2zlfknVUg",
             "https://drive.google.com/uc?export=view&id=1_wGopeESDKGdzkAfrGzANPNcNL1T1OtW",
             "https://drive.google.com/uc?export=view&id=1AmCJxAVter40JigxiL9WeEvMSoiJg4fR",
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
             "https://drive.google.com/uc?export=view&id=1tBo0l5pxH4N8o3rNk-Iupet4c12OATy_"
         ]
         data_list = [
@@ -1313,6 +1330,8 @@ if menu == "Departemen Minbak":
         ]
         display_images_with_data(gambar_urls, data_list)
     Departemen_Minbak()
+<<<<<<< HEAD
+=======
 
 if menu == "Departemen PSDA":
     def PSDA():
@@ -2000,4 +2019,5 @@ if menu == "Departemen Internal":
         ]
         display_images_with_data(gambar_urls, data_list)
     Departemen_Internal()
+>>>>>>> b981b330faf4581f5f27f94e1d931d3adc67714a
 # Tambahkan menu lainnya sesuai kebutuhan
